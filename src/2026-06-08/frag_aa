@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 — 2026年6月8日</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+background: #f4f6f9;
+color: #1a1f2e;
+line-height: 1.75;
+padding: 0 0 60px;
+}
+.header {
+background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+color: #fff;
+padding: 44px 24px 38px;
+text-align: center;
+box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+}
+.header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 8px; }
+.header .date { font-size: 20px; font-weight: 700; background: rgba(255,255,255,0.18); display: inline-block; padding: 6px 18px; border-radius: 30px; margin-top: 6px; }
+.header .sub { font-size: 14px; opacity: 0.9; margin-top: 14px; }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 18px; }
+.intro {
+background: #fff; border-radius: 12px; padding: 22px 26px; margin: 28px 0;
+box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca;
+font-size: 15px;
+}
+.intro strong { color: #4338ca; }
+.section-title {
+font-size: 20px; font-weight: 800; margin: 38px 0 16px; padding-left: 12px;
+display: flex; align-items: center; gap: 10px;
+}
+.section-title .bar { width: 6px; height: 26px; border-radius: 3px; display: inline-block; }
+.high .bar { background: #dc2626; }
+.mid .bar { background: #d97706; }
+.low .bar { background: #2563eb; }
+.card {
+background: #fff; border-radius: 12px; padding: 20px 24px; margin-bottom: 18px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 6px solid #ccc;
+transition: transform 0.15s ease;
+}
+.card:hover { transform: translateY(-2px); box-shadow: 0 5px 16px rgba(0,0,0,0.10); }
+.card.high { border-left-color: #dc2626; }
+.card.mid  { border-left-color: #d97706; }
+.card.low  { border-left-color: #2563eb; }
+.tag {
+display: inline-block; font-size: 12px; font-weight: 800; color: #fff;
+padding: 3px 12px; border-radius: 20px; margin-bottom: 10px; letter-spacing: 1px;
+}
+.tag.high { background: #dc2626; }
+.tag.mid  { background: #d97706; }
+.tag.low  { background: #2563eb; }
+.cat { font-size: 12px; color: #6b7280; margin-left: 8px; font-weight: 600; }
+.card h3 { font-size: 17px; margin: 4px 0 10px; color: #111827; }
+.card p.detail { font-size: 14.5px; color: #374151; margin-bottom: 12px; }
+.sources { font-size: 13px; color: #6b7280; border-top: 1px dashed #e5e7eb; padding-top: 10px; }
+.sources a { color: #4338ca; text-decoration: none; margin-right: 4px; }
+.sources a:hover { text-decoration: underline; }
+.footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+<div class="header">
+<h1>🤖 AI最新動向簡報</h1>
+<div class="date">2026年6月8日（月）</div>
+<div class="sub">対象期間：2026年6月6日〜8日（直近48時間）／ 学界・産業界の主要トピックを重要度順に整理</div>
+</div>
+<div class="wrap">
+<div class="intro">
+本日最大の注目は、<strong>米国時間6月8日に開幕するApple WWDC 2026</strong>です。GoogleのGemini（1.2兆パラメータのカスタムモデル）を基盤にSiriを全面刷新し、ChatGPT・Gemini・Claudeを切り替えられる「Extensions」機構を導入する見込みで、これはティム・クックCEO最後の基調講演ともなります。並行して、<strong>Anthropicによる「自己改善型AI」への異例の警告</strong>、および<strong>トランプ大統領とサンダース上院議員がAI企業の政府保有という同一の政策方向に収斂</strong>するという、技術・政治の両面で重大な動きが見られました。
+</div>
+<!-- HIGH -->
+<div class="section-title high"><span class="bar"></span>重要度：高</div>
+<div class="card high">
+<span class="tag high">高</span><span class="cat">新サービス / 大手提携</span>
+<h3>
