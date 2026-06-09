@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 — 2026年6月9日</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  background: #f4f6f9;
+  color: #1a1f2e;
+  line-height: 1.75;
+  padding: 0 0 60px;
+}
+.header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+  color: #fff;
+  padding: 44px 24px 38px;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+}
+.header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 8px; }
+.header .date {
+  font-size: 20px; font-weight: 700;
+  background: rgba(255,255,255,0.18);
+  display: inline-block; padding: 6px 18px;
+  border-radius: 30px; margin-top: 6px;
+}
+.header .sub { font-size: 14px; opacity: 0.9; margin-top: 14px; }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 18px; }
+.intro {
+  background: #fff; border-radius: 12px; padding: 22px 26px; margin: 28px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca;
+  font-size: 15px;
+}
+.intro strong { color: #4338ca; }
+.section-title {
+  font-size: 20px; font-weight: 800; margin: 38px 0 16px; padding-left: 4px;
+  display: flex; align-items: center; gap: 10px;
+}
+.section-title .bar { width: 6px; height: 26px; border-radius: 3px; flex-shrink: 0; }
+.high-section .bar { background: #dc2626; }
+.mid-section  .bar { background: #d97706; }
+.low-section  .bar { background: #2563eb; }
+.card {
+  background: #fff; border-radius: 12px; padding: 22px 26px; margin-bottom: 18px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 6px solid #ccc;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.10); }
+.card.high { border-left-color: #dc2626; }
+.card.mid  { border-left-color: #d97706; }
+.card.low  { border-left-color: #2563eb; }
+.card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+.tag {
+  display: inline-block; font-size: 12px; font-weight: 800; color: #fff;
+  padding: 3px 12px; border-radius: 20px; letter-spacing: 1px;
+}
+.tag.high { background: #dc2626; }
+.tag.mid  { background: #d97706; }
+.tag.low  { background: #2563eb; }
+.cat {
+  font-size: 12px; color: #6b7280; font-weight: 600;
+  background: #f3f4f6; border-radius: 12px; padding: 2px 10px;
+}
+.card h3 { font-size: 17px; font-weight: 800; margin: 6px 0 10px; color: #111827; }
+.card p.detail { font-size: 14.5px; color: #374151; margin-bottom: 12px; line-height: 1.8; }
+.comment-box {
+  background: #f0f4ff; border-radius: 8px; padding: 10px 14px;
+  margin-bottom: 12px; font-size: 13.5px; color: #3730a3;
+  border-left: 3px solid #6366f1;
+}
+.comment-box .label { font-weight: 800; margin-right: 4px; }
+.sources {
+  font-size: 13px; color: #6b7280;
+  border-top: 1px dashed #e5e7eb; padding-top: 10px;
+}
+.sources a { color: #4338ca; text-decoration: none; margin-right: 6px; }
+.sources a:hover { text-decoration: underline; }
+.footer {
+  text-align: center; font-size: 12px; color: #9ca3af;
+  margin-top: 40px; padding: 0 18px;
+}
+.footer a { color: #6b7280; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date">2026年6月9日（火）</div>
+  <div class="sub">対象期間：2026年6月7日〜9日（直近48時間）／ 学界・産業界の主要トピックを重要度順に整理</div>
+</div>
+
+<div class="wrap">
+
+  <div class="intro">
+    本日の最大トピックは<strong>Apple WWDC 2026（6月8日開幕）での「Siri AI」全面刷新</strong>です。GoogleのGeminiモデルを基盤に完全に作り直されたSiriが発表され、全デバイスを横断する会話型インターフェースが登場しました。ティム・クックCEO最後の基調講演となったこのイベントは、AppleのAI戦略の方向性を示す歴史的な節目でもあります。また、<strong>MicrosoftのMAI（Microsoft AI）自社モデル群7本のリリース</strong>、<strong>MiniMax M3のオープンウェイトモデル公開</strong>など、モデルリリースが相次いだ激動の1週間でした。
+  </div>
+
+  <!-- HIGH -->
+  <div class="section-title high-section">
+    <span class="bar"></span>重要度：高
+  </div>
+
+  <!-- Story 1: Apple WWDC Siri AI -->
+  <div class="card high">
+    <div class="card-header">
+      <span class="tag high">高</span>
+      <span class="cat">新サービス / 大手提携</span>
+    </div>
+    <h3>Apple、WWDC 2026で「Siri AI」を発表 ― Google Geminiとの深い統合でSiriを全面刷新</h3>
+    <p class="detail">
+      Apple は米国時間6月8日、カリフォルニア州クパチーノのApple Parkで開催したWWDC 2026にて、次世代の会話型AI「Siri AI」を正式発表しました。新しいSiりは、Apple Intelligenceアーキテクチャ上にGoogleのGeminiカスタムモデルを組み込んで構築されており、フルスクリーンの会話インターフェース、会話履歴の再閲覧・継続機能（専用Siriアプリ）、ビジュアルインテリジェンス（カメラで見たものをその場で認識・操作）などが追加されています。また、パスワードアプリへの「自律エージェント」機能の統合により、ウェブサイトへのログインや認証情報の更新をバックグラウンドで自動化できるようになりました。フル機能の利用にはiPhone 17 Proシリーズ以上が必要で、EU・中国では規制上の理由から当初提供されません。iOS 27、macOS Golden Gateも同日発表されました。ティム・クックCEOにとっては最後のWWDC基調講演となる節目のイベントでした。
+    </p>
+    <div class="comment-box">
+      <span class="label">コメント：</span>AppleがGeminiとの提携を深め、「エージェント型Siri」をOSレベルで統合したことは、AIアシスタント競争をスマートフォン本体の競争へと引き込む重要な一手です。ChatGPTやClaudeとの差別化がどこまで機能するかが今後の焦点になるでしょう。
+    </div>
+    <div class="sources">
+      出典：
+      <a href="https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/" target="_blank">Apple Newsroom</a>
+      <a href="https://www.macrumors.com/2026/06/08/apple-announces-siri-ai/" target="_blank">MacRumors</a>
+      <a href="https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/" target="_blank">TechCrunch</a>
+    </div>
+  </div>
+
+  <!-- Story 2: Microsoft MAI -->
+  <div class="card high">
+    <div class="card-header">
+      <span class="tag high">高</span>
+      <span class="cat">新モデルリリース / 大手企業</span>
+    </div>
+    <h3>Microsoft、自社開発の「MAI」モデル7本を一挙リリース ― OpenAI依存からの脱却を鮮明に</h3>
+    <p class="detail">
+      Microsoftは6月2日のBuild 2026カンファレンス（サンフランシスコ）にて、社内ブランド「MAI（Microsoft AI）」を冠する自社開発モデル7本を正式発表しました。主なモデルは次のとおりです。①<strong>MAI-Thinking-1</strong>：商用ライセンスデータのみで訓練した社内初の推論モデル（アクティブパラメータ350億・コンテキスト25.6万トークン）でOpenAIモデルの蒸留を一切使わない点が特徴。②<strong>MAI-Code-1-Flash</strong>：自然言語の指示からアプリやウェブサイトのソースコードを生成するコーディングモデル。③<strong>MAI-Image-2.5</strong>：テキスト→画像・画像→画像の両ワークロードを担いPowerPointへも統合済み。④<strong>MAI Transcribe-1.5</strong>：43言語対応の高精度音声認識モデル。このリリースはMicrosoftがOpenAIへの依存を低減し、自社のAIポートフォリオを強化する意図を明示するものとして広く受け止められています。
+    </p>
+    <div class="comment-box">
+      <span class="label">コメント：</span>MicrosoftはOpenAIへの巨額投資を行いながらも、独自モデルで"保険"を掛けた格好です。この二重戦略はAI覇権争いにおけるリスクヘッジの教科書的な動きであり、他の大手テック企業も同様の方向に向かうでしょう。
+    </div>
+    <div class="sources">
+      出典：
+      <a href="https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/" target="_blank">Microsoft AI Blog</a>
+      <a href="https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html" target="_blank">CNBC</a>
+      <a href="https://www.techtimes.com/articles/317631/20260602/microsoft-build-2026-mai-thinking-1-first-house-reasoning-model-trained-without-openai-data.htm" target="_blank">TechTimes</a>
+    </div>
+  </div>
+
+  <!-- Story 3: MiniMax M3 -->
+  <div class="card high">
+    <div class="card-header">
+      <span class="tag high">高</span>
+      <span class="cat">新モデルリリース / オープンウェイト</span>
+    </div>
+    <h3>MiniMax M3、100万トークンコンテキスト＋ネイティブマルチモーダルのオープンウェイトモデルを公開</h3>
+    <p class="detail">
+      中国のAIスタートアップMiniMaxは6月1日、旗艦モデル「MiniMax M3」をリリースしました。M3は独自の<strong>MiniMax Sparse Attention（MSA）アーキテクチャ</strong>を採用し、100万トークンのコンテキストウィンドウを処理する際の計算量を旧世代比で1/20に削減、プリフィル速度9倍以上・デコード速度15倍以上を実現しています。コーディングベンチマーク「SWE-Bench Pro」でスコア59.0%を達成し、GPT-5.5やGemini 3.1 Proを上回り、Claude Opus 4.7に迫る性能を主張しています（ただし独立検証は未完了）。モデルは画像・動画の理解もネイティブに対応し、OpenRouterにて入力$0.30/百万トークン・出力$1.20/百万トークンのプロモーション価格で提供中。オープンウェイト（重みファイル）とテクニカルレポートはHugging Face・GitHubで数週間以内に公開予定です。
+    </p>
+    <div class="comment-box">
+      <span class="label">コメント：</span>オープンウェイトでフロンティアレベルのコーディング性能を主張するモデルが中国から登場したことは、AIの「民主化」と「地政学的競争」の両面で重要です。ただし、自社インフラでのベンチマークという点は慎重に見る必要があります。
+    </div>
+    <div class="sources">
+      出典：
+      <a href="https://www.marktechpost.com/2026/06/01/minimax-releases-minimax-m3-with-msa-architecture-supporting-1m-token-context-native-multimodality-and-agentic-coding/" target="_blank">MarkTechPost</a>
+      <a href="https://pandaily.com/minimax-m3-model-2026" target="_blank">Pandaily</a>
+      <a href="https://kingy.ai/ai-launch-radar/ai-launch-tracker-minimax-m3-specs-benchmarks-a-chinese-open-weight-model-takes-aim-at-the-frontier/" target="_blank">Kingy AI</a>
+    </div>
+  </div>
+
+  <!-- MID -->
+  <div class="section-title mid-section">
+    <span class="bar"></span>重要度：中
+  </div>
+
+  <!-- Story 4: Figure AI / Boston Dynamics robots -->
+  <div class="card mid">
+    <div class="card-header">
+      <span class="tag mid">中</span>
+      <span class="cat">ロボティクス / 産業応用</span>
+    </div>
+    <h3>ヒューマノイドロボット量産フェーズへ ― Figure AIが時速1台体制、Boston DynamicsはHyundai・DeepMindへ出荷</h3>
+    <p class="detail">
+      ヒューマノイドロボット分野で量産化の節目が相次いで報告されています。Figure AIは自社のBotQ工場にて「Figure 03」の生産ペースを時間1台に引き上げたことを明らかにしました。一方、Boston Dynamicsは電動版「Atlas」の2026年初回生産分をHyundaiとGoogle DeepMindへの出荷を完了。Hyundaiは将来的に年産3万台のロボット工場建設（完成予定：2028年）を計画しています。Ai2（Allen Institute for AI）は6月初旬、リアルワールドのロボット操作向けオープンモデル「MolmoAct 2」をリリースし、公開後わずか数週間で40万回以上ダウンロードされています。これらは"試作品から量産"への転換点を象徴する出来事として産業界から注目を集めています。
+    </p>
+    <div class="comment-box">
+      <span class="label">コメント：</span>「時速1台」という数字は小さく聞こえますが、ヒューマノイドロボットの産業量産という文脈では歴史的な閾値です。物理AIとロボティクスの融合が急速に実用段階に入りつつあることを示しています。
+    </div>
+    <div class="sources">
+      出典：
+      <a href="https://ai2.work/blog/boston-dynamics-ships-full-atlas-production-run-to-hyundai-and-deepmind" target="_blank">AI2Work</a>
+      <a href="https://bostondynamics.com/products/atlas/" target="_blank">Boston Dynamics</a>
+      <a href="https://www.humanoid.press/" target="_blank">Humanoid Press</a>
+    </div>
+  </div>
+
+  <!-- Story 5: CVPR 2026 -->
+  <div class="card mid">
+    <div class="card-header">
+      <span class="tag mid">中</span>
+      <span class="cat">学術会議 / 研究動向</span>
+    </div>
+    <h3>CVPR 2026、体現AI・ロボティクス論文が前年比倍増 ― 4,090本採択・30件のライブデモ実施</h3>
+    <p class="detail">
+      コンピュータビジョン最大の国際会議「CVPR 2026」が6月3日〜7日にデンバー（コロラド州）のコンベンションセンターで開催されました。採択論文数は4,090本で前年比42%増（2025年：2,878本）を記録し、過去最高を更新しました。注目すべきは<strong>体現AI・ロボティクス分野の比率が2.9%から6.2%へと倍増</strong>したことで、ビジョン・言語・行動モデル（VLA）、ヒューマノイドの操作・移動、自動運転向け4次元MLLMなどが主要トピックに。会場では30件近くのライブデモが実施され、なかでも一人称映像と音声でリアルタイム臨床支援を行う「EgoMedAgent」が注目を集めました。またNVIDIAが主催したInteractive Physical AI（IPA）ワークショップでも物理世界と相互作用するAIの基盤技術が議論されました。
+    </p>
+    <div class="comment-box">
+      <span class="label">コメント：</span>VLAモデルの急増は、「汎用ロボット脳」の研究が真剣なフェーズに入った証拠です。CVPR に集まる研究者たちがロボティクスに向かい始めたことで、今後1〜2年の技術進化が大きく加速すると見られます。
+    </div>
+    <div class="sources">
+      出典：
+      <a href="https://cvpr.thecvf.com/Conferences/2026/News/Robotics" target="_blank">CVPR 2026 公式</a>
+      <a href="https://roboticsandautomationnews.com/2026/05/19/cvpr-2026-to-showcase-next-generation-of-embodied-ai-robotics-and-autonomous-systems/101727/" target="_blank">Robotics & Automation News</a>
+      <a href="https://www.bohrium.com/en/blog/research-notes/cvpr-2026-accepted-papers-highlights/" target="_blank">Bohrium</a>
+    </div>
+  </div>
+
+  <!-- Story 6: Kimi K2.6 -->
+  <div class="card mid">
+    <div class="card-header">
+      <span class="tag mid">中</span>
+      <span class="cat">新モデルリリース / オープンソース</span>
+    </div>
+    <h3>Moonshot AI「Kimi K2.6」― 長時間エージェントコーディング特化のオープンソースMoEモデル</h3>
+    <p class="detail">
+      北京のAIスタートアップMoonshot AIは4月20日に「Kimi K2.6」をリリース、6月現在も活発に使われています。Kimi K2.6はMixture-of-Experts（MoE）アーキテクチャ（アクティブパラメータ320億・総パラメータ1兆）を採用し、Muonオプティマイザで学習された長文脈・エージェント志向のコーディングモデルです。最大の特徴は「スタミナ」重視の設計で、数時間にわたってツール呼び出しを繰り返し、エラーを自己修正しながら複雑なコーディングタスクを完遂できる能力を持ちます。Modified MITライセンスで重みが公開されており、OpenAI/Anthropic互換APIも提供されています。複数の実務開発者向けベンチマークで現時点のオープンソース最高水準を主張しています。
+    </p>
+    <div class="comment-box">
+      <span class="label">コメント：</span>「長時間の自律コーディング」という明確なユースケースに特化したオープンウェイトモデルの登場は、AIエージェントを自社インフラで動かしたいエンタープライズにとって非常に魅力的な選択肢です。
+    </div>
+    <div class="sources">
+      出典：
+      <a href="https://www.kimi.com/blog/kimi-k2-6" target="_blank">Kimi 公式ブログ</a>
+      <a href="https://kingy.ai/ai/meet-kimi-k2-6-moonshot-ais-open-source-bet-on-long-horizon-agentic-coding/" target="_blank">Kingy AI</a>
+      <a href="https://github.com/moonshotai/Kimi-K2" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <!-- LOW -->
+  <div class="section-title low-section">
+    <span class="bar"></span>重要度：低
+  </div>
+
+  <!-- Story 7: AI market share -->
+  <div class="card low">
+    <div class="card-header">
+      <span class="tag low">低</span>
+      <span class="cat">市場動向 / データ</span>
+    </div>
+    <h3>AIチャットボット市場シェア：ChatGPTが54.7%に低下、Claudeが四半期306%増と急成長</h3>
+    <p class="detail">
+      2026年6月時点のMomentic調査によると、主要AIチャットボットの世界ウェブ訪問シェアは、ChatGPT（OpenAI）が54.7%でトップを維持しているものの、2025年2月の76.5%から大幅に低下しています。Google Geminiは27.4%で2位（6ヶ月で104%増）、Anthropicのクロードは8.2%で3位ながら直近四半期で306%増という急成長を記録しています。AIモデルの価格面では、GPT-5.5が入力$1.50・出力$9.00（百万トークン）、Claude Opus 4.8が入力$5.00・出力$25.00、Gemini 3.5 Flashが入力$1.50・出力$9.00と横並びに近い状況です。一方、平均して2日に1本の新モデルが登場するというハイペースのリリースが続いており、ユーザーの選択肢は急速に多様化しています。
+    </p>
+    <div class="comment-box">
+      <span class="label">コメント：</span>Claudeの急成長はAnthropicの企業向け展開と品質へのフォーカスが功を奏している証拠ですが、全体のパイを誰もが削られているゼロサムな競争状況に突入しています。
+    </div>
+    <div class="sources">
+      出典：
+      <a href="https://llm-stats.com/ai-news" target="_blank">LLM Stats</a>
+      <a href="https://www.buildmvpfast.com/articles/best-llms-2026-guide" target="_blank">BuildMVPFast</a>
+      <a href="https://aiflashreport.com/model-releases.html" target="_blank">AI Flash Report</a>
+    </div>
+  </div>
+
+  <!-- Story 8: AI funding Q1 2026 -->
+  <div class="card low">
+    <div class="card-header">
+      <span class="tag low">低</span>
+      <span class="cat">投資・資金調達</span>
+    </div>
+    <h3>2026年Q1のAI分野VC投資が記録更新 ― 単一四半期で2,555億ドルを突破</h3>
+    <p class="detail">
+      Crunchbaseの調査によると、2026年第1四半期のAI関連ベンチャー投資額は約2,555億ドルに達し、2025年通年のAI投資額を一四半期で超えるという前例のない規模となりました。その大半はフロンティアラボ4社に集中しており、OpenAI（1,220億ドル）、Anthropic（300億ドル）、xAI（200億ドル）、Waymo（160億ドル）の合計で全体の65%を占めています。スタートアップ向けシードからシリーズAの動向では、シリーズA平均調達額が5,190万ドルと高水準で推移する一方、投資家の注目は「AI基盤インフラ（モデルツール・チップ・データ）」「明確な予算を持つ企業向けAI製品」「カテゴリーリーダー候補」の3領域に絞られてきています。
+    </p>
+    <div class="comment-box">
+      <span class="label">コメント：</span>資金の大部分が数社に集中する構造は、AIの「寡占化」リスクを高めます。スタートアップエコシステムにとっては厳しい競争環境が続きますが、逆にニッチ特化型の企業には差別化のチャンスでもあります。
+    </div>
+    <div class="sources">
+      出典：
+      <a href="https://news.crunchbase.com/venture/record-breaking-funding-ai-global-q1-2026/" target="_blank">Crunchbase News</a>
+      <a href="https://qubit.capital/blog/ai-startup-fundraising-trends" target="_blank">Qubit Capital</a>
+    </div>
+  </div>
+
+</div><!-- /wrap -->
+
+<div class="footer">
+  <p>AI最新動向簡報 ― 2026年6月9日版 ／ 生成：Claude Sonnet 4.6（Anthropic）</p>
+  <p style="margin-top:6px;"><a href="../index.html">← アーカイブ一覧に戻る</a></p>
+</div>
+
+</body>
+</html>
