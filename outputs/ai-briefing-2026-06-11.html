@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年6月11日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f0f2f7; color: #1a1f2e; line-height: 1.85; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 52px 24px 44px; text-align: center;
+    box-shadow: 0 4px 20px rgba(30,58,138,0.3);
+  }
+  .header h1 { font-size: 34px; letter-spacing: 2px; margin-bottom: 10px; }
+  .header .date-label { font-size: 20px; opacity: 0.93; margin-bottom: 6px; }
+  .header .subtitle { font-size: 15px; opacity: 0.8; }
+  .nav-back {
+    display: inline-block; margin: 22px 0 0 0;
+    background: rgba(255,255,255,0.18); color: #fff; padding: 6px 18px;
+    border-radius: 20px; text-decoration: none; font-size: 14px;
+    border: 1px solid rgba(255,255,255,0.35); transition: background 0.2s;
+  }
+  .nav-back:hover { background: rgba(255,255,255,0.28); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 30px 18px 70px; }
+  .section-title {
+    font-size: 15px; font-weight: 800; letter-spacing: 1px;
+    padding: 6px 16px; border-radius: 6px; display: inline-block;
+    margin-bottom: 16px; margin-top: 10px;
+  }
+  .section-high .section-title  { background: #dc2626; color: #fff; }
+  .section-mid  .section-title  { background: #d97706; color: #fff; }
+  .section-low  .section-title  { background: #6b7280; color: #fff; }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px;
+    margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    border-left: 7px solid #ccc;
+  }
+  .section-high .card { border-left-color: #dc2626; }
+  .section-mid  .card { border-left-color: #d97706; }
+  .section-low  .card { border-left-color: #6b7280; }
+  .card h2 { font-size: 20px; font-weight: 800; color: #1a1f2e; margin-bottom: 12px; line-height: 1.5; }
+  .card p  { font-size: 16px; color: #374151; margin-bottom: 14px; line-height: 1.9; }
+  .card .source { font-size: 14px; color: #4338ca; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; border-bottom: 1px solid #a5b4fc; }
+  .card .source a:hover { color: #1e3a8a; }
+  .card .comment {
+    background: #f0f9ff; border-radius: 8px; padding: 10px 16px;
+    font-size: 15px; color: #0369a1; border-left: 4px solid #38bdf8;
+    margin-top: 4px;
+  }
+  .priority-badge {
+    display: inline-block; padding: 3px 10px; border-radius: 12px;
+    font-size: 12px; font-weight: 800; letter-spacing: 1px; margin-bottom: 10px;
+  }
+  .badge-high { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge-mid  { background: #fffbeb; color: #d97706; border: 1px solid #fcd34d; }
+  .badge-low  { background: #f9fafb; color: #6b7280; border: 1px solid #d1d5db; }
+  .divider { border: none; border-top: 2px dashed #e5e7eb; margin: 30px 0 20px; }
+  .footer { text-align: center; font-size: 13px; color: #9ca3af; margin-top: 50px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年6月11日（木）</div>
+  <div class="subtitle">alphakt 社内向け — 直近24〜48時間のAI領域最重要動向</div>
+  <a class="nav-back" href="../index.html">← 一覧へ戻る</a>
+</div>
+
+<div class="wrap">
+
+  <!-- ===== 高 ===== -->
+  <div class="section-high">
+    <div class="section-title">🔴 重要度：高</div>
+
+    <!-- 1. DiffusionGemma -->
+    <div class="card">
+      <div class="priority-badge badge-high">高</div>
+      <h2>Google DeepMind、テキスト拡散モデル「DiffusionGemma」を公開 — 最大4倍速の次世代生成手法</h2>
+      <p>
+        Google DeepMindは2026年6月10日、テキスト拡散（Text Diffusion）アーキテクチャを採用したオープンモデル「DiffusionGemma」を公開した。従来の自己回帰（トークンを1つずつ予測する）方式とは根本的に異なり、ランダムトークンのキャンバスから256トークンのブロックを並列に精錬する。MoE（Mixture of Experts）構造で総パラメータ数は26Bだが、推論時に活性化されるのは3.8Bのみ。H100では毎秒1,000トークン超、RTX 5090では700トークン超を達成し、同世代比で最大4倍の高速化が可能。コンテキスト長は256Kトークン、140言語以上に対応し、テキスト・画像・動画を入力として受け付けられる。量子化すれば18GB VRAMで動作するため、ローカルAIワークフローへの展開も現実的だ。Apache 2.0ライセンスで公開されており、vLLM・Transformers・MLX・Unslothが初日からサポートする。
+      </p>
+      <div class="source">
+        出典：
+        <a href="https://www.marktechpost.com/2026/06/10/google-ai-releases-diffusiongemma-a-26b-moe-open-model-using-text-diffusion-for-up-to-4x-faster-generation/" target="_blank" rel="noopener">MarkTechPost — Google AI Releases DiffusionGemma (2026-06-10)</a>
+        ／
+        <a href="https://deepmind.google/models/gemma/diffusiongemma/" target="_blank" rel="noopener">Google DeepMind 公式ページ</a>
+      </div>
+      <div class="comment">💬 画像生成で実績を積んだ拡散アプローチをテキストに応用する試みは長年あったが、実用スループットを達成したのは初めてに近い。自己回帰の牙城が崩れ始める転換点になる可能性がある。</div>
+    </div>
+
+    <!-- 2. Claude Fable 5 -->
+    <div class="card">
+      <div class="priority-badge badge-high">高</div>
+      <h2>Anthropic、「Claude Fable 5」一般公開 — Mythos級能力を初めて大衆へ解放、研究者向け「Mythos 5」も同時発表</h2>
+      <p>
+        Anthropicは2026年6月9日、同社史上最強の一般公開モデル「Claude Fable 5」をリリースした。内部的にはMythosと同等のベース能力を持ち、ソフトウェアエンジニアリング・知識労働・視覚・科学研究など、ほぼ全ての測定済みベンチマークで最先端を記録。Claude API・AWS・Amazon Bedrock・Vertex AI・Microsoft Foundryで利用可能で、料金は入力100万トークンあたり$10・出力あたり$50（Mythos Previewの半額以下）。6月9〜22日はPro/Max/Team/Enterpriseプランで無料開放される。ただし、安全対策として一部のクエリはClaude Opus 4.8に振り替えるサーキットブレーカーが組み込まれており（発動率は全セッションの5%未満）、これが研究者から「秘密の機能制限」と批判されていることもFortuneが報じた。並行して、米政府との「Project Glasswing」を通じたサイバー防衛専門家向けの「Claude Mythos 5」も限定公開。
+      </p>
+      <div class="source">
+        出典：
+        <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">Anthropic公式 — Claude Fable 5 and Claude Mythos 5</a>
+        ／
+        <a href="https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/" target="_blank" rel="noopener">TechCrunch (2026-06-09)</a>
+        ／
+        <a href="https://fortune.com/2026/06/10/anthropic-accu-claude-fable-5-limits-capabilities-ai-researchers-developers/" target="_blank" rel="noopener">Fortune — 機能制限批判 (2026-06-10)</a>
+      </div>
+      <div class="comment">💬 「危険すぎる」と警告した直後に一般公開するという緊張感ある決断。安全制限の透明性を求める声は今後さらに高まりそうで、業界全体への規範設定効果も大きい。</div>
+    </div>
+
+    <!-- 3. OpenAI Oracle Cloud -->
+    <div class="card">
+      <div class="priority-badge badge-high">高</div>
+      <h2>OpenAIモデル・Codex、Oracle Cloudのコミットメント経由で利用可能に — クラウド横断AI調達の加速</h2>
+      <p>
+        2026年6月11日（本日）、OpenAIとOracleはOracle Cloud Infrastructure（OCI）のクラウドコミットメントを通じてOpenAIのモデル群およびCodexを利用できる統合を発表した。これにより、既存のOracle契約枠内でOpenAIサービスの費用を充当できるようになり、企業が複数クラウド間でAI費用を一本化しやすくなる。背景として、両社はStargateを通じた4.5GWの追加AI計算能力開発に向け5年間で3,000億ドル超の協力関係を持つ。Google Cloudとの並行したマルチクラウドパートナーシップも同時期に発表されており、AI基盤インフラの寡占構造が一層固まりつつある。
+      </p>
+      <div class="source">
+        出典：
+        <a href="https://www.tradingview.com/news/reuters.com,2026:newsml_FWN42I14M:0-openai-access-openai-models-and-codex-through-your-oracle-cloud-commitment/" target="_blank" rel="noopener">Reuters via TradingView (2026-06-11)</a>
+        ／
+        <a href="https://openai.com/index/stargate-advances-with-partnership-with-oracle/" target="_blank" rel="noopener">OpenAI公式 — Stargate x Oracle</a>
+      </div>
+      <div class="comment">💬 AIモデルアクセスがクラウド契約に組み込まれる「バンドル化」が加速しており、中小企業がAIを使う際のプロバイダー選択がクラウド選択と不可分になってきている。</div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== 中 ===== -->
+  <div class="section-mid">
+    <div class="section-title">🟡 重要度：中</div>
+
+    <!-- 4. Apple WWDC Gemini Siri -->
+    <div class="card">
+      <div class="priority-badge badge-mid">中</div>
+      <h2>Apple WWDC 2026：SiriがGoogleのカスタムGeminiモデルで刷新 — iOS 27・マルチAI拡張も発表</h2>
+      <p>
+        6月8日に開幕したWWDC 2026でAppleは、クラウド知能をGoogleの約1.2兆パラメータのカスタムGeminiモデルで刷新した新Siriを発表した。AppleはGoogleにこのカスタムモデルの対価として年間約10億ドルを支払う契約と報じられている。新Siríには「Search or Ask」システムワイドジェスチャー、Dynamic Island連携、チャットUIが追加され、メール・写真・ファイルへの個人コンテキストアクセスや画面上の認識・クロスアプリ操作も可能になる。さらに、Claude（Anthropic）をiPhoneで初めてオプション利用できるマルチAI Extensions機能も発表。iOS 27はiPhone 12以降に対応するが、AI機能はiPhone 15 Pro以降が必要。開発者向けベータは即日提供開始。
+      </p>
+      <div class="source">
+        出典：
+        <a href="https://www.business-standard.com/amp/technology/tech-news/wwdc-2026-apple-unveils-siri-ai-gemini-powered-apple-intelligence-more-126060900042_1.html" target="_blank" rel="noopener">Business Standard — WWDC 2026 (2026-06-09)</a>
+        ／
+        <a href="https://letsdatascience.com/news/apple-unveils-gemini-powered-siri-and-ios-27-at-wwdc-2026-b757953c" target="_blank" rel="noopener">Let's Data Science</a>
+      </div>
+      <div class="comment">💬 AppleがGoogleのモデルをコアに据えるという「天敵連合」は業界構造的に衝撃的。AI競争において独自モデル開発よりも最良モデルの調達・統合を選んだAppleの戦略転換として長く記憶されそうだ。</div>
+    </div>
+
+    <!-- 5. NVIDIA Unitree humanoid for researchers -->
+    <div class="card">
+      <div class="priority-badge badge-mid">中</div>
+      <h2>NVIDIAがUnitree H2ヒューマノイドを研究用プラットフォームに採択 — Stanford・ETH Zurichなどに展開開始</h2>
+      <p>
+        NVIDIAはスタンフォード大学やETH Zurichなどの研究機関向けに提供するロボティクス研究プラットフォームとして、中国のUnitreeが製造する身長約180cmのヒューマノイドロボット「H2」を採択した。同プラットフォームはNVIDIAのJetson Thor（Blackwell GPU搭載）と組み合わされ、オンデバイスのAI推論を実現する。アップグレード版「H2 Plus」は10月より出荷予定で、最前線のヒューマノイド研究をあらゆる研究室が利用できるようにすることが目標だ。NVIDIAはDooanグループとも物理AIおよびAIファクトリーインフラでの協業を拡大しており、Cosmos世界モデルやIsaac Labフレームワークとの統合も進んでいる。
+      </p>
+      <div class="source">
+        出典：
+        <a href="https://www.cnbc.com/2026/06/01/nvidia-unitree-humanoid-robotics-system-researchers.html" target="_blank" rel="noopener">CNBC — NVIDIA picks Unitree for humanoid robot platform (2026-06-01)</a>
+        ／
+        <a href="https://blogs.nvidia.com/blog/nvidia-and-doosan-group-physical-ai/" target="_blank" rel="noopener">NVIDIA Blog — Doosan Group collaboration</a>
+      </div>
+      <div class="comment">💬 研究機関向けの標準プラットフォームを押さえることはエコシステム形成の布石。NVIDIA→研究室→産業への知識移転のパイプラインとして機能する可能性が高い。</div>
+    </div>
+
+    <!-- 6. BYD humanoid robot -->
+    <div class="card">
+      <div class="priority-badge badge-mid">中</div>
+      <h2>BYD、ヒューマノイドロボット開発を正式確認 — EV由来のバッテリー・センサー技術を転用、自社工場に2万台展開計画</h2>
+      <p>
+        中国EVメーカーのBYDは2026年6月9日、ヒューマノイドロボット開発を公式に認めた。Stella Li副社長がインタビューでロボット事業への参入を確認し、EV開発で蓄積したバッテリー技術・センサー技術・AIシステムをロボットに転用することでコストと開発期間を大幅に短縮できると説明した。すでに約150台のプロトタイプが自社工場でテスト中で、2026年内に約2万台を自社生産ラインに投入し人手不足に対応する計画。Xi'anに年産5万台規模の新工場も建設中。将来的には既存のEVディーラーネットワークを通じた一般販売も検討している。Tesla（Optimus）・Hyundaiに続き大手製造業からの参入が加速している。
+      </p>
+      <div class="source">
+        出典：
+        <a href="https://cnevpost.com/2026/06/03/byd-enters-humanoid-robot-market/" target="_blank" rel="noopener">CnEVPost — BYD enters humanoid robot market (2026-06-03)</a>
+        ／
+        <a href="https://www.starnewskorea.com/en/business-life/2026/06/09/2026060908100871220" target="_blank" rel="noopener">StarNews Korea — BYD confirms development (2026-06-09)</a>
+      </div>
+      <div class="comment">💬 製造業の巨人が自社工場の労働力置換から始めて外販へと展開するパターンは、ロボット市場の裾野を一気に広げる可能性がある。EV同様、中国企業がコスト競争力で市場を席巻するシナリオが現実味を帯びてきた。</div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ===== 低 ===== -->
+  <div class="section-low">
+    <div class="section-title">⚪ 重要度：低</div>
+
+    <!-- 7. WeRide Madrid -->
+    <div class="card">
+      <div class="priority-badge badge-low">低</div>
+      <h2>Uber・WeRide・AVOMO、マドリードでスペイン初の商用ロボタクシーサービス開始へ</h2>
+      <p>
+        WeRide・Uber・AVOMO（Moove Carsグループ）の3社は、スペイン・マドリード州にて同国初の商用自動運転タクシーサービスを2026年内に開始する計画を発表した。当初は訓練済みドライバーが同乗する安全運転員付きで運行し、マイルストーン達成後に完全無人化・台数拡大を進める方針。利用者はUberアプリから予約可能。WeRideとUberはすでにアブダビ・ドバイで完全無人の商用ロボタクシーを展開しており、ヨーロッパ進出は戦略的に4都市目となる（2030年までに15都市の合意に基づく）。
+      </p>
+      <div class="source">
+        出典：
+        <a href="https://investor.uber.com/news-events/news/press-release-details/2026/WeRide-Uber-and-AVOMO-Bring-Robotaxis-to-Madrid/default.aspx" target="_blank" rel="noopener">Uber Investor Relations — WeRide, Uber and AVOMO Bring Robotaxis to Madrid</a>
+        ／
+        <a href="https://cnevpost.com/2026/06/02/weride-uber-to-launch-first-commercial-robotaxi-service-spain/" target="_blank" rel="noopener">CnEVPost (2026-06-02)</a>
+      </div>
+      <div class="comment">💬 中東での実績をテコにヨーロッパへと版図を広げるWeRide。規制の厳しいEU市場での商用展開が成功すれば、グローバル展開のモデルケースとして注目度が増す。</div>
+    </div>
+
+    <!-- 8. NVIDIA Nemotron 3 Ultra -->
+    <div class="card">
+      <div class="priority-badge badge-low">低</div>
+      <h2>NVIDIA、550BパラメータのNemotron 3 Ultraをリリース — 大規模オープン推論モデルの新水準</h2>
+      <p>
+        NVIDIAは2026年6月4日、Nemotron 3 Ultraモデル（総パラメータ550B、活性化55B）をリリースした。MoE構造を採用し、大規模な推論・科学計算タスクで高い性能を発揮するとされる。企業向けにオープンウェイトで公開されており、NeMo・TensorRT-LLMなどNVIDIAのエコシステムと深く統合されている。AIインフラ全体をモデルから計算基盤まで垂直統合しようとするNVIDIAの戦略を体現している。
+      </p>
+      <div class="source">
+        出典：
+        <a href="https://aiflashreport.com/topics/new-ai-model-releases.html" target="_blank" rel="noopener">AI Flash Report — New AI Model Releases</a>
+        ／
+        <a href="https://llm-stats.com/llm-updates" target="_blank" rel="noopener">LLM Stats — AI Updates June 2026</a>
+      </div>
+      <div class="comment">💬 GPUを売るメーカーが最強クラスのオープンモデルも提供するという構造は、モデル競争の覇権を握ることでエコシステム全体を自社製ハードウェアに引き付ける巧みな戦略だ。</div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    本簡報はWeb検索に基づき自動生成されています。各記事の事実関係はリンク先原典でご確認ください。<br>
+    © alphakt AI Briefing — 2026年6月11日号
+  </div>
+
+</div>
+</body>
+</html>
