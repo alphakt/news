@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年6月13日 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f0f2f7; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 55%, #7c3aed 100%);
+    color: #fff; padding: 56px 24px 44px; text-align: center;
+    box-shadow: 0 6px 24px rgba(30,58,138,0.30);
+  }
+  .header .label {
+    display: inline-block; background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.35); border-radius: 20px;
+    padding: 4px 18px; font-size: 13px; letter-spacing: 1px;
+    margin-bottom: 16px; text-transform: uppercase;
+  }
+  .header h1 { font-size: 34px; font-weight: 900; letter-spacing: 1px; margin-bottom: 10px; }
+  .header .date { font-size: 20px; opacity: 0.90; font-weight: 600; }
+  .header .subtitle { font-size: 14px; opacity: 0.75; margin-top: 8px; }
+
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+
+  .summary-box {
+    background: #fff; border-radius: 14px; padding: 22px 28px; margin: 32px 0 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 6px solid #4338ca;
+    font-size: 15px; color: #374151;
+  }
+  .summary-box strong { color: #1e3a8a; }
+
+  .section-title {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 15px; font-weight: 800; letter-spacing: 1px;
+    margin: 38px 0 16px; padding: 10px 18px; border-radius: 10px;
+  }
+  .section-title.high { background: #fef2f2; color: #991b1b; border-left: 5px solid #ef4444; }
+  .section-title.mid  { background: #fffbeb; color: #92400e; border-left: 5px solid #f59e0b; }
+  .section-title.low  { background: #f0fdf4; color: #166534; border-left: 5px solid #22c55e; }
+
+  .card {
+    background: #fff; border-radius: 16px; padding: 28px 32px;
+    margin-bottom: 20px; box-shadow: 0 3px 14px rgba(0,0,0,0.07);
+    border-left: 6px solid #e5e7eb; transition: box-shadow 0.2s;
+  }
+  .card:hover { box-shadow: 0 6px 22px rgba(0,0,0,0.12); }
+  .card.high { border-left-color: #ef4444; }
+  .card.mid  { border-left-color: #f59e0b; }
+  .card.low  { border-left-color: #22c55e; }
+
+  .card-header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .badge {
+    flex-shrink: 0; display: inline-flex; align-items: center;
+    font-size: 12px; font-weight: 800; letter-spacing: 0.5px;
+    padding: 4px 12px; border-radius: 20px; margin-top: 3px;
+  }
+  .badge.high { background: #fef2f2; color: #991b1b; border: 1px solid #fca5a5; }
+  .badge.mid  { background: #fffbeb; color: #92400e; border: 1px solid #fcd34d; }
+  .badge.low  { background: #f0fdf4; color: #166534; border: 1px solid #86efac; }
+
+  .card-title { font-size: 19px; font-weight: 800; color: #1e293b; line-height: 1.4; }
+  .card-meta { font-size: 13px; color: #6b7280; margin-top: 4px; }
+
+  .card-body { font-size: 16px; color: #374151; line-height: 1.85; margin-bottom: 16px; }
+
+  .source-row { margin-bottom: 12px; }
+  .source-row a {
+    display: inline-flex; align-items: center; gap: 5px;
+    color: #4338ca; font-size: 14px; text-decoration: none;
+    border-bottom: 1px solid #c7d2fe; padding-bottom: 1px;
+    transition: color 0.15s;
+  }
+  .source-row a:hover { color: #1e3a8a; border-bottom-color: #1e3a8a; }
+
+  .comment-box {
+    background: #f8fafc; border-radius: 10px; padding: 14px 18px;
+    font-size: 15px; color: #475569; border-left: 4px solid #94a3b8;
+    margin-top: 4px;
+  }
+  .comment-box::before { content: "💬 編集部コメント："; font-weight: 700; color: #334155; }
+
+  .back-link-wrap { text-align: center; margin-top: 50px; }
+  .back-link {
+    display: inline-block; color: #4338ca; text-decoration: none;
+    font-size: 15px; border: 2px solid #4338ca; border-radius: 30px;
+    padding: 10px 28px; transition: all 0.15s;
+  }
+  .back-link:hover { background: #4338ca; color: #fff; }
+
+  .footer {
+    text-align: center; font-size: 13px; color: #9ca3af;
+    margin-top: 50px; padding: 0 18px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="label">alphakt 社内 AI 簡報</div>
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date">2026年6月13日（土）</div>
+  <div class="subtitle">直近24〜48時間のLLM・ロボティクス・新モデル・新動向をまとめました</div>
+</div>
+
+<div class="wrap">
+
+  <div class="summary-box">
+    <strong>本日のサマリー：</strong>
+    Moonshot AIが1兆パラメータの<strong>Kimi K2.7 Codeをオープンソース公開</strong>（6/12）し、コーディングエージェント市場が加速。xAIの<strong>Grok 5</strong>は6月中旬リリースを目指して最終段階に入り、予測市場でも注目が集まる。Googleの<strong>Gemini 3.5 Pro</strong>も今月中のGA（一般公開）が目前。一方、xAIのGrok Imagineが<strong>動画生成</strong>に対応し、マルチモーダルAIの競争が新局面に突入した。
+  </div>
+
+  <!-- ====== HIGH ====== -->
+  <div class="section-title high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <div class="card-header">
+      <span class="badge high">HIGH</span>
+      <div>
+        <div class="card-title">Moonshot AI、1兆パラメータのコーディングモデル「Kimi K2.7 Code」をオープンソース公開</div>
+        <div class="card-meta">📅 2026年6月12日 ／ Moonshot AI（中国）</div>
+      </div>
+    </div>
+    <div class="card-body">
+      中国のAIスタートアップ Moonshot AI が、コーディングに特化したオープンウェイトモデル「Kimi K2.7 Code」をHugging Faceで公開した。総パラメータ数は1兆、Mixture-of-Experts（MoE）構造で実際に動作するのは約320億（32B）パラメータ。コンテキストウィンドウは256Kトークンで、Modified MITライセンスのもと商用利用も可能。前バージョン「K2.6」と比較して推論トークン消費量を約30%削減しつつ、Kimi Code Bench v2 で+21.8%、Program Bench で+11.0%、MLS Bench Lite で+31.5%の性能向上を達成した。長期間・複数ステップにわたるソフトウェアエンジニアリングタスクに最適化されており、vLLM・SGLang・KTransformersでの推論運用を推奨している。Moonshot APIではINT4量子化済みウェイトが提供され、入力トークン$0.95/M、出力トークン$4.00/Mという価格帯で利用できる。コーディングエージェント市場でQwen3-Coder-Nextやオープンソース勢との競争がさらに激化する見込みだ。
+    </div>
+    <div class="source-row">
+      出典：<a href="https://cryptobriefing.com/kimi-k2-7-code-open-source-release/" target="_blank">Crypto Briefing — Kimi K2.7 Code open-source release</a>　／
+      <a href="https://huggingface.co/moonshotai/Kimi-K2.7-Code" target="_blank">Hugging Face — moonshotai/Kimi-K2.7-Code</a>
+    </div>
+    <div class="comment-box">
+      1兆パラメータをMoEで扱いながら、推論コストと品質を両立させた点が特筆に値する。オープンウェイトのコーディングモデルとしては現時点でトップクラスに入る可能性が高く、自社AIコード基盤の検討材料として即座に評価を開始すべき一手だ。
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <div class="card-header">
+      <span class="badge high">HIGH</span>
+      <div>
+        <div class="card-title">xAI「Grok 5」6月中旬リリースへ — 6兆パラメータ超のモデルが最終段階</div>
+        <div class="card-meta">📅 2026年6月13日現在（リリース予定：6月中旬〜下旬）／ xAI</div>
+      </div>
+    </div>
+    <div class="card-body">
+      Elon Musk率いるxAIが開発中のGrok 5は、現時点で確認されている中では世界最大規模となる約6兆パラメータのモデルだ（前作Grok 4の約2倍）。5月末時点で教師あり微調整（SFT）と強化学習（RL）のフェーズに入ったと複数の関係者が報告しており、xAIの公式目標は2026年第2四半期（〜6月30日）とされている。ただし予測市場Polymarketでは6月30日以前のリリース確率を33%と見積もっており、7月以降にずれ込む可能性も排除できない。コーディング能力のリードを目指した設計が報告されており、成功すればGPT-5.5やClaude Fable 5と直接対決する場面が訪れる。パラメータ規模においてはこれまでどの公表済みモデルも上回る数字であり、業界全体の能力目標値を引き上げる可能性がある。一方でColossus 2クラスター上での学習はまだ継続中とされ、品質のため公表スケジュールを遅延させるxAIの過去パターンも念頭に置いておく必要がある。
+    </div>
+    <div class="source-row">
+      出典：<a href="https://www.techtimes.com/articles/317328/20260528/grok-ai-new-model-triples-parameter-count-targets-coding-lead-release-expected-mid-june.htm" target="_blank">TechTimes — Grok AI New Model Triples Parameter Count, Targets Coding Lead</a>　／
+      <a href="https://overchat.ai/ai-hub/grok-5-release-date" target="_blank">AI Hub — Grok 5: Release Date, Features, Benchmarks</a>
+    </div>
+    <div class="comment-box">
+      6兆パラメータというスケールは現行の最先端モデルとは一線を画する数字だが、予測市場が示す33%という確率は楽観的とは言えない。「6月中旬」という文言にはすでに何度も裏切られてきた経緯があるため、週次でリリース情報を追いかけながら待つのが現実的な姿勢だ。
+    </div>
+  </div>
+
+  <!-- ====== MEDIUM ====== -->
+  <div class="section-title mid">🟡 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card mid">
+    <div class="card-header">
+      <span class="badge mid">MID</span>
+      <div>
+        <div class="card-title">xAI「Grok Imagine Video 1.5」動画生成に拡張 — Musk自らXでデモ公開</div>
+        <div class="card-meta">📅 2026年6月11日 ／ xAI</div>
+      </div>
+    </div>
+    <div class="card-body">
+      xAIの画像生成サービス「Grok Imagine」が2026年5月31日に公開したGrok Imagine Video 1.5により、静止画生成から本格的な動画生成へと機能範囲が大幅に拡張した。6月11日にはElon Musk自身がXにGrok Imagineで生成した動画を投稿し、機能の完成度を披露した。同モデルはImage-to-Videoアリーナのリーダーボードで公開直後に52 Eloポイントの急上昇を記録し首位に立った。テキストまたは静止画を入力として最大720pの動画を生成でき、生成時間は5〜30秒と高速。生成と同時にネイティブ音声トラックも付与される点が他モデルとの差別化ポイントだ。動画の自然な動き制御を自然言語のプロンプトで行える「モーション制御」機能も実装されており、映像制作・広告・SNSコンテンツ制作での活用が現実的な選択肢になってきた。OpenAI Soraや他の動画生成モデルと直接競合する位置づけとなっており、2026年後半の動画AI市場の勢力図に影響を与える可能性がある。
+    </div>
+    <div class="source-row">
+      出典：<a href="https://pixverse.ai/en/blog/grok-imagine-video-generation-capabilities-2026" target="_blank">PixVerse — Grok Imagine Video Generation Capabilities 2026</a>　／
+      <a href="https://releasebot.io/updates/xai" target="_blank">Releasebot — xAI Release Notes June 2026</a>
+    </div>
+    <div class="comment-box">
+      Grok Imagineがテキスト→動画を実現したことで、xAIはLLM・画像・動画の三領域をワンプロダクトに統合しつつある。マルチモーダルワンストップ化の流れは今後も続くと見るべきで、自社の動画制作ワークフローに試験的に組み込む価値がある。
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card mid">
+    <div class="card-header">
+      <span class="badge mid">MID</span>
+      <div>
+        <div class="card-title">Google「Gemini 3.5 Pro」6月中公開へ — 200万トークン文脈とDeep Think推論を搭載</div>
+        <div class="card-meta">📅 情報更新：2026年6月6日 ／ Google DeepMind</div>
+      </div>
+    </div>
+    <div class="card-body">
+      Googleは2026年5月のGoogle I/Oで発表したGemini 3.5 Proについて、6月中に一般公開（GA）する方針を改めて確認した。現在はVertex AI上で限定プレビュー段階にある。最大の特徴は2,000,000（200万）トークンというコンテキストウィンドウで、現行のほぼすべての競合モデルを上回る文脈保持能力を持つ。また多段階推論をモデル内部で繰り返す「Deep Think」機能が統合されており、数学・科学・コーディングの困難な問題解決において大幅な精度向上が見込まれる。価格は入力$1.50/M・出力$9.00/Mで既に先行公開されたGemini 3.5 Flashよりは高価だが、RAGシステムや長尺文書分析を得意とする企業向けユースケースでは費用対効果が見込まれる。なお3.5 FlashはすでにAPIで利用可能であり、Pro版公開でフルのGemini 3.5ラインナップが揃うことになる。Claudeシリーズ・GPT-5.5との直接比較が今月中に可能になりそうだ。
+    </div>
+    <div class="source-row">
+      出典：<a href="https://www.techtimes.com/articles/317919/20260606/google-gemini-35-pro-nears-june-launch-2-million-token-context-deep-think-reasoning.htm" target="_blank">TechTimes — Google Gemini 3.5 Pro Nears June Launch</a>　／
+      <a href="https://codersera.com/blog/gemini-3-5-pro-launch-guide-2026/" target="_blank">CoderSera — Gemini 3.5 Pro: Release Date, Specs & Pricing</a>
+    </div>
+    <div class="comment-box">
+      200万トークンの文脈長は長尺PDFや大規模コードベースを一括処理する際の「コピー量」を根本から変える。GAになり次第、長文ドキュメント処理のパイプラインで実運用テストを行う価値は高い。
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card mid">
+    <div class="card-header">
+      <span class="badge mid">MID</span>
+      <div>
+        <div class="card-title">NVIDIAとSK Hynix、AIメモリの多年間共同開発パートナーシップを締結</div>
+        <div class="card-meta">📅 2026年6月7〜8日 ／ NVIDIA・SK Hynix</div>
+      </div>
+    </div>
+    <div class="card-body">
+      NVIDIAとSK hynixは次世代AIメモリの共同開発・供給を目的とした多年間の技術パートナーシップ契約を締結したと発表した。対象製品はNVIDIA Vera Rubin AIスーパーコンピュータ、Vera CPU、RTX Spark搭載PC、さらにJetson Thorロボティクスコンピュータプラットフォームの4領域にわたる。両社はNVIDIA CUDA-Xライブラリと物理シミュレーションツール「PhysicsNeMo」を活用して半導体設計・製造プロセスにAIを組み込む予定で、SK hynixの工場ではNVIDIA OmniverseとOpenUSDを使ったデジタルツイン化によって完全自律ファブ運営を目指す。AI用高帯域メモリ（HBM）の需要は2026年も高水準が続いており、今回の合意はNVIDIAがメモリ供給を2030年頃まで確実に確保するという戦略的意図を持つ。AIモデルの学習・推論コストにおいてメモリボトルネックは依然として最大の課題の一つであり、この協業によってスループット向上と単価低減が期待される。
+    </div>
+    <div class="source-row">
+      出典：<a href="https://nvidianews.nvidia.com/news/sk-hynix-ai-factory" target="_blank">NVIDIA Newsroom — SK Hynix Multiyear Technology Partnership</a>　／
+      <a href="https://www.globenewswire.com/news-release/2026/06/07/3307752/0/en/NVIDIA-and-SK-hynix-Announce-Multiyear-Technology-Partnership-to-Advance-Memory-for-AI-Factories.html" target="_blank">GlobeNewswire — NVIDIA × SK Hynix Partnership Announcement</a>
+    </div>
+    <div class="comment-box">
+      NVIDIAが最重要サプライヤーとの供給契約を早期に固めた背景には、HBM不足がGPU出荷ボトルネックになってきた直近の経験が反映されている。AI基盤コストの安定化に資する動きであり、エンタープライズユーザー目線では中長期的に学習コスト低減につながる朗報といえる。
+    </div>
+  </div>
+
+  <!-- ====== LOW ====== -->
+  <div class="section-title low">🟢 重要度：低</div>
+
+  <!-- 6 -->
+  <div class="card low">
+    <div class="card-header">
+      <span class="badge low">LOW</span>
+      <div>
+        <div class="card-title">タフツ大学「ニューロシンボリックAI」、ロボットの学習エネルギーを99%削減しながら成功率を3倍に</div>
+        <div class="card-meta">📅 論文発表：2026年3月、ICRA 2026（ウィーン）で発表中 ／ Tufts University</div>
+      </div>
+    </div>
+    <div class="card-body">
+      タフツ大学のMatthias Scheutz教授率いる研究チームが、ニューラルネットワークと記号論理推論を組み合わせた「ニューロシンボリックAI」によってロボット学習の効率と精度を劇的に向上させたと発表した。標準的なビジュアル言語アクションモデル（VLA）と比較して、学習時間を36時間超から34分に短縮、学習エネルギーを99%削減しつつ、ロボットタスクの成功率を34%から95%へと2.8倍に向上させた。訓練時に見ていない未知の複雑なパターンに対しても78%の成功率を保ち、VLAが0%だったのと対照的だ。手法はVLAが苦手とする「なぜこの動作をするのか」という因果推論をシンボリック層で補完するもので、ロボットがタスクを人間と同様に「概念・ステップ」に分解して理解できるようにした。現在開催中のICRA 2026（国際ロボット工学・自動化会議、ウィーン）でこの研究が公式発表されており、ロボティクスコミュニティで注目を集めている。
+    </div>
+    <div class="source-row">
+      出典：<a href="https://www.sciencedaily.com/releases/2026/04/260405003952.htm" target="_blank">ScienceDaily — AI breakthrough cuts energy use by 100x while boosting accuracy</a>
+    </div>
+    <div class="comment-box">
+      「賢さ」と「省エネ」を同時に実現するニューロシンボリックアプローチは、エッジロボティクスや低消費電力デバイスへの応用で大きな意味を持つ。学術的知見ではあるが、数年後の実装標準を左右する可能性があり、ロボット系製品の技術ロードマップに組み込む視点で参照しておく価値がある。
+    </div>
+  </div>
+
+  <!-- 7 -->
+  <div class="card low">
+    <div class="card-header">
+      <span class="badge low">LOW</span>
+      <div>
+        <div class="card-title">米空軍がAI搭載兵棋演習システム「WarMatrix」を初の実戦運用 — 1万倍速の戦闘シミュレーション</div>
+        <div class="card-meta">📅 2026年3月27日（GE26演習）／ 米空軍</div>
+      </div>
+    </div>
+    <div class="card-body">
+      米空軍はAI搭載の兵棋演習システム「WarMatrix」をGE 26（Benchmark Wargame）において初めて実戦的運用に使用したと公式発表した。150名以上の参加者が6回の24時間ゲーム時間単位のシナリオ移動を実施し、物理ベースのモデリングとAI支援による状況判定を組み合わせた高精度な模擬演習を行った。WarMatrixは通常の意思決定速度の最大1万倍高速な戦闘シミュレーションを実現できるとされており、人間の判断を中心に置きつつAIが補完・加速するHuman-Machine Teamingを基本設計として採用している。参加者はPacific Air Forces幹部、空軍作戦センター、他軍種・同盟国からも招集され、作戦分析と意思決定プロセスにおけるAI活用の可能性を実証した。これは軍事分野における大規模AIエージェント活用が概念実証フェーズから実運用フェーズへ移行した象徴的な事例として注目される。
+    </div>
+    <div class="source-row">
+      出典：<a href="https://www.af.mil/News/Article-Display/Article/4459553/usaf-ge-26-showcases-new-ai-enabled-warmatrix-wargaming-capability/" target="_blank">米空軍公式 — USAF GE 26 WarMatrix Wargaming Capability</a>　／
+      <a href="https://www.militarytimes.com/industry/techwatch/2026/04/15/us-air-force-debuts-operational-ai-wargame-system/" target="_blank">Military Times — US Air Force debuts operational AI wargame system</a>
+    </div>
+    <div class="comment-box">
+      AIの「スピード」が戦略意思決定の質を変えるという命題を軍事が先行実証した形だ。防衛分野でのAIエージェント本格運用は民間での大規模エージェント展開より数年先を走っており、今後の規制や国際AI協定の議論に影響を与え得る。
+    </div>
+  </div>
+
+  <div class="back-link-wrap">
+    <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+  </div>
+
+  <div class="footer">
+    本簡報はWeb検索により収集した情報をもとに作成しています。各記事の事実関係はリンク先原典でご確認ください。<br>
+    © alphakt — AI Briefing 2026-06-13
+  </div>
+
+</div>
+</body>
+</html>
