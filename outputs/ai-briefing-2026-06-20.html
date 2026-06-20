@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年6月20日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f0f2f7; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 52px 24px 44px; text-align: center;
+    box-shadow: 0 4px 20px rgba(30,58,138,0.28);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 2px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-badge {
+    display: inline-block; background: rgba(255,255,255,0.2); border-radius: 30px;
+    padding: 6px 22px; font-size: 16px; margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .header p { font-size: 14px; opacity: 0.88; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link { display: inline-block; margin: 22px 0 8px; color: #4338ca; text-decoration: none;
+    font-size: 14px; font-weight: 700; }
+  .back-link:hover { text-decoration: underline; }
+  .section-title {
+    font-size: 15px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase;
+    margin: 36px 0 16px; padding: 8px 16px; border-radius: 6px;
+  }
+  .section-high { background: #fee2e2; color: #991b1b; border-left: 6px solid #dc2626; }
+  .section-mid  { background: #fef9c3; color: #854d0e; border-left: 6px solid #ca8a04; }
+  .section-low  { background: #e0f2fe; color: #075985; border-left: 6px solid #0284c7; }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px 22px;
+    margin-bottom: 20px; box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+    border-left: 7px solid #e5e7eb;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #ca8a04; }
+  .card.low  { border-left-color: #0284c7; }
+  .card .badge {
+    display: inline-block; border-radius: 6px; padding: 3px 12px;
+    font-size: 12px; font-weight: 800; letter-spacing: 1px; margin-bottom: 10px;
+  }
+  .badge-high { background: #fee2e2; color: #991b1b; }
+  .badge-mid  { background: #fef9c3; color: #92400e; }
+  .badge-low  { background: #e0f2fe; color: #075985; }
+  .card h2 { font-size: 19px; font-weight: 900; line-height: 1.45; margin-bottom: 12px; color: #111827; }
+  .card .body { font-size: 16px; line-height: 1.85; color: #374151; margin-bottom: 14px; }
+  .card .source { font-size: 13px; color: #6b7280; margin-bottom: 10px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    background: #f8fafc; border-radius: 8px; padding: 12px 16px;
+    font-size: 14px; color: #475569; border-left: 4px solid #94a3b8; font-style: italic;
+    line-height: 1.7;
+  }
+  .comment::before { content: "💬 "; font-style: normal; }
+  .footer {
+    text-align: center; font-size: 12px; color: #9ca3af; margin-top: 50px; padding: 0 18px;
+    line-height: 1.9;
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="date-badge">2026年6月20日（土）</div>
+  <h1>AI最新動向簡報</h1>
+  <p>alphakt 社内向け 日次AIニュース — LLM・ロボティクス・新モデル・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ====== 高 ====== -->
+  <div class="section-title section-high">重要度：高</div>
+
+  <!-- 1. Fable 5 輸出規制 -->
+  <div class="card high">
+    <span class="badge badge-high">重要度 高</span>
+    <h2>Fable 5／Mythos 5 輸出規制、SK Telecom が発端と特定―Anthropic は「数日内に復旧」と表明してソウル事務所を開設</h2>
+    <div class="body">
+      米国政府が6月12日に発令した輸出管理指令により、AnthropicはFable 5とMythos 5（旧称 Claude Fable/Mythos）への外国籍ユーザーのアクセスを全世界で停止している。これはクラウドサービス上での選別適用が技術的に困難なためで、結果的に日本を含む全海外顧客が影響を受けた。<br><br>
+      ワシントン・ポスト紙が「韓国の通信会社」と報じた事案について、WIREDがSK Telecom（韓国最大の携帯キャリア）と特定した。政府は同社を中国安全保障上のリスクと判断し、Anthropicが6月初旬に追加した「Project Glasswing」の約150組織へのアクセスリストからSK Telecomの権限をまず取り消し、その後Fable 5／Mythos 5全体の停止に拡大した。<br><br>
+      Anthropicの国際担当マネージングディレクター Chris Ciauri 氏は、6月18日のソウルオフィス開設セレモニーで「数日以内にモデルが復旧すると強く確信している」と発言。しかし6月20日時点では公式な復旧日程は未発表であり、Anthropicは米トランプ政権との交渉を継続中だ。SK Telecomは中国との安全保障上の関連性を全面否定している。
+    </div>
+    <div class="source">
+      出典：
+      <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/sk-telecom-named-as-the-korean-carrier-at-the-center-of-anthropics-mythos-export-controls" target="_blank">Tom's Hardware</a> /
+      <a href="https://www.techtimes.com/articles/318637/20260619/anthropic-opens-its-seoul-office-even-us-export-ban-cuts-korean-access-its-top-models.htm" target="_blank">TechTimes（2026年6月19日）</a> /
+      <a href="https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/" target="_blank">Fortune（2026年6月13日）</a>
+    </div>
+    <div class="comment">規制から8日が経過しても復旧せず、企業がAnthropicの最上位モデルに依存することの地政学的リスクが鮮明になった。フォールバック戦略の有無が企業の評価分岐点になりつつある。</div>
+  </div>
+
+  <!-- 2. Microsoft Copilot SearchLeak -->
+  <div class="card high">
+    <span class="badge badge-high">重要度 高</span>
+    <h2>Microsoft 365 Copilot に「SearchLeak」脆弱性（CVE-2026-42824）―1クリックでメール・カレンダー・ファイルを盗める欠陥が判明、既にパッチ適用済み</h2>
+    <div class="body">
+      セキュリティ企業Varonis Threat Labsは6月15日、Microsoft 365 Copilot Enterpriseに深刻な情報漏えい脆弱性「SearchLeak」（CVE-2026-42824）を公開した。細工されたURLを1度クリックするだけで、被害者のメール・カレンダー予定・OneDrive／SharePointファイルを外部サーバーへ送信できる。<br><br>
+      攻撃は3つの欠陥を連鎖させる。①URLの「q」パラメータをCopilotへのプロンプトとして挿入する「パラメータ−プロンプトインジェクション」、②出力サニタイズ完了前に攻撃者制御の画像タグを発火させるHTMLレンダリング競合状態、③Bingのホワイトリストドメインを経由してデータを外部へ送出するサーバーサイドリクエストフォージェリ（SSRF）の3段階だ。<br><br>
+      Microsoftは公開前にサーバーサイドパッチを適用済みで、ユーザーやIT管理者に追加対応は不要。ただし、Copilotがテナント全体のデータを横断検索できる「フルアクセス」設計そのものへの懸念を研究者は指摘しており、エンタープライズでの権限範囲の見直しを促している。
+    </div>
+    <div class="source">
+      出典：
+      <a href="https://www.scworld.com/brief/searchleak-vulnerability-allows-data-theft-from-microsoft-365-copilot-enterprise" target="_blank">SC Media（2026年6月15日）</a> /
+      <a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2026-42824" target="_blank">Microsoft セキュリティ更新ガイド</a> /
+      <a href="https://windowsforum.com/threads/microsoft-copilot-cve-2026-42824-patch-the-searchleak-ai-data-leak-warning.426371/" target="_blank">Windows Forum</a>
+    </div>
+    <div class="comment">Copilotが「Bingのホワイトリスト」を悪用された点は皮肉だ。AIアシスタントの利便性と攻撃対象領域の拡大は表裏一体であり、「既にパッチ済み」で安心せず設計レベルの権限最小化を検討すべき。</div>
+  </div>
+
+  <!-- 3. SpaceX AI1 衛星データセンター -->
+  <div class="card high">
+    <span class="badge badge-high">重要度 高</span>
+    <h2>SpaceX が軌道上AIデータセンター衛星「AI1」を公開―最大100万機を想定、2027年末に1 GWの宇宙コンピュート確立を目標</h2>
+    <div class="body">
+      SpaceXは6月9日のプロモーション映像でAIコンピュート衛星「AI1」の詳細を明らかにした。Elon Musk CEOは「Starlink衛星よりはるかにシンプルな設計」と強調し、先端GPU搭載の計算ペイロードは通常120 kW・最大150 kWの電力を消費、110平方メートルの折りたたみ式液体ラジエーターで廃熱を処理する。機体の翼幅は70メートルに及ぶ。<br><br>
+      SpaceXはこの衛星を最大100万機打ち上げる計画を規制当局に申請しており、2027年初頭にプロトタイプ2機を打ち上げ、2027年末時点で年産1 GW規模の軌道上AIコンピュート供給を目指す。同社はNasdaqに「SPCX」として6月13日に上場しており、AI1はIPO直前のサプライズ発表として注目を集めた。<br><br>
+      技術的課題として、真空冷却・放射線耐性・軌道上メンテナンス・高い打ち上げコスト、さらに天文観測妨害とスペースデブリ増加のリスクが専門家から指摘されている。実現すれば、地上データセンターの電力・冷却制約を宇宙で迂回する新たなコンピュートモデルとなる。
+    </div>
+    <div class="source">
+      出典：
+      <a href="https://www.sciencedaily.com/releases/2026/06/260618041501.htm" target="_blank">ScienceDaily（2026年6月18日）</a> /
+      <a href="https://www.tomshardware.com/tech-industry/spacex-details-its-ai1-compute-satellite" target="_blank">Tom's Hardware</a> /
+      <a href="https://letsdatascience.com/news/spacex-unveils-plan-for-orbital-ai-data-centers-6897038c" target="_blank">Let's Data Science</a>
+    </div>
+    <div class="comment">地球の電力問題をいったん「宇宙に逃げる」という発想は大胆だが、射程内に入るまでのコストと規制ハードルは膨大だ。ただしSpaceXのNasdaq上場と組み合わせると、資金調達の説得力は格段に増す。</div>
+  </div>
+
+  <!-- ====== 中 ====== -->
+  <div class="section-title section-mid">重要度：中</div>
+
+  <!-- 4. Cornell WARP AI検索汚染 -->
+  <div class="card mid">
+    <span class="badge badge-mid">重要度 中</span>
+    <h2>コーネル大学研究―たった13語のReddit投稿でAI検索エージェントを詐欺サイトへ誘導できる「WARP攻撃」を実証</h2>
+    <div class="body">
+      コーネル大学テックのTingwei Zhang・Harold Triedman・Vitaly Shmatikov の3研究者は2026年5月に発表したプレプリントで、「WARP（Web Agent Retrieval Poisoning）」と名付けた攻撃手法を実証した。RedditのようなUGCサイト（ユーザー生成コンテンツ）への投稿に、わずか13語程度の毒入りフレーズを忍ばせるだけで、ChatGPT Deep ResearchやGoogle Geminiの「ディープリサーチ」機能が存在しない商品や詐欺サービスを推奨するよう誘導できることを示した。<br><br>
+      研究チームの計測では、AIリサーチツールが参照するURLのうち約25%はRedditやQuoraなどUGCサイトに由来しており、これらを政府機関の公式サイトとほぼ同等の信頼度で扱っていることが判明した。攻撃者が1つのコメントを投稿するだけで、そのコメントが検索インデックスに入れば継続的に影響を与え続けることができる。<br><br>
+      従来のSEO（検索エンジン最適化）がウェブクローラーを対象としていたのに対し、WARP攻撃はAIエージェントそのものを標的にするため、検出が難しく新たなサイバー脅威として位置づけられている。各AIベンダーへの脆弱性報告は論文公開前に行われており、対策の整備が急務だ。
+    </div>
+    <div class="source">
+      出典：
+      <a href="https://tech.yahoo.com/ai/chatgpt/articles/13-word-reddit-trick-ai-233157304.html" target="_blank">Yahoo Tech</a> /
+      <a href="https://windowsforum.com/threads/ai-search-poisoning-how-13-words-can-mislead-deep-research-agents.426600/" target="_blank">Windows Forum</a>
+    </div>
+    <div class="comment">「AIに調べさせれば正確」という思い込みが崩れる。AIリサーチツールの出典チェックが浅い場合、企業のデューデリジェンスや競合調査を意図的に汚染することも可能で、リスク管理への組み込みが必要だ。</div>
+  </div>
+
+  <!-- 5. Google Gemini スマートスピーカー -->
+  <div class="card mid">
+    <span class="badge badge-mid">重要度 中</span>
+    <h2>Google、約6年ぶりにスマートスピーカー復活―Gemini AIを搭載した「Google Home Speaker」が6月25日に発売（$99.99）</h2>
+    <div class="body">
+      Googleは6月17日、Gemini AI内蔵スマートスピーカー「Google Home Speaker」の先行予約受付を開始し、6月25日発売・価格$99.99（約1万5千円）と発表した。同社が独立型スマートスピーカーを発売するのは約6年ぶりとなる。<br><br>
+      最大の特徴は従来の「OK Google」コマンド体系から「Gemini for Home」エンジンへの移行で、より自然な会話形式でスマートホームデバイスを制御できるようになる。Google Home Premiumサブスクライバーには「Gemini Live for Google Home」機能が提供され、より高度な対話が可能だ。ハードウェア面では58mm全域ドライバーによる全指向性サウンド、リスニング状態を示するアンダーグロウリングを採用する。<br><br>
+      発売日から9月30日までの期間限定で、購入者にGoogle Home Premium 6ヶ月分が無料付帯される。AIアシスタント競争が音声ハードウェアに回帰する動きとして、Amazon EchoやApple HomePodとの三つ巴の戦いが改めて注目される。
+    </div>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/06/17/google-bets-on-gemini-to-reinvent-the-smart-home-speaker/" target="_blank">TechCrunch（2026年6月17日）</a> /
+      <a href="https://www.eweek.com/news/google-gemini-home-speaker/" target="_blank">eWeek</a> /
+      <a href="https://blog.google/products-and-platforms/devices/google-nest/google-home-speaker-gemini-features/" target="_blank">Google公式ブログ</a>
+    </div>
+    <div class="comment">Googleが一度「撤退」したスマートスピーカー市場にGemini搭載で再参入するのは、スクリーン競争からエンベデッドAI競争への再定義を狙った戦略転換として読み取れる。</div>
+  </div>
+
+  <!-- 6. Pew Research AI世論調査 -->
+  <div class="card mid">
+    <span class="badge badge-mid">重要度 中</span>
+    <h2>Pew Research 最新調査―「AIが社会に利益をもたらす」と考えるアメリカ人はわずか16%、若年層（30歳未満）は14%とさらに低い</h2>
+    <div class="body">
+      Pew Research Centerが6月17日に公表した大規模世論調査によると、「AIが今後20年間で社会に良い影響を与える」と答えたアメリカ人はわずか16%にとどまった。一方で約40%が否定的な影響を予測し、残りは「どちらでもない」と回答した。<br><br>
+      注目すべき点は利用率と感情の乖離だ。米国成人の約50%がAIチャットボットを利用した経験を持ち、約25%が日常的に使用していると報告しているにもかかわらず、大多数が懐疑的または否定的な見方をしている。AI開発の速度については3人に2人（約67%）が「速すぎる」と感じており、政府による規制に「ほとんど期待できない」と答えた割合も67%に上る。「企業が責任ある形でAIを開発できる」と信じている人も59%が懐疑的だった。<br><br>
+      年齢層別では30歳未満が最も悲観的で、「良い影響」を見込む割合は14%に過ぎない。毎日AIを使っている世代が最も否定的という逆説的な結果が、業界が向き合うべき信頼性の課題を浮き彫りにしている。
+    </div>
+    <div class="source">
+      出典：
+      <a href="https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/" target="_blank">Pew Research Center（2026年6月17日）</a> /
+      <a href="https://variety.com/2026/biz/news/american-ai-societal-impact-government-regulation-pew-study-1236783185/" target="_blank">Variety</a> /
+      <a href="https://theaiinsider.tech/2026/06/18/most-americans-hold-negative-views-of-ai-despite-rising-daily-use-pew-research-finds/" target="_blank">The AI Insider（2026年6月18日）</a>
+    </div>
+    <div class="comment">「使うが信じない」は深刻な信頼赤字だ。利用率が上がるほど期待のハードルも上がり、失望も増える。AI企業はベンチマーク数字より「社会的信用」の構築に投資を振り向ける時期に来ている。</div>
+  </div>
+
+  <!-- 7. NVIDIA Physical AI at CVPR -->
+  <div class="card mid">
+    <span class="badge badge-mid">重要度 中</span>
+    <h2>NVIDIA が CVPR 2026 で物理AIエージェントスキル集を大規模公開―Omniverse・Cosmos・Metropolis を横断するオープンソースツール群</h2>
+    <div class="body">
+      NVIDIAは6月1日（CVPR 2026開催に合わせ）、ロボット・自動運転・ビジョンAI・産業用デジタルツイン向けの物理AIエージェントスキル集を大規模オープンソース公開した。NVIDIA Omniverse、Cosmos、Alpamayo、Metropolis の4プラットフォームを横断し、複雑な物理AIワークフロー（ロボット訓練・評価・展開など）をエージェントが反復実行可能な標準化タスクとして定義する仕組みだ。<br><br>
+      スキル集の目的はチームごとに個別実装が必要だった手順の再利用と自動化で、物理AIシステムの開発コストと時間を大幅に削減することにある。Agile Robots・Cadence・Dassault Systèmes・Delta Electronics・Foxconn・Pegatron・PTC・Siemens・Synopsys・TSMC といった業界大手が既にこれらツールを活用中と発表されている。<br><br>
+      合わせてCVPR期間中、NVIDIAはIsaac GR00T N1.6（ヒューマノイドロボット向け全身制御ビジョン−言語−アクション統合モデル）と Cosmos Reason（高度な物理推論モデル）の組み合わせによるロボット制御デモも披露。製造業向け物理AIのエンドツーエンドスタック整備が加速している。
+    </div>
+    <div class="source">
+      出典：
+      <a href="https://nvidianews.nvidia.com/news/nvidia-releases-major-collection-of-open-source-agent-tools-and-skills-for-physical-ai" target="_blank">NVIDIA Newsroom（2026年6月1日）</a> /
+      <a href="https://www.globenewswire.com/news-release/2026/06/01/3303991/0/en/NVIDIA-Releases-Major-Collection-of-Open-Source-Agent-Tools-and-Skills-for-Physical-AI.html" target="_blank">GlobeNewswire</a> /
+      <a href="https://blogs.nvidia.com/blog/cvpr-physical-ai-research-agent-skills/" target="_blank">NVIDIA Blog</a>
+    </div>
+    <div class="comment">NVIDIAがGPUだけでなく「AIワークフローの標準化」まで握ろうとしている姿勢が鮮明だ。製造業各社がNVIDIAスタックに依存するエコシステムが形成されつつあり、長期的なベンダーロックインのリスクも検討する必要がある。</div>
+  </div>
+
+  <!-- ====== 低 ====== -->
+  <div class="section-title section-low">重要度：低</div>
+
+  <!-- 8. OpenAI GPT-5.6 秒読み -->
+  <div class="card low">
+    <span class="badge badge-low">重要度 低</span>
+    <h2>OpenAI、GPT-5.6 を今月末にリリース予定か―首席科学者が「意味のある飛躍」と予告、コンテキスト窓は最大150万トークンへ拡張見込み</h2>
+    <div class="body">
+      OpenAI の首席科学者は6月16日までに GPT-5.6 について「meaningful leap（意味のある飛躍）」と表現し、6月中のリリースを示唆した。予測市場Polymarketでは「6月30日までのパブリックリリース」に約80〜89%の確率が付いており、市場は月内公開を強く予測している。<br><br>
+      既報の仕様によると、GPT-5.6 は実用的な長文推論の文脈窓を150万トークン超に拡大し、エージェント的なワークフロー（計画→実行→エラー回復の多段階サイクル）の精度向上と、GPT-5.5 比で10〜15%のトークン効率改善を主眼とする。なお6月12日には旧モデル GPT-5.2 が正式廃止され、既存チャットは GPT-5.5 へ自動移行した。<br><br>
+      公式な発表はまだなく、仕様の多くはリーク・API ログ・予測市場に基づく。リリース時期および機能は変更の可能性がある。
+    </div>
+    <div class="source">
+      出典：
+      <a href="https://www.techtimes.com/articles/318492/20260616/gpt-56-openai-chief-scientist-calls-it-meaningful-leap-june-launch-nears.htm" target="_blank">TechTimes（2026年6月16日）</a> /
+      <a href="https://www.geeky-gadgets.com/gpt-5-6-june-2026-release/" target="_blank">Geeky Gadgets</a>
+    </div>
+    <div class="comment">150万トークンのコンテキスト窓が実用になれば、丸ごとの書籍・コードベース・長期プロジェクト記録を一括推論できるようになる。エンタープライズ向けRAGアーキテクチャの設計前提が変わる可能性がある。</div>
+  </div>
+
+  <!-- 9. Anthropic Claude エンタープライズ機能 -->
+  <div class="card low">
+    <span class="badge badge-low">重要度 低</span>
+    <h2>Anthropic、エンタープライズ向けMCPコネクタ（Okta対応）・Apple Foundation Models統合・法律プラグイン20本超を相次いでリリース</h2>
+    <div class="body">
+      Anthropicは6月に入り、Claude向けのエンタープライズ機能を矢継ぎ早にリリースした。まず注目されるのが「Enterprise MCP Connectors」で、Okta（IDaaS大手）との統合を皮切りに、IT管理者がコネクタを一度設定すれば全社員がClaude Chat・Claude Code・Cowork（Team/Enterprise プラン）でゼロタッチで利用できる仕組みを実現した。<br><br>
+      また、Appleが発表したFoundation Modelsフレームワーク（iOS 27 / iPadOS 27 / macOS 27 / visionOS 27 対応）とのClaude統合が発表され、Apple OSの新機能としてClaude推論がオンデバイスとの連携に乗り込む。法律分野向けには20本超の新MCPコネクタと12分野のプラグイン（リサーチ・契約・ディスカバリー・案件管理・法律扶助）を公開し、法律事務所や社内法務部門のワークフロー自動化を大幅に強化している。<br><br>
+      さらに6月15日には旧来モデルの廃止（Claude 3系一部）も実施されており、Anthropicは製品ラインの整理と最前線モデルへの集約を加速している。
+    </div>
+    <div class="source">
+      出典：
+      <a href="https://releasebot.io/updates/anthropic" target="_blank">Anthropic Release Notes（Releasebot 2026年6月）</a> /
+      <a href="https://releasebot.io/updates/anthropic/claude-code" target="_blank">Claude Code Updates</a> /
+      <a href="https://codersera.com/blog/anthropic-june-2026-billing-change-claude-code/" target="_blank">Codersera</a>
+    </div>
+    <div class="comment">Okta統合は企業IT部門の「AI接続の面倒さ」を一気に解決しうる施策で、エンタープライズ採用の加速装置になりえる。法律プラグインの充実はClaude専用の垂直SaaS市場を形成する動きとして注目したい。</div>
+  </div>
+
+  <div class="footer">
+    本簡報はWeb検索により収集した公開情報をまとめたものです。各記事の事実関係はリンク先の原典でご確認ください。<br>
+    生成日時：2026年6月20日 / 対象期間：直近24〜48時間（2026年6月18〜20日）<br>
+    © alphakt — AI Briefing
+  </div>
+</div>
+</body>
+</html>
