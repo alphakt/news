@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年6月21日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f0f2f7; color: #1a1f2e; line-height: 1.8; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #0f2460 0%, #1e3a8a 50%, #312e81 100%);
+    color: #fff; padding: 52px 24px 44px; text-align: center;
+    box-shadow: 0 6px 24px rgba(15,36,96,0.30);
+  }
+  .header .label {
+    display: inline-block; background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.35); border-radius: 20px;
+    font-size: 13px; padding: 4px 16px; letter-spacing: 1px; margin-bottom: 16px;
+  }
+  .header h1 { font-size: 32px; font-weight: 900; letter-spacing: 2px; margin-bottom: 10px; }
+  .header .date-str { font-size: 18px; opacity: 0.90; font-weight: 500; }
+  .header .subtitle { font-size: 14px; opacity: 0.75; margin-top: 8px; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 36px 20px 80px; }
+  .back-link {
+    display: inline-block; margin-bottom: 28px;
+    font-size: 14px; color: #4338ca; text-decoration: none;
+    border: 1px solid #c7d2fe; border-radius: 8px; padding: 6px 16px;
+    background: #fff; transition: background 0.15s;
+  }
+  .back-link:hover { background: #ede9fe; }
+
+  /* 重要度セクション */
+  .section { margin-bottom: 44px; }
+  .section-header {
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 20px; padding-bottom: 12px;
+    border-bottom: 3px solid currentColor;
+  }
+  .section-header.high { color: #b91c1c; }
+  .section-header.mid  { color: #b45309; }
+  .section-header.low  { color: #1d4ed8; }
+  .section-title { font-size: 22px; font-weight: 900; letter-spacing: 1px; }
+  .badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px; border-radius: 50%;
+    font-size: 13px; font-weight: 800; color: #fff; flex-shrink: 0;
+  }
+  .badge.high { background: #dc2626; }
+  .badge.mid  { background: #d97706; }
+  .badge.low  { background: #2563eb; }
+
+  /* ニュースカード */
+  .card {
+    background: #fff; border-radius: 16px;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.07);
+    margin-bottom: 22px; overflow: hidden;
+  }
+  .card-header {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 22px 26px 16px;
+  }
+  .card-num {
+    flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px; font-weight: 800; color: #fff; margin-top: 2px;
+  }
+  .card-num.high { background: #dc2626; }
+  .card-num.mid  { background: #d97706; }
+  .card-num.low  { background: #2563eb; }
+  .card-title { font-size: 20px; font-weight: 800; line-height: 1.4; color: #0f172a; }
+  .card-body { padding: 0 26px 20px; }
+  .card-summary {
+    font-size: 16px; line-height: 1.85; color: #374151;
+    margin-bottom: 16px;
+  }
+  .card-source {
+    font-size: 13px; color: #6b7280; margin-bottom: 12px;
+  }
+  .card-source a {
+    color: #4338ca; text-decoration: none; word-break: break-all;
+  }
+  .card-source a:hover { text-decoration: underline; }
+  .card-comment {
+    background: #f8f7ff; border-left: 4px solid #818cf8;
+    border-radius: 0 8px 8px 0; padding: 10px 16px;
+    font-size: 15px; color: #3730a3; font-style: italic;
+  }
+  .card-strip { height: 5px; }
+  .card-strip.high { background: linear-gradient(90deg, #dc2626, #f87171); }
+  .card-strip.mid  { background: linear-gradient(90deg, #d97706, #fbbf24); }
+  .card-strip.low  { background: linear-gradient(90deg, #2563eb, #60a5fa); }
+
+  .footer {
+    text-align: center; font-size: 13px; color: #9ca3af;
+    padding: 20px; border-top: 1px solid #e5e7eb; margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="label">alphakt 社内 AI 簡報</div>
+  <h1>AI 最新動向簡報</h1>
+  <div class="date-str">2026年6月21日（日）</div>
+  <div class="subtitle">過去48時間の注目トピック — LLM・ロボティクス・新モデル・スタートアップ・新概念</div>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== 高 ===== -->
+  <div class="section">
+    <div class="section-header high">
+      <div class="badge high">高</div>
+      <div class="section-title">重要度：高</div>
+    </div>
+
+    <!-- 1 -->
+    <div class="card">
+      <div class="card-strip high"></div>
+      <div class="card-header">
+        <div class="card-num high">1</div>
+        <div class="card-title">Anthropic、Fable 5 / Mythos 5 輸出規制問題 — 9日目：米国内ユーザーへの返金期限到来・モデル復旧「数日中」</div>
+      </div>
+      <div class="card-body">
+        <div class="card-summary">
+          6月9日に公開されたAnthropicの最高性能モデル「Claude Fable 5」および「Claude Mythos 5」は、6月12日に米国政府の輸出規制指令により外国籍ユーザー向けに停止された。その後、国籍別アクセス制御を即時実装できなかったAnthropicは全ユーザーへのアクセスを一時停止。6月20日は有料加入者への返金申請期限であった。Anthropicの国際担当責任者は「数日中に復旧させる」と表明しているが、6月21日時点で正式な復旧アナウンスはない。一方、100名超のサイバーセキュリティ専門家が米政府に規制撤回を求める公開書簡を発表。「Fable 5のジェイルブレーク脆弱性は他社モデルでも同様に存在する水準であり、商業モデルの回収を正当化する根拠にならない」と主張している。Anthropicはソウルにオフィスを開設し国際的な事業継続体制を強化する姿勢を示した。
+        </div>
+        <div class="card-source">
+          出典：
+          <a href="https://www.anthropic.com/news/fable-mythos-access" target="_blank">Anthropic公式声明 — Fable 5 / Mythos 5 アクセス停止について</a>
+          ／ <a href="https://natlawreview.com/article/ai-company-anthropic-suspends-access-claude-fable-5-claude-mythos-5-following-us" target="_blank">National Law Review (2026-06-13)</a>
+          ／ <a href="https://www.techtimes.com/articles/318668/20260618/fable-5-export-ban-day-six-anthropic-opens-seoul-office-vows-models-back-days.htm" target="_blank">TechTimes — Seoul Office (2026-06-18)</a>
+        </div>
+        <div class="card-comment">💬 AIモデルへの輸出規制という前例のない措置。「国籍」でAPIアクセスを制御するインフラが業界標準になるかもしれず、エンタープライズ調達の見直しが世界規模で起きるターニングポイントだ。</div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+      <div class="card-strip high"></div>
+      <div class="card-header">
+        <div class="card-num high">2</div>
+        <div class="card-title">MiniMax M3 正式リリース — 1Mトークン・ネイティブマルチモーダル・オープンウェイトでフロンティアモデルに迫る</div>
+      </div>
+      <div class="card-body">
+        <div class="card-summary">
+          中国のAIスタートアップMiniMaxが6月1日に公開したフラグシップモデル「M3」は、オープンウェイトながら100万トークンのコンテキストウィンドウ、テキスト・画像・動画のネイティブマルチモーダル処理、フロンティア水準のコーディング能力を一体化した初のモデルと位置付けられている。独自の「MSA（Mixture-of-Sparse-Attention）アーキテクチャ」により、100万トークン処理時のコンピュートを前世代比1/20に削減、プレフィルを9倍・デコードを15倍高速化した。コーディング能力の指標として広く使われるSWE-Bench Proでは59.0%を記録し、GPT-5.5やGemini 3.1 Proを上回りClaude Opus 4.7に迫る結果となった。Hugging FaceとGitHubにオープンウェイトが公開されており、MiniMax Code経由で即時利用可能。価格はGPT-5.5やClaude Opus比で5〜10%程度とされ、コスト対性能比で注目を集めている。
+        </div>
+        <div class="card-source">
+          出典：
+          <a href="https://www.minimax.io/blog/minimax-m3" target="_blank">MiniMax公式ブログ — Introducing MiniMax M3</a>
+          ／ <a href="https://venturebeat.com/technology/minimax-m3-debuts-eclipsing-gpt-5-5-and-gemini-3-1-pro-on-key-benchmark-performance-for-just-5-10-of-the-cost" target="_blank">VentureBeat (2026-06-01)</a>
+        </div>
+        <div class="card-comment">💬 「オープンウェイト＋1Mコンテキスト＋ネイティブマルチモーダル」の三拍子が揃い、クローズドモデルとの差が急速に縮まっている。特に長文書類分析・コードレビューへの実用化が一気に現実的になった。</div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+      <div class="card-strip high"></div>
+      <div class="card-header">
+        <div class="card-num high">3</div>
+        <div class="card-title">NVIDIA Cosmos 3 公開 — 物理AI向け世界初のオープン「オムニモデル」、訓練サイクルを数か月から数日へ</div>
+      </div>
+      <div class="card-body">
+        <div class="card-summary">
+          NVIDIAは6月1日のGTC Taipeiで「NVIDIA Cosmos 3」を発表・公開した。テキスト・画像・映像・音声・アクション（制御信号）の5モダリティをひとつのアーキテクチャで同時処理・生成できる「オムニモデル」はこれが世界初とされる。「Mixture-of-Transformers」と呼ばれる新アーキテクチャは、推論トランスフォーマーと専門生成トランスフォーマーを組み合わせ、物体インタラクション・運動・時空間関係を理解した上で映像とアクション軌道を生成する。ロボット・自動運転向けの合成データ生成と評価において物理AI訓練サイクルを「数か月から数日に」短縮できると主張。Hugging FaceにはNano版（8B+8B）とSuper版（32B+32B）の2バリアントが公開されており、Agile Robots・Runway・Skild AIなどが参加する「Cosmos Coalition」が生態系拡充を担う。
+        </div>
+        <div class="card-source">
+          出典：
+          <a href="https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai" target="_blank">NVIDIA Newsroom — Cosmos 3 (2026-06-01)</a>
+          ／ <a href="https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai" target="_blank">Hugging Face Blog — Cosmos 3</a>
+        </div>
+        <div class="card-comment">💬 VLM・動画生成・世界モデル・行動モデルを単一フレームワークに統合したことで、ロボット開発の「シミュレーション地獄」が大幅に解消されうる。物理AIの商用化加速に直結する重要リリースだ。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 中 ===== -->
+  <div class="section">
+    <div class="section-header mid">
+      <div class="badge mid">中</div>
+      <div class="section-title">重要度：中</div>
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+      <div class="card-strip mid"></div>
+      <div class="card-header">
+        <div class="card-num mid">4</div>
+        <div class="card-title">Microsoft、独自推論モデル「MAI-Thinking-1」発表 — OpenAIデータ不使用で AIME 2026 で 94.5%</div>
+      </div>
+      <div class="card-body">
+        <div class="card-summary">
+          Microsoft Build 2026（6月2日）でMicrosoftは自社初のフラグシップ推論モデル「MAI-Thinking-1」を含む7つのMAIモデルファミリーを発表した。MAI-Thinking-1はMoE（スパース混合エキスパート）アーキテクチャで約35Bのアクティブパラメータ、総パラメータ約1兆、コンテキスト256Kトークンを持つ。注目点はOpenAIモデルからの蒸留を一切使わず、トレーサブルな企業グレードのデータから純粋に訓練した点。AIME 2025で97.0%、AIME 2026で94.5%を記録。人間による盲目評価でもClaude Sonnet 4.6を上回る結果を示した。現在Microsoft Foundryプラットフォームでプライベートプレビュー提供中。MicrosoftがOpenAIへの戦略的依存を低減し独自AIスタックを構築する動きの一環として位置付けられている。
+        </div>
+        <div class="card-source">
+          出典：
+          <a href="https://microsoft.ai/news/introducing-mai-thinking-1/" target="_blank">Microsoft AI — Introducing MAI-Thinking-1</a>
+          ／ <a href="https://www.techtimes.com/articles/317631/20260602/microsoft-build-2026-mai-thinking-1-first-house-reasoning-model-trained-without-openai-data.htm" target="_blank">TechTimes (2026-06-02)</a>
+        </div>
+        <div class="card-comment">💬 MicrosoftがOpenAIと一線を画す独自モデルを持ったことで、AI基盤レイヤーの競争がさらに激化。Azure顧客にとっても「どのモデルをいつ使うか」の選択肢が増える点は実務上重要だ。</div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+      <div class="card-strip mid"></div>
+      <div class="card-header">
+        <div class="card-num mid">5</div>
+        <div class="card-title">Automate 2026 明日開幕（6/22〜25、シカゴ）— NVIDIAスポンサーのヒューマノイドロボット専用パビリオン設置</div>
+      </div>
+      <div class="card-body">
+        <div class="card-summary">
+          北米最大のロボット・自動化見本市「Automate 2026」が6月22日から25日にかけてシカゴ・マコーミックプレイスで開幕する。約5万人の来場者と1,000以上の出展企業が見込まれ、450,000平方フィートの展示スペースを占める過去最大規模となる。今回の目玉はNVIDIAがスポンサーを務める「ヒューマノイドロボット専用パビリオン」で、世界中から20機種超のヒューマノイドロボットが集結し実演とプレゼンテーションを行う。有料プログラムの「ヒューマノイドロボットフォーラム」（6/23〜24）では開発・導入・要素技術の深掘りセッションが予定されている。Agility Robotics、Figure AI、1X、Unitree、Boston Dynamicsなど主要メーカーが出展予定とされており、産業AI・機械視覚・モーション制御・安全基準も主要テーマとして取り上げられる。
+        </div>
+        <div class="card-source">
+          出典：
+          <a href="https://www.automateshow.com/education-networking/humanoid-robot-pavilion" target="_blank">Automate 2026 — Humanoid Robot Pavilion</a>
+          ／ <a href="https://www.marketscale.com/industries/industrial-iot/a3s-automate-2026-puts-humanoid-robots-industrial-ai-and-safety-standards-at-center-stage" target="_blank">MarketScale — Automate 2026 preview</a>
+        </div>
+        <div class="card-comment">💬 ヒューマノイドロボット専用パビリオンが設けられるのは初。産業現場への実装フェーズへの移行を象徴するイベントであり、今後の発表に注目だ。</div>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="card">
+      <div class="card-strip mid"></div>
+      <div class="card-header">
+        <div class="card-num mid">6</div>
+        <div class="card-title">BYD、ヒューマノイドロボット開発を正式確認 — コードネーム「Yao-Shun-Yu」、EV販売網経由での販売構想も</div>
+      </div>
+      <div class="card-body">
+        <div class="card-summary">
+          中国EV最大手のBYDがヒューマノイドロボット開発への参入を正式に認め、「次のコアビジネス」と位置付けることを表明した。プロジェクトコードネームは「Yao-Shun-Yu（尭舜禹）」で2022年より秘密裏に進行しており、BYDの第15事業部（電子統合・インテリジェンス担当）が主管している。副会長のLi Ke氏は「勝負を左右するのは製造力・ソフトウェア・ハードウェアの三要素であり、自動車とロボティクスは技術基盤を共有する」と述べ、初期段階では工業用ロボットを最優先に開発すると明言。将来的には全国の自動車ディーラーネットワーク経由での販売も検討しており、「BYD自身がロボットの最大の顧客になる」とも宣言した。バッテリー・センサー・AIソフトウェアの内製力がロボティクスにおいても競争優位となる見込みだ。
+        </div>
+        <div class="card-source">
+          出典：
+          <a href="https://cnevpost.com/2026/06/03/byd-enters-humanoid-robot-market/" target="_blank">CnEVPost — BYD enters humanoid robot market (2026-06-03)</a>
+          ／ <a href="https://pandaily.com/byd-secretly-develops-humanoid-robot-codename-yao-shun--jun2026" target="_blank">Pandaily — BYD Codename Yao-Shun-Yu</a>
+        </div>
+        <div class="card-comment">💬 EV覇者がロボティクスに転じる構図はTeslaの既視感があるが、BYDの圧倒的な製造コスト競争力はロボット市場での価格破壊につながる可能性が高い。</div>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="card">
+      <div class="card-strip mid"></div>
+      <div class="card-header">
+        <div class="card-num mid">7</div>
+        <div class="card-title">Gemini 3.5 Pro、限定プレビューのまま — 2Mトークン・Deep Think推論、GA（一般提供）は6月末に50〜55%の確率か</div>
+      </div>
+      <div class="card-body">
+        <div class="card-summary">
+          Googleが5月19日のGoogle I/Oで予告した「Gemini 3.5 Pro」は、6月19日時点でVertex AI法人向けの限定プレビューにとどまり、Geminiアプリ・AI Studio・一般ユーザー向けサブスクへの展開は実現していない。仕様として200万トークンのコンテキストウィンドウ（現行Gemini 3.1 Proの2倍）と、拡張思考モードの「Deep Think」（OpenAIのo3類似）が報告されている。価格は推定$15/$60（入力/出力・100万トークンあたり）でClaude Sonnet 4.6と競合帯。Sundar Pichai氏がI/Oで「来月まで待ってほしい」と発言し会場から落胆の声が上がったことは記憶に新しく、予測市場では6月30日以前リリースの確率を50〜55%と見込んでいる。一方Gemini 3.5 Flashは既に5月19日にGA済みで、ベンチマーク上は昨年のProモデルを凌駕するとされる。
+        </div>
+        <div class="card-source">
+          出典：
+          <a href="https://www.techtimes.com/articles/317919/20260606/google-gemini-35-pro-nears-june-launch-2-million-token-context-deep-think-reasoning.htm" target="_blank">TechTimes — Gemini 3.5 Pro nears launch (2026-06-06)</a>
+          ／ <a href="https://codersera.com/blog/gemini-3-5-complete-guide-2026/" target="_blank">CoderSera — Gemini 3.5 Complete Guide</a>
+        </div>
+        <div class="card-comment">💬 2Mトークンコンテキストが実現すれば長大なコードベース全体をプロンプトに収める運用が現実的になる。ただ「6月中リリース」は半々程度のオッズであり続報に注目。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 低 ===== -->
+  <div class="section">
+    <div class="section-header low">
+      <div class="badge low">低</div>
+      <div class="section-title">重要度：低</div>
+    </div>
+
+    <!-- 8 -->
+    <div class="card">
+      <div class="card-strip low"></div>
+      <div class="card-header">
+        <div class="card-num low">8</div>
+        <div class="card-title">DeepSeek V4 Pro、75%値下げを永続化 — Huawei Ascend 950上での効率化が価格破壊を持続可能に</div>
+      </div>
+      <div class="card-body">
+        <div class="card-summary">
+          DeepSeekは5月25日、V4 Pro APIの75%割引プロモーションを終了せず永続価格として正式化したと発表した。新料金は100万トークンあたり$0.003625〜$0.87（ブレンド換算で約$0.18）で、旧価格比で4分の1となる。同社は「割引ではなく、効率化の成果を還元しているだけだ」と説明しており、その背景にはHuawei Ascend 950/950PRシステムの普及によるインフラコスト低下があるとされる。この価格帯はかつて小型・非推論モデル向けとされていた領域であり、フロンティア規模の推論モデルが低価格帯に入り込んだことはAIエージェント・コーディングツール・長コンテキストワークフローの商用化コストを劇的に引き下げる。DeepSeek V4 Pro（非Pro）と合わせ、米中AI価格競争はさらに激化している。
+        </div>
+        <div class="card-source">
+          出典：
+          <a href="https://www.infoworld.com/article/4176709/deepseeks-steep-v4-pro-price-cut-escalates-ai-pricing-war.html" target="_blank">InfoWorld — DeepSeek V4-Pro price cut (2026-05)</a>
+          ／ <a href="https://thenextweb.com/news/deepseek-v4-pro-75-percent-price-cut-permanent" target="_blank">The Next Web — AI price war escalates</a>
+        </div>
+        <div class="card-comment">💬 API単価が「推論モデルでも$0.18/1M」まで下がったことで、AIエージェントの「常時稼働コスト」が現実的な事業コストになってきた。国産AIへの切り替えを検討する際の比較基準として注目しておきたい。</div>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="card">
+      <div class="card-strip low"></div>
+      <div class="card-header">
+        <div class="card-num low">9</div>
+        <div class="card-title">Waymo、ロンドンで自動運転フェーズ移行 — Jaguar I-Pace 100台が100平方マイルをテスト、9月商業サービス目標</div>
+      </div>
+      <div class="card-body">
+        <div class="card-summary">
+          Waymo（Alphabet傘下）は4月14日にロンドンでの自動運転テストを公式発表し、以降も自律走行フェーズを継続拡張している。現在は全電動ジャガーI-Pace約100台がロンドン市内100平方マイル（約260km²）のエリアで走行しており、安全オペレーターが同乗した状態で実際の市街地での自動運転データを蓄積中。Waymo初の国際展開として同社の存在感を示し、Londonロンドン・オックスフォードには国際エンジニアリングハブも設置済みだ。商業ロボタクシーサービスの目標は2026年9月とされているが、英国政府による認可プロセスの完了が前提条件となる。米国（サンフランシスコ・フェニックス等）では週数十万件規模の無人ライドを既に提供しており、同テクノロジーの欧州初展開として規制面でも注目を集めている。
+        </div>
+        <div class="card-source">
+          出典：
+          <a href="https://techcrunch.com/2026/04/14/london-gets-closer-to-its-first-robotaxi-service-as-waymo-begins-testing/" target="_blank">TechCrunch — Waymo London testing (2026-04-14)</a>
+          ／ <a href="https://waymo.com/waymo-in-uk/" target="_blank">Waymo in UK — 公式ページ</a>
+        </div>
+        <div class="card-comment">💬 欧州の厳格な規制環境でWaymoがどう認可を通過するかは、他国でのロボタクシー普及の試金石になる。9月ローンチが実現すれば業界全体の追い風になるだろう。</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    alphakt 社内向け AI最新動向簡報 — 2026年6月21日号 ／ 生成：Claude Sonnet 4.6<br>
+    情報の正確性には最善を尽くしていますが、最新情報は各出典をご確認ください。
+  </div>
+</div>
+
+</body>
+</html>
