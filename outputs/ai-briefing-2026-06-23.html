@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年6月23日号</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+    background: #0f1117;
+    color: #e2e8f0;
+    line-height: 1.8;
+    font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1a1f2e 0%, #252d3f 100%);
+    border-bottom: 3px solid #3b82f6;
+    padding: 40px 20px 30px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #f1f5f9;
+    letter-spacing: 0.03em;
+    margin-bottom: 8px;
+  }
+  .header .date {
+    font-size: 1.15rem;
+    color: #94a3b8;
+    letter-spacing: 0.08em;
+  }
+  .header .tagline {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #64748b;
+  }
+  .back-link {
+    text-align: center;
+    padding: 12px;
+    background: #1a1f2e;
+    border-bottom: 1px solid #2d3748;
+  }
+  .back-link a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .back-link a:hover { text-decoration: underline; }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+  }
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 40px 0 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #94a3b8;
+  }
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #2d3748;
+  }
+  .card {
+    background: #1a1f2e;
+    border-radius: 12px;
+    border: 1px solid #2d3748;
+    padding: 28px 30px;
+    margin-bottom: 20px;
+    transition: border-color 0.2s;
+  }
+  .card:hover { border-color: #4a5568; }
+  .card.high {
+    border-left: 5px solid #ef4444;
+    background: #1a1f2e;
+  }
+  .card.medium {
+    border-left: 5px solid #f59e0b;
+    background: #1a1f2e;
+  }
+  .card.low {
+    border-left: 5px solid #10b981;
+    background: #1a1f2e;
+  }
+  .card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .badge {
+    flex-shrink: 0;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-top: 3px;
+  }
+  .badge.high { background: #7f1d1d; color: #fca5a5; }
+  .badge.medium { background: #78350f; color: #fcd34d; }
+  .badge.low { background: #064e3b; color: #6ee7b7; }
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    line-height: 1.4;
+  }
+  .card-summary {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-top: 4px;
+    font-style: italic;
+  }
+  .card-body {
+    font-size: 1rem;
+    color: #cbd5e1;
+    line-height: 1.85;
+    margin-bottom: 16px;
+  }
+  .meta-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #2d3748;
+  }
+  .source-link {
+    font-size: 0.88rem;
+    color: #60a5fa;
+    text-decoration: none;
+  }
+  .source-link:hover { text-decoration: underline; }
+  .comment-box {
+    background: #0f1117;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    color: #a78bfa;
+    margin-top: 14px;
+  }
+  .comment-box::before {
+    content: '💬 編集コメント：';
+    font-weight: 700;
+    color: #7c3aed;
+  }
+  .footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #4a5568;
+    font-size: 0.85rem;
+    border-top: 1px solid #2d3748;
+  }
+  .footer a { color: #60a5fa; text-decoration: none; }
+  .toc {
+    background: #1a1f2e;
+    border: 1px solid #2d3748;
+    border-radius: 12px;
+    padding: 22px 26px;
+    margin-bottom: 36px;
+  }
+  .toc h2 {
+    font-size: 0.9rem;
+    color: #64748b;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .toc ol {
+    padding-left: 22px;
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 2;
+  }
+  .toc ol li a {
+    color: #60a5fa;
+    text-decoration: none;
+  }
+  .toc ol li a:hover { text-decoration: underline; }
+  @media (max-width: 600px) {
+    .header h1 { font-size: 1.5rem; }
+    .card-title { font-size: 1.1rem; }
+    .card { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="date">2026年6月23日（火）</div>
+  <h1>AI最新動向簡報</h1>
+  <div class="tagline">過去24〜48時間のAI重要動向をまとめてお届けします</div>
+</div>
+
+<div class="back-link">
+  <a href="../index.html">← 一覧へ戻る</a>
+</div>
+
+<div class="container">
+
+  <!-- Table of Contents -->
+  <div class="toc">
+    <h2>本日のトピック（全9件）</h2>
+    <ol>
+      <li><a href="#story1">Claude Fable 5 / Mythos 5、米輸出規制で全世界停止中——復活の見通し立たず</a></li>
+      <li><a href="#story2">Transformer共著者 Noam Shazeer、GoogleからOpenAIへ移籍</a></li>
+      <li><a href="#story3">ChatGPT、史上初めて市場シェア50%割れ——GeminiとClaudeが急追</a></li>
+      <li><a href="#story4">Apple WWDC 2026：Google Gemini搭載の「Siri AI」を発表</a></li>
+      <li><a href="#story5">中国、2950億ドルのAIインフラ5カ年計画を発表</a></li>
+      <li><a href="#story6">Microsoft Build 2026：自社開発AIコーディングモデル「MAI-Code-1-Flash」発表</a></li>
+      <li><a href="#story7">WeRide・Uber・AVOMO、マドリードでスペイン初のロボタクシー展開へ</a></li>
+      <li><a href="#story8">BYD、ヒューマノイドロボット開発を正式確認</a></li>
+      <li><a href="#story9">Google Lyria 3 Pro、音楽生成AIが複数プラットフォームで拡大展開</a></li>
+    </ol>
+  </div>
+
+  <!-- HIGH IMPORTANCE -->
+  <div class="section-title">重要度：高</div>
+
+  <div class="card high" id="story1">
+    <div class="card-header">
+      <span class="badge high">高</span>
+      <div>
+        <div class="card-title">Claude Fable 5 / Mythos 5、米輸出規制で全世界停止中——復活の見通し立たず</div>
+        <div class="card-summary">史上最強クラスのLLMが、発売からわずか3日で米商務長官の命令により世界全土で停止</div>
+      </div>
+    </div>
+    <div class="card-body">
+      Anthropicは6月9日（火）にClaude Fable 5とClaude Mythos 5を正式公開した。Fable 5は一般公開向けの最上位モデルで、Mythos 5と同等のアーキテクチャを採用しながら安全フィルターを強化したバージョンだ。コンテキストウィンドウ1Mトークン、最大128kトークンの出力に対応し、ソフトウェアエンジニアリング・科学研究・ビジョンタスクで全ベンチマーク1位を記録した。<br><br>
+      しかし公開からわずか3日後の6月12日（金）、米商務長官Howard Lutnick氏が輸出規制指令を発令。「外国籍の人物」（海外在住の米国人を含む）へのアクセスを直ちに停止するよう命じた。AnthropicはClaude APIから両モデルをシャットダウン。AWS Bedrock、Google Vertex AI、Microsoft Foundryのすべてから一斉に削除された。<br><br>
+      6月23日現在（停止から11日目）も両モデルは世界全土でオフライン状態が続いている。Anthropicは復活時期を公表しておらず、予測市場では「7月1日前に復活」を57%と見ている。米政府との交渉がどう進展するかが今後の焦点だ。
+    </div>
+    <div class="meta-row">
+      <span style="color:#64748b; font-size:0.85rem;">発生：2026年6月9日リリース → 6月12日停止</span>
+      <a href="https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/" class="source-link" target="_blank">出典：TechCrunch</a>
+    </div>
+    <div class="meta-row" style="border-top:none; padding-top:0; margin-top:4px;">
+      <span></span>
+      <a href="https://www.cnbc.com/2026/06/09/anthropic-mythos-claude-fable-5.html" class="source-link" target="_blank">出典：CNBC</a>
+    </div>
+    <div class="comment-box">
+      モデルの能力が急速に上昇した結果、国家安全保障との摩擦が現実となった歴史的な出来事。「能力が高すぎるモデルは輸出規制対象になりうる」という前例が生まれたことは、今後のAI開発・リリース戦略に大きな影響を与えるだろう。
+    </div>
+  </div>
+
+  <div class="card high" id="story2">
+    <div class="card-header">
+      <span class="badge high">高</span>
+      <div>
+        <div class="card-title">Transformer共著者 Noam Shazeer、GoogleからOpenAIへ移籍</div>
+        <div class="card-summary">現代AI全モデルの基盤となるTransformerを生み出した研究者がOpenAIに合流</div>
+      </div>
+    </div>
+    <div class="card-body">
+      6月18日（水）、GoogleのGemini担当副社長（VP of Engineering）兼共同リードを務めていたNoam Shazeer氏がOpenAIに移籍することを発表した。Shazeer氏は2017年のTransformer論文（"Attention Is All You Need"）の共著者として知られ、ChatGPTからGeminiまで現在のすべての主要AIモデルの基盤技術を生み出した伝説的な研究者だ。<br><br>
+      Shazeer氏は2021年にGoogleを離れ、Character.AIを共同創業。2024年8月にGoogleが27億ドルを投じてCharacter.AIの知財・チームを買収した際にGoogle DeepMindへ復帰していたが、わずか2年足らずで再びGoogleを去ることになった。<br><br>
+      OpenAIでの役職は「Architecture Research Lead」——すべてのOpenAIモデルの物理的なニューラルネットワーク構造を担当する最重要ポストだ。OpenAI CEOのSam Altman氏は「OpenAI創業当初から最も一緒に働きたかった人物の一人」とコメント。Gemini開発の要が競合に移ったことはGoogleにとって大きな打撃となる。
+    </div>
+    <div class="meta-row">
+      <span style="color:#64748b; font-size:0.85rem;">発生：2026年6月18日</span>
+      <a href="https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html" class="source-link" target="_blank">出典：CNBC</a>
+    </div>
+    <div class="meta-row" style="border-top:none; padding-top:0; margin-top:4px;">
+      <span></span>
+      <a href="https://www.fastcompany.com/91562193/google-ai-leader-noam-shazeer-leaves-company-for-openai" class="source-link" target="_blank">出典：Fast Company</a>
+    </div>
+    <div class="comment-box">
+      「Attention Is All You Need」の著者がOpenAIに加わる意義は計り知れない。Googleが27億ドルで連れ戻したエンジニアをOpenAIに奪われたことは、AIタレント争奪戦がいかに激しいかを改めて示している。
+    </div>
+  </div>
+
+  <div class="card high" id="story3">
+    <div class="card-header">
+      <span class="badge high">高</span>
+      <div>
+        <div class="card-title">ChatGPT、史上初めて市場シェア50%割れ——GeminiとClaudeが急追</div>
+        <div class="card-summary">ChatGPTが46.4%に下落。AIアシスタント市場の競争構造が根本から変わりつつある</div>
+      </div>
+    </div>
+    <div class="card-body">
+      2022年のリリース以来、AI会話サービスの絶対王者の座にあったChatGPTが、2026年5月時点で市場シェア46.4%まで低下し、初めて50%を割り込んだことが各調査機関のレポートで明らかになった。2024年12月時点では65.3%だったが、17ヶ月で約19ポイントも下落した。<br><br>
+      Geminiは27.7%（月間アクティブユーザー6.62億人）まで急伸した。その主因はAndroidへのOS組み込み——旧Google AssistantがGeminiに置き換わり、世界最大のモバイルプラットフォームで標準AIとなったことが大きい。一方ClaudeはわずかX月で6,000万人から2.45億人へと4倍以上に急増し10.3%を獲得。有料転換率は13%と主要プロバイダー中最高だ。<br><br>
+      注目すべきはChatGPTが絶対数では成長していること——2026年6月には月間10億ユーザーを達成した。ただし競合の成長速度が圧倒的に速い。OpenAIとの国防総省契約をめぐる信頼性懸念、GeminiのマルチモーダルUX改善、ClaudeのAPIへの強い支持が背景にある。
+    </div>
+    <div class="meta-row">
+      <span style="color:#64748b; font-size:0.85rem;">発生：2026年6月17日レポート公表</span>
+      <a href="https://www.techtimes.com/articles/318556/20260617/chatgpts-ai-assistant-market-share-falls-below-50-first-time-gemini-claude-surge.htm" class="source-link" target="_blank">出典：TechTimes</a>
+    </div>
+    <div class="meta-row" style="border-top:none; padding-top:0; margin-top:4px;">
+      <span></span>
+      <a href="https://www.fastcompany.com/91560276/chatgpt-loses-ground-gemini-claude-below-50-percent-market-share" class="source-link" target="_blank">出典：Fast Company</a>
+    </div>
+    <div class="comment-box">
+      AIアシスタント市場に「一強」時代の終焉が近づいている。Geminiの伸びはOS統合戦略という圧倒的な流通力の勝利。Claudeの伸びは品質への信頼。この二方向の挟み撃ちはOpenAIにとって真剣な脅威だ。
+    </div>
+  </div>
+
+  <!-- MEDIUM IMPORTANCE -->
+  <div class="section-title">重要度：中</div>
+
+  <div class="card medium" id="story4">
+    <div class="card-header">
+      <span class="badge medium">中</span>
+      <div>
+        <div class="card-title">Apple WWDC 2026：Google Gemini搭載の「Siri AI」を発表</div>
+        <div class="card-summary">Appleが約10億ドル/年でGeminiモデルをライセンス取得し、Siriを生成AI時代向けに全面刷新</div>
+      </div>
+    </div>
+    <div class="card-body">
+      6月8日（月）に開催されたWWDC 2026基調講演で、AppleはSiriを「Siri AI」として全面刷新することを発表した。GoogleのGeminiをベースにしたカスタムモデル（推定1.2兆パラメータ）を採用し、Appleが年間約10億ドルのライセンス料を支払う契約が成立している。<br><br>
+      新Siriは音声とテキストの両方で対話可能な全画面型の「Ask Siri」UIを採用。画面内容の理解、アプリを横断したタスク実行、個人コンテキストへのアクセスが可能になった。オンデバイス処理とPrivate Cloud Computeを組み合わせたハイブリッドアーキテクチャで、プライバシーを維持しながら大規模モデルの能力を引き出す設計だ。<br><br>
+      iOS 27 / macOS 27（Golden Gate）/ iPadOS 27など全プラットフォームと共に2026年秋の公開を予定。開発者向けベータは基調講演翌日から、パブリックベータは7月から提供される。
+    </div>
+    <div class="meta-row">
+      <span style="color:#64748b; font-size:0.85rem;">発生：2026年6月8日（WWDC 2026）</span>
+      <a href="https://www.business-standard.com/technology/tech-news/wwdc-2026-apple-unveils-siri-ai-gemini-powered-apple-intelligence-more-126060900042_1.html" class="source-link" target="_blank">出典：Business Standard</a>
+    </div>
+    <div class="meta-row" style="border-top:none; padding-top:0; margin-top:4px;">
+      <span></span>
+      <a href="https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/" class="source-link" target="_blank">出典：MacRumors</a>
+    </div>
+    <div class="comment-box">
+      AppleがGoogleとOpenAIに次ぐ第三の有力なAIアシスタント配布チャネルとなる可能性がある。iPhoneユーザー15億人以上へのリーチは桁違いで、一般消費者へのAI普及を大きく加速させるだろう。
+    </div>
+  </div>
+
+  <div class="card medium" id="story5">
+    <div class="card-header">
+      <span class="badge medium">中</span>
+      <div>
+        <div class="card-title">中国、2950億ドルのAIインフラ5カ年計画を発表</div>
+        <div class="card-summary">全国データセンターネットワーク構築に国家債を投入。Huawei製チップで米半導体依存を排除する戦略</div>
+      </div>
+    </div>
+    <div class="card-body">
+      中国政府は6月9日、国家発展改革委員会（NDRC）が主導する5カ年AIインフラ計画の概要をBloombergが入手したことで明らかになった。総額2950億ドル（年間約590億ドル）を投じ、全国に相互接続されたデータセンターネットワークを構築する計画だ。<br><br>
+      実施主体はChina MobileやChina Telecomなどの国有通信企業。使用する技術の80%以上をHuaweiをはじめとする国内サプライヤーから調達し、NVIDIAやAMDの製品への依存を事実上排除する。電力インフラの整備も同時並行で進める予定で、電力網統合を含めると総投資額は7350億ドルに達する可能性がある。<br><br>
+      資金調達は超長期国債（10年超）と国家戦略産業向け国有ファンドを中心に行う予定。米中AI競争の激化を背景に、中国は自立したAI生産基盤の構築を国家戦略として推進している。
+    </div>
+    <div class="meta-row">
+      <span style="color:#64748b; font-size:0.85rem;">発生：2026年6月9〜12日（Bloomberg報道）</span>
+      <a href="https://www.bloomberg.com/news/articles/2026-06-09/china-prepares-295-billion-plan-to-fund-nationwide-ai-buildout" class="source-link" target="_blank">出典：Bloomberg</a>
+    </div>
+    <div class="comment-box">
+      Fable 5の輸出規制（前述）と本計画は表裏一体——米国が先端AIの流出を防ごうとすればするほど、中国は自前のインフラと技術スタックへの投資を加速させる。デカップリングが双方向で進んでいる。
+    </div>
+  </div>
+
+  <div class="card medium" id="story6">
+    <div class="card-header">
+      <span class="badge medium">中</span>
+      <div>
+        <div class="card-title">Microsoft Build 2026：自社開発AIコーディングモデル「MAI-Code-1-Flash」発表</div>
+        <div class="card-summary">OpenAI依存から脱却を図るMicrosoftが、初の自社コーディングAIを投入</div>
+      </div>
+    </div>
+    <div class="card-body">
+      サンフランシスコで開催されたBuild 2026カンファレンスで、Microsoftは自社ブランド「MAI（Microsoft AI）」シリーズの初弾として、コード生成特化モデル「MAI-Code-1-Flash」と推論モデル「MAI-Thinking-1」を発表した。MAI-Code-1-Flashはテキスト記述からアプリケーションのソースコードを生成するモデルで、MAI-Thinking-1は高効率・低コストの推論を実現する。<br><br>
+      同時に、Microsoftが開発したAIコンテキストレイヤー「Work IQ」も発表された。Microsoft 365、社内システム、外部データを横断的に接続するエンタープライズ向けインフラで、アシスタントがより深い業務コンテキストを持てるようになる。<br><br>
+      Claude Codeが席巻するAIコーディング市場にMicrosoftが本格参入した形。GoogleもGoogle I/Oで月額100ドルのAI開発者サブスクリプションを発表するなど、AnthropicとOpenAIが独占してきたコーディングAI分野に大手2社が相次いで参戦している。
+    </div>
+    <div class="meta-row">
+      <span style="color:#64748b; font-size:0.85rem;">発生：2026年6月1〜2日（Build 2026）</span>
+      <a href="https://www.cnbc.com/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html" class="source-link" target="_blank">出典：CNBC</a>
+    </div>
+    <div class="meta-row" style="border-top:none; padding-top:0; margin-top:4px;">
+      <span></span>
+      <a href="https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html" class="source-link" target="_blank">出典：CNBC（Microsoft MAI発表）</a>
+    </div>
+    <div class="comment-box">
+      MicrosoftがOpenAI製モデルへの依存を減らす動きは、両社の関係の変質を示唆する。AzureにとってOpenAIは顧客でもあり競合でもある——このジレンマがいずれ表面化するだろう。
+    </div>
+  </div>
+
+  <!-- LOW IMPORTANCE -->
+  <div class="section-title">重要度：低</div>
+
+  <div class="card low" id="story7">
+    <div class="card-header">
+      <span class="badge low">低</span>
+      <div>
+        <div class="card-title">WeRide・Uber・AVOMO、マドリードでスペイン初のロボタクシー展開へ</div>
+        <div class="card-summary">欧州・中東に続き、WeRideがUberと組んでスペインの自動運転タクシー市場を開拓</div>
+      </div>
+    </div>
+    <div class="card-body">
+      6月2日、WeRide（中国系自動運転スタートアップ）・Uber・AVOMO（Moove Carsグループ傘下）の3社がスペイン初の商業用ロボタクシーサービスをマドリード広域圏で開始することを発表した。マドリード地方政府とも連携し、Uberアプリから乗車予約ができる形で展開する予定だ。<br><br>
+      当初は車両オペレーター（安全運転監視員）が同乗した形で運営し、段階的に完全自動運転化を目指す。両社の既存合意に基づく15都市展開計画の4都市目にあたり、残る11都市を2030年までに開拓する見通し。WeRideにとってはアトランタ・オースティン（米国）、UAE・サウジアラビア（中東）に次ぐ5番目の欧州市場参入となる。
+    </div>
+    <div class="meta-row">
+      <span style="color:#64748b; font-size:0.85rem;">発生：2026年6月2日</span>
+      <a href="https://investor.uber.com/news-events/news/press-release-details/2026/WeRide-Uber-and-AVOMO-Bring-Robotaxis-to-Madrid/default.aspx" class="source-link" target="_blank">出典：Uber IR（公式プレスリリース）</a>
+    </div>
+    <div class="meta-row" style="border-top:none; padding-top:0; margin-top:4px;">
+      <span></span>
+      <a href="https://www.globenewswire.com/news-release/2026/06/02/3304896/0/en/weride-uber-and-avomo-bring-robotaxis-to-madrid.html" class="source-link" target="_blank">出典：GlobeNewswire</a>
+    </div>
+    <div class="comment-box">
+      Uber自身はAV技術を持たないが、WeRideなどのAVプロバイダーと提携することで各都市に根ざした規制・運営パートナーとして機能する戦略が明確になってきた。プラットフォーム戦略の真骨頂といえる。
+    </div>
+  </div>
+
+  <div class="card low" id="story8">
+    <div class="card-header">
+      <span class="badge low">低</span>
+      <div>
+        <div class="card-title">BYD、ヒューマノイドロボット開発を正式確認</div>
+        <div class="card-summary">世界最大のEVメーカーが、次のコアビジネスとしてロボット事業への参入を宣言</div>
+      </div>
+    </div>
+    <div class="card-body">
+      6月3〜4日、BYDの上級副社長Stella Li氏が、同社がヒューマノイドロボットの開発を行っていることを公式に認めた。コードネーム「Yao-Shun-Yu」として4年以上前から秘密裏に進められていたプロジェクトで、専用のロボット部門の設立が昨年6月に完了したという。<br><br>
+      BYDはオープンプラットフォーム戦略を採用し、自社開発ロボットの生産だけでなく他社製品との協業も視野に入れている。初期展開はBYDの世界4Sディーラーネットワークでの接客・案内業務に絞り、将来的には家庭内の清掃・料理・介護補助への展開も計画中だ。Li氏はヒューマノイドロボットをEV事業と並ぶ次の柱に育てると明言した。<br><br>
+      テスラのOptimus、中国のUnitreeやGalaxyなど競合が割拠する中、BYDが持つバッテリー技術・センサーサプライチェーン・AIソフトウェア能力は強力な参入障壁を形成する可能性がある。
+    </div>
+    <div class="meta-row">
+      <span style="color:#64748b; font-size:0.85rem;">発生：2026年6月3〜4日</span>
+      <a href="https://cnevpost.com/2026/06/03/byd-enters-humanoid-robot-market/" class="source-link" target="_blank">出典：CnEVPost</a>
+    </div>
+    <div class="meta-row" style="border-top:none; padding-top:0; margin-top:4px;">
+      <span></span>
+      <a href="https://technode.com/2026/06/04/byd-is-developing-humanoid-robots-according-to-source/" class="source-link" target="_blank">出典：TechNode</a>
+    </div>
+    <div class="comment-box">
+      BYDの参入は、ヒューマノイドロボット競争が「AIソフトウェア会社のハードウェア挑戦」から「製造業の巨人たちの物量戦」に移行しつつあることを示す転換点だ。EV産業で見せた「量産コスト引き下げ」を再演できるか注目したい。
+    </div>
+  </div>
+
+  <div class="card low" id="story9">
+    <div class="card-header">
+      <span class="badge low">低</span>
+      <div>
+        <div class="card-title">Google Lyria 3 Pro、音楽生成AIが複数プラットフォームで拡大展開</div>
+        <div class="card-summary">3分の楽曲生成・ボーカル付きアレンジが可能なLyria 3 Proが、Geminiアプリなど6プラットフォームに対応</div>
+      </div>
+    </div>
+    <div class="card-body">
+      Google DeepMindが開発した音楽生成モデルLyria 3の上位版「Lyria 3 Pro」が、Vertex AI・Google AI Studio・Gemini API・Google Vids・Geminiアプリ・ProducerAIの6プラットフォームで利用可能になった。最大3分間の楽曲生成に対応し、テキストプロンプト・画像・動画から音楽を生成できる。<br><br>
+      技術的には44.1kHzのステレオ音声出力、ボーカル・歌詞・フルインストゥルメンタルアレンジを含む構造的一貫性を持つ楽曲を生成可能。安全対策として、すべての出力にAI生成物であることを示す不可視透かし「SynthID」が埋め込まれており、プロンプトにアーティスト名が含まれる場合はスタイルのインスピレーションとして参照するにとどまり、特定アーティストの模倣は行わない。<br><br>
+      一方でGoogleはインディーアーティストからLyriaの学習データとしてYouTube楽曲を無断使用したとして訴訟を起こされており（Google側はYouTube利用規約への同意がライセンスに当たると主張）、著作権問題は継続している。
+    </div>
+    <div class="meta-row">
+      <span style="color:#64748b; font-size:0.85rem;">発生：2026年3月リリース、6月に機能・展開拡大</span>
+      <a href="https://deepmind.google/models/lyria/" class="source-link" target="_blank">出典：Google DeepMind（公式）</a>
+    </div>
+    <div class="meta-row" style="border-top:none; padding-top:0; margin-top:4px;">
+      <span></span>
+      <a href="https://techcrunch.com/2026/03/25/google-launches-lyria-3-pro-music-generation-model/" class="source-link" target="_blank">出典：TechCrunch</a>
+    </div>
+    <div class="comment-box">
+      YouTubeを経由したライセンス論理は、他のメディアプラットフォームにも同様の議論を波及させる可能性がある。AI音楽生成の技術革新と著作権フレームワークの整備が競争しており、法的決着が業界構造を大きく左右するだろう。
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内AI動向簡報 | 2026年6月23日号</p>
+  <p style="margin-top:8px;"><a href="../index.html">← アーカイブ一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
