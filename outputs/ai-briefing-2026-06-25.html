@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年6月25日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 52px 24px 44px; text-align: center;
+    box-shadow: 0 4px 20px rgba(30,58,138,0.25);
+  }
+  .header .label { font-size: 13px; letter-spacing: 3px; opacity: 0.8; margin-bottom: 10px; text-transform: uppercase; }
+  .header h1 { font-size: 32px; font-weight: 800; letter-spacing: 1px; margin-bottom: 10px; }
+  .header .date { font-size: 20px; opacity: 0.95; font-weight: 600; }
+  .header .subtitle { font-size: 14px; opacity: 0.75; margin-top: 8px; }
+  .nav { max-width: 860px; margin: 28px auto 0; padding: 0 20px; }
+  .nav a {
+    display: inline-block; font-size: 14px; color: #4338ca; text-decoration: none;
+    background: #fff; padding: 6px 16px; border-radius: 20px;
+    border: 1.5px solid #c7d2fe; transition: background 0.15s;
+  }
+  .nav a:hover { background: #eef2ff; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px 80px; }
+  .section-title {
+    font-size: 13px; font-weight: 700; letter-spacing: 3px; margin: 36px 0 16px;
+    padding: 8px 16px; border-radius: 6px; display: inline-block;
+  }
+  .sec-high { background: #fee2e2; color: #991b1b; }
+  .sec-mid  { background: #fef3c7; color: #92400e; }
+  .sec-low  { background: #f0fdf4; color: #166534; }
+  .card {
+    background: #fff; border-radius: 14px; padding: 28px 30px;
+    margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid #e5e7eb;
+  }
+  .card.high { border-left-color: #ef4444; }
+  .card.mid  { border-left-color: #f59e0b; }
+  .card.low  { border-left-color: #22c55e; }
+  .card-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+  .badge {
+    font-size: 11px; font-weight: 800; letter-spacing: 1.5px; padding: 4px 10px;
+    border-radius: 20px; flex-shrink: 0; margin-top: 3px;
+  }
+  .badge.high { background: #fee2e2; color: #dc2626; }
+  .badge.mid  { background: #fef3c7; color: #d97706; }
+  .badge.low  { background: #dcfce7; color: #16a34a; }
+  .card-title { font-size: 20px; font-weight: 800; line-height: 1.4; color: #1e293b; }
+  .card-body { font-size: 16px; line-height: 1.9; color: #374151; margin-bottom: 16px; }
+  .card-source { font-size: 14px; margin-bottom: 12px; }
+  .card-source a { color: #4338ca; text-decoration: none; border-bottom: 1px solid #c7d2fe; }
+  .card-source a:hover { color: #3730a3; }
+  .card-comment {
+    font-size: 14px; background: #f8faff; border-left: 3px solid #818cf8;
+    padding: 10px 14px; border-radius: 0 8px 8px 0; color: #4b5563;
+    font-style: italic;
+  }
+  .footer {
+    text-align: center; font-size: 13px; color: #9ca3af;
+    margin-top: 50px; padding-bottom: 40px;
+  }
+  .footer a { color: #6366f1; text-decoration: none; }
+  .summary-box {
+    background: #fff; border: 2px solid #e0e7ff; border-radius: 12px;
+    padding: 22px 26px; margin: 28px 0 8px;
+    font-size: 15px; color: #374151; line-height: 1.8;
+  }
+  .summary-box strong { color: #1e3a8a; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="label">alphakt 社内向け AI 動向簡報</div>
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date">2026年6月25日（木）</div>
+  <div class="subtitle">過去24〜48時間のAI領域ハイライト ／ LLM・ロボティクス・新サービス・業界動向</div>
+</div>
+
+<div class="nav">
+  <a href="../index.html">← 簡報一覧へ戻る</a>
+</div>
+
+<div class="wrap">
+
+  <div class="summary-box">
+    <strong>本日のサマリー：</strong>
+    Anthropic の Fable 5 / Mythos 5 輸出規制が12日目に突入し、依然として世界中でアクセス不能が続く。
+    中国・Zhipu AI がオープンウェイト LLM「GLM-5.2」を MIT ライセンスで公開し、GPT-5.5 を大きく上回るコスパを実現。
+    ChatGPT の市場シェアが史上初めて 50% を割り込み、AI チャットボット市場の多極化が進む。
+    ノーベル賞受賞者ジョン・ジャンパーの DeepMind → Anthropic 移籍も波紋を広げている。
+  </div>
+
+  <!-- ===== 高 ===== -->
+  <div class="section-title sec-high">重要度：高</div>
+
+  <div class="card high">
+    <div class="card-header">
+      <span class="badge high">高</span>
+      <div class="card-title">Anthropic「Fable 5 / Mythos 5」輸出規制12日目――依然復旧なし、「数日以内」の言質も不透明</div>
+    </div>
+    <div class="card-body">
+      米商務省の指令から12日が経過した6月24日時点でも、Anthropic の最上位モデル「Claude Fable 5」および「Claude Mythos 5」は外国籍ユーザーを含む世界中のすべてのユーザーに対してアクセス不能な状態が続いている。ことの発端は、Amazon CEO アンディ・ジャシーが「サイバー攻撃情報へのジェイルブレーク可能性」をホワイトハウスへ警告したことで、トランプ政権がモデルの一時停止を命じたもの。直近では、Anthropic 国際部門マネージングディレクターのクリス・チャウリ氏がソウルの新オフィス開設会見で「数日以内に利用可能になると確信している」と発言したものの、復旧の公式日程は未定。同日、SK テレコムが今回の世界的禁止の真の引き金を引いた企業として AP 通信が報道した。Anthropic はソウルでも韓国科学技術情報通信部と MOU を締結し、LG CNS や WRTN Technologies などとのパートナーシップを発表するなど、規制下でも国際展開を継続している。
+    </div>
+    <div class="card-source">
+      出典：
+      <a href="https://explainx.ai/blog/is-fable-5-back-2026" target="_blank">explainx.ai — Is Fable 5 Back? Status (June 24, 2026)</a>　／
+      <a href="https://www.koreajoongangdaily.com/business/anthropic-confident-of-reenabling-mythos-fable-5-access-in-coming-days-executive/12727522" target="_blank">Korea JoongAng Daily — Anthropic Confident of Reenabling Access</a>
+    </div>
+    <div class="card-comment">💬 商業モデルに対する前例のない輸出規制であり、Anthropic 社の国際ビジネスモデルそのものへの挑戦。解除の見通しが立たない現状は、AI ガバナンスの未成熟さを端的に示している。</div>
+  </div>
+
+  <div class="card high">
+    <div class="card-header">
+      <span class="badge high">高</span>
+      <div class="card-title">Zhipu AI が「GLM-5.2」を MIT ライセンスで公開――1Mトークン文脈・GPT-5.5 比 1/6 のコストで最強オープンLLMへ</div>
+    </div>
+    <div class="card-body">
+      中国の AI 企業 Zhipu AI が6月24日前後、最新オープンウェイトモデル「GLM-5.2」の重みを MIT ライセンスで一般公開した。7440億総パラメータ（アクティブ 400億）の Mixture-of-Experts 構造で、コンテキストウィンドウを前世代比4倍の100万トークンに拡大。コーディングベンチマーク Terminal-Bench 2.1 では 81.0 点を記録し、Claude Opus 4.8 の 85.0 点に迫りつつ GPT-5.5（5ドル／Mトークン）の 6 分の 1 のコスト（約 1.4 ドル）を実現している。皮肉なことに、米国がアンソロピックの Fable 5 を外国人に制限したまさに同日、中国側は「地域ロックなし・利用制限なし」でフロンティア級モデルを世界に開放するという対比的な動きを見せた。高い推論能力（High / Max の2段階）も備え、SWE-bench Pro でも 62.1 点と OSS 最高水準を達成している。
+    </div>
+    <div class="card-source">
+      出典：
+      <a href="https://pandaily.com/zhipu-ai-glm-5-dot-2-open-source-mit-jun2026" target="_blank">Pandaily — Zhipu AI Open-Sources GLM-5.2 With 1M Token Context</a>　／
+      <a href="https://www.trendingtopics.eu/glm-5-2-chinas-zhipu-ai-beats-even-googles-top-models-with-its-new-open-llm/" target="_blank">Trending Topics — GLM-5.2: China's Zhipu AI Beats Google's Top Models</a>
+    </div>
+    <div class="card-comment">💬 「オープンソース」と「コスト」の両面でクローズドモデルを圧倒し始めた中国 OSS 勢。地政学リスクと技術普及のジレンマが深まる局面だ。</div>
+  </div>
+
+  <div class="card high">
+    <div class="card-header">
+      <span class="badge high">高</span>
+      <div class="card-title">ChatGPT の市場シェアが史上初めて 50% 割れ――Claude・Gemini が急伸し AI チャットボット市場は多極化へ</div>
+    </div>
+    <div class="card-body">
+      TechCrunch が6月16日に報じた Sensor Tower のデータによると、ChatGPT のチャットボット市場シェアは2026年5月時点で 46.4% となり、約3年半で初めて 50% を下回った。Google Gemini は 27.7%、Anthropic Claude は 10.3% まで拡大し、この2社だけで ChatGPT を猛追している。ユーザー数そのものは11億人超に増加しているが、分母となる市場全体の成長に追いつけていないことが背景だ。一方、Similarweb は ChatGPT が依然として 54% のウェブ訪問シェアを保持すると指摘しており、計測方法によって数値は異なる。それでも、「ChatGPT 一強時代の終焉」という方向性は複数のデータソースで一致している。GPT-5.6 のリリース直前という時期に重なることから、OpenAI が反転攻勢に打って出るかが注目される。
+    </div>
+    <div class="card-source">
+      出典：
+      <a href="https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/" target="_blank">TechCrunch — ChatGPT's market share slips below 50% for first time</a>　／
+      <a href="https://momenticmarketing.com/blog/top-ai-chatbots" target="_blank">Momentic — June 2026 Top Generative AI Chatbots by Market Share</a>
+    </div>
+    <div class="card-comment">💬 「AI = ChatGPT」というイメージが崩れ始めた歴史的転換点。Anthropic や Google の台頭は競争を健全化しつつ、企業の AI 選定にも複雑さを加える。</div>
+  </div>
+
+  <!-- ===== 中 ===== -->
+  <div class="section-title sec-mid">重要度：中</div>
+
+  <div class="card mid">
+    <div class="card-header">
+      <span class="badge mid">中</span>
+      <div class="card-title">ノーベル賞受賞者ジョン・ジャンパー（AlphaFold 共同創案者）が DeepMind を退社し Anthropic へ</div>
+    </div>
+    <div class="card-body">
+      AlphaFold の共同創案者でノーベル化学賞受賞者のジョン・ジャンパー氏が6月19日、約9年在籍した Google DeepMind を離れ Anthropic に加わると X（旧Twitter）で発表した。ジャンパー氏は AlphaFold により2億以上のタンパク質構造を予測したプロジェクトをリードした人物で、AI によるタンパク質構造予測の第一人者。Anthropic はすでにライフサイエンス分野への注力を表明しており、ジャンパー氏の加入はその戦略の核心に迫る採用といえる。今回の移籍は、DeepMind から OpenAI へ移ったノアム・シャザー（Gemini 共同リード）に続く今月2件目の「DeepMind → 競合」人材流出であり、Alphabet 株が急落する一因ともなった。新しい役職は非公開だが、Anthropic のコンピュテーショナルバイオロジー部門を率いるとみられる。
+    </div>
+    <div class="card-source">
+      出典：
+      <a href="https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/" target="_blank">TechCrunch — Nobel laureate John Jumper is leaving DeepMind for Anthropic</a>　／
+      <a href="https://www.cnbc.com/2026/06/19/john-jumper-to-leave-google-deepmind-for-anthropic.html" target="_blank">CNBC — John Jumper to leave Google DeepMind for Anthropic</a>
+    </div>
+    <div class="card-comment">💬 AlphaFold 級の人材が DeepMind を去るのは、Google の研究者リテンション戦略に深刻な警鐘を鳴らす。Anthropic のバイオ×AI 戦略が加速しそうだ。</div>
+  </div>
+
+  <div class="card mid">
+    <div class="card-header">
+      <span class="badge mid">中</span>
+      <div class="card-title">SpaceX が Reflection AI と 63 億ドルのコンピュート契約——月 1.5 億ドルで GB300 チップを提供</div>
+    </div>
+    <div class="card-body">
+      SpaceX と AI スタートアップ Reflection AI が6月22日、Colossus 2 データセンター（テネシー州メンフィス）における大規模コンピュート契約を締結したと報じられた。Reflection は7月1日から月 1.5 億ドルを SpaceX に支払い、NVIDIA GB300 チップへのアクセスを確保。契約は2029年まで継続した場合の総額が約 63 億ドルに達する可能性があり、90日間の解約条項が付いている。Reflection AI は評価額 250 億ドルのオープンソース AI 企業で、フロンティア級モデルの訓練・推論に必要な GPU をこの契約で確保した。SpaceX はすでに Anthropic、Google、Cursor（現 SpaceX 傘下）にも算力を提供しており、ロケット会社から AI インフラ企業への転身を鮮明にしつつある。
+    </div>
+    <div class="card-source">
+      出典：
+      <a href="https://www.cnbc.com/2026/06/22/spacex-ai-colossus-data-center-reflection.html" target="_blank">CNBC — SpaceX signs computing power deal with Reflection worth up to $6.3 billion</a>　／
+      <a href="https://www.datacenterdynamics.com/en/news/spacex-secures-63bn-compute-capacity-deal-from-ai-startup-reflection/" target="_blank">Data Centre Dynamics — SpaceX secures $6.3bn compute deal from Reflection</a>
+    </div>
+    <div class="card-comment">💬 SpaceX が「ネオクラウド」として AI コンピュート市場に本格参入。AWS・Azure・GCP 以外の算力供給源として GPU 争奪戦の地図が書き換わりつつある。</div>
+  </div>
+
+  <div class="card mid">
+    <div class="card-header">
+      <span class="badge mid">中</span>
+      <div class="card-title">Gemini 3.5 Pro の一般公開が7月へ延期か――限定プレビュー継続中、予測市場の確率は 50〜55%</div>
+    </div>
+    <div class="card-body">
+      Google が Google I/O（5月19日）で「6月中に出す」と予告した Gemini 3.5 Pro は、6月23日時点で一部エンタープライズ顧客向けの限定プレビューにとどまっており、一般公開が7月以降にずれ込む可能性が浮上した。同モデルは 200万トークンのコンテキストウィンドウと「Deep Think」推論モードを搭載し、マルチモーダル理解を強化した予定。予測市場では「6月末までにリリース」の確率を 50〜55% と見積もっており、発表時に会場から失笑を受けた「もう1か月待て」発言が現実になりつつある。価格は Gemini 3.5 Flash の約10倍、入力 15ドル・出力 60ドル（百万トークン）程度が見込まれる。競合のクローズドモデル群と真っ向勝負できるか、リリースのタイミングと実力が問われる。
+    </div>
+    <div class="card-source">
+      出典：
+      <a href="https://cryptobriefing.com/google-delays-gemini-35-pro-launch-to-july-2026/" target="_blank">CryptoBriefing — Google delays Gemini 3.5 Pro launch to July 2026</a>　／
+      <a href="https://growwingassistant.com/ai-news/gemini-3-5-pro-release-date-june-2026-every-confirmed-spec-pricing-when-it-drops/" target="_blank">Growwing Assistant — Gemini 3.5 Pro: Confirmed Specs & Launch Window</a>
+    </div>
+    <div class="card-comment">💬 I/O でのビッグアナウンスから1か月半が経過しても届かないモデル。信頼感を損なわないよう、Google は早期の公開スケジュールの明言が求められる。</div>
+  </div>
+
+  <!-- ===== 低 ===== -->
+  <div class="section-title sec-low">重要度：低</div>
+
+  <div class="card low">
+    <div class="card-header">
+      <span class="badge low">低</span>
+      <div class="card-title">OpenAI × Molecule.one：AI 化学者が医薬品化学の難所「Chan-Lam カップリング」を改善――実験1万件超を自律実行</div>
+    </div>
+    <div class="card-body">
+      OpenAI とポーランドの化学スタートアップ Molecule.one が6月17日、GPT-5.4 を使った「ほぼ自律型 AI 化学者」が実際の湿式実験室ワークフローで医薬品化学の課題を改善したと発表した。対象は91以上の FDA 承認薬に含まれるスルホンアミド骨格の Chan-Lam カップリング反応で、従来は収率が低く製薬業界のボトルネックとなってきた反応だ。GPT-5.4 が数千の研究提案を生成・ランク付けし、人間の化学者が上位提案を選択、AI エージェント「Maria AI」が実験手順に変換して10,080回の反応を実施。その結果、安定ラジカル TEMPO を酸化剤として使用することで収率が大幅に改善された。フロンティア AI モデルが文献から仮説を立て、実際の化学実験まで完結させた初の公開事例として注目される。
+    </div>
+    <div class="card-source">
+      出典：
+      <a href="https://www.rdworldonline.com/openai-and-molecule-one-report-a-near-autonomous-ai-chemist-that-improved-a-stubborn-coupling-reaction/" target="_blank">R&D World — OpenAI and Molecule.one report a near-autonomous AI chemist</a>　／
+      <a href="https://aiweekly.co/node/3147" target="_blank">AI Weekly — OpenAI and Molecule.one Demonstrate Near-Autonomous AI Chemist</a>
+    </div>
+    <div class="card-comment">💬 AI が「仮説生成→実験→改善」のループを回した先例として製薬 R&amp;D に大きなインパクト。ただし人間の監督なしに動かせるレベルには至っていない点も重要だ。</div>
+  </div>
+
+  <div class="card low">
+    <div class="card-header">
+      <span class="badge low">低</span>
+      <div class="card-title">SpaceX が AI コーディングツール「Cursor」を 600 億ドルで買収――スタートアップ史上最大の M&amp;A が完了</div>
+    </div>
+    <div class="card-body">
+      SpaceX が6月16日、AI コーディングアシスタント「Cursor」を開発する Anysphere を600億ドルの全株式交換で買収すると正式発表した。約4年で年間収益40億ドル超（うち 26 億ドルが B2B）に達した Cursor に対し、SpaceX は売上高約15倍のプレミアムを支払う格好となり、これまで史上最大のスタートアップ買収記録を更新した。SpaceX は4月に優先交渉権を確保していたが、自社 IPO（6月16日に NASDAQ デビュー）後に正式締結。Cursor は今後も独立したブランドを維持しつつ、SpaceX の Colossus 計算基盤の上で動作するコーディングプラットフォームとして Anthropic・OpenAI に対抗する位置付けとなる。マスク氏の「AI コーディング制覇」戦略の要石となるか注目される。
+    </div>
+    <div class="card-source">
+      出典：
+      <a href="https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/" target="_blank">TechCrunch — SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO</a>　／
+      <a href="https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html" target="_blank">CNBC — SpaceX to acquire AI coding startup Cursor for $60 billion</a>
+    </div>
+    <div class="card-comment">💬 ロケット会社がコーディング AI を 60 億ドルで買う時代。AI 開発者ツール市場の戦略的価値が桁違いに跳ね上がったことを象徴する取引だ。</div>
+  </div>
+
+</div><!-- /wrap -->
+
+<div class="footer">
+  <p>alphakt 社内向け AI 最新動向簡報 ／ 2026年6月25日号</p>
+  <p style="margin-top:6px;"><a href="../index.html">← 簡報アーカイブ一覧へ</a></p>
+  <p style="margin-top:10px; font-size:11px;">本簡報に掲載した情報・URLはすべて実在するソースに基づきます。</p>
+</div>
+
+</body>
+</html>
