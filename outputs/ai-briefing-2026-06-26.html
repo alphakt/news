@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年6月26日号 | alphakt</title>
+<meta name="description" content="alphakt社内向け日次AI動向簡報。Fable 5輸出規制Day 14・復旧確率60%急騰、Google研究者流出加速、GPT-5.6の6月断念、Hang Ten Systemsほか全6件。">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:           #F4F6FA;
+  --surface:      #FFFFFF;
+  --text:         #1C2030;
+  --text-2:       #556070;
+  --text-3:       #8C97A8;
+  --accent:       #0272AF;
+  --accent-lt:    #E0F0FA;
+  --divider:      #DDE2EB;
+
+  --hi-stripe:    #C42020;
+  --hi-bg:        #FEF5F5;
+  --hi-bd:        #F9CECE;
+
+  --md-stripe:    #B85D08;
+  --md-bg:        #FFFAEE;
+  --md-bd:        #F9DFA4;
+
+  --lo-stripe:    #1E62D0;
+  --lo-bg:        #EEF4FF;
+  --lo-bd:        #BDD3F8;
+
+  --r:            9px;
+  --w:            740px;
+}
+
+html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family:
+    "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "Yu Gothic Medium", "YuGothic",
+    "Meiryo", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.82;
+}
+
+/* ─── Masthead ─── */
+.mast {
+  background: var(--surface);
+  border-bottom: 1px solid var(--divider);
+  padding: 34px 24px 26px;
+}
+.mast-in {
+  max-width: var(--w);
+  margin: 0 auto;
+}
+.mast-eye {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.mast-h1 {
+  font-family: Georgia, "Times New Roman", "游明朝", "Hiragino Mincho ProN", YuMincho, serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-wrap: balance;
+  margin-bottom: 12px;
+}
+.mast-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.mast-date {
+  font-size: 13.5px;
+  color: var(--text-2);
+  font-variant-numeric: tabular-nums;
+}
+.mast-chip {
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--accent-lt);
+  color: var(--accent);
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+
+/* ─── Main ─── */
+.main {
+  max-width: var(--w);
+  margin: 0 auto;
+  padding: 32px 24px 72px;
+}
+
+/* ─── Back link ─── */
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  margin-bottom: 28px;
+}
+.back:hover { text-decoration: underline; }
+
+/* ─── Summary ─── */
+.summary {
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--r);
+  padding: 16px 20px;
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--text-2);
+  margin-bottom: 34px;
+}
+.summary strong { color: var(--text); }
+
+/* ─── Section label ─── */
+.sec {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin: 32px 0 14px;
+}
+.sec::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--divider);
+}
+
+/* ─── Card ─── */
+.card {
+  border-radius: var(--r);
+  border: 1px solid var(--divider);
+  border-left-width: 5px;
+  padding: 22px 24px 20px;
+  margin-bottom: 16px;
+}
+.card-hi { background: var(--hi-bg); border-color: var(--hi-bd); border-left-color: var(--hi-stripe); }
+.card-md { background: var(--md-bg); border-color: var(--md-bd); border-left-color: var(--md-stripe); }
+.card-lo { background: var(--lo-bg); border-color: var(--lo-bd); border-left-color: var(--lo-stripe); }
+
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-bottom: 9px;
+  color: #fff;
+}
+.badge-hi { background: var(--hi-stripe); }
+.badge-md { background: var(--md-stripe); }
+.badge-lo { background: var(--lo-stripe); }
+
+.card h2 {
+  font-family: Georgia, "Times New Roman", "游明朝", "Hiragino Mincho ProN", YuMincho, serif;
+  font-size: 18.5px;
+  font-weight: 700;
+  line-height: 1.42;
+  text-wrap: balance;
+  margin-bottom: 13px;
+}
+
+.card p {
+  font-size: 15.5px;
+  line-height: 1.88;
+  margin-bottom: 15px;
+}
+
+.card-foot {
+  border-top: 1px solid var(--divider);
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 13.5px;
+}
+.src {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+.src:hover { text-decoration: underline; }
+.comment {
+  color: var(--text-2);
+  font-style: italic;
+}
+
+/* ─── Footer ─── */
+.foot {
+  max-width: var(--w);
+  margin: 0 auto;
+  padding: 0 24px 48px;
+  font-size: 12.5px;
+  color: var(--text-3);
+  line-height: 1.6;
+}
+.foot a { color: var(--accent); }
+
+@media (max-width: 580px) {
+  .mast-h1  { font-size: 20px; }
+  .card h2  { font-size: 16.5px; }
+  .main     { padding: 22px 15px 56px; }
+  .card     { padding: 17px 16px 15px; }
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="mast-in">
+    <p class="mast-eye">alphakt &thinsp;AI最新動向簡報</p>
+    <h1 class="mast-h1">2026年6月26日（金）号</h1>
+    <div class="mast-row">
+      <span class="mast-date">配信：2026年6月26日</span>
+      <span class="mast-chip">本日 6 件</span>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <a class="back" href="../index.html">&larr; 簡報一覧へ戻る</a>
+
+  <div class="summary">
+    <strong>本日のハイライト：</strong>
+    Anthropic Fable 5 輸出規制14日目、交渉担当がCEO Dario Amodeiから共同創業者 Tom Brown（GPT-3主設計者）へ移行し、Polymarketの復旧確率が60%に急騰。Google DeepMindから6日間で4名の主要研究者が競合へ流出する「人材流出加速」が鮮明化。GPT-5.6の6月リリース確率は83%から18%に急落し7月が本命に。
+  </div>
+
+  <!-- 高 -->
+  <div class="sec">重要度&ensp;高</div>
+
+  <article class="card card-hi">
+    <span class="badge badge-hi">重要度 高</span>
+    <h2>Fable 5/Mythos 5 輸出規制14日目 &mdash; 交渉担当が刷新され、Polymarket復旧確率が60%に急騰</h2>
+    <p>
+      米政府が Anthropic の最上位モデル「Fable 5」「Mythos 5」への全外国人アクセスを遮断してから14日が経過した。6月26日時点での最大の変化は、商務省との交渉窓口がCEO Dario AmodeiからGPT-3の主設計者でもある共同創業者・最高コンピュート責任者のTom Brownへ切り替わったこと。公共政策責任者のSarah Heckとのペアで動くことで「より実務的なチャンネルが機能し始めた」と報じられており、これを受けてPolymarketの復旧確率は前日の約15%から60%台へ一日で急伸した。並行して、下院議員Salvador Liccardoが商務省に文書回答を求めた期限が本日6月26日に設定されており、午後以降の動向に注目が集まっている。今後のシナリオとして、米国ユーザー向け先行再開（7月8日から本人確認・IDゲート方式）が先行し、国際ユーザーへの提供は別途交渉が必要とみられる。「バンはAPIキー単位でなくユーザー国籍単位でかかっており、Anthropicはユーザーの国籍をリアルタイムで把握していない」という構造的問題が解決策の複雑さを増している。
+    </p>
+    <div class="card-foot">
+      <a class="src" href="https://explainx.ai/blog/when-will-fable-5-be-available-again-2026" target="_blank" rel="noopener">出典：explainx.ai &mdash; When Will Fable 5 Be Available Again?（2026年6月24日）</a>
+      <a class="src" href="https://www.anthropic.com/news/fable-mythos-access" target="_blank" rel="noopener">出典：Anthropic公式声明 &mdash; Statement on the US government directive to suspend access to Fable 5 and Mythos 5</a>
+      <span class="comment">交渉代理人の変更という「実務シグナル」は前向きだが、IDゲート導入は国際ユーザーに新たな恒久的障壁を生む可能性があり、「再開」の実質的な意味が問われる。</span>
+    </div>
+  </article>
+
+  <article class="card card-hi">
+    <span class="badge badge-hi">重要度 高</span>
+    <h2>Google DeepMind から6日で4名の主要研究者が流出 &mdash; Jonas Adler・Pritzel が Anthropic へ</h2>
+    <p>
+      Bloombergが6月24日に報じたところによれば、Google Gemini の中核的研究者であるJonas Adler（AIコーディング担当）とAlexander Pritzel（AIトレーニング担当）がAnthropicへの移籍を決めた。これはTransformer共著者のNoam Shazeer（OpenAIへ、6月18日）、AlphaFoldノーベル賞受賞者のJohn Jumper（Anthropicへ、6月20日）に続くもので、わずか6日間で計4件の大型離脱となる。TechCrunchは「IPO前スタートアップが付与できる上場前株式が、Big Techの安定報酬を上回り始めた」と分析。AnthropicとOpenAIはいずれも2026年内のIPOに向け証券当局に書類を提出しており、その上場益期待が優秀な研究者を引き付ける動機になっているとみられる。GeminiチームとDeepMindチームの両方から同時に主要メンバーが抜けるのは、Googleにとってモデル開発ロードマップへの影響が避けられない事態だ。
+    </p>
+    <div class="card-foot">
+      <a class="src" href="https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/" target="_blank" rel="noopener">出典：TechCrunch &mdash; AI researchers continue to leave Google for its rivals（2026年6月24日）</a>
+      <a class="src" href="https://www.bloomberg.com/news/articles/2026-06-24/google-poised-to-lose-two-more-high-profile-ai-staffers-to-anthropic" target="_blank" rel="noopener">出典：Bloomberg &mdash; Google Poised to Lose Two More High-Profile AI Staffers to Anthropic（2026年6月24日）</a>
+      <span class="comment">Gemini の共同リードと物理科学の最高峰研究者を同週に失ったGoogleは、「報酬水準」ではなく「成長ストーリーへの確信」という面で競合に劣後しているのかもしれない。</span>
+    </div>
+  </article>
+
+  <!-- 中 -->
+  <div class="sec">重要度&ensp;中</div>
+
+  <article class="card card-md">
+    <span class="badge badge-md">重要度 中</span>
+    <h2>GPT-5.6 の6月リリース断念が確定的 &mdash; Polymarket 確率83%から18%に急落、7月が本命</h2>
+    <p>
+      OpenAIの次期主力モデル「GPT-5.6」の6月末リリースを巡る予測市場が急変した。数日前まで「6月22〜28日中のリリース」に83%の確率が付いていたPolymarketのコントラクトが、6月25日時点では18%まで急落した。現時点でOpenAIは公式発表・リリースページ・APIへのモデル追加を一切行っていない。内部情報として、コンテキストウィンドウがGPT-5.5の400Kトークンから最大150万トークン（約4倍）へ拡張され、FrontierMath最高難度の数学ベンチマークで大幅な改善が見込まれると報じられている。OpenAIチーフサイエンティストのJakub Pachockoが「意義深い進歩」と言及したことで期待が高まっていたが、実際のリリースは品質基準への到達を待つ姿勢のようだ。7月初旬のリリースが現在の市場コンセンサスとなりつつある。
+    </p>
+    <div class="card-foot">
+      <a class="src" href="https://wavespeed.ai/blog/posts/gpt-5-6-canary-leak-what-we-know/" target="_blank" rel="noopener">出典：WaveSpeed Blog &mdash; GPT-5.6 Just Showed Up in OpenAI&rsquo;s Codex Logs（2026年6月）</a>
+      <a class="src" href="https://findskill.ai/blog/gpt-5-6-release-date-what-to-expect/" target="_blank" rel="noopener">出典：FindSkill.ai &mdash; GPT-5.6 Release Date: When It&rsquo;s Coming &amp; What It Does（2026年6月）</a>
+      <span class="comment">「6月中」予想が外れた今、150万トークンコンテキストが本当に実装されるなら、エンタープライズのRAGアーキテクチャ設計に根本的な再考を迫る可能性がある。</span>
+    </div>
+  </article>
+
+  <article class="card card-md">
+    <span class="badge badge-md">重要度 中</span>
+    <h2>元Infosys CEO Vishal Sikka、AI企業「Hang Ten Systems」を設立し3,200万ドルを調達</h2>
+    <p>
+      元Infosys最高経営責任者のVishal Sikkaが設立したAI企業「Hang Ten Systems」が、Mayfield主導のシードラウンドで3,200万ドルを調達した（Aramco Ventures、Yahoo共同創業者Jerry Yangら参加）。同社は企業向けに「AIを活用したソフトウェアの構築・改修・運用の一括支援」を提供し、ITサービス大手が従来担ってきた受託開発領域を丸ごとAIで代替することを目指す。設立からわずか1ヶ月ながらSiemens Gamesa Renewable EnergyとFreeseniusをすでに顧客として抱えている。Sikkaは「今こそこの波に乗る時だ」とコメント。かつてInfosysのCEOとして同社のAI化を推進した人物が、今度は旧来型ITサービスの「破壊者」側に回る皮肉が注目を集めている。ITサービス業界の構造変革が、インサイダーの起業という形で検証される実証実験として業界内では以前から話題になっていた。
+    </p>
+    <div class="card-foot">
+      <a class="src" href="https://techcrunch.com/2026/06/24/former-infosys-chief-has-a-new-startup-that-wants-to-challenge-the-it-services-world/" target="_blank" rel="noopener">出典：TechCrunch &mdash; Former Infosys chief has a new startup that wants to challenge the IT services world（2026年6月24日）</a>
+      <span class="comment">ITサービス大手各社の株価に先行指標として注目すべき動きであり、「AIエージェントがSI案件を代替する」仮説の本格的な市場検証が始まった。</span>
+    </div>
+  </article>
+
+  <!-- 低 -->
+  <div class="sec">重要度&ensp;低</div>
+
+  <article class="card card-lo">
+    <span class="badge badge-lo">重要度 低</span>
+    <h2>Google、Gemini 2.5 に「Deep Think」推論モードをロールアウト &mdash; GPQA Diamond 82.4%を達成</h2>
+    <p>
+      GoogleはGemini 2.5に拡張推論モード「Deep Think」の一般提供を開始した（Google AI Studio・Gemini Advanced向け）。Deep Think は最終回答を生成する前に複数の解法チェーンを並列探索するアーキテクチャを採用しており、通常モードと比べてハード数学・複雑論理・多段階コーディングで5〜15%の性能向上が報告されている。主要ベンチマークはGPQA Diamond（大学院レベル科学）82.4%、MMLU-Pro 89.8%、HumanEval+ 94.1%で現時点の上位水準。コンテキストウィンドウは200万トークン（業界最大クラス）。なお同社が6月末のGA（一般公開）を公約していた上位モデル「Gemini 3.5 Pro」については、7月への遅延が報じられており別途追報を待ちたい。
+    </p>
+    <div class="card-foot">
+      <a class="src" href="https://blog.google/products/gemini/gemini-2-5-deep-think/" target="_blank" rel="noopener">出典：Google公式ブログ &mdash; Gemini 2.5: Deep Think is now rolling out（2026年6月）</a>
+      <span class="comment">「Thinking Mode」の実装は今やどの主要モデルも必須機能となりつつある。差別化はベンチマーク数字よりも推論コストと実用精度のバランスで決まる段階に入った。</span>
+    </div>
+  </article>
+
+  <article class="card card-lo">
+    <span class="badge badge-lo">重要度 低</span>
+    <h2>「MANGOS」&mdash; FANGを継ぐAI時代の新テックキーワードがウォール街に定着</h2>
+    <p>
+      Meta・Anthropic・Nvidia・Google・OpenAI・SpaceXの頭文字からなる「MANGOS」という略語が2026年6月、ウォール街と投資家コミュニティで急速に定着しつつある。TechCrunchが「もはやFAANGではない。MANGOSだ」との記事を掲載し話題を集め、6社合算の時価総額・推定評価額は約14兆ドル規模。AnthropicとOpenAIがいずれもSECに機密S-1を提出しており、SpaceXは6月12日に上場済みという「AIホットIPOサマー2026」を象徴する造語だ。旧FAANG（Meta・Apple・Amazon・Netflix・Google）との本質的な違いとして、MANGOS各社はAIモデル・GPUインフラ・宇宙計算資源という「垂直統合された計算力」を競争軸にしており、これが投資家の注目を集めている。Bank of Americaアナリストが半導体バスケット向けに考案した頭字語を、リテール投資家がAI時代の象徴として再利用した経緯も興味深い。
+    </p>
+    <div class="card-foot">
+      <a class="src" href="https://techcrunch.com/2026/06/09/its-not-faang-anymore-its-mangos/" target="_blank" rel="noopener">出典：TechCrunch &mdash; It&rsquo;s not FAANG anymore. It&rsquo;s MANGOS.（2026年6月9日）</a>
+      <a class="src" href="https://247wallst.com/investing/2026/06/10/investors-are-ditching-the-magnificent-7-for-a-new-group-of-stocks-the-mangos/" target="_blank" rel="noopener">出典：24/7 Wall St. &mdash; Investors Are Ditching the Magnificent 7 For a New Group of Stocks: The MANGOS（2026年6月10日）</a>
+      <span class="comment">略語は投資テーマの可視化に過ぎないが、6社全てに計算資源を内製する企業が入っている点はFAANG時代との質的変化を示しており、AIインフラへの理解なしに投資判断が難しい時代を反映している。</span>
+    </div>
+  </article>
+
+</main>
+
+<footer class="foot">
+  本簡報はWeb検索に基づき自動生成されたものです。各記事の事実確認はリンク先の原典でご確認ください。<br>
+  <a href="../index.html">&larr; AI最新動向簡報 一覧へ戻る</a>&ensp;|&ensp;© 2026 alphakt
+</footer>
+
+</body>
+</html>
