@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年6月27日号 | alphakt</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  background: #f4f6f9; color: #1a1f2e; line-height: 1.8; font-size: 17px;
+}
+.header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+  color: #fff; padding: 52px 24px 44px; text-align: center;
+  box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+}
+.header h1 { font-size: 28px; letter-spacing: 2px; margin-bottom: 10px; font-weight: 900; }
+.header .date-badge {
+  display: inline-block; background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 20px; padding: 6px 22px; font-size: 17px;
+  margin-top: 10px; letter-spacing: 1px;
+}
+.header .subtitle { font-size: 14px; opacity: 0.85; margin-top: 8px; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 18px 80px; }
+.back-link {
+  display: inline-block; margin: 28px 0 6px;
+  color: #4338ca; text-decoration: none; font-size: 14px;
+  padding: 5px 14px; border: 1px solid #c7d2fe; border-radius: 20px;
+  background: #fff; transition: background 0.15s;
+}
+.back-link:hover { background: #eef2ff; }
+.section-title {
+  font-size: 13px; font-weight: 800; letter-spacing: 2px;
+  padding: 5px 14px; border-radius: 6px; display: inline-block;
+  margin-bottom: 6px; margin-top: 36px;
+}
+.high .section-title { background: #fee2e2; color: #991b1b; }
+.medium .section-title { background: #fef3c7; color: #92400e; }
+.low .section-title { background: #dcfce7; color: #166534; }
+
+.card {
+  background: #fff; border-radius: 16px; padding: 28px 30px 24px;
+  margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border-left: 7px solid #ccc;
+}
+.card.high { border-left-color: #ef4444; }
+.card.medium { border-left-color: #f59e0b; }
+.card.low { border-left-color: #22c55e; }
+
+.card-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+.badge {
+  flex-shrink: 0; font-size: 12px; font-weight: 800; padding: 3px 10px;
+  border-radius: 12px; letter-spacing: 1px; margin-top: 3px;
+}
+.badge-high { background: #fee2e2; color: #991b1b; }
+.badge-medium { background: #fef3c7; color: #92400e; }
+.badge-low { background: #dcfce7; color: #166534; }
+
+.card-title { font-size: 20px; font-weight: 800; line-height: 1.4; color: #111827; }
+.card-body { font-size: 16px; color: #374151; line-height: 1.85; margin-bottom: 16px; }
+.card-source {
+  font-size: 13px; color: #6b7280; margin-bottom: 12px;
+}
+.card-source a {
+  color: #4338ca; text-decoration: none; word-break: break-all;
+}
+.card-source a:hover { text-decoration: underline; }
+.card-comment {
+  background: #f0f4ff; border-left: 4px solid #6366f1;
+  border-radius: 0 8px 8px 0; padding: 10px 16px;
+  font-size: 14px; color: #4338ca; font-style: italic;
+}
+.divider {
+  border: none; border-top: 2px dashed #e5e7eb; margin: 40px 0 10px;
+}
+.footer {
+  text-align: center; font-size: 12px; color: #9ca3af;
+  margin-top: 50px; padding: 0 18px;
+  border-top: 1px solid #e5e7eb; padding-top: 24px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-badge">2026年6月27日（土）</div>
+  <div class="subtitle">alphakt 社内向け 日次AIニュース | 過去48時間の主要動向</div>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ====== 高 ====== -->
+  <div class="high">
+    <div class="section-title">▲ 重要度：高</div>
+  </div>
+
+  <div class="card high">
+    <div class="card-header">
+      <span class="badge badge-high">高</span>
+      <div class="card-title">OpenAI × Broadcom、AIへの特化推論チップ「Jalapeño」をわずか9ヶ月で開発・発表</div>
+    </div>
+    <div class="card-body">
+      OpenAIとBroadcomは6月24日、共同開発した初の専用AIチップ「Jalapeño Intelligence Processor」を正式発表した。TSMC最先端プロセスで製造されたフルレティクルサイズのASICで、設計開始からわずか9ヶ月という半導体業界史上最速レベルの開発サイクルを達成した。Jalapeñoは現在GPT‑5.3‑Codex‑Sparkを含むMLワークロードをラボ環境で稼働しており、2026年末までの初期デプロイを目標としている。OpenAIは自社インフラを「完全なスタック」として構築するという戦略転換を明確にしており、NVIDIAへの依存を段階的に減らすと同時に推論コストを約50%削減することを目指す。Broadcomのネットワーキングノウハウとのシナジーにより、大規模クラスター間の帯域幅ボトルネック解消も狙う。
+    </div>
+    <div class="card-source">
+      出典：
+      <a href="https://www.cnbc.com/2026/06/24/openai-and-broadcom-reveal-jalapeno-first-ai-chip-in-partnership.html" target="_blank">CNBC — OpenAI unveils first chip as part of Broadcom deal</a>
+      ／
+      <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/broadcom-and-openai-unveil-custom-built-jalapeno-inference-processor-openais-first-chip-is-a-massive-reticle-sized-asic-built-in-an-ultra-fast-nine-month-development-cycle" target="_blank">Tom's Hardware — Jalapeño inference processor</a>
+    </div>
+    <div class="card-comment">
+      💬 OpenAIのチップ内製化はAppleのAシリーズ戦略に倣うもの。NVIDIA依存脱却が成功すれば業界構造を大きく塗り替える可能性がある。
+    </div>
+  </div>
+
+  <div class="card high">
+    <div class="card-header">
+      <span class="badge badge-high">高</span>
+      <div class="card-title">Anthropicが米議会に告発：アリババが2,500社超の偽アカウントで2,880万回Claudeを不正蒸留</div>
+    </div>
+    <div class="card-body">
+      Anthropicは6月24日、アリババおよびその傘下AI研究機関が2026年4月〜6月にかけて約25,000件の偽アカウントを使い、Claudeの最新フロンティアモデル「Mythos Preview」に2,880万回もの不正APIアクセスを行い、その出力データを自社の「Qwen」モデルのトレーニングに利用したと主張する書簡を米上院銀行委員会に送付した。この手法は「モデル蒸留攻撃（distillation attack）」と呼ばれ、競合他社のモデルの知識を安価に転写する手法だ。今回は今年2月に発覚したDeepSeek・Moonshot・MiniMaxによる合計1,600万件超の蒸留攻撃を大幅に上回る「過去最大規模の蒸留攻撃」とされる。アリババ側はコメントしていない。
+    </div>
+    <div class="card-source">
+      出典：
+      <a href="https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html" target="_blank">CNBC — Anthropic accuses Alibaba of campaign to illicitly extract AI capabilities</a>
+      ／
+      <a href="https://www.techtimes.com/articles/319105/20260625/alibaba-ran-largest-known-ai-theft-campaign-against-claude-anthropic-tells-senate.htm" target="_blank">TechTimes — Alibaba Ran Largest Known AI Theft Campaign Against Claude</a>
+    </div>
+    <div class="card-comment">
+      💬 モデル蒸留攻撃はAPIさえあれば誰でも試みられる構造的問題。規約違反の立証と法整備のどちらが先行するか、業界全体の課題になりつつある。
+    </div>
+  </div>
+
+  <div class="card high">
+    <div class="card-header">
+      <span class="badge badge-high">高</span>
+      <div class="card-title">トランプ政権がOpenAIに要請：GPT-5.6の一般公開を安全審査完了まで制限</div>
+    </div>
+    <div class="card-body">
+      6月26日、米政府（トランプ政権）がOpenAIに対し、次世代フラッグシップモデルGPT-5.6の一般公開を遅らせ、まず限られたパートナー企業グループへの限定リリースにとどめるよう要請したことが報じられた。ホワイトハウスが安全性審査（セーフティチェック）の完了を公開の前提として求めたもので、OpenAIはこれを受け入れる方針だという。GPT-5.6はコードネーム「kindle-alpha」とも呼ばれ、1.5Mトークンのコンテキストウィンドウや大幅なコード出力品質向上が期待されていたが、公開スケジュールは大幅に後ずれする見通しだ。AI安全性審査が実際にリリーススケジュールを変更させた初のケースとして注目される。
+    </div>
+    <div class="card-source">
+      出典：
+      <a href="https://americanbazaaronline.com/2026/06/26/openai-limits-gpt-5-6-public-release-after-request-from-trump-483611/" target="_blank">American Bazaar — OpenAI limits GPT-5.6 public release after request from Trump</a>
+      ／
+      <a href="https://www.businesstoday.in/amp/technology/artificial-intelligence/story/openais-next-flagship-ai-model-faces-launch-delay-white-house-demands-safety-checks-539349-2026-06-26" target="_blank">Business Today — OpenAI's next flagship AI model faces launch delay</a>
+    </div>
+    <div class="card-comment">
+      💬 政府によるモデルリリース制御という前例が生まれた。今後の規制の雛形となる可能性があり、他社・他国政府への波及も注目される。
+    </div>
+  </div>
+
+  <!-- ====== 中 ====== -->
+  <hr class="divider">
+  <div class="medium">
+    <div class="section-title">◆ 重要度：中</div>
+  </div>
+
+  <div class="card medium">
+    <div class="card-header">
+      <span class="badge badge-medium">中</span>
+      <div class="card-title">Five Eyes諜報機関が共同警告：AIによる大規模サイバー攻撃、到来は「数ヶ月以内」</div>
+    </div>
+    <div class="card-body">
+      米・英・カナダ・オーストラリア・ニュージーランドの5ヵ国諜報連合「Five Eyes」は6月23日、政府や企業のセキュリティ防衛を突破するAI駆動の大規模サイバー攻撃が「数年後ではなく数ヶ月以内」に現実化するリスクがあると共同声明で警告した。声明は政府・企業リーダーに対し「今すぐ行動する」よう訴え、特に重要インフラや国家機密データを扱う組織が標的になる可能性を強調した。AI搭載のマルウェアがゼロデイ脆弱性を自動発見・悪用するシナリオや、AI生成フィッシングの高精度化が主な懸念として挙げられた。
+    </div>
+    <div class="card-source">
+      出典：
+      <a href="https://www.cnn.com/2026/06/23/world/ai-five-eyes-warning-cyber-threat-intl-hnk" target="_blank">CNN — AI could breach government and business defenses in months, US and its intelligence partners warn</a>
+    </div>
+    <div class="card-comment">
+      💬 情報機関が「数ヶ月」という具体的な時間軸を提示したことは異例。AIセキュリティ対策への投資が急務であることを改めて示す警鐘だ。
+    </div>
+  </div>
+
+  <div class="card medium">
+    <div class="card-header">
+      <span class="badge badge-medium">中</span>
+      <div class="card-title">Big Tech、6月だけで約2.7兆ドルの市場価値が消失——AI投資回収への懐疑論が台頭</div>
+    </div>
+    <div class="card-body">
+      Yahoo Financeの集計によると、いわゆる「Magnificent Seven」（Apple・Microsoft・Amazon・Alphabet・Meta・NVIDIA・Tesla）にBroadcomとOracleを加えた主要AI株9社は2026年6月だけで合計約2兆7000億ドルの時価総額を失った。AI向けデータセンターやGPUへの巨額投資が続く一方、その収益化スピードへの懐疑論が投資家の間で強まっており、いくつかのアナリストレポートが「AI投資回収（ROI）の到来は2028〜2029年まで先送りになる」と指摘している。AI活況を牽引してきたNVIDIAも6月は下落基調が続いた。
+    </div>
+    <div class="card-source">
+      出典：
+      <a href="https://finance.yahoo.com/markets/article/big-techs-27-trillion-ai-bill-comes-due-chart-of-the-day-100000100.html" target="_blank">Yahoo Finance — Big Tech's $2.7 trillion AI bill comes due</a>
+    </div>
+    <div class="card-comment">
+      💬 「AIバブル」議論が再燃しつつある。収益化の道筋を示せるかどうかが、次の相場の分水嶺になるだろう。
+    </div>
+  </div>
+
+  <!-- ====== 低 ====== -->
+  <hr class="divider">
+  <div class="low">
+    <div class="section-title">● 重要度：低</div>
+  </div>
+
+  <div class="card low">
+    <div class="card-header">
+      <span class="badge badge-low">低</span>
+      <div class="card-title">GPT-4.5 本日ChatGPTから正式退場——GPT-5系への完全移行が加速</div>
+    </div>
+    <div class="card-body">
+      OpenAIは当初予告していた30日のサンセット期間を経て、6月27日をもってGPT-4.5をChatGPTから正式に退場させた。GPT-4.5はテキスト品質の向上で注目されたが、GPT-5.5以降のモデルに能力・コスト両面で置き換えられる形となった。API経由での提供も段階的に廃止予定。OpenAIはモデルポートフォリオの整理・スリム化を進めており、ユーザーはGPT-5.5（またはGPT-5.6リリース後は5.6）への移行が推奨される。
+    </div>
+    <div class="card-source">
+      出典：
+      <a href="https://help.openai.com/en/articles/9624314-model-release-notes" target="_blank">OpenAI — Model Release Notes</a>
+      ／
+      <a href="https://pricepertoken.com/news/model-releases" target="_blank">PricePerToken — New Models Today</a>
+    </div>
+    <div class="card-comment">
+      💬 モデルの陳腐化サイクルがますます短縮されている。プロンプトやワークフローを特定モデルに強依存させないよう設計することがより重要になる。
+    </div>
+  </div>
+
+  <div class="card low">
+    <div class="card-header">
+      <span class="badge badge-low">低</span>
+      <div class="card-title">Qualcomm、RISC-V AIチップ設計のTenstorrentを最大100億ドルで買収交渉中</div>
+    </div>
+    <div class="card-body">
+      Qualcommが、オープン標準のRISC-Vアーキテクチャを採用したAIチップを設計するカナダのスタートアップTenstorrentを80〜100億ドルで買収する交渉を進めていることが報じられた。TenstorrentはJim Keller（元Apple・AMD・Intel）がCEOを務め、独自アーキテクチャで高コスパの推論・学習向けアクセラレータを手掛ける。QualcommにとってはAIインフラ市場への本格参入を意味し、ARMエコシステム主体から脱却する布石ともなる。成立すれば半導体業界における2026年最大のM&Aの一つになる。
+    </div>
+    <div class="card-source">
+      出典：
+      <a href="https://www.crescendo.ai/news/latest-ai-news-and-updates" target="_blank">Crescendo AI — Latest AI News and Breakthroughs</a>
+    </div>
+    <div class="card-comment">
+      💬 NVIDIA・AMD一強体制に対抗するエコシステムが本格的に形成されつつある。RISC-Vオープン標準の普及が業界に分散化をもたらすか要注目。
+    </div>
+  </div>
+
+  <div class="card low">
+    <div class="card-header">
+      <span class="badge badge-low">低</span>
+      <div class="card-title">Waymo、ロンドン商業ロボタクシー2026年Q4展開へ——Uber・Wayveとの三つ巴戦が激化</div>
+    </div>
+    <div class="card-body">
+      自動運転タクシーのWaymoはロンドンでの商業展開を2026年Q4（10〜12月）に設定し、現在は人間の安全運転員を乗せたジャガーI-Pace約100台で公道テストを継続中だ。一方、英国のAI自動運転スタートアップWayveはUber・Stellantisとの3社協定を結び、Uberのプラットフォームを通じてWayve技術のロボタクシーを展開する計画を進めている。ロンドン市場でWaymo・Wayve・Uberの三つ巴となる自動運転タクシー競争が迫り、欧州初の大規模商業ロボタクシー市場の行方が世界から注目される。
+    </div>
+    <div class="card-source">
+      出典：
+      <a href="https://techcrunch.com/2026/06/08/uber-wayve-and-waymo-are-headed-towards-a-robotaxi-showdown-in-london/" target="_blank">TechCrunch — Uber, Wayve, and Waymo are headed toward a robotaxi showdown in London</a>
+    </div>
+    <div class="card-comment">
+      💬 サンフランシスコでの競争経験を積んだWaymoが欧州初進出。左側通行・多文化環境という難条件でのパフォーマンスが真価を問う試練になる。
+    </div>
+  </div>
+
+  <div class="footer">
+    本簡報はWeb検索により自動収集した情報をまとめたものです。各記事の事実関係は出典リンク先の原典でご確認ください。<br>
+    生成日時：2026年6月27日 ／ &copy; alphakt AI Briefing
+  </div>
+</div>
+
+</body>
+</html>
