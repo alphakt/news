@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年6月28日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .summary-box {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 24px 0 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca;
+    font-size: 15px; color: #374151; line-height: 1.8;
+  }
+  .summary-box strong { color: #1a1f2e; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high  { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium{ background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low   { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年6月28日（日）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 一覧へ戻る</a>
+
+  <div class="summary-box">
+    <strong>本日のハイライト：</strong>OpenAIがGPT-5.6シリーズ（Sol／Terra／Luna）を米政府管理下で限定公開（6/26）。Anthropicはアリババによる2880万回のClaude不正蒸留を議会に告発し、AI知財戦争が一段と激化。OpenAI×Broadcom「Jalapeño」カスタム推論チップが9ヶ月の超高速サイクルで発表され、NVIDIA対抗の構図が鮮明に。EU AI Actの高リスク義務延期など規制側の動きも加速している。全8件。
+  </div>
+
+  <!-- ===== 高 HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度：高</span>
+    <h2>OpenAI、GPT-5.6シリーズ（Sol／Terra／Luna）を米政府管理下で限定公開</h2>
+    <p>
+      OpenAIは2026年6月26日、次世代モデル「GPT-5.6」シリーズ（フラッグシップ「Sol」・バランス型「Terra」・高速低価格「Luna」の3種）を発表した。しかしトランプ政権からの国家安全保障上の要請を受け、政府が個別に承認した約20社のみに限定プレビューを提供するという異例の形での公開となった。SolはOpenAI史上最高のサイバーセキュリティ・コーディング・生物学性能を持ち、脆弱性発見よりも修復支援が得意な設計だという。価格はSolが入力$5／出力$30（100万トークン当たり）、Terraはその半額、Lunaは入力$1／出力$6。OpenAIは「制限は本来の姿ではない」と述べつつ、数週間以内の一般公開を目指すとしている。AI能力の政府管理が前例のない形で現実化した事例として、業界に大きな波紋を呼んでいる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.axios.com/2026/06/26/openai-gpt-sol-terra-luna-trump" target="_blank">Axios — OpenAI releases powerful new GPT-5.6 model under restrictions</a>
+      ／ <a href="https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/" target="_blank">TechCrunch</a>
+      ／ <a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank">OpenAI公式</a>
+    </div>
+    <div class="comment">政府がAIモデルのリリースを直接管理する前例が生まれた。「安保上の懸念」を理由とした制限が常態化すると、AI産業の自律性そのものが損なわれかねない。ルールメイキングの行方を注視したい。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度：高</span>
+    <h2>Anthropic、アリババ関連企業によるClaude不正蒸留（2880万回・偽アカウント2.5万件）を米議会に告発</h2>
+    <p>
+      Anthropicは米上院銀行委員会（Tim Scott委員長、Elizabeth Warren議員）への書簡の中で、アリババのQwen AIラボに関連する事業者が2026年4月22日〜6月5日にかけて約2.5万件の偽アカウントを使い、Claudeに対して2880万回に及ぶ組織的な「蒸留攻撃」を行ったと告発した。蒸留攻撃とは、高性能モデルの出力を大量収集して自社の低コストモデルを訓練する手法で、Anthropicはこれを「敵対的蒸留（adversarial distillation）」と呼んでいる。ターゲットはソフトウェアエンジニアリングとエージェント推論の能力だったとされる。アリババ側は不正行為を否定しているが、同社株は16か月ぶりの安値まで下落。AI知的財産の防衛が国際的な法的・政治的問題として浮上し、議会での立法化が加速する可能性がある。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-claims-that-chinas-alibaba-illicitly-distilled-its-models-from-april-to-june-2026-says-effort-involved-25-000-fake-accounts-and-28-8-million-exchanges-on-claude" target="_blank">Tom's Hardware — Anthropic claims Alibaba illicitly distilled Claude</a>
+      ／ <a href="https://www.yahoo.com/news/articles/anthropic-says-alibaba-illicitly-extracted-203048057.html" target="_blank">Yahoo News</a>
+    </div>
+    <div class="comment">「蒸留攻撃」がここまで組織的・大規模に実施されたと公式告発されたのは初めて。モデルの「無断複製」に対する法的・技術的防衛策の整備が急務であり、AI企業のセキュリティ体制の抜本的見直しが迫られる。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度：高</span>
+    <h2>OpenAI×Broadcom、カスタムAI推論チップ「Jalapeño」を9ヶ月で開発・発表——NVIDIA対抗の切り札</h2>
+    <p>
+      OpenAIとBroadcomは6月24日、LLM推論に特化したカスタムASIC「Jalapeño」を共同発表した。設計開始からテープアウト（製造データ確定）まで9ヶ月という、ハイパフォーマンス半導体業界では前例のない短期開発サイクルを実現した。OpenAI自身のモデルを設計・最適化工程に活用することで、従来なら数年かかるプロセスを大幅に圧縮したとしている。NVIDIA GPUと比較してパフォーマンス/ワット比が大幅に向上し、推論コスト約50%削減を目指す。2026年末からMicrosoftとの協業によるギガワット規模のデータセンターへ展開予定。NVIDIAへの高い依存からの脱却を同時に狙う戦略的な動きで、半導体業界の構造変化を象徴する出来事となった。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/" target="_blank">TechCrunch — OpenAI unveils its first custom chip built by Broadcom</a>
+      ／ <a href="https://venturebeat.com/infrastructure/openai-unveils-first-custom-ai-inference-chip-jalapeno-with-broadcom-and-its-development-was-sped-up-with-openais-own-models" target="_blank">VentureBeat</a>
+      ／ <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank">OpenAI公式ブログ</a>
+    </div>
+    <div class="comment">「AIがAIチップ設計を加速する」というフライホイールが実証された。NVIDIAにとっては大手顧客の自前チップシフトを示す最大のシグナルであり、Googleに続きOpenAIも自社シリコン路線を確立しつつある。</div>
+  </div>
+
+  <!-- ===== 中 MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度：中</span>
+    <h2>GPT-4.5、6月27日に正式退場——ChatGPT上の会話はGPT-5.5へ自動移行</h2>
+    <p>
+      OpenAIは2026年6月27日（昨日）、30日間の廃止通知期間を経てGPT-4.5をChatGPTから正式に引退させた。既存の会話は対応するGPT-5.5モデルへ自動的に移行され、ユーザーへの影響を最小化する設計になっている。GPT-4.5は2025年2月にリリース後、GPT-5シリーズの段階的展開に伴いその役割を縮小してきた。今回の退場によりOpenAIのモデルポートフォリオはGPT-5系列に一本化される方向が鮮明となり、翌日に限定公開されたGPT-5.6シリーズとの世代交代が一気に進んだ形だ。AIモデルのライフサイクルが約1〜1.5年サイクルへと急速に短縮されており、企業はAPIやシステム連携の継続的な見直しを迫られる状況が定着しつつある。
+    </p>
+    <div class="source">
+      出典：<a href="https://www.buildfastwithai.com/blogs/ai-news-today-june-27-2026" target="_blank">BuildFastWithAI — AI News Today June 27, 2026</a>
+    </div>
+    <div class="comment">リリースから約16ヶ月でGPT-4.5が退場。「旧モデルの廃止」がルーティンになる一方、APIへの依存度が高い企業ほどモデル移行コストが積み重なる。定期的なモデル評価・更新計画の策定が不可欠だ。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度：中</span>
+    <h2>EU AI Act、高リスクAI義務を2027年12月まで約1年半延期——欧州議会がデジタルオムニバス改正を承認</h2>
+    <p>
+      欧州議会は2026年6月16日、「デジタルオムニバス」と呼ばれる改正パッケージを承認し、EU AI Actにおける高リスクAI（Annex III：採用・融資・医療診断・重要インフラ管理など）に課される義務の期限を、当初予定の2026年8月から2027年12月へ約1年半延期することを決定した。生成AIシステムへのウォーターマーキング（コンテンツ透明性表示）義務も2026年12月まで猶予される。延期の理由として中小企業のコンプライアンス負担軽減と国際競争力への配慮が挙げられている。なお2026年8月以降は透明性義務と執行権限は原則として適用されるため、完全な延期ではない点に注意が必要。正式発効はEU理事会の採択を待つ段階だ。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://ogletree.com/insights-resources/blog-posts/eu-ai-act-amended-parliament-votes-to-delay-key-deadlines/" target="_blank">Ogletree — EU AI Act Amended: Parliament Votes to Delay Key Deadlines</a>
+      ／ <a href="https://axis-intelligence.com/eu-ai-act-news/" target="_blank">Axis Intelligence — EU AI Act News 2026</a>
+    </div>
+    <div class="comment">欧州でも「規制より普及優先」の現実路線への転換が進んでいる。ただし8月以降の透明性・執行規定は据え置きで「全面延期」ではない。日系企業もEUでのAIシステム分類と対応状況の確認を怠らないようにしたい。</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="card medium">
+    <span class="badge medium">重要度：中</span>
+    <h2>DeepSeek、初の外部資金調達74億ドル完了——評価額最大590億ドル・中国政府系ファンドのみが議決権を取得</h2>
+    <p>
+      中国AI企業DeepSeekは2026年6月16日、創業以来初の外部資金調達を完了し、約74億ドル（510億元）を調達した。評価額は最大590億ドルに達する。主要投資家はTencent（約100億元）・CATL（約50億元）・JD.com・NetEaseなど中国大手企業。しかし最も注目されるのは資本構造で、商業投資家には議決権が付与されず5年間のロックアップが課される一方、中国国家人工知能産業投資ファンド（国家系）のみが直接株式として議決権付きの持分を受け取る。DeepSeek-V2・R1で世界的な注目を集めた同社が実質的な国家管理下のガバナンス構造を採用したことは、西側諸国との技術提携・輸出規制上の扱いに今後大きな影響を与える可能性がある。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/05/06/deepseek-could-hit-45b-valuation-from-its-first-investment-round/" target="_blank">TechCrunch — DeepSeek could hit $45B+ valuation</a>
+      ／ <a href="https://www.trendingtopics.eu/deepseek-raises-7-4-billion-only-the-chinese-state-gets-voting-rights/" target="_blank">TrendingTopics — Chinese State Gets Voting Rights</a>
+    </div>
+    <div class="comment">「国家が議決権を持つAI企業」という構造は、DeepSeekを実質的に国策企業として位置付ける。オープンウェイトモデルを公開してきた同社の方針が今後どう変わるかが注目点だ。</div>
+  </div>
+
+  <!-- ===== 低 LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 7 -->
+  <div class="card low">
+    <span class="badge low">重要度：低</span>
+    <h2>Qualcomm、Jim KellerのAIチップ企業Tenstorrentを最大100億ドルで買収交渉中</h2>
+    <p>
+      Qualcommが伝説的チップ設計者Jim Keller率いるAIチップスタートアップTenstorrent（2016年設立）を80〜100億ドルで買収交渉中であることが6月中旬に報じられた。TenstorrentはRISC-Vアーキテクチャをベースとした効率的なAI推論チップを開発しており、この技術と人材を獲得することでQualcommはNVIDIAのAI半導体市場独占に挑む足がかりを得られる見通しだ。Qualcommは今年すでにRISC-Vオープンコンパイラスタックへ14億ドルの投資も進めており、AI半導体戦略の強化を急いでいる。両社ともコメントを控えており、最終合意は未確定だが、成立すれば半導体業界のAI構図を大きく塗り替えることになる。
+    </p>
+    <div class="source">
+      出典：<a href="https://www.theregister.com/systems/2026/06/16/qualcomm-said-to-be-circling-ai-chip-biz-tenstorrent-in-10b-risc-v-power-play/5256084" target="_blank">The Register — Qualcomm circles Tenstorrent in RISC-V power play</a>
+      ／ <a href="https://www.gurufocus.com/news/8918836/qualcomm-qcom-explores-8b10b-acquisition-of-ai-chip-startup-tenstorrent" target="_blank">GuruFocus</a>
+    </div>
+    <div class="comment">Jim KellerはIntel・AMD・Teslaのチップ設計を牽引した業界の伝説的人物。Qualcommがこの人材と技術を手に入れれば、AIチップ競争の構図が大きく変わる可能性がある。動向を追い続けたい案件だ。</div>
+  </div>
+
+  <!-- 8 -->
+  <div class="card low">
+    <span class="badge low">重要度：低</span>
+    <h2>トランプ政権、「AI革新・安全保障推進」大統領令に署名——30日以内にAIサイバー防衛施策を実施へ</h2>
+    <p>
+      米トランプ政権は2026年6月2日、「Promoting Advanced Artificial Intelligence Innovation and Security（AI革新と安全保障の促進）」と題する大統領令に署名した。主な柱は①政府情報システムのサイバー防衛強化、②フロンティアAIモデル開発者向けの自発的なセキュリティレビューフレームワーク構築、③AIの犯罪悪用への執行強化の3点。また政府主導の「AIサイバーセキュリティクリアリングハウス」の設立も明示されており、民間AI企業と重要インフラ事業者が協力して脆弱性を発見・修正するエコシステムの形成を目指す。30日以内にサイバー防衛指令、60日以内にフロンティアモデルフレームワークの具体案が策定される見込みで、7月中に詳細が明らかになる予定だ。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/" target="_blank">White House — Promoting Advanced AI Innovation and Security</a>
+      ／ <a href="https://www.insideprivacy.com/artificial-intelligence/white-house-releases-executive-order-on-advanced-ai-innovation-and-security/" target="_blank">Inside Privacy</a>
+    </div>
+    <div class="comment">GPT-5.6の政府管理下限定公開と合わせて読むと、「AIの軍民デュアルユース管理」が米国の正式政策として急速に定着しつつあることがわかる。今後の7月施策が具体的にどこまで踏み込むか、注目したい。</div>
+  </div>
+
+</div><!-- /wrap -->
+
+<div class="wrap">
+  <div class="footer">
+    本簡報はWeb検索により自動生成された情報をまとめたものです。各記事の事実関係はリンク先の原典でご確認ください。<br>
+    <a href="../index.html">← AI最新動向簡報 一覧へ戻る</a> ／ © alphakt — AI Briefing 2026-06-28
+  </div>
+</div>
+
+</body>
+</html>
