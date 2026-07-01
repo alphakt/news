@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月1日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f0f4f8;
+    color: #1a202c;
+    line-height: 1.8;
+    font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 60%, #3b82f6 100%);
+    color: #fff;
+    padding: 52px 24px 44px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(30,58,138,0.3);
+  }
+  .header h1 { font-size: 32px; letter-spacing: 1px; margin-bottom: 10px; }
+  .header .date-label {
+    font-size: 20px; font-weight: 700; background: rgba(255,255,255,0.18);
+    display: inline-block; padding: 6px 22px; border-radius: 30px; margin-bottom: 10px;
+  }
+  .header p { font-size: 15px; opacity: 0.9; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 36px 20px 80px; }
+  .summary-box {
+    background: #fff; border-radius: 14px; padding: 22px 28px; margin-bottom: 30px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07); border-left: 6px solid #2563eb;
+    font-size: 15px; line-height: 1.8; color: #374151;
+  }
+  .summary-box strong { color: #1e3a8a; }
+  .section-title {
+    font-size: 15px; font-weight: 800; letter-spacing: 2px;
+    margin: 32px 0 14px; padding: 8px 16px; border-radius: 8px;
+    display: inline-block;
+  }
+  .section-high { background: #fee2e2; color: #b91c1c; }
+  .section-mid  { background: #fef3c7; color: #92400e; }
+  .section-low  { background: #e0f2fe; color: #075985; }
+
+  .card {
+    background: #fff; border-radius: 14px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    overflow: hidden;
+  }
+  .card-header {
+    display: flex; align-items: center; gap: 12px;
+    padding: 18px 24px 14px;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .badge {
+    font-size: 12px; font-weight: 800; padding: 4px 12px; border-radius: 20px;
+    white-space: nowrap; letter-spacing: 1px;
+  }
+  .badge-high { background: #fee2e2; color: #b91c1c; border: 1.5px solid #fca5a5; }
+  .badge-mid  { background: #fef3c7; color: #92400e; border: 1.5px solid #fcd34d; }
+  .badge-low  { background: #e0f2fe; color: #075985; border: 1.5px solid #7dd3fc; }
+
+  .card-headline {
+    font-size: 19px; font-weight: 800; color: #1e293b; line-height: 1.4;
+  }
+  .card-body { padding: 16px 24px 20px; }
+  .card-body p { font-size: 16px; line-height: 1.85; color: #374151; margin-bottom: 14px; }
+  .source-line {
+    font-size: 14px; color: #6b7280; display: flex; align-items: center; gap: 6px;
+    margin-bottom: 12px;
+  }
+  .source-line a { color: #2563eb; text-decoration: none; }
+  .source-line a:hover { text-decoration: underline; }
+  .comment-box {
+    background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 0 8px 8px 0;
+    padding: 12px 16px; font-size: 15px; color: #166534; line-height: 1.7;
+  }
+  .comment-box::before { content: "💬 編集コメント："; font-weight: 700; display: block; margin-bottom: 4px; }
+
+  .back-link {
+    display: inline-block; margin-top: 40px; padding: 12px 28px;
+    background: #2563eb; color: #fff; border-radius: 10px; text-decoration: none;
+    font-size: 15px; font-weight: 700; transition: background 0.15s;
+  }
+  .back-link:hover { background: #1e40af; }
+  .footer {
+    text-align: center; font-size: 13px; color: #9ca3af; margin-top: 50px;
+    padding: 0 18px; line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="date-label">2026年7月1日（水）</div>
+  <h1>🤖 AI最新動向簡報</h1>
+  <p>alphakt 社内向け 日次AIニュース ／ 本日のトピック数：6件</p>
+</div>
+
+<div class="wrap">
+
+  <div class="summary-box">
+    <strong>本日のハイライト：</strong>
+    米商務省が Claude Fable 5・Mythos 5 の輸出規制を全面解除し、19日間の停止を経て本日アクセスが復旧。Amazon AWS は10億ドル規模の「フォワード・デプロイド・エンジニアリング」新組織を設立し OpenAI・Anthropic に対抗。GitHub Copilot は従量課金の初回フル課金サイクルが確定し、開発者のコストが最大50倍に急増したことが判明した。Proton の「Lumo 2.0」、OKX の「AIエージェント同士が雇用・支払いする」新市場、Agility Robotics の SPAC 上場など、サービス・応用領域の広がりも続く。
+  </div>
+
+  <!-- ===== 高 ===== -->
+  <div class="section-title section-high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card">
+    <div class="card-header">
+      <span class="badge badge-high">高</span>
+      <div class="card-headline">米政権、Claude Fable 5 / Mythos 5 の輸出規制を全面解除——19日間の停止から本日復旧</div>
+    </div>
+    <div class="card-body">
+      <p>
+        Anthropic は6月30日（現地時間火曜夜）、米商務省が <strong>Claude Fable 5</strong> と <strong>Claude Mythos 5</strong> への輸出規制を全面解除したと発表した。両モデルは6月9日にリリースされたが、信頼パートナー（Amazon と報じられる）がガードレールを回避するジェイルブレイク手法を発見したことを受け、6月12日に商務省が外国人ユーザーを含む全世界での利用停止を命じていた。19日間の停止を経て、アクセスは本日（7月1日水曜）から段階的に復旧する。
+        商務長官ハワード・ルトニック氏はSNSで解除を発表し、Anthropic は「明日から復旧を開始する」との声明を出した。今回の一連の措置は、先端AIモデルに国家安全保障の観点から輸出管理が適用された初のケースとして注目されている。
+      </p>
+      <div class="source-line">
+        📎 出典：
+        <a href="https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html" target="_blank">CNBC — Anthropic Export Controls Lifted</a>
+        ／
+        <a href="https://www.anthropic.com/news/fable-mythos-access" target="_blank">Anthropic 公式声明</a>
+        ／
+        <a href="https://www.cnn.com/2026/06/30/tech/anthropic-export-control-ban-lifted-white-house" target="_blank">CNN Business</a>
+      </div>
+      <div class="comment-box">
+        商用フロンティアAIが国家の輸出管理下に置かれ、しかも3週間足らずで解除されるという展開は前例がない。ジェイルブレイク耐性の脆さが露呈した以上、次のモデル世代では「政府審査を前提としたリリース設計」が業界標準になる可能性が高い。
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card">
+    <div class="card-header">
+      <span class="badge badge-high">高</span>
+      <div class="card-headline">Amazon AWS、10億ドル規模「フォワード・デプロイド・エンジニアリング」新組織を設立</div>
+    </div>
+    <div class="card-body">
+      <p>
+        Amazon Web Services（AWS）は6月30日、自社資金 <strong>10億ドル</strong> を投じて「フォワード・デプロイド・エンジニア（FDE）」専門組織を新設したと発表した。AWSのフロンティアAIエンジニアリング担当VP、フランチェスカ・バスケス氏によると、数千人規模のFDEを配置し、企業の現場に小規模チームを約45日間常駐させて、顧客専用のエージェントAIシステムを構築する。
+        OpenAI や Anthropic がすでに外部投資家やコンサルティングパートナーと組んで同種の展開部隊を作っているのに対し、AWS は他社と組まず自己資金のみで運営する点が特徴。顧客は新しいAIシステムと同時に、自社で運用を継続できる技術力も獲得できるという。
+      </p>
+      <div class="source-line">
+        📎 出典：
+        <a href="https://www.cnbc.com/2026/06/30/aws-amazon-ai-forward-deployed-engineers.html" target="_blank">CNBC — AWS Forward-Deployed Engineers</a>
+        ／
+        <a href="https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic/" target="_blank">TechCrunch</a>
+      </div>
+      <div class="comment-box">
+        「フォワード・デプロイド・エンジニア」というPalantir発祥の職種が、今やAI大手3社共通の主戦場になっている。企業向けAI導入は汎用モデルの提供だけでは完結せず、業務に合わせて人手で仕上げる工程が競争優位の分かれ目になっている点が読み取れる。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 中 ===== -->
+  <div class="section-title section-mid">🟡 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card">
+    <div class="card-header">
+      <span class="badge badge-mid">中</span>
+      <div class="card-headline">GitHub Copilot、従量課金の初回フル課金サイクルが終了——利用者の請求額が最大50倍に急増</div>
+    </div>
+    <div class="card-body">
+      <p>
+        GitHub Copilot は6月1日にサブスクリプション型からトークン従量課金の「AI Credits」制へ移行したが、6月30日に最初の完全な30日間課金サイクルが終了し、実際の請求額が明らかになった。エージェント的な使い方をする開発者からは、月額29ドルの請求が750ドルへ、50ドルが3,000ドルへ跳ね上がったとの報告が相次いでいる。
+        入力・出力・キャッシュされたトークンすべてに課金される仕組みのため、AIエージェントに複雑な作業を任せるほどコストが線形以上に増大する。上限を自分で設定しない限りブレーキがかからない設計が、今回の「請求書ショック」の直接的な原因とされる。
+      </p>
+      <div class="source-line">
+        📎 出典：
+        <a href="https://www.techtimes.com/articles/319340/20260629/github-copilot-billing-shock-confirmed-agentic-users-face-10x-cost-surge.htm" target="_blank">Tech Times — Copilot Billing Shock Confirmed</a>
+        ／
+        <a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/" target="_blank">GitHub 公式ブログ</a>
+      </div>
+      <div class="comment-box">
+        AIコーディングエージェントの「使い方」自体が変わらないと、従量課金モデルとは相性が悪いことが露呈した。トークン消費量を可視化し予算上限を明示的に設計する運用スキルが、今後は開発チームに必須のノウハウになる。
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card">
+    <div class="card-header">
+      <span class="badge badge-mid">中</span>
+      <div class="card-headline">Proton、プライバシー重視AIチャット「Lumo 2.0」を公開——画像生成・暗号化メモリ・Thinkingモードを追加</div>
+    </div>
+    <div class="card-body">
+      <p>
+        スイスのプライバシー企業 Proton は6月30日、AIチャットアシスタント「<strong>Lumo</strong>」を大幅刷新した「Lumo 2.0」を発表した。新機能として画像生成・画像認識、ユーザーが管理する暗号化メモリ、特定用途向けにカスタマイズできる「Custom Lumos」、引用付きのライブWeb検索を追加。応答速度を優先する「Fast」モードと複数ステップの推論を行う「Thinking」モードを切り替えられる新アーキテクチャを採用した。
+        Proton によると、Lumo 2.0 Lite は旧バージョン比で Artificial Analysis Intelligence Index が127%向上、上位モデルの Lumo 2.0 Max は240%向上したとしている。ゼロアクセス暗号化を維持したまま高性能化を図った点が特徴。
+      </p>
+      <div class="source-line">
+        📎 出典：
+        <a href="https://techcrunch.com/2026/06/30/lumo-protons-privacy-focused-ai-chatbot-gets-an-upgrade/" target="_blank">TechCrunch — Lumo Gets an Upgrade</a>
+        ／
+        <a href="https://9to5mac.com/2026/06/30/proton-launches-lumo-2-0-with-image-generation-memory-private-web-search-more/" target="_blank">9to5Mac</a>
+      </div>
+      <div class="comment-box">
+        「プライバシー」と「高性能マルチモーダル」は二択だと思われがちだが、Lumo 2.0 はその折衷案を提示している。企業の機密情報を扱う業務でAIチャットを使いたいが外部送信を避けたい、というニーズに応える選択肢が増えたのは歓迎したい動き。
+      </div>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card">
+    <div class="card-header">
+      <span class="badge badge-mid">中</span>
+      <div class="card-headline">暗号資産取引所OKX、「AIエージェント同士が雇用・支払いを行う」新マーケットプレイス「OKX AI」を開設</div>
+    </div>
+    <div class="card-body">
+      <p>
+        暗号資産取引所 OKX は6月30日、クローズドベータを経て「OKX AI」を開発者向けに一般公開した。これはAIエージェントが互いを「雇用」し、業務完了後に自律的にオンチェーンで支払いを行い、実績に基づく「ポータブルな信用（レピュテーション）」を積み上げられる市場だという。人手を介さずAIエージェント間で発注・実行・決済・評価が完結する仕組みを目指している。
+        同社は、AIエージェントが自律的に経済活動を行う「エージェントエコノミー（Agentic Commerce）」という概念の実装例としてこのサービスを位置づけている。暗号資産の決済インフラとAIエージェントの自律実行を組み合わせた新しい応用領域として注目される。
+      </p>
+      <div class="source-line">
+        📎 出典：
+        <a href="https://techcrunch.com/2026/06/30/crypto-exchange-okx-wants-ai-agents-to-hire-and-pay-each-other/" target="_blank">TechCrunch — OKX Wants AI Agents to Hire and Pay Each Other</a>
+      </div>
+      <div class="comment-box">
+        「AIエージェントが発注者にも受注者にもなる」市場は新概念の応用先として興味深い一方、詐欺・誤発注・無限ループ的な支払いなど、人間の監督が及ばないリスクへの備えが未成熟なまま先行している印象も強い。ガバナンス設計の検証を注視したい。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 低 ===== -->
+  <div class="section-title section-low">🔵 重要度：低</div>
+
+  <!-- 6 -->
+  <div class="card">
+    <div class="card-header">
+      <span class="badge badge-low">低</span>
+      <div class="card-headline">Agility Robotics、SPAC上場を通じ米国初の人型ロボット専業上場企業に——新型「Digit v5」も発表</div>
+    </div>
+    <div class="card-body">
+      <p>
+        人型ロボット企業 Agility Robotics は、Churchill Capital Corp XI とのSPAC（特別買収目的会社）合併により、企業価値 <strong>25億ドル</strong> でナスダック上場（ティッカー「AGLT」予定）することを明らかにした。追加で最大2億ドルのPIPE資金を含め、合計6.2億ドル超を新型モデル「<strong>Digit v5</strong>」の開発と量産拡大に充てる計画。
+        Digit v5 は最大50ポンド（約22.7kg、v4比40%増）の可搬重量、約22時間の連続稼働、身長7.2フィートを実現し、「人と協働できる安全性を持つ世界初のAI搭載ヒューマノイド」と位置づけられている。既存モデルは Schaeffler・GXO・トヨタ・Mercado Libre など9拠点で6.5万時間超の稼働実績を積んでおり、Digit v5には既に3億ドル超の複数年受注が入っている。
+      </p>
+      <div class="source-line">
+        📎 出典：
+        <a href="https://www.techtimes.com/articles/319099/20260625/humanoid-robot-ipo-agility-robotics-signs-spac-deal-us-nasdaq-debut.htm" target="_blank">Tech Times — Agility Robotics SPAC Deal</a>
+        ／
+        <a href="https://www.therobotreport.com/humanoid-maker-agility-robotics-go-public-through-spac-merger/" target="_blank">The Robot Report</a>
+      </div>
+      <div class="comment-box">
+        ヒューマノイド専業企業が上場市場に到達したことで、投資判断の材料が「デモの完成度」から「稼働時間・受注額・財務指標」という事業会社としての実績に移っていく。alphaktとしても業界の成熟度を測る定点として追跡する価値がある。
+      </div>
+    </div>
+  </div>
+
+  <a class="back-link" href="../index.html">← 簡報一覧に戻る</a>
+
+  <div class="footer">
+    本簡報はWeb検索により収集した公開情報をまとめたものです。各記事の事実関係はリンク先の原典でご確認ください。<br>
+    生成日時：2026年7月1日 ／ © alphakt — AI Briefing
+  </div>
+
+</div>
+</body>
+</html>
