@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月2日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f0f4f8;
+    color: #1a202c;
+    line-height: 1.8;
+    font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 60%, #3b82f6 100%);
+    color: #fff;
+    padding: 52px 24px 44px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(30,58,138,0.3);
+  }
+  .header h1 { font-size: 32px; letter-spacing: 1px; margin-bottom: 10px; }
+  .header .date-label {
+    font-size: 20px; font-weight: 700; background: rgba(255,255,255,0.18);
+    display: inline-block; padding: 6px 22px; border-radius: 30px; margin-bottom: 10px;
+  }
+  .header p { font-size: 15px; opacity: 0.9; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 36px 20px 80px; }
+  .summary-box {
+    background: #fff; border-radius: 14px; padding: 22px 28px; margin-bottom: 30px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07); border-left: 6px solid #2563eb;
+    font-size: 15px; line-height: 1.8; color: #374151;
+  }
+  .summary-box strong { color: #1e3a8a; }
+  .section-title {
+    font-size: 15px; font-weight: 800; letter-spacing: 2px;
+    margin: 32px 0 14px; padding: 8px 16px; border-radius: 8px;
+    display: inline-block;
+  }
+  .section-high { background: #fee2e2; color: #b91c1c; }
+  .section-mid  { background: #fef3c7; color: #92400e; }
+  .section-low  { background: #e0f2fe; color: #075985; }
+
+  .card {
+    background: #fff; border-radius: 14px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    overflow: hidden;
+  }
+  .card-header {
+    display: flex; align-items: center; gap: 12px;
+    padding: 18px 24px 14px;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .badge {
+    font-size: 12px; font-weight: 800; padding: 4px 12px; border-radius: 20px;
+    white-space: nowrap; letter-spacing: 1px;
+  }
+  .badge-high { background: #fee2e2; color: #b91c1c; border: 1.5px solid #fca5a5; }
+  .badge-mid  { background: #fef3c7; color: #92400e; border: 1.5px solid #fcd34d; }
+  .badge-low  { background: #e0f2fe; color: #075985; border: 1.5px solid #7dd3fc; }
+
+  .card-headline {
+    font-size: 19px; font-weight: 800; color: #1e293b; line-height: 1.4;
+  }
+  .card-body { padding: 16px 24px 20px; }
+  .card-body p { font-size: 16px; line-height: 1.85; color: #374151; margin-bottom: 14px; }
+  .source-line {
+    font-size: 14px; color: #6b7280; display: flex; align-items: center; gap: 6px;
+    margin-bottom: 12px; flex-wrap: wrap;
+  }
+  .source-line a { color: #2563eb; text-decoration: none; }
+  .source-line a:hover { text-decoration: underline; }
+  .comment-box {
+    background: #f0fdf4; border-left: 4px solid #22c55e; border-radius: 0 8px 8px 0;
+    padding: 12px 16px; font-size: 15px; color: #166534; line-height: 1.7;
+  }
+  .comment-box::before { content: "💬 編集コメント："; font-weight: 700; display: block; margin-bottom: 4px; }
+
+  .back-link {
+    display: inline-block; margin-top: 40px; padding: 12px 28px;
+    background: #2563eb; color: #fff; border-radius: 10px; text-decoration: none;
+    font-size: 15px; font-weight: 700; transition: background 0.15s;
+  }
+  .back-link:hover { background: #1e40af; }
+  .footer {
+    text-align: center; font-size: 13px; color: #9ca3af; margin-top: 50px;
+    padding: 0 18px; line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="date-label">2026年7月2日（木）</div>
+  <h1>🤖 AI最新動向簡報</h1>
+  <p>alphakt 社内向け 日次AIニュース ／ 本日のトピック数：8件</p>
+</div>
+
+<div class="wrap">
+
+  <div class="summary-box">
+    <strong>本日のハイライト：</strong>
+    Anthropic は「近Opus性能・低価格」を掲げる新デフォルトモデル <strong>Claude Sonnet 5</strong> を投入すると同時に、輸出規制が解けた <strong>Fable 5</strong> を世界復旧させ、業界横断の「ジェイルブレイク深刻度」採点フレームワークを提案。一方 Palantir の CEO アレックス・カープ氏は OpenAI・Anthropic のトークン課金モデルを公の場で酷評し株価が急伸した。ロボティクス分野では中国 UBTech が量産型の“同居用”ヒューマノイド「UWORLD U1」を発表。Together AI の8億ドル調達、Google の低価格画像生成モデル、カリフォルニア州の全州AIアシスタント展開など、応用領域の広がりも続く一日となった。
+  </div>
+
+  <!-- ===== 高 ===== -->
+  <div class="section-title section-high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card">
+    <div class="card-header">
+      <span class="badge badge-high">高</span>
+      <div class="card-headline">Anthropic、新デフォルトモデル「Claude Sonnet 5」を発表——「近Opus性能」を低価格で全プランに提供</div>
+    </div>
+    <div class="card-body">
+      <p>
+        Anthropic は6月30日、Free・Proプランの新デフォルトモデルとして「<strong>Claude Sonnet 5</strong>」を発表した。Max・Team・Enterprise含む全プランで利用可能。ブラウザやターミナルなどのツールを自律的に使いこなす「これまでで最もエージェント的なSonnet」と位置づけられ、コーディング・推論・ツール利用の性能で前世代Sonnet 4.6を大きく上回り、フラッグシップのOpus 4.8に迫る水準に達したという。
+        価格は8月31日まで入力100万トークンあたり2ドル・出力10ドルの導入価格で提供され、その後は3ドル／15ドルに引き上げられる。エージェント的な誤動作率もSonnet 4.6より低減されたとしている。
+      </p>
+      <div class="source-line">
+        📎 出典：
+        <a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank">Anthropic 公式— Introducing Claude Sonnet 5</a>
+        ／
+        <a href="https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/" target="_blank">TechCrunch</a>
+        ／
+        <a href="https://venturebeat.com/technology/anthropic-launches-claude-sonnet-5-at-a-steep-discount-to-its-top-model-as-the-company-races-toward-a-blockbuster-ipo" target="_blank">VentureBeat</a>
+      </div>
+      <div class="comment-box">
+        「フラッグシップに迫る性能を中位モデルの価格で」という訴求は、まさに前日報じたGitHub Copilotの請求書ショックへの回答にも見える。エージェント運用のコストを抑えたい企業にとって、Sonnet系列がデフォルト選択になる流れが加速しそうだ。
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card">
+    <div class="card-header">
+      <span class="badge badge-high">高</span>
+      <div class="card-headline">Claude Fable 5 が世界で正式復旧——Anthropic、業界横断の「ジェイルブレイク深刻度」採点フレームワークを提案</div>
+    </div>
+    <div class="card-body">
+      <p>
+        Anthropic は7月1日、輸出規制解除を受けて <strong>Claude Fable 5</strong> を Claude Platform・Claude.ai・Claude Code・Claude Cowork上で全世界のユーザー向けに正式復旧させた。Pro・Max・Team・一部Enterpriseプランでは7月7日まで週次利用枠の最大50%をFable 5に充当できる。あわせて新しいジェイルブレイク検知分類器を導入し、悪用コードをより多く検出できるようにしたという。より制限の強い<strong>Mythos 5</strong>は米政府承認済みの組織限定で再導入される。
+        同社は「Project Glasswing」を通じ、Amazon・Microsoft・Googleなど約150組織と共同で、ジェイルブレイクの深刻度を「能力向上の度合い」「悪用の容易さ」等4軸で評価する業界共通の採点基準を提案した。
+      </p>
+      <div class="source-line">
+        📎 出典：
+        <a href="https://9to5mac.com/2026/07/01/claude-fable-5-cleared-to-return-as-us-lifts-anthropics-export-control-restriction/" target="_blank">9to5Mac — Fable 5 Cleared to Return</a>
+        ／
+        <a href="https://www.anthropic.com/news/expanding-project-glasswing" target="_blank">Anthropic 公式 — Expanding Project Glasswing</a>
+      </div>
+      <div class="comment-box">
+        フロンティアモデルの脆弱性評価に「共通の物差し」がまだ無かったこと自体が驚きだが、輸出規制という国家介入を実際に経験したことで、業界横断の標準化が一気に現実味を帯びてきた印象。今後の各社モデルリリース判断にも影響しそうだ。
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card">
+    <div class="card-header">
+      <span class="badge badge-high">高</span>
+      <div class="card-headline">Palantir CEOカープ氏、OpenAI・Anthropicのトークン課金モデルを公の場で酷評——株価は急伸</div>
+    </div>
+    <div class="card-body">
+      <p>
+        Palantir のCEOアレックス・カープ氏は7月1日、CNBCの番組で OpenAI と Anthropic が採用するトークン従量課金モデルについて「何かが完全に間違ってしまった」と批判した。企業顧客はAI導入の「成果」ではなく「処理したトークン量」で課金される仕組みに不満を強めており、コストが高騰する中で「トークンマキシング」志向からROI重視へ移行しつつあるという文脈での発言。カープ氏はモデル自体が「無責任なまでに過大評価されている」と表現しつつ、Anthropic CEOダリオ・アモデイ氏との私的な議論は「楽しい」とも述べた。
+        この発言はPalantirとNVIDIAが6月29日に発表した政府機関向け主権AI基盤の直後で、Palantir株はこの日8〜9%上昇した。
+      </p>
+      <div class="source-line">
+        📎 出典：
+        <a href="https://www.cnbc.com/2026/07/01/palantir-karp-open-ai-anthropic-tokens.html" target="_blank">CNBC — Karp Bashes OpenAI, Anthropic Token Model</a>
+        ／
+        <a href="https://www.tipranks.com/news/palantir-stock-pltr-rallies-9-as-ceo-blasts-openai-and-anthropics-wealth-tax-on-tokens" target="_blank">TipRanks</a>
+      </div>
+      <div class="comment-box">
+        競合トップの発言として話半分に聞くべき部分はあるが、「トークン課金への不満」は今週のGitHub Copilot請求書ショックとも通底する実感の伴った批判。料金体系そのものが2026年後半の業界論点になりつつある。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 中 ===== -->
+  <div class="section-title section-mid">🟡 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card">
+    <div class="card-header">
+      <span class="badge badge-mid">中</span>
+      <div class="card-headline">中国UBTech、量産型“同居用”ヒューマノイド「UWORLD U1」を発表——感情AI搭載でシリコン肌</div>
+    </div>
+    <div class="card-body">
+      <p>
+        香港上場のヒューマノイドロボット大手 UBTech は6月30日、深センで消費者向けヒューマノイド「<strong>UWORLD U1</strong>」を発表した。身長168〜183cm、88個のサーボ関節とシリコン外皮を備え、Rockchip製チップ上でローカル動作する感情認識AIにより会話や表情理解が可能。Lite・Pro・Ultraの3グレードで、価格は11万9,800元（約260万円）から99万元（約2,150万円）。発表当日時点で累計受注は1万3,000台超に達したという。
+        「世界初の量産型フルサイズ・ウルトラバイオニック・ヒューマノイド」を謳い、人型ロボットの用途を産業用途から家庭内の「コンパニオン」用途へ広げる狙いがある。
+      </p>
+      <div class="source-line">
+        📎 出典：
+        <a href="https://www.scmp.com/tech/tech-trends/article/3358884/ubtechs-lifelike-humanoid-robots-built-companionship-arriving-homes-across-china" target="_blank">South China Morning Post</a>
+        ／
+        <a href="https://www.prnewswire.com/news-releases/ubtech-launches-uworld-u1-the-worlds-first-full-size-mass-produced-ultra-bionic-humanoid-robot-302815272.html" target="_blank">PR Newswire — UBTech公式発表</a>
+      </div>
+      <div class="comment-box">
+        産業用ヒューマノイドの量産競争が続く一方で、「家庭に迎える同居ロボット」という消費者向け応用が一気に商用段階に入った点が目を引く。倫理・プライバシー面の議論が本格化する前に市場が先行して動き出している。
+      </div>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card">
+    <div class="card-header">
+      <span class="badge badge-mid">中</span>
+      <div class="card-headline">Together AI、8億ドルのシリーズCを調達——評価額83億ドルでオープンソース推論基盤を拡大</div>
+    </div>
+    <div class="card-body">
+      <p>
+        オープンソースAIモデルの実行基盤を提供する Together AI は7月1日、<strong>8億ドル</strong>のシリーズC資金調達を発表した。ラウンドはAramco Venturesが主導し、評価額は83億ドルに達する。同社の年間経常収益は前四半期時点で11.5億ドルを超えたという。調達資金はオープンソースモデルを低コストかつ大規模に運用するためのインフラ拡張に充てられる。
+        OpenAIやAnthropicのクローズドモデルが高価格化する中、企業がコスト効率を求めてオープンソースモデルへ回帰する動きの受け皿として、同社のような推論インフラ専業企業への資金流入が続いている。
+      </p>
+      <div class="source-line">
+        📎 出典：
+        <a href="https://www.pymnts.com/news/artificial-intelligence/2026/together-ai-raises-800-million-to-scale-cheaper-open-source-models/" target="_blank">PYMNTS — Together AI Raises $800 Million</a>
+      </div>
+      <div class="comment-box">
+        Palantirカープ氏の批判とも重なるが、「トークン単価の高止まり」への企業側の反発は、オープンソース推論基盤への資金シフトという形で既に数字に表れ始めている。
+      </div>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="card">
+    <div class="card-header">
+      <span class="badge badge-mid">中</span>
+      <div class="card-headline">Google、超低価格の画像生成モデル「Nano Banana 2 Lite」と画像→動画変換「Gemini Omni Flash」を投入</div>
+    </div>
+    <div class="card-body">
+      <p>
+        Google は6月30日、Nano Banana系画像生成ファミリーの最新モデル「<strong>Nano Banana 2 Lite</strong>」（API名：Gemini 3.1 Flash-Lite Image）を発表した。4秒で画像を生成でき、価格は1,000枚あたり0.034ドルと業界最安級。Google AI Studio・Gemini API・Gemini Enterprise Agent Platformで即日利用可能。同時に、生成画像を自然言語の指示だけで動画に変換できる「Gemini Omni Flash」もパブリックプレビューとして公開された（1秒あたり0.10ドル）。
+        エンタープライズ向けに速度とコストを両立した実務利用向けモデルという位置づけで、マーケティングやEC分野での大量生成ニーズを想定している。
+      </p>
+      <div class="source-line">
+        📎 出典：
+        <a href="https://venturebeat.com/technology/google-unveils-nano-banana-2-lite-aka-gemini-3-1-flash-lite-for-low-cost-4-second-fast-enterprise-image-generations" target="_blank">VentureBeat — Nano Banana 2 Lite</a>
+        ／
+        <a href="https://deepmind.google/models/model-cards/gemini-3-1-flash-lite-image/" target="_blank">Google DeepMind モデルカード</a>
+      </div>
+      <div class="comment-box">
+        Gemini 3.5 Proの延期が続く一方、Googleは画像・動画生成という実務利用の裾野を広げるモデルは着実に投入している。フラッグシップの遅延と実務系モデルの拡充を並行させる戦略が見て取れる。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 低 ===== -->
+  <div class="section-title section-low">🔵 重要度：低</div>
+
+  <!-- 7 -->
+  <div class="card">
+    <div class="card-header">
+      <span class="badge badge-low">低</span>
+      <div class="card-headline">カリフォルニア州、職員向けAIアシスタント「Poppy」の全州展開を7月に開始</div>
+    </div>
+    <div class="card-body">
+      <p>
+        カリフォルニア州政府は、州職員専用のAIアシスタント「<strong>Poppy</strong>」（州花にちなんだ命名）について、67部局・2,800人超の職員によるパイロット運用を経て、7月から全州展開を開始した。文書作成・大量データの要約・政策調査などを支援し、州専用の閉域ネットワーク上で稼働、公式のCA.gov情報源のみを参照することでデータ漏えいリスクを抑える設計。基盤には11種類のAIモデルが使われ、Claudeも採用されている。
+        同州はAnthropicとの契約でClaudeを政府機関向けに半額提供する協定も結んでおり、連邦政府がAI企業に慎重姿勢を見せる中、州レベルでの積極導入が対照的な動きとなっている。
+      </p>
+      <div class="source-line">
+        📎 出典：
+        <a href="https://statescoop.com/california-poppy-state-government-ai-assistant/" target="_blank">StateScoop — California's Poppy AI Assistant</a>
+        ／
+        <a href="https://www.cdt.ca.gov/poppy/" target="_blank">California CDT 公式 — Poppy</a>
+      </div>
+      <div class="comment-box">
+        政府のAI導入というと及び腰なイメージがあるが、閉域ネットワーク・公式情報源限定という手堅い設計で「使えるところから実運用に載せる」姿勢が明確。他州・他国の行政AI導入の参考事例になりそうだ。
+      </div>
+    </div>
+  </div>
+
+  <!-- 8 -->
+  <div class="card">
+    <div class="card-header">
+      <span class="badge badge-low">低</span>
+      <div class="card-headline">米AIサイバーセキュリティ大統領令、30日期限の第一弾義務が本日発効</div>
+    </div>
+    <div class="card-body">
+      <p>
+        トランプ大統領が6月2日に署名した大統領令「Promoting Advanced Artificial Intelligence Innovation and Security」のうち、30日以内対応を求められていた項目の期限が本日7月2日に到来した。連邦政府の情報システムにAIを活用したサイバー防御を優先的に導入することや、財務省が産業界・重要インフラ事業者と協力して「AIサイバーセキュリティ・クリアリングハウス」を設立し、脆弱性のスキャン・検証・パッチ配布の調整を行うことなどが定められている。フロンティアモデルへの政府事前アクセスに関する任意フレームワークの期限は8月1日。
+      </p>
+      <div class="source-line">
+        📎 出典：
+        <a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/" target="_blank">The White House — 大統領令原文</a>
+      </div>
+      <div class="comment-box">
+        「AI企業への強制的な許認可制度は導入しない」と明言しつつ、政府システムのAI防御強化は義務化するという、規制と推進のバランスを取ろうとする姿勢が読み取れる。8月1日のフロンティアモデル枠組み期限の内容にも注目したい。
+      </div>
+    </div>
+  </div>
+
+  <a class="back-link" href="../index.html">← 簡報一覧に戻る</a>
+
+  <div class="footer">
+    本簡報はWeb検索により収集した公開情報をまとめたものです。各記事の事実関係はリンク先の原典でご確認ください。<br>
+    生成日時：2026年7月2日 ／ © alphakt — AI Briefing
+  </div>
+
+</div>
+</body>
+</html>
