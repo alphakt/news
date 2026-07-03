@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月3日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .summary-box {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 24px 0 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca;
+    font-size: 15px; color: #374151; line-height: 1.8;
+  }
+  .summary-box strong { color: #1a1f2e; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月3日（金）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <div class="summary-box">
+    <strong>📋 本日のサマリー（全7件）：</strong>
+    Meta がAI計算インフラの余剰能力を外販する新クラウド事業「Meta Compute」の検討を表明し株式市場が反応。xAIは音声AIエージェントをノーコードで作れる「Grok Voice Agent Builder」を、Cognitionはセキュリティ特化の「Devin Security Swarm」をそれぞれ公開した。CAISの指標ではFable 5の実務代替率が過去最高を更新するなど、AIの実運用浸透を示す動きが続いている。
+  </div>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Meta、AI計算余剰能力を外販する新クラウド事業「Meta Compute」を計画——株価急伸、CoreWeave等は急落</h2>
+    <p>
+      Bloombergが7月1日に報じたところによると、Meta Platformsは自社のAIインフラ余剰能力を外部顧客に販売する新クラウド事業「Meta Compute」の立ち上げを検討している。閉ざされたモデル「Muse Spark」をAWS Bedrockのような形でホスティング提供する案と、CoreWeaveなどネオクラウド同様に生のGPU計算能力を貸し出す案の両方を検討中という。Metaは2026年にAIインフラへ1,150億〜1,350億ドルを投じており、その余剰分の収益化が狙い。報道を受けMeta株は7月1日に8.8%急伸した一方、競合するCoreWeaveは10.8%、Nebiusは12.4%それぞれ急落した。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/" target="_blank" rel="noopener">TechCrunch（2026年7月1日）</a> ／
+      <a href="https://www.tomshardware.com/tech-industry/meta-reportedly-plans-to-rent-out-its-ai-compute" target="_blank" rel="noopener">Tom's Hardware（2026年7月1日）</a>
+    </div>
+    <div class="comment">「モデルを作る会社」が軒並み「計算力を売る会社」に転身し始めている。AIインフラ投資の巨大さが、副産物としてクラウド市場の勢力図まで塗り替えつつある。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>xAI、ノーコードで音声AIエージェントを構築できる「Grok Voice Agent Builder」をベータ公開</h2>
+    <p>
+      xAIは7月1日、自然言語で説明するだけで約2分で電話応対AIエージェントを作成できるノーコードツール「Grok Voice Agent Builder」のベータ版を公開した。カスタマーサポートや営業、個人アシスタント向けの音声ワークフローを想定し、25以上の言語（会話途中の切替対応）、80種類超の音声と2分間の音声サンプルからのクローンに対応。料金は1分0.05ドル。従来の音声エージェントが音声認識・応答生成・音声合成の3つのAPIを連結する構成だったのに対し、単一の音声対話モデルで完結させることでサブ秒の応答速度を実現し、Big Bench Audioベンチマークで首位を記録したという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://x.ai/news/grok-voice-agent-builder" target="_blank" rel="noopener">xAI 公式（2026年7月1日）</a> ／
+      <a href="https://www.newsbytesapp.com/news/science/elon-musk-s-xai-launches-grok-voice-no-code-ai-agent-builder/story" target="_blank" rel="noopener">NewsBytes（2026年7月1日）</a>
+    </div>
+    <div class="comment">「3つのAPIを繋ぐ」から「1つのモデルで完結させる」への設計転換は、音声AIの体験品質を左右する重要な分岐点になりそうだ。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Cognition、AIエージェント群で脆弱性を発見・実証する「Devin Security Swarm」を発表</h2>
+    <p>
+      コーディングAI「Devin」を開発する Cognition は7月1日、セキュリティ特化の新製品「Devin Security Swarm」を発表した。「Agentic MapReduce」と呼ぶアーキテクチャで、複数のエージェントがコードベースを分担調査し、認証バイパスの連鎖や業務ロジックの欠陥など複雑な脆弱性を発見する。個々の発見を統合して攻撃経路を構築し、隔離サンドボックスで実際に再現して悪用可能性を検証したうえで、修正PRまで自動作成する。実在の脆弱性50件を対象にしたベンチマークでは36件を発見し、他ツールより発見単価が30%安く、うち3件は他ツールが見逃した重大脆弱性だったという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://cognition.com/blog/introducing-devin-security-swarm" target="_blank" rel="noopener">Cognition 公式ブログ（2026年7月1日）</a> ／
+      <a href="https://www.prnewswire.com/news-releases/cognition-launches-devin-security-swarm-to-tackle-the-vulnerability-backlog-302814800.html" target="_blank" rel="noopener">PR Newswire（2026年7月1日）</a>
+    </div>
+    <div class="comment">「見つけるだけ」でなく「実行時に悪用可能性を検証してから直す」設計は、誤検知に悩まされてきたセキュリティ現場に刺さりそうだ。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>CAIS「Remote Labor Index」最新結果——Fable 5が自動化率16.1%で首位、実務代替が加速</h2>
+    <p>
+      AI安全団体 CAIS（Center for AI Safety）は、3D・CAD、建築、グラフィックデザイン、動画編集、データ分析、Web開発など実際の高単価フリーランス案件でAIエージェントの完遂率を測る「Remote Labor Index」の最新結果を公開した。Anthropic の「Fable 5」が自動化率16.1%で最高値を記録し、2位の Opus 4.8（8.3%）のほぼ2倍となった。同指標の最高値は公開開始時の2.5%から1年足らずで16.1%まで上昇しており、GPT-5.5など新規評価モデルも軒並み過去のモデルを上回った。実務代替の進行速度が客観的な数値で裏付けられた形だ。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://safe.ai/blog/significant-increase-in-digital-labor-automation" target="_blank" rel="noopener">CAIS 公式ブログ</a> ／
+      <a href="https://x.com/CAIS/status/2072360965522489789" target="_blank" rel="noopener">CAIS（X/Twitter）</a>
+    </div>
+    <div class="comment">「16%」という数字自体はまだ小さく見えるが、1年足らずで6倍以上に伸びた伸び率の方が本質的に重要だ。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Hugging Face×Cerebras、Parakeet・Gemma 4・Qwen3TTSを組み合わせたオープン音声対話パイプラインを公開</h2>
+    <p>
+      Hugging Face と Cerebras は、NVIDIA「Parakeet」による音声認識、Google DeepMind「Gemma 4」（Cerebras上で高速推論）による応答生成、Alibaba「Qwen3TTS」による音声合成を組み合わせたオープンソースの音声対話スタックを公開した。各層を自由に差し替え可能なカスケード構成で、Cerebrasの高速推論により低遅延・自然な会話体験を実現するのが狙いだ。同様のパイプラインは既に9,000台超の小型ロボット「Reachy Mini」で実運用されており、単なるデモに留まらない実装例として注目されている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://huggingface.co/blog/cerebras-gemma4-voice-ai" target="_blank" rel="noopener">Hugging Face 公式ブログ（2026年7月2日）</a>
+    </div>
+    <div class="comment">4社の技術を「レゴブロック」的に組み合わせるオープンスタックの登場は、音声AIの民主化を一段と進めそうだ。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 6 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>fal、画像から3Dアセットをスタイル学習できる「TRELLIS.2 LoRA Trainer」を公開</h2>
+    <p>
+      AIインフラ企業 fal は、Microsoft Research発のオープンモデル「TRELLIS.2」向けにLoRAトレーナーを公開した。手持ちの3Dアセット一式をアップロードするだけで、そのスタイルに合わせたGLB形式の3Dモデルを生成できるようになる。TRELLIS.2自体は40億パラメータの画像→3D変換モデルで、Flow-Matching TransformerとStructured 3D Latent表現によりPBRマテリアル付きの3Dモデルを数秒で生成できる。ゲームやXR向けアセット制作を個人開発者でも効率化できる、新しい使い方として注目される。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://fal.ai/models/fal-ai/trellis-2" target="_blank" rel="noopener">fal.ai 公式</a> ／
+      <a href="https://www.theneuron.ai/explainer-articles/around-the-horn-digest-everything-that-happened-in-ai-today-thursday-july-2-2026/" target="_blank" rel="noopener">The Neuron（2026年7月2日）</a>
+    </div>
+    <div class="comment">「モデルを使う」から「自分のアセットでモデルをスタイル調整する」への一歩は、3D制作の民主化を静かに後押ししている。</div>
+  </div>
+
+  <!-- 7 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>Fish Audio、TTSモデル「S2.1 Pro」を7月末まで無料開放</h2>
+    <p>
+      音声AIスタートアップ Fish Audio は、最新の音声合成モデル「S2.1 Pro」をAPI経由で7月31日まで無料開放すると発表した（Fair Use上限あり）。83言語に対応し、感情や抑揚を自然言語で指定できる音声クローン・音声生成が可能。旧モデル S2 Pro より高品質・低遅延・高スループットを実現しているという。無料枠にはSLAなし・データがモデル改善に利用されるといった制約があり、月間収益100万ドルを超える製品は事前連絡を求めている。開発者に「まる1ヶ月試せる期間」を提供する狙いだと説明している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://fish.audio/blog/s2-1-pro-free-api/" target="_blank" rel="noopener">Fish Audio 公式ブログ</a> ／
+      <a href="https://x.com/ArtificialAnlys/status/2072454019902267415" target="_blank" rel="noopener">Artificial Analysis（X/Twitter）</a>
+    </div>
+    <div class="comment">主要事業者が無料期間で開発者を囲い込む競争は、音声AI領域でもLLM同様の「無料枠バトル」に突入した証拠だ。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 — 2026年7月3日号</p>
+    <p style="margin-top:6px;"><a href="../index.html">← 簡報アーカイブ一覧</a></p>
+  </div>
+</div>
+
+</body>
+</html>
