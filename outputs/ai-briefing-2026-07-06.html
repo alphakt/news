@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月6日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .summary-box {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 24px 0 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca;
+    font-size: 15px; color: #374151; line-height: 1.8;
+  }
+  .summary-box strong { color: #1a1f2e; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月6日（月）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <div class="summary-box">
+    <strong>📋 本日のサマリー（全6件）：</strong>
+    AI業界の「政治」と「市場」が同時に軋み始めた一日。ジュネーブでは国連「AIガバナンスに関するグローバル対話」が本日開幕し、193加盟国と主要AI企業が初めて一堂に会する。並行してAnthropicはAmazon・Microsoft・Googleと共同で「ジェイルブレイク深刻度」を採点する共通指標を公開し、ホワイトハウス主導の業界横断ルール作り（8月1日発表目標）を後押しした。一方で市場では、AI投資の持続可能性への懐疑論からSK Hynix・Samsung・Micron・Intel・AMDなど半導体株が軒並み急落。明るい話題としては、Boston DynamicsのヒューマノイドロボットAtlasがFIFAワールドカップのハーフタイムショーに初登場し、2026年上半期には約90社のAIユニコーンが誕生したとの調査結果も出た。
+  </div>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>国連「AIガバナンスに関するグローバル対話」、本日ジュネーブで開幕——193加盟国・AI各社CEO・科学者パネルが一堂に</h2>
+    <p>
+      国連は7月6日・7日の2日間、ジュネーブのパレクスポで「AIガバナンスに関するグローバル対話（Global Dialogue on AI Governance）」の第1回会合を開催する。193の全加盟国に加え、産業界・市民社会・学術界・技術コミュニティの代表が参加し、AIがもたらす機会と課題、AI格差是正のための能力構築、安全で信頼できるAIのあり方、人権保護などが主要テーマとなる。ヨシュア・ベンジオ氏とマリア・レッサ氏が共同議長を務める「独立国際AI科学パネル」（2,600人超の候補から選出された40名で構成）も参加し、ルワンダのポール・カガメ大統領とセールスフォースのマーク・ベニオフCEOが共同議長を務める「AI for Good グローバル委員会」との連携も図られる。第2回会合は2027年5月にニューヨークで開催予定。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://news.un.org/en/story/2026/07/1167862" target="_blank" rel="noopener">UN News（2026年7月6日）</a> ／
+      <a href="https://www.un.org/global-dialogue-ai-governance/en" target="_blank" rel="noopener">国連公式サイト</a> ／
+      <a href="https://www.unesco.org/en/articles/global-dialogue-ai-governance-geneva-6-7-july" target="_blank" rel="noopener">UNESCO</a>
+    </div>
+    <div class="comment">米国内での「業界主導・自主規制」路線と、国連レベルでの「多国間・包摂的」路線がついに同じ週に並走し始めた。どちらが実効性あるルールの主導権を握るか、今後数ヶ月の焦点になりそうだ。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Anthropic、Amazon・Microsoft・Googleと共同で「ジェイルブレイク深刻度」共通採点フレームワークを公開——ホワイトハウス主導ルール8月1日発表へ布石</h2>
+    <p>
+      Anthropicは、Fable 5の安全対策強化にあわせて、Amazon・Microsoft・Googleと共同開発した「Cyber Jailbreak Severity（CJS）」フレームワークを公式発表した。ジェイルブレイク手法の危険度を「能力向上の度合い」「影響範囲の広さ」「兵器化の容易さ」「発見されやすさ」の4軸で評価し、CJS-0（情報レベル）からCJS-4（重大）まで5段階（各段階は前段階の数倍のリスクを意味する指数的スケール）で格付けする、ソフトウェア脆弱性評価のCVSSを模した枠組み。背景には、Amazonの研究者がFable 5に脆弱性検出やエクスプロイトコード生成をさせるジェイルブレイクを発見し、6月12日から19日間のFable 5/Mythos 5輸出停止に至った経緯がある。ホワイトハウスは本フレームワークを土台に、Anthropic・OpenAI・Google・Microsoft・Amazonの5社と「30日間の政府事前審査」を含む業界横断ルールの最終調整を進めており、早ければ8月1日にも正式発表される見通し。なお枠組みは「第一稿」の位置付けで、各社間で評価が割れた場合の調停方法などは未定。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.anthropic.com/news/fable-safeguards-jailbreak-framework" target="_blank" rel="noopener">Anthropic公式（2026年7月2日）</a> ／
+      <a href="https://www.techtimes.com/articles/319658/20260703/ai-model-safety-standards-deal-targets-august-1-five-labs-adopt-first-jailbreak-scoring-scale.htm" target="_blank" rel="noopener">Tech Times（2026年7月3日）</a>
+    </div>
+    <div class="comment">「自主的枠組み」を業界側が先回りして具体化することで、政府による一方的な規制強化を回避しようという狙いが透けて見える。CVSS同様、この採点スケールが業界標準として定着するかが今後の見どころ。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>AI半導体株が軒並み急落——SK Hynix14.5%安・Samsung9%超安・Micron13%安、「AI投資は持続可能か」懐疑論が拡大</h2>
+    <p>
+      7月2日、SK Hynixが前日比14.5%、Samsung Electronicsが9.1%安となり韓国KOSPI指数が7.9%下落したのを皮切りに、AI半導体関連株の世界的な売りが拡大した。米国でもMicron Technologyが約13%安（時価総額約1,380億ドルが一日で消失）、Intelが9%安、AMDが7%安と続落し、半導体ETF「SMH」も5%下落。背景には、SK Hynixが高帯域幅メモリ（HBM）の増産計画を減速させたとの報道や、Metaが自社の余剰AI計算力を外部販売するクラウド事業を準備しているとの報道が重なり、「巨額のAIインフラ投資が見合うリターンを生むのか」という懐疑論が投資家の間で強まったことがある。SK Hynix株は年初来ピーク時に前年比約272%上昇するなど2026年最大の値上がり銘柄の一つだっただけに、反動の大きさが際立った。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.cnbc.com/2026/07/02/samsung-sk-hynix-shares-slide-kospi-tech-selloff-nasdaq.html" target="_blank" rel="noopener">CNBC（2026年7月2日）</a> ／
+      <a href="https://www.cnbc.com/2026/07/02/cnbc-daily-open-chips-are-down-openais-woos-the-white-house-and-russia-strikes.html" target="_blank" rel="noopener">CNBC Daily Open（2026年7月2日）</a>
+    </div>
+    <div class="comment">AIインフラ投資への「期待先行」相場がついに調整局面入りした可能性がある。半導体各社の決算やHBM出荷計画が、今後のAIブーム持続性を占う重要な先行指標になる。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Boston Dynamicsのヒューマノイド「Atlas」、FIFAワールドカップのハーフタイムに初登場——「プログラムではなく学習」で選手の動きを習得</h2>
+    <p>
+      7月5日（現地時間）、ニューヨーク/ニュージャージー・スタジアムで行われたFIFAワールドカップ決勝トーナメント1回戦・ブラジル対ノルウェー戦のハーフタイムに、Boston Dynamics製の第5世代ヒューマノイドロボット「Atlas」が登場した。主催のHyundai Motor（Boston Dynamicsの親会社）はFIFAを27年間スポンサーしており、今回はロボットを使った初のハーフタイム企画となった。Atlasは選手トンネルを歩いて入場し、ブラジルのマテウス・クーニャ選手の「サーフィン」ゴールセレブレーションや孫興民選手のカメラポーズなどを再現し、試合球を審判に手渡した。全電動で56自由度・リーチ2.3m・最大110ポンドの可搬重量を持つAtlasは、動作を個別にプログラムするのではなく、プロ選手のプレー映像を大量に見せて動きを学習させる手法で訓練されており、Boston Dynamics側は「工場向けロボットというより大規模言語モデルの学習に近い」と説明している。スタジアムの観客8万人と世界中のテレビ視聴者に披露された。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://fortune.com/2026/07/05/humanoid-robot-delivered-game-ball-brazil-norway-world-cup-match-fifa-boston-dynamics-hyundai/" target="_blank" rel="noopener">Fortune（2026年7月5日）</a> ／
+      <a href="https://www.prnewswire.com/news-releases/hyundai-motor-launches-school-of-football-campaign-featuring-boston-dynamics-atlas-ahead-of-fifa-world-cup-2026-302785520.html" target="_blank" rel="noopener">PR Newswire（Hyundai Motor）</a>
+    </div>
+    <div class="comment">エンタメ的な「見世物」ではあるが、模倣学習ベースのロボット制御が実演レベルまで来たことを示す好例。工場や物流以外の「一般消費者が見る場」でのヒューマノイド露出が増えている点も注目したい。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>2026年上半期、AIユニコーン約90社誕生——TechCrunch調査、Bezos氏出資のPromethusが評価額410億ドルでトップ</h2>
+    <p>
+      TechCrunchがCrunchbase・PitchBookのデータを基に集計したところ、2026年に入ってから米国を中心に約90社の新興企業がユニコーン（評価額10億ドル以上）となり、前年同期の約40社から倍増したことが分かった。うち多くがAI関連で、ジェフ・ベゾス氏が共同設立した汎用エンジニアリング自動化AI「Promethus」がJPモルガン・チェースとBlackRock主導の120億ドルのシリーズBを調達し評価額410億ドルでトップ。AIエージェント向け検索エンジンを開発する「EXA」（評価額19.5億ドル）、AI研究ラボ「Recursive」（2025年設立・評価額46.5億ドル、シリーズAで6.5億ドル調達）なども名を連ねた。医療やクリプトなど非AI分野の新興ユニコーンも一定数含まれるが、全体としてAI企業の存在感が際立つ結果となった。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/07/05/almost-40-new-unicorns-have-been-minted-so-far-this-year-here-they-are/" target="_blank" rel="noopener">TechCrunch（2026年7月5日）</a>
+    </div>
+    <div class="comment">半導体株の急落と同じ週に「AIユニコーン量産」の話題が並ぶのは対照的だ。バリュエーションの過熱と実需の乖離が、遅かれ早かれどこかで精算されるのではないか。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 6 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>OpenAI「GPT-5.6 Sol」、Cerebrasのウェハースケール半導体上で7月から毎秒750トークンの推論を提供へ</h2>
+    <p>
+      OpenAIは、6月26日にプレビュー公開したフラグシップモデル「GPT-5.6 Sol」について、Cerebras Systemsのウェハースケール半導体上で7月から最大毎秒750トークンの推論速度を一部顧客向けに提供開始すると発表した。一般的なGPUクラスターでのフロンティア級モデルの推論速度が毎秒40〜120トークン程度であるのに対し、その1桁近く速い水準となる。CerebrasはOpenAIと総額200億ドル超・750メガワット規模の複数年契約を結んでいることを既に公表しており、当初はアクセスを限定顧客に絞りながら容量を拡大していく計画。GPT-5.6 Solの API料金は入力100万トークンあたり5ドル・出力30ドルで、Sol自体は現在も米政府の要請により「信頼できるパートナー」約20組織限定のプレビュー提供が続いている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">OpenAI公式</a>
+    </div>
+    <div class="comment">政府の限定公開要請で「誰が使えるか」が絞られる一方、「使える人にはどれだけ速く」という軸では着実に進化している。公開範囲の政治と性能競争が別々のスピードで進む、今のAI業界らしい一幕。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 — 2026年7月6日号</p>
+    <p style="margin-top:6px;"><a href="../index.html">← 簡報アーカイブ一覧</a></p>
+  </div>
+</div>
+
+</body>
+</html>
