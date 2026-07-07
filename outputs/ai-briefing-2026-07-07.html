@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月7日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .summary-box {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 24px 0 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca;
+    font-size: 15px; color: #374151; line-height: 1.8;
+  }
+  .summary-box strong { color: #1a1f2e; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月7日（火）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <div class="summary-box">
+    <strong>📋 本日のサマリー（全7件）：</strong>
+    LLMの実利用シェアとインフラ資本が同時に動いた一日。実利用面では中国Xiaomiの「MiMo-V2-Pro」がOpenRouter最多利用モデルに躍り出る一方、Mistralは数学の自動証明に特化した「Leanstral 1.5」を公開し、汎用性能競争とは別軸の専門特化モデルの存在感が増している。インフラ面ではSpaceXがオープンソースAI企業Reflection AIと最大63億ドルの計算資源契約を締結し、DeepSeekはV4の正式版を7月中旬に投入予定とピーク時間帯課金の新方式を発表するなど、「計算資源をどう配分し値付けするか」が競争の焦点になりつつある。ロボティクス分野では深圳発AI2 Roboticsが4カ月で評価額を倍増させ、中国の具身知能スタートアップへの投資熱の高さを示した。さらにSpaceXによる買収を経たAIコーディングツールCursorのiOSアプリ公開ベータなど、異業種からのAI企業取り込みも進む。最後に、2026年に定着しつつある新用語「Physical AI」「LRM」「GEO」も押さえておきたい。
+  </div>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Mistral AI、数学の自動証明に特化した「Leanstral 1.5」を公開——PutnamBenchで672問中587問を解答</h2>
+    <p>
+      フランスのMistral AIは7月3日、証明支援系言語Lean 4向けのコードエージェントモデル「Leanstral 1.5」を発表した。数学の定理を形式的に自動証明する「自動定理証明」に特化したモデルで、高校～大学レベルの数学オリンピック問題集miniF2Fの検証・テストセット双方で正答率100%を達成し、最難関級の数学コンテスト問題集PutnamBenchでは672問中587問を解答したという。モデルの重みはApache 2.0ライセンスで公開され、無料APIエンドポイント「leanstral-1-5」も同時に稼働を開始した。長文脈での推論能力を強化し、SFT（教師ありファインチューニング）データの質も改善したとしている。汎用チャットボットではなく、形式手法によるソフトウェア検証や数学研究支援という特定用途に絞り込んだ設計が特徴。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.marktechpost.com/2026/07/03/mistral-ai-releases-leanstral-1-5-an-apache-2-0-lean-4-code-agent-model-solving-587-of-672-putnambench-problems/" target="_blank" rel="noopener">MarkTechPost（2026年7月3日）</a> ／
+      <a href="https://mistral.ai/news/" target="_blank" rel="noopener">Mistral AI公式</a>
+    </div>
+    <div class="comment">汎用フロンティアモデル同士の性能競争が飽和気味の中、「数学の形式証明」という狭いが実需のある領域に特化するアプローチが目立ち始めた。研究者や検証エンジニアにとっては地味だが実用性の高い一手だ。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Xiaomiの「MiMo-V2-Pro」がOpenRouter利用量で世界一に——Claude Sonnet 4.6の2倍超のトークン処理量</h2>
+    <p>
+      AI推論プラットフォームOpenRouterの週間トークン処理量ランキングで、Xiaomiの大規模言語モデル「MiMo-V2-Pro」が首位に立ち、Claude Sonnet 4.6の2倍を超えるトークン量を処理していることが明らかになった。1兆パラメータ超・コンテキスト長100万トークンを備え、コーディング性能を測るSWE-bench Verifiedで78%を記録し、Claude Opus 4.6（80.8%）に迫る水準に達している。価格は入力100万トークンあたり1ドル・出力3ドルとOpus比で約5分の1に抑えられており、この価格性能比の高さが急速な採用を後押ししたとみられる。同モデルは今年3月に匿名モデル「Hunter Alpha」としてOpenRouterに登場し瞬く間に利用量首位となった後、3月18日にXiaomi製であることが公表された経緯がある。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://openrouter.ai/xiaomi/mimo-v2-pro" target="_blank" rel="noopener">OpenRouter（MiMo-V2-Pro）</a> ／
+      <a href="https://decrypt.co/362633/xiaomi-mimo-v2-pro-review-so-good-mistaken-deepseek-v4" target="_blank" rel="noopener">Decrypt</a>
+    </div>
+    <div class="comment">中国発のオープン系モデルが「安くて速くて十分強い」という条件で欧米フラグシップの実利用シェアを切り崩している。ベンチマークの数字以上に、開発者の財布に効く価格設定の破壊力を感じさせるニュースだ。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>SpaceX傘下となったAIコーディングツール「Cursor」、iOSネイティブアプリを公開ベータで提供開始</h2>
+    <p>
+      AIコード編集ツール「Cursor」を開発するAnysphereは、クラウド上またはPC上で動くAIコーディングエージェントをスマートフォンから起動・監視・操作できるiOSネイティブアプリの公開ベータを開始した。有料プラン全体で利用可能で、音声入力によるアイデア指示やスラッシュコマンド、任意のフロンティアモデルの選択、プルリクエストのモバイルからのレビュー・マージなどに対応する。背景には、SpaceXが4月に確保していたオプション権を行使し、6月16日にAnysphereを全株式取引・評価額600億ドルで買収すると発表した経緯があり、取引は2026年第3四半期の完了を見込む。Cursorは年間経常収益約26億ドル規模まで急成長しており、SpaceXは本買収を通じてエンタープライズAI市場でAnthropicやOpenAIのコーディングツールに対抗する狙いとみられる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://cursor.com/blog/ios-mobile-app" target="_blank" rel="noopener">Cursor公式ブログ</a> ／
+      <a href="https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html" target="_blank" rel="noopener">CNBC（2026年6月16日）</a>
+    </div>
+    <div class="comment">「ロケット企業がAIコーディングツールを買う」という組み合わせ自体が象徴的。宇宙・エンジニアリング領域の巨大企業がソフトウェア開発の生産性そのものを内製化しにいく動きとして注目したい。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>オープンソースAI企業Reflection AI、SpaceXと最大63億ドルのコンピュート契約——Colossus 2でGB300チップを利用</h2>
+    <p>
+      SpaceXは、DeepMind出身者が2024年に設立したオープンソースAI企業Reflection AIとの間で、NVIDIA GB300チップへのアクセスを提供するコンピュート契約を締結したと発表した。Reflection AIは7月1日から月額1億5000万ドルをSpaceXに支払い、契約が2029年まで継続した場合の総額は最大63億ドルに達する見通し。提供拠点はテネシー州メンフィス近郊のデータセンター「Colossus 2」で、初期3カ月経過後はどちらからでも90日前予告での解約が可能な柔軟な条項が盛り込まれている。ReflectionはAnthropic・Google・Cursorに続きColossusの計算資源を借りる企業となり、SpaceXが同施設で外部顧客から得る契約収入は2029年までの累計で800億ドルを超える規模に膨らんでいる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.cnbc.com/2026/06/22/spacex-ai-colossus-data-center-reflection.html" target="_blank" rel="noopener">CNBC（2026年6月22日）</a> ／
+      <a href="https://www.datacenterdynamics.com/en/news/spacex-secures-63bn-compute-capacity-deal-from-ai-startup-reflection/" target="_blank" rel="noopener">Data Center Dynamics</a>
+    </div>
+    <div class="comment">元々ロケット企業だったSpaceXが、いつの間にか「AI企業へ計算資源を貸し出す一大インフラ事業者」になっている。GPU争奪戦の勝者が必ずしもAIラボ自身ではなく、電力・データセンターを押さえた側であることを象徴する動きだ。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>深圳発ロボット企業AI2 Robotics、735百万ドル調達で評価額約30億ドルに——4カ月で倍増</h2>
+    <p>
+      中国・深圳を拠点とする汎用ロボット企業AI2 Roboticsは、シリーズBラウンドで約7億3500万ドルを調達し、評価額を約30億ドル近くまで引き上げたと発表した。これはわずか4カ月前の水準からの倍増にあたる。同社はハードウェアと、ロボットに空間認識・自律判断能力を与える独自の視覚言語行動（VLA）基盤モデル「Alpha Brain」の両方を自社開発しており、代表製品の車輪型ヒューマノイド「AlphaBot」シリーズは複雑な指示の解釈や物体操作、ゴール指向タスクの遂行が可能。同時期に競合の中国ロボット企業X Square Robotsもほぼ同水準の評価額で資金調達を発表しており、深圳エリアを中心に中国の「具身知能（エンボディドAI）」ロボット企業へ資金が急速に集まっている。同社は4月に株式会社化改革を完了しており、IPOに向けた布石との見方も出ている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://siliconangle.com/2026/06/29/chinese-robotics-outfits-ai2-robotics-x-square-robots-secure-funding-2-8b-valuation/" target="_blank" rel="noopener">SiliconANGLE（2026年6月29日）</a> ／
+      <a href="https://www.therobotreport.com/ai2-robotics-raises-series-b-funding-advance-alphabot-embodied-ai/" target="_blank" rel="noopener">The Robot Report</a>
+    </div>
+    <div class="comment">中国のロボティクス資金調達は、上場準備段階の大手だけでなく、その手前のシリーズB段階でも評価額が急騰している。「具身知能」領域は深圳を中心に層の厚い競争が起きている。</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>DeepSeek、V4の正式版を7月中旬に投入へ——ピーク時間帯は2倍料金の新課金方式を導入</h2>
+    <p>
+      中国DeepSeekは、4月24日からプレビュー提供してきた「DeepSeek V4」（deepseek-v4-pro／deepseek-v4-flash）について、7月中旬に正式版へ切り替えると発表した。正式版ではモデル全系列で100万トークンのコンテキスト長を標準搭載し、エージェント型タスクの実行力、数学的推論、コード生成が改善されるとしている。同時に導入されるのが、平日午前9時〜正午・午後2時〜6時を「ピーク時間帯」として通常の2倍の料金を課す新たな時間帯別課金制度で、同社としては初めての試み。旧APIの deepseek-chat・deepseek-reasoner は7月24日午後3時59分（UTC）をもって完全に廃止される予定で、利用者は新モデルへの移行が必須となる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://technode.com/2026/06/30/deepseek-to-launch-v4-in-mid-july-with-new-peak-time-api-pricing/" target="_blank" rel="noopener">TechNode（2026年6月30日）</a> ／
+      <a href="https://api-docs.deepseek.com/news/news260424" target="_blank" rel="noopener">DeepSeek API公式ドキュメント</a>
+    </div>
+    <div class="comment">これまで「安さ」で攻めてきたDeepSeekが時間帯別の需給連動課金に踏み出したのは象徴的だ。推論コストの高騰が中国勢にも及び始めている表れかもしれない。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 7 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>2026年、押さえておきたいAI新用語——「Physical AI」「LRM」「GEO」など</h2>
+    <p>
+      TechCrunchが公開した2026年版AI用語集などによれば、今年広く使われるようになった新語として、自律的に計画・判断・実行まで行う「Agentic AI（エージェント型AI）」、仮想知能と現実世界を橋渡しする「Physical AI（フィジカルAI）」、単なる次単語予測ではなく段階的に思考する「LRM（Large Reasoning Model／大規模推論モデル）」、企業間でAIエージェント同士が人手を介さず交渉・取引する「B2Bエージェントネットワーク」、そしてChatGPTやGeminiなど生成AIアシスタントに自社コンテンツを推薦されやすくする施策を指す「GEO（Generative Engine Optimization）」などが挙げられている。従来のSEO（検索エンジン最適化）に代わる考え方としてGEOへの関心が特に高まっているという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/07/03/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/" target="_blank" rel="noopener">TechCrunch（2026年7月3日）</a>
+    </div>
+    <div class="comment">「AIをどう使うか」から「AIにどう見つけてもらうか」へと関心がシフトしているのが興味深い。GEOが一過性のバズワードで終わるか、マーケティングの標準用語として定着するかは今後の実務での使われ方次第だろう。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 — 2026年7月7日号</p>
+    <p style="margin-top:6px;"><a href="../index.html">← 簡報アーカイブ一覧</a></p>
+  </div>
+</div>
+
+</body>
+</html>
