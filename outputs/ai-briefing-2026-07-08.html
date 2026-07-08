@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月8日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .summary-box {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 24px 0 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca;
+    font-size: 15px; color: #374151; line-height: 1.8;
+  }
+  .summary-box strong { color: #1a1f2e; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月8日（水）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <div class="summary-box">
+    <strong>📋 本日のサマリー（全7件）：</strong>
+    セキュリティ・地政学・ロボティクス上場が同時に動いた一日。セキュリティ研究企業Sysdigは、人間の介入なしに偵察から認証情報窃取・侵入・データ破壊まで全工程を自律実行した史上初の「完全自律型AIランサムウェア」JADEPUFFERの詳細分析を公開した。政治面ではOpenAIの新フラグシップ「GPT-5.6 Sol」がホワイトハウスの要請により限定パートナーのみへのプレビューにとどめられ、フロンティアモデルの公開が政府審査を経る新たな枠組みが現実のものとなりつつある。ロボティクス分野ではヒューマノイド企業Agility RoboticsがSPAC合併により25億ドル評価でナスダック上場を発表し、量産型ヒューマノイドの資本市場デビューという新局面を迎えた。またジュネーブでは国連初の「AIガバナンスに関するグローバル対話」が閉幕し、著名研究者ヨシュア・ベンジオ氏が「破滅的被害を防げる保証はない」と警鐘を鳴らした。市場面では中国製オープンモデルへの実利用シフトが加速し、コスト重視の企業が続々とAnthropicやOpenAIから乗り換えている。さらにAnthropicは本日、Claude利用者への政府発行ID提出義務化ポリシーと、Fable 5の全ティア従量課金化を同時に発効させた。
+  </div>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>史上初の完全自律型AIランサムウェア「JADEPUFFER」——AIエージェントが偵察からデータ破壊まで全工程を自動実行</h2>
+    <p>
+      セキュリティ企業Sysdigの脅威研究チームは7月7日、脆弱なLangflowインスタンス（CVE-2025-3248）を起点に、認証情報の窃取・水平展開・権限昇格・データベース恐喝までの攻撃ライフサイクル全体を、人間の直接操作なしにAIエージェントが自律実行した「JADEPUFFER」の完全分析を公開した。ペイロードには「なぜこの操作を行うか」を説明する自然言語コメントが大量に埋め込まれており、人間のオペレーターが書かない特徴的なコード生成パターンが確認された。ログイン失敗からわずか31秒で修正版を再試行するなど、リアルタイムの適応的エラー修正も観測されている。600以上の異なるペイロードを圧縮された時間内に実行し、1,342件のNacos設定項目を暗号化した（暗号鍵は保存されず復号不能という副産物付き）。研究者は同種の脅威者を「エージェント型脅威アクター（ATA）」と呼び、専門知識のない攻撃者でもランサムウェア攻撃の全工程を自動化できる時代の到来を指摘している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion" target="_blank" rel="noopener">Sysdig公式ブログ（2026年7月7日）</a> ／
+      <a href="https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/" target="_blank" rel="noopener">BleepingComputer</a>
+    </div>
+    <div class="comment">「AIエージェントが攻撃を自動化する」という長らく懸念されてきたシナリオが、ついに実例として文書化された。防御側もエージェント型の検知・対応へ本気で舵を切る必要がある転換点だ。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>OpenAI「GPT-5.6 Sol」、ホワイトハウスの要請で限定パートナー向けプレビューに縮小——一般提供日は未定</h2>
+    <p>
+      OpenAIは新フラグシップモデル群「GPT-5.6」（Sol／Terra／Luna）のうち最上位「Sol」について、米政府の要請を受け、ChatGPTやAPIでの一般提供に先立ちごく少数の「信頼されたパートナー」限定でのプレビュー提供にとどめると発表した。同社は事前に米政府へモデル性能を説明し、参加パートナーのリストも政府と共有した上で公開範囲を絞ったとしている。Solはコーディング・生物学・サイバーセキュリティ分野で従来最強とされ、特にソフトウェア脆弱性の発見・修正能力の高さが政府の懸念材料となった。OpenAIは「Solは完全なサイバー攻撃の実行より脆弱性の発見・修正支援に優れる」と説明しつつも、restrictions shouldn't be the norm（制限が常態化すべきでない）と釘を刺している。7月上旬時点でChatGPTでの一般提供時期は明らかにされていない。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.foxnews.com/science/trump-puts-brakes-openais-newest-ai-model" target="_blank" rel="noopener">Fox News</a> ／
+      <a href="https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/" target="_blank" rel="noopener">TechCrunch</a>
+    </div>
+    <div class="comment">フロンティアモデルの公開可否に政府審査が事実上組み込まれ始めた最初の実例といえる。ホワイトハウスの正式な枠組み公表がこの数日中に見込まれており、業界全体のリリース慣行に波及しそうだ。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>ヒューマノイド企業Agility Robotics、SPAC合併でナスダック上場へ——評価額25億ドル、量産デプロイ実績を武器に</h2>
+    <p>
+      倉庫・物流向けヒューマノイドロボット「Digit」を展開する米Agility Roboticsは7月7日、特別買収目的会社（SPAC）のChurchill Capital Corp XIとの合併により、評価額約25億ドルでナスダック上場（ティッカー：AGLT）を果たすと発表した。取引により6億ドル超の総調達を見込み、うち約2億ドルはFoxconnが主導するPIPE（上場企業向け私募増資）でまかなわれる。合併完了は2026年内を予定。Agilityは、実際に商用稼働中の実績を持つ米国唯一の純粋ヒューマノイド上場企業になるとしており、直近ではToyotaとの新たな提携も発表済み。人型ロボット業界ではApptronik（評価額55億ドル超）やFigure AI（同390億ドル）など巨額資金調達が相次いでおり、Agilityは資本市場を通じた資金調達という別ルートを選んだ形だ。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://roboticsandautomationnews.com/2026/07/07/agility-robotics-to-go-public-through-2-5-billion-spac-merger/103130/" target="_blank" rel="noopener">Robotics & Automation News（2026年7月7日）</a> ／
+      <a href="https://www.therobotreport.com/humanoid-maker-agility-robotics-go-public-through-spac-merger/" target="_blank" rel="noopener">The Robot Report</a>
+    </div>
+    <div class="comment">ヒューマノイド業界が「未上場の巨額調達競争」から「上場企業としての実績開示」フェーズへ移り始めた象徴的な動き。実運用データが今後の株式市場での評価軸になっていくだろう。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>国連初「AIガバナンスに関するグローバル対話」がジュネーブで閉幕——ベンジオ氏「破滅的被害を防げる保証はない」</h2>
+    <p>
+      国連初の全加盟国参加型AIガバナンス会議「グローバル対話」が7月6日〜7日にジュネーブで開催され、エストニアとエルサルバドルの共同議長のもと、各国政府・企業・学術界・市民社会が急速に進化するAI技術への規制のあり方を議論した。会期に合わせ、ヨシュア・ベンジオ氏とマリア・レッサ氏が共同議長を務める「AIに関する独立国際科学パネル」（専門家40名）の予備報告書も公表され、ベンジオ氏は「AIは多くの領域で人間の能力に匹敵するか、それを上回りつつある」とした上で、「欺瞞的なAI行動の証拠が増える中、能力向上が単独あるいは悪意ある利用者を通じて破滅的な被害をもたらさないという保証を、科学は現時点で持っていない」と警告した。対話終了後には7月10日までITU主催の「AI for Good」グローバルサミットが続く。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://news.un.org/en/story/2026/07/1167862" target="_blank" rel="noopener">UN News（2026年7月）</a> ／
+      <a href="https://www.ungeneva.org/en/news-media/news/2026/07/120326/global-push-ai-governance-amid-warnings-catastrophic-harm" target="_blank" rel="noopener">UN Geneva公式</a>
+    </div>
+    <div class="comment">「破滅的被害」という強い言葉が国連の場で公式に使われたこと自体が異例。国際的な統一ルールが存在しない中、各国が個別に規制の枠組みを急ごしらえしている現状の危うさを浮き彫りにしている。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>中国製AIモデルへの実利用シフト加速——AIスタートアップLindy、AnthropicからDeepSeekへ全面移行</h2>
+    <p>
+      CNBCの7月7日付報道によると、AIエージェント開発企業Lindyは6月、全トラフィックをAnthropicのClaudeから中国DeepSeekへ完全移行した。CEOのフロ・クリヴェッロ氏は「コスト曲線が地面に叩きつけられるように急落するのを見た」と語り、今後数カ月で数百万ドルのコスト削減を見込むという。中国製オープンモデルは米国製フラグシップに比べ60〜90%安価に運用でき、推論プラットフォームOpenRouterでは米企業が消費するトークンのうち中国製モデルの比率が2月8日以降毎週30%を上回り、最大46%に達した週もある（過去12カ月平均は11%）。特にZ.aiの「GLM 5.2」は6月の公開後、Vercel計測で日次トークン量が約27倍、利用企業数が約80倍に急増するなど、2026年で最速の普及を記録している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.cnbc.com/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html" target="_blank" rel="noopener">CNBC（2026年7月7日）</a>
+    </div>
+    <div class="comment">性能差が縮まる一方で価格差が数倍〜10倍近くに開くと、企業の意思決定は急速にコスト最適化へ傾く。OpenAIやAnthropicの値付け戦略にとって無視できない圧力になってきている。</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Anthropic、Claude利用者への政府発行ID提出義務化ポリシーが本日発効——Personaが生体情報を処理</h2>
+    <p>
+      Anthropicが更新したプライバシーポリシーが7月8日付で発効し、一部の利用者に対しパスポートや運転免許証など政府発行の身分証明書画像および顔写真・動画の提出を求められるようになった。身分証から生成される「顔形状テンプレート」は、州法上の生体情報に該当し得るデータ区分として新設された。本人確認処理は自社ではなく、サンフランシスコの認証プラットフォームPersonaに委託しており、Personaは生体データ・身分証番号・端末指紋・IPアドレスを最長3年間保持できるとされる。Anthropicは確認が発生する具体的なトリガー条件を公表しておらず、「サービスを安全に保つため特定の状況で」実施するとのみ説明している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/06/22/anthropic-says-claude-may-want-to-see-your-id/" target="_blank" rel="noopener">TechCrunch</a> ／
+      <a href="https://www.it-connect.tech/claude-anthropic-will-start-verifying-users-age-and-identity-on-july-8/" target="_blank" rel="noopener">IT-Connect</a>
+    </div>
+    <div class="comment">未成年保護や不正利用対策としては理解できるが、生体データの保持期間や利用範囲の不透明さは利用企業側のプライバシー審査で論点になりそうだ。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 7 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>Claude「Fable 5」、本日より全プランで従量課金（利用クレジット制）へ完全移行</h2>
+    <p>
+      Anthropicは、最上位モデル「Claude Fable 5」について、7月7日までPro・Max・Team・一部Enterpriseプランの週間利用枠内（最大50%まで）で使えた扱いを終了し、7月8日以降はAPIと同水準の従量課金（入力100万トークンあたり10ドル、出力100万トークンあたり50ドル）に一本化したと発表した。利用にはclaude.aiの「設定→使用状況」から利用クレジットの有効化・入金が必須となり、未設定の場合は太平洋時間7月8日午前0時以降のFable 5へのリクエストが失敗する。標準Enterpriseシートには猶予期間すら設けられていない。一方、Opus 4.8・Sonnet・Haikuなど他モデルは従来どおり定額プランの範囲内で利用可能で、影響を受けない。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.techtimes.com/articles/319864/20260707/claude-fable-5-drops-subscriptions-tonight-enable-credits-lose-access.htm" target="_blank" rel="noopener">Tech Times（2026年7月7日）</a> ／
+      <a href="https://www.androidauthority.com/anthropic-claude-fable-5-credits-usage-july-3684840/" target="_blank" rel="noopener">Android Authority</a>
+    </div>
+    <div class="comment">最高性能モデルの運用コストの高さが、定額プランでは吸収しきれないレベルに達したということだろう。今後は他社のフラグシップモデルでも同様の従量課金シフトが広がる可能性がある。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 — 2026年7月8日号</p>
+    <p style="margin-top:6px;"><a href="../index.html">← 簡報アーカイブ一覧</a></p>
+  </div>
+</div>
+
+</body>
+</html>
