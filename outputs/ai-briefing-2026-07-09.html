@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月9日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月9日（木）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>OpenAI「GPT-5.6」、米商務省が広範リリースにゴーサイン——Sol/Terra/Luna の一般提供が今週にも</h2>
+    <p>
+      Axiosは7月8日、トランプ政権が米商務省の審査を経てOpenAIのGPT-5.6（最上位モデル「Sol」と下位モデル「Terra」「Luna」）の広範なリリースを認めたと報じた。審査は商務省内の「AI標準・イノベーションセンター」（CAISI）が担当し、追加テストと政府担当者との協議を経て実施された。OpenAIは6月26日の限定パートナー向けプレビュー開始時点で「制限が常態化すべきでない」と釘を刺していたが、今回の決定により今週中の一般公開が見込まれる。一方、ホワイトハウス関係者は「リリースの時期・範囲の決定権は各企業にある」として、政府が「ゴーサインを出した」との報道表現には異議を唱えている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.axios.com/2026/07/08/openai-gpt-trump-ban-lifted" target="_blank" rel="noopener">Axios（2026年7月8日）</a> ／
+      <a href="https://www.cnbc.com/2026/07/08/openai-gets-us-regulatory-approval-for-gpt-5point6-rollout-axios-report.html" target="_blank" rel="noopener">CNBC</a> ／
+      <a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">OpenAI公式</a>
+    </div>
+    <div class="comment">フロンティアモデルの公開に政府審査が事実上組み込まれる運用が定着しつつある。GPT-5.6とGemini 3.5、Claude Fable系の三極が同時期に出そろうかどうかが今後数週間の見どころ。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Google DeepMind、Gemini 3.5 Proの土台を白紙に——2.5 Proアーキテクチャを廃棄し全面再構築、目標は7月17日</h2>
+    <p>
+      複数の技術メディアが7月8日に報じたところによると、Google DeepMindは既存の「2.5 Pro」アーキテクチャをベースにしたGemini 3.5 Proの開発を中止し、新たな事前学習サイクルからの全面再構築に切り替えた。数学的推論・SVGシーン生成・画像品質などでの性能劣化への社内懸念と、OpenAIのGPT-5.6・AnthropicのFable 5との競争激化が背景にあるとされる。7月17日が目標日として複数報道で挙がっているが、Googleはモデルカードや価格発表など公式な形での日付確定はしておらず、あくまで観測情報である点には注意が必要だ。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.techtimes.com/articles/319877/20260708/gemini-35-pro-targets-july-17-deepseeks-july-24-deadline-hits-developers-now.htm" target="_blank" rel="noopener">Tech Times（2026年7月8日）</a> ／
+      <a href="https://hackernoon.com/google-delays-gemini-35-pro-to-july-17-the-strategic-play-behind-the-scrapped-base-model" target="_blank" rel="noopener">HackerNoon</a>
+    </div>
+    <div class="comment">既存アーキテクチャを丸ごと捨てて再学習するという判断は、Googleが「時間よりも競争力」を優先した証拠。ただ公式確定情報ではないため、7月17日という日付は目安として受け止めたい。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>国連「AI for Goodグローバル委員会」がジュネーブで初会合——Nvidia・Amazon・Anthropicの首脳が国家元首と同席</h2>
+    <p>
+      国連とITUが7月2日に発足させた44名体制の「AI for Goodグローバル委員会」が7月8日、ジュネーブで最初の合同会合を開いた。Salesforceのマーク・ベニオフCEOとルワンダのポール・カガメ大統領が共同議長を務め、Nvidiaのジェンスン・フアンCEO、Amazonのアンディ・ジャシーCEO、Microsoft社長ブラッド・スミス氏、Anthropic共同創業者ジャック・クラーク氏、Cohere共同創業者エイダン・ゴメス氏らAI企業首脳が、エストニア・アイスランド大統領やカザフスタン等の閣僚と共に討議に参加した。会合は「責任あるAI」「22億人に及ぶAIアクセス格差の解消」「実務的なガバナンス経路」の3本柱を優先課題として設定するための場と位置付けられている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.axios.com/2026/07/01/un-ai-commission-ceos-world-leaders" target="_blank" rel="noopener">Axios（2026年7月1日）</a> ／
+      <a href="https://www.techtimes.com/articles/319675/20260704/un-launches-governance-commission-putting-ai-ceos-alongside-heads-state.htm" target="_blank" rel="noopener">Tech Times</a>
+    </div>
+    <div class="comment">AIを作る側の企業トップと統治する側の国家元首が同じ委員会の椅子に並ぶのは前例が少ない。実効性ある規制になるか、単なる写真撮影の場に終わるかは今後のフォローアップ次第だ。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>元Tesla Optimus開発者、パリでヒューマノイド新興企業UMAを設立——軽量ロボット「Northstar」を発表</h2>
+    <p>
+      Bloombergなどが7月7日に報じたところによると、Tesla Autopilot／Optimusチームに約3年在籍後、Hugging Faceでオープンソースロボティクスライブラリ「LeRobot」を主導したレミ・カデネ氏が、パリを拠点とするヒューマノイド新興企業UMA（Universal Mechanical Assistant）を共同創業し、軽量ヒューマノイド「Northstar」を発表した。まずは工場・倉庫向けを想定し、将来的には家庭用も視野に入れる。Greycroft・Factorialなどからシード資金約4,000万ドルを調達済みで、ヤン・ルカン氏が顧問に就いている。米国・アジア展開に先立ち欧州市場を優先する方針で、すでに約50社の顧客候補と協議中という。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.bloomberg.com/news/articles/2026-07-07/ex-tesla-scientist-unveils-plans-for-european-humanoid-robot" target="_blank" rel="noopener">Bloomberg（2026年7月7日）</a> ／
+      <a href="https://electrek.co/2026/07/07/tesla-optimus-scientist-uma-humanoid-robot/" target="_blank" rel="noopener">Electrek</a>
+    </div>
+    <div class="comment">Tesla OptimusやFigure、AI2 Roboticsなど米中の巨額調達組に対し、欧州発のヒューマノイドが「まず自国市場で実績を作る」戦略を選んだ点が興味深い。資金規模はまだ小さいが、人材の質は侮れない。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Mistral AI、次期オープンウェイト旗艦「Fat but Sparse」ファミリーを予告——7月中に主要パートナー限定の早期アクセス開始</h2>
+    <p>
+      Mistral AIのアルチュール・メンシュCEOは、現行旗艦「Mistral Large 3」（総パラメータ6,750億・アクティブ410億のMoE、Apache 2.0）を上回る規模の新モデルファミリーを「fat but sparse（パラメータは大きいが疎に活性化する）」と表現し、7月中に一部パートナー向けの早期アクセスを開始すると明らかにした。具体的な性能や規模は非公表だが、フランス発のAI主権路線を掲げるMistralが、オープンウェイト領域でOpenAIやAnthropicのフロンティアモデルとの差を詰めようとする動きとみられる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.techtimes.com/articles/319798/20260706/mistral-ai-targets-frontier-gap-open-weight-model-entering-july-early-access.htm" target="_blank" rel="noopener">Tech Times（2026年7月6日）</a> ／
+      <a href="https://thenextweb.com/news/mistral-sovereignty-moment-anthropic-shutdown-le-chaton-fat" target="_blank" rel="noopener">The Next Web</a>
+    </div>
+    <div class="comment">GLM-5.2など中国製オープンウェイトの急伸に続き、欧州からも本格的なフロンティア級オープンモデルが名乗りを上げた格好。まだティーザー段階だが、公開後のベンチマークには注目したい。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 6 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>新用語「トークンマキシング（Tokenmaxxing）」——AI利用量の“見せかけ”を測る新たなバニティメトリクス</h2>
+    <p>
+      業務効率化ではなく「AIを積極的に使っている」ことを社内で可視化するために、より長いプロンプトやエージェントの多用、重い文脈窓の消費などでトークン消費量そのものを増やす行動を指す新語「トークンマキシング」が今週、複数メディアで取り上げられ広まった。Meta・OpenAI・Shopifyなどでは社内ダッシュボードが従業員のトークン消費量を可視化しており、それが「AIをよく使う人材」に見える社会的圧力を生んでいるとされる。批評家は、かつてのコード行数至上主義と同じ「無意味な代理指標」だと指摘。これに対応する形で、開発チームのAI活用ROIを実測する新サービス「DevOS」をJourniが投入するなど、消費量ではなく成果を測ろうとする動きも出てきている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://builtin.com/articles/ai-tokenmaxxing" target="_blank" rel="noopener">Built In</a> ／
+      <a href="https://martechseries.com/predictive-ai/ai-platforms-machine-learning/journi-launches-devos-to-help-organisations-measure-the-roi-of-ai-coding-tools/" target="_blank" rel="noopener">MarTech Series</a>
+    </div>
+    <div class="comment">「使った量」ではなく「生み出した成果」で評価すべきなのは自明だが、可視化しやすい指標に流れてしまうのはどの技術シフトでも起きがちな現象。管理職側のメトリクス選定リテラシーが問われる。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 — 2026年7月9日号</p>
+    <p style="margin-top:6px;"><a href="../index.html">← 簡報アーカイブ一覧</a></p>
+  </div>
+</div>
+
+</body>
+</html>
