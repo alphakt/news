@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月10日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月10日（金）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>OpenAI「GPT-5.6」（Sol／Terra／Luna）が一般提供開始——エージェント新機能「ChatGPT Work」も同時ローンチ</h2>
+    <p>
+      OpenAIは7月9日、フロンティアモデル「Sol」、バランス型「Terra」、高速・低コストの「Luna」からなるGPT-5.6シリーズの一般提供を開始した。価格は100万トークンあたりSolが入力5ドル／出力30ドル、Terraが2.5ドル／15ドル、Lunaが1ドル／6ドル。同日、社内外のアプリを横断してタスクを数時間かけて自律遂行し、資料・スプレッドシート・Webアプリなど完成物を出力するエージェント機能「ChatGPT Work」も発表され、Pro／Enterprise／Eduプランから順次展開される。Codexアプリのデスクトップ統合やAtlasブラウザの縮小も同時に進む。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">OpenAI公式</a> ／
+      <a href="https://money.usnews.com/investing/news/articles/2026-07-09/openai-launches-chatgpt-work" target="_blank" rel="noopener">U.S. News（2026年7月9日）</a> ／
+      <a href="https://www.marktechpost.com/2026/07/09/openai-releases-gpt-5-6-a-three-tier-model-family-with-programmatic-tool-calling/" target="_blank" rel="noopener">MarkTechPost</a>
+    </div>
+    <div class="comment">モデルとエージェント製品を同日にまとめて出す発表の仕方自体が、単体モデル競争から「業務を丸ごと巻き取る製品」競争への軸足移動を象徴している。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>SpaceXAI（旧xAI）「Grok 4.5」を一般公開——Opus級性能を謳い、年内は毎月新基盤モデルを投入する計画も表明</h2>
+    <p>
+      xAIからSpaceX吸収合併を経て改称した「SpaceXAI」は7月8日にGrok 4.5を開発者向けに、7月9日には一般ユーザー向けに公開した。1.5兆パラメータの新基盤「V9」をベースに、Cursorの実セッションデータでコーディング・エージェント作業を強化。価格は100万トークンあたり入力2ドル／出力6ドルで、Opus 4.8やGPT-5.5より6割以上安い。イーロン・マスク氏は「Opus級だが、より高速・低コスト」と主張し、SpaceX・Teslaでの社内プライベートベータを経ての公開だったこと、年内は毎月ゼロから学習した新基盤モデルを出す計画も明らかにした。EUでの提供は7月中旬以降の見込み。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://tech.yahoo.com/ai/articles/spacexai-launches-grok-4-5-204749219.html" target="_blank" rel="noopener">Yahoo Tech（2026年7月8日）</a> ／
+      <a href="https://www.axios.com/2026/07/08/spacexai-grok-new-model" target="_blank" rel="noopener">Axios</a> ／
+      <a href="https://finance.biggo.com/news/0bf51581-7534-4d9a-b15d-9923325bb6d7" target="_blank" rel="noopener">BigGo Finance</a>
+    </div>
+    <div class="comment">「毎月ゼロから新基盤モデル」という宣言が本当に持続可能なペースなのか懐疑的だが、Q1の巨額赤字（24.7億ドル）を踏まえると商業化を急ぐ事情は透けて見える。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Google「Gemini 3.5 Pro」が7月17日へ再延期——アーキテクチャを全面刷新、DeepMindの人材流出も深刻化</h2>
+    <p>
+      複数メディアの報道によると、Google DeepMindは既存の2.5 Proアーキテクチャを土台にしたGemini 3.5 Proの開発を中止し、事前学習からの全面再構築に切り替えた。数学的推論・コーディング・長時間タスクでの性能や、GPT-5.6・Fable 5との競争激化が背景とされ、目標時期は7月17日に設定された（公式なモデルカードでの確定はまだない）。同時期にGemini共同リードのノーム・シェイザー氏がOpenAIへ、ノーベル賞受賞者のジョン・ジャンパー氏らがAnthropicへ移籍するなど、DeepMindの主要研究者流出も報じられている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://finance.biggo.com/news/6f0c6bb2-795f-4c57-9d09-6db691d7638a" target="_blank" rel="noopener">BigGo Finance</a> ／
+      <a href="https://blog.getbind.co/gemini-3-5-pro-slips-to-july-and-four-senior-google-researchers-just-left-for-anthropic/" target="_blank" rel="noopener">Bind AI Blog</a>
+    </div>
+    <div class="comment">アーキテクチャを丸ごと捨てる決断は競争力を優先した証だが、主要研究者の同時期流出と重なると、単なる技術判断以上の組織的な軋みも疑いたくなる。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Anthropic、売上高ランレートが300億ドル超（さらに5月時点で470億ドル報道も）——Google・Broadcomとの計算基盤提携を拡大</h2>
+    <p>
+      Anthropicは2026年4月時点で年換算売上高が300億ドルを突破したと明らかにした。2025年末の90億ドルから急拡大しており、年間支出100万ドル超の大口顧客数もこの2カ月弱で倍増し1,000社を超えたという。さらに一部報道では5月時点でランレートが470億ドルに達したとも伝えられている。同社はGoogle Cloud経由でのClaude配信を拡大するとともに、Google・Broadcomとの複数ギガワット規模の次世代コンピュート調達提携を深化させた。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://venturebeat.com/technology/anthropic-says-it-hit-a-30-billion-revenue-run-rate-after-crazy-80x-growth" target="_blank" rel="noopener">VentureBeat</a> ／
+      <a href="https://www.pymnts.com/artificial-intelligence-2/2026/anthropic-hits-30-billion-run-rate-as-enterprise-demand-accelerates/" target="_blank" rel="noopener">PYMNTS</a>
+    </div>
+    <div class="comment">エンタープライズ需要主導での急成長ぶりが際立つ一方、計算資源の確保競争がAnthropic・Google・Broadcomという三者提携という形で表面化している点も見逃せない。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>BMW、Spartanburg工場でFigure社製ヒューマノイド「Figure 03」の稼働を開始——物流タスクへ本格投入</h2>
+    <p>
+      BMWは米サウスカロライナ州Spartanburg工場のHall 52（組立・物流エリア）に、Figure社の最新ヒューマノイドロボット「Figure 03」を導入したと報じられた。未仕分けの部品をシーケンストロリーへ仕分けし、組立ラインへ供給する物流タスクを担う。前身機「Figure 02」による11カ月の実証実験ではBMW X3の生産3万台超を支援した実績があり、今回はその延長線上での本格展開となる。同工場は17億ドル規模の投資対象でもあり、年内には電気自動車iX5の組立開始も予定されている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://interestingengineering.com/ai-robotics/bmw-figure-03-humanoid-robot-smart-factory-us" target="_blank" rel="noopener">Interesting Engineering</a> ／
+      <a href="https://www.bmwblog.com/2026/06/26/bmw-figure-03-humanoid-robot-spartanburg-plant/" target="_blank" rel="noopener">BMWBLOG</a>
+    </div>
+    <div class="comment">派手なデモではなく「仕分け・搬送」という地味な物流タスクへの実配置こそが、ヒューマノイドロボットが実証段階から商用段階へ移った証拠だろう。</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>プライバシー保護AIアクセスの新興企業「Venice」が6,500万ドル調達、評価額10億ドルに——AI資金調達は物理世界・規制業界寄りへ</h2>
+    <p>
+      ワイオミング州シェリダンを拠点とするAIプラットフォーム「Venice」が、Dragonfly主導のシリーズAで6,500万ドルを調達し評価額10億ドルに達したと報じられた。同社はプライバシーを保った形で各種AIモデルへアクセスできるサービスを展開する。同時期にはスマートグラス企業Even Realities Technologyが美団・騰訊などから1.5億ドルを調達したほか、ヘッジファンド向けエージェントを開発するLinqAlphaも2,200万ドルのシリーズAを獲得するなど、資金は「AIと物理世界の接点」や「規制業界向けエージェント」に集中する傾向が続いている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techstartups.com/2026/07/06/venture-capital-startup-funding-roundup-july-6-2026/" target="_blank" rel="noopener">Tech Startups（2026年7月6日）</a> ／
+      <a href="https://news.crunchbase.com/venture/us-ai-startup-funding-boom-data/" target="_blank" rel="noopener">Crunchbase News</a>
+    </div>
+    <div class="comment">生成AI一般ではなく「プライバシー」「ハードウェア」「規制業界」といった尖った切り口の企業に資金が集まっている点は、市場が次の差別化軸を探し始めているサインに見える。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 7 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>業務特化型「エージェント・オーケストレーション」サービスが相次ぎ登場——Akeneo「Agentic Ziggy」など</h2>
+    <p>
+      商品データ管理のAkeneoは7月8日、Product Cloud内でデータモデリング・スキーママッピング・品質チェックなど専門エージェント群を束ねるオーケストレーション層「Agentic Ziggy」を発表した。融資業務向けにも、Abrigoが書類収集・審査・例外処理を自動化する「Agentic Platform Experience（APX）」を発表しており（一般提供は2026年第3四半期予定）、単発のチャットボットではなく業界特化の複数エージェントを協調させる「オーケストレーション」型サービスが実務領域で広がりつつある。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.akeneo.com" target="_blank" rel="noopener">Akeneo関連報道（2026年7月8日）</a> ／
+      <a href="https://gravity.fast/blog/ai-agent-funding-tracker-q3-2026/" target="_blank" rel="noopener">Gravity（AIエージェント資金動向まとめ）</a>
+    </div>
+    <div class="comment">「エージェント」という言葉自体が抽象化しすぎて中身が見えにくくなっている中、業界特化・業務特化で語られる事例が増えているのは実用化が進んでいる兆しだと思う。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 — 2026年7月10日号</p>
+    <p style="margin-top:6px;"><a href="../index.html">← 簡報アーカイブ一覧</a></p>
+  </div>
+</div>
+
+</body>
+</html>
