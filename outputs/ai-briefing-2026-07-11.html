@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月11日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月11日（土）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>OpenAI「ChatGPT Work」発表——Codexを統合したスーパーアプリ化でAnthropic「Claude Cowork」モバイル版に即応戦</h2>
+    <p>
+      OpenAIは7月10日、ChatGPTとCodexコーディングツールを融合したエージェント機能「ChatGPT Work」を発表した。単体のCodexデスクトップアプリは廃止され、統合ChatGPTデスクトップアプリ内の3モードの一つに再編。Web上でのリサーチ・データ収集・フォーム入力・レポート作成など「Web起点」タスクに強みを持つとされ、Pro／Enterprise／Eduユーザーから展開し、Plus／Businessへ順次拡大予定。この発表は、Anthropicがローカルファイルシステムを直接操作する「Claude Cowork」のモバイル版を公開したわずか約24時間後というタイミングで行われ、両社のエージェント製品競争が一段と激化した。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://thenewstack.io/openai-codex-work-atlas/" target="_blank" rel="noopener">The New Stack（2026年7月10日）</a> ／
+      <a href="https://news.cgtn.com/news/2026-07-10/OpenAI-unveils-super-app-as-rivalry-with-Anthropic-intensifies-1OF7nrvaglG/p.html" target="_blank" rel="noopener">CGTN</a> ／
+      <a href="https://www.tipranks.com/news/openai-launches-super-app-in-direct-strike-at-anthropics-claude-cowork" target="_blank" rel="noopener">TipRanks</a>
+    </div>
+    <div class="comment">両社がほぼ同時に「スーパーアプリ」を打ち出してきたこと自体、単体チャットボットの時代が終わりつつある証拠だと思う。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Meta、初の有料APIモデル「Muse Spark 1.1」を発表——エージェント・コーディング特化でAnthropic／OpenAIの4分の1の価格を提示</h2>
+    <p>
+      Meta Superintelligence Labsは7月9日、マルチモーダル推論モデル「Muse Spark 1.1」を発表し、同時に有料の「Meta Model API」プレビューを開始した。同社にとって初の課金制モデルで、価格は100万トークンあたり入力1.25ドル・出力4.25ドルとAnthropic・OpenAIの主要モデルの4分の1程度に抑えられている。コンテキスト窓は100万トークンで、ツール利用・コンピュータ操作・大規模コードベースでのバグ修正や機能実装など、エージェント型コーディング作業に特化して強化されたという。AI責任者アレクサンダー・ワン氏は「エージェント・コーディング向けとして最強のモデル」と位置づけている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/" target="_blank" rel="noopener">Meta AI公式ブログ</a> ／
+      <a href="https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/" target="_blank" rel="noopener">TechCrunch（2026年7月9日）</a> ／
+      <a href="https://www.bloomberg.com/news/articles/2026-07-09/meta-starts-charging-for-ai-with-muse-spark-1-1-agentic-model" target="_blank" rel="noopener">Bloomberg</a>
+    </div>
+    <div class="comment">無料提供で存在感を築いてきたMetaが有料APIに踏み出したこと自体、コーディング・エージェント市場の収益化圧力が業界全体に及んでいる証だろう。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Mistral AIが初のロボティクスモデル「Robostral Navigate」を発表——単眼カメラのみで複雑環境をナビゲート</h2>
+    <p>
+      フランスのMistral AIは7月8日、単一のRGBカメラのみでロボットを自律航行させる80億パラメータのモデル「Robostral Navigate」を発表した。未知環境でのナビゲーション性能を測るR2R-CEベンチマークで76.6%の成功率を達成し、深度センサーや複数カメラを使う既存手法を上回ったという。シミュレーションデータとトークン効率の良い学習手法により自社開発され、車輪型・脚型・飛行型などロボットの種類を問わず汎用的に使えるとしている。製造・配送・物流・接客など幅広い産業向けの導入が想定されている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://mistral.ai/news/robostral-navigate/" target="_blank" rel="noopener">Mistral AI公式（2026年7月8日）</a> ／
+      <a href="https://www.bloomberg.com/news/articles/2026-07-08/mistral-ai-releases-robotics-model-to-support-physical-ai-push" target="_blank" rel="noopener">Bloomberg</a> ／
+      <a href="https://the-decoder.com/mistral-enters-robotics-with-robostral-navigate-an-8b-model-that-steers-robots-using-just-one-camera/" target="_blank" rel="noopener">THE DECODER</a>
+    </div>
+    <div class="comment">言語モデル企業がロボット企業に転身しつつある動きの一つで、「ロボット向け基盤モデル」という新レイヤーが急速に一般化してきた印象。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>ByteDance、画像生成モデル「Seedream 5.0 Pro」を発表——レイヤー分離編集と10言語超のネイティブ対応が目玉</h2>
+    <p>
+      ByteDanceのSeedチームは7月8〜9日、マルチモーダル画像生成モデル「Seedream 5.0 Pro」を発表した。複雑な図表やインフォグラフィックを正確なレイアウトで生成する「情報可視化」、クリックや投げ縄選択で部分編集できる「対話的精密編集」、1枚のポスターを文字・被写体・背景など10層以上に分離できる「レイヤー分離」、日本語・韓国語・フランス語・アラビア語など10言語以上への直接対応が新機能。まずVolcano Ark上で試験提供され、順次DoubaoやJimengに統合、BytePlus API経由でも利用可能になる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://seed.bytedance.com/en/blog/beyond-generation-it-understands-design-introducing-seedream-5-0-pro" target="_blank" rel="noopener">ByteDance Seed公式ブログ</a> ／
+      <a href="https://www.testingcatalog.com/bytedance-debuts-seedream-5-0-pro-with-advanced-reasoning/" target="_blank" rel="noopener">TestingCatalog</a> ／
+      <a href="https://finance.biggo.com/news/9afcf6f0-fad1-403a-ad2f-174d86f863d2" target="_blank" rel="noopener">BigGo Finance</a>
+    </div>
+    <div class="comment">画像生成競争の焦点が「きれいさ」から「レイヤー単位で編集できる実務性」に移ってきているのがよく分かる一例。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>AIインフラ企業への大型調達が相次ぐ——SambaNova 10億ドル、Prime Intellect 1.3億ドル、量子のOratomicも3億ドル確保</h2>
+    <p>
+      7月9日前後、AIインフラ・基盤技術企業への大型資金調達が相次いで報じられた。AIチップ企業SambaNova Systemsは10億ドルを調達し評価額110億ドルに到達。フルスタックAIプラットフォームを手がけるニューヨーク拠点のPrime Intellectは、Radical Ventures主導・NVIDIA Venturesなど参加のシリーズAで1億3,000万ドルを調達し評価額10億ドルに達した。量子コンピューティングのOratomicもARCH Venture PartnersらのシリーズAで3億ドルを確保している。消費者向けアプリよりも、チップ・基盤モデル・量子といった「土台」への投資が続いている構図が鮮明になっている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techstartups.com/2026/07/09/venture-capital-startup-funding-roundup-july-9-2026-sequoia-khosla-ventures-y-combinator-a16z-accel/" target="_blank" rel="noopener">Tech Startups（2026年7月9日）</a> ／
+      <a href="https://yourstory.com/2026/07/startup-news-and-updates-daily-roundup-july-9-2026" target="_blank" rel="noopener">YourStory</a>
+    </div>
+    <div class="comment">派手なプロダクト発表よりも資金が集まる先を見ると、業界がまだ「基盤づくり」の途中段階にあることがよく分かる。</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>新概念「コンテキスト・エンジニアリング」が定着——コーディングエージェントは平均20手を自律実行する時代に</h2>
+    <p>
+      「どう聞くか」を扱うプロンプト・エンジニアリングに代わり、「エージェントが行動する瞬間に何を知り、何を見て、何を記憶しているか」を設計する「コンテキスト・エンジニアリング」という概念が2026年に入り実務用語として定着しつつある。Anthropicの「2026年版エージェント型コーディング動向レポート」によれば、コーディングエージェントは人間の介入を挟まずに平均20回の自律的な行動ステップを完了できるまでになったという。RAGやプロンプト設計はこの概念の下位集合と位置づけられ、エージェント設計を語る際の中心用語として使われる場面が増えている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://blog.getbind.co/context-engineering-in-2026-the-complete-developers-guide/" target="_blank" rel="noopener">Bind AI Blog</a> ／
+      <a href="https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html" target="_blank" rel="noopener">Martin Fowler公式サイト</a>
+    </div>
+    <div class="comment">用語自体は目新しくなくても、「エージェントの自律ステップ数」という具体的な指標で語られ始めたことが、この1年の実質的な進歩を物語っている。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 7 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>米国各州でヘルスケアAI規制が本格施行——一方でAI駆動の体表パッチが不整脈を99.6%精度で検出</h2>
+    <p>
+      米国では2026年、43州で240件超のヘルスケアAI関連法案が審議されており、7月1日にはインディアナ州でAIのみを根拠にした保険金請求のダウンコーディングを禁じる法律（HB1271）が、テネシー州ではAIチャットボットが精神・行動医療の有資格者を名乗ることを禁じる法律（SB1580）がそれぞれ発効した。一方で応用面では、シカゴ大学が開発した柔軟な体表装着パッチがクラウドに頼らず生体データをその場で処理し、命に関わる不整脈を99.6%の精度で検出する技術も報告されており、規制と応用の両面でヘルスケアAIの実装が具体化してきている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.hklaw.com/en/insights/publications/2026/05/states-continue-efforts-to-regulate-ai-in-healthcare" target="_blank" rel="noopener">Holland &amp; Knight</a> ／
+      <a href="https://www.marketscale.com/industries/healthcare/digital-healths-july-2026-signal-ai-wearables-a-new-cms-office-and-the-telehealth-billing-fight" target="_blank" rel="noopener">MarketScale（2026年7月）</a>
+    </div>
+    <div class="comment">規制のニュースは地味だが、AIが実際の医療判断に使われ始めている証拠でもあり、応用が進むほど法整備の速度も問われることになりそうだ。</div>
+  </div>
+
+  <!-- 8 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>フランスの新興ZML、無料の推論高速化ツールを公開——ヤン・ルカン氏も支持する新興企業がチップ横断の効率化に挑む</h2>
+    <p>
+      フランスのAIインフラ新興企業ZMLは7月8日、多様なAIチップ間で推論処理を高速化する無料ツール「ZML/LLMD」を公開した。チューリング賞受賞者のヤン・ルカン氏が支持していることでも注目される同社は、特定のチップベンダーに依存しない推論基盤を志向しており、GPU調達コストの高騰が続く中、チップ横断での効率化ニーズに応える形となる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips/" target="_blank" rel="noopener">TechCrunch（2026年7月8日）</a>
+    </div>
+    <div class="comment">巨大資本を持たない新興企業が「無料公開」で存在感を示す戦略は、インフラ層でも配布力そのものが競争力になっている証拠だろう。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 — 2026年7月11日号</p>
+    <p style="margin-top:6px;"><a href="../index.html">← 簡報アーカイブ一覧</a></p>
+  </div>
+</div>
+
+</body>
+</html>
