@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月12日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月12日（日）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>米FRB、「生産性・雇用タスクフォース」を発足——a16zのマーク・アンドリーセン氏が共同座長に</h2>
+    <p>
+      米連邦準備制度理事会（FRB）のケビン・ウォーシュ新議長は7月9日、経済分析の近代化を掲げ5つの外部タスクフォースの新設を発表した。うち「生産性・雇用」を扱う班の共同座長には、ベンチャーキャピタルAndreessen Horowitz共同創業者のマーク・アンドリーセン氏、スタンフォード大学の経済学者チャールズ・ジョーンズ氏、Microsoft Xbox部門CEOのアーシャ・シャルマ氏が就任した。AIをはじめとする汎用技術が労働市場と生産性に与える影響を分析し、2026年末までに具体的提言をまとめる方針で、結果次第では金融政策の前提となる潜在成長率の見方にも影響し得るとされる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://crypto.news/a16zs-marc-andreessen-joins-fed-task-force-on-ai-and-jobs/" target="_blank" rel="noopener">crypto.news（2026年7月9日）</a> ／
+      <a href="https://www.cryptotimes.io/2026/07/10/fed-chair-warsh-taps-a16zs-marc-andreessen-for-ai-productivity-panel/" target="_blank" rel="noopener">The Crypto Times（2026年7月10日）</a>
+    </div>
+    <div class="comment">中央銀行までもがAIの雇用・生産性インパクトを正式な検討課題に据えた点で、AIが「業界の話題」から「マクロ経済政策の変数」へ格上げされたことを象徴する動きだと思う。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>中国「AI擬人化サービス」新規制が7月15日施行——Alibaba Qwenは7月10日からエージェント機能を先行停止</h2>
+    <p>
+      中国のサイバースペース管理局（CAC）など5当局が共同で定めた「AI擬人化対話サービス管理暫定弁法」が7月15日に施行される。感情的依存を助長するコンテンツを未成年に対して禁じ、依存検知・利用時間通知・即時退出機能などを事業者に義務付ける内容。これを受けAlibabaのQwenは自作・擬人化エージェント機能を7月10日付で停止し、他のエージェント機能も5日後に停止予定。ByteDanceのDoubaoも「製品機能の調整」を理由にエージェント機能を7月15日に停止すると発表し、代替として別アプリ「猫想（Maoxiang）」への移行を案内している。</p>
+    <div class="source">
+      出典：
+      <a href="https://www.scmp.com/tech/big-tech/article/3359482/bytedance-and-alibaba-disable-humanlike-ai-custom-agents-new-rules-loom" target="_blank" rel="noopener">South China Morning Post</a> ／
+      <a href="https://www.techtimes.com/articles/319703/20260704/china-ai-companion-law-arrives-july-15-doubao-qwen-agent-data-will-deleted.htm" target="_blank" rel="noopener">Tech Times</a>
+    </div>
+    <div class="comment">「仕事を代行するエージェント」と「感情的に寄り添うコンパニオン」を規制上明確に切り分けた点が興味深く、他国の規制設計にも影響しそうな先行事例だと感じる。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Claude「Fable 5」無料アクセス、本日7月12日深夜（太平洋時間）で終了——以降は従量課金クレジットのみに</h2>
+    <p>
+      Anthropicは当初7月7日で終了予定だったMythosクラスの最上位モデル「Fable 5」の無料アクセス（Pro・Max・Team・一部Enterpriseの週次利用枠の最大50%まで）を、ユーザーの反発を受け7月12日午後11時59分59秒（PT）まで5日間延長していた。この猶予期間が本日で満了し、以降はプリペイド式の従量課金（入力100万トークンあたり10ドル、出力同50ドル）でのみ利用可能となる。Anthropicは容量が確保でき次第、通常サブスクリプションへの復帰を目指すとしている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.androidauthority.com/claude-fable-5-free-extension-3685103/" target="_blank" rel="noopener">Android Authority</a> ／
+      <a href="https://www.techtimes.com/articles/319875/20260707/claude-fable-5-free-window-extended-july-12-what-subscribers-should-do-now.htm" target="_blank" rel="noopener">Tech Times</a>
+    </div>
+    <div class="comment">最上位モデルの無償提供を維持するコストの重さが透けて見える一件で、フロンティアモデルの「太っ腹な体験」がどこまで持続可能かを占う試金石になりそうだ。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>CNBC調査：中国製AIモデルが米企業APIトークン利用の最大46%に到達——Anthropicのシェアは14.8%まで低下</h2>
+    <p>
+      CNBCが7月7日に報じた調査によると、OpenRouter経由の企業向けトークン利用のうち中国製モデルの割合は2月8日以降毎週30%を超え、直近ピークでは46%に達した。2025年上期の4.5%、直近12カ月平均11%からの急拡大となる。DeepSeekが17.6%でトップ、AlibabaのQwenが13.9%で続き、両者合計で米国製モデル全体（35.7%、うちAnthropicは14.8%）を上回った。中国製オープンモデルは主要モデルより6〜9割安いとされ、Coinbaseが1,200体のAIエージェントを中国製モデルに移行し支出を半減させた例や、AI企業Lindyが全トラフィックをClaudeからDeepSeekへ完全移行した例も紹介されている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.cnbc.com/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html" target="_blank" rel="noopener">CNBC（2026年7月7日）</a>
+    </div>
+    <div class="comment">性能競争の裏で「コスト」を軸にした乗り換えが静かに、しかし急速に進んでいる様子がうかがえ、フロンティア企業の値付け戦略にも影響を与えそうだ。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Future of Life Institute「AI安全性指数 2026年上期版」発表——最高評価はAnthropicのC+、AランクもBランクも該当なし</h2>
+    <p>
+      非営利団体Future of Life Institute（FLI）は7月7日、大学モントリオール校・UCバークレー校・オックスフォード大学などの専門家7名による審査を経た「AI Safety Index 2026 H1」を公表した。リスク評価・実害・安全枠組み・実存的安全性・ガバナンス・透明性の6分野で主要9社を採点した結果、Anthropicが総合トップのC+、OpenAIとGoogle DeepMindがC、MetaがD+、Z.aiとAlibaba CloudがD-、xAI・DeepSeek・MistralはいずれもFという結果に。特に「実存的安全性」は全社がC-以下と最弱で、各社がかつて表明した「危険域に近づけば開発を停止する」との公約が近年弱まっている、との指摘もなされた。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.axios.com/2026/07/07/report-ai-safety-pledges" target="_blank" rel="noopener">Axios（2026年7月7日）</a> ／
+      <a href="https://www.malaymail.com/news/tech-gadgets/2026/07/08/ai-safety-report-gives-the-industry-a-reality-check-and-everyone-flunks-the-toughest-test/226816" target="_blank" rel="noopener">Malay Mail</a>
+    </div>
+    <div class="comment">最先端モデルの性能競争がどれだけ過熱しても「安全性」だけは全社そろって及第点未満というのは、業界の構造的な課題を端的に表していると思う。</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Google Photos「Video Remix」公開——Gemini Omniで手持ち動画を数秒で映画風・アート風に変換</h2>
+    <p>
+      Googleは7月8日、Google Photosの新機能「Video Remix」を発表した。最新のマルチモーダルモデル「Gemini Omni」を活用し、ライブラリ内の動画を選んでテキストで「映画のような照明にする」「背景を変える」といった指示を出すだけで、被写体を保ったまま演出済みの短編クリップへ変換できる。Create タブから利用でき、米国のGoogle AI Plus／Pro／Ultra加入者に加え日本を含む主要国でも順次展開中。写真編集にとどまらず動画そのものを生成的に再構成する体験が、一般消費者向けアプリに実装され始めたことを示す事例といえる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/07/08/google-photos-adds-a-new-ai-video-remix-tool/" target="_blank" rel="noopener">TechCrunch（2026年7月8日）</a> ／
+      <a href="https://9to5google.com/2026/07/08/google-photos-video-remix/" target="_blank" rel="noopener">9to5Google</a>
+    </div>
+    <div class="comment">動画編集の専門知識がなくても「言葉で演出を指示する」だけで済むようになると、日常的な動画コンテンツの作り方自体が変わっていきそうだ。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 7 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>新用語「ループ・エンジニアリング（Loop Engineering）」が定着——「エージェントに指示する」から「指示するループを設計する」へ</h2>
+    <p>
+      開発者Addy Osmani氏が6月に提唱し広まった概念「ループ・エンジニアリング」が、コーディングエージェントの運用手法を語る新語として定着しつつある。Anthropicの開発者向けツール「Claude Code」責任者ボリス・チェルニー氏の「もうClaudeにプロンプトはしていない。プロンプトを打つループを回し、次に何をすべきか判断する仕組みを持っている。自分の仕事はループを書くことだ」という発言が象徴的とされ、発見・タスク分解・オーケストレーション・検証・永続的メモリの5要素からなる設計思想として紹介されている。人間が逐一プロンプトを打つ時代から、自律的に判断・検証するループそのものを設計する時代への移行を示す言葉として広がっている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://addyosmani.com/blog/loop-engineering/" target="_blank" rel="noopener">Addy Osmani公式ブログ</a>
+    </div>
+    <div class="comment">「プロンプトエンジニアリング」からわずか数年で語彙がここまで変わったこと自体、エージェント活用の現場が急速に成熟してきている証だと感じる。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 — 2026年7月12日号</p>
+    <p style="margin-top:6px;"><a href="../index.html">← 簡報アーカイブ一覧</a></p>
+  </div>
+</div>
+
+</body>
+</html>
