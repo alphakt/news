@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月13日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月13日（月）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Apple、OpenAIを提訴——元Apple社員400人超の引き抜きと企業秘密窃取を主張</h2>
+    <p>
+      Appleは7月11日、カリフォルニア州北部地区連邦裁判所にOpenAIを提訴した。チップ設計・ハードウェア・オンデバイスAI部門出身者を含む400人超の元Apple社員をOpenAIが採用したことに関連し、機密情報の持ち出しを助長し、転職時に発覚を避ける方法まで指南していたと主張している。被告にはiPhone等の設計に携わりOpenAIのハードウェア責任者に転じたタン・タン氏、Appleの電気技師だったチャン・リウ氏の名も挙がる。OpenAIは約65億ドルでイヴのio Productsを買収するなどハードウェア領域でAppleに攻勢をかけており、両社の人材・技術を巡る対立が法廷闘争に発展した形。OpenAI側は「他社の企業秘密には関心がない」とコメントしている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.texarkanagazette.com/news/2026/jul/12/apple-files-lawsuit-accusing-chatgpt-maker-openai/" target="_blank" rel="noopener">Texarkana Gazette（2026年7月12日）</a> ／
+      <a href="https://cybersecuritynews.com/apple-sues-openai/" target="_blank" rel="noopener">Cyber Security News</a>
+    </div>
+    <div class="comment">AI人材の争奪戦がついに法廷にまで持ち込まれた格好で、ハードウェア領域に本気で踏み込むOpenAIの姿勢がAppleにとって看過できない脅威になっていることの表れだと思う。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>SK hynix、ナスダックに265億ドルのADR上場——外国企業として米国株式市場史上最大の売り出しに</h2>
+    <p>
+      韓国の半導体大手SK hynixは7月10日、米国預託証券（ADR）をナスダックに上場し、265億ドルを調達した。外国企業による米国での株式売り出しとしては、2014年のAlibaba（250億ドル）を上回り史上最大となる。価格は1株149ドル、発行数は1億7,790万ADR（ADR10単位＝普通株1株）で、需要は募集株数の7倍に達したという。初日の取引は暫定ティッカー「SKHYV」で行われ13%上昇、7月13日からは正式ティッカー「SKHY」に切り替わる。調達資金はAIサーバー向けHBM（広帯域メモリ）需要を見込んだ韓国国内工場の増強やEUV露光装置の調達に充てられる計画。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.bloomberg.com/news/articles/2026-07-09/sk-hynix-is-said-to-price-us-share-offering-at-149-apiece-mrdz562z" target="_blank" rel="noopener">Bloomberg（2026年7月9日）</a> ／
+      <a href="https://finance.yahoo.com/markets/stocks/articles/sk-hynix-nasdaq-debut-26-113118390.html" target="_blank" rel="noopener">Yahoo Finance</a>
+    </div>
+    <div class="comment">GPUだけでなく「メモリの奪い合い」がAIインフラの制約になりつつある今、資本市場までもがAIメモリ企業に殺到している構図がはっきり見えた一件。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>GPT-5.6ファミリーの使い分け、発売2日で開発者の共通認識が固まる——「基本はTerra、複雑作業はSol、大量処理はLuna」</h2>
+    <p>
+      7月9日に一般提供が始まったOpenAI「GPT-5.6」のSol／Terra／Lunaの3層構成について、開発者コミュニティの評価が2日で定まりつつある。価格は100万トークンあたりSolが入力5ドル・出力30ドル、Terraが2.5ドル・15ドル、Lunaが1ドル・6ドルで最大5倍差があるのに対し、ベンチマーク差はモデル間でわずか3.3ポイントにとどまる。このため多くの開発者は「本番運用は基本Terra、複雑なタスクのみSolへエスカレーション、大量・低コスト処理はLuna」という使い分けに落ち着きつつあるという。性能そのものより「価格対性能で最適な層をどう選ぶか」が実務上の焦点に移っていることを示す事例。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://simonwillison.net/2026/Jul/9/gpt-5-6/" target="_blank" rel="noopener">Simon Willison氏ブログ（2026年7月9日）</a> ／
+      <a href="https://www.vellum.ai/blog/gpt-5-6-benchmarks-explained" target="_blank" rel="noopener">Vellum AI</a>
+    </div>
+    <div class="comment">「最強モデルをどう使うか」ではなく「どの層を使うべきか」を語る記事が主流になったこと自体、フロンティアモデルがコモディティ化し始めている証拠だと感じる。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>シンガポールNCS、主権型エンタープライズAI基盤群「Sunshine.AI」を拡張発表——Physical AIから監査エンジンまで一括提供</h2>
+    <p>
+      シンガポールのITサービス大手NCSは7月9日、年次カンファレンス「NCS AI Impact 2026」で自社のAI基盤群「Sunshine.AI」の拡張を発表した。エージェント構築基盤「Sunshine.core」、ノーコードでアプリを作れる「Sunshine.builder」、複数ベンダーのロボット群を一元管理する物理AI基盤「Sunshine.commanderAI」、動画解析AI「Sunshine.kaisense」、稼働中のエージェントを模擬攻撃で検証し監査記録を自動生成する安全性エンジン「Sunshine.guardian」などを揃え、ガバナンスとコンプライアンスを最初から組み込んだ「主権AI」を掲げる。医療大手IHH Healthcareとの共同AIセンター設立も同時発表された。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.prnewswire.com/apac/news-releases/ncs-launches-enterprise-ai-platforms-and-products-deepens-partnerships-to-accelerate-ai-driven-business-transformation-302821334.html" target="_blank" rel="noopener">PR Newswire（2026年7月9日）</a> ／
+      <a href="https://www.crnasia.com/news/2026/artificial-intelligence/ncs-launches-enterprise-ai-platforms-and-products-as-it-tran" target="_blank" rel="noopener">CRN Asia</a>
+    </div>
+    <div class="comment">米中大手モデル企業の陰に隠れがちだが、「自国のガバナンス基準に合わせたAI基盤」を丸ごとパッケージ化する動きはアジア各国でこれから増えていきそうだ。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>OpenAI、非公開IPO準備を継続——ゴールドマン・サックス／モルガン・スタンレー起用、9月にも上場で評価額7,300億〜8,500億ドル規模との報道</h2>
+    <p>
+      複数の報道によると、OpenAIはゴールドマン・サックスとモルガン・スタンレーを主幹事に非公開のIPO登録届出書（ドラフトS-1）を準備しており、早ければ9月にも米国市場での上場を目指しているという。想定評価額は7,300億〜8,500億ドルとされ、年換算売上高200億ドル規模と合わせ、実現すれば米国史上最大級のIPOの一つになる見通し。ライバルのAnthropicも同時期に非公開でS-1を提出したとされ、2026年後半は「私設市場が付けた評価額に公開市場が応じるか」を占う最初の試金石になりそうだ。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://cryptobriefing.com/openai-confidential-ipo-filing-goldman-sachs/" target="_blank" rel="noopener">Crypto Briefing</a> ／
+      <a href="https://opentools.ai/news/openai-confidential-ipo-filing-september-2026" target="_blank" rel="noopener">OpenTools AI</a>
+    </div>
+    <div class="comment">評価額の桁が大きすぎて実感が湧きにくいが、非公開市場の熱狂を公開市場がそのまま引き継げるかどうかは、AI業界全体の資金調達環境を左右する分水嶺になると思う。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 6 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>中国Unitree、上海STAR市場IPOの登録承認取得——早ければ7月末上場、ヒューマノイド勢の資本市場ラッシュが続く</h2>
+    <p>
+      四足・人型ロボットを手がける中国Unitree Roboticsは7月3日、中国証券監督管理委員会（CSRC）から上海STAR市場への上場登録承認を取得した。約42億元（約619百万ドル）の調達を計画し、想定評価額は約420億元。価格や上場日はまだ未定だが、早ければ7月末の上場が見込まれている。米国でもAgility RoboticsのSPAC上場やTesla Optimusのフリーモント工場専用ライン転換が同時進行しており、ヒューマノイドロボット業界が実証実験段階から資本市場での評価付けの段階へ移りつつある局面がうかがえる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.scmp.com/tech/big-tech/article/3355538/unitree-clears-key-hurdle-shanghai-ipo-chinas-humanoid-robot-wave-gathers-pace" target="_blank" rel="noopener">South China Morning Post</a> ／
+      <a href="https://www.caixinglobal.com/2026-07-03/unitree-robotics-wins-approval-for-618-million-star-market-ipo-102460136.html" target="_blank" rel="noopener">Caixin Global</a>
+    </div>
+    <div class="comment">まだユニットエコノミクスが確立していない段階での上場ラッシュは、実証実験の派手さだけでなく財務の実態が問われる次のフェーズに入ったことを意味すると思う。</div>
+  </div>
+
+  <!-- 7 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>Tesla、フリーモント工場のOptimus専用ライン転換が完了間近——早ければ7〜8月にも少量生産開始</h2>
+    <p>
+      Teslaはフリーモント工場のModel S／Xの旧生産ラインをわずか46日間で解体し、Optimusヒューマノイドロボット専用の生産ラインへの転換を進めている。同ラインは年産最大100万体規模を見込むモジュール式設計で、ハードウェアの進化に合わせて改修しやすい構造になっているという。ただし部品点数は約1万点に上り、確立されたサプライチェーンもまだ存在しないため、当初の生産ペースは「かなり遅い」見通し。テキサスの次世代工場では将来的に年産1,000万体規模を目指すとしている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.teslarati.com/tesla-optimus-project-fires-up-musk-sees-production-line-progress/" target="_blank" rel="noopener">Teslarati</a> ／
+      <a href="https://electrek.co/2026/04/22/tesla-optimus-production-fremont-model-sx-line/" target="_blank" rel="noopener">Electrek</a>
+    </div>
+    <div class="comment">「デモがうまい」から「量産できる」への壁は依然として高く、実際の生産ペースが公開されるまでは慎重に見ておきたい話題だと思う。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 — 2026年7月13日号</p>
+    <p style="margin-top:6px;"><a href="../index.html">← 簡報アーカイブ一覧</a></p>
+  </div>
+</div>
+
+</body>
+</html>
