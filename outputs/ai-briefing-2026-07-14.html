@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月14日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月14日（火）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>イーロン・マスク氏とサム・アルトマン氏、Apple提訴を機にX上で舌戦再燃——「詐欺師」呼ばわりの応酬に</h2>
+    <p>
+      Appleが7月11日にOpenAIを企業秘密窃取で提訴したことをきっかけに、SpaceXAIを率いるイーロン・マスク氏とOpenAIのサム・アルトマン氏が7月11〜12日にかけてX（旧Twitter）上で再び激しく応酬した。マスク氏は「Scam Altman strikes again」と投稿し、アルトマン氏の資金調達手法を繰り返し「詐欺」と批判。アルトマン氏も「宇宙データセンターで投資家を煽っているのはお前の方だ」と反撃し、マスク氏はさらに「仮釈放担当官の許可が下りればな」と皮肉を返した。両者の応酬はGPT-5.6とGrok 4.5がほぼ同時に投入された直後というタイミングとも重なり、関連投稿は1,000万回以上閲覧されるなど業界の話題を独占した。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.cnbc.com/2026/07/12/elon-musk-and-sam-altman-spar-.html" target="_blank" rel="noopener">CNBC（2026年7月12日）</a> ／
+      <a href="https://fortune.com/2026/07/13/elon-musk-sam-altman-feud-scam-accusations-spacex-openai-ipos-grok-gpt-apple-lawsuit/" target="_blank" rel="noopener">Fortune（2026年7月13日）</a>
+    </div>
+    <div class="comment">経営者同士の舌戦がプロダクト発表と同じタイミングで盛り上がるのはもはや恒例行事だが、法廷闘争という実害を伴う対立の裏でここまで感情的な応酬が公開されるのは、業界の競争がいかに個人化しているかを物語っていると思う。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>中国、先端AIモデルの海外提供制限を検討——商務部がAlibaba・ByteDance・Z.aiと協議</h2>
+    <p>
+      複数の報道によると、中国商務部はここ1カ月にわたりAlibaba、ByteDance、新興企業Z.aiと会合を重ね、未公開モデルを含む最先端AIモデルの海外向け提供を制限する案を協議している。対象にはQwen、Doubao、GLM-5.2など、これまでオープンウェイトとして無償公開され世界的な支持を集めてきたモデルも含まれる可能性があるという。関係者によれば、AI関連の企業秘密流出を国家安全保障上の犯罪として扱う案や、AI企業への出資者を制限する案も俎上に載っているとされる。現時点で何も決定しておらず対象は将来モデルに限られる可能性もあるが、無償公開を武器にしてきた中国のAI戦略の転換点になりうる動きとして注目されている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://fortune.com/2026/07/08/china-mulls-limiting-foreign-access-advanced-ai-models/" target="_blank" rel="noopener">Fortune（2026年7月8日）</a> ／
+      <a href="https://the-decoder.com/china-eyes-export-curbs-on-its-top-ai-models-and-europe-is-caught-in-the-middle/" target="_blank" rel="noopener">The Decoder</a>
+    </div>
+    <div class="comment">米企業のAPIトークン利用の半分近くを中国製モデルが占め始めた今、中国自身が「オープンさ」を武器から規制対象へ切り替えるかどうかは、今後のAI地政学における大きな分水嶺になると思う。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>ヒューマノイド「Surgie」が世界初の遠隔手術に成功——UC San Diego、2万ドルのUnitree G1で豚の胆嚢摘出</h2>
+    <p>
+      UCサンディエゴの研究チームは、中国Unitree Robotics製の汎用ヒューマノイドロボット「G1」（1体約2万ドル）2体を遠隔操作し、豚を対象とした胆嚢摘出手術に世界で初めて成功したと発表した。「Surgie」と名付けられたロボットの1体を外科医2名が遠隔操作して臓器摘出を行い、もう1体が内視鏡操作や組織の牽引といった補助作業を担当した。専用の高額な手術支援ロボットではなく、安価な市販ヒューマノイドを転用した点が特徴で、研究チームは将来的に専門医不足の「医療砂漠」地域へ高度な外科医療を届ける手段になり得るとしている。あくまで動物実験段階だが、汎用ロボットが精密医療タスクをこなせることを示した点で注目度が高い。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.forbes.com/sites/johnkoetsier/2026/07/10/humanoid-robots-just-performed-live-surgery-for-the-first-time-ever/" target="_blank" rel="noopener">Forbes（2026年7月10日）</a> ／
+      <a href="https://www.scmp.com/news/china/science/article/3360107/us-scientists-use-chinese-humanoid-robot-carry-out-keyhole-surgery-and-remove-organs" target="_blank" rel="noopener">South China Morning Post</a>
+    </div>
+    <div class="comment">専用機ではなく汎用ヒューマノイドが精密外科をこなせるなら、コスト構造そのものが変わる可能性があり、「ロボット手術＝超高額設備」という前提を覆すインパクトを感じる一件。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>OpenAI「GPT-Live」を発表——全二重アーキテクチャで「聞きながら話す」新音声AI</h2>
+    <p>
+      OpenAIは7月上旬、ChatGPTの音声モードを刷新する新モデル「GPT-Live」を発表した。従来の音声モードが「聞く→考える→話す」を順番に処理していたのに対し、GPT-Liveは全二重（フルデュプレックス）アーキテクチャを採用し、聞く・話す・考えるを同時に処理する。会話中に「うんうん」と相槌を打ったり、テンポよく割り込んだり、考える間は黙ったりと、人間同士の会話に近いリズムを再現するのが特徴。複雑な質問や検索が必要な場面ではGPT-5.5に処理を委譲しつつ会話を途切れさせない設計で、フラッグシップの「GPT-Live-1」と無料層向けの軽量版「GPT-Live-1 mini」をiOS・Android・ChatGPT.comに順次展開している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://openai.com/index/introducing-gpt-live/" target="_blank" rel="noopener">OpenAI公式発表</a> ／
+      <a href="https://venturebeat.com/technology/openai-launches-gpt-live-a-full-duplex-voice-upgrade-that-lets-chatgpt-talk-more-like-a-person" target="_blank" rel="noopener">VentureBeat</a>
+    </div>
+    <div class="comment">音声AIの勝負が「賢さ」から「間の取り方」に移ってきたのは象徴的で、相槌や沈黙の演出そのものがUXの決め手になる時代が来たのだと感じる。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>OpenAIの導入支援子会社、Palantir出身チームのNorthslopeを買収——エンタープライズ導入の陣取り合戦が加速</h2>
+    <p>
+      5月に始動したOpenAIの導入支援子会社「OpenAI Deployment Company」は、応用AI企業Northslopeの買収に合意したと報じられた。Northslopeの創業チームはPalantir出身で、2025年には売上高が7倍に成長していたという。同社が抱える「フォワード・デプロイド・エンジニア（顧客企業に常駐し業務にAIを組み込む専門職）」を取り込むことで、Deployment Companyにとってこれが2件目の買収となる（1件目はTomoro）。OpenAIは同社に40億ドルの買収資金を割り当てており、モデル開発だけでなく「導入そのもの」を売る従来のコンサル業務領域に踏み込む姿勢を強めている。Microsoftも同様の導入支援会社を立ち上げており、フロンティアラボ同士の「導入人材」争奪戦が激化している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.axios.com/2026/07/08/openai-deployment-company-northslope-acquisition" target="_blank" rel="noopener">Axios（2026年7月8日）</a> ／
+      <a href="https://thenextweb.com/news/openai-northslope-acquisition-enterprise-ai-deployment" target="_blank" rel="noopener">The Next Web</a>
+    </div>
+    <div class="comment">最先端モデルを作れること以上に「実際の業務に組み込めること」が差別化要因になっており、AIラボが静かにコンサルティング会社化していく流れは要注目だと思う。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 6 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>ECB、ユーロ圏の主要銀行に「AI駆動型サイバー攻撃」対応計画を10月31日までに義務付け</h2>
+    <p>
+      欧州中央銀行（ECB）は7月7日、ユーロ圏の主要銀行のCEO宛てに書簡を送り、AIによって脆弱性の発見から攻撃実行までの時間が急速に短縮されているとして、既存のセキュリティ対策を高速化するための包括的な行動計画を10月31日までに担当監督チームへ提出するよう求めた。計画にはパッチ管理の迅速化、AIを活用した監視・検知体制の強化に加え、クラウドベンダーを含むサードパーティ・プロバイダーのサプライチェーンリスクの精査が含まれる。AIが攻撃側・防御側双方の武器になりつつある中、金融監督当局が具体的な期限付きで行動を迫った初期の事例として注目される。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.euronews.com/business/2026/07/07/ecb-tells-europes-biggest-banks-to-prepare-for-ai-powered-cyber-threats" target="_blank" rel="noopener">Euronews（2026年7月7日）</a> ／
+      <a href="https://www.americanbanker.com/news/ecb-tells-banks-fix-ai-cyber-gaps-by-oct-31" target="_blank" rel="noopener">American Banker</a>
+    </div>
+    <div class="comment">AIが攻撃側の高速化に使われる以上、防御側もAI前提で体制を組み直すしかなく、最も慎重な業界の一つである金融がまず具体的な期限を切って動いたのは妥当な流れだと思う。</div>
+  </div>
+
+  <!-- 7 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>FDA、患者対話型LLMを搭載した医療機器を初承認——UpDocのインスリン管理AI</h2>
+    <p>
+      米クリニカルAI企業UpDocは、患者と直接対話する大規模言語モデル（LLM）を搭載したソフトウェア医療機器（SaMD）として初めてFDAの510(k)クリアランスを取得したと発表した。対象は成人2型糖尿病患者のインスリン管理で、患者は音声またはテキストでAIとやり取りしてインスリン量の調整指導を受けられ、結果は医師の電子カルテにも自動連携される。汎用の医療チャットボットではなく、医師があらかじめ設定した範囲内でのみ動作する厳格に限定された設計がクリアランスの決め手になったとされる。同社はシード資金1,800万ドルを調達済みで、クリーブランドクリニックなど大手医療機関での導入が始まっている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.statnews.com/2026/07/02/fda-clearance-raises-questions-updoc-use-generative-ai-diabetes-treatment/" target="_blank" rel="noopener">STAT News（2026年7月2日）</a> ／
+      <a href="https://www.mcguirewoods.com/client-resources/alerts/2026/7/a-pathway-for-clinical-ai-developers-opens-fda-clears-first-software-as-a-medical-device-with-patient-facing-llm/" target="_blank" rel="noopener">McGuireWoods</a>
+    </div>
+    <div class="comment">「何でもできるAI医師」ではなく「用途をとことん絞ったAI」が規制の壁を越えたという事実は、他領域でのLLM医療応用にも重要な前例を残したと思う。</div>
+  </div>
+
+  <!-- 8 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>中国Z.ai、GLM-5.2向け無料IDE「ZCode」を正式リリース——CursorやClaude Codeに対抗</h2>
+    <p>
+      北京発のAI企業Z.ai（旧Zhipu AI）は、自社の最新モデル「GLM-5.2」向けに設計された無料の統合開発環境「ZCode」を正式リリースした。エージェント機能を前提としたコーディング特化IDEで、有料プランは月額16.20ドルからとCursor・GitHub Copilot・Anthropic Claude Codeなど競合製品より最大82%安い価格を打ち出している。GLM-5.2自体は100万トークンのコンテキストウィンドウを持つMITライセンスのオープンウェイトモデルで、提供開始以降Z.aiの時価総額は一時1,280億ドルまで急伸した。安価な中国製モデルとツールがコーディング支援市場に食い込む動きが、モデル単体からIDE・環境ごとの争奪戦へと広がっている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://valueaddvc.com/pulse/zai-zcode-challenges-cursor-claude-code-copilot-2026" target="_blank" rel="noopener">Value Add Pulse（2026年7月2日）</a>
+    </div>
+    <div class="comment">モデルだけでなく開発環境ごと安価に提供する戦略は、価格に敏感な個人開発者や中小企業から着実にシェアを奪っていきそうで、Cursor陣営にとって軽視できない脅威だと感じる。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 — 2026年7月14日号</p>
+    <p style="margin-top:6px;"><a href="../index.html">← 簡報アーカイブ一覧</a></p>
+  </div>
+</div>
+
+</body>
+</html>
