@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月17日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月17日（金）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>元OpenAI CTOのMira Murati氏率いるThinking Machines Lab、初の自社モデル「Inkling」をオープンウェイトで公開</h2>
+    <p>
+      Mira Murati氏（元OpenAI CTO）が創業したThinking Machines Labは7月15日、同社初となる自社開発モデル「Inkling」をオープンウェイトで公開したと発表した。OpenAI・Anthropic・Googleのようにクローズドな旗艦モデルを競う路線ではなく、外部の開発者や企業がダウンロードして自由に改変・自社ホストできる点を差別化点としている。InklingはMoE（専門家混合）構成で総パラメータ数は約9750億に達するが、実際の推論で稼働するのは一部の約410億パラメータのみで、計算コストを抑えつつ大規模モデル並みの性能を狙う設計となっている。「万能の一枚岩モデル」路線に対するオルタナティブとして、用途別に最適化されたモデル群を志向する同社の思想が反映された初のプロダクトといえる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/" target="_blank" rel="noopener">TechCrunch（2026年7月15日）</a>
+    </div>
+    <div class="comment">Muratiが去年集めた巨額資金の使い道がついに一つ形になった格好で、オープンウェイトを選んだのは差別化戦略であると同時に、クローズド勢との真正面対決を避けた現実的な判断にも見える。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>TSMC、2026年第2四半期決算を発表——売上高の約6割がAI向けチップ、通期見通しを上方修正</h2>
+    <p>
+      台湾積体電路製造（TSMC）は7月16日、2026年第2四半期（4〜6月期）決算を発表した。米ドル建て売上高は約402億ドルで前年同期比33.7%増、前四半期比でも12.0%増となり、純利益・EPSは前年同期比77.4%増と大幅な伸びを記録した。決算説明会でTSMCは、AI関連チップの需要が「極めて堅調」であり、生成AIからエージェント型AIへの利用シフトがこの需要を牽引していると説明。AI向けチップが売上高全体に占める比率は約6割に達したとみられ、2026年通期の売上成長率見通しを40%超に上方修正した。半導体の供給側から見ても、AI投資ブームが依然として拡大局面にあることを裏付ける内容となった。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.digitimes.com/news/a20260716PD233/tsmc-demand-growth-2026-revenue.html" target="_blank" rel="noopener">DigiTimes（2026年7月16日）</a>
+    </div>
+    <div class="comment">「生成AIからエージェント型AIへ」という言い回しをチップメーカー自身が決算の場で使うようになった点に、需要構造の変化がハードウェア業界の共通認識になりつつあることが表れている。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>中国のAIエージェント専用規制「智能体実施意見」が7月15日発効——世界初の専用規制枠組み</h2>
+    <p>
+      中国のサイバースペース管理局・国家発展改革委員会・工業情報化部が共同で策定した「智能体の標準化応用と革新的発展に関する実施意見」が7月15日付で施行された。AIエージェントを「自律的な知覚・記憶・意思決定・対話・実行が可能なインテリジェントシステム」と定義し、世界で初めてAIエージェントを単独の規制対象として体系的に扱う枠組みとされる。医療・交通・メディア・公共安全など高リスク分野のエージェントには届出・強制テスト・リコール制度と当局の監督を課す一方、消費者向けの低リスクな用途はプラットフォーム自主規制や第三者評価に委ねるリスク階層型アプローチを採用。利用者には自律的判断への「知る権利」と最終決定権があることも明記された。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://iapp.org/news/a/china-s-new-ai-rules-ethics-ai-agents-and-anthropomorphic-ai" target="_blank" rel="noopener">IAPP（2026年7月）</a>
+    </div>
+    <div class="comment">エージェントを「アプリケーション層の一機能」ではなく「新しいデジタルインフラ」として国家が正面から制度設計した点は、他国の規制当局にも参照される可能性が高く、今後の展開を注視したい。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Google「Gemini 3.5 Pro」、本日7月17日の一般提供開始が観測筋の目標時期に——Google自身は未公式発表</h2>
+    <p>
+      複数回にわたり延期が報じられてきたGoogleの次期フラッグシップモデル「Gemini 3.5 Pro」について、報道各社は7月17日を一般提供開始の目標時期として伝えている。ただし本稿執筆時点でGoogle公式のモデルカードや価格ページ、Gemini API上のモデルIDは未公開であり、200万トークンのコンテキストウィンドウや「Deep Think」推論モードといった仕様も第三者報道・非公式情報源によるもので、Google自身は確認していない。報道によれば、初期のエンタープライズ検証で長時間タスクや再帰的なツール呼び出し、SVG生成などに構造的な不具合が見つかり、ベースモデルを作り直したことが延期の一因とされる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.techtimes.com/articles/320308/20260713/gemini-35-pro-targets-july-17-after-full-rebuild-every-spec-remains-unconfirmed.htm" target="_blank" rel="noopener">Tech Times（2026年7月13日）</a>
+    </div>
+    <div class="comment">「今日出る」と繰り返し報じられながらGoogle自身が沈黙を続けている状態が続いており、実際に本日中に公式発表があるかどうかは現時点では確認できていない——続報を待ちたい。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>ハーバード大発、汎がん種の免疫療法効果予測AI「COMPASS」がNature Medicineに掲載</h2>
+    <p>
+      ハーバード大学医学大学院の研究チームが開発した「COMPASS」というAIモデルの論文がNature Medicine誌に掲載された。COMPASSは33種のがん腫にまたがる1万184症例の腫瘍遺伝子発現データで学習し、免疫チェックポイント阻害薬（抗PD-1・抗PD-L1・抗CTLA4など）7種のがん・6種の治療レジメンにわたる16の臨床コホートでファインチューニングされた「概念ボトルネック型」のTransformerモデル。免疫細胞の状態や腫瘍微小環境との相互作用など44の生物学的概念を介して予測を行い、既存の22手法と比較して平均で精度8.5%、PR曲線下面積で15.7%の改善を示し、未学習のがん種にも汎化できたと報告されている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.nature.com/articles/s41591-026-04502-7" target="_blank" rel="noopener">Nature Medicine（2026年）</a>
+    </div>
+    <div class="comment">単に精度が高いだけでなく、判断根拠となる生物学的概念を提示できる設計になっている点が、臨床現場での受け入れやすさという意味で実用化に近い一歩だと感じる。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 6 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>新用語「RAMageddon」——AIデータセンター需要によるメモリ半導体不足がPC・スマホ値上げに波及</h2>
+    <p>
+      AIデータセンターの旺盛な需要がDRAM・NAND型メモリの供給を圧迫し続けている状況を指す新語「RAMageddon（RAM＋アルマゲドン）」がテック業界で定着しつつある。調査会社Counterpoint Researchによれば2026年第1四半期だけでDRAM価格は80〜90%上昇し、SamsungはDDR5メモリの契約価格を1ユニット約7ドルから19.50ドル超へと100%超値上げしたと報じられている。この影響でDell・Lenovo・Acer・ASUSなど大手PCメーカーは製品価格を15〜30%引き上げており、HPは投資家向けに「メモリがPC部品コストに占める割合が前四半期の15〜18%から約35%に急増した」と説明した。不況の緩和は早くても2027〜2028年になるとの見方が出ている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.tomsguide.com/computing/ram-price-crisis-2026-everything-you-need-to-know" target="_blank" rel="noopener">Tom's Guide（2026年7月）</a>
+    </div>
+    <div class="comment">AI投資ブームの副作用が一般消費者のPC・スマホ価格という目に見える形で波及しており、AIの経済効果を語る上で見落とされがちな「隠れコスト」の好例だと思う。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 — 2026年7月17日号</p>
+    <p style="margin-top:6px;"><a href="../index.html">← 簡報アーカイブ一覧</a></p>
+  </div>
+</div>
+
+</body>
+</html>
