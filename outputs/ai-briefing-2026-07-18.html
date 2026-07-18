@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月18日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月18日（土）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Moonshot AI「Kimi K3」を発表——2.8兆パラメータの過去最大級オープンウェイトモデル、半導体株急落を招く</h2>
+    <p>
+      中国のMoonshot AIは7月16日深夜、フラッグシップモデル「Kimi K3」を発表した。総パラメータ数は約2.8兆（896エキスパート中16が活性化）のMoE構成で、100万トークンのコンテキストウィンドウ、ネイティブ画像入力、常時オンの推論（reasoning_effortパラメータで強度を調整可能）を備える。API価格は入力100万トークンあたり3ドル・出力15ドルで、7月27日までにModified MITライセンスでオープンウェイトを公開予定。同社はベンチマークでAnthropicのOpus 4.8やOpenAIのGPT-5.6 Solを上回ったと主張している。発表を受けて7月17日、半導体株を中心に世界的な株安が発生し、フィラデルフィア半導体指数は週間で大幅下落。2025年の「DeepSeekショック」の再来との見方が市場に広がった。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/moonshot-releases-2-8-trillion-parameter-kimi-k3" target="_blank" rel="noopener">Tom's Hardware（2026年7月17日）</a>
+      ／
+      <a href="https://fortune.com/2026/07/17/china-moonshot-kimi-k3-markets-china-ai/" target="_blank" rel="noopener">Fortune（株安について・2026年7月17日）</a>
+    </div>
+    <div class="comment">低コストの中国製オープンモデルが市場の期待値を壊すというパターンが、もはや一度きりの事件ではなく繰り返し起こりうる構造的リスクとして織り込まれ始めている点が興味深い。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>上海で世界人工知能大会（WAIC）開幕——習近平氏が史上初の基調講演、AI国際協力機構「WAICO」が正式発足</h2>
+    <p>
+      2026年世界人工知能大会（WAIC）が7月17日、上海で開幕した（〜20日、140以上のフォーラム、1100超の出展）。今回は「グローバルAIガバナンスに関するハイレベル会合」を兼ね、習近平国家主席が2018年の初回開催以来初めて基調講演に登壇した。前日の7月16日には新設の国際組織「世界AI協力機構（WAICO）」が正式発足し、本部を上海に置き、インドネシア・ブラジル・マレーシア・南アフリカ・ロシア・パキスタンなど29カ国が創設メンバーとして参加した。習氏は講演で、途上国向けにAI研修・セミナー機会を5000件提供する方針や、ASEAN・アラブ連盟・アフリカ連合など地域機構とのAI協力拡大を表明し、安全保障を名目とした過度な締め付けを牽制した。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.npr.org/2026/07/17/nx-s1-5897285/chinas-xi-calls-for-step-up-of-global-effort-in-ai-as-us-curbs-squeeze-chinas-tech-access" target="_blank" rel="noopener">NPR（2026年7月17日）</a>
+    </div>
+    <div class="comment">米国主導の輸出規制に対抗する形で、中国がグローバルサウス諸国を束ねる新たな国際AI枠組みを自ら主催した意味は大きく、AIガバナンスの主導権争いが技術覇権争いと並行して本格化してきた。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>韓国政府、8800億ドル規模の「半導体・AIデータセンター・ヒューマノイド」国家戦略を発表</h2>
+    <p>
+      韓国の李在明大統領は、サムスン電子・SKグループなど主要財閥トップとともに、総額1350兆ウォン（約8800億ドル）規模の国家投資計画を発表した。内訳はメモリ半導体増産に約5180億ドル（サムスンとSKハイニックスが光州・全羅道に各2カ所の新工場を建設）、AIデータセンター整備に約5500億ドル（2029年までに8.4ギガワットの容量確保）、そしてヒューマノイドロボットの世界シェアを現在の1%から2028年までに20%へ引き上げる目標を掲げる。メモリチップでの優位性をAI時代にも維持しつつ、ロボット産業への大規模投資に国家を挙げて踏み切る形となった。一方で、電力・水資源の制約が計画実現の課題として指摘されている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.techspot.com/news/112926-south-korea-betting-880-billion-next-ai-race.html" target="_blank" rel="noopener">TechSpot（2026年7月15日）</a>
+    </div>
+    <div class="comment">ソフトウェア（モデル）競争が過熱する一方で、韓国は「メモリ半導体×ロボット」というハード面の勝ち筋に国家を挙げて張った格好で、AI覇権争いの戦場がますます多層化している。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Google、「NotebookLM」を「Gemini Notebook」に改称——クラウド実行環境を追加しGeminiブランドへ統合</h2>
+    <p>
+      Googleは7月16日、リサーチツール「NotebookLM」の名称を「Gemini Notebook」に変更すると発表した。単体プロダクトとしての位置づけは維持しつつ、Geminiアプリや検索の「AI Mode」ともソースを共有・連携できるようにするなど、Geminiブランドへの統合を強化する狙いがある。新機能として、ノートブックごとにセキュアなクラウド実行環境を割り当て、コードを実際に実行しながらソースに基づく複雑なデータ分析を行える機能を追加。現時点ではGoogle AI UltraユーザーとWorkspaceのAI Expanded Access契約者向けに提供され、数週間以内に一般のProユーザーにも展開される予定。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/" target="_blank" rel="noopener">Google公式ブログ（2026年7月16日）</a>
+    </div>
+    <div class="comment">「language model」を名前から外す改称は地味に見えるが、リサーチ・分析ツールという立ち位置を明確化しつつGeminiエコシステムへの回収を進める、Googleらしい着実な布石だと感じる。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>独ミュンヘン発ロボティクス企業microagi、5500万ドルのシード調達——ドイツ史上最大級のシードラウンド</h2>
+    <p>
+      元F1（レッドブル・レーシング、メルセデスAMGペトロナス）のエンジニアらが創業から約10カ月のロボティクス企業microagiは、Hummingbird主導、Northzone・LocalGlobe・Village Global・Redalpineなどが参加する5500万ドルのシード資金調達を7月16日に発表した。ドイツのスタートアップ史上最大級のシードラウンドとされる。同社はヒューマノイドロボット自体を製造するのではなく、工場や家庭での作業映像データを収集し、顧客企業向けにフロンティア級ロボティクスモデルをファインチューニングする「データ・展開プラットフォームAtlas」を提供する立ち位置を取る。調達資金は製造業へのグローバル展開や、新設したスイス・チューリッヒ研究拠点の拡大に充てられる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://sifted.eu/articles/munich-robotics-startup-microagi-raises-55m-germanys-largest-ever-seed-round" target="_blank" rel="noopener">Sifted（2026年7月16日）</a>
+    </div>
+    <div class="comment">ロボット本体の開発競争が過熱する裏で、「実世界データをどう集めてモデルに落とし込むか」という地味だが本質的な工程に特化するスタートアップが最大級の資金を集めた点は、業界の成熟度を示している。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 6 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>Google「Gemini 3.5 Pro」、3度目の延期観測——公式発表なお無く、幻覚・信頼性課題が壁に</h2>
+    <p>
+      観測筋の間で7月17日の一般提供開始が有力視されていたGoogleの次期フラッグシップ「Gemini 3.5 Pro」だが、当日を過ぎても公式なモデルカードや価格発表は行われていない。報道によれば、再構築後のモデルでも幻覚（ハルシネーション）や信頼性面の問題が解消しきれておらず、これで3度目の延期が観測される事態となった。予測市場では7月31日または8月上旬までの公開を織り込む声が優勢になっている。Google公式のGemini APIには依然としてgemini-3.5-flashとgemini-3.1-pro-previewのみが公開されている状態が続く。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.techtimes.com/articles/320736/20260716/rebuilt-gemini-35-pro-misses-third-deadline-google-eyes-stopgap-release.htm" target="_blank" rel="noopener">Tech Times（2026年7月16日）</a>
+    </div>
+    <div class="comment">延期自体よりも、繰り返し「今度こそ」と報じられては覆る状況が続いていること自体が、Googleの開発体制や情報発信の在り方に一定の綻びを感じさせる。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ／ 出典は各記事のリンク先を参照 ／ <a href="../index.html">簡報一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
