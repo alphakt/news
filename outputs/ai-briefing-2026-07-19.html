@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月19日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月19日（日）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Claude「Fable 5」の無料アクセス、本日7月19日午後11時59分（太平洋時間）で3度目の延長も終了</h2>
+    <p>
+      Anthropicの大型モデル「Claude Fable 5」は、有料プラン（Pro・Max・Team）に含まれる無料アクセスと、Claude Codeの週次レート制限50%引き上げ措置を、7月7日→7月12日→7月13日深夜という異例の3度の延長を経て本日7月19日午後11時59分59秒（太平洋時間）まで提供してきた。この期限は今回で締め切りとなり、翌7月20日以降はFable 5の利用がすべて従量課金クレジット（入力100万トークンあたり10ドル・出力50ドル）に切り替わる。対象はPro・Max・Team加入者と一部Enterprise有償席のみで、無料プランやAPI利用者はもとより対象外。Anthropicは容量を確保でき次第、サブスクリプションへの復帰を目指すとしている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-stays-free-for-paid-users-until-july-19-as-anthropic-buys-more-time/" target="_blank" rel="noopener">BleepingComputer（2026年7月13日）</a>
+      ／
+      <a href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noopener">Anthropic公式ニュース</a>
+      ／
+      <a href="https://www.forbes.com/sites/sandycarter/2026/07/13/claude-fable-5-extends-to-july-19-7-days-7-power-moves/" target="_blank" rel="noopener">Forbes（2026年7月13日）</a>
+    </div>
+    <div class="comment">延長のたびに締め切りが更新されるという異例の対応が3回も繰り返されたこと自体が、フラッグシップモデルの推論コストの重さと計算キャパシティの逼迫ぶりを物語っている。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>日本、NVIDIA次世代「Rubin」チップ2万7500基を調達——ロボット向け国産基盤モデル開発で新会社「Noetra」始動</h2>
+    <p>
+      日本政府出資の新会社「Noetra」は、NVIDIAの次世代GPU「Rubin」を2万7500基調達し、出力約140メガワットのAI工場を建設する計画を発表した。Noetraにはソフトバンク・ソニーグループ・NEC・ホンダ・トヨタ系Preferred Networksなど44社超が参画し、政府は来年3月までに387.3億円を投じる。製造業・物流分野向けのロボット用国産基盤モデル開発が狙いで、2026年度中に推論基盤モデル、2028年度までに画像・音声を含むオムニモーダルモデル、2030年度には空間認識を備えた「実世界ネイティブAI」の実現を目指すロードマップを掲げる。データセンターの稼働開始は2028年6月を予定している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.tomshardware.com/pc-components/gpus/nvidia-and-japans-noetra-consortium-to-build-140mw-rubin-ai-factory-with-27500-gpus" target="_blank" rel="noopener">Tom's Hardware（2026年7月16日）</a>
+      ／
+      <a href="https://www.nec.com/en/press/202607/global_20260716_01.html" target="_blank" rel="noopener">NEC公式プレスリリース（2026年7月16日）</a>
+    </div>
+    <div class="comment">半導体の海外依存を減らしつつロボット領域で存在感を示そうとする日本の狙いは、直前にお伝えした韓国の8800億ドル戦略とも呼応しており、東アジア勢のロボットAI投資競争が一段と鮮明になってきた。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Microsoft「Project Perception」始動へ——Anthropic「Mythos」対抗のマルチモデルAIセキュリティ製品を7月中に投入</h2>
+    <p>
+      Microsoftは、Anthropicのセキュリティ製品「Mythos」に対抗するマルチモデル型AIセキュリティ製品「Project Perception」を7月中に投入する計画だと報じられた。同製品はMicrosoft・OpenAI・Anthropic各社のモデルを組み合わせ、脆弱性の検出やコード修正といったタスクごとに最適なモデルを自動選択する「モデルルーター」方式を採用し、コストを大幅に抑える設計になっている。MythosのAPI価格がOpusより約100%、GPTより約82%高いとされる中、Perceptionは低コストとMicrosoftの世界規模の販売網を武器に、AI駆動セキュリティ市場でAnthropicの牙城に切り込む構えだ。開発の陣頭指揮は今年2月に就任したセキュリティ責任者Hayete Gallot氏が執る。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.techrepublic.com/article/news-microsoft-project-perception-ai-security-tool/" target="_blank" rel="noopener">TechRepublic（2026年7月17日）</a>
+      ／
+      <a href="https://techstartups.com/2026/07/17/top-tech-news-today-july-17-2026-anthropic-apple-google-meta-moonshot-ai-nvidia-more/" target="_blank" rel="noopener">Tech Startups（2026年7月17日）</a>
+    </div>
+    <div class="comment">単一の最強モデルではなく「複数モデルの使い分け」でコストを最適化する発想が、常時稼働・大量処理が必要なセキュリティ運用の領域から実用化されていくのは自然な流れだと感じる。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>病院向けエージェント型AI「Carebricks」のBunkerhill Health、5500万ドルのシリーズB調達</h2>
+    <p>
+      病院向けエージェント型AIプラットフォーム「Carebricks」を提供するBunkerhill Healthは、Khosla Ventures主導でSequoia CapitalやY Combinatorなども参加する5500万ドルのシリーズBを発表した（シード・シリーズA含む累計調達額も5500万ドル）。同社はCleveland ClinicやMayo Clinic、Intermountain Healthなど全米15の医療システムに導入されており、臨床・運営・事務にまたがる業務をそれぞれの病院自身がエージェント化できる基盤を提供する。導入初月には心臓カルシウムスコアを検出するエージェントが心筋梗塞リスクの高い患者を発見し、循環器科への迅速な紹介からバイパス手術につながり一命を取り留めた事例も報告されている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://fortune.com/2026/07/16/bunkerhill-health-raises-55-million-ai-agents-work-inside-hospitals/" target="_blank" rel="noopener">Fortune（2026年7月16日）</a>
+      ／
+      <a href="https://www.bunkerhillhealth.com/resources/series-b-announcement" target="_blank" rel="noopener">Bunkerhill Health公式（2026年7月16日）</a>
+    </div>
+    <div class="comment">汎用チャットボットではなく、病院自身が業務知見をエージェント化できる「作れる基盤」というポジショニングが、医療現場での本格導入を後押ししている好例だと思う。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>WAIC（世界人工知能大会）、上海で20日まで開催中——サッカーする人型ロボットも披露、中国の年産10万台超え見通し</h2>
+    <p>
+      7月17日から20日まで上海で開催中の世界人工知能大会（WAIC）では、1100社超・3000点以上の出展の中で、サッカーをする人型ロボットや風船アートを披露するロボットなど、実生活・娯楽シーンに対応したロボット群が来場者の注目を集めた。中国工業和信息化部の幹部は記者会見で、同国の人型ロボットの年間生産台数が今年中に10万台を超える見通しであると明らかにしており、政策的な量産支援と技術デモの両輪でロボット産業の存在感を国内外に示す形となった。会期は7月20日まで続く。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://english.news.cn/20260718/bf000577e4b54625b831722a24e8bd18/c.html" target="_blank" rel="noopener">新華社（Xinhua、2026年7月18日）</a>
+      ／
+      <a href="https://news.cgtn.com/news/2026-07-08/China-s-output-of-humanoid-robots-set-to-exceed-100-000-in-2026-1OBFKOQ9WUg/p.html" target="_blank" rel="noopener">CGTN</a>
+    </div>
+    <div class="comment">サッカーや風船アートといった「エンタメ寄りのデモ」を大々的に見せる裏で、年産10万台という数字が出てくるあたりに、中国が人型ロボットを本気で産業化しようとしている本気度がうかがえる。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 6 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>新用語「Context Rot（コンテキストの腐食）」——長時間稼働のAIエージェントが劣化する現象が業界で急速に定着</h2>
+    <p>
+      長時間・多ステップで稼働するAIエージェントが、コンテキストウィンドウが埋まるにつれて性能が徐々に劣化していく現象を指す「Context Rot（コンテキストの腐食）」という用語が、2026年に入りAI開発者コミュニティで急速に定着した。20ステップ前後から、それまで問題なくこなしていたタスクで急に迷い始めたり、同じ発言を繰り返したり、明らかに参照可能な情報を見落としたりする挙動が典型例として挙げられている。対策として、コンテキストの自動要約・圧縮（オートコンパクト）や、長期タスクを短いサブタスクに分割してその都度コンテキストをリセットする設計パターンの重要性が増している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.mindstudio.ai/blog/what-is-context-rot-ai-agents-how-to-fix" target="_blank" rel="noopener">MindStudio</a>
+      ／
+      <a href="https://arxiv.org/html/2606.29718" target="_blank" rel="noopener">arXiv「Diagnosing and Mitigating Context Rot in Long-horizon Search」</a>
+    </div>
+    <div class="comment">モデル自体の賢さだけでなく「長く使うとどう劣化するか」というエージェント特有の弱点に名前が付いたことで、実運用設計の議論がようやく体系立って語られ始めた印象を受ける。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ／ 出典は各記事のリンク先を参照 ／ <a href="../index.html">簡報一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
