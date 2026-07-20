@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月20日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月20日（月）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Claude「Fable 5」、本日7月20日からMax・Teamプレミアムは正式プラン内機能に——Pro・Team Standardは従量課金クレジットへ完全移行</h2>
+    <p>
+      3度にわたり期限を延長してきたAnthropicの「Claude Fable 5」無料アクセス問題に決着がついた。同社公式Xアカウントによると、本日7月20日以降、Fable 5はMax・Teamプレミアムプランに週次利用上限の50%まで正式に組み込まれる恒久機能となる一方、Pro・Team Standard加入者への含み利用は終了し、100ドル分の一回限りの利用クレジットを付与したうえで、以降は入力100万トークンあたり10ドル・出力50ドルの従量課金APIレートに完全移行する。同社は「Fableの需要が読みづらく段階的に展開してきた」と説明しており、OpenAIのGPT-5.6 Solが同等性能を3分の1のコストで提供してきた価格競争が背景にあるとみられる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://x.com/claudeai/status/2078302415804379218" target="_blank" rel="noopener">Claude公式X（2026年7月18日）</a>
+      ／
+      <a href="https://the-decoder.com/anthropic-slashes-claude-fable-5-limits-in-max-and-team-premium-and-pushes-pro-users-toward-api-pricing/" target="_blank" rel="noopener">The Decoder</a>
+      ／
+      <a href="https://www.techtimes.com/articles/320905/20260718/claude-fable-5-ends-subscription-limbo-permanent-max-credits-only-pro.htm" target="_blank" rel="noopener">Tech Times</a>
+    </div>
+    <div class="comment">3回の延長を経て「上位プランは恒久化・下位プランは従量課金」という線引きに落ち着いたことで、フラッグシップモデルの計算コストをどう客層で負担分担するかというAnthropicの本音が透けて見える。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Google「Gemini 3.5 Pro」、観測筋の目標だった7月17日の提供開始も不発——公式発表なお無く8月説が浮上</h2>
+    <p>
+      複数の観測筋が目標としていた7月17日でのGemini 3.5 Pro一般提供開始は、Googleからの公式発表がないまま見送られた。同モデルはコーディング性能や複雑な推論タスクで社内目標に届かず、5月のGoogle I/Oでの発表後すでに複数回延期を重ねている。7月16日にはこの遅延報道を受けてAlphabet株が約4.4%下落し時価総額が約2000億ドル失われる事態も起きた。現在は限定的なVertex AIプレビューでの提供にとどまり、価格・仕様も未公表のまま、新たな候補として8月ローンチ説が業界内で語られ始めている。一方で軽量版の「Gemini 3.5 Flash」はすでに一般提供が始まっている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.cnbc.com/2026/07/16/alphabet-stock-gemini-3-5-pro-ai.html" target="_blank" rel="noopener">CNBC（2026年7月16日）</a>
+      ／
+      <a href="https://felloai.com/gemini-3-5-review/" target="_blank" rel="noopener">Fello AI</a>
+      ／
+      <a href="https://seekingalpha.com/news/4614636-googles-gemini-3_5-pro-release-faces-delay-report" target="_blank" rel="noopener">Seeking Alpha</a>
+    </div>
+    <div class="comment">観測筋の目標日が静かに過ぎていくという展開が続くほど、Googleが「出せない」のか「出さない」のかへの疑念が強まり、OpenAIやMoonshotが畳みかける今の競争環境ではその沈黙自体がリスクになっている。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Moonshot AI「Kimi K3」、Arena.aiのフロントエンド部門で首位に——Claude Fable 5・GPT-5.6 Solを上回る</h2>
+    <p>
+      中国Moonshot AIの2.8兆パラメータ・オープンウェイトモデル「Kimi K3」が、Arena.aiのFrontend Code Arenaで1679ポイントを獲得し首位に立った。1対1比較でのペアワイズ勝率は76%で、Claude Fable 5（63%）やGPT-5.6 Sol（58%）を明確に上回る。ブランド・マーケティング、データ分析、参照ベースのデザインなど評価対象7領域中6領域で1位を獲得し、Fable 5に次ぐ2位だったのはゲーム分野のみだった。前世代Kimi K2.6の18位から17ランクの急上昇で、重み自体は7月27日に公開予定。過去最大級のオープンウェイトモデルが商用クローズドモデルの一角を実測ベンチマークで上回った点が業界に衝撃を与えている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://x.com/arena/status/2077893862778183737" target="_blank" rel="noopener">Arena.ai公式X</a>
+      ／
+      <a href="https://www.axios.com/2026/07/17/china-ai-kimi-k3-open-source-anthropic-opus" target="_blank" rel="noopener">Axios（2026年7月17日）</a>
+    </div>
+    <div class="comment">オープンウェイトが商用フラッグシップの牙城であるコーディング系ベンチマークで実際に首位を取るところまで来ると、「開いているか閉じているか」より「どれだけ安く速く使えるか」が選定基準の主軸になっていく気がする。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>NVIDIA、日本のロボット・製造大手10社と「Cosmos Coalition」で連携——ジェットソン・トール向け新モデル「Cosmos 3 Edge」も発表</h2>
+    <p>
+      ジェンスン・フアンCEOの2日間の訪日に合わせ、NVIDIAはFANUC・富士通・日立・川崎重工・クボタ・NEC・ソフトバンク・ソニーグループ・安川電機・AIRoAの日本の物理AI・製造業大手10社が、オープンなフィジカルAI基盤モデル群を共同開発する「Cosmos Coalition」に参画する意向を示したと発表した。あわせて、ロボットの視覚推論とポリシー実行をエッジ端末（NVIDIA Jetson Thor）上で完結させる新モデル「Cosmos 3 Edge」と、エージェント型ビジョンAI開発向けライブラリ群「Metropolis」の提供も明らかにした。日本の製造・ロボティクス産業が国産基盤モデルではなくNVIDIAのオープン連合に加わる形を選んだ点が注目される。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://nvidianews.nvidia.com/news/japans-robotics-and-manufacturing-leaders-build-on-nvidia-cosmos-to-advance-physical-ai-frontier" target="_blank" rel="noopener">NVIDIA Newsroom（2026年7月16日）</a>
+      ／
+      <a href="https://www.bloomberg.com/news/articles/2026-07-16/japan-s-robot-makers-join-nvidia-s-physical-ai-cosmos-coalition" target="_blank" rel="noopener">Bloomberg</a>
+      ／
+      <a href="https://www.cnbc.com/2026/07/16/nvidia-reveals-new-ai-model-and-expands-japans-physical-ai-ecosystem.html" target="_blank" rel="noopener">CNBC</a>
+    </div>
+    <div class="comment">半導体主権を掲げる自国プロジェクトと並行して、FANUCやソニーのような現場を持つ企業がNVIDIAの共通基盤に相乗りするあたりに、フィジカルAIでは「自前で作る」と「標準に乗る」を使い分ける現実的な戦略が見える。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>トヨタ出資の汎用ロボット新興「Walden Robotics」がステルスから始動——評価額11億ドル、3億ドル調達</h2>
+    <p>
+      トヨタ・リサーチ・インスティテュートからスピンオフしたWalden Roboticsが、Toyota・Deviation Capitalが共同主導する3億ドルの資金調達（評価額11億ドル）とともにステルスモードから正式始動した。NVIDIA・ボーイング・サムスン・ベンチャーズなども参加している。同社は拡散方策（Diffusion Policy）や大規模行動モデル（LBM）を基盤に、製造・物流の実際の生産現場に汎用ロボットを投入し続けながら学習・改善させるアプローチを取り、今年2月からは北米のトヨタ工場ですでに実業務に従事しているという。今年1月の創業からわずか半年での大型資金調達・実稼働達成は、フィジカルAIスタートアップの立ち上がりの速さを象徴している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.bloomberg.com/news/articles/2026-07-15/toyota-backed-robotics-startup-walden-launches-with-1-1-billion-valuation" target="_blank" rel="noopener">Bloomberg（2026年7月15日）</a>
+      ／
+      <a href="https://www.waldenrobotics.com/news/walden-robotics-launches-from-stealth" target="_blank" rel="noopener">Walden Robotics公式（2026年7月15日）</a>
+    </div>
+    <div class="comment">「デモではなく実際のトヨタ工場のラインで稼働中」という実績を創業半年で提示できている点が、資金調達額以上に投資家の目を引いたポイントだろう。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 6 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>推論インフラのFireworks AI、15億ドルのシリーズD——評価額175億ドルに、ARRは1年で5倍</h2>
+    <p>
+      AIモデル推論インフラを手がけるFireworks AIが、Atreides Management・Index Ventures・TCVが主導する15億500万ドルのシリーズDを発表した。評価額は175億ドルとなり、既存投資家のLightspeed Venture PartnersやNVIDIAも参加した。同社の年間経常収益（ARR）は前年比5倍の10億ドル超に達し、プラットフォーム上で1日に処理されるトークン量も15兆から40兆超へと倍増以上に拡大したという。特定用途に特化した「専門特化型インテリジェンス」を掲げ、汎用フロンティアモデルの提供競争とは一線を画す推論基盤ビジネスとして急成長を続けている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.businesswire.com/news/home/20260716264405/en/Fireworks-Raises-a-$1.5-Billion-Series-D-to-Lead-the-Specialized-Intelligence-Revolution" target="_blank" rel="noopener">Business Wire（2026年7月16日）</a>
+      ／
+      <a href="https://qz.com/fireworks-ai-series-d-fundraise-valuation-open-source-071626" target="_blank" rel="noopener">Quartz</a>
+    </div>
+    <div class="comment">モデルそのものの開発競争の陰で、その計算をいかに安く速く配信するかという「推論インフラ」レイヤーにも巨額マネーが流れ込んでいることを示す好例。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ／ 出典は各記事のリンク先を参照 ／ <a href="../index.html">簡報一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
