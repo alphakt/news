@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月21日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月21日（火）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>EU、デジタル市場法に基づきGoogleに命令——AndroidをライバルAIアシスタントに開放、検索データも競合に共有義務化</h2>
+    <p>
+      欧州委員会は7月16日、デジタル市場法（DMA）に基づく2件の拘束力ある指針をGoogleに提示した。1つ目はAndroid上でのAIアシスタントの扱いで、現状Google純正AI（Gemini）だけに許されているシステム深部へのアクセスを競合アシスタントにも開放し、音声起動やアプリ内タスク実行を可能にするよう命令。対応期限はAndroid 18導入時の2027年8月1日、複数ウェイクワード同時対応は2028年8月までとされた。2つ目はGoogle検索の匿名化データを、検索機能を持つAIチャットボットを含む競合にも共有するよう求めるもので、データ共有は2027年1月開始。違反時は世界売上高の最大10%の制裁金が科される。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.androidauthority.com/eu-android-ai-google-search-mandates-3688186/" target="_blank" rel="noopener">Android Authority（2026年7月16日）</a>
+      ／
+      <a href="https://dig.watch/updates/eu-orders-google-to-open-android-ai-features" target="_blank" rel="noopener">Digital Watch Observatory</a>
+      ／
+      <a href="https://www.techtimes.com/articles/320760/20260716/eu-gives-rival-ai-assistants-system-level-android-access-google-reserved-gemini.htm" target="_blank" rel="noopener">Tech Times</a>
+    </div>
+    <div class="comment">施行は2027年以降と先の話だが、「OS標準AIだけがシステム深部を触れる」という前提そのものが崩れるインパクトは大きく、モバイルAIアシスタント競争の土俵が数年越しで変わる号砲と見ていい。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Alibaba「Qwen3.8-Max」プレビュー公開——2.4兆パラメータの同社最大マルチモーダルモデル、Fable 5に次ぐ性能主張</h2>
+    <p>
+      Alibabaは7月19日、上海の世界人工知能大会（WAIC）会期中にQwenシリーズ最大となる2.4兆パラメータのマルチモーダルモデル「Qwen3.8-Max」のプレビューを公開した。スパースなMoE構成で、テキスト・画像・動画・文書を横断処理する同社初の1兆パラメータ超マルチモーダルモデルとなる。性能はAnthropicのFable 5に次ぐと自社主張するが、ベンチマーク表・モデルカード・ライセンスは未公開で、有効パラメータ数も非開示のまま。現時点ではAlibabaのToken Planを通じ通常の10%価格でプレビュー利用が可能で、オープンウェイト版は「近日中」に公開予定という。2日前に公開されたMoonshot「Kimi K3」（2.8兆パラメータ、オープンウェイト）に続く中国発フロンティアモデル競争の一幕となった。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.marktechpost.com/2026/07/19/alibaba-previews-qwen3-8-max-a-2-4-trillion-parameter-multimodal-model-days-after-moonshots-kimi-k3-open-weight-launch/" target="_blank" rel="noopener">MarkTechPost（2026年7月19日）</a>
+      ／
+      <a href="https://dataconomy.com/2026/07/20/qwen3-8-24t-parameters-alibaba-ai-model-launch/" target="_blank" rel="noopener">Dataconomy</a>
+    </div>
+    <div class="comment">ベンチマーク表もライセンスも未公開の「プレビュー」段階で性能訴求を先行させるあたり、実力より先にWAICというタイミングでの発表効果を優先した印象を受ける。中身の検証はオープンウェイト公開後だろう。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Hyundai、Boston Dynamicsを完全子会社化へ——SoftBank保有株を約3.3億ドルで取得、Atlasをアトランタなど工場に2.5万台投入計画</h2>
+    <p>
+      Hyundai Motor Groupは、SoftBank Groupが保有するBoston Dynamicsの残り約10%株式を取得し完全子会社化すると発表した。取得額は約3.3億ドルで、2021年にHyundaiが80%出資した際と同水準の企業価値（約33億ドル）に基づく。今回の取引はSoftBank側が2021年契約に組み込まれたプットオプションを行使したことによるもので、権利行使期限は7月20日とされていた。Hyundaiは2028年からジョージア州メタプラントでの部品供給作業を皮切りに、ヒューマノイド「Atlas」を自社工場へ約2万5000台投入する計画を明らかにしている。人型ロボット大手が完全に自動車メーカー傘下となる、業界再編の節目といえる動き。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.bloomberg.com/news/articles/2026-07-16/hyundai-to-buy-softbank-s-boston-dynamics-stake-in-robot-push" target="_blank" rel="noopener">Bloomberg（2026年7月16日）</a>
+      ／
+      <a href="https://www.hyundai.com/worldwide/en/newsroom/detail/0000001225" target="_blank" rel="noopener">Hyundai Motor Group公式（2026年7月16日）</a>
+      ／
+      <a href="https://money.usnews.com/investing/news/articles/2026-07-15/hyundai-motor-group-to-make-boston-dynamics-wholly-owned-with-purchase-of-softbank-stake" target="_blank" rel="noopener">US News</a>
+    </div>
+    <div class="comment">2.5万台という投入規模は「デモ用ロボット」の域を完全に超えており、自社工場という閉じた環境から実配備を始める堅実な戦略は、他の人型ロボット勢が直面する実用化の壁を意識した設計に見える。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Google DeepMind、Isomorphic Labsと「バイオレジリエンス」構想を公表——病原体監視・ワクチン設計にAIを応用</h2>
+    <p>
+      Google DeepMindは7月16日、姉妹会社Isomorphic Labsと共同で、フロンティアAIを用いて生物学的脅威への防御を強化する「バイオレジリエンス」への取り組み方針を公表した。病原体のメタゲノム配列解析を高速化するAlphaEvolveの応用や、新興の生物学的脅威を分析するAlphaGenome・タンパク質機能注釈ツールに加え、Isomorphic LabsはワクチンやAI関連リスクを含む医療対策設計エンジン「IsoDDE」向けの専門部署を新設した。さらに、AI生成DNA配列の中に有害なものが紛れていないか検知するため、電子透かし技術SynthIDをDNA合成向けに応用する取り組みも進める。同社は過去1年で政府・バイオセキュリティ機関・研究者と15件超の連携を構築したという。</p>
+    <div class="source">
+      出典：
+      <a href="https://deepmind.google/blog/our-approach-to-bioresilience/" target="_blank" rel="noopener">Google DeepMind公式ブログ（2026年7月16日）</a>
+      ／
+      <a href="https://www.axios.com/2026/07/16/google-deepmind-biosecurity-safety" target="_blank" rel="noopener">Axios</a>
+    </div>
+    <div class="comment">創薬・コーディングに続き「バイオセキュリティの守り」までAI大手の事業領域として明文化された点は象徴的で、AIが生物学的リスクを生み出す側にも防ぐ側にもなり得るという二面性を自ら制度化しにいく動きに見える。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Blackstone、韓国の精密アクチュエーターメーカーFutronicに約6.8億ドル出資——ヒューマノイド需要を見込む</h2>
+    <p>
+      Blackstoneは7月20日、韓国のFutronic（1993年設立）への大型出資契約を発表した。同社は自動車OEM向けを中心に、ロボットアーム・自動化生産設備、さらにヒューマノイドや汎用ロボティクス向けにも展開する高精度アクチュエーター・モーション制御技術の大手サプライヤー。取引額は約1兆ウォン（約6.76億ドル）の企業価値評価に基づく。創業者のJin-ho Ko氏は会長兼CEOとして留任し、Blackstoneと共に事業のグローバル展開を加速させる。BlackstoneはAIと物理世界の融合を主要投資テーマの一つと位置づけており、ヒューマノイドや自動化の普及に伴いFutronicのモーション制御技術が恩恵を受けると見込んでいる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.bloomberg.com/news/articles/2026-07-20/blackstone-agrees-to-invest-in-korean-robotics-supplier-futronic" target="_blank" rel="noopener">Bloomberg（2026年7月20日）</a>
+      ／
+      <a href="https://www.kedglobal.com/mergers-acquisitions/newsView/ked202607200004" target="_blank" rel="noopener">KED Global</a>
+    </div>
+    <div class="comment">人型ロボット本体の話題が先行しがちだが、実際に資金が向かうのはアクチュエーターのような「動かす部品」を作る地味な部品サプライヤーという構図は、半導体産業の勃興期を思わせる。</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Waymo、ロンドンで完全自律走行フェーズに移行——米国での1.7億マイル走行データで重大事故92%減を公表</h2>
+    <p>
+      Waymoはロンドンでの実証運用を、これまでの手動運転フェーズから、自社の自動運転ソフトウェアが市街地の運転を実際に担うフェーズへと移行させた。同社は7月17日、米国内での1億7000万マイルにおよぶ完全自律走行データをもとに、死亡・重傷を伴う事故が人間ドライバー比で92%少なかったとする分析結果も公表している。ロンドンでは今年9月までの一般向け完全無人サービス開始を目指し、エンジニアリング・運営・事業開発の人員採用や複数のサービスセンター設置を進めている。車両は電気自動車のJaguar I-Paceを使用し、社会的な外出・空港送迎・公共交通機関との接続需要に応える計画。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://zagdaily.com/connected/waymo-begins-autonomous-driving-phase-in-london/" target="_blank" rel="noopener">Zag Daily（2026年7月17日）</a>
+      ／
+      <a href="https://www.therobotreport.com/waymo-plans-to-bring-driverless-robotaxis-london-2026/" target="_blank" rel="noopener">The Robot Report</a>
+    </div>
+    <div class="comment">92%という事故減少幅は強烈な数字だが、規制当局や市民が実際に信頼するかは「ロンドンの狭い石畳の道」という米国とは異質な環境での実走行実績が積み上がってから判断される話だろう。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 7 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>深センで「世界初」の人型ロボット格闘リーグ「URKL」開幕——32チームが標準機T800で賞金1000万元を争う</h2>
+    <p>
+      EngineAIが主催する人型ロボット格闘リーグ「URKL（Ultimate Robot Knock-out Legend）」が7月16日、深セン・南山文化体育中心で開幕した。中国・米国・シンガポールなど各国から200チーム超がエントリーし、オンラインシミュレーション予選を経て実機による予選を勝ち上がった32チームが、統一規格の人型ロボット「EngineAI T800」を用いて対戦、優勝ベルトと賞金1000万元（約1.48億円）を争う。第1シーズンは7〜8月に第1ステージ、11〜12月に決勝を予定。EngineAI共同創業者は「技術力を示す舞台」「賞金で競争を煽るリング」「オープンソース協業で産業を育てる場」という3つの狙いを掲げている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.globaltimes.cn/page/202607/1366175.shtml" target="_blank" rel="noopener">Global Times（2026年7月17日）</a>
+      ／
+      <a href="https://www.newsgd.com/node_99363c4f3b/d979044cc6.shtml" target="_blank" rel="noopener">Newsgd.com</a>
+    </div>
+    <div class="comment">格闘技という見世物性の高い舞台を選んだのは、転倒・衝突耐性やリアルタイム姿勢制御という地味な技術指標をエンタメ化して投資家・消費者の目を引く、うまいマーケティングだと感じる。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ／ 出典は各記事のリンク先を参照 ／ <a href="../index.html">簡報一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
