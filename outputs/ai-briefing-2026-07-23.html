@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月23日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月23日（木）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>AMDとAnthropic、最大2ギガワットのInstinct MI450シリーズGPU導入で戦略提携——AMDはAnthropicへ最大50億ドルの出資も</h2>
+    <p>
+      AMDとAnthropicは7月22日、AI向けインフラ整備で戦略的パートナーシップを結んだと発表した。AnthropicはAMD Heliosラックスケールシステム上でAMD Instinct MI450シリーズGPU（MI455X）を最大2ギガワット導入し、まず2027年上半期に第1ギガワット分の展開を開始する。あわせてEPYC「Venice」CPUやPensandoネットワーキング、ROCmソフトウェアも組み合わせる。両社は複数年にわたるエンジニアリング協業も発表し、ClaudeがAMD Instinct向けワークロード最適化とROCm開発の加速に活用される。AMDは将来的にAnthropicへ最大50億ドルの株式出資を行う方針も明らかにした。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus" target="_blank" rel="noopener">AMD公式ニュースリリース（2026年7月22日）</a>
+    </div>
+    <div class="comment">計算資源の供給契約に留まらず、AMDが出資者としてAnthropicの成長に賭ける構図は、NVIDIA一強だったAI半導体市場の勢力図を揺さぶる一手として注目に値する。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>MicrosoftとMistral、提携を拡大——Azure Local上で完全オフライン動作可能な主権AI基盤を欧州の金融・製造・医療機関向けに提供</h2>
+    <p>
+      MicrosoftとMistral AIは7月21日、戦略的パートナーシップの拡大を発表した。欧州のインターネットから完全に切り離された環境でもAzure Local上でMistralのモデルを稼働できるようにするのが柱で、数千基のNVIDIA Vera Rubin GPUを欧州データセンターに投入し、オープンウェイトのMistral Medium 3.5や文書AIモデルOCR 4を提供、共同の市場展開支援も行う。銀行・製造業・病院など規制の厳しい業界がデータと運用の主導権を手放さずにフロンティアAIを使えることを狙いとし、Microsoftが2025年に表明した「欧州デジタルコミットメント」の一環と位置づけられている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/" target="_blank" rel="noopener">Microsoft公式ニュース（2026年7月21日）</a>
+    </div>
+    <div class="comment">「オフラインでも動くフロンティアAI」という提案は、データ主権を巡る欧州規制当局・企業の懸念に正面から応えるもので、米クラウド大手が地政学的な信頼構築にインフラ投資を惜しまない姿勢がうかがえる。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Unitree、人型ロボット「H1 Pro」の欧州商用展開を7月22日開始——米国防総省の懸念表明の直後、中国製人型ロボット初の西側市場参入</h2>
+    <p>
+      中国・杭州拠点のUnitree Roboticsは7月22日、人型ロボット「H1 Pro」の欧州向け商用販売を開始した。続いて8月5日にアジア、8月12日に北米へ展開する計画で、3週間という短期間で欧州・アジア・北米へ同時展開する試みは人型ロボット業界で前例がないという。今回の展開は、米国防総省と一部議員が同社製ロボットの中国国内法上の情報提供義務や、監査されていないBluetooth関連の脆弱性について安全保障上の懸念を表明した直後というタイミングで行われており、企業導入を検討する欧州の購入担当者からは慎重な受け止めも出ている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.techtimes.com/articles/321011/20260720/unitree-humanoid-robot-enters-europe-days-after-pentagon-flags-it-chinese-military-tech.htm" target="_blank" rel="noopener">Tech Times（2026年7月20日）</a>
+    </div>
+    <div class="comment">性能・価格競争力だけでなく安全保障上のリスク評価まで含めて導入可否を判断する時代に入ったことを示す事例で、人型ロボットの調達がもはや純粋な技術選定では済まなくなっている。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>OpenAI、企業向けAIエージェント展開基盤「Presence」を発表——音声・チャット窓口の自動応答を限定的に一般提供開始</h2>
+    <p>
+      OpenAIは7月22日、企業が顧客対応や社内サービス業務向けにAIエージェントを展開・運用するためのプラットフォーム「Presence」を発表した。単体モデルではなく、ポリシー・システム連携・ガードレール・評価ツール・Codexによる継続改善プロセスをひとまとめにした「展開基盤」という位置づけで、本人確認やアカウント情報の参照、返金など承認済みの操作実行、必要に応じた有人対応への引き継ぎまでを担う。既に自社の英語圏サポート窓口の本番運用に投入されており、着信の75%を人手を介さず解決しているという。提供はOpenAIのフォワード・デプロイド・エンジニアや提携システムインテグレーター主導の限定的な一般提供に限られ、セルフサービスでの利用はできない。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://openai.com/index/introducing-openai-presence/" target="_blank" rel="noopener">OpenAI公式ブログ（2026年7月22日）</a>
+    </div>
+    <div class="comment">「モデルを提供する会社」から「業務プロセスごと請け負う会社」への転換を象徴する動きで、導入障壁を人手前提の伴走支援で下げる戦略はモデル性能競争とは別の勝ち筋を示している。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>AI3D生成のMeshy、シリーズBで約4億ドル調達・評価額15億ドルに——AI3D分野で過去最大の資金調達</h2>
+    <p>
+      AIによる3Dモデル生成プラットフォームを手がけるMeshyは7月21日、IDG Capital・Matrix Partners China・Monolithが主導するシリーズBで約4億ドルを調達し、評価額15億ドルに達したと発表した。AI3D分野としては過去最大の調達額かつ同社初の評価額公表となる。登録ユーザーは1,200万人超、生成された3Dモデルは累計1億点を超え、年間経常収益は前年比約12倍で成長中という。テキスト一行や画像1枚から利用可能な3Dモデルを約1分で生成でき、従来は専門技術と高額ソフトウェア、数週間を要した工程を大幅に短縮する点を強みとする。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.prnewswire.com/news-releases/meshy-raises-nearly-400-million-at-a-1-5-billion-valuation-the-largest-round-to-date-in-ai-3d-302828384.html" target="_blank" rel="noopener">PR Newswire（2026年7月21日）</a>
+    </div>
+    <div class="comment">テキスト・画像生成の陰に隠れがちな3D生成領域だが、ゲーム・製造・ARなど実需の裏付けがある市場だけに、この規模の調達は水面下で進む「次の主戦場」の存在を印象づける。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 6 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>Anthropic、Claudeから「Economic Index」の経済データを直接照会できるコネクタを公開——AI活用実態の分析を誰でも可能に</h2>
+    <p>
+      Anthropicは、AIが実際の経済活動でどう使われているかを追跡する自社調査「Anthropic Economic Index」のデータをClaude上から直接質問・分析できる新コネクタを公開した。研究者やジャーナリスト、政策立案者がこれまで個別にデータセットを扱っていた作業を、Claudeとの対話だけで完結できるようにする狙い。あわせて、AIの経済的影響に関する実証研究に1万〜5万ドルの助成を行う「Economic Futures Research Fund」の研究アジェンダも7月22日に公開しており、AIの雇用・生産性への影響を巡るエビデンス整備を後押しする姿勢を強めている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.anthropic.com/news/anthropic-economic-index-connector" target="_blank" rel="noopener">Anthropic公式ニュース</a>
+    </div>
+    <div class="comment">自社データを外部の検証・研究に開放する動きは、AIの社会的影響を巡る「主張」ではなく「検証可能な根拠」を増やそうとする点で地味だが誠実なアプローチに見える。</div>
+  </div>
+
+  <!-- 7 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>米ロボティクス連合、Dean Banks氏をエグゼクティブディレクターに起用——産業用ロボット普及に向けた政策連携を強化</h2>
+    <p>
+      物理AI・ロボティクスの産業実装拡大を目指す業界団体「U.S. Robotics Coalition」は7月22日、Dean Banks氏をエグゼクティブディレクターに起用するなど指導部・会員体制の刷新を発表した。同連合は2026年5月にワシントンD.C.で開催されたSCSP AI+ Expoで正式発足し、ロボティクス・AI企業やメーカー、業界団体を結集して米国の工場・倉庫・製造現場における責任あるロボット導入拡大に向けた共通の政策アジェンダを掲げている。あわせてFormicが「Robots for America」構想の実現に果たす役割についても言及された。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.globenewswire.com/news-release/2026/07/22/3331077/0/en/Humanoid-Global-Highlights-Formic-s-Role-in-Launching-Robots-for-America-and-Announces-Leadership-and-Membership-Updates-for-the-U-S-Robotics-Coalition.html" target="_blank" rel="noopener">GlobeNewswire（2026年7月22日）</a>
+    </div>
+    <div class="comment">個別企業のモデル競争や資金調達の陰で、業界横断のロビー・政策団体づくりが着々と進んでいる点は、ロボティクス産業が「規制される前に自ら枠組みを作る」段階に入ったことを示唆する。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ／ 出典は各記事のリンク先を参照 ／ <a href="../index.html">簡報一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
