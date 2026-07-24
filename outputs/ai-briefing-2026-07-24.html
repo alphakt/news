@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月24日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月24日（金）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>米ホワイトハウス高官、Moonshot AIによるAnthropic「Fable」蒸留と禁輸Nvidia GB300不正入手を非難——財務省は制裁の可能性に言及</h2>
+    <p>
+      米大統領科学技術政策局（OSTP）局長のMichael Kratsios氏は7月22日、中国のMoonshot AIが自社モデル「Kimi K3」の開発において、Anthropicの「Fable」を大規模に「蒸留」し米国技術を窃取したと非難した。さらに同社が禁輸対象のNvidia製GB300搭載サーバーを入手し、タイ国内でGB300にアクセスして学習に利用した疑いがあると主張した。米財務省は制裁やエンティティリスト指定の可能性を示唆している。一方、TechCrunchが取材した専門家は蒸留だけでKimi K3の性能向上を説明するのは無理があると指摘し、中国大使館は「純然たる中傷」と反論。Anthropic自身は具体的な証拠の有無を明らかにしていない。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.cnbc.com/2026/07/23/moonshot-kimi-nvidia-ai-chips-export-ban.html" target="_blank" rel="noopener">CNBC（2026年7月23日）</a>
+    </div>
+    <div class="comment">技術的優劣の競争が輸出管理・制裁という外交手段にまで及び始めた点で、AI覇権争いが完全に地政学の領域に踏み込んだことを象徴する一件だ。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>OpenAI、初の自社設計・自社建設データセンター「Project Camellia」を発表——ジョージア州に3.2GW・投資額200億ドル超</h2>
+    <p>
+      OpenAIは7月22日、ジョージア州エフィンガム郡に3.2ギガワット規模のデータセンター拠点「Project Camellia」を建設すると発表した。投資額は200億ドル規模で、フルスケール展開時には300億ドルを超える可能性がある。同社が設計・建設の両方を自ら手掛ける初のデータセンターで、Georgia Powerとの25年契約により2028年から段階的に電力供給を受け、2032年までの全面稼働を目指す。地元には8000万ドル規模の地域貢献基金を設立し、電気料金への影響を住民に負わせない方針も明言した。運用開始後は最大1000人規模の常勤雇用創出も見込むという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community/" target="_blank" rel="noopener">OpenAI公式ブログ（2026年7月22日）</a>
+    </div>
+    <div class="comment">モデル開発企業がインフラの「施主」にまでなる動きは、AI企業の競争力の重心が計算資源の自前確保に完全に移ったことを物語っている。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>中国PsiBot（霊初智能）、評価額14.8億ドルに——「世界モデル」に賭ける身体性AIスタートアップが急成長</h2>
+    <p>
+      具身智能（embodied AI）を手掛ける中国スタートアップPsiBot（霊初智能）が、奇瑞汽車（Chery）やレンズ・テクノロジーなどを引受先とする新規ラウンドで約1億ドル近くを調達し、評価額14.8億ドルに達したと7月23日に報じられた。2024年の創業以来の累計調達額は約3億ドルに上る。同社はロボットや自動運転車が物理世界を認識・予測するための「世界モデル」構築を中核戦略とし、視覚・言語・行動（VLA）モデル「Psi R」シリーズを展開、長時間タスクの遂行能力を重視している。中国の具身智能分野には自動車・素材メーカーなど産業資本からの投資が相次いでいる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://thenextweb.com/news/psibot-china-world-models-1-48-billion-valuation" target="_blank" rel="noopener">TheNextWeb（2026年7月23日）</a>
+    </div>
+    <div class="comment">自動車メーカーがロボットAIスタートアップに出資する構図は、量産・実装ノウハウを持つ産業側とAI側の融合が中国で先行している証左だろう。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>AMD、年次イベント「Advancing AI 2026」でラックスケールシステム「Helios」を披露——2026年はAI計算の主役が「推論」に移る年と宣言</h2>
+    <p>
+      AMDのリサ・スーCEOは7月23日、サンフランシスコで開催した自社イベント「Advancing AI 2026」の基調講演で、MI455X GPU・EPYC「Venice」CPU・Pensando DPUを1ラックに統合したラックスケールシステム「Helios」を披露した。同社は2026年、世界のAI計算能力の6割がモデル学習ではなく推論（サービス提供）に使われる転換点になると予測する。Hugging Faceのセキュリティ侵害騒動を受けたオープンソースAIへの懸念にも触れ、「オープンソースは素晴らしいものだ」と擁護する姿勢を示した。2028年には次世代「Florence」、2030年には「Rivenna」の投入も予告している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://fortune.com/2026/07/23/amd-lisa-su-keynote-open-source-helios-gpu-advanced-ai-conference/" target="_blank" rel="noopener">Fortune（2026年7月23日）</a>
+    </div>
+    <div class="comment">NVIDIA一強市場の中で、AMDが「推論時代の主役」という切り口で存在感を主張し続けている点に、シェア争いの長期戦を見て取れる。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 5 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>米エネルギー省「Genesis Mission」始動——Metaの公開モデルSAM 3・DINOv3が科学研究データ解析を高速化</h2>
+    <p>
+      米エネルギー省（DOE）は、AIを用いた科学研究を加速する国家的取り組み「Genesis Mission」の最初の採択プロジェクト約300件を7月22日に発表した。Metaはこの取り組みに合わせ、自社の対話型セグメンテーションモデル「SAM 3」と自己教師学習型の視覚モデル「DINOv3」がどのように活用されているかを公開した。ローレンス・バークレー国立研究所のX線施設Advanced Light Sourceでは、専門家がデータセット1件あたり数週間を要していた画像解析を、両モデルの活用によりリアルタイムに近い速度まで短縮できる可能性があるという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.energy.gov/articles/secretary-energy-chris-wright-announces-first-genesis-mission-projects-selected-accelerate" target="_blank" rel="noopener">米エネルギー省公式（2026年7月22日）</a>
+    </div>
+    <div class="comment">汎用の公開モデルが基礎科学の実験データ解析という地味だが本質的な工程に組み込まれていく流れは、生成AIブームの陰で進む「AIの科学インフラ化」を象徴している。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ／ 出典は各記事のリンク先を参照 ／ <a href="../index.html">簡報一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
