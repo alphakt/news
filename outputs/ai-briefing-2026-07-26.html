@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月26日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月26日（日）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Anthropic、新フラッグシップ「Claude Opus 5」を発表——Fable 5級の性能を半額で、エージェント型コーディングが大幅強化</h2>
+    <p>
+      Anthropicは7月24日、Opusシリーズ最新版「Claude Opus 5」を公開した。価格は入力100万トークンあたり5ドル・出力25ドルと従来のOpus価格を据え置きつつ、最上位モデル「Claude Fable 5」に迫る知性を約半分のコストで実現したとする。エージェント型ターミナルコーディングを測る「Frontier-Bench v0.1」ではOpus 4.8の18.7%から43.3%へと倍増以上のスコアを記録し、Fable 5の33.7%も上回った。ARC Prize財団はARC-AGI-3で高効度設定時30.16%という検証済みスコアを報告し、これは従来のリーダーボード最高値の約4倍に当たるという。100万トークンのコンテキスト窓を備え、Claude Maxの既定モデルに設定された。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://venturebeat.com/orchestration/anthropic-launches-claude-opus-5-a-cheaper-ai-model-for-coding-agents-and-enterprise-workflows" target="_blank" rel="noopener">VentureBeat（2026年7月24日）</a>
+      ／
+      <a href="https://www.marktechpost.com/2026/07/24/meet-the-new-claude-opus-5-frontier-class-agentic-coding-and-computer-use-at-unchanged-opus-pricing/" target="_blank" rel="noopener">MarkTechPost（2026年7月24日）</a>
+    </div>
+    <div class="comment">価格据え置きのまま上位モデル級の性能に近づけてきたのは、Anthropicが「最上位モデルの差別化」より「実運用コストで勝つ」方向にシフトしつつある表れに見える。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>NVIDIA CEOジェンスン・フアン氏、X初投稿で「オープンモデル」擁護の共同書簡——Microsoft・Meta・Palantirなど25社超が署名</h2>
+    <p>
+      NVIDIAのジェンスン・フアンCEOは7月24日、自身初となるX（旧Twitter）への投稿で「Open Weights and American AI Leadership」と題した共同書簡を公開した。書簡にはNVIDIA・Microsoft・Meta・Palantir・Y Combinatorなど25の企業・団体が署名し、オープンウェイトAIモデルへの性急な規制を米議会に対して控えるよう求めている。「AIはあらゆる産業を変え、あらゆる企業の力となり、あらゆる国によって構築される」とし、「オープンモデルは安全性とサイバーセキュリティを強化し、イノベーションと普及を加速し、主権を可能にする」と主張。フロンティア級のクローズドモデルとオープンモデルの両方が世界に必要だと結んでいる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://fortune.com/2026/07/24/jensen-huang-open-source-letter-nvidia-kimi/" target="_blank" rel="noopener">Fortune（2026年7月24日）</a>
+      ／
+      <a href="https://x.com/JensenHuang/status/2080643682408321103" target="_blank" rel="noopener">Jensen Huang氏 X投稿（2026年7月24日）</a>
+    </div>
+    <div class="comment">中国発オープンウェイトモデルの急伸を巡る規制論議が高まる中、業界最大手みずからが「閉じるな」と釘を刺した格好で、AI政策論争の次の焦点が透けて見える。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>中国GPU設計企業MetaX、香港上場を極秘申請——上海上場からわずか半年、Nvidia対抗へ調達急ぐ</h2>
+    <p>
+      上海拠点のGPU設計企業MetaX（沐曦集成電路）が、Huatai Internationalを主幹事に香港証券取引所への上場を極秘申請したと7月25日に報じられた。2025年12月に上海科創板（Star Market）に上場したばかりで、株価は上場来約685%上昇し時価総額は約480億ドルに達している。発行するH株は上場後拡大後株式資本の5%以内を予定し、調達資金は次世代GPUの研究開発・商用化・ソフトウェアエコシステム拡充・サプライチェーン投資などに充てる方針。主力の汎用GPU「C600」はNvidiaのA100とH100の中間程度の性能とされ、北京政府が国産AIチップへの移行を促す中、Biren・Moore Threadsなど同業他社も相次いで香港上場を目指している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.scmp.com/tech/article/3356961/chinas-nvidia-challenger-metax-eyes-hong-kong-share-sale-fund-ai-ambitions" target="_blank" rel="noopener">South China Morning Post（2026年7月25日）</a>
+      ／
+      <a href="https://www.unite.ai/metax-files-confidentially-for-a-hong-kong-ipo/" target="_blank" rel="noopener">Unite.AI（2026年7月25日）</a>
+    </div>
+    <div class="comment">上場から半年での再上場申請という速さは、米中AIチップ競争の資金調達がいかに切迫しているかを物語っている。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Y Combinator出身の23歳スウェーデン人2人、AIネイティブ受信箱「Scape」をステルスから公開——Gmailに挑む</h2>
+    <p>
+      ストックホルム拠点のスタートアップScapeが7月24日、ステルスモードを終え、AIネイティブなメールクライアントの早期アクセス受付を開始したと報じられた。創業者はいずれも23歳のMelvin Hagberg氏とElis Hodzic氏で、Y Combinator・General Catalyst・FundersClubなどから320万ドルのシード資金を調達済み。文章の生成や画面の効率化にとどまらず、AIエージェントが受信箱内で直接タスクを実行し、過去のやり取り・カレンダー予定・社内会議の録音まで持続的な記憶として保持し文脈理解に活用する設計が特徴で、Gmailの牙城への正面からの挑戦と位置づけられている。チームはストックホルムの5人体制。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://tech.eu/2026/07/24/y-combinator-startup-scape-emerges-from-stealth-with-32m/" target="_blank" rel="noopener">Tech.eu（2026年7月24日）</a>
+    </div>
+    <div class="comment">「メールを書く」から「メールの中で仕事を代行する」への発想転換は、AIエージェントが既存プロダクトを置き換えていく典型例と言えそうだ。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 5 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>Tesla、車載AIアシスタント「Grok」をヨーロッパ全域に拡大——「2026年サマーアップデート」で音声操作も強化</h2>
+    <p>
+      Teslaは「2026年サマーアップデート」（ビルド2026.26）の一環として、xAI製の車載アシスタント「Grok」の提供地域をこれまでの英・独・仏・伊・スペインなど一部欧州9カ国から欧州全域へ拡大すると発表した。7月末までの展開完了を見込む。今回のアップデートでは音声だけでハンズフリー通話・音楽の検索再生・空調調整などハードウェア操作が可能になり、自車についての質問にも自然に答えられるよう会話機能も拡張された。イーロン・マスク氏は、Grokによる完全自動運転（FSD）の音声操作機能についても今秋の実装を示唆している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.notateslaapp.com/news/4473/tesla-is-expanding-grok-to-all-of-europe-and-more-of-asia" target="_blank" rel="noopener">Not a Tesla App（2026年7月24日）</a>
+    </div>
+    <div class="comment">車載アシスタントが「質問に答える」から「車を操作する」段階へ進んでいる点は、音声AIの新しい実装先として自動車が本格的な主戦場になりつつあることを示す。</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>創薬AIスタートアップMindWalk、AMDのイベントで生物学的文脈レイヤー「ReefIQ」を初公開デモ</h2>
+    <p>
+      米ナスダック上場の小型AI企業MindWalk Holdings（HYFT）は7月23日、AMDのカンファレンス「Advancing AI 2026」において、AMD Instinct上で稼働する創薬AI向け基盤「ReefIQ」を初めて一般公開の場でデモンストレーションした。同社が主張するのは「モデルを大きくすること」ではなく「AIが推論するための生物学的文脈をつなぎ直すこと」が創薬AIに欠けているピースだという点で、配列・構造・アッセイ結果・オミクスデータ・文献・証跡・プログラム履歴を統治された検索可能な文脈情報として一体化し、AIモデルやエージェントがその上で推論できるようにする。規制の厳しい創薬企業向けに、信頼性と拡張性を備えたAI基盤として展開する狙いだ。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.businesswire.com/news/home/20260610294167/en/MindWalk-Holdings-Corp.-NASDAQ-HYFT-Launches-ReefIQ-a-Biological-Context-Layer-for-AI-Drug-Discovery" target="_blank" rel="noopener">Business Wire（2026年6月10日／7月23日デモ報道: TipRanks 2026年7月24日）</a>
+      ／
+      <a href="https://www.tipranks.com/news/company-announcements/mindwalk-unveils-first-public-reefiq-demo-on-amd-instinct-at-advancing-ai-2026" target="_blank" rel="noopener">TipRanks（2026年7月24日）</a>
+    </div>
+    <div class="comment">「モデルではなくデータの文脈をつなぐ」という切り口は、汎用LLMの次に来る創薬AIの差別化ポイントが「生物学的知識の構造化」に移りつつあることを示唆している。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ／ 出典は各記事のリンク先を参照 ／ <a href="../index.html">簡報一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
