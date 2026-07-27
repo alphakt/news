@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月27日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月27日（月）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Moonshot AI「Kimi K3」、本日オープンウェイト版を公開——史上最大のオープンウェイトモデルに</h2>
+    <p>
+      中国Moonshot AIは、2.8兆パラメータのMoE（Mixture-of-Experts）モデル「Kimi K3」の完全なオープンウェイトを7月27日0時（UTC）に公開した。7月16日のAPI先行公開から約11日を経ての解禁で、重みはMXFP4量子化形式で約1.4TB（FP16換算では約5.6TB相当）。896のエキスパートのうち1トークンあたり16個のみを活性化させる設計で、実際に稼働する計算量は約500億パラメータ相当に抑えられている。100万トークンのコンテキスト窓とネイティブな視覚理解、常時推論を備え、長期タスクのコーディング・エージェント用途を主眼に据える。Arena.aiのFrontend Code Arenaで首位、Terminal-Bench 2.1で88.3点を記録するなど、GPT-5.6 SolやClaude Fable 5に匹敵する性能を無償のオープンウェイトで実現した点が業界に衝撃を与えている。自前で運用するには8～16ノード規模のH100/B200クラスタが必要となる計算コストの重さが今後の実用面での課題として指摘されている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems" target="_blank" rel="noopener">VentureBeat（2026年7月27日）</a>
+      ／
+      <a href="https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation" target="_blank" rel="noopener">Interconnects（Nathan Lambert氏、2026年7月）</a>
+      ／
+      <a href="https://www.techtimes.com/articles/321499/20260724/kimi-k3-open-weights-drop-july-27-near-frontier-coding-undisclosed-hallucination-risk.htm" target="_blank" rel="noopener">Tech Times（2026年7月24日）</a>
+    </div>
+    <div class="comment">「予告通りの日に本当に重みを出す」という当たり前の実行力自体が、オープンウェイト陣営への信頼を積み上げている点に注目したい。フロンティア級モデルの主導権争いは、もはや性能だけでなく「開放度」の勝負にもなりつつある。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Samsung Electronics、CEO直轄の新部門「Robotics eXperience（RX）」を設立——ヒューマノイド量産に約2兆円規模を投資</h2>
+    <p>
+      Samsung Electronicsは、社内に散在していたロボティクス関連の人材・技術を統合した新組織「Robotics eXperience（RX）Business Promotion Office」を設立したと発表した。デバイスエクスペリエンス（DX）部門のノ・テムンCEO直轄とすることで意思決定の迅速化を図る狙いがあるという。拠点はソウル・牛眠洞のR&Dキャンパスに置き、米国・中国・日本にも研究開発拠点を新設する計画。慶尚北道・亀尾（グミ）にはヒューマノイド量産ラインとAIデータセンターを建設するため、約19兆ウォン（日本円で約2兆円規模）を投じるとしている。産業自動化とヒューマノイド事業の両輪を新たな成長エンジンと位置づけ、韓国政府が掲げる大型AI・ロボティクス投資計画とも歩調を合わせる形となった。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.gsmarena.com/samsung_announces_robotics_experience_rx_division-news-73807.php" target="_blank" rel="noopener">GSMArena（2026年7月21日）</a>
+      ／
+      <a href="https://en.sedaily.com/finance/2026/07/22/samsung-launches-ceo-led-robotics-unit-to-extend-chip-legacy" target="_blank" rel="noopener">Seoul Economic Daily（2026年7月22日）</a>
+      ／
+      <a href="https://www.techtimes.com/articles/321464/20260724/samsung-launches-humanoid-robot-division-robot-brain-ai-already-tested-factories.htm" target="_blank" rel="noopener">Tech Times（2026年7月24日）</a>
+    </div>
+    <div class="comment">半導体・家電の巨人が「工場内ヒューマノイド」に本腰を入れるのは、フィジカルAIの主戦場がスタートアップから総合電機メーカーへと広がっている証左と言える。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>DeepSeek「V4」が正式版へ完全移行——フロンティア級APIとして業界初の「ピーク/オフピーク」課金制度を導入</h2>
+    <p>
+      中国DeepSeekは、7月中旬にプレビュー公開していた最新モデル「V4」（V4-Pro：総パラメータ1.6兆・活性化490億／V4-Flash：総パラメータ2840億・活性化130億、いずれも100万トークンコンテキスト対応）について、旧エイリアス「deepseek-chat」「deepseek-reasoner」を7月24日15時59分（UTC）をもって完全終了し、正式版APIへの移行を完了したと発表した。同時に、北京時間の営業時間帯（9～12時・14～18時）を「ピーク」として入出力トークン単価を通常の2倍に設定する新料金体系を導入。フロンティア級モデルのAPIが恒常的なピーク/オフピーク料金を正式な料金表として採用するのは業界初とされる。皮肉にも米国の開発者にとっては北京の深夜・早朝がピークとなるため、自国の業務時間帯はむしろ割安になるという逆転現象も指摘されている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://deepseek.ai/blog/deepseek-v4-ga-surge-pricing-migration" target="_blank" rel="noopener">DeepSeek公式ブログ（2026年7月24日）</a>
+      ／
+      <a href="https://www.scmp.com/tech/big-tech/article/3358868/after-triggering-price-war-deepseek-reverses-course-surcharge-peak-hour-api-use" target="_blank" rel="noopener">South China Morning Post（2026年7月）</a>
+    </div>
+    <div class="comment">自ら仕掛けた価格競争の末に「時間帯別課金」という電力料金さながらの仕組みへ転じたのは興味深く、AI推論のコスト構造がインフラ産業に近づいてきたことを象徴している。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>ロンドン・パリ拠点の新興企業「Arrakis」がステルスを脱却——産業向けAIエージェント基盤に3800万ドル調達</h2>
+    <p>
+      創業7カ月の産業AIスタートアップArrakisが、Blossom Capital主導のシリーズA（3000万ドル）を含む累計3800万ドルの資金調達とともにステルスモードを終えたと7月22日に報じられた。AccelやGFC、MainObjectなどが参加し、DatadogのCEOオリヴィエ・ポメル氏やOpenAIのビジネスプロダクト責任者オリヴィエ・ゴドマン氏も個人出資している。評価額はポストマネーで1億4000万ドル。共同創業者でCEOのラファエル・キンタニージャ氏は元Accelの投資家で、防衛・産業分野のレジリエンスをテーマに米欧中東を1年近く行脚した経験を基に創業したという。「AI投資の大半はデスクワークを担う3割の労働者に向けられてきたが、真のROIは現場で稼働する7割の産業オペレーションにある」との立場から、航空宇宙・エネルギー・物流・製造業向けにAIエージェントを組み込む「産業向けOS」を開発している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://fortune.com/2026/07/22/arrakis-a-startup-betting-ais-biggest-payoff-is-in-industrial-sectors-not-office-work-emerges-from-stealth-with-38-million-in-venture-funding/" target="_blank" rel="noopener">Fortune（2026年7月22日）</a>
+      ／
+      <a href="https://thenextweb.com/news/arrakis-ai-startup-38-million-stealth-industrial" target="_blank" rel="noopener">The Next Web（2026年7月）</a>
+    </div>
+    <div class="comment">「AIの本命はオフィスワークより現場」という逆張りの投資テーゼに著名投資家個人が名を連ねている点から、産業AIエージェントへの資金流入が今後さらに厚みを増しそうだ。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 5 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>新用語「ループエンジニアリング（Loop Engineering）」が定着——「プロンプトを書く」から「自律ループを設計する」へ</h2>
+    <p>
+      開発者コミュニティで「ループエンジニアリング」という用語の使用が広がっている。これは、AIコーディングエージェントに単発の巧みなプロンプトを与えるのではなく、タスクの実行・結果の観察・推論・修正を繰り返す「ループ」そのものを設計する手法を指す。エージェントはコードベースとツール群を与えられた状態で、ファイルを読み、コードを書き、テストを実行し、エラーを読み、修正するというサイクルを自律的に繰り返す。関係者の間では「一定間隔で動き続けるハートビート型」「決まった時刻に起動するcron型」「PR送信などのイベントで起動するフック型」「成功条件を満たすまで繰り返すゴール型」の4種類のループが整理されつつあり、Claude CodeやDevin、OpenAIのCodex Agentなど主要なコーディングエージェントはいずれもこの「ループ設計」を中核的な動作原理としているという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://adtmag.com/articles/2026/07/01/loop-engineering-emerges-as-developers-put-ai-coding-agents-on-repeat.aspx" target="_blank" rel="noopener">ADTmag（2026年7月1日）</a>
+      ／
+      <a href="https://www.mindstudio.ai/blog/what-is-loop-engineering-ai-coding-agents" target="_blank" rel="noopener">MindStudio（2026年7月）</a>
+    </div>
+    <div class="comment">「プロンプトエンジニアリング」から「ループエンジニアリング」への呼称の変化は、AIエージェント活用の焦点が「言葉選び」から「システム設計」へ移ったことを端的に表している。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ／ 出典は各記事のリンク先を参照 ／ <a href="../index.html">簡報一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
