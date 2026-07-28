@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月28日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月28日（火）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>NVIDIA、OpenAIのオハイオ州巨大データセンターに最大2500億ドルの融資保証を検討——AIインフラ史上最大規模の資金スキームに</h2>
+    <p>
+      Wall Street Journal報道として7月26日（日）に伝えられたところによると、NVIDIAはOpenAIがSoftBank傘下のSB Energyがオハイオ州南部（旧ウラン濃縮施設跡地）に建設中の10ギガワット級データセンターをリースできるよう、最大2500億ドル規模の融資保証を検討している。チップ調達費用として別途最大3500億ドルの資金提供も協議されており、キャンパス全体の総投資額は5000億ドルを超える可能性がある。単独では投資適格級の信用格付けを持たないOpenAIにとって、Microsoft・Amazon・Oracleへの依存から脱し自前のインフラを持つ第一歩となる一方、NVIDIAにとっては自社チップの需要を長期に確保する狙いがある。交渉は継続中で条件は未確定、最初のフェーズ（約800メガワット）の稼働開始は2028年を予定している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.tomshardware.com/tech-industry/data-centers/nvidia-weighs-250-billion-guarantee-so-openai-can-lease-softbanks-10-gigawatt-ohio-campus" target="_blank" rel="noopener">Tom's Hardware（2026年7月27日）</a>
+      ／
+      <a href="https://news.slashdot.org/story/26/07/27/0517233/nvidia-in-talks-with-openai-to-guarantee-250-billion-financing-for-data-center" target="_blank" rel="noopener">Slashdot（2026年7月27日）</a>
+      ／
+      <a href="https://www.digitimes.com/news/a20260727VL209/nvidia-openai-data-center-infrastructure-finance.html" target="_blank" rel="noopener">DIGITIMES（2026年7月27日）</a>
+    </div>
+    <div class="comment">GPUメーカーが顧客の借金の保証人にまでなるという構図は、AIインフラ投資の規模がもはや通常の企業金融の枠を超えつつあることを象徴している。取引が本当に成立するか、今後の焦点になりそうだ。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 2 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Mistral AI、身体性AI（フィジカルAI）分野に初参入——単眼カメラだけで動く8Bのロボットナビゲーションモデル「Robostral Navigate」</h2>
+    <p>
+      フランスのMistral AIは、単一のRGBカメラ映像と自然言語の指示だけでロボットを複雑な環境内で自律移動させる8Bパラメータのモデル「Robostral Navigate」を発表した。「ロビーを出て廊下を進み、資材室に入って2番目の棚の前で止まって」といった平易な言葉での指示に対応する。深度センサーや複数カメラを使う既存手法よりも難易度の高いR2R-CE（Room-to-Room Continuous Environment）ベンチマークの未見環境検証で成功率76.6%を記録し、単眼カメラ方式としては従来最高を9.7ポイント、センサー併用の最強手法をも4.5ポイント上回った。シミュレーションデータのみで学習し、ロボット機種をまたいで汎化できる点も特徴で、同社初のロボティクス領域への進出として注目されている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://mistral.ai/news/robostral-navigate/" target="_blank" rel="noopener">Mistral AI公式ブログ（2026年7月）</a>
+      ／
+      <a href="https://www.marktechpost.com/2026/07/14/mistral-ai-releases-robostral-navigate-an-8b-model-enabling-robots-to-navigate-complex-environments-using-a-single-rgb-camera/" target="_blank" rel="noopener">MarkTechPost（2026年7月14日）</a>
+    </div>
+    <div class="comment">対話モデルの大手が「カメラ1台だけ」という低コスト構成でロボット分野に参入してきたのは、身体性AIの主戦場がハードウェア重装備から手軽なソフトウェア勝負へも広がっていることを示している。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>コロンビア大学とNVIDIA、実機データ不要でロボット方策を学習できる「Interactive World Simulator」を発表</h2>
+    <p>
+      コロンビア大学とNVIDIAの研究チームは、明示的な幾何・物理エンジンを持たず、行動条件付きの映像生成だけでロボットの次の視覚状態を予測する「Interactive World Simulator」を発表した。一般的なRTX 4090一枚で秒間15フレームを維持しながら、10分間を超えるインタラクティブなロールアウトでも破綻しない安定性を実現。この手法で生成した模擬環境データだけで模倣学習ポリシーを訓練しても、実機データで訓練した場合と同等の実世界性能を達成できるという。少量のロボットデータセットを、方策の訓練・評価双方に使える実用的なシミュレーターへ変換する枠組みとして位置づけられている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://aihub.org/2026/07/17/interactive-world-simulator-for-robot-policy-training-and-evaluation/" target="_blank" rel="noopener">AIhub（2026年7月17日）</a>
+      ／
+      <a href="https://arxiv.org/html/2603.08546v1" target="_blank" rel="noopener">arXiv論文</a>
+    </div>
+    <div class="comment">「実機を動かさずにロボットを訓練する」世界モデルの実用性が着実に上がっており、高価なロボット実機の稼働時間がボトルネックだった現場開発の常識を変える可能性がある。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>企業向け音声AIのRime、シリーズAで2400万ドル調達——「世界初のエンタープライズ向けSpeech-to-Speechモデル」を目指す</h2>
+    <p>
+      米国の音声AIスタートアップRimeが、M13主導・Twilio VenturesやCorazon Capital等が参加するシリーズAで2400万ドルを調達したと発表した。スタンフォード大学の言語学出身者らが創業し、ウェブから収集した音声ではなく自社スタジオで収録した会話データと音素（フォニーム）ベースのアーキテクチャを強みとする。現在は月間1億件超のやり取りを医療・金融など規制業種から高頻度の消費者向けサービスまで処理しており、今回の資金は遅延の少ないターンテイキングやノイズ耐性を備えた「エンタープライズ向けSpeech-to-Speechモデル」の開発に充てられる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.businesswire.com/news/home/20260715773471/en/Rime-Raises-$24-Million-Series-A-to-Build-the-Worlds-First-Enterprise-Ready-Speech-to-Speech-Model" target="_blank" rel="noopener">Business Wire（2026年7月15日）</a>
+      ／
+      <a href="https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls/" target="_blank" rel="noopener">TechCrunch（2026年7月15日）</a>
+    </div>
+    <div class="comment">汎用の音声合成モデルが乱立するなか、「自前収録データ×言語学の専門性」で規制業種に食い込む戦略は、垂直特化型AIスタートアップの生存戦略として参考になる。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 5 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>新用語「シャドーAI」が定着——個人向けAIエージェント「OpenClaw」の流行が企業セキュリティの新たな盲点に</h2>
+    <p>
+      ローカルで動作し利用者に代わって様々な操作を実行するオープンソースの個人向けAIエージェント「OpenClaw」（旧Clawdbot／Moltbot）がGitHubスター数14.5万を数週間で獲得するなど爆発的に普及した一方、従業員が会社支給端末に無許可でインストールし、IT部門の把握しないまま広範なターミナル・ディスクアクセス権限を与えてしまうケースが多発している。ある調査では企業の22%で従業員が無許可のまま同ツールを利用していたと報告され、公式スキル配布サイト「ClawHub」では悪意あるスキルが多数見つかるなど、SlackやGoogle Workspaceと連携した際の情報持ち出しリスクも指摘されている。こうした「会社非公認のまま業務に浸透するAIツール」全般を指す言葉として「シャドーAI」という用語が2026年に入り急速に定着した。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.techradar.com/pro/shadow-ai-and-agents-like-openclaw-are-hijacking-corporate-data-too-easily" target="_blank" rel="noopener">TechRadar Pro（2026年7月）</a>
+      ／
+      <a href="https://blogs.cisco.com/ai/personal-ai-agents-like-openclaw-are-a-security-nightmare" target="_blank" rel="noopener">Cisco Blogs</a>
+    </div>
+    <div class="comment">「便利だから現場が勝手に使う」という構図は生成AI黎明期のシャドーITと全く同じで、ガバナンス側の対応速度が改めて試されている。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ／ 出典は各記事のリンク先を参照 ／ <a href="../index.html">簡報一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
