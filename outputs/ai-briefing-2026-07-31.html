@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年7月31日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年7月31日（金）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Google DeepMind「Gemini Robotics 2」発表——ヒューマノイドの全身を統合制御、歩行から物体操作まで一体で計画</h2>
+    <p>
+      Google DeepMindは7月30日、ロボティクス向け基盤モデルの新世代「Gemini Robotics 2」を発表した。従来モデルが主に上半身の操作に限られていたのに対し、新モデルはヒューマノイドの全身（歩行・しゃがみ込み・物体操作）を統合的に制御できる「Whole Body Intelligence」を実現。視覚・言語入力を運動指令に変換するVision-Language-Actionモデル本体に加え、複数ロボットの協調作業を計画する推論モデル「Gemini Robotics ER 2」、ロボット本体上でオフラインでも動作する「On-Device 2」の3モデル構成となっている。デモではApptronik社のヒューマノイド「Apollo」が、指示に従って部屋を歩き、じょうろを持ち上げて棚に置くという一連のタスクを実行した。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/" target="_blank" rel="noopener">Google DeepMind公式ブログ（2026年7月30日）</a>
+      ／
+      <a href="https://www.bloomberg.com/news/articles/2026-07-30/google-unveils-gemini-ai-for-robots-struggling-with-dexterity" target="_blank" rel="noopener">Bloomberg（2026年7月30日）</a>
+      ／
+      <a href="https://www.engadget.com/2227268/google-gemini-robotics-2-platform-intelligent-whole-body-control/" target="_blank" rel="noopener">Engadget（2026年7月30日）</a>
+    </div>
+    <div class="comment">「上半身だけ賢い」フェーズから「全身の運動計画まで一体で扱う」フェーズへの移行は、ヒューマノイドの実用化における大きな節目。Apptronik以外の機体にも展開できる汎用性がどこまで効くか注目したい。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>EU、300億ユーロ規模「AIギガファクトリー」建設の公募を開始——米中依存からの脱却を狙う7拠点構想</h2>
+    <p>
+      欧州委員会は7月30日、AI計算基盤「AIギガファクトリー」最大7拠点の建設事業者を募る公募を正式に開始した。EU・各国政府から約100億ユーロ、民間投資を合わせて最終的に約300億ユーロ規模となる見込み。各拠点は最低10万個のAIチップを備え、現在のEU内データセンター規模の約4倍に相当する計算能力を持つ計画で、単一拠点だけでなく複数国に分散配置する「分散型AI計算施設」形式も認められる。公募は2026年11月12日に締め切られ、採択は2027年初頭、着工も同年内を予定している。米国・中国への計算基盤依存を減らし、欧州の技術主権を確保する狙いがある。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.euronews.com/my-europe/2026/07/30/eu-opens-call-for-seven-gigafactories-to-train-next-generation-ai-technologies" target="_blank" rel="noopener">Euronews（2026年7月30日）</a>
+      ／
+      <a href="https://www.eubusiness.com/research/eu-launches-e30-bn-ai-gigafactories-call-to-boost-europes-computing-capacity/" target="_blank" rel="noopener">EUbusiness.com（2026年7月30日）</a>
+      ／
+      <a href="https://commission.europa.eu/topics/competitiveness/competitiveness-coordination-tool-projects/ai-gigafactories_en" target="_blank" rel="noopener">欧州委員会公式（2026年7月）</a>
+    </div>
+    <div class="comment">採択・着工は来年以降で即効性はないが、「計算資源の主権」を国家戦略として正面から掲げた点は大きい。米国のハイパースケーラー・中国のチップ供給網の両方から距離を置こうとするEUらしい動き。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>米上院商業委員会、包括的AI法案を夏季休会後に先送り——当面は子供のオンライン安全法案を優先</h2>
+    <p>
+      米上院商業委員会は7月30日、AIの包括的な規制法案の審議を夏季休会明け以降に先送りすると明らかにした。委員会は当面、未成年者のオンライン利用の安全性を扱う法案の審議を優先する方針で、AI規制の連邦レベルでの法制化は再び後回しにされる形となった。一方で、7月28日には主要AI企業の従業員1,100人超が「ペーシング・レター」で開発速度の協調管理を政府に求めており、業界側からの規制・ガバナンス整備への圧力は強まっている。連邦議会の動きの鈍さと、業界内部の危機感との間のギャップが際立つ格好となった。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.washingtontimes.com/news/2026/jul/30/senate-panel-punting-broader-ai-legislation-takes-kids-online-safety/" target="_blank" rel="noopener">The Washington Times（2026年7月30日）</a>
+    </div>
+    <div class="comment">州レベル（ミネソタ州のヌード化規制等）では次々と新法が動いているのに、連邦レベルの包括規制は足踏みが続く。この「州ごとのパッチワーク化」がAI企業にとっての新たなコンプライアンス負担になりつつある。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>BrowserStack、IDE常駐の自律テストAI「Test Companion」を発表——テスト作成から実機検証までエージェントが一括対応</h2>
+    <p>
+      QA・テスト自動化基盤を提供するBrowserStackは7月29日、開発者のIDEに常駐する自律型AIエージェント「Test Companion」を発表した。VS Code・JetBrains・Cursor・Antigravityなどのマーケットプレイスからインストールでき、テストケースの生成、スクリプトの実行、失敗原因の診断、修正までを一体で行う。既存のページオブジェクトやヘルパー、社内コーディング規約を理解した上で、BrowserStackが保有する3万種類以上の実機・実ブラウザ環境と連携して検証できる点が特徴。すでに1,000社以上のチームが導入し、テスト作成・保守を最大4倍高速化しているという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.prnewswire.com/news-releases/browserstack-launches-test-companion-agentic-ai-that-brings-complete-test-automation-into-the-ide-302837727.html" target="_blank" rel="noopener">PR Newswire（2026年7月29日）</a>
+    </div>
+    <div class="comment">「コードを書くエージェント」に続いて「テストを書き倒すエージェント」が定着してきた印象。実機3万種との連携を武器にする点は、シミュレーションだけでは信頼を得にくいテスト領域らしい戦略。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 5 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>物流・建設分野のロボティクス系スタートアップに続けて資金調達——UNIT AIが1,200万ドル、Gritt Roboticsが2,600万ドルのシリーズA</h2>
+    <p>
+      倉庫自動化を手がける米UNIT AIは7月29日、Prologis Ventures・Dynamo Venturesなどから1,200万ドルを調達したと発表した。創業者は倉庫ロボット企業Caja Robotics・Plus One Robotics出身の業界経験者で、フルフィルメント・返品業務の物理的自動化に注力する。同日、建設現場向けロボットを手がける米Gritt Roboticsも、太陽光パネル設置の作業速度を4倍に高めるロボットを掲げ、Active Impact Investments・First Round Capitalなどから2,600万ドルのシリーズAを完了したと発表した。いずれも「オフィスワーク」ではなく現場の物理作業を対象とする点が共通する。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techstartups.com/2026/07/29/venture-capital-startup-funding-roundup-july-29-2026-more/" target="_blank" rel="noopener">Tech Startups（2026年7月29日）</a>
+    </div>
+    <div class="comment">派手な基盤モデルの話題の裏で、地味だが「現場の作業を直接代替する」ロボティクス系スタートアップへの資金流入が途切れず続いている点は、物理AI市場の底堅さを示している。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ／ 出典は各記事のリンク先を参照 ／ <a href="../index.html">簡報一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
