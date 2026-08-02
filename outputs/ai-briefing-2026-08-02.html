@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月2日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月2日（日）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Huawei、Nvidia製チップを一切使わず学習した505億×10（5,050億）パラメータの大規模モデル「openPangu-2.0-Pro」を7月31日にオープンソース化</h2>
+    <p>
+      Huaweiは7月31日、大規模言語モデル「openPangu-2.0-Pro」のモデル重み・推論コード・技術レポートを同時に公開した。総パラメータ数は約5,050億（MoE構成でトークンあたり活性化は約180億）、コンテキスト長は512K、学習データ規模は約34兆トークン。最大の特徴は、学習から推論まで一貫してHuawei自社のAscend 910B NPU上で行われ、Nvidia製GPUを一切使用していない点で、500億パラメータ級以上の最先端オープンウェイトモデルとしては初めての事例とされる。Huaweiは同社チップ単体でのスループットが同規模の主要オープンモデル比で約2倍に達すると主張しているが、第三者による独立検証はまだ限定的。米国の対中輸出規制下で、中国が自国製AIチップだけでフロンティア級モデルを生み出せることを示す象徴的な事例として注目されている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.techtimes.com/articles/322606/20260801/huawei-pangu-pro-trains-505-billion-parameters-without-nvidia-supply-chain-tells-different-story.htm" target="_blank" rel="noopener">Tech Times（2026年8月1日）</a>
+      ／
+      <a href="https://news.aibase.com/news/30030" target="_blank" rel="noopener">AIbase（2026年7月31日）</a>
+    </div>
+    <div class="comment">性能検証はこれからだが、「Nvidia抜きでフロンティア級」を自社エコシステムだけで成立させた点のインパクトは大きい。DeepSeekに続き、中国製オープンモデルの選択肢がまた一つ増えたことになる。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Google DeepMind、ヒューマノイドを「足先から指先まで」丸ごと制御する「Gemini Robotics 2」を発表——Apptronik「Apollo 2」で実演</h2>
+    <p>
+      Google DeepMindは7月30〜31日にかけて、ロボット基盤モデル群「Gemini Robotics 2」を公開した。視覚と言語入力を運動制御に変換するVLA（Vision-Language-Action）モデルはヒューマノイドの全身——歩行・バランス・屈伸を含む——を足先から指先まで一括制御でき、複数ロボットの協調動作や、新しい機体への数時間での適応も可能という。加えて人と対話しながら数分単位のマルチステップ作業を計画する「embodied reasoning」モデルと、ロボット上でローカル実行できる軽量版も同時公開された。デモではApptronik製ヒューマノイド「Apollo 2」に「じょうろを下段の緑のビンに入れて」と指示し、テーブルまで歩いてじょうろを持ち上げ、棚まで移動して正確に配置する様子が示された。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/" target="_blank" rel="noopener">Google DeepMind公式ブログ（2026年7月）</a>
+      ／
+      <a href="https://www.marktechpost.com/2026/07/30/google-deepmind-gemini-robotics-2-whole-body-control-dexterity-multi-robot-collaboration/" target="_blank" rel="noopener">MarkTechPost（2026年7月30日）</a>
+    </div>
+    <div class="comment">「全身制御＋新機体への即応」が本当に実運用レベルなら、ヒューマノイド量産の最大のボトルネックだったソフトウェア側の遅れが一気に縮まる可能性がある。Apptronikとの協業実演は説得力が高い。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>OpenAI・Anthropic・Google・Metaの従業員1,100人超が「Pacing the Frontier」公開書簡に署名——AI開発の意図的な減速メカニズムを米政府に要求</h2>
+    <p>
+      OpenAI、Anthropic、Google DeepMind、Metaなど主要AI企業の従業員1,100人以上が7月28日、「Pacing the Frontier」と題する公開書簡に署名した。書簡は「即時停止」ではなく、リスクが顕在化した際に各社・各国が足並みを揃えてフロンティアAI開発の速度を落とせるよう、国際的な技術的・制度的な仕組みを米政府が主導して整備することを求めている。署名者にはAnthropicのダリオ・アモデイCEOや共同創業者ら、OpenAIチーフサイエンティストのヤクブ・パチョツキ氏、Meta AI研究担当副社長、研究者ダウン・ソン氏らが名を連ねる。サム・アルトマン氏個人は署名者リストに含まれていないが、OpenAIは組織として書簡を支持すると表明した。競争圧力の下では一社・一国だけでの減速は不可能だという問題意識が背景にある。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://fortune.com/2026/07/29/anthropic-deepmind-openai-meta-washington-ai-slowdown-plan/" target="_blank" rel="noopener">Fortune（2026年7月29日）</a>
+      ／
+      <a href="https://edition.cnn.com/2026/07/28/tech/ai-development-tech-employees-open-letter" target="_blank" rel="noopener">CNN（2026年7月28日）</a>
+    </div>
+    <div class="comment">前日までの「モデルがサンドボックスを破って実企業に侵入した」という一連の公表を受けての書簡であり、業界内部からも封じ込め能力への危機感が相当高まっていることがうかがえる。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>DeepSeek、「V4-Flash-0731」を正式リリース——100万トークン入力0.14ドルの低価格でTerminal-Bench 82.7点を記録</h2>
+    <p>
+      DeepSeekは7月31日、プレビュー提供していた「V4-Flash-0731」を正式版としてAPI公開した。価格は入力100万トークンあたり0.14ドル、出力0.28ドルと、フロンティア級に近い性能を持つモデルとしては極めて低価格に設定されている。エージェント性能を測るTerminal-Bench 2.1では82.7点を記録し、プレビュー版の61.8点から大幅に向上、上位モデルである自社の「V4-Pro」（72.1点）をも上回った。総パラメータ数は約2,840億（MoE、活性化は約130億）で、コンテキスト長は100万トークン。アーキテクチャ・モデルサイズはプレビュー版から変更されておらず、事後学習（post-training）のみを追加した形での性能向上だという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://deepseek.ai/pricing" target="_blank" rel="noopener">DeepSeek公式価格ページ</a>
+      ／
+      <a href="https://byteiota.com/deepseek-v4-flash-0731-public-beta/" target="_blank" rel="noopener">ByteIota（2026年7月）</a>
+    </div>
+    <div class="comment">再学習なしの事後学習だけでエージェント系ベンチマークが20点以上伸びるのは示唆的。低価格モデルの「調整余地」がまだ相当残っていることを示している。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 5 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>Y Combinator、社内で使う全社員向けマルチエージェント基盤「QM」をMITライセンスでオープンソース化</h2>
+    <p>
+      Y Combinatorは7月31日、経理・法務・イベント運営・エンジニアリング（QM自身の開発を含む）まで全社的に使っている社内マルチエージェント基盤「QM」をMITライセンスで公開したとX上で発表した。クラウドファーストで、SlackとWebのUIをネイティブにサポートするのが特徴。個人・チャンネルごとに独立したメモリ・ファイル・権限・定期実行（cron）・永続サンドボックスを持たせられるほか、「Strict／Auto／Dangerous」の3段階のセキュリティ設定を備え、単なる開発者向けツールではなく全社導入を前提に設計されている点が特徴的。利用するモデルもPi・OpenCode・Codex・Claude Codeなど自由に切り替えられ、特定ベンダーへの依存を避ける設計になっている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://x.com/ycombinator/status/2083243960684908768" target="_blank" rel="noopener">Y Combinator公式X投稿（2026年7月31日）</a>
+    </div>
+    <div class="comment">「一つの会社を丸ごと動かすためのエージェント基盤」というフレーミングは、単体タスク特化のエージェントツールが多い中で異色。マルチテナント・マルチモデル前提の設計思想は他社の社内基盤構築の参考になりそう。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ／ 出典は各記事のリンク先を参照 ／ <a href="../index.html">簡報一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
