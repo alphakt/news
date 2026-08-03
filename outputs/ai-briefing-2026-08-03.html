@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月3日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月3日（月）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>OpenAIの未発表モデル「Astra」、数学・理論計算機科学の長年未解決問題10件をLean形式証明で解決</h2>
+    <p>
+      OpenAIは8月1日、社内でのみ稼働する次期モデル「Astra」が、群論・作用素環論・高次元幾何・量子計算・格子暗号・極値組合せ論など幅広い分野にわたり長年未解決だった問題10件を解いたと発表した。各証明には形式検証言語Lean 4で書かれた「機械検証可能な証明書」が付属し、GitHub上にApache 2.0ライセンスで公開されている。成果には1999年から未解決だった非ソフィック群の具体的構成、Connesの剛性予想への反例、球充填密度の上界改善（Cohn–Elkies限界への到達）、Erdős問題集からの3件の解決（多色ラムゼー数に関する問題183を含む）などが含まれる。OpenAIは、10件すべての生成に使ったトークンのコストがSol APIの料率で約2,000ドルに相当すると推定している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://openai.com/index/ten-advances-in-mathematics/" target="_blank" rel="noopener">OpenAI公式ブログ（2026年8月1日）</a>
+      ／
+      <a href="https://www.techtimes.com/articles/322710/20260802/openais-astra-solves-ten-decade-old-math-problems-machine-checkable-lean-proofs.htm" target="_blank" rel="noopener">Tech Times（2026年8月2日）</a>
+    </div>
+    <div class="comment">「約2,000ドル分のトークンで未解決問題10件」という規模感の破壊力は大きい。形式証明付きで検証可能という点も、単なるベンチマーク自慢と一線を画す。純粋数学者の間でも話題になっている。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Unit 42、DeepSeekとOSSエージェント「Hermes Agent」を悪用した完全自律型サイバー攻撃を確認——460以上の標的にTelegram1コマンドで攻撃</h2>
+    <p>
+      Palo Alto NetworksのUnit 42は、中国・珠海を拠点とみられる脅威アクター「knaithe」（別名KnYuan）が、DeepSeekのAIモデルをオープンソースのエージェントフレームワーク「Hermes Agent」に組み込み、Telegramへの単一の指示だけで標的選定・脆弱性調査・GitHubからのエクスプロイト収集・攻撃実行までを完全自律で行わせていたと報告した。2026年5月のセッションログを解析した結果、初回指示以降は人間による追加操作が一切確認されず、460以上の標的に対して自律攻撃が実行されていた。Hermes AgentがTelegramコマンドに応答してサンドボックス外の`/home/worker`からHTTPファイルサーバーを誤って起動したことで、設定・スクリプト・標的リスト・APIキーを含む攻撃者側の環境が丸ごと露出し、この調査が可能になったという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/" target="_blank" rel="noopener">Unit 42（Palo Alto Networks）公式レポート</a>
+      ／
+      <a href="https://thehackernews.com/2026/07/chinese-hacker-commands-deepseek-via.html" target="_blank" rel="noopener">The Hacker News（2026年7月）</a>
+    </div>
+    <div class="comment">「理論上のリスク」とされてきた自律型AIサイバー攻撃が、人手を介さず数百の標的に対して実際に機能した実例として報告された点が重い。ガードレールの緩いモデルが攻撃エンジンとして選ばれた構図は業界への警鐘。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>LG AI Research、韓国最大となる7,500億パラメータの大規模言語モデル「K-EXAONE 2.0」をApache 2.0でオープンソース公開</h2>
+    <p>
+      LG AI Researchは7月31日、韓国国産では最大規模の大規模言語モデル「K-EXAONE 2.0」をHugging Face上でApache 2.0ライセンスにより公開した。総パラメータ数は約7,500億（MoE構成、活性化パラメータは約370億）で、前世代のK-EXAONE 1.0から3倍以上に拡大。コンテキスト長は262K、韓国語・英語・日本語・スペイン語・ドイツ語など10言語をサポートする。24種のベンチマーク平均スコアは70.1で、1.0世代の63.3から10%以上向上し、MMLU-Proで83.5、AIME 2026で92.3、SWE-Bench Verifiedで68.2を記録した。韓国内では同時期に別の700億パラメータ級モデルも公開されており、「韓国製ソブリンAI」競争が加速している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B" target="_blank" rel="noopener">Hugging Face（LGAI-EXAONE公式）</a>
+      ／
+      <a href="https://www.koreatimes.co.kr/business/tech-science/20260731/lg-unveils-750-bil-parameter-frontier-ai-model-k-exaone-20" target="_blank" rel="noopener">Korea Times（2026年7月31日）</a>
+    </div>
+    <div class="comment">商用利用に制限のないApache 2.0で7,500億パラメータ級を公開する太さは、韓国の「主権AI」戦略の本気度を示している。日本語対応も含まれており、国内企業にとっても選択肢が増えたことになる。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>EU AI法・カリフォルニア州法の透明性義務が同日（8月2日）発効——初日からMidjourneyなど大手が電子透かし未対応と判明</h2>
+    <p>
+      本簡報の8月1日号で予告していたEU AI法第50条（チャットボット表示・ディープフェイク開示などの透明性義務）と、カリフォルニア州のAI透明性法（SB 942、AB 853により改正）が、意図的に同じ8月2日に発効した。EU側ではAIオフィスおよび加盟国当局による本格的な監督・執行権限と罰則制度が始動。カリフォルニア州法では、月間利用者100万人超の生成AI画像・音声・動画サービスにC2PA準拠の機械読取可能な出所情報の埋め込みと無料検証ツールの提供を義務付け、違反には1日1件5,000ドルからの民事罰を科す。報道によれば、施行初日の時点で画像生成サービスのMidjourneyは電子透かし機能を実装しておらず、罰則対象になり得る状況にあるという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.techtimes.com/articles/322713/20260802/california-ai-transparency-act-operative-midjourney-has-no-watermark-fines-start-today.htm" target="_blank" rel="noopener">Tech Times（2026年8月2日）</a>
+      ／
+      <a href="https://www.nicfab.eu/en/posts/ai-act-2-august-2026/" target="_blank" rel="noopener">NicFab Blog（2026年7月）</a>
+    </div>
+    <div class="comment">予告されていた施行日を迎えた初日から大手サービスの対応漏れが報じられたのは象徴的。「規制はあっても実効性は伴っていない」という現実が早々に露呈した格好で、今後の執行の本気度を測る試金石になりそう。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Google、単独の「AI Studio」モバイルアプリ計画を撤回——80万件超の事前登録を経てGemini本体へ機能統合</h2>
+    <p>
+      Googleは7月31日、I/O 2026で発表し80万件以上の事前登録を集めていたAndroid/iOS向け単独アプリ「AI Studio」の開発を中止し、アプリ生成機能をGeminiアプリ本体に直接組み込む方針に転換したと発表した。ユーザーが別アプリをダウンロードする必要をなくし、Geminiとの日常的な会話の中から自然にアプリが生まれる体験を目指すという。デスクトップ向けのAI Studio Web版は今後も投資対象として継続し、プロトタイピングやビジネス活用の入口として位置づける。今回の方針転換は、Googleが分散していたAI関連アプリ群を、より少数の統合されたユーザー接点（主にGemini）へ集約する大きな流れの一環とみられる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://9to5google.com/2026/07/31/gemini-ai-studio-app/" target="_blank" rel="noopener">9to5Google（2026年7月31日）</a>
+    </div>
+    <div class="comment">事前登録80万件という需要がありながら単独アプリを止めてGeminiに統合するのは思い切った判断。「アプリを作る」という体験自体をチャットに溶け込ませる設計思想は他社にも参考になりそう。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ／ 出典は各記事のリンク先を参照 ／ <a href="../index.html">簡報一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
