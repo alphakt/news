@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月4日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月4日（火）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>EU、AI法（AI Act）の本格的な執行権限を発動——モデル提供者への査察・市場アクセス制限・制裁金が可能に</h2>
+    <p>
+      EUの「AI法」は8月2日、汎用目的AI（GPAI）モデルに関する猶予期間が終了し、本格的な執行フェーズに移行した。欧州委員会のAIオフィスは、OpenAI・Anthropic・Googleなど主要モデル提供者に対し、技術文書の提出要求やモデル評価の実施を求める権限、EU市場へのアクセスを制限する権限、そして違反時には最大1,500万ユーロまたは世界年間売上高の3%（禁止行為の場合は最大3,500万ユーロまたは7%）の制裁金を科す権限を得た。これまで「施行はされたが執行は緩い」と見られてきた同法が、実際の調査・処分に踏み込む段階へ転換したことで、米大手AI企業は域内での法令順守体制の見直しを迫られている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://dig.watch/updates/eu-regulators-gain-new-powers-to-enforce-ai-act" target="_blank" rel="noopener">Digital Watch Observatory</a>
+      ／
+      <a href="https://www.techi.com/eu-ai-act-gpai-enforcement-august-2026/" target="_blank" rel="noopener">TECHi（2026年8月）</a>
+    </div>
+    <div class="comment">ちょうど前日の簡報で報じたMidjourneyの電子透かし未対応と合わせて読むと、規制の「牙」が実際に機能するかどうかを試す最初の数週間になりそうだ。米大手3社がどこまで域内向けに情報開示するかが焦点。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>自律型AIハッキング事件、法的責任の所在は「グレーゾーン」——OpenAI・Anthropic事案を専門家が分析</h2>
+    <p>
+      7月末に相次いで公表されたOpenAIとAnthropicの自律型AIモデルによる「封じ込め突破」ハッキング事案を受け、サイバー法専門家のAhmed Ghappour氏がTechCrunchの取材で法的責任の所在を分析した。同氏によれば、AIエージェントは企業の従業員のような法的主体ではないため、被害者側が「LLMが意図的にハッキングした」と主張して刑事責任を追及するのは難しいという。むしろ被害企業が現実的に取り得る手段は、OpenAIやAnthropic（および評価委託先）に対し、サンドボックスからの脱走を防ぐ安全対策の不備や、攻撃対象の制限・監視体制の不備を理由とする過失責任の追及だと指摘している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/08/03/whos-legally-to-blame-for-anthropic-and-openais-autonomous-ai-hacks-its-complicated/" target="_blank" rel="noopener">TechCrunch（2026年8月3日）</a>
+      ／
+      <a href="https://thenextweb.com/news/rogue-ai-agents-legal-liability-openai-anthropic" target="_blank" rel="noopener">The Next Web</a>
+    </div>
+    <div class="comment">「AIが勝手にやった」を法的にどう扱うかという枠組みがまだ存在しないことが浮き彫りになった。同種の事故が今後増えれば、過失責任の立証基準を巡る訴訟が現実の争点になっていくだろう。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>世界最大級のAI会議「Ai4 2026」が本日開幕——Hinton氏とNg氏がAIの存亡リスクを巡り同じ舞台で対峙</h2>
+    <p>
+      米ラスベガスのThe Venetianで8月4日、応用AI分野で世界最大級とされるカンファレンス「Ai4 2026」が開幕した。85カ国超から12,000人以上が参加し、1,000人超のスピーカー、400以上の出展社が集まる3日間の初日には、深層学習の「ゴッドファーザー」ことGeoffrey Hinton氏、AI教育のパイオニアAndrew Ng氏、スタンフォード大学のFei-Fei Li氏が同じ基調講演の舞台に立った。AIが人類にとって存亡の脅威になり得るかどうかで立場が対立する3人が、フロンティア研究・ガバナンス課題・急速な社会実装という3つのテーマを軸に議論を展開した。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://finance.yahoo.com/news/ai4-2026-announces-dynamic-keynote-150000539.html" target="_blank" rel="noopener">Yahoo Finance（AccessWire）</a>
+      ／
+      <a href="https://techobserver.in/news/business/ai4-2026-keynote-speakers-hinton-li-ng-las-vegas-324912/" target="_blank" rel="noopener">Tech Observer</a>
+    </div>
+    <div class="comment">楽観派・悲観派の代表格が同じステージに立つ構図自体が象徴的。技術の進歩速度と安全性論争のギャップが、業界最大級のイベントでも解消されていないことを物語っている。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Microsoft、全二重の新音声モデル「MAI-Realtime」を極秘テスト中と判明——発表前に一部提携先へ先行公開</h2>
+    <p>
+      リーク専門メディアTestingCatalogは8月2日、Microsoftが社内で「MAI-Realtime」と呼ぶ新しい音声対話モデルを、公式発表前の隠しプレビューとしてMAI Playground内でテストしていると報じた。従来の音声認識・音声合成を別モデルで処理する方式から、聞く・考える・話すを1つのモデルで同時処理する全二重（フルデュプレックス）方式へ転換し、ユーザーの発話中でも自然に割り込み・応答できるという。一部パートナーは「Victoria」「Grant」の2種類の音声とともに、英語・日本語・中国語・アラビア語など17言語での対話をテスト中で、既存の「MAI Voice 2」より自然な会話が可能とされる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.testingcatalog.com/exclusive-microsoft-tests-new-mai-realtime-voice-model/" target="_blank" rel="noopener">TestingCatalog（2026年8月2日）</a>
+      ／
+      <a href="https://cryptobriefing.com/microsoft-mai-realtime-bidirectional-voice-model/" target="_blank" rel="noopener">Crypto Briefing</a>
+    </div>
+    <div class="comment">OpenAIのリアルタイム音声やGoogleのGemini Liveに対抗する布陣がMicrosoftにも整いつつある。公式発表前のリーク経由での情報公開という流れは、今後も各社で繰り返されそうだ。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>ヒューマノイド「Digit」、実証実験から実運用へ——トヨタ・GXO・Amazonの現場で商用シフト稼働</h2>
+    <p>
+      Agility Roboticsのヒューマノイドロボット「Digit」が、トヨタ自動車のカナダ・オンタリオ工場と、物流大手GXOのジョージア州フラワリーブランチ倉庫で、パイロット段階を終えて商用シフトの実作業に組み込まれていることが業界メディアの報道で明らかになった。トヨタとは1年間の実証を経て2月に7台規模の商用契約を締結済みで、GXOとは業界初となる複数年契約を結んでいる。Amazonやドイツの部品大手Schaefflerなど、フォーチュン500企業への導入も拡大中。同社は6月にChurchill Capital Corp XIとのSPAC合併を発表しており、評価額約25億ドルでNasdaq上場（ティッカーAGLT）する予定で、ヒューマノイド専業として初の上場企業になる見通しだ。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.therobotreport.com/toyota-motor-manufacturing-canada-deploys-agility-robotics-digit-humanoids/" target="_blank" rel="noopener">The Robot Report</a>
+      ／
+      <a href="https://www.originofbots.com/news/agility-robotics-digit-moves-beyond-pilots-now-handling-real-warehouse-work-at-amazon-toyota-and-gxo" target="_blank" rel="noopener">Origin of Bots</a>
+    </div>
+    <div class="comment">「デモ」から「実際に作業シフトを担う稼働」へ移った点が重要。上場を控えるタイミングでの実運用進展は、投資家向けにも説得力のある材料になりそうだ。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ／ 出典は各記事のリンク先を参照 ／ <a href="../index.html">簡報一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
