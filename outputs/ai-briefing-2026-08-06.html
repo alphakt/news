@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月6日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月6日（木）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Google、AI部門トップを刷新——Hassabis氏が会長へ退き、Jeff Dean氏ら27年在籍の重鎮も現場を離脱</h2>
+    <p>
+      Googleは8月5日、AI開発体制の大規模な人事刷新を発表した。Google DeepMindのCEOを務めてきたDemis Hassabis氏はGoogle DeepMindの会長兼Alphabetのチーフサイエンティストという役職に退き、日常の経営から距離を置く。後任としてKoray Kavukcuoglu氏がGoogle DeepMindのSVPに就任し、Sundar Pichai氏に直接報告する形でGeminiモデル開発・基礎研究・開発者エコシステムを統括する。さらに27年間Googleに在籍したチーフサイエンティストのJeff Dean氏と共同創業者格のSanjay Ghemawat氏も日常業務から退き、Googleを創業出資者・クラウドパートナーとする独立系の公益法人（PBC）を機械学習システムと科学的発見の分野で立ち上げるという。刷新の背景には、6月に目標としていたGemini本体モデルの投入が遅れ、Anthropic・OpenAIとの競争でGoogleが後れを取っているとの懸念があるとされる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.axios.com/2026/08/05/google-deepmind-demis-hassabis-ai" target="_blank" rel="noopener">Axios（2026年8月5日）</a>
+      ／
+      <a href="https://www.cnbc.com/2026/08/05/google-chief-scientist-jeff-dean-leaving-company-after-27-years.html" target="_blank" rel="noopener">CNBC</a>
+    </div>
+    <div class="comment">創業間もない頃から居続けたJeff Dean氏の離脱は象徴的だ。「会長」というポストに退くHassabis氏の処遇も含め、Gemini本体の遅延がここまで組織を揺さぶったという事実自体が、競争の厳しさを物語っている。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Anthropic、設立半年のクラウド新興Voltaと6年・100億ドルのコンピュート契約——ノルウェーにVera Rubin搭載データセンター</h2>
+    <p>
+      Anthropicは8月4日、AI向けクラウドインフラの新興企業Voltaと6年間・総額100億ドル規模のコンピュート契約を締結したと報じられた。ノルウェーの水力発電地帯にあるビットコインマイニング企業Bitdeerの「Tydal」拠点で、NVIDIAの次世代チップ「Vera Rubin」を用いた最大133メガワット規模のデータセンターを構築し、2026年12月末と2027年3月末の2段階で容量を提供する計画。Voltaは資産運用大手Brookfield出身の元幹部らが2026年初頭に設立したばかりの企業で、BitdeerのTydal子会社は16年間・総額約47億ドルのリース契約も別途締結した。ノルウェーは電力の9割超を水力で賄い、寒冷な気候により電力使用効率（PUE）も米国平均より優れるとされる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/" target="_blank" rel="noopener">TechCrunch（2026年8月4日）</a>
+      ／
+      <a href="https://the-decoder.com/anthropic-locks-in-10-billion-of-compute-from-volta-a-cloud-startup-that-didnt-exist-six-months-ago/" target="_blank" rel="noopener">The Decoder</a>
+    </div>
+    <div class="comment">半年前には存在しなかった企業が100億ドル規模の契約を勝ち取るスピード感が、いまのAIインフラ争奪戦の異様さを物語る。ビットコインマイナーの遊休電力・冷却設備をAIデータセンターに転用する動きも今後さらに広がりそうだ。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>中国ヒューマノイド大手Unitree、上海STAR市場IPOの価格設定プロセス開始——評価額は最大150億ドル観測も</h2>
+    <p>
+      中国のヒューマノイドロボット大手Unitree Roboticsは8月5日から機関投資家向けの仮条件提示（プレプライシング）を開始し、8月6日に発行価格を決定する予定と発表した。同社は新株4,045万株（拡大後資本の10%相当）を売り出し、目標調達額は42.02億元（約5.9億ドル）。これが達成されれば時価総額は約420億元（約59億ドル）となるが、CCBインターナショナルなど一部証券会社は600億〜1,000億元、強気シナリオでは1,090億元（約150億ドル）まで再評価される可能性を指摘している。オフライン・オンライン申込は8月10日に同時開始、上場は8月内を見込む。米国では7月28日にFCCが中国製ヒューマノイド・四足ロボットの輸入を禁止したばかりで、規制の逆風の中での上場となる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.scmp.com/tech/tech-trends/article/3362441/unitree-launch-ipo-next-week-us-china-robotics-rivalry-intensifies" target="_blank" rel="noopener">South China Morning Post</a>
+      ／
+      <a href="https://www.globaltimes.cn/page/202608/1367608.shtml" target="_blank" rel="noopener">Global Times（2026年8月6日）</a>
+    </div>
+    <div class="comment">米国市場から閉め出されつつも国内資本市場で高評価を得るという、米中ロボティクス競争の分断ぶりが数字に表れている。上場後の実際の株価がアナリスト予想のどのレンジに落ち着くかが焦点だ。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Anthropic、初代「Chief Global Affairs Officer」に元カリフォルニア州最高裁判事のTino Cuéllar氏を招聘</h2>
+    <p>
+      Anthropicは8月4日、Mariano-Florentino（Tino）Cuéllar氏を初代Chief Global Affairs Officerとして迎えたと発表した。Cuéllar氏はカリフォルニア州最高裁判事としてテクノロジー・プライバシー・三権分立に関わる案件を担当した経歴を持ち、直近まではカーネギー国際平和財団の理事長を務めていた。ホワイトハウスや連邦政府機関での勤務経験も複数の政権にまたがる。同氏はAnthropic社長のDaniela Amodei氏に直接報告し、サンフランシスコ本社を拠点に政策・国際関係・各国政府との関係構築を統括する。2026年1月からAnthropicの長期便益信託（Long-Term Benefit Trust）の受託者を務めていたが、これを退いて入社した。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.anthropic.com/news/tino-cuellar" target="_blank" rel="noopener">Anthropic公式（2026年8月4日）</a>
+      ／
+      <a href="https://www.techtimes.com/articles/323066/20260804/anthropic-names-first-government-chief-amid-pentagon-lawsuit-export-ban.htm" target="_blank" rel="noopener">Tech Times</a>
+    </div>
+    <div class="comment">技術系トップだけでなく元最高裁判事を政策責任者として招く動きは、規制対応がもはや「片手間」では済まない段階に入ったことを示す。国防総省との係争や輸出規制問題を多く抱えるAnthropicにとって、実務経験豊富な人材の確保は急務だったのだろう。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 5 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>Ai4 2026カンファレンスでHinton・Ng・Fei-Fei Li氏がAIの存亡リスクを巡り公開討論——立場は真っ二つ</h2>
+    <p>
+      北米最大級の応用AIカンファレンス「Ai4 2026」（8月4〜6日、ラスベガス）で8月5日、AI界の重鎮であるGeoffrey Hinton氏・Andrew Ng氏・Fei-Fei Li氏が同じ壇上に立ち、AIの存亡リスクを巡って議論を交わした。Hinton氏は「AI業界は人類を終わらせかねないものを作っている可能性がある」との持論を繰り返し具体的に展開し、会場からはElon Musk氏・Mark Zuckerberg氏への率直な批判に大きな拍手が起きたという。一方Ng氏は、その種の存亡リスク論は「競合他社の速度を落とし規制当局を取り込むために意図的に使われる、有害なナンセンス」だと真っ向から反論。Fei-Fei Li氏も「非科学的」なレトリックを批判し、「AI議論にサイエンスフィクションではなくサイエンスを取り戻そう」と述べた。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.techtimes.com/articles/322674/20260802/ai4-2026-opens-tuesday-hinton-ng-face-off-ais-existential-stakes.htm" target="_blank" rel="noopener">Tech Times</a>
+      ／
+      <a href="https://www.inc.com/jennifer-conrad/geoffrey-hintons-blunt-warning-about-elon-musk-and-mark-zuckerberg-got-the-biggest-applause-at-ai4/91385482" target="_blank" rel="noopener">Inc.</a>
+    </div>
+    <div class="comment">同じ「重鎮」でもここまで立場が割れるのは珍しい。存亡リスク論を巡る対立が、規制論議の駆け引きの道具として扱われているという指摘（Ng氏）自体も、業界の政治性を映す興味深い視点だ。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ／ 出典は各記事のリンク先を参照 ／ <a href="../index.html">簡報一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
