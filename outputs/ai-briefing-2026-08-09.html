@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月9日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .note {
+    background: #fff; border-radius: 12px; padding: 16px 22px; margin: 8px 0 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 14px; color: #4b5563;
+  }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月9日（日）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <div class="note">
+    本日はロボティクス分野で直近24〜48時間内の大きな単独ニュースは確認できませんでした（Figure・Unitree等の量産進捗は継続中）。LLMの安全性・製品・インフラ・規制動向を中心に5件を掲載します。
+  </div>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>OpenAI「Astra」がPreparedness Framework史上初の「Critical」水準サイバー能力に到達——社内開発の一部を一時停止</h2>
+    <p>
+      OpenAIは8月7日、開発中の次期モデル「Astra」について、自社の安全性評価枠組み「Preparedness Framework」が定めるサイバーセキュリティ分野の最高水準「Critical」に到達した可能性を否定できないと公表した。この基準は、高度に堅牢化された実在システムに対して自律的にあらゆる深刻度のゼロデイ脆弱性を発見・実行できるか、高レベルの目標のみからサイバー攻撃の全工程を自ら立案・実行できる能力を指す。同枠組みが運用されてきた約3年間で、この閾値に達した候補モデルは初めて。OpenAIは強化されたセキュリティ要件を満たさないAstra関連の社内作業を一時停止し、エージェント的な用途全般で不審な挙動を監視する体制を追加したと説明している。なお、先般のHugging Face侵入事件にAstraは関与していないとした。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/" target="_blank" rel="noopener">OpenAI公式（2026年8月7日）</a>
+      ／
+      <a href="https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/" target="_blank" rel="noopener">TechCrunch（2026年8月7日）</a>
+    </div>
+    <div class="comment">安全基準が「絵に描いた餅」ではなく実際に開発を止める形で発動した初の事例。モデルが強くなりすぎて公開前に自ら足止めされるという状況が現実になった以上、他社の安全枠組みも近く同様の試練を迎えるだろう。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 2 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>OpenAI、スタンドアロン型ブラウザ「ChatGPT Atlas」を本日8月9日で提供終了——機能はChatGPT本体・Codexへ統合</h2>
+    <p>
+      OpenAIは、2025年10月に投入した独立AIブラウザ「ChatGPT Atlas」について、2026年8月9日をもってサービスを終了すると発表した。約9カ月の運用期間中macOS版のみの提供にとどまり、予告されていたWindows・iOS・Android版は結局リリースされなかった。ブラウザ内でのエージェント的な閲覧・操作機能は、新しいChatGPTデスクトップアプリおよび業務特化型の「ChatGPT Work」「Codex」へ統合される方針。ブックマークや閲覧履歴、保存済みパスワード、Cookieなど利用者データは自動移行されないため、OpenAIは終了前に必要なデータを各自エクスポートするよう呼びかけている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://help.openai.com/en/articles/20001371-evolving-atlas-into-chatgpt-for-browser-based-agentic-work" target="_blank" rel="noopener">OpenAI Help Center</a>
+      ／
+      <a href="https://searchengineland.com/openai-chatgpt-atlas-deprecation-482003" target="_blank" rel="noopener">Search Engine Land</a>
+    </div>
+    <div class="comment">独立ブラウザという「箱」を維持するより、既存のChatGPTにエージェント機能を溶け込ませる方が合理的という判断だろう。鳴り物入りで登場したAtlasの9カ月という短命ぶりは、AI企業の製品サイクルの速さを象徴している。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>AMD、2026年Q2決算でデータセンター売上が前年比107%増の67億ドルに——AI事業が全社売上の58%を占め過去最高を更新</h2>
+    <p>
+      AMDは8月4日、2026年第2四半期決算を発表した。売上高は前年同期比50%増の115億ドルで四半期過去最高を記録し、うちデータセンター部門の売上は前年比107%増の67億ドルに達して全社売上の58%を占めた。EPYCサーバー向けCPUとInstinct GPUの需要拡大が牽引役となり、非GAAPベースの一株当たり利益は1.66ドルとアナリスト予想の1.62ドルを上回った。第3四半期の売上見通しは127億〜133億ドルとし、データセンター売上は2027年にさらに倍増する見通しを示している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://finance.yahoo.com/markets/stocks/articles/amd-q2-2026-earnings-record-202927876.html" target="_blank" rel="noopener">Yahoo Finance（2026年8月4日）</a>
+    </div>
+    <div class="comment">Nvidiaが依然としてAI向けGPU市場を席巻する中、AMDのデータセンター事業がここまで急拡大している点は、AIインフラ投資の裾野が単一ベンダーに閉じていないことを示す好材料だ。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>中国「AI擬人化対話サービス」規制、施行初週で12社に410万元の罰金——年齢確認と感情表現の不表示が主因</h2>
+    <p>
+      中国で7月15日に施行された「擬人化AIインタラクションサービス管理暫定弁法」の運用初週において、国家インターネット情報弁公室（CAC）は少なくとも12社に対し合計410万元（日本円で約8500万円）の罰金を科したことが明らかになった。主な違反内容は、AIキャラクターが生成した感情的な反応であることをユーザーに表示する義務の不履行と、説得力の高いAIアバターとやり取りするユーザーの年齢確認の不備。同規則の施行に伴い、ByteDanceの「豆包（Doubao）」やAlibabaの「Qwen」は個人向けの擬人化エージェント機能を一時停止する対応を取った。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.lexology.com/library/detail.aspx?g=65e35f8f-dcec-4576-b81f-e9d141d76445" target="_blank" rel="noopener">Lexology</a>
+      ／
+      <a href="https://iapp.org/news/a/chinas-regulation-on-ai-companions-takes-force" target="_blank" rel="noopener">IAPP</a>
+    </div>
+    <div class="comment">感情的なつながりを演出するAIサービスに対し、世界に先駆けて「表示義務」と「年齢確認」を法制化し即座に罰則を執行した中国の動きは、他国のAIコンパニオン規制の設計にも影響を与えそうだ。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 5 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>OpenAI、プレゼン資料生成AIスタートアップ「NextSlide」を買収——ChatGPTの資料作成機能を強化</h2>
+    <p>
+      OpenAIは8月8日、プロンプトやメモ・調査資料から編集可能なプレゼンテーション資料を自動生成するスタートアップ「NextSlide」の買収を発表した。買収額は非公開。創業者のAhmed Beshry氏は、無人レジ・スマートカート企業Caper AI（2021年にInstacartが買収）を手がけた連続起業家。NextSlideのチーム全員がOpenAIに合流し、ChatGPTの資料作成機能の開発にあたる。具体的な製品ローンチ計画は明らかにされていないが、テキスト生成中心だったChatGPTを資料・文書・表計算など職場向けコンテンツ制作全般へ拡張する狙いがあるとみられる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://finance.yahoo.com/technology/ai/articles/openai-acquires-presentation-startup-nextslide-194113669.html" target="_blank" rel="noopener">Yahoo Finance（2026年8月8日）</a>
+    </div>
+    <div class="comment">資料作成は地味だが業務時間を大きく占める作業。エージェント同士の競争が「モデル性能」だけでなく「日常業務のどこに食い込むか」というUXの争いへ広がりつつある一例だろう。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ／ 出典は各記事のリンク先を参照 ／ <a href="../index.html">簡報一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
