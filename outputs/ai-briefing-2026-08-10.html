@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月10日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .note {
+    background: #fff; border-radius: 12px; padding: 16px 22px; margin: 8px 0 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 14px; color: #4b5563;
+  }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月10日（月）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <div class="note">
+    本日はロボティクス分野の動きが目立つ一日でした。Unitree RoboticsのIPO申込が開始し、Alibaba Qwen3.8-Maxのオープンウェイト公開も今週予定されています。直近24〜48時間で確認できた事実ベースの動向のみ4件を掲載します。
+  </div>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Unitree Robotics、上海STAR市場IPOの株式申込が本日開始——評価額約90億ドル、ヒューマノイド量産競争の試金石に</h2>
+    <p>
+      中国の四足・ヒューマノイドロボット大手Unitree Roboticsは、上海証券取引所STAR市場（科創板）への上場に向けた株式申込を8月10日（本日）に開始し、支払い期限は8月12日となる。8月6日に発行価格を1株150.80元（約22.3ドル）と決定し、約4045万株（発行後総株式の10%）を発行して約61億元（約9.04億ドル）を調達、評価額は約9.04億ドル規模となる見通し。取引開始は8月17〜21日頃と見込まれ、DeepSeekが戦略投資家として参加していることも明らかになっている。同社は上半期の売上高成長率が40%まで鈍化しているものの、既に利益を出している点でFigure AIなど無収益の競合ヒューマノイド企業と対照的とされる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.caixinglobal.com/2026-08-07/the-week-ahead-aug-10-16-unitree-opens-star-market-ipo-subscription-102472435.html" target="_blank" rel="noopener">Caixin Global（2026年8月7日）</a>
+      ／
+      <a href="https://www.globaltimes.cn/page/202607/1367226.shtml" target="_blank" rel="noopener">Global Times</a>
+      ／
+      <a href="https://www.techtimes.com/articles/322574/20260731/unitree-ipo-subscription-opens-profitable-robot-maker-vs-39b-no-revenue-figure-ai.htm" target="_blank" rel="noopener">Tech Times</a>
+    </div>
+    <div class="comment">「儲かっているロボット企業」が資本市場のお墨付きを受けるかどうかは、ヒューマノイド業界全体が「量産できるが儲からない」フェーズを抜けられるかを測る重要な指標になる。DeepSeekの戦略投資参加も、中国国内でのAI×ロボティクスの連携が加速している証左だろう。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 2 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Alibaba、2.4兆パラメータ「Qwen3.8-Max」のオープンウェイトを今週中に公開予定——中国モデル最高峰がHugging Faceへ</h2>
+    <p>
+      Alibabaは8月3日に発表した最新旗艦モデル「Qwen3.8-Max」について、Hugging FaceおよびModelScope上でのオープンウェイト公開を「8月10日の週」に行うと予告している。同モデルはMoE（混合専門家）構成で総パラメータ2.4兆・アクティブパラメータ950億、最大100万トークンのコンテキストウィンドウを持ち、テキスト・画像・動画を扱えるマルチモーダル仕様。クラウドソース型比較サイトArenaでは中国系モデルとして最高順位を記録し、Anthropicの一部モデルには及ばないものの、10日間にわたり自律的にソフトウェアハーネスをコーディングし続けるエージェント性能も披露した。発表直後、香港上場のAlibaba株は7%上昇している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.marktechpost.com/2026/08/03/alibaba-qwen-releases-qwen3-8-max/" target="_blank" rel="noopener">MarkTechPost（2026年8月3日）</a>
+      ／
+      <a href="https://www.scmp.com/tech/article/3362738/alibabas-ai-model-qwen38-max-made-widely-accessible-ahead-open-weights-release" target="_blank" rel="noopener">South China Morning Post</a>
+    </div>
+    <div class="comment">クローズドAPIでの先行提供とオープンウェイトの後追い公開という「二段構え」戦略は、収益化と開発者コミュニティ拡大を両立させる中国勢の定石になりつつある。1M文脈×2.4兆パラメータが実際にどこまで無料で使えるかが今週明らかになる。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>米新興Avatar Robotics、人型ロボットの遠隔操作事業に650万ドルのシード資金——倉庫作業ですでに90万点超を出荷</h2>
+    <p>
+      2024年創業のAvatar Robotics（サンフランシスコ、MIT出身の2名が共同創業）は、AlleyCorp主導のシードラウンドで650万ドルを調達したと発表した。同社の半人型ロボットは人間による遠隔操作とAIによる自律制御を組み合わせ、倉庫・物流・製造業の人手不足に対応することを目指す。2025年12月のローンチ以降、大手ビューティー小売企業を含む実運用環境で既に90万点超の商品の梱包・仕分け・出荷を支援しており、大手倉庫事業者とのパイロット後の展開拡大も始まっているという。調達資金はロボット台数の拡大、顧客導入の拡大、自律化ソフトウェアの高度化、エンジニアリング・運用チームの拡充に充てられる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.therobotreport.com/avatar-robotics-raises-6-5-m-seed-round-address-industrial-labor-constraints/" target="_blank" rel="noopener">The Robot Report</a>
+      ／
+      <a href="https://www.robotics247.com/article/avatar-robotics-raises-6.5m-seed-round-to-build-the-unlimited-industrial-workforce" target="_blank" rel="noopener">Robotics 24/7</a>
+    </div>
+    <div class="comment">「完全自律」を急がず、遠隔操作を挟むことで実運用データを積み重ねながら徐々に自律化するアプローチは、ヒューマノイド分野で現実的な普及戦略として定着してきた印象がある。90万点という実績は、資金調達の説明資料にとどまらない具体性を持つ。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 4 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>Tacta Systems、触覚センサー搭載の器用な「ロボットハンド」を発表——精密製造分野への応用を狙う</h2>
+    <p>
+      ロボティクス新興Tacta Systemsは、独自の「Dexterous Intelligence（器用な知能）」技術に基づく初の製品「TactaBot」を発表した。中核となる「Tacta Hand」は15個の独立関節を流体腱アクチュエーターで駆動し、人間並みの精密さと産業グレードの強度・耐久性を両立。搭載された触覚センサーは250〜70万パスカルの圧力を毎秒400回サンプリングし、0.1度単位で温度変化も検知できるという。電子機器組立やワイヤーハーネス構築など高付加価値製造分野への展開を想定し、電子機器・AIインフラ・自動車業界の大手製造企業への導入は2027年初頭を予定している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.prnewswire.com/news-releases/tacta-systems-unveils-breakthrough-robotic-hands-for-high-value-manufacturing-powered-by-dexterous-intelligence-and-large-scale-skill-capture-302835396.html" target="_blank" rel="noopener">PR Newswire</a>
+      ／
+      <a href="https://theaiinsider.tech/2026/07/28/tacta-systems-unveils-ai-powered-dexterous-robotics-hand-and-data-collection-system-for-precision-manufacturing/" target="_blank" rel="noopener">The AI Insider</a>
+    </div>
+    <div class="comment">ヒューマノイド全身の話題が多い中、「手」単体の触覚精度に特化して勝負するアプローチは地味だが実用的。精密製造という具体的な導入先を明示している点で、量産ロードマップの現実感が他社より一歩先を行く印象を受ける。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ／ 出典は各記事のリンク先を参照 ／ <a href="../index.html">簡報一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
