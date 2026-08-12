@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月12日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .note {
+    background: #fff; border-radius: 12px; padding: 16px 22px; margin: 8px 0 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 14px; color: #4b5563;
+  }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月12日（水）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <div class="note">
+    本日はAnthropicの未公開Claudeがリーマン予想関連の数学的下限を大幅更新した件と、xAI改めSpaceXAIの常駐型AIエージェント「Grok Bot」公開が二本柱。加えてAnthropicのデータセンター新会社設立、中国ヒューマノイドロボット市場でのAgiBot首位交代、新興AI企業River AIの巨額調達、Alibabaのオープンソース動画生成モデルなど、直近24〜48時間で確認できた事実ベースの動向6件を掲載します。
+  </div>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Anthropic、未公開の研究用Claudeが「リーマン予想」関連の下限値を41.6%→67.2%に更新——数学的ブレークスルーと発表</h2>
+    <p>
+      Anthropicは8月10日、社内でのみ利用可能な未公開の研究用Claudeが、リーマンゼータ関数の非自明な零点のうちリーマン予想（臨界線上にあるという1859年以来未解決の予想）を満たす割合の下限を、従来の41.6%から67.2%へ引き上げたと発表した。同社スタッフが「本気で挑戦してみて」と依頼したのがきっかけで、ClaudeはBaluyot・Goldston・Suriajaya・Turnage-Butterbaughらの近年の研究とBombieriの2000年の成果を組み合わせ、Weil由来の二次形式を持つ関数空間を構築して正定値・負定値部分空間を解析する手法にたどり着いた。2回のClaude Codeセッション・60のサブエージェント・3100万出力トークンを投じてこの結果に到達したという。リーマン予想そのものの証明ではなく、査読も未了で、モデル自体が非公開のため第三者による再現もできない点には注意が必要。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://theaiinsider.tech/2026/08/11/anthropic-says-claude-improved-a-longstanding-bound-tied-to-the-riemann-hypothesis/" target="_blank" rel="noopener">The AI Insider（2026年8月11日）</a>
+      ／
+      <a href="https://www.neowin.net/news/unreleased-claude-model-makes-breakthrough-on-century-old-riemann-hypothesis-math-problem/" target="_blank" rel="noopener">Neowin</a>
+      ／
+      <a href="https://aiweekly.co/alerts/anthropic-says-claude-improved-a-riemann-zeta-lower-bound" target="_blank" rel="noopener">AI Weekly</a>
+    </div>
+    <div class="comment">証明ではなく「下限の更新」にとどまる点は割り引いて見るべきだが、未解決の純粋数学問題に対してエージェントが自律的に文献調査→仮説構築→検証を回して前進させたという事実自体が、AIの研究支援能力の到達点を示す象徴的な事例だと思う。査読後の評価を注視したい。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>xAI改めSpaceXAI、常駐型AIエージェント「Grok Bot」の公開ベータを開始——クラウド上の「AIチームメイト」構想</h2>
+    <p>
+      2026年7月に社名を「SpaceXAI」へ変更したxAI（SpaceXによる買収は2月に完了済み）は8月11日、常時稼働するAIエージェント群「Grok Bot」の公開ベータを開始した。各エージェントは専用のクラウド上コンピュータを与えられ、利用者が既存のツール群にサインインした状態で複数ステップの業務を監督なしに完遂し、承認が必要な場面でのみ人間に戻ってくるという設計。コーディング支援スタートアップCursorとの提携後初の共同製品で、まずMacとiOSで提供し、Windows・Linux版、Android版も追って公開予定。当面はSuperGrok Heavy、Cursor Ultra／Teams Premiumの契約者に限定され、法人向けは順番待ちリストとなっている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.bloomberg.com/news/articles/2026-08-11/spacexai-unveils-grok-bot-to-work-like-a-team-of-ai-agents" target="_blank" rel="noopener">Bloomberg（2026年8月11日）</a>
+      ／
+      <a href="https://thenextweb.com/news/spacexai-grok-bot-ai-agents-cursor" target="_blank" rel="noopener">The Next Web</a>
+      ／
+      <a href="https://x.ai/news/introducing-grok-bot" target="_blank" rel="noopener">SpaceXAI公式（x.ai）</a>
+    </div>
+    <div class="comment">OpenAIやAnthropicの常駐型エージェント製品への対抗色が強く、「AIに仕事を任せて承認だけする」働き方がいよいよ本命候補として競合各社から出揃ってきた印象。既知の不具合を抱えたままの限定ベータという位置付けも含め、実運用での信頼性検証が今後の焦点になりそう。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Anthropic、Macquarie・GICと組みデータセンター新会社「Theseus Infrastructure」を設立——電気料金上昇分もAnthropicが負担</h2>
+    <p>
+      Anthropicは8月10日、資産運用大手Macquarie Asset Managementおよびシンガポール政府系ファンドGICと戦略的パートナーシップを結び、AI向けデータセンターを大規模に開発・運営・貸与する新プラットフォーム「Theseus Infrastructure」を立ち上げると発表した。MacquarieとGICが施設を保有し各案件の株式資本の大半を拠出、Anthropicが長期契約のアンカーテナントとなる。まずは米国内での候補地選定から着手する。Anthropicは電力網の増強費用を100%負担し、自社のデータセンター需要に伴う地域住民の電気料金上昇分もカバーすると約束しており、建設・運用の両面で数千人規模の雇用創出が見込まれるという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.datacenterdynamics.com/en/news/gic-and-macquarie-form-theseus-infrastructure-to-serve-anthropics-data-center-needs/" target="_blank" rel="noopener">Data Center Dynamics（2026年8月10日）</a>
+      ／
+      <a href="https://www.hpcwire.com/off-the-wire/anthropic-macquarie-and-gic-launch-theseus-infrastructure-for-ai-data-centers/" target="_blank" rel="noopener">HPCwire</a>
+      ／
+      <a href="https://www.macquarie.com/au/en/about/news/2026/anthropic-mam-gic-data-centre-infrastructure-partnership.html" target="_blank" rel="noopener">Macquarie Group公式</a>
+    </div>
+    <div class="comment">計算資源の確保がAIラボの競争力を左右する時代になり、モデル企業自らが電力インフラのリスクと地域社会への配慮まで引き受ける構図が定着しつつある。地域の電気料金負担まで約束する点は、データセンター増設に対する住民の反発を先回りして抑える狙いが透ける。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>中国ヒューマノイドロボット市場でAgiBotがUnitreeを逆転——2026年上半期、世界出荷の97%を中国勢が占める</h2>
+    <p>
+      調査会社の集計によると、2026年上半期の世界のヒューマノイドロボット出荷台数は前年同期比272%増の約1万9100台に達し、上海拠点のAgiBotが約8400台（世界シェア44%、前年比562%増）で首位に浮上、これまで首位だった杭州拠点のUnitreeは約5900台（シェア31%）で2位に後退した。AgiBotは二足歩行のA系列に加え、小型のX系列、車輪型のG系列など製品ラインを多様化させたことが躍進の要因とされる。中国勢だけで世界出荷の97%を占め、上位2社で全体の約75%を占有する寡占状態となっている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.scmp.com/tech/tech-trends/article/3363544/agibot-overtakes-unitree-top-global-humanoid-robot-vendor-first-half-amid-ipo-push" target="_blank" rel="noopener">South China Morning Post（2026年8月11日）</a>
+      ／
+      <a href="https://www.semafor.com/article/08/11/2026/agibot-passes-unitree-as-chinas-top-humanoid-exporter" target="_blank" rel="noopener">Semafor</a>
+      ／
+      <a href="https://www.techrepublic.com/article/news-humanoid-robot-shipments-chinese-vendors/" target="_blank" rel="noopener">TechRepublic</a>
+    </div>
+    <div class="comment">出荷台数の急拡大は量産体制の成熟を示す一方、用途の中身（工場実証と量産納入の比率）はまだ精査が必要。台数競争が先行する中国勢に対し、欧米勢が「単価・信頼性・実運用実績」でどう差別化するかが今後の見どころ。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>設立2カ月のRiver AI、11億ドルを調達——xAI元共同創業者Babuschkin氏が「個人が所有するAI」を掲げ新興</h2>
+    <p>
+      xAI（現SpaceXAI）の元共同創業者Igor Babuschkin氏が立ち上げたスタートアップRiver AIは8月11日、General CatalystとAMP PBCが主導し、NvidiaやAMD Ventures、Y Combinator、Temasekも参加する11億ドルの資金調達を発表した。設立からわずか2カ月というスピード調達。同社は「AIの所有権をラボから利用者・組織側へ移す」ことを掲げ、専用インフラチームなしでもカスタムモデルの学習・チューニング・提供を可能にする基盤「River API」を第一弾製品として展開する。強化学習の学習ランを約15〜20分で完了でき、クローズドソースの代替サービスに比べ2〜4倍低コストだとしている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/" target="_blank" rel="noopener">TechCrunch（2026年8月11日）</a>
+      ／
+      <a href="https://finance.yahoo.com/technology/ai/articles/xai-co-founders-startup-river-131404060.html" target="_blank" rel="noopener">Yahoo Finance</a>
+      ／
+      <a href="https://www.hpcwire.com/aiwire/2026/08/11/river-ai-secures-1-1b-to-make-custom-ai-models-easier-to-train-and-deploy/" target="_blank" rel="noopener">AIwire（HPCwire）</a>
+    </div>
+    <div class="comment">創業2カ月で11億ドルという規模は、フロンティアラボ出身者への資金集中がなお続いていることの表れ。「AIの所有権を利用者に取り戻す」という理念が、実際にオープンかつ低コストなカスタムモデル基盤として機能するかは製品の実力次第だろう。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 6 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>Alibaba Tongyi、リアルタイム動画キャラクターアニメーション基盤モデル「Wan-Animate-2」をオープンソース化</h2>
+    <p>
+      Alibabaの研究チームTongyi Labは8月7日、キャラクターアニメーション生成モデル「Wan-Animate-2」の重み・推論スクリプト・技術論文をApache 2.0ライセンスでGitHubとHugging Faceに公開した。従来手法が必要としていた骨格ポーズ抽出を介さず、駆動用動画の潜在表現を直接ディフュージョン・トランスフォーマーに入力する二系統アーキテクチャを採用し、解像度400×720・24fpsでのリアルタイムストリーミング生成を実現。カメラ視点をテキストで制御する「Viewpoint LoRA」や複数人物同時駆動にも対応し、INT8/BF16量子化版やComfyUI連携も用意されている。非公開のブラインド評価では、ByteDance「Dreamina」やKuaishou「KLING MotionControl」など商用クローズドモデルに匹敵、または上回る結果だったという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://pandaily.com/tongyi-wan-animate-2-character-animation-open-source-aug2026" target="_blank" rel="noopener">Pandaily（2026年8月）</a>
+      ／
+      <a href="https://www.opensourceforu.com/2026/08/alibaba-open-sources-wan-animate-2/" target="_blank" rel="noopener">Open Source For You</a>
+      ／
+      <a href="https://github.com/Wan-Video/Wan-Animate-2" target="_blank" rel="noopener">GitHub（Wan-Video/Wan-Animate-2）</a>
+    </div>
+    <div class="comment">動画生成・実写合成の分野は中国勢のオープンソース公開ペースが際立って速く、商用クローズドモデルとの差が縮まり続けている。ライセンス条件次第では、映像制作の現場ツールとして今後急速に組み込まれていきそう。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 ／ <a href="../index.html">アーカイブ一覧へ</a></p>
+  </div>
+</div>
+
+</body>
+</html>
