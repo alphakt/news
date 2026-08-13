@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月13日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .note {
+    background: #fff; border-radius: 12px; padding: 16px 22px; margin: 8px 0 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 14px; color: #4b5563;
+  }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月13日（木）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <div class="note">
+    本日はGoogle DeepMindのトップ交代と、SpaceXAI（旧xAI）による新フラッグシップモデル「Grok 4.6」投入が二本柱。加えて中国発エージェント企業Manusの独立回帰、Mistral AIの欧州向けソブリンAIインフラ拡張、Googleのハードウェア新製品発表におけるGemini新機能など、直近24〜48時間で確認できた事実ベースの動向5件を掲載します。
+  </div>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Google DeepMind、トップ交代——Hassabis氏はAlphabet Chief Scientistへ、Kavukcuoglu氏が新CEOに就任</h2>
+    <p>
+      Alphabetは8月上旬、Google DeepMindの経営体制を刷新したと発表した。創業者でCEOだったDemis Hassabis氏はAlphabet Chief Scientist（最高科学責任者）およびGoogle DeepMind会長に就き、代わって共同創業メンバーで技術部門トップだったKoray Kavukcuoglu氏がGoogle DeepMindのCEO職を引き継ぐ。Kavukcuoglu氏はSVPとしてGoogle CEOのSundar Pichai氏に直接報告する立場となり、Geminiモデル開発・フロンティアAI研究・Gemini製品/開発者チームを統括する。Fortune等の報道では、モデル開発の遅延や人材流出、士気低下が背景にあったと指摘されている。OpenAIやAnthropicがコーディング分野で先行する中、Googleは社内に「Code Strike」チームを編成するなど巻き返しを図っている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.cnbc.com/2026/08/12/google-deepmind-koray-kavukcuoglu.html" target="_blank" rel="noopener">CNBC（2026年8月12日）</a>
+      ／
+      <a href="https://fortune.com/2026/08/10/how-stalled-models-missed-deadlines-and-staff-burnout-lead-to-the-unraveling-of-googles-deepmind/" target="_blank" rel="noopener">Fortune（2026年8月10日）</a>
+      ／
+      <a href="https://time.com/article/2026/08/06/google-deepmind-ai-demis-hassabis/" target="_blank" rel="noopener">TIME（2026年8月6日）</a>
+    </div>
+    <div class="comment">創業者を「研究の顔」として残しつつ実務は生え抜きの技術トップに委ねる布陣で、Googleが「コーディングで出遅れた」という自己認識を持っていること自体が興味深い。Gemini次期フロンティアモデルの発表時期が今後の巻き返しの試金石になりそう。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>SpaceXAI（旧xAI）、長時間稼働エージェント向け新モデル「Grok 4.6」を投入——GPT-5.6 Solと並ぶ性能を主張</h2>
+    <p>
+      SpaceX傘下となったSpaceXAI（旧xAI）は8月12日、新フラッグシップモデル「Grok 4.6」を発表した。複数ステップにわたる長時間の調査・分析・コードベース横断作業や、アイデアを完成度の高いアプリ／成果物に仕上げるといった、長時間稼働するエージェント用途を主眼に設計されている。同日にコードエディタCursorおよび自社ツール「Grok Build」、APIを通じて提供開始され、API価格は入力100万トークンあたり2ドル、出力100万トークンあたり6ドル。AI Intelligence Analysis Indexの性能評価では、OpenAIのGPT-5.6 Solと同水準に達したと報じられている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://x.ai/news/grok-4-6" target="_blank" rel="noopener">SpaceXAI公式（x.ai、2026年8月12日）</a>
+      ／
+      <a href="https://www.unite.ai/spacexai-launches-grok-4-6-for-long-running-agents/" target="_blank" rel="noopener">Unite.AI</a>
+      ／
+      <a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262099926-space-xai-grok-4-6-matches-gpt-5-6-sol-ai-index-tradingkey" target="_blank" rel="noopener">TradingKey</a>
+    </div>
+    <div class="comment">「長時間稼働エージェント」を前面に押し出す訴求は各社共通のトレンドになりつつあり、単発の受け答えの精度よりも数十〜数百ステップにわたる作業の完遂率が主戦場に移ってきている印象。実タスクでの継続率検証が待たれる。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>エージェントAI「Manus」、Metaとの資本提携解消により独立企業へ復帰——一部ユーザーデータは削除へ</h2>
+    <p>
+      汎用AIエージェントを手がけるManus（中国発、現在はシンガポール拠点）は8月11日、Metaによる約20億ドルの買収案件が中国当局の指示で解消されたことを受け、独立企業として事業を再開すると発表した。2025年12月29日以降に一部ユーザーが生成したデータは、シンガポール時間8月23日午前8時から24日にかけて削除される予定で、対象ユーザーは23日午前7時59分までにバックアップを取ることができ、25日午前8時以降に復元が可能になる。今後はTencentが筆頭株主として関与する可能性があるとロイターは報じている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.cnbc.com/2026/08/11/manus-china-meta-acquisition.html" target="_blank" rel="noopener">CNBC（2026年8月11日）</a>
+      ／
+      <a href="https://www.bloomberg.com/news/articles/2026-08-11/manus-to-resume-independent-operations-in-unwind-of-meta-deal" target="_blank" rel="noopener">Bloomberg</a>
+      ／
+      <a href="https://www.chinatechnews.com/2026/08/12/127092-ai-startup-manus-to-go-independent-again-as-deal-with-meta-unwinds" target="_blank" rel="noopener">China Tech News（2026年8月12日）</a>
+    </div>
+    <div class="comment">米中間のフロンティア技術に対する投資規制が、個別の買収案件を実際に覆す事例として現実化した形。中国発AIエージェント企業の資本構成を巡る綱引きは、今後も地政学リスクとして注視が必要。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Mistral AI、欧州向け「ソブリンAI」インフラを拡張——2030年までに欧州で計1ギガワットの計算資源確保へ</h2>
+    <p>
+      フランスのMistral AIは8月11日、インフラ事業の3本柱を発表した。利用企業がデータ主権・規制・レイテンシ要件に応じて推論の実行地域を欧州／米国から選べる「地域別エンドポイント」の一般提供開始、基幹業務向けに稼働率SLAを付けた「Priority Tier」のパブリックプレビュー、そしてAmadeus・ASML・CMA CGMなど欧州企業連合による複数年の計算資源購入コミットメントである。この企業連合の資金拠出により、2027年末までに欧州域内で200メガワット、2030年末までに計1ギガワット規模のインフラ整備を後押しする計画で、契約企業は「European Compute Units（ECU）」を通じてMistral基盤上の各種製品を柔軟に利用できる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://mistral.ai/news/regional-inference-open-models-new-compute/" target="_blank" rel="noopener">Mistral AI公式（2026年8月11日）</a>
+      ／
+      <a href="https://venturebeat.com/infrastructure/mistral-ai-wants-to-build-1-gigawatt-of-european-compute-by-2030-and-lock-in-customers-now" target="_blank" rel="noopener">VentureBeat</a>
+      ／
+      <a href="https://www.govinfosecurity.com/mistral-expands-sovereign-ai-push-european-compute-a-32527" target="_blank" rel="noopener">GovInfoSecurity</a>
+    </div>
+    <div class="comment">米国発フロンティアラボへの依存を避けたい欧州企業のニーズを取り込み、資金と需要を先に囲い込んでからインフラを建てるモデルは堅実に見える。ECUという仕組みは、顧客のロックインと投資回収リスクの両立を狙った工夫だろう。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 6 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>Google「Made by Google 2026」開催——Pixel 11シリーズ発表とともに、Gemini搭載の手話→テキスト変換機能を披露</h2>
+    <p>
+      Googleは8月12日、ニューヨークで年次ハードウェア発表イベント「Made by Google 2026」を開催し、Pixel 11／Pixel 11 Pro／Pixel 11 Pro Fold、Pixel Watch 5、AirTag対抗の位置情報タグ「Pixel Tag」を発表した。あわせてGemini搭載の新機能群も披露され、なかでもGoogle DeepMindが開発した手話をリアルタイムでテキストに変換する「SL2T（Sign Language to Text）」はPixel 11シリーズ限定機能として注目を集めた。オンデバイスGemini Intelligenceの強化も進められており、スマートフォン単体でのAI処理能力向上が今回の発表の主軸の一つとなっている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/" target="_blank" rel="noopener">TechCrunch（2026年8月12日）</a>
+      ／
+      <a href="https://www.androidcentral.com/phones/live/made-by-google-2026-launch-live-pixel-11-pixel-11-pro-fold-pixel-watch-5-gemini-and-all-the-news" target="_blank" rel="noopener">Android Central</a>
+      ／
+      <a href="https://store.google.com/magazine/google_pixel_11?hl=en-US" target="_blank" rel="noopener">Google Store公式</a>
+    </div>
+    <div class="comment">手話のリアルタイム変換は、アクセシビリティ向けAI応用として実用インパクトが大きい部類。ハードウェア専用機能として囲い込むか、将来的にAndroid全体やGemini本体に開放するかで、社会的な波及度は大きく変わりそう。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 ／ <a href="../index.html">アーカイブ一覧へ</a></p>
+  </div>
+</div>
+
+</body>
+</html>
