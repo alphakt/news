@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月14日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .note {
+    background: #fff; border-radius: 12px; padding: 16px 22px; margin: 8px 0 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 14px; color: #4b5563;
+  }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月14日（金）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <div class="note">
+    本日はOpenAIの専用サイバーセキュリティモデル「GPT-5.6-Cyber」公開と、OpenAI・Anthropic・Google共通の推論トレース暗号化に関する脆弱性の発覚が二本柱。加えてAIコーディングエージェントCognitionの評価額400億ドル調達交渉、「バイブコーディング」Lovableおよびコードレビュー企業CodeRabbitの大型資金調達、Microsoftの中国事業縮小、中国発AI搭載衛星の運用開始など、直近24〜48時間（一部背景情報はやや遡ります）で確認できた事実ベースの動向7件を掲載します。
+  </div>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>OpenAI、攻撃的サイバーセキュリティ専用モデル「GPT-5.6-Cyber」を公開——高度な脆弱性発見タスクの95%を完遂</h2>
+    <p>
+      OpenAIは8月10日、GPT-5.6 Solをベースにサイバーセキュリティ業務に特化した派生モデル「GPT-5.6-Cyber」を発表した。ゼロデイ脆弱性の発見やエクスプロイトチェーンの構築といったデュアルユース性の高い作業での拒否率を下げるよう調整されており、社内評価指標「Advanced Cybersecurity Completion Rate」ではGPT-5.6 Solの1.5%に対し95.0%を完遂したという。利用には本人確認・ハードウェアセキュリティキー・監視・法的誓約を課す「Daybreak Red」プログラムへの参加が必須で、価格は入力100万トークン12.50ドル・出力75ドル。実証としてChromeのJavaScriptエンジンV8で未知の脆弱性2件を発見し、Googleが CVE-2026-15903 として修正済みという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://venturebeat.com/technology/openai-launches-gpt-5-6-cyber-with-reduced-refusals-95-completion-on-advanced-cybersecurity-tasks" target="_blank" rel="noopener">VentureBeat（2026年8月10日）</a>
+      ／
+      <a href="https://www.securityweek.com/openai-unveils-new-cybersecurity-model-gpt-5-6-cyber/" target="_blank" rel="noopener">SecurityWeek</a>
+      ／
+      <a href="https://datanorth.ai/news/openai-launches-gpt-5-6-cyber" target="_blank" rel="noopener">DataNorth AI</a>
+    </div>
+    <div class="comment">攻守両面で使えるモデルを本人確認付きプログラムの中でだけ提供するという設計は、能力と悪用リスクのトレードオフに対する一つの現実解に見える。認証済み利用者からのモデル流出や資格情報の管理体制が、今後の運用上の焦点になりそう。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>OpenAI・Anthropic・Google共通のAPI脆弱性——暗号化された「推論トレース」を他モデルにデコードさせる手法が判明</h2>
+    <p>
+      ドイツELLIS Institute TübingenとMax Planck Institute for Intelligent Systemsの研究チームは8月10日、論文「Stealing Reasoning Traces from Proprietary LLM APIs」をarXivで公開した。3社はいずれもモデルの思考過程（chain-of-thought）をクライアント側に暗号化ブロックとして返し次リクエストで再送させる方式を採っているが、このブロックが同一プロバイダー内のセッション・ユーザー・モデルを横断して互換性を持つ設計上の欠陥があり、強いモデル向けの暗号化ブロックを防御の薄い同系列の弱いモデルへ注入すると平文でそのまま出力させられることを実証した。GitHub等の公開ログ6,708件・推論ブロック315,320件を解析し、認証情報182件・個人情報367件を実際に復元できたという。3社は責任開示を受けサーバー側の緩和策を導入済み。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://arxiv.org/abs/2608.09867" target="_blank" rel="noopener">arXiv:2608.09867（2026年8月10日）</a>
+      ／
+      <a href="https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html" target="_blank" rel="noopener">The Hacker News（2026年8月12日）</a>
+      ／
+      <a href="https://cybersecuritynews.com/top-ai-models-apis-flaw-exposes-hidden-reasoning/" target="_blank" rel="noopener">Cyber Security News</a>
+    </div>
+    <div class="comment">各社が知的財産保護のために「隠していた」推論過程が、実は共通のアーキテクチャ上の穴を抱えていたという話。エージェントの実行ログを公開リポジトリに残す運用が広がるほど、この種の攻撃面は今後も拡大しそうだ。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>AIコーディングエージェントCognition、評価額400億ドル超での新規調達を協議——3か月足らずで1.5倍に</h2>
+    <p>
+      「Devin」を手がけるAIコーディングエージェント企業Cognitionが、投資家との初期協議で評価額を現行の260億ドルから400億ドル超へ引き上げる新規調達ラウンドを検討していると、8月12日にTechCrunchとBloombergが報じた。同社は3か月足らず前の5月にも10億ドルを調達し260億ドル評価を得たばかりで、年間経常収益（ARR）は現在10億ドル規模に迫っているという。今年はAIコーディングツール大手Windsurfの買収も実施しており、エージェント型コーディング市場での存在感拡大を続けている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/" target="_blank" rel="noopener">TechCrunch（2026年8月12日）</a>
+      ／
+      <a href="https://www.bloomberg.com/news/articles/2026-08-12/ai-startup-cognition-in-new-funding-talks-at-40-billion-value" target="_blank" rel="noopener">Bloomberg</a>
+    </div>
+    <div class="comment">わずか数か月で評価額が1.5倍という調達サイクルの速さは、コーディングエージェント市場の過熱ぶりを象徴している。ARRの伸びが評価額の伸びに見合っているか、次の資金調達完了時の実数が試金石になりそう。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>「バイブコーディング」のLovable、4億ドルのシリーズC調達——評価額133億ドルに倍増、Tencentも出資</h2>
+    <p>
+      スウェーデン発のAIソフトウェア開発プラットフォーム「Lovable」は8月12日、Menlo VenturesとEQT運営のScaleup Europe Fundが共同主導するシリーズCで4億ドルを調達し、評価額133億ドルに達したと発表した。TencentやBalderton Capitalも参加。昨年12月の66億ドル評価から半年余りで倍増した形で、年間経常収益は2億ドルから3倍近くに伸び、月末までに6億ドル到達を見込むという。自然言語の指示だけでアプリを生成する「バイブコーディング」の代表格として、6,000万件のプロジェクト・月間9億訪問を抱える。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/" target="_blank" rel="noopener">TechCrunch（2026年8月12日）</a>
+      ／
+      <a href="https://lovable.dev/blog/series-c" target="_blank" rel="noopener">Lovable公式ブログ</a>
+      ／
+      <a href="https://technode.com/2026/08/13/tencent-backs-lovable-in-400-million-series-c-at-13-3-billion-valuation/" target="_blank" rel="noopener">TechNode（2026年8月13日）</a>
+    </div>
+    <div class="comment">半年で評価額倍増というペースはLovableに限らずAIコーディング領域全体の傾向で、Tencentの参加は中国系資本がバイブコーディング市場に本格関心を示し始めた兆候として注目したい。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>AIコードレビューのCodeRabbit、1.43億ドルのシリーズC調達——評価額15億ドル、週200万件のレビューを処理</h2>
+    <p>
+      AIによるコードレビュー・自動化プラットフォームを手がけるCodeRabbitは8月12日、AtomicoとSmash Capitalが共同主導するシリーズCで1.43億ドルを調達し、評価額15億ドルに達したと発表した。BMW i Ventures、Datadog、CRVなども参加。昨年のシリーズB（6,000万ドル）から1年足らずでの調達となり、売上は前年比5倍以上に成長したという。同社は現在、週200万件超のコードレビューを処理し、Adyen・BMW・Nvidia・JFrogなど17,000社以上が顧客。今回の調達資金は国際展開と「エージェント型変更管理」機能の開発に充てる方針。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.businesswire.com/news/home/20260812311754/en/CodeRabbit-Raises-$143-Million-at-$1.5-Billion-Valuation-and-Introduces-Agentic-Change-Management" target="_blank" rel="noopener">Business Wire（2026年8月12日）</a>
+      ／
+      <a href="https://siliconangle.com/2026/08/12/coderabbit-bags-143m-help-companies-get-grip-explosion-ai-generated-code/" target="_blank" rel="noopener">SiliconANGLE</a>
+      ／
+      <a href="https://techfundingnews.com/coderabbit-lands-143m-at-1-5b-valuation-as-ai-generated-code-surges/" target="_blank" rel="noopener">Tech Funding News</a>
+    </div>
+    <div class="comment">AI生成コードが急増するほど「誰がそれを見張るか」というレビュー・ガバナンス層への需要が伸びるという、CognitionやLovableとは対になる需要構造が見て取れる。コード生成と検証の両輪でAIコーディング市場が膨らんでいる印象。</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Microsoft、中国での物理拠点を縮小しつつAI需要で関係を維持——地政学リスクと商機の綱引き</h2>
+    <p>
+      Reutersは8月13日、Microsoftが近年、地政学的緊張や規制強化・輸出管理を背景に中国国内の支社・合弁事業を少なくとも15件閉鎖・撤退させ、中国が世界売上に占める比率も約1.5%まで低下したと報じた。一方で同社は完全撤退はせず、ByteDanceなど海外展開に西側テクノロジーを必要とする中国企業向けのクラウド・AIソリューション提供や、中国の優秀なエンジニア人材へのアクセス維持を目的に、事業の重心を移しながら関係を継続する方針だという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.timeslive.co.za/news/sci-tech/2026-08-13-microsoft-retreats-in-china-but-ai-boom-helps-it-keep-a-window-open/" target="_blank" rel="noopener">TimesLIVE（Reuters、2026年8月13日）</a>
+      ／
+      <a href="https://www.communicationstoday.co.in/microsoft-scales-back-china-presence-but-finds-new-growth-in-ai-demand/" target="_blank" rel="noopener">Communications Today</a>
+      ／
+      <a href="https://tribune.com.pk/story/2623709/microsoft-retreats-in-china-but-ai-boom-helps-it-keep-a-window-open" target="_blank" rel="noopener">The Express Tribune</a>
+    </div>
+    <div class="comment">「拠点は畳むが顧客とのAI商流は残す」という選択は、米中対立下で多国籍テック企業が採る典型的な折衷案に見える。人材アクセスを理由に残る点は、AI開発における中国人エンジニアの重要性を裏付ける材料でもある。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 7 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>中国、AI搭載ハイパースペクトル衛星2基を打ち上げ——軌道上でのリアルタイム災害解析に応用</h2>
+    <p>
+      中国は8月5日、山東省海陽沖から長征系ロケットで「東方慧眼（Oriental Smart Eye）」ハイパースペクトル衛星2基を打ち上げた。Star.ai Spatio-temporal Intelligence Technology社が開発し、毎秒400兆回の演算が可能なオンボードAIモジュールを搭載、従来は地上局への伝送・処理で数時間を要していた災害早期警戒などの解析を軌道上で数分以内に完了できるとしている。ウズベキスタンやインドネシア向けの商用リモートセンシングサービスにも提供される計画で、AI衛星を通じた新興国向け宇宙インフラ輸出の一例となっている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="http://english.scio.gov.cn/chinavoices/2026-08/07/content_118637620.html" target="_blank" rel="noopener">中国国務院新聞弁公室（2026年8月7日）</a>
+      ／
+      <a href="https://en.people.cn/n3/2026/0807/c90000-20486313.html" target="_blank" rel="noopener">People's Daily Online</a>
+      ／
+      <a href="https://en.mehrnews.com/news/246798/China-puts-2-AI-powered-satellites-into-orbit" target="_blank" rel="noopener">Mehr News Agency</a>
+    </div>
+    <div class="comment">打ち上げ自体は本日より数日前だが、「AI処理を衛星に載せて軌道上で完結させる」という応用領域は今後広がりそうな新しい切り口として掲載した。地上局への依存を減らす設計思想は、災害対応以外の軍事・安全保障用途への転用可能性も併せて注視したい。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 ／ <a href="../index.html">アーカイブ一覧へ</a></p>
+  </div>
+</div>
+
+</body>
+</html>
