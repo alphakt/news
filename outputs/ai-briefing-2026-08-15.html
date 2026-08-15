@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月15日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .note {
+    background: #fff; border-radius: 12px; padding: 16px 22px; margin: 8px 0 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 14px; color: #4b5563;
+  }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月15日（土）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <div class="note">
+    本日はGoogleがコーディング・エージェント向け新モデル「Gemini 3.7 Flash」を投入する一方でAI研究組織を大規模再編し首脳陣を刷新、さらにGeminiアプリの月間利用者が10億人を突破するなど「攻めと守り」の動きが同時進行。Anthropicは仮想通貨マイニング企業Riot Platformsと91億ドル規模のデータセンター賃貸契約を締結し計算資源の確保を加速した。加えて中国発AIエージェントManusがMeta出資解消により独立へ回帰する地政学がらみの動きや、ロボティクス分野での新興企業2社の発表、MIT・清華大による物理シミュレーション基盤モデルの研究成果など、直近24〜72時間で確認できた事実ベースの動向8件を掲載する。
+  </div>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Google、コーディング・エージェント特化の新モデル「Gemini 3.7 Flash」を発表——価格は年末まで半額</h2>
+    <p>
+      Googleは8月13日、「Gemini 3.6 Flash」からわずか3週間で後継モデル「Gemini 3.7 Flash」を発表した。コーディングにおけるデバッグ・課題解決能力や本番投入可能なコード生成の精度を強化し、開発者からのフィードバックを反映した設計になっているという。同社は9件のベンチマークでAnthropicおよびOpenAIの同格モデルを上回ったと主張。API価格は2026年内、入力100万トークンあたり0.75ドル・出力3.75ドルに設定され（2027年1月から通常料金の1.50ドル・7.50ドルへ倍増予定）、企業向けにはGemini Enterprise Agent Platformを通じて、個人向けにはGeminiアプリのSparkを通じて提供される。本命とされる次期フラッグシップ「Gemini 3.5 Pro」は依然として延期が続いている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://siliconangle.com/2026/08/13/google-launches-gemini-3-7-flash-coding-ai-agent-projects/" target="_blank" rel="noopener">SiliconANGLE（2026年8月13日）</a>
+      ／
+      <a href="https://9to5google.com/2026/08/13/gemini-3-7-flash-launch/" target="_blank" rel="noopener">9to5Google</a>
+      ／
+      <a href="https://www.axios.com/2026/08/13/google-gemini-37-flash" target="_blank" rel="noopener">Axios</a>
+    </div>
+    <div class="comment">3週間サイクルでの後継モデル投入は驚異的なスピードだが、裏を返せば本命のPro系モデルの遅延を「軽量モデルの高頻度更新」で埋め合わせている印象も受ける。年末までの半額キャンペーンは競合からのAPIシェア奪取を強く意識した価格設定だろう。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Google、AI研究組織を米カリフォルニアへ集約する大規模再編——Hassabis氏は会長職へ、開発陣2名は独立し離脱</h2>
+    <p>
+      Bloombergなどの報道によると、GoogleはAnthropic・OpenAIとの開発競争激化を受け、AI研究・運営体制をカリフォルニア州マウンテンビューの本社に集約する組織再編を進めている。DeepMind共同創業者で長年CEOを務めたDemis Hassabis氏は日常業務から退き、Google DeepMind会長 兼 Alphabet最高科学責任者に就任。英国からマウンテンビューに拠点を移していたKoray Kavukcuoglu氏がAI研究・運営部門を統括する立場に昇格し、AIコーディング部門責任者のSebastian Borgeaud氏も英国から米国へ異動した。またGeminiの技術共同リード2名は退社し新会社を共同設立したという。発表当日、Alphabet株価は4%下落した。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.bloomberg.com/news/articles/2026-08-06/google-shifts-ai-power-to-california-in-race-against-anthropic-openai" target="_blank" rel="noopener">Bloomberg（2026年8月6日）</a>
+      ／
+      <a href="https://www.thestar.com.my/tech/tech-news/2026/08/13/exclusive-inside-the-google-executive-moves-that-led-to-its-big-ai-reshuffle" target="_blank" rel="noopener">The Star（Reuters、2026年8月13日）</a>
+    </div>
+    <div class="comment">2023年のGoogle Brain・DeepMind統合以降くすぶっていた「英米二拠点体制」の意思決定の遅さに、ついてメスが入った形。Hassabis氏の会長就任という名誉職への移行と、開発陣の独立起業が同時に起きている点は、研究トップ層の求心力低下を示すシグナルとしても読める。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Anthropic、ビットコイン採掘企業Riot Platformsと20年・91億ドルのデータセンター賃貸契約</h2>
+    <p>
+      Riot Platformsは8月11日、テキサス州ロックデールのキャンパスにおいて、テナントがAnthropicであることが判明した20年契約・191メガワット・総額91億ドルのデータセンター賃貸契約を締結したと明らかにした。2件の5年延長オプションを含めると契約総額は最大161億ドルに達する見込み。第1弾の96メガワットは2027年12月、残りは2028年6月に稼働開始予定で、Riotが建屋・電力接続・冷却・運用を提供し、Anthropicがサーバーおよびアクセラレータチップを持ち込む形態となる。これによりRiotはAMDに次ぐ2社目の大型データセンター顧客を獲得し、契約容量は合計241メガワット・想定売上は約98億ドル規模に拡大した。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.cnbc.com/2026/08/11/riot-platforms-signs-anthropic-deal-as-miners-shift-to-ai-infrastructure-.html" target="_blank" rel="noopener">CNBC（2026年8月11日）</a>
+      ／
+      <a href="https://www.datacenterdynamics.com/en/news/riot-platforms-agrees-191mw-20-year-lease-agreement-with-anthropic-worth-91bn-report/" target="_blank" rel="noopener">Data Center Dynamics</a>
+    </div>
+    <div class="comment">仮想通貨マイニング企業がAI向け電力・データセンター基盤の供給元として存在感を増す構図がここでも確認できた。AnthropicにとってはOpenAI・Googleに続く大型計算資源の囲い込みで、電力確保がモデル開発競争の実質的なボトルネックになっていることを改めて示している。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>GoogleのGeminiアプリ、月間利用者10億人を突破——自社史上最速の成長ペース</h2>
+    <p>
+      Sundar Pichai CEOは8月11日、Geminiアプリの月間アクティブユーザーが10億人を突破したと発表した。Search・Gmail・Android・YouTubeなどに続き同社14番目の「10億人規模」プロダクトとなり、自社史上最も成長が速いプロダクトだとしている。2025年5月の4億人から、2025年10月末時点で6.5億人超、2026年5月のI/Oでは9億人超と急拡大しており、ChatGPTが同じ節目に達したペースとほぼ並んだ。同社によると利用者の63%がGeminiに直接話しかけており、画像生成は1日1.5億枚超、Android上で40以上のアプリを横断した操作の自動化も可能という。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/" target="_blank" rel="noopener">TechCrunch（2026年8月11日）</a>
+      ／
+      <a href="https://9to5google.com/2026/08/11/gemini-app-1-billion/" target="_blank" rel="noopener">9to5Google</a>
+    </div>
+    <div class="comment">組織再編や本命モデルの延期といった「内部の混乱」が伝えられる一方で、利用者数という指標では過去最速の成長を見せている点が対照的。開発体制の摩擦がユーザー向け成長にまだ影響していない、あるいはタイムラグがあるだけという見方もできる。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>中国発AIエージェントManus、Meta出資解消を受け独立企業として再出発へ</h2>
+    <p>
+      AIエージェント「Manus」を手がけるButterfly Effect社は8月11日、Metaによる20億ドル規模の買収が北京当局の命令で解消されることに伴い、近く独立企業として運営を再開すると利用者向けに通知した。Manusは2022年に中国で創業後、2025年5月にBenchmark主導で7,500万ドルを調達した際に中国拠点を閉鎖しシンガポールへ移転し米国の投資規制回避を図ったが、中国当局は技術・人材の出自が中国にあるとして規制対象と判断した。米中対立下での買収解消に伴い、一部利用者アカウントやデータが影響を受ける可能性があるという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.cnbc.com/2026/08/11/manus-china-meta-acquisition.html" target="_blank" rel="noopener">CNBC（2026年8月11日）</a>
+      ／
+      <a href="https://www.scmp.com/news/us/article/3363704/facebook-parent-meta-unwind-us2-billion-manus-ai-deal-after-beijing-block" target="_blank" rel="noopener">South China Morning Post</a>
+    </div>
+    <div class="comment">AI企業の国籍・技術出自をめぐる規制介入が、シンガポール移転のような「迂回策」ではもはや通用しないことを示す事例。米中双方の規制がAIエージェント企業のM&Aやグローバル展開に与える制約は、今後も他の中国発スタートアップに波及しそうだ。</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>ロボット基盤モデルのRhoda AI、ステルス解除・4.5億ドル調達——動画予測制御による汎用ロボット知能「FutureVision」を発表</h2>
+    <p>
+      ロボティクス企業Rhoda AIは18か月のステルス期間を経て、Khosla Ventures・Temasek・Mayfieldなどが参加するシリーズAで4.5億ドルを調達（評価額17億ドル）したと発表し、動画予測制御に基づく汎用ロボット知能プラットフォーム「FutureVision」を公開した。数億本規模のインターネット動画から物体の動きや物理法則を学習し、周囲で次に起こることを1秒間に数十回のサイクルで予測し続けて動作に反映する仕組み。実証実験では高頻度な製造ライン工程を人手を介さず2分以内で完了し、顧客が定めたKPIを上回ったという。想定外の事態への対応が弱いとされる従来型ロボットの弱点克服を狙う。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techfundingnews.com/rhoda-ai-450m-series-a-stealth-exit-robotics/" target="_blank" rel="noopener">Tech Funding News</a>
+      ／
+      <a href="https://www.therobotreport.com/rhoda-ai-exits-stealth-with-450m-to-train-robots-from-video/" target="_blank" rel="noopener">The Robot Report</a>
+    </div>
+    <div class="comment">動画から物理世界の「予測モデル」を学習させるアプローチは、LLMの次世代基盤モデルとして各所で語られてきた方向性がロボティクスで実装された一例。想定外の状況への頑健性という長年の課題に対する実証結果として、追加の第三者検証データが出てくるか注視したい。</div>
+  </div>
+
+  <!-- 7 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Tacta Systems、触覚センサー付き高精度ロボットハンド「TactaBot」を発表——現場作業員の手の動きから技能を直接学習</h2>
+    <p>
+      ロボティクス企業Tacta Systemsは、15関節の独立制御と流体腱アクチュエーションを備えた「Tacta Hand」、作業員がそのまま装着できるグローブ型デバイスで力・動き・映像・温度データを収集する「Skill Capture」システム、それらを学習する「Dexterous Intelligence」AIエンジンの三位一体からなる製造業向けロボットシステム「TactaBot」を発表した。訓練なしで現場作業員が装着できるグローブから熟練技能を直接収集し、羽根のような軽い圧力から締め付け級の力・微細な温度変化まで読み取れる触覚センサーと組み合わせることで、人間並みの精密さをロボットハンドに再現するという。電子機器・AIインフラ・自動車の各業界の大手製造企業との2027年初頭の実装を計画している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.prnewswire.com/news-releases/tacta-systems-unveils-breakthrough-robotic-hands-for-high-value-manufacturing-powered-by-dexterous-intelligence-and-large-scale-skill-capture-302835396.html" target="_blank" rel="noopener">PR Newswire</a>
+      ／
+      <a href="https://www.therobotreport.com/tacta-systems-takes-aim-high-skilled-manufacturing-work-tactabot/" target="_blank" rel="noopener">The Robot Report</a>
+    </div>
+    <div class="comment">熟練工の「手の技」をグローブ経由でそのままデータ化して学習させる発想は、従来のティーチング・プレイバック方式より収集コストが低く、高付加価値な製造現場ほど導入インセンティブが働きやすいだろう。触覚データの品質・再現性が実運用での歩留まりを左右しそうだ。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 8 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>MIT CSAIL・清華大、物理法則を学習する基盤モデル「GeoPT」を発表——ラベルデータ6割減で高速な物理シミュレーションを実現</h2>
+    <p>
+      MIT CSAILと清華大学の研究チームは、微小な球体が複雑な3D形状と相互作用する130万件の合成力学サンプルを用いて幾何情報に物理法則の「感覚」を事前学習させる手法「GeoPT」を発表した。物理ラベルなしで力学を意識した自己教師あり学習を行うことで、既存の最先端シミュレーションモデルに比べ最大到達速度が2倍、必要なラベル付きデータは最大60%削減されるといい、1億点超のメッシュを数秒で高精度シミュレーションできるとしている。車両の空気力学、衝突時の構造変形、船体の波浪応答、光の散乱など幅広い工学分野への応用を想定しており、研究者は「物理はテキスト・画像に続く第三のモダリティ」と位置づけている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://news.mit.edu/2026/ai-models-simulate-wider-range-of-real-world-scenarios-0810" target="_blank" rel="noopener">MIT News（2026年8月10日）</a>
+      ／
+      <a href="https://www.csail.mit.edu/news/feel-physics-ai-models-simulate-wider-range-real-world-scenarios" target="_blank" rel="noopener">MIT CSAIL</a>
+    </div>
+    <div class="comment">「物理を第三のモダリティとして扱う」という発想は、テキスト・画像で培った基盤モデルの手法を工学シミュレーションへ展開する試みとして興味深い。ラベルデータ削減の実利は大きいが、実際の工業設計プロセスへの組み込みには追加の精度検証が必要になりそうだ。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 ／ <a href="../index.html">アーカイブ一覧へ</a></p>
+  </div>
+</div>
+
+</body>
+</html>
