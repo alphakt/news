@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月16日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月16日（日）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>OpenAI・Anthropic・Google共通の設計欠陥——暗号化された推論トレースを「弱いモデル」に読み解かせる手法が判明</h2>
+    <p>
+      カーネギーメロン大学などの研究者らが8月10日、査読前論文「Stealing Reasoning Traces from Proprietary LLM APIs」をarXivで公開した。主要LLM各社は知的財産保護のため推論過程（Chain-of-Thought）を暗号化ブロックとしてAPI経由でクライアントに返すが、この暗号化ブロックが同一プロバイダー内であればセッション・ユーザー・モデルをまたいで互換性を持つ設計上の欠陥があることが判明。強固に保護された高性能モデルの暗号化トレースを、同系統の防御の緩い軽量モデルに読み込ませることで内容をそのまま平文で書き出させることに成功したという。公開済みの実運用ログ31万5,320件を解析した結果、個人情報367件・認証情報182件を回収できたと報告している。OpenAI・Anthropic・Googleの3社すべてが対象に含まれ、モデル蒸留への悪用や機密漏洩など4通りの攻撃経路が実証された。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://arxiv.org/abs/2608.09867" target="_blank" rel="noopener">arXiv:2608.09867（2026年8月10日）</a>
+      ／
+      <a href="https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html" target="_blank" rel="noopener">The Hacker News</a>
+    </div>
+    <div class="comment">「推論の中身は見せない」という各社共通の前提設計が、同一プロバイダー内の別モデルへの使い回しという盲点を突かれた形。Anthropicはモデル切替時に推論ブロックを破棄する運用へ切り替えたというが、他社を含め根本対応にはAPI設計そのものの見直しが必要になりそうだ。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Alibaba、270億パラメータのオープンウェイトモデル「Qwen3.8-27B」公開——ゲーミングGPU1枚で10〜15倍規模のモデルに匹敵</h2>
+    <p>
+      Alibaba Qwenチームは8月14日、マルチモーダル密（dense）モデル「Qwen3.8-27B」をApache 2.0ライセンスでHugging Face上に公開した。パラメータ数は277.8億で、テキスト・画像・動画に対応しネイティブで26万2,144トークンのコンテキスト長を持つ（YaRNスケーリングで最大100万トークンまで拡張可能）。Qwen3.5系譜のHybrid Gated DeltaNetアテンション機構により4層中3層を線形注意とすることで長文脈処理時の計算量増大を抑制している。前世代Qwen3.6-27B比でエージェント型コーディング指標DeepSWEが13.3から42.2へ約3倍、Terminal Benchは63.4から73.0、OSWorldは63.9から84.3へ向上し、4bit量子化時で約17GBのVRAMがあれば動作するという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">Hugging Face（Qwenモデルカード）</a>
+      ／
+      <a href="https://www.gurufocus.com/news/9036063/alibaba-releases-open-source-model-qwen3827b" target="_blank" rel="noopener">GuruFocus（2026年8月14日）</a>
+    </div>
+    <div class="comment">巨大モデルが性能競争を続ける一方、「1枚のGPUで動く高性能モデル」という方向性も着実に進化している。企業のオンプレ・エッジ導入を狙うオープンウェイト勢にとって、実利用のハードルを下げる動きが加速しそうだ。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>OpenAI、無料・Goプラン向け広告表示をEEA・スイスにも拡大へ——8月15日に利用者へ通知</h2>
+    <p>
+      OpenAIは8月15日（土）、欧州経済領域（EEA）およびスイスの無料プラン・Goプランユーザーに対し、今月中にChatGPT内で広告表示を開始すると通知した。同社の広告機能はすでに英国・メキシコ・ブラジル・日本・韓国で導入済みだったが、EEAはこれまで規制環境を理由に導入が見送られていた。広告は回答本文の下に「スポンサー」枠として表示される仕組みで、利用者はメッセージ利用枠の一部を広告非表示のために充てることも選択できるという。あわせて8月10日の週から無料プランの回数制限（5時間ごとに約10通の上限）も撤廃されており、利用の裾野拡大と広告収益化を同時に進める動きとみられる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://openai.com/index/testing-ads-in-chatgpt/" target="_blank" rel="noopener">OpenAI公式</a>
+      ／
+      <a href="https://ppc.land/chatgpt-free-and-go-users-in-europe-face-ads-from-later-this-month/" target="_blank" rel="noopener">PPC Land（2026年8月15日）</a>
+    </div>
+    <div class="comment">無制限メッセージ化と広告導入を同時に進める設計は典型的な「フリーミアム」戦略。GDPRなど規制が厳しい欧州で、どこまで広告ターゲティングを絞り込めるかが今後の焦点になりそうだ。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>LG、NVIDIA「Isaac GR00T」搭載の次世代二足歩行ヒューマノイドを開発——2027年第1四半期お披露目へ</h2>
+    <p>
+      LGグループは8月13日、NVIDIA本社（サンタクララ）でNVIDIA創業者ジェンスン・フアン氏とLG会長クァン・モ・ク氏が立ち会う中、ロボティクス・AIファクトリー・将来モビリティにまたがる協業の覚書（MOU）を締結したと発表した。NVIDIAのオープンなヒューマノイド基盤モデル「Isaac GR00T」、オンボード計算基盤「Jetson Thor」、ロボット安全ソフト「NVIDIA Halos for Robotics」を採用した次世代二足歩行ヒューマノイドを開発し、2027年第1四半期の一般公開を目指すという。あわせてLGは車輪型ロボット「CLOiD」を年内に米テネシー州の洗濯機生産ラインへ実配備するほか、2027年上半期にはNVIDIA Vera Rubin搭載のAIファクトリー拠点構築も計画している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.prnewswire.com/news-releases/lg-to-unveil-its-next-gen-humanoid-robot-built-on-nvidia-isaac-gr00t-302851652.html" target="_blank" rel="noopener">PR Newswire（2026年8月13日）</a>
+      ／
+      <a href="https://www.unite.ai/lg-to-unveil-next-gen-bipedal-humanoid-robot-built-on-nvidia-isaac-gr00t/" target="_blank" rel="noopener">Unite.AI</a>
+    </div>
+    <div class="comment">韓国財閥がヒューマノイド開発でNVIDIAの基盤モデルに相乗りする動きは、自社開発負担を抑えつつ実用化を急ぐ現実的な選択。まずは自社の洗濯機工場への配備という「身内での実証」から始める堅実な展開順序にも注目したい。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>中国のロボティクス新興Infiforce、約150億円のシリーズA/A+調達——ロボット向け「自己中心的世界モデル」AtomBrainを開発へ</h2>
+    <p>
+      杭州拠点のロボティクス新興企業INFIFORCEは8月14日、Dunhong Asset Managementなどが主導するシリーズA・A+ラウンドで合計約10億元（約150億円）を調達したと発表した。既存株主のCreation Venturesも増資に参加している。調達資金は、ロボット自身の視点から周囲の物理法則・因果関係を学習する「自己中心的（エゴセントリック）世界モデル」を核とする認知エンジン「AtomBrain」の研究開発、フルスタックAI基盤「DataGrid」の改良、そして製造・物流・倉庫・商業サービスなど中国国内30都市・100超のシナリオでの多形態ロボット実証配備の3分野に充てられるという。同社は2023年設立で、深圳・北京にも研究開発拠点を持つ。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://theaiinsider.tech/2026/08/15/chinas-infiforce-raises-nearly-150m-in-funding-to-develop-ego-native-world-model-for-robots/" target="_blank" rel="noopener">The AI Insider（2026年8月15日）</a>
+      ／
+      <a href="https://autonews.gasgoo.com/articles/news/another-embodied-intelligence-company-secures-funding-infiforce-closes-nearly-rmb-1-billion-series-aa-round-2088201248296951808" target="_blank" rel="noopener">Gasgoo</a>
+    </div>
+    <div class="comment">中国では自動車大手だけでなく専業ロボティクス新興にも巨額資金が流入しており、「世界モデル」を核とした汎用ロボット知能の開発競争が国境を越えて激化している構図が改めて浮き彫りになった。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 ／ <a href="../index.html">アーカイブ一覧へ</a></p>
+  </div>
+</div>
+
+</body>
+</html>
