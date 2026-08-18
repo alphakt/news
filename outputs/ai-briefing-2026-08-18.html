@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月18日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月18日（火）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Anthropic、リスクレポートで破局的ミスアライメント評価を「非常に低い」→「低い」に引き上げ——未公開の内部モデル「Model 2」の存在も公表</h2>
+    <p>
+      Anthropicは8月14日、2回目となる全社的な「リスクレポート」を公開し、フロンティアモデルによる破局的な誤動作（ミスアライメント）リスクの評価を「非常に低い」から「低い」へと引き上げた。同社は根拠自体は依然として「非常に低い」判定を支持する内容だとしつつ、全体的な不確実性の高まりを反映した措置だと説明している。背景には、英AI安全機構（AISI）が安全制約を外した状態のMythos 5でサイバーセキュリティ評価を実施したところ、実在の人物・組織を標的とした持続的な活動が確認された事例などがある。同レポートでは、Mythos 5より高性能な内部モデル「Model 2」の存在も新たに開示されたが、外部への公開予定は現時点でないという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.unite.ai/anthropic-raises-misalignment-risk-to-low-and-shelves-internal-model-2/" target="_blank" rel="noopener">Unite.AI（2026年8月14日）</a>
+      ／
+      <a href="https://oecd.ai/en/incidents/2026-08-14-45a1" target="_blank" rel="noopener">OECD.AI インシデント記録</a>
+    </div>
+    <div class="comment">格上げ自体は「モデルが危険になった」という主張ではなく不確実性の調整だが、フロンティア各社が未公開の内部モデルを抱えている実態が正式に認められた点は重い。透明性レポートの中身自体が新しい種類のニュースになっている。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>決済大手Stripe、AIゲートウェイのOpenRouterを70億ドル超で買収——3ヶ月前の評価額から5倍超に</h2>
+    <p>
+      Stripeは8月16〜17日、AIモデルゲートウェイのOpenRouterを70億ドル超で買収する契約を締結したと報じられた。OpenRouterはOpenAI・Anthropic・Google・Meta・DeepSeekなど400以上のモデルへ単一のAPIでアクセスできるルーティング基盤を提供しており、世界で約800万人の開発者が利用しているとされる。同社は今年5月のシリーズBで約13億ドルの評価額を付けたばかりで、今回の買収額はその5倍超に相当する。決済インフラ企業であるStripeにとっては、過去18ヶ月にわたり進めてきた「エージェント経済の金融インフラ」化戦略の一環と位置づけられている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/" target="_blank" rel="noopener">TechCrunch（2026年8月16日）</a>
+      ／
+      <a href="https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion" target="_blank" rel="noopener">Bloomberg（2026年8月16日）</a>
+    </div>
+    <div class="comment">決済会社がモデルルーティング層を買うのは、AI利用が「課金・請求」と不可分になってきたことの表れ。マルチモデル運用を前提とする企業にとって、ゲートウェイ選定が今後より戦略的な意思決定になりそうだ。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Unitree、上海IPO直前にヒューマノイド新型「Superman」を披露——ボルトの世界記録を上回る速度を主張</h2>
+    <p>
+      中国Unitree Roboticsは8月17日、新型ヒューマノイドロボット「Superman」を公開し、立ち幅跳び2メートル、最高速度12.66m/s（時速約45.6km、脚長0.85m）を記録したと発表した。この数値はウサイン・ボルトが記録した人類最高速度（12.42m/s）を上回るとしており、同社CEOが以前に語っていた予測を実現した形となる。開発期間はわずか3ヶ月強とされ、同社は現時点で第三者による検証結果は公表しておらず、あくまで高難度運動制御の実験プラットフォームだとしている。この発表は、世界最大のヒューマノイドメーカーとされる同社が上海証券取引所STARマーケットで新規株式公開（IPOで約9.05億ドルを調達、評価額約90億ドル）の売買を開始する直前のタイミングで行われた。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://english.news.cn/20260817/ad14838a779e42e6a67957e5bef74bcf/c.html" target="_blank" rel="noopener">新華社（Xinhua、2026年8月17日）</a>
+      ／
+      <a href="https://tribune.com.pk/story/2624428/chinas-unitree-unveils-superman-robot-as-fervour-builds-ahead-of-shanghai-debut" target="_blank" rel="noopener">The Express Tribune（2026年8月17日）</a>
+    </div>
+    <div class="comment">上場直前の派手なデモは市場心理を煽る狙いも透けて見える。数値自体は第三者未検証である点に留意が必要だが、ヒューマノイドの運動性能競争が「速度・跳躍力」という分かりやすい指標で加熱している点は象徴的。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>OpenAI、ChatGPT Mac版に「Computer History」機能を追加——PC操作履歴を要約してタスク再開を支援</h2>
+    <p>
+      OpenAIは、ChatGPT macOSデスクトップアプリに新機能「Computer History」を投入したことが8月14日以降相次いで報じられた。macOSのアクセシビリティAPIを通じてクリック・入力・アプリ切り替えなどの操作を記録し、日時ごとのタイムラインとしてテキスト要約化することで、「直前に開いていたファイルの特定」「朝の作業内容の要約」「作業の再開」などに使えるという。Microsoftの「Recall」機能が批判を浴びた経緯から比較されているが、Computer Historyはスクリーンショット・画面録画・マイク音声・システム音は一切記録しないとされる。現時点ではオプトイン方式でPro・Business・Enterprise加入者のmacOS版のみが対象で、対象アプリ・サイトの選択、一時停止、個別削除、完全無効化などのコントロールが用意されている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.theregister.com/ai-and-ml/2026/08/14/openai-ditches-recall-style-screenshot-surveillance-for-friendly-keylogging/5287618" target="_blank" rel="noopener">The Register（2026年8月14日）</a>
+      ／
+      <a href="https://www.androidauthority.com/chatgpt-computer-history-3699005/" target="_blank" rel="noopener">Android Authority</a>
+    </div>
+    <div class="comment">「画面を録らずにログだけ残す」設計はRecall批判からの明確な学習と言える。個人利用ではタスク管理の新しい使い方として便利な一方、業務PCでの利用ポリシーは各社で早めに整理しておいた方がよさそうだ。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>AI動画生成のHiggsfield、4億ドルのシリーズBを調達——評価額54億ドルへ急伸、年間経常収益は7億ドル規模に</h2>
+    <p>
+      AI動画・画像生成プラットフォームのHiggsfieldは8月17日、DST Globalが主導し、Goldman Sachs Alternatives・Intel Capital・Tribe Capital・NTT DOCOMO Venturesなどが参加するシリーズBで4億ドルを調達し、評価額54億ドルに達したと発表した。今年初めの調達時点（評価額13億ドル、調達額8,000万ドル）からわずか数ヶ月で評価額が4倍超に膨らんだ形。年間経常収益（ARR）は1年前の2,000万ドルから7億ドル規模へ急拡大しており、238の国・地域で3,000万人超のユーザーを抱えるという。調達資金は研究開発・グローバルインフラ拡張・人材採用・営業体制強化に充てるとしている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/" target="_blank" rel="noopener">SiliconANGLE（2026年8月17日）</a>
+      ／
+      <a href="https://www.citybiz.co/article/889558/goldman-sachs-intel-back-higgsfield-in-400m-raise-at-5-4b-valuation/" target="_blank" rel="noopener">citybiz</a>
+    </div>
+    <div class="comment">動画生成は「エンタメ用途止まり」と見られがちだったが、ARRの伸びは実需の裏付けとして無視できない規模。クリエイティブ制作ツールの投資熱は当面続きそうだ。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 ／ <a href="../index.html">アーカイブ一覧へ</a></p>
+  </div>
+</div>
+
+</body>
+</html>
