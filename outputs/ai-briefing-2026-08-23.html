@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月23日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月23日（日）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Nvidia、AIサーバー価格を15%超値上げへ——メモリ高騰で「Vera Rubin」「Grace Blackwell」搭載機に波及</h2>
+    <p>
+      Nvidiaが主要顧客に対し、AIチップを搭載したサーバー製品の価格を多くのケースで15%超引き上げると通知したと報じられた。値上げは来年初頭に出荷予定のシステムから適用され、次世代の「Vera Rubin」プラットフォームや現行「Grace Blackwell」搭載機も対象に含まれる。背景にはHBM（広帯域メモリ）をはじめとするメモリ半導体価格の急騰があり、データセンター需要の急拡大でメモリ供給が逼迫していることが要因とされる。今回の値上げはNvidia単体にとどまらず、同社製品を組み込むサーバーメーカーやクラウド事業者のコスト構造全体に波及する見通しで、AIインフラ investment の採算計算に影響を与える可能性がある。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://fortune.com/2026/08/22/nvidia-customers-ai-related-price-hikes-15-percent-vera-rubin-grace-blackwell-chips/" target="_blank" rel="noopener">Fortune（2026年8月22日）</a>
+    </div>
+    <div class="comment">メモリ価格高騰がAIインフラ全体のコストを押し上げ始めた。GPU本体だけでなく周辺部材のボトルネックが次の焦点になりそうだ。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>OpenAI、GPT-5.6 SolのAPI価格を20%超引き下げ——Anthropic・中国勢との価格競争が激化</h2>
+    <p>
+      OpenAIは主力モデル「GPT-5.6 Sol」の開発者向け価格を今後3カ月間、20%超引き下げると発表した。標準的な短文脈のAPI利用では、入力100万トークンあたり5ドル→4ドル、出力は30ドル→20ドルに改定され、11月21日ごろまで適用される見込み。値下げはAPIに加えChatGPT WorkプランやCodexクレジットの一部にも及ぶ一方、ChatGPT Plus・Pro・Businessの通常サブスクリプション料金は据え置きとなる。7月末にもTerra・Lunaモデルの価格改定を行っており、1カ月足らずでの2度目の値下げとなる。Anthropicや中国発の低価格モデルとの開発者獲得競争が背景にあるとみられる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.business-standard.com/technology/tech-news/openai-cuts-developer-pricing-for-gpt-5-6-sol-model-by-more-than-20-126082200107_1.html" target="_blank" rel="noopener">Business Standard（2026年8月22日）</a>
+    </div>
+    <div class="comment">推論コストの値上げ圧力（Nvidia側）と提供価格の値下げ圧力（OpenAI側）が同時に進んでおり、モデル提供事業者の利幅は今後さらに圧縮されそうだ。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Anthropic、サイバー防御特化モデル「Claude Mythos 5」をClaude Securityに統合——3500万ドルの防御基金も創設</h2>
+    <p>
+      Anthropicは、これまで限られた検証済みの防御担当者にのみ提供してきたサイバー特化モデル「Claude Mythos 5」を、企業向け脆弱性スキャンサービス「Claude Security」に統合したと発表した。あわせて、オープンソースソフトウェアの脆弱性修正やスキャン自動化を支援する新基金「Defender Advantage Fund」を創設し、3500万ドル相当の利用クレジットを提供する。関連イニシアチブ「Project Glasswing」全体ではモデル利用クレジット最大1億ドル、直接寄付400万ドルを見込む。ユーザーがモデルへ直接アクセスできない形で「パッチ」や「警告」など限定的な出力のみ受け取る設計により、悪用リスクを抑えつつ防御能力を広げる狙いがある。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.unite.ai/anthropic-deploys-claude-mythos-5-in-security-tools-35m-open-source-fund/" target="_blank" rel="noopener">Unite.AI（2026年8月21日）</a>
+      /
+      <a href="https://www.marktechpost.com/2026/08/21/anthropic-brings-claude-mythos-5-to-claude-security/" target="_blank" rel="noopener">MarkTechPost（2026年8月21日）</a>
+    </div>
+    <div class="comment">攻撃者より先に防御側へ強力なモデルを届けるという発想は、サイバーAIの「使い方」における新しい応用領域を切り開くものだ。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Slack、チームとAIコーディングエージェントが共同作業する新機能「Slack Code」を発表</h2>
+    <p>
+      Slackは、Claude Code（Anthropic）・Devin（Cognition）・GitHub Copilot・Vercelのエージェントなど複数のAIコーディングエージェントを、専用のSlackチャンネルに直接組み込む新機能「Slack Code」を発表した。チームメンバーがチャンネル内でエージェントをタグ付けすると、そのタスク専用のコードチャンネルが作成され、メンバー全員が作業の進行をリアルタイムで確認・指示・レビューし、出荷前に承認できる。全てのSlackプランで利用可能だが、各パートナーエージェント自体の契約は別途必要となる。個人のターミナル内で完結していたAIコーディングを、チーム全体が見える「グループチャット」型の共同作業へ引き出す試みといえる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://venturebeat.com/orchestration/slack-wants-to-drag-ai-coding-out-of-the-terminal-and-into-the-group-chat" target="_blank" rel="noopener">VentureBeat（2026年8月21日）</a>
+      /
+      <a href="https://dataconomy.com/2026/08/21/slack-launches-code-for-ai-coding-collaboration/" target="_blank" rel="noopener">Dataconomy（2026年8月21日）</a>
+    </div>
+    <div class="comment">「コードは一人で書くもの」から「エージェントを交えてチームで見守るもの」へ——AIコーディングの利用スタイルが一段と社会化しつつある。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Nvidia、「中国向け専用AIチップを年内投入」との報道を否定</h2>
+    <p>
+      米メディアThe Informationが、Nvidiaが中国市場向けに調整した専用のLPU（言語処理向けプロセッサ）を年内に投入する計画があると報じたのに対し、Nvidiaは公式に否定した。同社広報担当者は「現在、中国市場でのLPU販売は行っておらず、ロードマップにも中国専用LPU製品は存在しない」とコメントしている。米中間では先端AI半導体の輸出規制を巡る駆け引きが続いており、Nvidiaは規制環境や政治情勢を注視しつつ中国市場向け製品戦略を調整してきた経緯がある。今回の否定表明は、憶測が先行しやすい米中半導体摩擦の機微さを改めて浮き彫りにした。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.manilatimes.net/2026/08/22/business/foreign-business/nvidia-denies-report-it-is-rolling-out-china-ai-chip-by-year-end/2409917" target="_blank" rel="noopener">The Manila Times（2026年8月22日）</a>
+    </div>
+    <div class="comment">真偽はどうあれ「中国専用AIチップ」という観測が出ること自体、輸出規制下でのビジネス機会を巡る市場の期待の高さを示している。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 6 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>北京で「世界人形機器人运动会」開幕控え、中国製ヒューマノイドロボットの実力不足が改めて浮き彫りに</h2>
+    <p>
+      北京で8月22日から26日にかけて開催される「世界人形機器人运动会（World Humanoid Robot Games）」を前に、中国のヒューマノイドロボット業界関係者からは、依然として人間の身体能力・器用さに追いついていないという率直な課題が語られている。北京で開催中の世界ロボット大会に合わせた業界関係者の発言によれば、ロボットが実演やデモの段階を超えて工場など実環境で安定稼働するには、安全性や新スキル習得の速度面でなお時間を要するという。生産面ではFigure 03が累計1,000台、AgiBotが累計15,000台に達するなど台数は着実に積み上がっているが、「量産できること」と「実用に耐えること」の間にはまだ距離がある。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.cnbc.com/2026/08/21/chinese-humanoid-robots-face-challenge-of-their-own-capabilities.html" target="_blank" rel="noopener">CNBC（2026年8月21日）</a>
+    </div>
+    <div class="comment">派手な大会や台数競争の裏で「実際に現場で使えるか」という地味な問いが最終的な勝敗を分けるだろう。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 ／ <a href="../index.html">アーカイブ一覧へ</a></p>
+  </div>
+</div>
+
+</body>
+</html>
