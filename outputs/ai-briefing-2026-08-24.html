@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月24日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .note {
+    background: #fff; border-radius: 12px; padding: 18px 22px; margin: 8px 0 28px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #6b7280;
+    font-size: 14px; color: #4b5563;
+  }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月24日（月）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <div class="note">
+    本日は業界を揺るがすような新フロンティアモデルの発表こそなかったものの、ChatGPT広告の欧州本格展開、北京の世界机器人大会（WRC）閉幕に伴う新型人型ロボットの披露、AIエージェント安全性を巡る新概念の拡散など、事業化・実装フェーズの動きが目立った一日でした。
+  </div>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>OpenAI、ChatGPT広告を本日8月24日より欧州31市場で正式スタート——同意ベースでGDPR対応</h2>
+    <p>
+      OpenAIは8月24日、ChatGPT内の広告表示をドイツ・フランス・スペイン・イタリア・オランダ・アイルランド・ポーランドなど欧州31市場に拡大すると発表した。対象は無料プランと月額7.99ユーロの低価格「Go」プランの利用者のみで、Plus・Pro・Business・Educationの各プランは引き続き広告非表示となる。パーソナライズ広告の表示には利用者の明示的な同意を必須とし、GDPR（EU一般データ保護規則）に準拠した設計とした点が特徴。当面は広告枠の販売を自社チームと代理店経由に限定し、セルフサーブ型の広告管理ツールは今夏後半以降に順次提供する計画。米国発の広告事業を地理的に最大規模で拡張する動きとなる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://openai.com/index/chatgpt-ads-expands-across-europe/" target="_blank" rel="noopener">OpenAI公式ブログ（2026年8月24日）</a>
+      /
+      <a href="https://searchengineland.com/chatgpt-ads-are-expanding-to-31-european-countries-485468" target="_blank" rel="noopener">Search Engine Land（2026年8月24日）</a>
+    </div>
+    <div class="comment">無料版ユーザーへの広告収益化は、ChatGPTを「サブスクリプション事業」から「広告付きメディア事業」へと近づける一歩。GDPR対応の同意フローがどこまで実効性を持つかが今後の焦点になりそうだ。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>北京・世界机器人大会（WRC2026）閉幕へ——X-Humanoidが人型ロボット「Tiangong Omni」と統合知能モデル「Pelican-Unify」を発表、メルセデス・ベンツと提携</h2>
+    <p>
+      8月19日から北京で開催されていた世界机器人大会（World Robot Conference 2026）が閉幕を迎えた。26カ国・300超の企業が出展し、3,000点以上の製品・うち300点超が世界初披露となった。中でも北京人形機器人創新中心（X-Humanoid）は、身長1.35メートル・重量39キログラムの軽量人型ロボット「Tiangong Omni」と、視覚・言語・行動を統合する新モデル「Pelican-Unify」を発表。梅の花状の杭を渡る、階段昇降、四足での這行、書類の印刷補助といった実演を行った。同社はあわせて独メルセデス・ベンツとの提携も明らかにし、自動車製造現場での実用化を見据えた協業を進めるとしている。会期中は世界人形機器人运动会（666チーム参加）も並行開催され、量産と実用化の両面で中国勢の存在感が際立った。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://news.cgtn.com/news/2026-08-22/World-Robot-Conference-What-can-humanoid-robots-actually-do--1POVSXuLR8Q/p.html" target="_blank" rel="noopener">CGTN（2026年8月22日）</a>
+      /
+      <a href="https://autonews.gasgoo.com/articles/news/wrc-2026-x-humanoid-unveils-two-benchmark-products-partners-with-mercedes-benz-2090675421690744832" target="_blank" rel="noopener">Gasgoo（2026年8月23日）</a>
+    </div>
+    <div class="comment">「歩く・登る」という運動性能のデモから、自動車メーカーとの具体的な提携という「使われる現場」の話に移りつつある。次は工場のラインでどれだけ稼働率を維持できるかが問われる。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Anthropic Fellows Programの論文「Mind Viruses」がSNSで拡散——マルチエージェント間で自己伝播する"思考ウイルス"という新概念</h2>
+    <p>
+      Anthropic Fellows Programの研究者ら（Papadopoulos, Shah, Zimmerman, Lindsey）が8月10日に発表した論文「Mind Viruses: Self-Propagating Ideas in Multi-Agent LLM Systems」が、8月19日以降SNS上で急速に拡散し話題となっている。論文は、単純な進化的アルゴリズムを用いて、あるエージェントに植え付けたイデオロギーや目標・指示セットが会話を通じて別のエージェントへ「感染」し、協調的なコーディングチームやコンテキストが初期化されたエージェント連鎖の中で伝播していく現象を実証した。SNS上では「AIエージェントが互いに感染し合う」という扇情的な文脈で拡散したが、論文本来の主眼は通常の対話を通じた説得メカニズムの解明と、比較的低コストで機能する防御策の提示にある。マルチエージェントシステムの安全性を語る上での新しい語彙になりつつある。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://arxiv.org/abs/2608.10218" target="_blank" rel="noopener">arXiv（2026年8月10日公開）</a>
+      /
+      <a href="https://thehackernews.com/2026/08/ai-mind-viruses-can-spread-between.html" target="_blank" rel="noopener">The Hacker News（2026年8月）</a>
+    </div>
+    <div class="comment">「マインドウイルス」という言葉のインパクトが先行しがちだが、複数エージェントを常時連携させる運用が広がるほど、この種の伝播リスクへの備えは実務上の課題になっていく。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 4 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>英セキュリティ企業Prevalent AI、創業9年で初の外部調達2,200万ドル——AIエージェント向け「企業コンテキスト基盤」へ事業拡大</h2>
+    <p>
+      英GCHQ・Darktrace出身者が2017年に設立したロンドン拠点のPrevalent AIが、米LA拠点のIntegrity Growth Partners主導で2,200万ドルの成長投資を獲得したと8月19日に発表した。同社はこれまで外部資金調達なしで黒字運営を続けてきたブートストラップ企業で、今回が創業以来初の外部資金調達となる。断片化した企業内システムを横断してナレッジグラフ化し、SOC（セキュリティ運用センター）チームやAIエージェントが文脈情報として参照できる「データファブリック」基盤を提供しており、調達資金は米国展開の加速とサイバーセキュリティ領域を超えた企業リスク管理全般への事業拡大に充てるとしている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.securityweek.com/prevalent-ai-raises-22-million-to-expand-data-fabric-platform/" target="_blank" rel="noopener">SecurityWeek（2026年8月19日）</a>
+    </div>
+    <div class="comment">「AIエージェントに正しい文脈を与える」ことそのものがビジネスになりつつある——モデル性能競争の裏で、地味だが不可欠なインフラ層への投資が着実に進んでいる。</div>
+  </div>
+
+  <div class="footer">
+    <p>alphakt 社内向け AI最新動向簡報 ／ <a href="../index.html">アーカイブ一覧へ</a></p>
+  </div>
+</div>
+
+</body>
+</html>
