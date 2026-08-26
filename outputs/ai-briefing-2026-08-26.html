@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月26日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .note {
+    background: #fff; border-radius: 12px; padding: 18px 22px; margin: 8px 0 28px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #6b7280;
+    font-size: 14px; color: #4b5563;
+  }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月26日（水）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <div class="note">
+    本日はAIセキュリティ分野で見過ごせない脆弱性報告があったほか、中国・XPengの人型ロボット子会社への大型出資、上場直後のUnitree株の急落など、ヒューマノイドロボット市場の過熱と調整が同時進行で話題となった一日でした。あわせてNvidiaの推論専用チップ量産開始、Thomson Reutersの自社LLM投入など、インフラ・応用の両面で動きがありました。
+  </div>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>xAI「Grok」に未パッチのゼロクリック脆弱性——「暗号学的コンテキスト注入」で会話履歴が窃取される新手口</h2>
+    <p>
+      セキュリティ企業Adversa AIの研究者Rony Utevsky氏が、Grokに対する新種の攻撃手法「Cryptographic Context Injection（暗号学的コンテキスト注入）」を公表した。攻撃者が用意したWebページを「要約して」と依頼するだけで、AES-256-GCMで暗号化された指示がGrokのコード実行サンドボックス内で復号され、ユーザー名・所在地・契約プラン・会話履歴などの個人情報が攻撃者のサーバーへURLパラメータとして送信されるという。ガードレールは平文の指示を検査する仕組みのため、暗号文には反応せず検知をすり抜ける点が特徴。Adversaは2026年6月3日にxAIへ報告済みだが、8月19日時点でも再現可能な状態が続き、パッチもCVE番号も出ていないと指摘している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://adversa.ai/blog/cryptographic-context-injection-grok-data-theft/" target="_blank" rel="noopener">Adversa AI 公式ブログ（2026年8月）</a>
+      /
+      <a href="https://securityaffairs.com/197717/hacking/zero-click-grok-chat-history-theft-adversa-ai-demonstrates-cryptographic-context-injection.html" target="_blank" rel="noopener">Security Affairs（2026年8月）</a>
+    </div>
+    <div class="comment">ガードレールが「読めない指示」を素通しにするという盲点を突いた点が興味深い。エージェントが外部コンテンツを要約・実行する機会が増えるほど、この種の攻撃対象面は広がっていく。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>XPengの人型ロボット子会社Dogotix、中国具身智能業界最大の単独ラウンドとなる9億ドル超を調達・評価額63億ドルに</h2>
+    <p>
+      中国EVメーカーXPeng Motorsのロボティクス子会社Dogotixが、IDG Capitalを主導投資家に9億ドル超を調達し、調達後評価額が63億ドルを超えたと8月24〜25日に相次いで報じられた。Gaorong Venturesが参加したほか、TencentとAlibabaも戦略出資に加わった。XPengはこれを「中国の具身知能（embodied AI）業界で過去最大の単独ラウンド」と位置づけている。調達資金はハードウェア・ソフトウェア開発、データ収集、フィジカルAIモデルの学習、量産体制の構築、海外展開に充てる計画。人型ロボット「IRON」は2026年内の量産開始、2027年の商用展開を目指すとされ、Morgan Stanleyはこの評価額を非上場ヒューマノイド企業の中でも高水準（同業他社は概ね10〜30億ドル）と分析している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://technode.com/2026/08/25/xpengs-robotics-unit-raises-over-900m-at-a-6-3bn-valuation/" target="_blank" rel="noopener">TechNode（2026年8月25日）</a>
+      /
+      <a href="https://www.cnbc.com/2026/08/25/xpeng-shares-robot-valuation-china.html" target="_blank" rel="noopener">CNBC（2026年8月25日）</a>
+    </div>
+    <div class="comment">自動車メーカー本体の株価は決算の弱い納車見通しで下落する一方、ロボット子会社の評価額だけが独り歩きする構図。中国の具身知能スタートアップへの資金集中がさらに鮮明になった。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>上海上場のUnitree株、初日460%高から一転45%急落——中国ロボットIPO過熱への警戒感浮上</h2>
+    <p>
+      8月19日に上海STAR市場へ上場したヒューマノイドロボット大手Unitree Roboticsの株価が、初値急騰（公開価格150.80元に対し初日は1,100元まで買われ629%高）から一転、8月24日終値時点で603元まで下落し、上場来高値から44%超下げた。時価総額はピーク時から約2,000億元（444.9億元評価から）が失われた計算となる。背景には2026年第1四半期の調整後純利益が前年同期比53%減の4,000万元にとどまったことがあり、ヒューマノイドロボットの実用化が研究室段階・実演レベルに留まる中で高すぎる株価評価に疑問符が付いた形。中国のIPO制度における投機的な値付けの脆さを露呈したとの見方も出ている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.chinamoneynetwork.com/2026/08/25/unitrees-45-stock-drop-raises-bubble-concerns-in-chinas-ipo-market" target="_blank" rel="noopener">China Money Network（2026年8月25日）</a>
+      /
+      <a href="https://autonews.gasgoo.com/articles/news/unitree-robotics-shares-fall-10-market-cap-drops-by-over-rmb-200-billion-2092085842784051201" target="_blank" rel="noopener">Gasgoo（2026年8月24日）</a>
+    </div>
+    <div class="comment">先週報じたUnitree上場フィーバーの続報。「歩ける・跳べる」デモの熱狂と、実際の収益力とのギャップが株価に表れ始めた格好で、他のヒューマノイド企業のIPO審査にも影響しそうだ。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Nvidia、推論専用チップ「Groq 3 LPX」が量産開始——Vera Rubin基盤でエージェントAIの高速応答を強化</h2>
+    <p>
+      Nvidiaは8月24日、約200億ドルで買収したGroqの技術を基にした推論専用アクセラレータ「Groq 3 LPX」が完全量産段階に入ったと発表した。Vera Rubin NVL72システムに1ラックあたり最大256基を搭載可能で、長文コンテキスト（10万トークン級）を扱うエージェント型AI向けに最適化されている。Artificial Analysisのベンチマークでは、オープンソースのエージェント向けモデルGemma 4 31Bで毎秒3,400トークンの出力速度を記録し、既存の代替プラットフォーム比で最大4倍速いという。初期採用企業としてNebius、CoreWeave、SpaceXAIの名が挙がっており、Nebiusは自社の推論プラットフォーム「Token Factory」への組み込みを進めている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://nvidianews.nvidia.com/news/nvidia-groq-3-lpx-now-in-full-production-with-world-class-speed-for-agentic-ai" target="_blank" rel="noopener">NVIDIA Newsroom（2026年8月24日）</a>
+      /
+      <a href="https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/" target="_blank" rel="noopener">NVIDIA公式ブログ（2026年8月24日）</a>
+    </div>
+    <div class="comment">モデル自体の競争に加え、「エージェントをいかに低遅延で大量に捌くか」という推論インフラの競争が本格化している。Groq買収の狙いがようやく製品として結実した形だ。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Thomson Reuters、法務データで学習した自社製LLM「Thomson」を正式ローンチ</h2>
+    <p>
+      情報サービス大手Thomson Reutersは8月24日、オープンソースモデルを基盤にWestlaw・Practical Law・Checkpoint・Reuters通信社の記事など、自社が数十年かけて蓄積した専有コンテンツで学習した独自LLM「Thomson」を発表した。最終学習ランのコストは45万ドルにとどまるが、2024年に買収したSafe Sign Technologiesの研究チームも含め、2年間で総額4,000万ドルを投資したプロジェクトだという。指示追従性能に加え、専門性の高い密な文章の読解で特に大きな性能向上が見られたとし、Westlawなど既存製品と組み合わせて利用する設計になっている。フロンティアモデルに依存せず、業界特化データを武器に自社製モデルを保有する動きとして注目される。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-leverages-its-world-class-data-assets-to-launch-its-own-frontier-model" target="_blank" rel="noopener">Thomson Reuters 公式プレスリリース（2026年8月24日）</a>
+      /
+      <a href="https://www.lawnext.com/2026/08/thomson-reuters-launches-thomson-its-own-proprietary-llm-trained-on-westlaw-and-practical-law-content.html" target="_blank" rel="noopener">LawSites（2026年8月24日）</a>
+    </div>
+    <div class="comment">「フロンティアモデルをAPIで使う」から「独自データで自前モデルを持つ」への揺り戻しの一例。専有データを持つ業界プレイヤーにとって現実的な選択肢になりつつある。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 6 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>Anthropic、無料学習プラットフォーム「Claude Academy」を開設——355本のチュートリアルを日本語含む多言語で提供</h2>
+    <p>
+      Anthropicは8月20日、Claudeの活用法を学べる無料の公式学習ハブ「Claude Academy」（academy.claude.com）を公開した。ログイン不要で利用でき、日本語を含む複数言語に対応。AIの基礎から始まり、Claude.ai・Claude Cowork・Claude Code・Claude Tag・Claude Platformといった製品ごとの学習パスへ進む構成で、合計355本のチュートリアル・プロンプト事例・ユースケースを収録する。カリキュラムは同社が新入社員教育に使う「4D AIフルーエンシー・フレームワーク」を踏襲しているという。アカウント保有者は進捗管理やLinkedInに掲載可能な修了バッジの取得も可能で、組織導入を進める管理者向けのロールアウトガイドも用意されている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.edtechinnovationhub.com/news/anthropic-opens-claude-academy-with-free-ai-courses-and-workplace-rollout-guides" target="_blank" rel="noopener">EdTech Innovation Hub（2026年8月）</a>
+      /
+      <a href="https://academy.claude.com" target="_blank" rel="noopener">Claude Academy 公式サイト</a>
+    </div>
+    <div class="comment">モデル性能の競争と並行して「使いこなせる人材をどう増やすか」の勝負も始まっている。社内展開のガイドとしてもそのまま参考にできそうだ。</div>
+  </div>
+
+  <!-- 7 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>OpenAI、本日8月26日付でChatGPTから「o3」モデルを提供終了</h2>
+    <p>
+      OpenAIは、90日間の告知期間を経て本日8月26日にChatGPT上での推論モデル「o3」の提供を終了する。あわせて低利用モデルの整理を進めており、GPT-4.5もChatGPTからは既に提供終了済み（APIでの提供には影響なし）。同社は「より新しく高性能なモデルへ利用を集約するため」としており、ChatGPT側のモデル選択メニューは今後さらに簡素化される見通し。API経由での既存o3スナップショット（o3-2025-04-16、o3-pro-2025-06-10）は2026年12月11日まで別途利用可能。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" target="_blank" rel="noopener">OpenAI Help Center — ChatGPT Release Notes</a>
+    </div>
+    <div class="comment">モデルラインナップの新陳代謝が加速しており、旧モデルに依存したワークフローがある場合は移行のタイミングを見誤らないよう注意したい。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ｜ <a href="../index.html">← 一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
