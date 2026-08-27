@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月27日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .note {
+    background: #fff; border-radius: 12px; padding: 18px 22px; margin: 8px 0 28px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #6b7280;
+    font-size: 14px; color: #4b5563;
+  }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月27日（木）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <div class="note">
+    本日はAI推論インフラの競争が一段と鮮明になった一日でした。OpenAIが自社開発の推論チップでNvidiaを性能面で上回るベンチマークを公表した一方、DeepSeekは巨額の新規資金調達と上海IPOへの布石を進めています。Amazonが21年続いたMechanical Turkの終了を発表するなど、AIが人手仲介市場を置き換えていく構造変化も進行中です。北京では世界人形ロボット競技会が閉幕し、韓国のAIスタートアップWrtnはシリーズC調達を発表しました。
+  </div>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>OpenAI、自社開発の推論専用チップ「Jalapeño」を発表——NvidiaのBlackwell・Rubin世代を性能で上回ると主張</h2>
+    <p>
+      OpenAIは8月25日、米サンフランシスコで開催されたHot Chipsカンファレンスで、Broadcomとシリコン・ネットワーキングを共同開発し、Celesticaがシステム統合を担う初の自社製推論専用チップ「Jalapeño」を発表した。SemiAnalysisの公開ベンチマーク「InferenceX」（一部は現地でSemiAnalysisが検証）を用い、GPT-OSS 120B・DeepSeek R1 670B・Kimi K2.5 1Tの3モデルでテストした結果、消費電力あたりの処理性能でNvidiaのBlackwell・Rubin世代の商用最良システムを1.5〜1.9倍上回り、レイテンシも1.7〜3.6倍低いと主張している。あくまで推論専用で学習用途はカバーせず、量産は2026年末に少量から開始予定。Nvidiaの次世代Vera Rubinとの比較はまだ行われていない。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.cnbc.com/2026/08/26/openai-jalapeno-ai-chip-nvidia.html" target="_blank" rel="noopener">CNBC（2026年8月26日）</a>
+      /
+      <a href="https://the-decoder.com/openais-first-custom-chip-jalapeno-reportedly-beats-nvidias-blackwell-and-rubin-in-inference-benchmarks/" target="_blank" rel="noopener">THE DECODER（2026年8月25日）</a>
+    </div>
+    <div class="comment">モデル開発企業自らが推論チップを持つ流れが、OpenAIにも本格的に及んだ形。Nvidia依存を減らしたい思惑は明確だが、量産はまだ先で、当面はGPU需要への実質的な影響は限定的とみるべきだろう。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>DeepSeek、評価額740億ドル規模の新規資金調達が完了間近——上海STAR市場への上場に布石</h2>
+    <p>
+      中国・DeepSeekは、創業者梁文峰氏の発言漏洩を巡るトラブルで一時中断していた約80億ドル規模の資金調達ラウンドを再開し、8月26日時点で調達完了が近づいていると報じられた。想定される調達後評価額は約740億元換算で740億ドル前後（人民元換算で約5,000億元）。中国国家AIファンドやNetEase、JD.com、IDG Capitalなどに加え、Monolith Managementが新たに参加候補として交渉中とされる。同社はすでに上海STAR市場への上場準備を内部で進めており、年内の申請を目標としているという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://techstartups.com/2026/08/26/top-tech-news-today-august-26-2026-amazon-anthropic-google-microsoft-waymo-more/" target="_blank" rel="noopener">Tech Startups（2026年8月26日）</a>
+      /
+      <a href="https://www.bloomberg.com/news/articles/2026-08-06/deepseek-resumes-8-billion-round-with-monolith-in-the-running" target="_blank" rel="noopener">Bloomberg（背景記事）</a>
+    </div>
+    <div class="comment">オープンウェイトモデルで世界的な存在感を示したDeepSeekが、今度は資本市場でも米国勢と競う規模に近づいている。IPOが実現すれば中国AI企業の資金調達モデルの転換点になりそうだ。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Amazon、21年の歴史を持つ「Mechanical Turk」を9月30日で終了——AI学習データ調達市場の構造変化を象徴</h2>
+    <p>
+      Amazonは、2005年に開始したクラウドソーシング労働市場「Mechanical Turk」を2026年9月30日で終了すると発表した。データラベリングや音声・動画の書き起こし、アンケート回答など小口タスク（Human Intelligence Tasks）を扱う同サービスは近年投資が縮小し、Scale AIやMercor、Prolificといった新興のデータラベリング企業にワーカーが流出していたという。同時にSageMaker Ground TruthとAmazon Augmented AIも同日で終了し、Amazonは人手によるデータ収集インフラ事業から事実上撤退することになる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.cnbc.com/2026/08/25/amazon-service-that-jeff-bezos-called-artificial-ai-is-shutting-down.html" target="_blank" rel="noopener">CNBC（2026年8月25日）</a>
+      /
+      <a href="https://techstartups.com/2026/08/26/top-tech-news-today-august-26-2026-amazon-anthropic-google-microsoft-waymo-more/" target="_blank" rel="noopener">Tech Startups（2026年8月26日）</a>
+    </div>
+    <div class="comment">ベゾス氏が「人工的な人工知能」と呼んだサービスの終焉は象徴的。AIモデルの学習データ調達自体がAIネイティブな専門企業へ移り変わっていることを示す一件だ。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>第2回世界人形ロボット競技会が北京で閉幕——16カ国666チーム・2,056台のロボットが参加</h2>
+    <p>
+      北京の国家速滑館（アイスリボン）で8月22日から開催されていた「世界人形ロボット競技会（World Humanoid Robot Games）」が8月26日、5人制サッカーやフリースタイル格闘の決勝を経て閉幕した。前回2025年大会から規模を大幅に拡大し、51競技・1,301セッションに16カ国から666チーム・2,056台のロボットが参加。100m走はすべて完全自律制御（人間による操作なし）で実施され、綱引きや重量挙げなど新競技も初登場した。工場・ホテル・住宅・災害対応現場を模したシナリオ型競技も、シミュレーション環境から実環境へと移行している。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://news.cgtn.com/news/2026-08-22/What-to-expect-as-second-World-Humanoid-Robot-Games-set-to-open-1POkO95wrWo/p.html" target="_blank" rel="noopener">CGTN（2026年8月22日）</a>
+      /
+      <a href="https://robottoday.com/article/world-humanoid-robot-games-2026" target="_blank" rel="noopener">RobotToday（2026年8月）</a>
+    </div>
+    <div class="comment">参加ロボット数が前回から4倍に増え、自律走行の徹底や実環境シナリオへの移行など「見せ物」から「実用性の検証」へ競技の主眼が移りつつある印象だ。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>韓国AIスタートアップWrtn、シリーズCで約722億円規模の資金調達——評価額7,220億円超えで韓国AIサービス企業初の大台に</h2>
+    <p>
+      韓国のコンシューマー向けAIポータル運営企業Wrtn Technologiesは8月26日、Coreline VenturesやEugene Asset Managementなど新規投資家に加え、Goodwater Capital、Antler Global、Woori Venture Partners、韓国産業銀行など既存投資家が参加するシリーズCラウンドで約1,000億ウォン（約72.2百万ドル）を調達したと発表した。調達後評価額は1兆ウォン（約7.22億ドル）を超え、韓国のAIサービス系スタートアップとしては初めて大台に到達した。北米向けに展開したエンターテインメント製品「OOC」は展開から3カ月で月間売上高100億ウォンを突破し、海外売上が国内を上回ったという。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.koreatimes.co.kr/business/tech-science/20260826/wrtn-raises-72-mil-in-series-c-funding-round" target="_blank" rel="noopener">The Korea Times（2026年8月26日）</a>
+      /
+      <a href="https://www.bloomberg.com/news/articles/2026-08-25/korean-ai-startup-wrtn-raises-funds-at-870-million-value-to-fund-global-growth" target="_blank" rel="noopener">Bloomberg（2026年8月25日）</a>
+    </div>
+    <div class="comment">米中の巨大ラウンドが目立つ中、韓国発のコンシューマーAI企業が海外展開の実績を伴って評価額を積み上げた点が興味深い。エンタメ用途のAI製品でも十分な収益化余地があることを示している。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ｜ <a href="../index.html">← 一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
