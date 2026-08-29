@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年8月29日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年8月29日（土）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Nvidia、Hugging Faceを約129億ドルで買収へ——複数メディアが交渉最終段階と報道</h2>
+    <p>
+      Bloomberg、CNBC、Forbes、Fortuneなど複数メディアが8月26日から27日にかけて報じたところによると、NvidiaはオープンソースAIモデル共有プラットフォーム大手Hugging Faceを、評価額約129億ドル（約1兆9千億円）で買収する方向で交渉が最終段階に入っている。実現すればNvidia史上最大の買収案件となり、2020年のMellanox買収（69億ドル）や不成立に終わったArm買収案（400億ドル）の規模も上回る。ただし両社ともまだ正式発表しておらず、正式契約も締結されていないため交渉が破談する可能性も残る。実現すればNvidiaはチップ供給に加え、オープンソースAIモデルの配布・共有基盤というソフトウェア面のエコシステムも掌握することになる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.cnbc.com/2026/08/27/nvidia-hugging-face-acquisition.html" target="_blank" rel="noopener">CNBC（2026年8月27日）</a>
+      /
+      <a href="https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition/" target="_blank" rel="noopener">TechCrunch（2026年8月26日）</a>
+    </div>
+    <div class="comment">ハードウェアの覇者Nvidiaが、オープンソースAIの「配布網」そのものを手中に収めようとする動き。実現すれば開発者エコシステムの中立性が焦点になりそうだ。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>OpenAI・Anthropic・Google等100社超、AIサイバー攻撃急増に備えた共同防衛を呼びかける公開書簡</h2>
+    <p>
+      OpenAIとAnthropicが主導し、Google、Microsoft、Amazon、Cisco、Oracle、Cloudflare、CrowdStrike、Palo Alto Networksに加え、Capital One、Visa、Mastercard、General Motors、Shopifyなど業種を超えた100社以上が署名した公開書簡が8月27日付で発表された。書簡は「今後数カ月でAIを悪用したサイバー攻撃はより広範かつ高度化する」と警鐘を鳴らし、防御体制強化の「猶予期間は限られている」と指摘。フロンティアAI企業に対しては、防御側への責任あるモデルアクセス提供や、資金・トレーニング・実務支援の拡充を求めている。政府・技術企業・セキュリティ企業が連携し、社会インフラを支える企業への支援を急ぐよう訴えた。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.cnbc.com/2026/08/27/ai-cyber-defense-letter.html" target="_blank" rel="noopener">CNBC（2026年8月27日）</a>
+      /
+      <a href="https://www.thewrap.com/industry-news/tech/openai-open-letter-collective-action-cybersecurity-ai/" target="_blank" rel="noopener">The Wrap（2026年8月27日）</a>
+    </div>
+    <div class="comment">競合するAI企業同士が「攻撃能力の高度化に防御が追いついていない」と公に認めた形。生成AIによる攻撃の巧妙化は、防御側にも同じAIの活用を迫る段階に入りつつある。</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>Tencent Hunyuan、7700億パラメータのMoEモデル「Hy4 preview」をApache 2.0でオープンソース公開</h2>
+    <p>
+      Tencentは8月28日、次世代大規模言語モデル「Hy4 preview」をオープンソースで公開した。総パラメータ数7700億のうち実際に活性化するのは490億という混合エキスパート（MoE）構成で、コンテキスト長は100万トークンを超える。コーディングエージェントや複雑なツール利用を伴うワークフロー、計画立案から実行までを要する生産性タスクに強みを持つよう設計されている。ライセンスはApache 2.0で、Hugging Faceから重みを入手できるほか、Tencent CloudのAPIやOpenRouter経由でも利用可能。価格は入力100万トークンあたり0.834ドル。自社製品のWorkBuddyやCodeBuddyでは公開から2週間、無料で提供される。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://technode.com/2026/08/28/tencent-open-sources-hy4-preview-with-770b-parameters-and-a-1m-token-context/" target="_blank" rel="noopener">TechNode（2026年8月28日）</a>
+      /
+      <a href="https://huggingface.co/tencent/Hy4-preview" target="_blank" rel="noopener">Hugging Face（Tencent Hy4-preview）</a>
+    </div>
+    <div class="comment">中国発のオープンウェイトモデルが相次いで大規模化・長文脈化している。先日のZ.ai「GLM-5.3-Flash」に続きTencentも即座に追随し、オープンモデル競争は米中双方でさらに激化している。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Google、85言語対応の音声認識モデル「Gemini 3.5 Transcribe」をプレビュー公開</h2>
+    <p>
+      Googleは8月26日、新しい音声認識（Speech-to-Text）モデル「Gemini 3.5 Transcribe」をGemini APIのパブリックプレビューとして発表した。85以上の言語を自動検出し、会話中の多言語切り替え、話者識別、単語単位のタイムスタンプ付与、専門用語への適応にも対応する。第三者評価機関Artificial Analysisの計測では非ストリーミング時の平均単語誤り率2.6%、ストリーミング時4.0%を記録し、従来モデル「Chirp 3」比で最終書き起こしまでの時間を70%短縮したという。録音音声向けとライブ音声向けの2つのエンドポイントに分かれており、AndroidのGboard「Rambler」機能やmacOS版Geminiアプリへの実装が進み、Chrome対応も予定されている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/" target="_blank" rel="noopener">Google公式ブログ（2026年8月26日）</a>
+      /
+      <a href="https://www.marktechpost.com/2026/08/27/google-ai-releases-gemini-3-5-transcribe-a-speech-to-text-model-reporting-2-6-average-wer-across-85-languages/" target="_blank" rel="noopener">MarkTechPost（2026年8月27日）</a>
+    </div>
+    <div class="comment">音声認識は「精度」から「構造化されたテキストへの整形」という新しい価値基準に移りつつある。会議録や現場音声のテキスト化業務への実用インパクトは大きい。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>中国inclusionAI、投資業務に特化したMoEモデル「Ling 3.0 Flash Fin」を無料公開</h2>
+    <p>
+      中国のAI企業inclusionAIは8月27日、金融・投資分野に特化した大規模言語モデル「Ling 3.0 Flash Fin」を公開した。汎用モデル「Ling 3.0 Flash」をベースに、総パラメータ数1240億のうち実際に活性化するのはわずか51億という軽量な混合エキスパート（MoE）構成をとる。コンテキスト長は26万2,144トークンで、実運用の投資判断で求められる複数ステップにわたる長期的な計画・実行能力を重視しつつ、推論・コーディング・数学といった汎用能力も維持している。API利用料は現時点で無料に設定されており、OpenRouterやHugging Face経由で入手できる。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free" target="_blank" rel="noopener">OpenRouter（Ling 3.0 Flash Fin）</a>
+      /
+      <a href="https://huggingface.co/inclusionAI/Ling-3.0-flash" target="_blank" rel="noopener">Hugging Face（inclusionAI）</a>
+    </div>
+    <div class="comment">汎用モデルの巨大化競争とは別に、業界特化型モデルを無償投入する動きが目立ち始めている。金融のような専門領域では、軽量かつ実務特化のモデルにこそ勝機があるのかもしれない。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ｜ <a href="../index.html">← 一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
