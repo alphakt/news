@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年9月2日号 | alphakt</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 80px;
+    font-size: 16px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 56px 24px 48px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 30px; letter-spacing: 1px; margin-bottom: 10px; font-weight: 900; }
+  .header .date-label { font-size: 19px; opacity: 0.93; margin-bottom: 6px; font-weight: 700; }
+  .header p { font-size: 14px; opacity: 0.80; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .back-link {
+    display: inline-block; margin: 24px 0 12px;
+    color: #4338ca; text-decoration: none; font-size: 14px; font-weight: 600;
+  }
+  .back-link:hover { text-decoration: underline; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    margin: 36px 0 16px; padding: 14px 20px;
+    border-radius: 10px; font-size: 17px; font-weight: 800; letter-spacing: 0.5px;
+  }
+  .section-header.high   { background: #fef2f2; border-left: 6px solid #dc2626; color: #991b1b; }
+  .section-header.medium { background: #fff7ed; border-left: 6px solid #ea580c; color: #9a3412; }
+  .section-header.low    { background: #f0f9ff; border-left: 6px solid #0284c7; color: #075985; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 26px 28px;
+    margin-bottom: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 6px solid transparent;
+  }
+  .card.high   { border-left-color: #dc2626; }
+  .card.medium { border-left-color: #ea580c; }
+  .card.low    { border-left-color: #0284c7; }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 10px;
+    border-radius: 4px; margin-bottom: 10px; letter-spacing: 0.5px;
+  }
+  .badge.high   { background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; }
+  .badge.medium { background: #fff7ed; color: #ea580c; border: 1px solid #fdba74; }
+  .badge.low    { background: #f0f9ff; color: #0284c7; border: 1px solid #7dd3fc; }
+  .card h2 { font-size: 18px; font-weight: 800; color: #1a1f2e; margin-bottom: 14px; line-height: 1.55; }
+  .card p  { font-size: 15px; color: #374151; margin-bottom: 14px; line-height: 1.85; }
+  .card .source { font-size: 13px; margin-bottom: 12px; }
+  .card .source a { color: #4338ca; text-decoration: none; font-weight: 600; }
+  .card .source a:hover { text-decoration: underline; }
+  .card .comment {
+    font-size: 14px; color: #6b7280; background: #f9fafb;
+    border-radius: 8px; padding: 10px 14px; border-left: 3px solid #d1d5db;
+    line-height: 1.75;
+  }
+  .card .comment::before { content: "💬 "; }
+  .note {
+    background: #fff; border-radius: 12px; padding: 18px 22px; margin: 18px 0 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #9ca3af;
+    font-size: 14px; color: #4b5563;
+  }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 48px; padding: 0 18px; }
+  .footer a { color: #6b7280; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🤖 AI最新動向簡報</h1>
+  <div class="date-label">2026年9月2日（水）</div>
+  <p>alphakt 社内向け — LLM・ロボティクス・新モデル・スタートアップ・新概念・新応用</p>
+</div>
+
+<div class="wrap">
+  <a class="back-link" href="../index.html">← 簡報一覧へ戻る</a>
+
+  <!-- ===== HIGH ===== -->
+  <div class="section-header high">🔴 重要度：高</div>
+
+  <!-- 1 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>「GenAI.mil」にGrok for Government、xAI社内エンジニアが「CSAM対策に確実な技術的解決策なし」と認めた後の展開が波紋</h2>
+    <p>
+      8月31日に本格稼働した米国防総省の統合生成AIポータル「GenAI.mil」にGrok for GovernmentとChatGPT Milが正式導入され、約300万人の軍人・文官のうち170万人超が既に利用登録済みと報じられた一方、xAI社内エンジニアが以前から「Grokの児童性的虐待コンテンツ（CSAM）生成問題には信頼できる技術的修正策がない」と認めていたことが改めて報じられ、国防総省がこのリスクをどう評価したかの説明責任を問う声が強まっている。加えてプロンプトインジェクションなど新たな攻撃面のリスクも専門家から指摘されている。なおAnthropicのClaudeは、トランプ政権がサプライチェーン上のリスクありと判断したため今回のポータルから除外された。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.techtimes.com/articles/326133/20260901/pentagon-deployed-grok-genaimil-after-engineers-said-csam-has-no-reliable-fix.htm" target="_blank" rel="noopener">Tech Times（2026年9月1日）</a>
+      /
+      <a href="https://defensescoop.com/2026/08/31/grok-chatgpt-added-to-genai-mil/" target="_blank" rel="noopener">DefenseScoop（2026年8月31日）</a>
+      /
+      <a href="https://fortune.com/2026/09/01/pentagon-chatgpt-grok-government-military-ai-members-pete-hegseth-defense-department/" target="_blank" rel="noopener">Fortune（2026年9月1日）</a>
+    </div>
+    <div class="comment">導入規模の大きさよりも「既知の未解決リスクを抱えたまま政府中枢に展開した」という点が本質的な問題。安全性評価プロセスの透明性が今後問われそうだ。</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card high">
+    <span class="badge high">重要度 高</span>
+    <h2>OpenAI、ChatGPT for HealthcareにEpic電子カルテ連携と公的医療データプラグインを追加——医療という新応用領域に本格参入</h2>
+    <p>
+      OpenAIは9月1日、医療機関向け「ChatGPT for Healthcare」に、大手電子カルテ（EHR）ベンダーEpic Systemsとの連携機能と、ClinicalTrials.gov・RxNorm・DailyMed・PubMedなど9つの公的医療情報源に接続する「Healthcare Public Data」プラグインを追加したと発表した。認可を受けた臨床医はEpicから検査結果・処方歴・専門医記録などの患者情報をChatGPT上に取り込んで要約でき、逆にEpicのカルテ画面内から直接ChatGPTを呼び出すことも可能。いずれも読み取り専用でカルテへの書き込みは行わない設計。サンフランシスコのUCSF Healthがパイロット導入パートナーとなっている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/" target="_blank" rel="noopener">OpenAI公式（2026年9月1日）</a>
+      /
+      <a href="https://techcrunch.com/2026/09/01/chatgpt-health-adds-epic-integration-for-clinicians-to-import-patient-data/" target="_blank" rel="noopener">TechCrunch（2026年9月1日）</a>
+    </div>
+    <div class="comment">「読み取り専用」という制約が現実的なリスク管理として妥当に見える。大手EHRとの正式連携は、生成AIが臨床現場のワークフローに入り込む上での大きな一歩。</div>
+  </div>
+
+  <!-- ===== MEDIUM ===== -->
+  <div class="section-header medium">🟠 重要度：中</div>
+
+  <!-- 3 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Meta「Muse Code」がベータを終了——サブエージェント制御盤とSDK、月額サブスクを新たに投入</h2>
+    <p>
+      Meta Superintelligence Labsは9月1日、ターミナル型コーディングエージェント「Muse Code」（Muse Spark 1.2搭載）を正式版に移行させたと発表した。新機能として、1つのタスクに多数のエージェントを展開しライブ監視・停止・保存ができる「/workflows」制御盤、開発者がMuse Code上に独自のエージェント製品を構築できる開発者プレビュー版SDK、同一マシン上のセッション間でメッセージを渡し合う機能などを追加。料金体系も月額5〜50ドルのサブスクリプションプランを新設した。Anthropic Claude CodeやOpenAI Codexに対抗する立ち位置を明確にしている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://developer.meta.com/ai/resources/blog/muse-code-new-plans-and-features/" target="_blank" rel="noopener">Meta for Developers（2026年9月1日）</a>
+      /
+      <a href="https://www.neowin.net/news/meta-graduates-muse-code-out-of-beta-with-new-features/" target="_blank" rel="noopener">Neowin（2026年9月1日）</a>
+    </div>
+    <div class="comment">「サブエージェントを束ねる制御盤」というUIの方向性は、Claude CodeのWorkflowsとも重なる。コーディングエージェント間の機能競争がUIレベルにも波及してきた。</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Figure AI、「Project Go-Big」を発表——Brookfieldの実住宅10万戸超を使い人間の動画からヒューマノイドを直接学習</h2>
+    <p>
+      ロボティクス企業Figureは、世界最大級のヒューマノイド事前学習データセット構築計画「Project Go-Big」を発表した。LLMと異なりロボット向けデータはインターネットから収集できないという課題に対し、不動産大手Brookfield（住宅10万戸超・商業施設約500万平方メートル・物流施設約1500万平方メートルを保有）と提携し、実際の生活空間で撮影した一人称視点の人間の行動映像を大規模収集する。同社のVision-Language-Actionモデル「Helix」に、ロボット固有の学習データを一切使わず人間の映像100%で学習させた結果、「冷蔵庫に行って」といった自然言語指示だけで散らかった室内を移動できるようになったとしている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.figure.ai/news/project-go-big" target="_blank" rel="noopener">Figure公式（2026年9月）</a>
+    </div>
+    <div class="comment">「ロボットデータはスクレイピングできない」という制約への回答として、不動産会社と組んで生活映像を大量取得する発想が斬新。物理世界データの調達競争という新しい局面に入った。</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Z.ai「GLM-5.3-Flash」を公開——GLM-5系初のネイティブ・マルチモーダルモデル、MITライセンスで無償公開</h2>
+    <p>
+      中国のZ.ai（智譜）は、GLM-5シリーズ初のネイティブ・マルチモーダルモデル「GLM-5.3-Flash」の重みをMITライセンスで公開した。パラメータ数は総計3200億・活性化180億で、疎注意（スパース）と線形注意を組み合わせたハイブリッドアーキテクチャを採用し、100万トークンの長文脈を低コストで処理できるのが特徴。コーディング・エージェントタスク・視覚推論のベンチマークで前世代GLM-5.2を上回り、コーディング内部評価ではClaude Opus 4.8に迫る性能としつつ価格は10分の1程度に抑えたという。9月9日まで入力・出力とも50%引きのキャンペーン価格を提供中。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://www.testingcatalog.com/z-ai-launches-glm-5-3-flash-under-mit-license/" target="_blank" rel="noopener">TestingCatalog（2026年8月）</a>
+      /
+      <a href="https://docs.z.ai/guides/vlm/glm-5.3-flash" target="_blank" rel="noopener">Z.ai公式ドキュメント</a>
+    </div>
+    <div class="comment">オープンウェイト・マルチモーダルモデルが最前線モデルの性能に「1/10のコスト」で迫るという構図が続いている。中国発オープンモデルの価格破壊圧力は根強い。</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="card medium">
+    <span class="badge medium">重要度 中</span>
+    <h2>Alibaba「Qwen3.8-Flash-Next」を公開——次世代Qwen4アーキテクチャの先行プレビュー</h2>
+    <p>
+      Alibabaは、次期主力モデル「Qwen4」のアーキテクチャを先取りしたオープンウェイトモデル「Qwen3.8-Flash-Next」を公開した。総パラメータ1250億のうち活性化はわずか60億という高効率なMixture-of-Experts構成で、GDN＋QSAのハイブリッド注意機構、ゲート付き残差接続、N-gram埋め込み、Muonオプティマイザなど複数の新技術を導入。前世代Qwen3.7-Plusのわずか9分の1の学習コストで、コーディングやオフィス業務タスクを中心に性能で上回ったとしている。開発者コミュニティがQwen4本体の登場に先立ちアーキテクチャに慣れるための「予告編」的リリースと位置付けられている。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://thenewstack.io/qwen38-flash-previews-qwen4/" target="_blank" rel="noopener">The New Stack（2026年8月）</a>
+      /
+      <a href="https://technode.com/2026/08/26/alibabas-qwen-to-open-source-qwen3-8-flash-next-previewing-qwen4-architecture/" target="_blank" rel="noopener">TechNode（2026年8月26日）</a>
+    </div>
+    <div class="comment">次世代モデルの正式リリース前に「アーキテクチャだけ先出しする」というやり方は珍しい。オープンウェイト先行者としてのエコシステム形成を意識した戦略に見える。</div>
+  </div>
+
+  <!-- ===== LOW ===== -->
+  <div class="section-header low">🔵 重要度：低</div>
+
+  <!-- 7 -->
+  <div class="card low">
+    <span class="badge low">重要度 低</span>
+    <h2>Anthropicの「Model Context Protocol（MCP）」が月間4億ダウンロード突破——ステートレス・コアへの大規模刷新も</h2>
+    <p>
+      AIエージェントと外部ツール・データを接続する標準規格「Model Context Protocol（MCP）」の月間SDKダウンロード数が4億件を突破し、2026年の1年間で4倍に伸びたことが分かった。2024年11月の公開から16か月後の時点では9700万ダウンロードだったことと比べると急拡大している。あわせて公開された仕様改訂版「MCP 2026-07-28」は、従来の双方向・セッション依存型モデルから、軽量なリクエスト／レスポンス型の「ステートレス・コア」へと設計を刷新する、規格発表以来最大級の変更となった。
+    </p>
+    <div class="source">
+      出典：
+      <a href="https://eu.36kr.com/en/p/3916379879861638" target="_blank" rel="noopener">36Kr（2026年8月）</a>
+    </div>
+    <div class="comment">「エージェントがツールを呼ぶ」ための配線規格が事実上の業界標準になりつつある。ステートレス化はエンタープライズでのスケール運用を見据えた地味だが重要な布石。</div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>alphakt 社内向け AI最新動向簡報 ｜ <a href="../index.html">← 一覧へ戻る</a></p>
+</div>
+
+</body>
+</html>
