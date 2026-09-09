@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年9月9日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年9月9日（水）｜alphakt 社内向け</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">
+      直近24〜48時間のAI関連動向を重要度別（高・中・低）に整理しました。各項目に一句要約・詳細・出典・コメントを付しています。本日はロボティクス分野で特筆すべき大きな新展開は確認できませんでした。
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>仏Mistral AI、サムスン主導で30億ユーロのシリーズDを調達——評価額210億ユーロ超、欧州テック史上最大の資金調達に</h2>
+      <p class="detail">
+        フランスのMistral AIは9月8日、サムスン電子が主導するシリーズDラウンドで30億ユーロ（約35億ドル）を調達したと発表した。ポストマネー評価額は210億ユーロ超となり、創業からわずか3年での達成としては欧州テック企業史上最大の株式調達と同社は説明している。EQTが運用する「Scaleup Europe Fund」やPSG Equityが共同リード、Advent、BlackRock運用ファンド、ルクセンブルク大公国なども新規参加した。調達資金はフロンティア研究の拡大、学習用計算資源の増強、インフラ整備と商用展開の加速に充てるという。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.hpcwire.com/aiwire/2026/09/08/mistral-raises-e3b-to-expand-ai-research-and-infrastructure/" target="_blank" rel="noopener">HPCwire / AIwire「Mistral Raises €3B to Expand AI Research and Infrastructure」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>米中の超巨額調達が続く中、サムスンという事業会社主導での欧州発「主権AI」への大型出資は象徴的。単なる財務投資を超えた事業提携の色が強そうだ。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>中国工業和信息化部、2030年までにAI計算力を4倍超の9800エクサフロップスへ拡大する国家計画を発表</h2>
+      <p class="detail">
+        中国工業和信息化部（MIIT）は9月8日、2026〜2030年の情報インフラ計画を公表し、国内の智能計算力を2030年までに9800エクサフロップスまで引き上げる目標を示した。今年6月時点の2185エクサフロップス（前年同期比177％増）から大幅な拡大となる。累計3.8兆元（約5320億ドル）規模の情報インフラ投資を掲げ、1万枚超のアクセラレータカードを備えたクラスターの「秩序ある展開」を求めるとしている。「東数西算」政策に基づき、既に1万枚級施設は52カ所が稼働済みという。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.scmp.com/tech/policy/article/3366733/china-targets-fourfold-boost-ai-computing-capacity-2030-major-tech-push" target="_blank" rel="noopener">South China Morning Post「China targets fourfold boost in AI computing capacity by 2030 in major tech push」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>国家レベルで計算資源の目標値を明示するのは中国らしい産業政策。米国の民間主導の投資競争とは異なる形で、AIインフラの地政学的な二極化が進んでいる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>ASMLとTSMC、High NA EUV向け「12インチ大型フォトマスク」への業界移行を主導する新イニシアチブ発表——Intel・Samsungも参加</h2>
+      <p class="detail">
+        ASMLとTSMCは9月8日、次世代の高開口数（High NA）EUV露光装置の生産性を最大限に引き出すため、従来の6インチから12インチへとフォトマスクの大型化を業界横断で進める新イニシアチブを発表した。目標は2031年までに12インチマスクのパイロットラインを、2033年までに先端ノード量産向けの完全な露光システムを整えることで、Intel FoundryとSamsung電子も参加を表明した。大型マスクによりスキャナーの生産性向上とスティッチング制約の解消、製造コスト低減が見込めるという。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.asml.com/en/news/press-releases/2026/tsmc-and-asml-announce-industry-transition-to-large-format-photomasks-for-high-na-euv" target="_blank" rel="noopener">ASML「TSMC and ASML Announce Initiative to Pioneer Industry Transition to Large-Format Photomasks for High NA EUV」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>AIモデルの進化を最終的に支えるのは半導体製造の地味な基盤技術。2031〜2033年という長期目標だが、フロンティアAIチップの供給余力を左右する動きとして注視したい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>OpenAI、「ChatGPT Work」に文体学習機能を追加——Gmail・Drive・Slack・SharePointと連携し、ユーザーの言い回しを再現</h2>
+      <p class="detail">
+        OpenAIは9月7日、法人向け「ChatGPT Work」に新機能を追加したと発表した。Gmail、Google Drive、Slack、SharePointなど連携済みのワーク関連コンテンツを解析し、ユーザー個人の言い回し・大文字小文字の使い方・フォーマット・文の硬さ・挨拶や締めの言葉といった執筆パターンを学習、以後の生成文に反映させる仕組み。セットアップはウェブ版の有償プラン利用者向けで、学習後のスタイルはウェブ・モバイル双方に適用されるという。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.businesstoday.in/technology/artificial-intelligence/story/openai-says-chatgpt-can-now-mimic-your-writing-style-from-emails-and-messages-heres-how-553866-2026-09-08" target="_blank" rel="noopener">Business Today「OpenAI says ChatGPT can now mimic your writing style from emails and messages」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「AIっぽい文章」問題への実務的な回答。個人の執筆データを学習に使う設計だけに、企業導入時はデータガバナンス面の確認も欠かせないだろう。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>PyTorch Foundation、Alibaba CloudとCambriconをプラチナ会員に、Ant Groupをゴールド会員に迎える</h2>
+      <p class="detail">
+        PyTorch Foundationは9月8日、上海で開催されたPyTorch Conference China 2026（KubeCon＋CloudNativeCon等との合同開催）にて、Alibaba CloudとCambriconのプラチナ会員入り、Ant Groupのゴールド会員入りを発表した。プラチナ会員の両社はガバニングボードおよび技術諮問委員会にそれぞれ1議席を得て、プロジェクトの技術方針や資源配分に直接関与する立場となる。Huaweiも含めた各社が基調講演に登壇し、オープンなAIスタック（チップ・オープンウェイトモデル・フレームワーク）について議論したという。
+      </p>
+      <div class="source">出典：
+        <a href="https://pytorch.org/blog/alibaba-cloud-ant-group-cambricon-and-huawei-come-together-in-shanghai-to-advance-the-open-source-ai-stack-at-pytorch-conference-china/" target="_blank" rel="noopener">PyTorch公式ブログ「Alibaba Cloud, Ant Group, Cambricon and Huawei Come Together in Shanghai to Advance the Open Source AI Stack」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>米中対立が続く一方、オープンソースの基盤フレームワークでは中国大手が着実に発言力を強めている。技術ガバナンスの多極化が進む一例。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>MiniMax、動画生成推論スタック「Sol-H3」を発表——「再生より速い生成」、5秒動画+音声をわずか1.653秒で生成</h2>
+      <p class="detail">
+        中国MiniMaxは9月8日、動画生成モデル「MiniMax-H3」向けの新推論スタック「Sol-H3」（NVIDIA Sol Engineベース）を発表した。8基のNVIDIA B300（Blackwell）構成のシステム上で、解像度1344×768・ステレオ音声付きの5秒動画をわずか1.653秒で生成できるとしており、動画の再生時間そのものより生成時間が短い水準に達したとアピールしている。NVIDIA研究チームとの共同最適化により、従来のH3推論比で大幅な高速化を実現したという。
+      </p>
+      <div class="source">出典：
+        <a href="https://nvlabs.github.io/Sana/Sol-Engine/Sol-H3/" target="_blank" rel="noopener">NVIDIA Research「Sol-H3: Speed-of-Light MiniMax-H3 on an 8× NVIDIA B300 Blackwell System」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「生成が再生より速い」はリアルタイム動画生成体験の一里塚。ベンチマーク環境（8×B300）の特殊性はあるが、推論最適化競争の激しさがうかがえる。</div>
+    </div>
+
+    <div class="footer">
+      alphakt 社内向け AI最新動向簡報｜情報は公開報道に基づき作成。内容の正確性には万全を期していますが、最終判断は一次情報でご確認ください。
+    </div>
+  </div>
+</body>
+</html>
