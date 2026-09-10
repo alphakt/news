@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年9月10日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年9月10日（木）｜alphakt 社内向け</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">
+      直近24〜48時間のAI関連動向を重要度別（高・中・低）に整理しました。各項目に一句要約・詳細・出典・コメントを付しています。
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>OpenAI「ナビエ・ストークス方程式の解」発表が一転、手柄争いの疑惑に——NYU数学者が「フェアでない扱いを受けた」と告発</h2>
+      <p class="detail">
+        OpenAIは9月8日、社内の未発表モデルがミレニアム懸賞問題の一つ「ナビエ・ストークス方程式の滑らかな解の存在」に関する反例（有限時間での爆発）を発見したと発表した。しかしその前夜、NYUのTristan Buckmaster氏とAnthropic所属の数学者Levent Alpoge氏が、同じくオイラー方程式の爆発証明（ナビエ・ストークス攻略への一歩とされる先行研究）をSNSで公表していたことが判明。Buckmaster氏は、OpenAIが直近1週間で両者の進捗を把握した上で同じ手法を採用したと主張し、さらに競合Anthropic所属を理由にAlpoge氏を著者から外すよう圧力を受け、公表をちらつかせた際には「キャリアを台無しにするつもりか」と言われたと告発した。OpenAI側の数学者Sébastien Bubeck氏はオイラー問題は独自に別手法で解いたと反論しつつ、ナビエ・ストークス本体の解法については両者と類似手法を用いたことを認めている。
+      </p>
+      <div class="source">出典：
+        <a href="https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/" target="_blank" rel="noopener">TechCrunch「OpenAI 'fought dirty' on career-making math problem, says NYU mathematician」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>AIによる数学的発見そのものの真正性より、成果を巡る研究倫理・著者権の攻防が焦点化した点が示唆的。フロンティア企業間の人材・成果の綱引きが学術コミュニティにも波及している。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Google DeepMind、ヒトゲノム全90億通りの一塩基変化を予測する「AlphaGenome Atlas」を無料公開——新たなAI応用領域の開拓</h2>
+      <p class="detail">
+        Google DeepMindは9月8日、ヒトゲノム上で理論上起こりうる約90億通りの一塩基変異（SNV）すべてについて、その分子レベルでの影響をあらかじめ予測・スコア化した無料の検索可能データベース「AlphaGenome Atlas」を公開した。昨年発表されたAI基盤モデル「AlphaGenome」（主に非コードDNA領域の遺伝子発現制御を解析）を用いて構築され、研究者はゲノム上の任意の位置を指定するだけで疾患関連性の可能性を即座に参照できる。既にBroad Instituteの研究者が希少疾患に関わるDNM1遺伝子の変異を特定したほか、UK Biobankの研究では非コード領域とBMIとの関連候補が従来比22%増で見つかったと報告されている。
+      </p>
+      <div class="source">出典：
+        <a href="https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/" target="_blank" rel="noopener">Google DeepMind公式ブログ「AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>LLM偏重の話題が続く中、AI基盤モデルがゲノム医学という具体的な新応用領域で実利用段階に入った好例。無料公開という点も研究コミュニティへの波及効果を高めそうだ。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Meta、決済まで代行する個人向けAIエージェント「Muse」を米国で提供開始——WhatsApp・単独アプリ・Webで利用可能</h2>
+      <p class="detail">
+        Metaは9月8日、メール送信・旅行予約・フォーム入力・買い物などをユーザーに代わって実行する個人向けAIエージェント「Muse」の提供を米国の18歳以上のユーザー向けに開始した。単独アプリ（iOS/Android）、ウェブ（muse.ai）、WhatsAppのいずれからでも利用可能で、今後Metaのスマートグラスにも対応予定という。アプリを閉じた後も長時間タスクを継続でき、メール送信や決済など機微な操作の前にはユーザーの承認を求める設計。決済にはStripeのウォレット「Link」を使い、都度使い切りのカード番号を発行することで実際のカード情報を加盟店に渡さない仕組みとした。料金は無料プランに加え月額20ドル・100ドルの有料プランを用意する。
+      </p>
+      <div class="source">出典：
+        <a href="https://tech.yahoo.com/ai/meta-ai/articles/meta-launches-muse-ai-agent-111420712.html" target="_blank" rel="noopener">Yahoo Tech「Meta launches Muse AI agent for email, travel, and purchases」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「決済まで自律実行するエージェント」がついに巨大SNSプラットフォームの標準機能として一般消費者に届く段階に。誤発注や不正利用対策の実運用がどこまで機能するか注目したい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Qualcomm、Amazon AWSと最大600億ドル規模の複数世代にわたるAI推論チップ共同開発契約——西側ハイパースケーラー初参入</h2>
+      <p class="detail">
+        Qualcommは9月8日、Amazon（AWS）とデータセンター向けカスタムAI推論チップおよび最大1.6Tbit/s級の光接続技術を共同開発する複数年・複数世代にわたる提携を発表した。契約にはベスティング条件付きで最大600億ドル規模の商取引が見込まれ、Amazonは行使価格161.26ドルでQualcomm株最大2,500万株を取得できるストックオプションを得た。売上計上は2027会計年度第1四半期（2026年12月期）から始まる見通し。データセンター向けカスタムシリコンで西側の主要ハイパースケーラーと初めて大型契約を結んだ格好で、発表を受けQualcomm株は一時9〜10%上昇した。
+      </p>
+      <div class="source">出典：
+        <a href="https://mlq.ai/news/qualcomm-amazon-announce-multi-generation-aws-inference-silicon-deal/" target="_blank" rel="noopener">MLQ.ai「Qualcomm, Amazon Announce Multi-Generation AWS Inference Silicon Deal」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>Nvidia・Broadcom一強だった推論チップ市場にQualcommが本格参入。AI電力・計算資源の争奪戦が半導体各社の合従連衡をさらに加速させている。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>コーディングAIのCognition、20億ドル調達で評価額480億ドルに——4カ月弱でほぼ倍増</h2>
+      <p class="detail">
+        自律型コーディングエージェント「Devin」を開発するCognitionは9月8日、シリーズEで20億ドル超を調達し評価額480億ドルに達したと発表した。Andreessen HorowitzとAccelが新規に主導し、Founders Fund、General Catalyst、NVIDIAなど既存・新規投資家が多数参加した。同社の年換算売上高は5月の前回調達時の4億9200万ドルから足元で9億ドル近くまで伸びており、社内予測では2026年末までに15億ドル超、2027年には40億〜50億ドルに達するとしている。4カ月前の評価額260億ドルからほぼ倍増した形で、基盤モデル企業以外のAIスタートアップとして最高水準の評価額となった。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.unite.ai/cognition-raises-over-2b-series-e-at-48b-valuation-to-scale-devin-agents/" target="_blank" rel="noopener">Unite.AI「Cognition Raises Over $2B Series E at $48B Valuation to Scale Devin Agents」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>コーディングエージェント市場の評価額インフレが続く。売上倍増ペースは実態を伴っているが、基盤モデル企業側の内製化圧力とどう向き合うかが今後の焦点になりそうだ。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Inception、拡散型LLM「Mercury 2.5」を発表——毎秒1,107トークンの生成速度で自己回帰型モデルに対抗</h2>
+      <p class="detail">
+        商用拡散型大規模言語モデル（diffusion LLM）のパイオニアであるInceptionは9月8日、最新モデル「Mercury 2.5」を発表した。従来モデルの「Mercury 2」比で知能面が40%向上し、標準的なNVIDIA GPU上で毎秒1,107トークンという高速生成を実現、性能面ではGPT-5.6 Luna（低推論）やGemini 3.5 Flashに匹敵するとしている。コンテキスト長は26万トークンで書籍500ページ相当を一度に処理可能。従来の自己回帰型モデルが1トークンずつ逐次生成するのに対し、拡散モデルは粗い出力からノイズを段階的に精緻化する仕組みで並列生成できるため、音声エージェントやコーディング支援、企業内検索など低遅延が求められる用途を主なターゲットに据える。API、Baseten、OpenRouter経由で利用可能。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.inceptionlabs.ai/blog/introducing-mercury-2-5" target="_blank" rel="noopener">Inception公式ブログ「Introducing Mercury 2.5」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>拡散型LLMが「速度で戦う」ニッチから徐々に実用品質に近づいてきた印象。低遅延用途での自己回帰型モデルとの棲み分けが今後どう進むか注視したい。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>DMM.com系Algomatic Dynamics、フィジカルAI特化で50億円を調達——AI多指ハンド基盤の国内公開を年内目標に</h2>
+      <p class="detail">
+        ロボティクス・フィジカルAIに特化するAlgomatic Dynamicsは9月9日、DMM.comを引受先とする初の外部資金調達により50億円を調達したと発表した。同社は2026年6月のAlgomaticグループ再編に伴い設立され、B2B事業は「Algomatic」、B2C事業は「KOWRO」、ロボティクス・フィジカルAIは同社が担う体制となっている。近い将来の主力製品として複数のロボット本体・用途に横断展開できるAI多指ハンド・プラットフォームを開発中で、日本国内での一般公開を2026年内に目指すという。調達資金はハードウェア研究開発、計算資源、企業・研究機関との提携推進に充てる計画。
+      </p>
+      <div class="source">出典：
+        <a href="https://prtimes.jp/main/html/rd/p/000000001.000186966.html" target="_blank" rel="noopener">PR TIMES「ロボティクスおよびフィジカルAI領域特化のAlgomatic Dynamicsが50億円の資金調達を実施し本格始動」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>ハードウェア本体ではなく「制御ソフトウェア層」で複数ロボットに横展開する狙いは合理的。日本発のフィジカルAIスタートアップとして年内の実製品公開に注目したい。</div>
+    </div>
+
+    <div class="footer">
+      alphakt 社内向け AI最新動向簡報｜情報は公開報道に基づき作成。内容の正確性には万全を期していますが、最終判断は一次情報でご確認ください。
+    </div>
+  </div>
+</body>
+</html>
