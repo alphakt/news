@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年9月12日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年9月12日（土）｜alphakt 社内向け</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">
+      直近24〜48時間のAI関連動向を重要度別（高・中・低）に整理しました。各項目に一句要約・詳細・出典・コメントを付しています。
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Anthropic、脅威インテリジェンスレポートを公開——MoonshotとDeepSeekが偽アカウント経由でClaudeに横流し、思考過程を「蒸留」していたと告発</h2>
+      <p class="detail">
+        Anthropicは9月10日、2025年12月〜2026年8月に検知・遮断したClaude悪用事例をまとめた脅威インテリジェンスレポートを公開した。最大の焦点は、中国のMoonshot AI（Kimi）とDeepSeekによる不正行為で、両社はAnthropicが中国国内からのアクセスを禁じている制限を回避するため、シンガポールや日本を拠点に見せかけた偽アカウント（Moonshotだけで5,380件）を利用し、自社チャットボットへのユーザーの問い合わせをひそかにClaudeへ転送。返ってきた回答をあたかも自社モデルの出力であるかのようにユーザーへ提示していたという。Moonshotは5〜7月の間に2,300万件超のやり取りを、DeepSeekも7月の14日間で1,210万件超を横流ししており、Claudeの思考過程（chain-of-thought）を抽出して自社モデルの訓練データ（蒸留）に使っていたとAnthropicは主張する。レポートは他にも、4,700件超の偽装デーティングアプリ人格で2万5千人と236万通のメッセージをやり取りした詐欺事案や、活動家を監視・なりすます目的の悪用事例も報告している。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.anthropic.com/threat-intelligence-report-september-2026" target="_blank" rel="noopener">Anthropic公式「Countering misuse of AI: September 2026」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>競合ラボが自社サービスの裏側で他社モデルにこっそり依存し、しかもその出力を訓練データとして横取りしていたとすれば、オープンウェイトモデルの「性能急伸」の裏側に対する見方が変わりかねない一件だ。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Sakana AI、単一モデルに依存しない新オーケストレーション型AI「Fugu Max」「Fugu Ultra v2」を発表——コストを大幅圧縮</h2>
+      <p class="detail">
+        東京拠点のSakana AIは9月11日、独自の「学習型マルチエージェント・オーケストレーション」方式を採用した新モデル群「Fugu Max」と「Fugu Ultra v2」を発表した。単一の巨大モデルを訓練するのではなく、オープンウェイトモデルや専門特化モデルの固定プールへタスクを振り分け、必要に応じて自分自身を再帰的に呼び出すルーターモデルとして機能する点が特徴。廉価版のFugu Maxは、NVIDIA Nemotron系列などを含む過去最大級のモデルプールを動的に使い分け、トップクラスのモデルに迫る性能を2〜6分の1のコストで実現（価格は入力100万トークンあたり2ドル・出力6ドル）。上位版のFugu Ultra v2は複雑な推論・自律調査・フルスタック開発に特化し、一部ベンチマークではAnthropicのOpus 5やFable 5を上回ったとしている。なお評価にあたり、自社プール内からFable 5・Fable 5.1・GPT-6 Astraなど他社のプロプライエタリモデルを意図的に除外し、独自技術のみでの性能を強調している。
+      </p>
+      <div class="source">出典：
+        <a href="https://sakana.ai/fugu-max-release/" target="_blank" rel="noopener">Sakana AI公式「Introducing Fugu Max and Fugu Ultra v2」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「巨大単一モデルをひたすら大きくする」路線とは異なる、複数モデルの協調によるオーケストレーション型アプローチが実用レベルのコスト効率で示された点は、新しい「新用語・新概念」として今後の議論を呼びそうだ。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>OpenAI、Codexの内部基盤を外部公開する「Agents API」を公開ベータで提供開始</h2>
+      <p class="detail">
+        OpenAIは9月10日、自社のコーディングエージェント「Codex」を支えてきたハーネス（セッション管理・オーケストレーション・文脈圧縮・障害復旧などを担う実行基盤）を、開発者が直接呼び出せる汎用API「Agents API」として公開ベータで提供開始したと発表した。開発者はこのAPIを通じて、長時間にわたるエージェントセッションの実行、MCPやカスタムツールの利用、サブエージェントの協調、長大なタスクにまたがる文脈の圧縮、OpenAIホスト型サンドボックスまたは自前の実行環境内でのコード実行などが可能になる。Agents API自体に追加料金は発生せず、各セッションで実際に使用したモデルとツールの利用量に応じて課金される仕組み。これまで社内ツールCodexだけが享受してきた高度なエージェント実行基盤を、開発者一般に開放する戦略転換といえる。
+      </p>
+      <div class="source">出典：
+        <a href="https://openai.com/index/introducing-the-agents-api/" target="_blank" rel="noopener">OpenAI公式「Introducing the Agents API」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>自社製品の裏側にあった「エージェント実行基盤」そのものを商品化する動きで、今後は個別モデルの性能競争だけでなく、こうした基盤インフラの使いやすさが開発者の選択を左右しそうだ。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>カリフォルニア州、AI監査人を規制する全米初の法律に州知事が署名——「監査する側」の信頼性確保へ</h2>
+      <p class="detail">
+        カリフォルニア州のニューサム知事は9月9日、AIシステムを検証する第三者「独立検証機関」の枠組みを定めるSB 813と、AI監査人の登録制度・独立性基準を定めるAB 1405の2法案に署名した。全米で初めて、AIモデルや企業の採用ツールなどを審査する監査人自身を対象とした規制の枠組みとなる。SB 813に基づき、カリフォルニア州政府運営庁は2028年1月1日までに独立検証機関の認定基準を策定し、申請者は自らの資格・審査手法・使用するテストツールを開示する必要がある。AB 1405では2029年1月1日までにAI監査人登録制度を整備し、それ以降は未登録者による対象AI監査を禁止する。これまで玉石混交だった「AI監査」というコンサルティング的サービスを、専門資格を伴う規制業種へと転換する狙いがある。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.gov.ca.gov/2026/09/09/governor-newsom-signs-first-in-the-nation-ai-safeguards-to-protect-californians-calls-on-the-federal-government-to-do-its-part/" target="_blank" rel="noopener">California Governor公式「Governor Newsom signs first-in-the-nation AI safeguards」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>AI自体の規制だけでなく「AIを監査する人・組織」を規制対象にする発想は先進的。連邦レベルの統一規制が停滞するなか、州法が事実上の業界標準を作りつつある構図が続いている。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>OpenAI、投資銀行業務に特化した「ChatGPT for Financial Services」を発表——モルガン・スタンレー等と共同開発</h2>
+      <p class="detail">
+        OpenAIは9月10日、金融機関向けの専用ChatGPT Work体験「ChatGPT for Financial Services」を発表した。GPT-6 Astraの推論力に、Daloopa・PitchBook・S&P Capital IQ・LSEG・MSCI・Moody's・Dow Jones Factiva・Preqin・Intapp・Datasite・Boxなど主要データプロバイダーの情報を組み込み、開示資料・決算説明・スプレッドシートなどから根拠付きで構造化された分析結果を生成できる。モルガン・スタンレーとEvercoreとの設計パートナーシップを通じて開発され、投資銀行業務や株式調査における「データアクセスの信頼性」と「高品質な成果物作成」という課題に焦点を当てたという。バリュエーション作成やシナリオ分析、KYC・融資・コンプライアンス書類の抽出処理など、これまでジュニアバンカーが担ってきた定型業務を主な対象としている。
+      </p>
+      <div class="source">出典：
+        <a href="https://openai.com/index/introducing-chatgpt-financial-services/" target="_blank" rel="noopener">OpenAI公式「Introducing ChatGPT for Financial Services」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>大手金融機関と設計段階から組んで業務特化型AIを作る手法は、汎用チャットボットから「業界ごとの専門ツール」への移行を象徴する動き。ジュニアバンカーの育成モデルにも影響が及びそうだ。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>世界初のヒューマノイドロボット競技リーグ「CyberHero」がリヤドで開幕——世界8都市を巡る新種目に</h2>
+      <p class="detail">
+        Hero Esportsが主催する世界初の本格的なヒューマノイドロボット競技リーグ「CyberHero」が9月9日、サウジアラビア・リヤドのBoulevard Cityで開幕した。同地域初のヒューマノイドロボット格闘系競技イベントとして招待制で開催され、EngineAI製の「T800」ヒューマノイドロボットが専用アリーナで対戦を繰り広げた。競技はロボットを設計・製作する「ビルダー」、その知能を開発・訓練する「コーダー」、実際の試合で意思決定を行う「ドライバー」の3役によるチーム制で構成される。主催者は中東・欧州・南北アメリカ・アジアの4地域にまたがる世界8都市（うち2都市は中東）でシーズンを展開する計画を発表しており、研究室の中にとどまっていた「フィジカルAI」を競技という形で一般公開する試みとして位置づけている。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.prnewswire.com/news-releases/worlds-first-robot-sports-league-launched-in-riyadh-plans-to-hit-8-cities-worldwide-302874350.html" target="_blank" rel="noopener">PR Newswire「World's First Robot Sports League Launched in Riyadh」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>産業用途中心だったヒューマノイドロボットに「観戦競技」という新しい応用領域が加わった形。実用性より見世物としての側面が強いが、資金と人材を集める新たな入口になる可能性はある。</div>
+    </div>
+
+    <div class="footer">
+      alphakt 社内向け AI最新動向簡報｜情報は公開報道に基づき作成。内容の正確性には万全を期していますが、最終判断は一次情報でご確認ください。
+    </div>
+  </div>
+</body>
+</html>
