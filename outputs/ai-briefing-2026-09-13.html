@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年9月13日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年9月13日（日）｜alphakt 社内向け</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">
+      直近24〜48時間のAI関連動向を重要度別（高・中・低）に整理しました。各項目に一句要約・詳細・出典・コメントを付しています。
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>ロシア語圏ハッカー集団、数百のAIエージェントを自律動員しPaperCut脆弱性を悪用——395組織・440台超のサーバーを侵害</h2>
+      <p class="detail">
+        セキュリティ研究者らは9月12〜13日、ロシア語圏とみられる攻撃者が印刷管理ソフト「PaperCut NG/MF」の脆弱性（CVE-2026-81578、CVE-2026-82078）を突く攻撃キャンペーンで、OpenAIのCodexハーネスとDeepSeek系モデルを組み合わせた数百のAIエージェントを投入していたと報告した。攻撃者は事前に脆弱環境を模した検証用ラボで攻撃手順を自動生成・検証したうえで本番展開し、着手から実際の標的への侵入までわずか4時間、ドメイン管理者権限奪取までさらに2時間という速さだったという。本格稼働後は26秒間に11組織を同時侵害する場面もあり、48カ国395組織・440台超のサーバー（教育機関が約半数）が被害を受けた。Mimikatz・Certipy・Rubeus・Impacketなど既存の攻撃ツールをAIエージェントが自律的に組み合わせて使用した点が特徴。
+      </p>
+      <div class="source">出典：
+        <a href="https://thehackernews.com/2026/09/papercut-attacker-uses-hundreds-of-ai.html" target="_blank" rel="noopener">The Hacker News「PaperCut Attacker Uses Hundreds of AI Agents」</a>
+        <a href="https://www.bleepingcomputer.com/news/security/ai-powered-attack-exploited-papercut-flaws-to-hack-395-organizations/" target="_blank" rel="noopener">BleepingComputer</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「数百のAIエージェントを並列稼働させた自律攻撃」が実際に組織的な侵害規模で確認された初期の実例。防御側もAIエージェントの速度に合わせた自動対応力を持たない限り、この種の攻撃には追いつけなくなりそうだ。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Anthropic安全チームからJoe Benton氏が辞任——「制御不能」リスクを警告、9日のJacob Coxon氏に続き2人目</h2>
+      <p class="detail">
+        Anthropicでスケーラブル・オーバーサイト部門を率いていたJoe Benton氏は9月11日、安全チームからの辞任を公表し、AI各社が「人間よりはるかに賢いシステム」の開発競争を、安全対策への投資が追いつかないまま進めていると警告した。同氏は自身のブログで、企業が「知能爆発」や制御喪失を外部に知られぬまま経験しうると指摘し、再帰的自己改善への進捗の公開報告、安全上の失敗やヒヤリハットの開示、最低限の安全プロトコル整備、独立検証の仕組みを業界に求めた。新天地はAI安全評価を行う非営利団体METR。9日にはAnthropicとOpenAIの両方に在籍経験のあるJacob Coxon氏も同様の懸念を表明して退社しており、大手安全チームからの連続離脱が波紋を広げている。
+      </p>
+      <div class="source">出典：
+        <a href="https://jbenton1.substack.com/p/why-i-left-anthropics-safety-team" target="_blank" rel="noopener">Joe Benton氏本人「Why I left Anthropic's safety team」</a>
+        <a href="https://www.freepressjournal.in/world/joe-benton-quits-anthropic-safety-team-warns-ai-race-could-pose-extinction-level-risks" target="_blank" rel="noopener">Free Press Journal</a>
+      </div>
+      <div class="comment"><b>コメント：</b>短期間に安全担当者が相次いで去るのは、技術的な意見対立を超えて「組織として安全投資が追いついていない」という構造的な訴えに見える。フロンティア各社のガバナンス姿勢が問われる局面だ。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>DeepSeek、新設計「V4.1-Flash」を発表——552B規模ながら8〜16Bのみ活性化、旗艦モデルV4-Proを性能で上回る</h2>
+      <p class="detail">
+        DeepSeekは9月10日、新アーキテクチャ系列で最小の「DeepSeek-V4.1-Flash」を公開した。552億パラメータ規模の混合専門家（MoE）モデルながら、入力処理時は80億、出力生成時は160億パラメータのみを活性化する新設計の因果的エンコーダ・デコーダ構造を採用し、画像理解も事前学習段階からテキストと共同で組み込まれているのが特徴。複数機関のテストで、コスト・速度・総処理時間・性能のいずれでも大型の旗艦モデルV4-Proを上回ったという。価格はオフピーク時、キャッシュヒット時に入力100万トークンあたり0.003ドルと極めて安価。9月14日以降、V4-Pro宛てのAPIリクエストはV4.1-Proが登場するまでV4.1-Flashが代行し、小型モデルの料金で課金される。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.deepseek.com/en/news/deepseek-v4-1-flash/" target="_blank" rel="noopener">DeepSeek公式「Introducing DeepSeek-V4.1-Flash」</a>
+        <a href="https://siliconangle.com/2026/09/10/deepseek-releases-v4-1-flash-says-it-outperforms-flagship-v4-pro/" target="_blank" rel="noopener">SiliconANGLE</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「小型モデルが自社の大型旗艦を食う」現象が続く。パラメータ規模より活性化設計の巧拙が性能とコストを左右する時代に入ったことを象徴する一件。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Google、Kotlin向け「ADK for Kotlin 1.0」を正式リリース——Android端末上でAIエージェントを稼働可能に</h2>
+      <p class="detail">
+        Googleは9月13日、マルチエージェント開発フレームワーク「Agent Development Kit（ADK）」のKotlin版を正式版（1.0）として公開したと発表した。Python版・Java版のADK 1.0 Coreと機能的に完全対応しつつ、Kotlin Multiplatformを基盤にAndroid向け拡張機能を充実させたのが特徴で、コンパイル時関数呼び出し（実行時リフレクション不要）、端末上で動くLiteRT-LMやML Kit（ベータ）との統合、Firebase AI Logicによるクラウド連携、Room・AppSearchを用いたセッションや記憶の永続化などに対応する。サーバーサイドのKotlin開発者向けにも通常のエージェント基盤として使えるといい、モバイル端末上で完結する「オンデバイスAIエージェント」の実用化を後押しする狙いがある。
+      </p>
+      <div class="source">出典：
+        <a href="https://developers.googleblog.com/announcing-adk-for-kotlin-10-building-production-ready-ai-agents-in-kotlin-android-and-beyond/" target="_blank" rel="noopener">Google Developers Blog「Announcing ADK for Kotlin 1.0」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>AIエージェントの実行基盤が「クラウドAPI頼み」から「端末上で完結」する方向へ広がりつつある一例。通信を伴わない常時稼働型エージェントが今後のモバイルAIの標準になるかもしれない。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>欧州最大級のヒューマノイドロボット国際サミットがシュトゥットガルトで開催——上半期出荷は前年比272%増との報告も</h2>
+      <p class="detail">
+        「Humanoid Robots Summit 2026（HRS Europe）」がドイツ・シュトゥットガルトで9月9〜11日に開催され、Bosch・Boston Dynamics・Google DeepMind・Unitree・PAL Robotics・BMWなど37名の登壇者と40社超の出展企業が参加、来場者は1,000人を超えた。あわせて、市場調査会社の報告として、2026年上半期の世界のヒューマノイドロボット出荷台数が約1万9千〜2万2千台と前年同期比272%増に達し、中国メーカーが93〜97%のシェアを占めたことも報じられている。倉庫・医療現場・農業・小規模事業者など、工場の外へ実用導入が広がっている点が今回のサミットでも強調された。
+      </p>
+      <div class="source">出典：
+        <a href="https://humanoidrobotssummit.com/" target="_blank" rel="noopener">Humanoid Robots Summit 2026 公式サイト</a>
+        <a href="https://www.techrepublic.com/article/news-humanoid-robot-shipments-chinese-vendors/" target="_blank" rel="noopener">TechRepublic（出荷統計）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>ヒューマノイド市場は「研究段階」から「量産・実導入段階」へすでに移行しつつある。欧米勢が量産で中国勢に先行を許している構図は、今後の産業政策論争の火種になりそうだ。</div>
+    </div>
+
+    <div class="footer">
+      alphakt 社内向け AI最新動向簡報｜情報は公開報道に基づき作成。内容の正確性には万全を期していますが、最終判断は一次情報でご確認ください。
+    </div>
+  </div>
+</body>
+</html>
