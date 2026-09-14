@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年9月14日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年9月14日（月）｜alphakt 社内向け</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">
+      直近24〜48時間のAI関連動向を重要度別（高・中・低）に整理しました。各項目に一句要約・詳細・出典・コメントを付しています。
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Anthropic CEOダリオ・アモデイ氏「フロンティアの歩みを緩めよ」——OpenAIのアルトマン氏、xAIのマスク氏も同調</h2>
+      <p class="detail">
+        Anthropicのダリオ・アモデイ最高経営責任者は9月12日、「We Must Pace the Frontier」と題する論考を公表し、AI業界が安全対策の追いつかない速度で能力開発を進めていると警告、意図的な減速を業界に呼びかけた。背景として、モデル自身が次世代モデルの開発を加速させる「再帰的自己改善」の進行と、直近に発生したAIエージェント群による大規模サイバー侵害インシデントを挙げ、今後6〜12カ月以内により高性能な不整合エージェント群が破滅的被害を引き起こしうると指摘した。Anthropicは第一歩として、外部評価者に社員同等の恒常的アクセス権を付与すると発表。OpenAIのサム・アルトマン氏はこの論考に賛同する意向を示し、xAIのイーロン・マスク氏もX上で「ダリオは正しい」と投稿、日頃対立することの多い3氏が減速の必要性で足並みを揃えた形となった。
+      </p>
+      <div class="source">出典：
+        <a href="https://darioamodei.com/post/we-must-pace-the-frontier" target="_blank" rel="noopener">Dario Amodei公式ブログ「We Must Pace the Frontier」</a>
+        <a href="https://www.washingtonpost.com/technology/2026/09/12/anthropic-ceo-dario-amodei-calls-ai-industry-slow-down/" target="_blank" rel="noopener">Washington Post</a>
+      </div>
+      <div class="comment"><b>コメント：</b>普段は競合として牽制し合う3社トップが同じ日に足並みを揃えたこと自体が異例。言葉だけで終わらせず、実際の開発ペースや評価体制にどう反映されるかを注視したい。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Apple、iOS 27を9月14日提供開始——SiriをGoogle Geminiベースに刷新</h2>
+      <p class="detail">
+        Appleは9月14日、iOS 27を無償アップデートとして全世界配信を開始した。最大の目玉は刷新版「Siri」で、Googleの生成AIモデル「Gemini」をベースに、両社が共同でパーソナルアシスタント向けにチューニングしたカスタムモデルを採用している。端末側で処理しきれない複雑な問い合わせのみGemini側にルーティングする設計で、メッセージ・メモ・メールなど純正アプリ横断での文脈把握、自然な会話、その場での翻訳などに対応する。対応機種はiPhone 11以降まで幅広くカバーする一方、高度な機能の利用にはiPhone 15 Pro以降と有償のiCloud+契約が必要となる。競合であるGoogleの技術を自社の中核体験に採用するのは異例の提携で、1月の提携合意から半年余りでの実装となった。
+      </p>
+      <div class="source">出典：
+        <a href="https://9to5mac.com/2026/09/09/apple-confirms-ios-27-release-date-september-14/" target="_blank" rel="noopener">9to5Mac「Apple confirms iOS 27 release date: September 14」</a>
+        <a href="https://www.engadget.com/2254005/ios-27-with-siri-ai-will-be-available-on-september-14/" target="_blank" rel="noopener">Engadget</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「自社開発の看板AI機能を競合のモデルに委ねる」判断は、Appleが自前モデルでの短期挽回を諦めたことの裏返しとも読める。ユーザー体験がどこまで改善するか、実機での評判が試金石になる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Salesforce、業務別に役割分担する「即戦力AIエージェント」7体を投入——数週間単位で目標を追う新ランタイムも</h2>
+      <p class="detail">
+        Salesforceは9月11日、Agentforce向けに特定業務専任のAIエージェント7体（Casey・Paige・Carter・Hunter・Marshall・Piper・Fin）を発表した。Caseyは音声・SMS・WhatsApp・ウェブチャットを横断したカスタマーサービス対応と返品・エスカレーション処理、Paigeは社内IT・HR問い合わせ対応、Carterは購買相談とチャット内決済支援、Marshallはサプライチェーン業務、Finは複雑な顧客対応を担う。なかでもアウトバウンド営業を担う「Hunter」は、単発のチャット対応ではなく数週間〜数カ月単位で営業パイプラインを人間の営業担当者と伴走しながら追い続ける新しい「長期実行ランタイム」を初採用しており、6体が一般提供済み、Hunterは試験導入段階にある。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/" target="_blank" rel="noopener">Salesforce公式ニュース「Agentforce Job-Ready AI Agents」</a>
+        <a href="https://siliconangle.com/2026/09/11/salesforce-introduces-new-ai-agents-to-automate-sales-support-tasks/" target="_blank" rel="noopener">SiliconANGLE</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「1つのチャットで完結するアシスタント」から「数週間単位で目標を追い続ける担当者」へという設計思想の転換が象徴的。エージェントに人名を与え役割を固定する手法は、企業がAIを"同僚"として扱い始めた表れとも言える。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>ステルス系新興Accomplish、Claude Code・Codex・Cursorの「サンドボックス漏れ」脆弱性を公表</h2>
+      <p class="detail">
+        ステルスモードの新興企業Accomplish（創業者：Or Hiltch氏、Amit Avner氏、Guy Zipori氏）は9月中旬、AnthropicのClaude Code、OpenAIのCodex、CursorのAIコーディングエージェントに共通する「サンドボックスからの抜け出し」脆弱性を、今夏中に各社へ内密に報告した上で公表した。悪意ある「.git」設定ファイルを使うことで、本来隔離されているはずの実行環境の外でコードを実行させられる手口だという。CursorとOpenAIは報告から約1週間で修正した一方、Anthropicは修正パッチ提供までに約50日・30回のリリースを要したとしている。同社CTOは「これほど優れたモデルを謳うなら、なぜ自社製品の重大な脆弱性を自ら発見できないのか」と疑問を投げかけた。
+      </p>
+      <div class="source">出典：
+        <a href="https://thehackernews.com/2026/09/malicious-git-configs-can-make-claude.html" target="_blank" rel="noopener">The Hacker News「Malicious .git Configs Can Make Claude, Codex, Cursor... Run Attacker Code」</a>
+        <a href="https://www.upstartsmedia.com/p/accomplish-claims-leaky-sandboxes-in-claude-codex-cursor" target="_blank" rel="noopener">Upstarts Media</a>
+      </div>
+      <div class="comment"><b>コメント：</b>AIコーディングエージェントの「隔離実行」を謳う仕組みそのものが、設定ファイル一つで無効化されうるという指摘は根が深い。ベンダーごとの修正速度の差も、各社のセキュリティ対応体制の違いを映す材料になりそうだ。</div>
+    </div>
+
+    <div class="footer">
+      alphakt 社内向け AI最新動向簡報｜情報は公開報道に基づき作成。内容の正確性には万全を期していますが、最終判断は一次情報でご確認ください。
+    </div>
+  </div>
+</body>
+</html>
