@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年9月15日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年9月15日（火）｜alphakt 社内向け</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">
+      直近24〜48時間のAI関連動向を重要度別（高・中・低）に整理しました。各項目に一句要約・詳細・出典・コメントを付しています。
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>UBTECH、広西・柳州に「ロボットがロボットを作る」ヒューマノイド量産工場を稼働開始——年産1万台超</h2>
+      <p class="detail">
+        中国のUBTECH（優必選）は9月12日、広西チワン族自治区柳州市で延床面積約1万4000平方メートルの産業用ヒューマノイドロボット「スーパースマート工場」の稼働を開始したと発表した。主力製品である「Walker S」シリーズと「Cruzr」シリーズの生産ラインを備え、1台あたり約10分というタクトタイムで組み立てる設計になっている。特徴は、生産ラインの一部工程自体をヒューマノイドロボットが担う「ロボットがロボットを作る」物流・組立体制と、シーメンス製デジタルツインソフトウェアによる工程管理で、年間1万台超の量産能力を目指すとしている。従来の実証実験段階から、実際の量産ラインへの移行を印象づける事例として報じられている。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.globaltimes.cn/page/202609/1370528.shtml" target="_blank" rel="noopener">Global Times「World's 1st 10,000-unit-scale industrial humanoid robot smart factory starts production」</a>
+        <a href="https://interestingengineering.com/ai-robotics/ubtech-starts-10000-unit-robot-factory" target="_blank" rel="noopener">Interesting Engineering</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「ヒューマノイドが実証段階を抜けたか」を測る指標は台数よりも量産ラインの有無だと思う。ロボットが自分自身の生産工程に組み込まれ始めた点は、コスト曲線が今後どこまで下がるかを占う材料になりそうだ。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Unitree、汎用ヒューマノイド「G1」を大幅刷新した新モデル「G1+」を発表</h2>
+      <p class="detail">
+        中国のUnitree Roboticsは9月14日、主力の汎用ヒューマノイドロボット「G1」を刷新した新モデル「G1+」を発表した。従来モデルの高いコストパフォーマンス路線を維持しつつ、（1）首の可動域拡大、（2）関節モーターの出力・放熱性能の強化、（3）視覚・触覚センサーによる知覚能力の向上、（4）バッテリー持続時間の改善、（5）遠距離での音声対話性能の向上など、運動性能・知覚と対話・インテリジェント体験の3分野にまたがる6つの改良を一度に投入したとしている。研究機関や教育機関向けに加え、店舗案内や軽作業用途での商用導入も見据えたアップデートと位置づけられている。
+      </p>
+      <div class="source">出典：
+        <a href="https://panews.io/articles/01a09ef1-21bc-762f-a419-1d09651f7797" target="_blank" rel="noopener">PANews「Unitree Technology Upgrades G1 Robot, Officially Launches G1+」</a>
+        <a href="https://www.unitree.com/g1/" target="_blank" rel="noopener">Unitree Robotics 公式サイト（G1シリーズ）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>フルモデルチェンジではなく既存機の「アップグレード版」という位置づけが興味深い。低価格帯ヒューマノイドの世代交代サイクルが、スマートフォンのマイナーチェンジ並みに速くなってきている。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>FANUC×Google、図面を読んで溶接プログラムを自動生成する「AI Welding Agent」を発表——12月末に出荷開始</h2>
+      <p class="detail">
+        FANUCは9月11日、GoogleのエンタープライズAIエージェント基盤「Gemini Enterprise」を活用した産業用ロボット向け「AI Welding Agent」の開発を発表した。ロボット内蔵カメラでアーク溶接部品の図面を撮影すると、生成AIが素材や完成形状を理解した上で、電流・電圧などの溶接条件とロボットの動作プログラムを自動生成する仕組みで、従来必要だった手作業でのティーチング（教示作業）を大幅に削減できるとしている。生成された条件・動作はそのまま実行するほか、作業者が微調整することも可能。9月16日開幕の東京ビッグサイト「国際溶接技術展」で実演予定で、出荷開始は12月末を予定している。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.fanuc.co.jp/en/profile/pr/newsrelease/2026/notice20260911.html" target="_blank" rel="noopener">FANUC公式ニュースリリース「FANUC Accelerates Physical AI in Arc Welding with the New "AI Welding Agent"」</a>
+        <a href="https://asia.nikkei.com/business/technology/artificial-intelligence/japan-s-fanuc-google-team-up-on-ai-automated-welding-robots" target="_blank" rel="noopener">Nikkei Asia</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「図面を読んで現場のティーチングをゼロにする」というのは、生成AIが物理世界の熟練技能を代替し始めた具体例として分かりやすい。溶接という属人性の高い工程で成果が出せるなら、他の製造工程への波及も早そうだ。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>新概念「ハーネス・エンジニアリング」がAIエージェント開発の主戦場に——プロンプト・文脈設計の次の段階として定着</h2>
+      <p class="detail">
+        AIコーディングエージェント分野で「ハーネス・エンジニアリング（Harness Engineering）」という新語が急速に定着しつつある。モデル本体を除く、ツール連携・検証ループ・文脈と記憶の管理・ガードレール・可観測性など「エージェントを取り巻く実行環境そのもの」を設計する営みを指す概念で、2026年2月に体系的な定義が提示されて以降、査読前論文サイトarXivにも関連研究が相次いで投稿されている。背景には、各社モデルの素の性能差が縮小する「グレート・コンバージェンス」が進み、競争優位の源泉がモデル選定から「どれだけ堅牢な実行環境（ハーネス）を組めるか」へ移りつつあるとの見方がある。プロンプトエンジニアリング、文脈エンジニアリングに続く「第3段階」と位置づけられている。
+      </p>
+      <div class="source">出典：
+        <a href="https://arxiv.org/pdf/2602.14690" target="_blank" rel="noopener">arXiv「Harness Engineering for Agentic AI Coding Tools: An Exploratory Study」</a>
+        <a href="https://www.augmentcode.com/guides/harness-engineering-ai-coding-agents" target="_blank" rel="noopener">Augment Code「Harness Engineering for AI Coding Agents」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>用語自体の新しさよりも、「モデルの差別化が難しくなったので周辺設計で差をつける」という業界の空気の変化を映している点が興味深い。自社のAI活用でも、モデル選びより運用の作り込みに注力すべき局面かもしれない。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>OpenAIの音声モデル「GPT-Live-1」がAPI提供開始——誰でも自前の音声AIエージェントを構築可能に</h2>
+      <p class="detail">
+        OpenAIは9月10日、ChatGPTの音声モード基盤として7月に発表した全二重（フルデュプレックス）音声モデル「GPT-Live-1」をAPI経由で開発者向けに提供開始したと発表した。従来の音声AIは「音声認識→テキスト処理→音声合成」という多段パイプラインで応答に遅延が生じがちだったが、GPT-Liveは「聞く」「話す」「間を置く」「相槌を打つ」「割り込む」「ツールを呼び出す」といった判断を1秒間に何度も行うアーキテクチャにより、人間同士の会話に近い自然な相槌や割り込み、その場での同時通訳的な使い方を可能にする。API公開により、ChatGPTの音声体験と同じ基盤モデルを使って独自の音声エージェントを構築する新しい活用手法が一般開発者にも開かれた形となる。
+      </p>
+      <div class="source">出典：
+        <a href="https://explainx.ai/blog/gpt-live-1-api-openai-voice-agents-september-2026" target="_blank" rel="noopener">explainx.ai「GPT-Live-1 API: OpenAI Voice Model for Developers」</a>
+        <a href="https://siliconangle.com/2026/07/08/openai-launches-gpt-live-voice-model-series-ahead-broad-gpt-5-6-release/" target="_blank" rel="noopener">SiliconANGLE</a>
+      </div>
+      <div class="comment"><b>コメント：</b>チャット型UIから音声型UIへの移行を後押しする動き。社内ツールでも、テキスト入力を前提にしていた業務フローの一部は音声エージェント化を検討する価値がありそうだ。</div>
+    </div>
+
+    <div class="footer">
+      alphakt 社内向け AI最新動向簡報｜情報は公開報道に基づき作成。内容の正確性には万全を期していますが、最終判断は一次情報でご確認ください。
+    </div>
+  </div>
+</body>
+</html>
