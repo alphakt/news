@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年9月17日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年9月17日（木）｜alphakt 社内向け</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">
+      直近24〜48時間のAI関連動向を重要度別（高・中・低）に整理しました。各項目に一句要約・詳細・出典・コメントを付しています。
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Google、対話特化音声AI「Gemini 3.8 Live」を発表——価格はGPT-Live-1の半額以下、性能でも対抗</h2>
+      <p class="detail">
+        Googleは9月15日、音声対話に特化した新モデル「Gemini 3.8 Live」と、より高度な推論に対応する上位版「Gemini 3.8 Live Extended Thinking」を発表した。Gemini API・AI Studio・Gemini Enterprise・Search Live・Gemini Live・Workspaceなど幅広い製品に順次組み込まれる。料金は音声入力が1分0.005ドル、出力が0.018ドルで、1時間換算で約1.38ドルとOpenAIの「GPT-Live-1」の半額以下。第三者機関Artificial AnalysisのSpeech to Speech品質評価ではExtended Thinkingが82.6点でGPT-Live-1 Astra（81.5点）を上回ったとされ、会話を止めずにバックグラウンドで関数呼び出しを行う非同期処理にも対応する。
+      </p>
+      <div class="source">出典：
+        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/" target="_blank" rel="noopener">Google公式ブログ「Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking」</a>
+        <a href="https://9to5google.com/2026/09/15/gemini-3-8-live-announced/" target="_blank" rel="noopener">9to5Google</a>
+        <a href="https://www.marktechpost.com/2026/09/15/google-releases-gemini-3-8-live-and-3-8-live-extended-thinking-for-production-grade-voice-agents/" target="_blank" rel="noopener">MarkTechPost</a>
+      </div>
+      <div class="comment"><b>コメント：</b>音声AIの競争軸は「モデルの賢さ」だけでなく「会話の自然さ×コスト」に移っている。電話サポートなど実運用での採用判断は、結局この単価差が効いてきそうだ。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>上海AI研究院、7440億パラメータのオープンモデル「Atria Dawn Preview」を静かに公開——BrowseCompでGPT-5.6 SolやClaude Opus 5を上回る</h2>
+      <p class="detail">
+        中国・上海人工知能実験室（Shanghai AI Lab）は9月11日、Zhipu（Z.ai）の基盤モデル「GLM-5.2」を土台に追加学習した7440億パラメータのMoE型エージェントモデル「Atria Dawn Preview」を、Hugging Face上でMITライセンスの下に公開した。公式ブログや論文発表を伴わない異例の「静かな公開」だったが、143名連名の技術レポートによれば、ウェブ調査・情報統合力を測るBrowseCompベンチマークで92.5点を記録し、OpenAIの「GPT-5.6 Sol」（92.2点）やAnthropicの「Claude Opus 5」（90.8点）を上回った。商用利用可能なオープンウェイトモデルが最前線モデル群に肉薄する事例が、また一つ積み上がった。
+      </p>
+      <div class="source">出典：
+        <a href="https://pandaily.com/shanghai-ai-lab-atria-dawn-preview-744b-moe-agent" target="_blank" rel="noopener">Pandaily「Shanghai AI Lab Releases Atria Dawn Preview, a 744B MoE Agentic Model」</a>
+        <a href="https://aiweekly.co/alerts/shanghai-ai-lab-ships-atria-dawn-preview-a-744b-agentic-moe" target="_blank" rel="noopener">AI Weekly</a>
+        <a href="https://huggingface.co/internlm/Atria-Dawn-Preview" target="_blank" rel="noopener">Hugging Face（モデルページ）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>ブログもプレスリリースも出さずにフロンティア級モデルを置いていく姿勢が象徴的。独自モデルを持たない企業にとって「借りる」選択肢の質が、また一段上がったことになる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>中国Zhipu（Z.ai）、次世代GLMモデル開発に向け約50億ドルの資金調達を完了——2ヶ月で2度目</h2>
+      <p class="detail">
+        中国のAI企業Zhipu（ブランド名「Z.ai」）は9月16日までに、新株発行（約20億ドル）と転換社債（約30億ドル、2027年9月満期）を組み合わせた総額約50億ドルの資金調達を完了したと発表した。調達額の約6割を次世代「GLM」基盤モデルの研究開発、大規模学習・推論基盤、計算資源の拡充に充てる方針という。7月にも約40億ドルを調達したばかりで、2ヶ月で2度目の大型調達となり、これまでの累計調達額は約96億ドルに達した。中国国内の基盤モデル開発競争が、資金調達の規模とスピードの両面で激化していることを裏付ける動きだ。
+      </p>
+      <div class="source">出典：
+        <a href="https://technode.com/2026/09/14/z-ai-completes-around-us5-billion-financing-for-next-generation-glm-models/" target="_blank" rel="noopener">TechNode「Z.ai completes around US$5 billion financing for next-generation GLM models」</a>
+        <a href="https://www.globaltimes.cn/page/202609/1370482.shtml" target="_blank" rel="noopener">Global Times</a>
+      </div>
+      <div class="comment"><b>コメント：</b>短期間での連続調達は、モデル開発に必要な資金規模の大きさを物語ると同時に、中国国内のAI企業間でも体力勝負の様相が強まっていることの表れだろう。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>デンマークUniversal Robots、「物理AI」対応の第7世代協働ロボット基盤「Gen 7」を発表</h2>
+      <p class="detail">
+        Teradyne傘下のUniversal Robotsは9月14日、米シカゴで開催の工作機械見本市「IMTS 2026」で、7世代目となる協働ロボット（コボット）プラットフォーム「Gen 7」を発表した。刷新した制御ボックス「CB7 Core」は従来比40%の演算性能向上と30%の小型化を両立し、力覚・トルクセンシングやリアルタイムデータ交換（RTDE）を標準搭載、可搬重量・リーチの異なる新型アーム3機種（UR10g-1750／UR17g-1300／UR18g-950）も追加した。新OS「PolyScope X」との組み合わせで「工場に届いた時点で物理AI対応」を掲げ、Cognex・Schunk・Robotiqなど20社超のパートナーとの統合デモも披露した。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.therobotreport.com/universal-robots-launches-its-seventh-generation-robot-platform-at-imts/" target="_blank" rel="noopener">The Robot Report「Universal Robots launches its seventh-generation robot platform at IMTS」</a>
+        <a href="https://www.robotics247.com/article/imts-2026-universal-robots-unveils-gen-7-robotics-platform-for-industrial-automation-and-physical-ai-deployment" target="_blank" rel="noopener">Robotics 24/7</a>
+        <a href="https://www.universal-robots.com/news-and-media/news-center/universal-robots-unveils-gen-7-new-platform-industrial-automation-physical-ai/" target="_blank" rel="noopener">Universal Robots公式発表</a>
+      </div>
+      <div class="comment"><b>コメント：</b>アーム単体やAIモデル単体の性能競争から、センサー・制御・ソフトを垂直統合した「導入のしやすさ」の競争へと、産業用ロボットの評価軸が移りつつあることがうかがえる。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>元OpenAI研究者らの「TypeSafe AI」、ステルス解除——「人ではなくソフトウェアのためのAI」を掲げ4000万ドル調達</h2>
+      <p class="detail">
+        ChatGPTの基盤技術であるRLHFの考案に携わった元OpenAI研究者Diogo Almeida氏らが2024年に創業した「TypeSafe AI」は9月15日、DCVC主導のシード資金4000万ドルを調達し、ステルスモードを解除したと発表した。同社は「人間ではなくソフトウェアが利用するAI」という発想のもと、開発者がアプリケーションに直接組み込める高速・低コストなAIモデル群の構築を掲げる。第1弾モデル「Jev」（名称は経済学の「ジェヴォンズのパラドックス」に由来）は応答速度100ミリ秒未満をうたい、既存のフロンティアモデル比で最大100倍の高速・低コストを実現するとしている。評価額は約2億ドルという。
+      </p>
+      <div class="source">出典：
+        <a href="https://siliconangle.com/2026/09/16/typesafe-ai-exits-stealth-with-40m-to-build-ai-for-use-by-software/" target="_blank" rel="noopener">SiliconANGLE「TypeSafe AI exits stealth with $40M to build AI for use by software」</a>
+        <a href="https://dealroom.co/news/151032-typesafe-exits-stealth-with-40m-seed-to-build-ai-for-software-not-people/" target="_blank" rel="noopener">Dealroom News</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「人が読むための応答」ではなく「ソフトウェアが呼び出すための応答」に最適化するという切り口は、エージェント同士がAPIとして呼び合う時代ならではの新しい発想だ。</div>
+    </div>
+
+    <div class="footer">
+      alphakt 社内向け AI最新動向簡報｜情報は公開報道に基づき作成。内容の正確性には万全を期していますが、最終判断は一次情報でご確認ください。
+    </div>
+  </div>
+</body>
+</html>
