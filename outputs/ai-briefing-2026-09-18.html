@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年9月18日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年9月18日（金）｜alphakt 社内向け</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">
+      直近24〜48時間のAI関連動向を重要度別（高・中・低）に整理しました。各項目に一句要約・詳細・出典・コメントを付しています。
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>中国Z.ai、自社AIエージェント「Infra Agent」に自社モデルの本番推論基盤を構築させ、10万基超の中国製AIチップ上で稼働——AGIならぬ「RSI」を提唱</h2>
+      <p class="detail">
+        中国のAI企業Z.ai（Zhipu）は9月17日、自社の基盤モデル「GLM-5.3」を土台にしたエージェント「Infra Agent」が、新モデル「GLM-5.3-Flash」（総パラメータ320B・活性化18B・コンテキスト100万トークン）の本番推論スタックを、10万基を超える中国製AIアクセラレータ上に構築したとする技術報告を公開した。従来インフラ担当エンジニアが担っていた最適化作業の大半をエージェントが代行し、2週間足らずでスループットを基準比3倍超に引き上げ、コスト・ハードウェア効率は主流のNVIDIA製GPU並みに達したという。長文脈処理を担うKDAカーネルの数値精度バグを修正しオープンソースのFlash Linear Attentionへ本流反映させたほか、Python GILのボトルネックを解消して性能低下をほぼゼロ化するなど具体的な改善も報告されている。同社はこれを「AGI（汎用人工知能）」ではなく「RSI（再帰的自己改善）」の実例と位置づける。
+      </p>
+      <div class="source">出典：
+        <a href="https://aiweekly.co/alerts/zai-says-glm-53-built-the-inference-stack-that-now-serves-it-on-100000-chinese" target="_blank" rel="noopener">AI Weekly「Z.ai says GLM-5.3 built the inference stack that now serves it on 100,000+ Chinese chips」</a>
+        <a href="https://www.unite.ai/z-ai-details-glm-5-3-flash-inference-build-on-100-000-chinese-chips/" target="_blank" rel="noopener">Unite.AI</a>
+        <a href="https://www.digitimes.com/news/a20260901PD224/z.ai-ai-training-chips-infrastructure-cost.html" target="_blank" rel="noopener">DIGITIMES</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「モデルが自分のインフラを最適化する」という話は聞こえが良いが、非NVIDIA系チップでの大規模運用実績としての意味の方が大きい。米国の輸出規制下で中国が「自前で回せる」証拠を積み上げている構図だ。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>中国D-Robotics（地瓜機器人）、シリーズCで4億ドル調達——組込み型「ロボットの脳」チップの量産が本格化</h2>
+      <p class="detail">
+        ロボット向け組込み型AIチップとソフトウェア基盤を手がける中国のD-Robotics（地瓜機器人）は9月17日、大手インターネット企業や有力投資機関の出資を受けたシリーズCラウンドで4億ドル（約600億円）を調達したと発表した。同社の「Sunrise」シリーズチップは累計出荷が800万個を突破し、2025年11月発売の身体性AI（Embodied AI）向け新チップ「Sunrise S600」は、発売半年でUBTECH・Fourier・Booster Roboticsなど20社超の人型ロボット企業に採用されたという。今回の調達資金はチップ製品群の拡充と、ロボット開発全工程をカバーするソフトウェア基盤の構築に充てる方針。同社は過去6か月で合計6.7億ドルを調達しており、ヒューマノイド量産期に向けたサプライチェーン争奪戦が激化していることを示す。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.prnewswire.com/news-releases/d-robotics-completes-400-million-in-series-c-funding-driving-the-robotics-industry-into-a-boom-in-product-categories-302881297.html" target="_blank" rel="noopener">PR Newswire「D-Robotics Completes $400 Million in Series C Funding」</a>
+        <a href="https://theaiinsider.tech/2026/09/17/chinas-d-robotics-raises-400m-in-series-c-funding-to-expand-ai-robotics-platform/" target="_blank" rel="noopener">The AI Insider</a>
+        <a href="https://ventureburn.com/d-robotics-raises-400-million-to-build-the-brain-for-every-robot/" target="_blank" rel="noopener">VentureBurn</a>
+      </div>
+      <div class="comment"><b>コメント：</b>ヒューマノイド市場の主戦場は「本体メーカー」から「その頭脳となる半導体・基盤ソフト」に移りつつある。20社超という顧客の広がりは、標準チップ化が進んでいる兆候とも読める。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Google、発見の履歴を「夢の中」で再生し探索効率を最大162倍にする新手法「Dream-RSI」を発表</h2>
+      <p class="detail">
+        Google・Google DeepMind・メリーランド大学・バージニア大学の研究チームは9月14日、AIエージェントによる探索効率を大幅に高める新手法「Dream-RSI（Recursive Self-Improvement through Evolving Worlds）」の論文をarXivで公開した。従来はコーディングエージェントが実際に何度もタスクを試行して探索方針を改善する必要があったが、Dream-RSIは過去の探索履歴（発見の木構造）そのものを「厳密な再現シミュレーター」として再利用し、オフラインで安価に方針を改善してから本番投入する。アルゴリズム工学・数理最適化・GPUカーネル設計など8種類の探索課題で検証したところ、必要なエージェント呼び出し回数を最大162分の1に圧縮し、円充填問題では既存最良記録に50分の1の試行回数で到達したという。モデル自体ではなく「探索の仕方」を改善する点が特徴。
+      </p>
+      <div class="source">出典：
+        <a href="https://arxiv.org/html/2609.14858v1" target="_blank" rel="noopener">arXiv「Dream-RSI: Recursive Self-Improvement through Evolving Worlds」</a>
+        <a href="https://www.aimodeling.com/en/news/slug/dream-rsi-replay-simulator" target="_blank" rel="noopener">AI Modeling</a>
+        <a href="https://github.com/zhengkid/Dream-RSI" target="_blank" rel="noopener">GitHub（公式リポジトリ）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「本番での試行回数を減らす」ことは計算コスト削減に直結する。派手さはないが、エージェント開発の実運用コストを左右する地味に重要な進展だ。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>OpenAI、「GPT-5.5」を10月14日付でChatGPT・Codexから退役——フロンティアモデルの世代交代が加速</h2>
+      <p class="detail">
+        OpenAIは9月16日までに、2026年4月に投入した「GPT-5.5」をChatGPT（無料・Plus・Business・Enterprise・Edu各プラン）とChatGPT Work、Codexから10月14日付で退役させると発表した。API経由での利用には影響しないが、Codexをchatgpt.comのログインで利用しているユーザーには、後継の「GPT-5.6 Sol」や最新の「GPT-6 Astra」への切り替えを推奨している。GPT-5.5の主要製品面での提供期間は半年に満たず、フロンティアモデルの世代交代サイクルがさらに短縮していることを示す事例となった。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.businesstoday.in/technology/artificial-intelligence/story/openai-to-retire-gpt-5-5-from-chatgpt-work-and-codex-on-october-14-what-changes-to-expect-555782-2026-09-16" target="_blank" rel="noopener">Business Today「OpenAI to retire GPT-5.5 from ChatGPT, Work and Codex on October 14」</a>
+        <a href="https://www.gizmochina.com/2026/09/16/openai-retiring-gpt-5-5-on-october-14-you-may-need-to-update-your-workflow/" target="_blank" rel="noopener">Gizmochina</a>
+      </div>
+      <div class="comment"><b>コメント：</b>半年に満たない主力モデルの寿命は、開発チームがモデル移行コストを継続的に負担し続ける前提になりつつあることを意味する。API利用への影響がない点は実務上救いだ。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>自律型AI秘書「Toki Coordination」がProduct Huntで正式公開——会議調整をメールで自動交渉</h2>
+      <p class="detail">
+        AIスタートアップToki（旧Dola）は9月17日、日程調整に特化した自律型AIエグゼクティブアシスタント機能「Toki Coordination」をProduct Huntで正式公開した。ユーザーに代わって会議出席者へメールを送り、複数人の予定を突き合わせて日時を交渉し、合意が取れた時点で招待状を自動送信する。名前・人格・話し方をカスタマイズでき、利用者の予定の好みや習慣を学習して徐々に「自分専用」の秘書に育っていく設計という。無料で利用でき、音声メモやスクリーンショットの内容も理解して1日の予定を組み立てる機能も備える。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.producthunt.com/products/toki-ai" target="_blank" rel="noopener">Product Hunt「Toki: AI Executive Assistant」</a>
+        <a href="https://toki.com/" target="_blank" rel="noopener">Toki公式サイト</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「会議調整の自動化」はAIエージェントの中でも実用化が早い分野の一つ。メールでの交渉という枯れたチャネルを使う手堅さが、実際の定着率を左右しそうだ。</div>
+    </div>
+
+    <div class="footer">
+      alphakt 社内向け AI最新動向簡報｜情報は公開報道に基づき作成。内容の正確性には万全を期していますが、最終判断は一次情報でご確認ください。
+    </div>
+  </div>
+</body>
+</html>
