@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年9月19日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年9月19日（土）｜alphakt 社内向け</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">
+      直近24〜48時間のAI関連動向を重要度別（高・中・低）に整理しました。各項目に一句要約・詳細・出典・コメントを付しています。
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>OpenAI・Anthropic・Google DeepMindがFINRA型のAI安全自主規制機関の設立を協議——Cohere CEOは「カルテルだ」と反発</h2>
+      <p class="detail">
+        OpenAIの政策責任者クリス・レハン氏は、同社がAnthropic・Google DeepMindと数週間にわたり、強力なAIモデルを公開前に検証する業界横断の自主規制団体の設立を協議していると明らかにした。金融業界の自主規制機関FINRAを手本とし、7月にDemis Hassabis氏が示した構想が土台。資金の大半は業界負担になる見通しで、Sam Altman氏も協調の意義を歓迎する姿勢を示した。一方でCohereのAidan Gomez CEOは9月13日付の論考で、少数の有力企業が独占禁止法の適用除外を求めて速度制限まで合意する構図を「カルテル」と批判し、証拠に基づくリスク評価・強制的な透明性・能力に応じた独立検証・利益相反のない検証体制という対案を提示した。Bernie Sanders上院議員も拘束力ある国際ルールの必要性を訴えている。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.bloomberg.com/news/articles/2026-09-15/openai-says-it-s-working-with-anthropic-google-on-ai-safety" target="_blank" rel="noopener">Bloomberg「OpenAI Says It's Working With Anthropic, Google on AI Safety」</a>
+        <a href="https://www.theglobeandmail.com/business/technology/article-cohere-ceo-aidan-gomez-criticizes-calls-for-ai-slowdown/" target="_blank" rel="noopener">The Globe and Mail</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「自主規制」の看板の下で誰がルールを書き、誰が縛られるのかという対立軸が鮮明になってきた。大手3社対Cohereという構図は、今後の規制議論の行方を占う試金石になりそうだ。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Google DeepMind、AGIのあり方を議論する新シンクタンク「DeepMind Institute」を設立</h2>
+      <p class="detail">
+        Google DeepMindは9月16日、汎用人工知能（AGI）が社会に与える影響について議論を広げるための新組織「DeepMind Institute」を立ち上げたと発表した。共同創業者のShane Legg氏が編集責任者を務め、Google幹部のJames Manyika氏、DeepMind会長のDemis Hassabis氏がディレクターに名を連ねる。同研究所はGoogle・DeepMind社内と外部の研究コミュニティの間で見解の相違をあえて可視化することを狙いとし、発表文でも「常に意見が一致するわけではなく、新情報を得て見解を変えることもある」と明記している。発足時に公開された4本のエッセイは、AGIによる経済的混乱への政策対応、モデルの思考過程を人間が読める形で維持する重要性、人間の繁栄のための原則などを扱っている。
+      </p>
+      <div class="source">出典：
+        <a href="https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/" target="_blank" rel="noopener">TechCrunch「Google DeepMind launches institute to widen the AGI debate」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>開発元自らが「社内でも意見は割れている」と公言するのは珍しい。AGI論争を独占せず外部に開く姿勢自体が、規制論議における立ち位置取りとも読める。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>AIインフラ企業Crusoe、39億ドルのシリーズF資金調達——評価額は309億ドルに倍増</h2>
+      <p class="detail">
+        AIデータセンター構築を手がけるCrusoeは9月17日、39億ドル（約5800億円）のシリーズF資金調達の第一次クローズを発表した。評価額は309億ドルとなり、2025年10月時点の100億ドルから約3倍に跳ね上がった。ラウンドはAtreides Management、Mubadala Capital、Valor Equity Partnersが主導し、Founders Fund・GIC・NVIDIA・カタール投資庁・Radical Ventures・TPGなどが参加。調達資金はコロラド州・オクラホマ州タルサなどでのモジュール型AIデータセンター「Spark」の量産に充てる。主力案件はテキサス州アビリーンの1.2ギガワット規模のAIキャンパス（Oracle経由でOpenAIが利用）と、近隣に建設中のMicrosoft向け900メガワット拠点。契約総額は1400億ドル超、契約済み容量は6ギガワット超に達している。
+      </p>
+      <div class="source">出典：
+        <a href="https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/" target="_blank" rel="noopener">TechCrunch「Crusoe raises $3.9B to build massive data centers and small modular "AI factories"」</a>
+        <a href="https://siliconangle.com/2026/09/17/ai-data-center-builder-crusoe-valued-at-30-9b-in-3-9b-round/" target="_blank" rel="noopener">SiliconANGLE</a>
+      </div>
+      <div class="comment"><b>コメント：</b>評価額が1年足らずで3倍という数字は、AI需要というよりも電力・データセンター供給の逼迫がボトルネックになっている現状を映している。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>OpenAI、法律特化のGPT-6構成「Astra for Law」を発表——2.3億件超の判例・法令索引を統合</h2>
+      <p class="detail">
+        OpenAIは9月17日、GPT-6 Astraを土台に法律調査向けに特化した「Astra for Law」を発表した。米国の判例・制定法・規則・裁判所規則・行政決定など2.3億件超のURLを収録した独自の法律検索インデックスを備え、非営利団体Free Law Projectの判例データベース「CourtListener」（米国の公表済み判例の99.9%をカバー）を中核に据えている。評価実験では、最高推論設定でのAstra for Lawが正答率54.0%を記録し、通常のウェブ検索を使うGPT-6 Astra（38.7%）に対し相対で約40%の改善を示した。現在は米国内の一部法律事務所を対象とした「Trusted Access」プログラムを通じて提供されている。
+      </p>
+      <div class="source">出典：
+        <a href="https://siliconangle.com/2026/09/17/openai-launches-astra-for-law-a-gpt-6-configuration-for-legal-research/" target="_blank" rel="noopener">SiliconANGLE「OpenAI launches Astra for Law, a GPT-6 configuration for legal research」</a>
+        <a href="https://openai.com/index/astra-for-law/" target="_blank" rel="noopener">OpenAI「Introducing Astra for Law」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>汎用検索より正答率が4割改善というのは実務者にとって無視できない差。専門ドメイン特化のインデックス構築が、汎用フロンティアモデルの次の競争軸になりつつある。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Google、AIエージェント「CC」を家庭向け共有ツールに拡張——家族6人まで同時利用可能に</h2>
+      <p class="detail">
+        Google Labsは9月17日、2025年12月に個人向け生産性エージェントとして公開した「CC」を、家族・世帯で共有できるエージェントへと拡張したと発表した。専用のGoogleアカウントで動作し、最大6人のメンバーがそれぞれ共有する情報を選びながら参加できる。予定の調整やタスク管理、習い事の登録用PDFの自動入力、Google Maps APIを使った送迎の所要時間確認、共有ドキュメント・スプレッドシートの作成などを担う。世帯全体に関わる情報と個人固有の情報を分けて記憶する仕組みを備え、メンバーが共有した範囲のみを参照し、行動前には必ず確認を取るという。現在は米国在住の18歳以上の個人アカウント保持者が対象で、ウェイトリスト経由での登録となる。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.unite.ai/google-labs-expands-cc-into-an-ai-agent-for-families-and-households/" target="_blank" rel="noopener">Unite.AI「Google Labs Expands CC Into an AI Agent for Families and Households」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>個人秘書エージェントの次の展開が「世帯」という単位である点は興味深い。プライバシー境界の設計（誰が何を見られるか）がこの種のサービスの成否を分けるだろう。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Anthropic、「R&Dオートメーション指数」を公表——Claudeが自社AI研究開発業務の26%を主導</h2>
+      <p class="detail">
+        Anthropicは9月17日、自社のAI研究開発（R&D）業務がどこまでAIによって自動化されているかを測る独自指標「R&D Automation Index」を公表した。社内のAI研究タスクを洗い出し、Epoch AIが開発した自動化レベル尺度（AL0＝AI関与なしからAL5＝完全自律まで）で評価し、担当者の作業時間で重み付けして算出する方式。2026年8月時点でClaudeが「主導」する業務の割合は26%に達し、2月時点の1%未満から急伸した。Claudeが協働者以上の形で関与する業務は全体の9割を超える一方、測定対象のどの業務についても完全自律での稼働には至っていないとしている。社内で最も利用されるプラットフォームでは8月中に3万体のエージェントが同時稼働し、監視システムは10億件超の判断のうち約4万7000件に1件を問題ありとして遮断したという。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.implicator.ai/anthropic-claude-leads-26-percent-ai-research/" target="_blank" rel="noopener">implicator.ai「Anthropic Says Claude Leads 26% of Its AI R&D Work」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>半年余りで1%未満から26%への急伸は、AIが自らの開発サイクルに組み込まれていく速度を示す数字として重い。「主導」の定義次第で受け止め方は変わるが、方向性としては注視すべきだ。</div>
+    </div>
+
+    <div class="footer">
+      alphakt 社内向け AI最新動向簡報｜情報は公開報道に基づき作成。内容の正確性には万全を期していますが、最終判断は一次情報でご確認ください。
+    </div>
+  </div>
+</body>
+</html>
