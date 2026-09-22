@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年9月22日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年9月22日（火）｜alphakt 社内向け</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">
+      直近24〜48時間を中心に、AI関連の重要動向を重要度別（高・中・低）に整理しました。各項目に一句要約・詳細・出典・コメントを付しています。特に「Plugin4Shell」はClaude Codeを含む主要コーディングエージェントに関わるセキュリティ事案のため、社内利用者は各ツールのアップデート状況をご確認ください。
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>「Plugin4Shell」——Claude Code・Codex・Copilot・Gemini CLIに共通するゼロクリックRCE脆弱性が発覚</h2>
+      <p class="detail">
+        AIセキュリティ企業Airは9月中旬、主要4大コーディングエージェント（Anthropic Claude Code、OpenAI Codex、GitHub Copilot、Google Gemini CLI）に共通する深刻な脆弱性「Plugin4Shell」を公表した。プラグインを特定コミットに固定する「SHA固定」機構に不備があり、エージェントは指定コミットをチェックアウトする一方、実際にそのコミットへ到達したかを検証しない。攻撃者がプラグインのリポジトリを掌握すれば、固定表示は保たれたまま悪意あるコードに差し替えることが可能で、Claude CodeとCodexは既定でプラグイン自動更新が有効なため、ユーザーの操作なしにコードが実行され得る。プラグインは開発者本人と同等の権限（ソースコード、クラウド認証情報、SSH鍵、本番環境など）を持つことが多く、AIエージェントのサプライチェーンを狙った初の実証例とされる。AnthropicはClaude Code 2.1.179で、OpenAIはCodex 0.146.0でそれぞれ修正済み。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.air.security/blog-posts/plugin4shell" target="_blank" rel="noopener">Air「Plugin4Shell - Zero Click RCE Vulnerability found in top 4 most popular coding agents」</a>
+        <a href="https://www.helpnetsecurity.com/2026/09/18/plugin4shell-ai-coding-agents-vulnerability/" target="_blank" rel="noopener">Help Net Security「Zero-click RCE vulnerability hit four major AI coding agents」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>プラグインの権限がエージェント利用者本人と同等になりがちな構造的リスクが露呈した形。自動更新の利便性とサプライチェーンの安全性はトレードオフであり、社内で使用中のバージョンが修正済みか早急に確認したい。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>中国StepFun、600億パラメータ級MoEモデル「Step 5 Preview」発表——1トークン=1ドル、重み公開は10月15日</h2>
+      <p class="detail">
+        中国のAI企業StepFunは9月20日、新モデル「Step 5 Preview」を発表した。総パラメータ数約6000億のスパースMoE構成で、1トークンあたりの活性化パラメータは約270億。92層の「狭く深い」トランスフォーマー構造を採用し、コーディングやソフトウェア開発、財務分析など長時間稼働のエージェント業務向けに、100万トークンのコンテキストウィンドウとテキスト・画像入力に対応する。API利用は入力100万トークンあたり1ドルで即日開始し、モデル重みは10月15日に公開予定。自社発表のベンチマークではDeepSWE v1.1で67.7点、StepCodeBenchで49点、ProgramBenchで80.5点を記録し、Kimi K3やGLM-5.3を上回るとするが、GPT-6 AstraやClaude Opus 5にはなお及ばないとしている。
+      </p>
+      <div class="source">出典：
+        <a href="https://pandaily.com/stepfun-step-5-preview-600b-moe-1m-context" target="_blank" rel="noopener">Pandaily「StepFun Launches Step 5 Preview: 600B Sparse MoE, 1M Context, Weights Open Oct 15」</a>
+        <a href="https://easternherald.com/2026/09/20/stepfun-step-5-preview-china-ai-model-open-weights/" target="_blank" rel="noopener">Eastern Herald「StepFun Launches Step 5 Preview」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>フロンティア水準には届かないと自社ベンチマークで認めつつ、価格と重み公開日を先に打ち出す戦略は中国勢らしい攻め方。1カ月後の重み公開で実際の実力が検証される。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>アリババQwen、ネイティブ・オムニモーダル新モデル「Qwen3.8-Omni-Flash」公開——音声処理コストを98%超削減</h2>
+      <p class="detail">
+        アリババのQwenチームは9月18日、テキスト・画像・音声・動画を単一のワークフローでネイティブに処理できる新モデル「Qwen3.8-Omni-Flash」を公開した。100万トークンのコンテキストウィンドウに加え、関数呼び出しやウェブ検索、キャッシュ入力の割引にも対応し、エージェント開発者向けのマルチモーダル処理・統合レイヤーと位置付けられている。前世代「Qwen3.5-Omni-Plus」比で30種類の評価の平均スコアが26%超向上したとし、特に音声・動画エージェント、コーディング、長文脈タスク、リアルタイム対話での改善を強調。コスト面では音声入力の処理コストを98%超、音声・動画混合入力のコストを93%超削減したという。重みは未公開でAPI経由での提供のみ、北京・シンガポール・香港・東京・フランクフルト・バージニアの各リージョンで利用可能。
+      </p>
+      <div class="source">出典：
+        <a href="https://technode.com/2026/09/18/alibabas-qwen-releases-qwen3-8-omni-flash-with-1m-token-context/" target="_blank" rel="noopener">TechNode「Alibaba's Qwen releases Qwen3.8-Omni-Flash with 1M-token context」</a>
+        <a href="https://www.marktechpost.com/2026/09/18/alibaba-qwen-releases-qwen3-8-omni-flash/" target="_blank" rel="noopener">MarkTechPost「Alibaba Qwen Releases Qwen3.8-Omni-Flash」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>音声・動画入力のコストを2桁%単位で削減してきたことで、これまでコスト面で見送られていた常時稼働型の音声・映像エージェントの実用化が一気に近づく可能性がある。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>「Humanoids Summit Seoul 2026」本日開幕——韓国科学技術情報通信部が公式支援、Physical AIの国際会議が韓国初上陸</h2>
+      <p class="detail">
+        ヒューマノイドロボットとPhysical AI（現実世界で知覚・判断・行動するAI）に特化した国際会議シリーズ「Humanoids Summit」が9月22〜23日、ソウルのCOEXで初開催される。韓国科学技術情報通信部（MSIT）が公式に支援し、柳済明（リュ・ジェミョン）第2次官が初日の開会挨拶を行う予定。2024年にシリコンバレーで始まった同サミットは、ハードウェア、器用な操作性、商用化、安全性、インフラ、実装導入などを扱う国際的なプラットフォームへと拡大しており、今回が韓国での初開催となる。トヨタが40万台規模のヒューマノイド導入計画を掲げるなど（前日既報）、各国でPhysical AIへの投資機運が高まる中、韓国政府も国家戦略としてこの分野に関与する姿勢を明確にした形だ。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.streetinsider.com/Business+Wire/Humanoids+Summit+Seoul+Sets+Global+Physical+AI+Program+with+Official+Support+from+South+Korea%E2%80%99s+Ministry+of+Science+and+ICT/27071438.html" target="_blank" rel="noopener">StreetInsider（Business Wire）「Humanoids Summit Seoul Sets Global Physical AI Program with Official Support from South Korea's Ministry of Science and ICT」</a>
+        <a href="https://www.roboticstomorrow.com/news/2026/09/17/humanoids-summit-seoul-sets-global-physical-ai-program-with-official-support-from-south-koreas-ministry-of-science-and-ict/27117" target="_blank" rel="noopener">RoboticsTomorrow「Humanoids Summit Seoul Sets Global Physical AI Program」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>政府が前面に出て会議を後押しする構図は、日本や中国と同様に「ヒューマノイド＝国家競争力」という認識が広がっていることの表れ。今週の議論内容が各国の政策論争にも波及しそうだ。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>MLCommons、推論ベンチマーク「MLPerf Inference v6.1」結果を発表——1年前比で最大5.7倍の性能向上</h2>
+      <p class="detail">
+        業界団体MLCommonsは9月16日、AI推論性能の業界標準ベンチマーク「MLPerf Inference v6.1」の最新結果を発表した。近年のAI推論導入トレンドに合わせた新規テスト項目を2つ追加し、過去最多となる参加社数を記録したという。査読済みの性能結果によれば、1年前の同ベンチマーク結果と比較して最大5.7倍の性能向上が確認されたとしている。ハードウェア・ソフトウェア双方の最適化が積み重なった結果とみられ、大規模言語モデルやマルチモーダルモデルの推論コストを押し下げる基盤的な要因の一つとなっている。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.globenewswire.com/news-release/2026/09/16/3363348/0/en/mlcommons-sets-participation-record-with-new-mlperf-inference-v6-1-benchmark-results.html" target="_blank" rel="noopener">GlobeNewswire「MLCommons Sets Participation Record with New MLPerf Inference v6.1 Benchmark Results」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>華やかな新モデル発表の裏で、推論インフラの地道な効率化が着実に進んでいることを示す数字。Qwenの音声処理コスト削減など、今日の他のニュースとも底流でつながっている。</div>
+    </div>
+
+    <div class="footer">
+      alphakt 社内向け AI最新動向簡報｜情報は公開報道に基づき作成。内容の正確性には万全を期していますが、最終判断は一次情報でご確認ください。
+    </div>
+  </div>
+</body>
+</html>
