@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年9月26日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年9月26日（土）｜alphakt 社内向け</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">
+      直近24〜48時間を中心に、AI関連の重要動向を重要度別（高・中・低）に整理しました。各項目に一句要約・詳細・出典・コメントを付しています。本日はDeepSeekの急成長とIPO準備、Googleの新しい電話代行エージェント機能、AIインフラ・ロボティクス領域の大型資金調達が目立ちました。
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>中国DeepSeek、年換算売上高が10億ドル突破——上海上場に向け新規5000万元規模の調達も進行中</h2>
+      <p class="detail">
+        中国の生成AI企業DeepSeekは9月25日までに、年換算収益（ARR）が10億ドルの大台に達したと関係者への取材で報じられた。数か月前の5億ドル未満から倍増した形で、創業者の梁文峰CEOが投資家向け会合で明らかにしたという。成長を牽引したのは8月に実施したAPI価格の引き上げ（従来比2.3〜4.5倍）で、値上げ後も主要顧客基盤は縮小せず、依然として主要LLMの中では最安値クラスの価格を維持しているとされる。同社は評価額5000億元（約10兆円規模）で500億元を調達する第2ラウンドを10月末までに完了させる計画を進めているほか、上海証券取引所への上場も視野に準備を進めているという。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.pymnts.com/news/artificial-intelligence/2026/deepseek-doubles-annual-revenue-run-rate-to-1-billion-ahead-of-ipo/" target="_blank" rel="noopener">PYMNTS「DeepSeek Doubles Annual Revenue Run Rate to $1 Billion Ahead of IPO」</a>
+        <a href="https://www.theinformation.com/articles/deepseeks-annualized-revenue-hits-1-billion-startup-finalizes-7-5-billion-fundraising" target="_blank" rel="noopener">The Information「DeepSeek's Annualized Revenue Hits $1 Billion as Startup Finalizes $7.5 Billion Fundraising」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>値上げをしても顧客が離れなかったという点が象徴的で、中国製オープンウェイト系モデルの「価格の安さ」だけに頼らない競争力が育ちつつあることを示唆する。上場・大型調達が実現すれば米国勢との資金力の差も縮まりそうだ。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Google、Geminiがユーザーに代わって電話をかける「Call for Me」機能をPixel 11で試験開始</h2>
+      <p class="detail">
+        Googleは9月24日、Gemini搭載スマートフォン「Pixel 11」シリーズ向けに新機能「Call for Me」の試験提供を開始したと発表した。ユーザーがGeminiアプリで依頼すると、AIが店舗や企業に電話をかけて名乗った上で自動音声メニューを操作し、保留待ちもこなしながら在庫確認・予約・予約変更などの用件をやり取りしてくれる。通話中はリアルタイムで文字起こしが表示され、ユーザーはいつでも会話を引き継げる。通話開始時にAIが自ら「AIアシスタントである」ことと「通話が録音されている」ことを名乗る設計になっている。現時点では、米国内の有料Gemini契約者かつ「Phone by Google」パブリックベータ参加者向けの早期プレビューとして展開されている。
+      </p>
+      <div class="source">出典：
+        <a href="https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/" target="_blank" rel="noopener">TechCrunch「Google tests letting Gemini make phone calls, initially for US Pixel owners」</a>
+        <a href="https://9to5google.com/2026/09/24/pixel-11-call-for-me/" target="_blank" rel="noopener">9to5Google「Pixel 11 starts testing 'Call for Me' to have Gemini phone on your behalf」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>2018年のGoogle Duplexの再来とも言える機能だが、AIによる開示と通話記録という透明性の担保が明確に組み込まれている点が今回の特徴。エージェントが人間相手に電話越しでタスクを代行する「新しい使い方」の実用段階への一歩として注目したい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>英AIネオクラウドNscale、米国上場を前に33.6億ドルのコンバーチブル調達を実施</h2>
+      <p class="detail">
+        英国拠点のAIクラウドインフラ企業Nscaleは9月25日、米国での新規株式公開（IPO）を控える中で、33.6億ドル規模の転換社債型の資金調達を実施したと発表した。同社はGPUを中心としたAI専用クラウド基盤（いわゆる「ネオクラウド」）を提供しており、AIモデルの学習・推論向けに大規模データセンターの構築を進めている。今回の巨額調達は、AI向けデータセンター建設に必要な資本規模がますます膨らんでいる現状を象徴する事例として報じられている。
+      </p>
+      <div class="source">出典：
+        <a href="https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/" target="_blank" rel="noopener">TechCrunch「Ahead of US IPO, British AI neocloud Nscale secures $3.36B in convertible financing」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>GPUクラウド専業の「ネオクラウド」勢への資金流入が続いており、AIインフラ投資の主戦場がモデル開発企業だけでなく、その裏側の計算基盤企業にも広がっていることがわかる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>米Feather Robotics、双腕モバイル型ロボットで760万ドルのプレシード調達——量産スピードで先行企業を上回る</h2>
+      <p class="detail">
+        身体性AI（embodied AI）研究・実用化を手がける米新興Feather Roboticsは、Gradientを主導投資家に、Builder Capital・Geometry・SEED Innovations・Virgo VCが参加する760万ドルのプレシード資金調達を実施したと明らかにした。同社の双腕型モバイルロボットは、車輪型の全方向移動ベースを採用して安定性と省エネ性を確保しつつ、バッテリー駆動時間は競合Unitree H2の約3倍にあたる10時間、アーム長は平均的な成人の腕より約5割長い1メートル、成人一人分相当の可搬重量を実現しているという。モジュール設計でSDKも同梱し外部開発者が応用アプリを構築できる。初号機のプロトタイプ完成までわずか2か月、初出荷までは9か月（競合Figureの31か月と対比）で、すでに7桁ドル規模の売上高を計上し、年商40億ドル規模の製造業顧客にも導入されているとしている。
+      </p>
+      <div class="source">出典：
+        <a href="https://www.tradingview.com/news/reuters.com,2026-09-25:newsml_RSY4310Wa:0-rcs-seed-innovations-ltd-investee-company-update-feather-robotics-inc/" target="_blank" rel="noopener">TradingView（Reuters配信）「Investee Company Update: Feather Robotics Inc.」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「シンプルな構成で開発期間を圧縮する」という設計思想が、資金調達額の割に速い量産・売上化につながっている好例。ヒューマノイド偏重のロボティクス投資の中で、車輪型・双腕という現実解が支持されている流れは興味深い。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>東京発O-ID、工場向けモジュール式ヒューマノイドロボットで120万ドルのプレシード調達</h2>
+      <p class="detail">
+        2025年に東京で設立されたロボティクス新興企業O-IDは9月25日までに、工場向けのモジュール式ヒューマノイドロボット開発に向けて120万ドルのプレシード資金調達を実施したと報じられた。同社は部品やモジュールを組み替えることで用途や現場に応じた構成を柔軟に組める設計を掲げており、まずは製造現場での搬送・組立といった定型作業の自動化を想定しているとみられる。調達額自体は大手ヒューマノイド企業と比べ小規模だが、日本発のヒューマノイド系スタートアップとして今後の展開が注目される。
+      </p>
+      <div class="source">出典：
+        <a href="https://theaiinsider.tech/2026/09/25/japans-o-id-raises-1-2m-in-pre-seed-funding-to-develop-modular-humanoid-robots-for-factories/" target="_blank" rel="noopener">The AI Insider「Japan's O-ID Raises $1.2M in Pre-Seed Funding to Develop Modular Humanoid Robots for Factories」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>米中の大型調達が目立つヒューマノイド分野で、日本発の小規模スタートアップがどうニッチを見出すかは要注目。モジュール化による現場適応力は、量産規模で劣る新興企業にとって有効な差別化軸になり得る。</div>
+    </div>
+
+    <div class="footer">
+      alphakt 社内向け AI最新動向簡報 ｜ 本簡報はAIによる自動生成です。出典情報は各リンク先でご確認ください。
+    </div>
+  </div>
+</body>
+</html>
