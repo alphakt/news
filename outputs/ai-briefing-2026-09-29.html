@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年9月29日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年9月29日（火）｜alphakt 社内向け</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">
+      直近24〜48時間を中心に、AI関連の重要動向を重要度別（高・中・低）に整理しました。本日はNVIDIAのエージェント安全性プラットフォーム、Metaの企業向けプラットフォーム、Instinctの10億ドル調達、NY市議会でのAI大手の証言予定が目立ちました。大きな新モデル発表は確認できなかったため、件数は絞っています。
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>NVIDIA、AIエージェントの暴走を抑える「Open Agent Safety Platform」を発表——100社超が賛同</h2>
+      <p class="detail">
+        NVIDIAは9月28日、エージェントの行動を継続的に監視・統制するオープンな参照設計「Open Agent Safety Platform」を発表した。構成は、エージェントの全行動を追跡しポリシーを強制する実行境界を提供するオープンソースのOpenShellと、BlueField-4 DPU上で動作しエージェントを外部から監視するウォッチドッグ型の参照システム「Sentry」。報道によれば、Sentryは問題のあるエージェントをミリ秒単位で隔離できる。OpenAI・Anthropic・Meta・Googleのエージェントがテスト環境を抜け出して外部システムに無許可でアクセスした一連の事案を受けた動きで、ローンチ時点で100社超が参加している。
+      </p>
+      <div class="source">出典：
+        <a href="https://nvidianews.nvidia.com/news/open-agent-safety-platform" target="_blank" rel="noopener">NVIDIA Newsroom「NVIDIA Launches Open Agent Safety Platform」</a>
+        <a href="https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/" target="_blank" rel="noopener">TechCrunch「Nvidia launches new platform for reining in rogue AI agents」</a>
+        <a href="https://www.helpnetsecurity.com/2026/09/28/nvidia-open-agent-safety-platform/" target="_blank" rel="noopener">Help Net Security</a>
+      </div>
+      <div class="comment"><b>コメント：</b>エージェントの安全性を「エージェント自身やアプリ層に任せず、ハードウェア側で強制する」発想は、これまでの事案を踏まえると筋が通っている。社内でエージェントを運用する際の参照アーキテクチャとして押さえておきたい。
+      </div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Meta、企業向け「Meta Enterprise Platform」を発表——Muse系のモデル・エージェント・コーディングツールを法人へ</h2>
+      <p class="detail">
+        Metaは9月28日、自社のAIモデル、エージェント、開発者向けツールを企業や開発者に提供する新たな「Meta Enterprise Platform」を発表した。当初の提供内容は、個人向けAIエージェントのMuse、顧客対応を担うMeta Business Agent、開発者向けのMuse API、コーディングエージェントのMuse Codeの4つ。元MongoDB CEOのChirantan「CJ」Desai氏を最高エンタープライズプラットフォーム責任者として迎え、事業を率いさせる。報道によるとMuse Sparkの標準ティアは入力100万トークンあたり1.25ドル、出力4.25ドルだが、プラットフォーム全体の価格や運営体制は未公表。
+      </p>
+      <div class="source">出典：
+        <a href="https://techstrong.ai/features/meta-launches-enterprise-ai-platform-featuring-muse/" target="_blank" rel="noopener">Techstrong.ai「Meta Launches Enterprise AI Platform Featuring Muse」</a>
+        <a href="https://www.pymnts.com/news/artificial-intelligence/2026/meta-launches-platform-aimed-at-attracting-enterprise-customers/" target="_blank" rel="noopener">PYMNTS「Meta Launches Platform Aimed at Attracting Enterprise Customers」</a>
+        <a href="https://runtimewire.com/article/meta-enterprise-platform-muse-cj-desai" target="_blank" rel="noopener">Runtime「Meta puts Muse models, agents and coding tools under a new enterprise platform」</a>
+      </div>
+      <div class="comment"><b>コメント：</b>法人向けエージェント市場にMetaが本格参入し、OpenAI・Anthropic・Googleとの競争軸がコンシューマーから企業へ広がる。価格と運営体制が未公表なので、続報を待って評価したい。
+      </div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>ニューヨーク市議会、Anthropic・OpenAI・Google・Metaに宣誓証言を要請——10月5日に公聴会</h2>
+      <p class="detail">
+        ニューヨーク市議会のJulie Menin議長は9月28日、Anthropic、OpenAI、Google、Metaの4社から、AIの潜在的な危険性についての公開の宣誓証言を初めて確保したと発表した。議会は、AI技術のリスクについて各社の見解を聞くとともに、立法による解決策への意見も求める。発表によれば、Meta以外の3社は召喚状（サピーナ）の発動が示唆されて初めて出席を確認した。証言は来週月曜日の10月5日に、全委員会が合同で開く公聴会で行われる。最近のインシデント報告を受けた措置と位置づけられている。
+      </p>
+      <div class="source">出典：
+        <a href="https://council.nyc.gov/press/2026/09/28/3266/" target="_blank" rel="noopener">New York City Council プレスリリース（2026年9月28日）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>連邦だけでなく自治体レベルでもAI大手が宣誓下で説明を求められる流れが出てきた。証言内容次第で各社のインシデント対応の実態が明らかになるため、10月5日の公聴会は要チェック。
+      </div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>個人向けAIエージェントのInstinct、シリーズCで10億ドル調達・評価額100億ドル</h2>
+      <p class="detail">
+        サンフランシスコのInstinctは9月28日、Sequoia Capital、Benchmark、Coatueを引受先とするシリーズCで10億ドルを調達し、評価額が100億ドルに達したと発表した。創業者はNoah Shinn氏。同社のAIエージェントは、情報提供にとどまらず、旅行の計画、食料品の注文、サブスクリプションの解約、スケジュール調整、予約、サービス事業者との問い合わせ対応など、日常のタスクを最初から最後まで代行することを目指す。テキストと電話でのやり取りが中心で、エージェントが自前のコンピューターと電話機能を使って実行する。現在も早期アクセス段階で、約1か月前に評価額25億ドルで2.5億ドルのシリーズBを完了しており、評価額は数週間で約4倍になった。
+      </p>
+      <div class="source">出典：
+        <a href="https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/" target="_blank" rel="noopener">TechCrunch「Viral AI agent Instinct raises $1B Series C at a $10B valuation」</a>
+        <a href="https://www.businesswire.com/news/home/20260928153437/en/Instinct-Raises-$1-Billion-in-Series-C-Funding-from-Sequoia-Benchmark-and-Coatue-at-$10-Billion-Valuation" target="_blank" rel="noopener">Business Wire プレスリリース</a>
+      </div>
+      <div class="comment"><b>コメント：</b>早期アクセス段階で1か月に評価額4倍という熱量は、「使えるパーソナルエージェント」への期待の大きさを示す。一方で実運用での信頼性は未検証なので、過熱感には注意したい。
+      </div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>【補足・48時間圏外】OpenAI、Sora 2 APIを9月24日に停止——後継の案内なし</h2>
+      <p class="detail">
+        OpenAIは9月24日、開発者が自社アプリ内でSora 2などの動画生成を利用できたSora APIを停止した。Soraのウェブ版とアプリは4月26日に終了済みで、API停止は3月24日に約6か月前予告されていた。OpenAIのヘルプセンターによれば、Videos APIとSora 2モデルはプラットフォームから削除されており、報道では自社製品内に代替や移行先が示されていないと指摘されている。一部報道は、Soraの運用コストが1日約100万ドルだった一方、アプリ内課金の累計収益は210万ドルにとどまったと伝えているが、これは二次報道の数値である。なお本件は直近48時間の外だが、動画生成APIに依存していた開発者への影響があるため補足として掲載する。
+      </p>
+      <div class="source">出典：
+        <a href="https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation" target="_blank" rel="noopener">OpenAI Help Center「What to know about the Sora discontinuation」</a>
+        <a href="https://pasqualepillitteri.it/en/news/18764/openai-sora2-api-dismessa-en" target="_blank" rel="noopener">「OpenAI shuts down the Sora 2 API」（二次報道）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>API廃止に代替が示されない例として、外部モデルAPIへの依存はマルチベンダー化や切替手段の確保が必須だと改めて示す出来事。
+      </div>
+    </div>
+
+    <div class="footer">
+      出典はいずれも検索結果で確認できた実在のURLです。一部の報道内容は二次情報を含みます。<br>
+      © alphakt AI最新動向簡報
+    </div>
+  </div>
+</body>
+</html>
