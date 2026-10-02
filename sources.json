@@ -1,0 +1,373 @@
+{
+  "_comment": "日次簡報の固定源池。verified = この環境（Full network access）で 2026-10-02 に実取得できたもの。type: feed = scripts/collect.py が自動収集 / page = WebFetch で手動確認。 filter = タイトル+要約に対する正規表現（大文字小文字無視）。一致したものだけ出力。 max = 1 feed あたりの出力上限（既定 60）。",
+  "feeds": [
+    {
+      "lens": "DEV",
+      "name": "Hacker News (agent 検索, 新着)",
+      "url": "https://hnrss.org/newest?q=agent&points=50",
+      "verified": true
+    },
+    {
+      "lens": "DEV",
+      "name": "Hacker News (本日のベスト)",
+      "url": "https://hnrss.org/best",
+      "verified": true
+    },
+    {
+      "lens": "DEV",
+      "name": "arXiv cs.SE",
+      "url": "https://rss.arxiv.org/rss/cs.SE",
+      "verified": true,
+      "filter": "agent|LLM|language model|AI|code generation|review|copilot|automat",
+      "max": 40
+    },
+    {
+      "lens": "DEV",
+      "name": "arXiv cs.AI",
+      "url": "https://rss.arxiv.org/rss/cs.AI",
+      "verified": true,
+      "filter": "agent|coding|code generation|software|tool use|multi-agent|context engineering|human-in-the-loop|review",
+      "max": 40
+    },
+    {
+      "lens": "DEV",
+      "name": "Simon Willison",
+      "url": "https://simonwillison.net/atom/everything/",
+      "verified": true
+    },
+    {
+      "lens": "DEV",
+      "name": "Latent Space",
+      "url": "https://www.latent.space/feed",
+      "verified": true
+    },
+    {
+      "lens": "DEV",
+      "name": "OpenAI News",
+      "url": "https://openai.com/news/rss.xml",
+      "verified": true
+    },
+    {
+      "lens": "DEV",
+      "name": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/rss/",
+      "verified": true
+    },
+    {
+      "lens": "DEV",
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "verified": true
+    },
+    {
+      "lens": "DEV",
+      "name": "Zenn (AI トピック)",
+      "url": "https://zenn.dev/topics/ai/feed",
+      "verified": true
+    },
+    {
+      "lens": "DEV",
+      "name": "Zenn (Claude Code トピック)",
+      "url": "https://zenn.dev/topics/claudecode/feed",
+      "verified": true
+    },
+    {
+      "lens": "DEV",
+      "name": "Qiita (claudecode タグ)",
+      "url": "https://qiita.com/tags/claudecode/feed",
+      "verified": true
+    },
+    {
+      "lens": "DEV",
+      "name": "はてなブックマーク IT ホットエントリ",
+      "url": "https://b.hatena.ne.jp/hotentry/it.rss",
+      "verified": true,
+      "filter": "AI|Claude|GPT|Gemini|LLM|エージェント|Agent|Copilot|Codex|Cursor"
+    },
+    {
+      "lens": "DEV",
+      "name": "GitHub Blog",
+      "url": "https://github.blog/feed/",
+      "verified": true
+    },
+    {
+      "lens": "CONSULT",
+      "name": "Publickey",
+      "url": "https://www.publickey1.jp/atom.xml",
+      "verified": true
+    },
+    {
+      "lens": "CONSULT",
+      "name": "日経クロステック",
+      "url": "https://xtech.nikkei.com/rss/index.rdf",
+      "verified": true,
+      "filter": "AI|生成|エージェント|LLM"
+    },
+    {
+      "lens": "CONSULT",
+      "name": "ITmedia AI+",
+      "url": "https://rss.itmedia.co.jp/rss/2.0/aiplus.xml",
+      "verified": true
+    },
+    {
+      "lens": "CONSULT",
+      "name": "デジタル庁 新着",
+      "url": "https://www.digital.go.jp/rss/news.xml",
+      "verified": true
+    },
+    {
+      "lens": "CONSULT",
+      "name": "PR TIMES",
+      "url": "https://prtimes.jp/index.rdf",
+      "verified": true,
+      "note": "量が多い。AI/生成AI/エージェントを含むものだけ見る",
+      "filter": "AI|生成|エージェント|LLM|Agent",
+      "max": 30
+    },
+    {
+      "lens": "CONSULT",
+      "name": "AWS Japan Blog",
+      "url": "https://aws.amazon.com/jp/blogs/news/feed/",
+      "verified": true
+    },
+    {
+      "lens": "CONSULT",
+      "name": "Microsoft Japan News",
+      "url": "https://news.microsoft.com/ja-jp/feed/",
+      "verified": true
+    },
+    {
+      "lens": "CONSULT",
+      "name": "McKinsey Insights",
+      "url": "https://www.mckinsey.com/insights/rss",
+      "verified": true
+    },
+    {
+      "lens": "CONSULT",
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "verified": true
+    },
+    {
+      "lens": "CONSULT",
+      "name": "The Register AI/ML",
+      "url": "https://www.theregister.com/software/ai_ml/headlines.atom",
+      "verified": true
+    },
+    {
+      "lens": "CONSULT",
+      "name": "NIST News",
+      "url": "https://www.nist.gov/news-events/news/rss.xml",
+      "verified": true
+    },
+    {
+      "lens": "PM",
+      "name": "Martin Fowler",
+      "url": "https://martinfowler.com/feed.atom",
+      "verified": true
+    },
+    {
+      "lens": "PM",
+      "name": "Thoughtworks Insights",
+      "url": "https://www.thoughtworks.com/rss/insights.xml",
+      "verified": true
+    },
+    {
+      "lens": "PM",
+      "name": "InfoQ Japan",
+      "url": "https://feed.infoq.com/jp/",
+      "verified": true
+    },
+    {
+      "lens": "PM",
+      "name": "InfoQ",
+      "url": "https://feed.infoq.com/",
+      "verified": true,
+      "filter": "AI|LLM|agent|copilot"
+    }
+  ],
+  "pages": [
+    {
+      "lens": "DEV",
+      "name": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "method": "WebFetch",
+      "note": "curl は 403。WebFetch のみ"
+    },
+    {
+      "lens": "DEV",
+      "name": "Claude Code 変更履歴",
+      "url": "https://code.claude.com/docs/en/changelog",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "DEV",
+      "name": "Anthropic Engineering",
+      "url": "https://www.anthropic.com/engineering",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "DEV",
+      "name": "Anthropic Release Notes",
+      "url": "https://docs.anthropic.com/en/release-notes/overview",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "DEV",
+      "name": "OpenAI Developers Changelog",
+      "url": "https://developers.openai.com/changelog",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "DEV",
+      "name": "Cursor Changelog",
+      "url": "https://cursor.com/changelog",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "DEV",
+      "name": "Gemini API Changelog",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "DEV",
+      "name": "DailyArXiv (日次論文リスト)",
+      "url": "https://github.com/jyyang621/DailyArXiv/issues",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "CONSULT",
+      "name": "IPA AI ページ",
+      "url": "https://www.ipa.go.jp/digital/ai/",
+      "method": "WebFetch",
+      "note": "RSS なし"
+    },
+    {
+      "lens": "CONSULT",
+      "name": "個人情報保護委員会 お知らせ",
+      "url": "https://www.ppc.go.jp/news/",
+      "method": "WebFetch",
+      "note": "RSS なし"
+    },
+    {
+      "lens": "CONSULT",
+      "name": "総務省 報道資料",
+      "url": "https://www.soumu.go.jp/menu_news/s-news/",
+      "method": "WebFetch",
+      "note": "RSS なし"
+    },
+    {
+      "lens": "CONSULT",
+      "name": "Anthropic Customers",
+      "url": "https://www.anthropic.com/customers",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "CONSULT",
+      "name": "Google Cloud Customers",
+      "url": "https://cloud.google.com/customers",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "CONSULT",
+      "name": "Microsoft Customers",
+      "url": "https://www.microsoft.com/en-us/customers/",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "CONSULT",
+      "name": "NRI ニュース",
+      "url": "https://www.nri.com/jp/news",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "CONSULT",
+      "name": "Deloitte Japan プレス",
+      "url": "https://www.deloitte.com/jp/ja/about/press-room.html",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "CONSULT",
+      "name": "KPMG Japan プレス",
+      "url": "https://www.kpmg.com/jp/ja/home/media/press-releases.html",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "CONSULT",
+      "name": "EY Japan ニュース",
+      "url": "https://www.ey.com/ja_jp/newsroom",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "PM",
+      "name": "DORA",
+      "url": "https://dora.dev/",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "PM",
+      "name": "Thoughtworks Technology Radar",
+      "url": "https://www.thoughtworks.com/radar",
+      "method": "WebFetch",
+      "note": "年2回更新。更新時のみ"
+    },
+    {
+      "lens": "PM",
+      "name": "Pragmatic Engineer",
+      "url": "https://newsletter.pragmaticengineer.com/",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "PM",
+      "name": "Linear Changelog",
+      "url": "https://linear.app/changelog",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "PM",
+      "name": "Atlassian Blog",
+      "url": "https://www.atlassian.com/blog",
+      "method": "WebFetch"
+    },
+    {
+      "lens": "CONSULT",
+      "name": "EU Digital Strategy News",
+      "url": "https://digital-strategy.ec.europa.eu/en/news",
+      "method": "WebFetch",
+      "note": "RSS は廃止済み"
+    }
+  ],
+  "unreachable": [
+    {
+      "name": "経産省 報道発表",
+      "url": "https://www.meti.go.jp/press/index.html",
+      "reason": "サイト側 403（bot 対策）。WebSearch 経由でのみ把握可"
+    },
+    {
+      "name": "Gartner Newsroom",
+      "url": "https://www.gartner.com/en/newsroom",
+      "reason": "サイト側 403"
+    },
+    {
+      "name": "Reuters",
+      "url": "https://www.reuters.com/",
+      "reason": "401。WebSearch の要約のみ"
+    },
+    {
+      "name": "PMI",
+      "url": "https://www.pmi.org/",
+      "reason": "サイト側 403"
+    },
+    {
+      "name": "GitHub (curl / gh api)",
+      "url": "https://github.com/",
+      "reason": "curl は 403、gh api は本リポジトリ限定。ページは WebFetch で読む"
+    },
+    {
+      "name": "Refero Styles",
+      "url": "https://styles.refero.design/",
+      "reason": "トップは取得可だが個別ページはタイムアウトしがち"
+    }
+  ]
+}

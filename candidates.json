@@ -1,0 +1,11 @@
+{
+  "_comment": "候補プール。first_seen/last_seen は YYYY-MM-DD。sources は独立した出典 URL。status: seed | candidate | watching | retired。昇格・退出の規則は docs/briefing-design.md 第 4 節。",
+  "items": [
+    {"name": "Jev (TypeSafe AI)", "kind": "agent-infra", "status": "seed", "first_seen": "2026-10-02", "last_seen": "2026-10-02", "mentions": 0, "sources": [], "note": "テキストを生成せず型付きの判断だけ返す決定モデル。エージェントの小さな判断（ツール選択、安全性、停止判断）を主モデルから分離する発想。対照: 主モデル自前判断、他の router/guard モデル"},
+    {"name": "Refero Styles / DESIGN.md", "kind": "context-engineering", "status": "seed", "first_seen": "2026-10-02", "last_seen": "2026-10-02", "mentions": 0, "sources": [], "note": "実在サイトのデザインシステムを DESIGN.md に抽出してコーディングエージェントに渡す。対照: 他の DESIGN.md ライブラリ、デザイントークン書き出しツール"},
+    {"name": "WorkBuddy (Tencent Cloud)", "kind": "agent-product", "status": "seed", "first_seen": "2026-10-02", "last_seen": "2026-10-02", "mentions": 0, "sources": [], "note": "ローカルで動く業務エージェント。対照: OpenClaw, Meta Muse, Grok Bot, ChatGPT dots"},
+    {"name": "LLM-maintained wiki (RAG wiki)", "kind": "knowledge", "status": "seed", "first_seen": "2026-10-02", "last_seen": "2026-10-02", "mentions": 0, "sources": [], "note": "LLM が一次資料から wiki を継続的に編集・維持する知識蓄積の方式。対照: Obsidian+agent、各社 memory 機能"},
+    {"name": "SOUL.md / AGENTS.md / CLAUDE.md（エージェントの人格・規範ファイル）", "kind": "context-engineering", "status": "seed", "first_seen": "2026-10-02", "last_seen": "2026-10-02", "mentions": 0, "sources": [], "note": ".md でエージェントの振る舞いを規定する手法。効果の実証研究・ベストプラクティスを追う"},
+    {"name": "AI 生成 PR の人間レビュー枠組み", "kind": "process", "status": "seed", "first_seen": "2026-10-02", "last_seen": "2026-10-02", "mentions": 0, "sources": [], "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"}
+  ]
+}

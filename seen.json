@@ -1,0 +1,15 @@
+{
+  "_comment": "収録済みの事象。重複収録を防ぐ。date = 収録日。key = 事象を一意に表す短い英語キー（URL が変わっても同一事象を検出できるように）。",
+  "items": [
+    {"date": "2026-10-01", "key": "gemini-4-argon-announce", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"},
+    {"date": "2026-10-01", "key": "openai-gpt-6.1-astra-shelved", "url": "https://www.cnbc.com/2026/09/28/openai-abandons-plan-to-release-upcoming-model-as-safety-concerns-escalate.html"},
+    {"date": "2026-10-01", "key": "white-house-super-intelligence-accord", "url": "https://www.aljazeera.com/economy/2026/9/30/how-does-trumps-white-house-ai-accord-work"},
+    {"date": "2026-10-01", "key": "openai-devday-2026", "url": "https://www.axios.com/2026/09/29/openai-dev-day-2026-dots-space-sol"},
+    {"date": "2026-10-01", "key": "astribot-t1-north-america", "url": "https://www.einpresswire.com/article/946085980/astribot-brings-t1-to-north-america-showcasing-a-physical-ai-stack-built-on-design-for-ai"},
+    {"date": "2026-10-01", "key": "htx-humanoid-centre", "url": "https://littlebigreddot.com/htx-home-team-humanoid-robotics-centre-opens-2026"},
+    {"date": "2026-09-30", "key": "claude-sonnet-5.5-release", "url": "https://www.anthropic.com/claude-sonnet-5-5"},
+    {"date": "2026-09-30", "key": "intelligence-explosion-whitepaper", "url": "https://the-decoder.com/more-than-20-leading-ai-researchers-warn-that-automated-ai-research-poses-extreme-risks/"},
+    {"date": "2026-09-30", "key": "openai-safety-case-guidelines", "url": "https://aiweekly.co/alerts/openai-outlines-safety-case-framework-for-frontier-training"},
+    {"date": "2026-09-30", "key": "america-gov-launch", "url": "https://fedscoop.com/trump-launches-ai-site-america-gov/"}
+  ]
+}
