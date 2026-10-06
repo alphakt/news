@@ -3,9 +3,16 @@
 依存なし（標準ライブラリのみ）。HTTPS_PROXY / CA 設定は環境変数から自動で拾う。
 
 使い方:
-  python3 scripts/collect.py                 # 直近 48h, 標準出力
+  python3 scripts/collect.py                 # 直近 48h, 標準出力（compact）
   python3 scripts/collect.py --hours 24 --out /path/to/collected.md
   python3 scripts/collect.py --health        # 各 feed の取得可否のみ表示
+  python3 scripts/collect.py --no-pages      # pages（feed のないページ）の差分検出を省略
+
+トークン節約のための設計:
+  - seen.json にある URL は出力しない（既収録の再提示を防ぐ）。
+  - 要約は 110 字まで。タイトル・日付・URL が主。
+  - sources.json の pages はリンク一覧を state/page-snapshots.json と比較し、新規リンクだけを出す。
+    変化のないページは 1 行で済み、モデルが WebFetch する必要がない。
 """
 import argparse, json, re, sys, html, time, urllib.request, concurrent.futures as cf
 from datetime import datetime, timezone, timedelta
@@ -47,7 +54,7 @@ def text(el, *paths):
             if x.text: return x.text.strip()
     return ""
 
-def strip_html(s, n=220):
+def strip_html(s, n=90):
     s = re.sub(r"<[^>]+>", " ", html.unescape(s or ""))
     s = re.sub(r"\s+", " ", s).strip()
     return s[:n] + ("…" if len(s) > n else "")
@@ -81,15 +88,54 @@ def parse_feed(raw):
                           "summary": strip_html(text(e, "description", "content:encoded"))})
     return items
 
+def page_links(raw, base):
+    """ページ内の <a> を (text, href) で返す。同一ホストで、テキスト 12 字以上のものだけ。"""
+    from urllib.parse import urljoin, urlparse
+    out = []
+    host = urlparse(base).netloc
+    for m in re.finditer(r'<a\s[^>]*href="([^"#]+)"[^>]*>(.*?)</a>', raw, re.S | re.I):
+        href = urljoin(base, html.unescape(m.group(1)))
+        text = strip_html(m.group(2), 160)
+        if urlparse(href).netloc != host or len(text) < 12: continue
+        out.append((text, href))
+    seen = set(); uniq = []
+    for t, h in out:
+        if h in seen: continue
+        seen.add(h); uniq.append((t, h))
+    return uniq
+
+def diff_pages(pages, snap_path):
+    snap = json.loads(snap_path.read_text(encoding="utf-8")) if snap_path.exists() else {}
+    report = []
+    for pg in pages:
+        url = pg["url"]
+        try:
+            raw = fetch(url).decode("utf-8", "ignore")
+            links = page_links(raw, url)
+        except Exception as e:
+            report.append((pg, None, f"{type(e).__name__}: {e}"[:100])); continue
+        old = set(snap.get(url, {}).get("links", []))
+        new = [(t, h) for t, h in links if h not in old]
+        first = url not in snap
+        snap[url] = {"links": [h for _, h in links][:3000], "checked": datetime.now(timezone.utc).isoformat()}
+        report.append((pg, [] if first else new[:15], "baseline" if first else None))
+    snap_path.parent.mkdir(exist_ok=True)
+    snap_path.write_text(json.dumps(snap, ensure_ascii=False, indent=1), encoding="utf-8")
+    return report
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--hours", type=int, default=48)
     ap.add_argument("--out")
     ap.add_argument("--health", action="store_true")
     ap.add_argument("--sources", default=str(ROOT / "sources.json"))
+    ap.add_argument("--no-pages", action="store_true")
     a = ap.parse_args()
-    feeds = json.loads(Path(a.sources).read_text(encoding="utf-8"))["feeds"]
+    src = json.loads(Path(a.sources).read_text(encoding="utf-8"))
+    feeds = src["feeds"]
     since = datetime.now(timezone.utc) - timedelta(hours=a.hours)
+    seen_path = ROOT / "seen.json"
+    seen_urls = {i["url"].rstrip("/") for i in json.loads(seen_path.read_text(encoding="utf-8"))["items"]} if seen_path.exists() else set()
 
     def work(f):
         try:
@@ -98,6 +144,7 @@ def main():
             if f.get("filter"):
                 rx = re.compile(f["filter"], re.I)
                 recent = [i for i in recent if rx.search(i["title"] + " " + i["summary"])]
+            recent = [i for i in recent if i["link"].rstrip("/") not in seen_urls]
             recent = sorted(recent, key=lambda x: x["date"], reverse=True)[: f.get("max", 60)]
             return f, items, recent, None
         except Exception as e:
@@ -122,8 +169,18 @@ def main():
             out.append(f"### {f['name']} ({len(recent)})")
             for i in sorted(recent, key=lambda x: x["date"], reverse=True):
                 d = i["date"].astimezone(timezone(timedelta(hours=9))).strftime("%m-%d %H:%M")
-                out.append(f"- [{d}] {i['title']}  \n  {i['link']}" + (f"  \n  {i['summary']}" if i["summary"] else ""))
+                out.append(f"- [{d}] {i['title']} — {i['link']}" + (f"\n  {i['summary']}" if i["summary"] else ""))
             out.append("")
+    if not a.no_pages and src.get("pages"):
+        out.append("## PAGES（feed なし。新規リンクのみ。変化なし＝WebFetch 不要）")
+        for pg, new, err in diff_pages(src["pages"], ROOT / "state" / "page-snapshots.json"):
+            if err == "baseline": out.append(f"- {pg['name']}: 初回スナップショット作成（次回から差分）")
+            elif err: out.append(f"- {pg['name']}: 取得失敗 {err}")
+            elif not new: out.append(f"- {pg['name']}: 変化なし")
+            else:
+                out.append(f"- {pg['name']}: 新規 {len(new)} 件")
+                out += [f"    - {t} — {h}" for t, h in new]
+        out.append("")
     s = "\n".join(out)
     if a.out: Path(a.out).write_text(s, encoding="utf-8"); print(f"wrote {a.out} ({len(s)} chars)")
     else: print(s)

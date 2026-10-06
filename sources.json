@@ -11,7 +11,8 @@
       "lens": "DEV",
       "name": "Hacker News (本日のベスト)",
       "url": "https://hnrss.org/best",
-      "verified": true
+      "verified": true,
+      "filter": "AI|LLM|agent|GPT|Claude|Gemini|model|copilot|codex|cursor"
     },
     {
       "lens": "DEV",
@@ -19,7 +20,7 @@
       "url": "https://rss.arxiv.org/rss/cs.SE",
       "verified": true,
       "filter": "agent|LLM|language model|AI|code generation|review|copilot|automat",
-      "max": 40
+      "max": 25
     },
     {
       "lens": "DEV",
@@ -27,7 +28,7 @@
       "url": "https://rss.arxiv.org/rss/cs.AI",
       "verified": true,
       "filter": "agent|coding|code generation|software|tool use|multi-agent|context engineering|human-in-the-loop|review",
-      "max": 40
+      "max": 25
     },
     {
       "lens": "DEV",
@@ -63,13 +64,15 @@
       "lens": "DEV",
       "name": "Zenn (AI トピック)",
       "url": "https://zenn.dev/topics/ai/feed",
-      "verified": true
+      "verified": true,
+      "max": 15
     },
     {
       "lens": "DEV",
       "name": "Zenn (Claude Code トピック)",
       "url": "https://zenn.dev/topics/claudecode/feed",
-      "verified": true
+      "verified": true,
+      "max": 15
     },
     {
       "lens": "DEV",
@@ -82,7 +85,8 @@
       "name": "はてなブックマーク IT ホットエントリ",
       "url": "https://b.hatena.ne.jp/hotentry/it.rss",
       "verified": true,
-      "filter": "AI|Claude|GPT|Gemini|LLM|エージェント|Agent|Copilot|Codex|Cursor"
+      "filter": "AI|Claude|GPT|Gemini|LLM|エージェント|Agent|Copilot|Codex|Cursor",
+      "max": 12
     },
     {
       "lens": "DEV",
@@ -101,7 +105,8 @@
       "name": "日経クロステック",
       "url": "https://xtech.nikkei.com/rss/index.rdf",
       "verified": true,
-      "filter": "AI|生成|エージェント|LLM"
+      "filter": "AI|生成|エージェント|LLM",
+      "max": 15
     },
     {
       "lens": "CONSULT",
@@ -122,7 +127,7 @@
       "verified": true,
       "note": "量が多い。AI/生成AI/エージェントを含むものだけ見る",
       "filter": "AI|生成|エージェント|LLM|Agent",
-      "max": 30
+      "max": 15
     },
     {
       "lens": "CONSULT",
@@ -146,7 +151,8 @@
       "lens": "CONSULT",
       "name": "TechCrunch AI",
       "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
-      "verified": true
+      "verified": true,
+      "max": 12
     },
     {
       "lens": "CONSULT",
@@ -189,13 +195,6 @@
   "pages": [
     {
       "lens": "DEV",
-      "name": "GitHub Trending",
-      "url": "https://github.com/trending",
-      "method": "WebFetch",
-      "note": "curl は 403。WebFetch のみ"
-    },
-    {
-      "lens": "DEV",
       "name": "Claude Code 変更履歴",
       "url": "https://code.claude.com/docs/en/changelog",
       "method": "WebFetch"
@@ -228,12 +227,6 @@
       "lens": "DEV",
       "name": "Gemini API Changelog",
       "url": "https://ai.google.dev/gemini-api/docs/changelog",
-      "method": "WebFetch"
-    },
-    {
-      "lens": "DEV",
-      "name": "DailyArXiv (日次論文リスト)",
-      "url": "https://github.com/jyyang621/DailyArXiv/issues",
       "method": "WebFetch"
     },
     {
@@ -368,6 +361,20 @@
       "name": "Refero Styles",
       "url": "https://styles.refero.design/",
       "reason": "トップは取得可だが個別ページはタイムアウトしがち"
+    }
+  ],
+  "webfetch_only": [
+    {
+      "lens": "DEV",
+      "name": "GitHub Trending",
+      "url": "https://github.com/trending",
+      "note": "スクリプトでは 403。毎回 WebFetch 1 回"
+    },
+    {
+      "lens": "DEV",
+      "name": "DailyArXiv (日次論文リスト)",
+      "url": "https://github.com/jyyang621/DailyArXiv/issues",
+      "note": "GitHub はスクリプト 403。必要なときだけ WebFetch"
     }
   ]
 }

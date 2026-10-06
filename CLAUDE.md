@@ -59,6 +59,8 @@ GitHub Pages = `main` ブランチ配信。作業ブランチ（`claude/...`）�
   `--health` で feed の疎通確認。
 - `candidates.json`: 候補プール（製品・概念・手法）。昇格・退出の規則は設計文書第 4 節。固定 watchlist は持たない。
 - `seen.json`: 収録済み事象。重複収録を防ぐ。毎回追記する。
+- `state/page-snapshots.json`: feed のないページのリンク一覧スナップショット。`collect.py` が更新する。**毎回コミットする**（これが無いと翌日また全ページが「初回」扱いになる）。
+- 1 ランの予算: WebFetch ≤ 15、WebSearch ≤ 8、サブエージェント ≤ 1（設計文書第 7 節）。
 - 実行環境は **Network access = Full** が必須。Trusted のままだと一次情報源がほぼ全て 403 になる
   （2026-10-02 に判明。routine の環境設定を確認すること）。
 - 定時タスクの prompt は `docs/briefing-prompt.md`（routine 側の設定は仓库外なので、変更時は貼り直す）。

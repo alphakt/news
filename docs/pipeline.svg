@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="1180" viewBox="0 0 1040 1180" font-family="Hiragino Sans, Yu Gothic, Meiryo, sans-serif">
+  <style>
+    .box{fill:#fff;stroke:#4338ca;stroke-width:2;rx:10}
+    .box.in{stroke:#0369a1}.box.out{stroke:#b45309}.box.pub{stroke:#15803d}
+    .t{font-size:15px;font-weight:700;fill:#111827}.s{font-size:12.5px;fill:#374151}
+    .lane{font-size:13px;font-weight:800;fill:#4338ca}
+    .file{font-size:12px;fill:#6b7280;font-family:ui-monospace,Menlo,monospace}
+    .arrow{stroke:#4b5563;stroke-width:2;fill:none;marker-end:url(#m)}
+    .bad{fill:#fee2e2;stroke:#dc2626}.badt{fill:#991b1b;font-size:12.5px}
+    .good{fill:#ecfdf5;stroke:#15803d}.goodt{fill:#065f46;font-size:12.5px}
+  </style>
+  <defs><marker id="m" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker></defs>
+  <rect width="1040" height="1180" fill="#f8fafc"/>
+  <text x="30" y="40" font-size="22" font-weight="800" fill="#1e3a8a">日次 AI 簡報パイプライン（v2.1）</text>
+  <text x="30" y="62" class="s">毎朝 routine が Full ネットワーク環境で起動 → 約 30 分で公開。右列は読み書きするファイル。</text>
+
+  <!-- lane headers -->
+  <text x="30" y="100" class="lane">① 準備</text>
+  <rect x="30" y="110" width="430" height="64" class="box"/>
+  <text x="44" y="134" class="t">規約と方針を読む</text>
+  <text x="44" y="156" class="s">CLAUDE.md（公開手順）／ docs/briefing-design.md（選題・採点・予算）</text>
+  <text x="700" y="140" class="file">CLAUDE.md</text><text x="700" y="158" class="file">docs/briefing-design.md</text>
+
+  <path d="M245,174 L245,200" class="arrow"/>
+
+  <text x="30" y="200" class="lane">② 収集（4 層・LLM はほぼ読むだけ）</text>
+  <rect x="30" y="210" width="430" height="118" class="box in"/>
+  <text x="44" y="234" class="t">L1  scripts/collect.py（スクリプト、トークン 0）</text>
+  <text x="44" y="256" class="s">・29 feed を取得 → 48h 内・キーワード一致・seen.json 除外・上限付き</text>
+  <text x="44" y="276" class="s">・23 ページ（feed なし）はリンク一覧を前回スナップショットと比較</text>
+  <text x="44" y="296" class="s">　→ 新規リンクだけ出力。「変化なし」のページは開かない</text>
+  <text x="44" y="316" class="s">・1 ファイルに集約（約 4〜5 万字 ≒ 2 万トークン）</text>
+  <text x="700" y="240" class="file">sources.json（源池）</text>
+  <text x="700" y="258" class="file">seen.json（除外に使用）</text>
+  <text x="700" y="276" class="file">state/page-snapshots.json（更新）</text>
+  <text x="700" y="294" class="file">→ scratchpad/collected.md</text>
+
+  <path d="M245,328 L245,350" class="arrow"/>
+  <rect x="30" y="350" width="430" height="58" class="box in"/>
+  <text x="44" y="374" class="t">L2  主題プローブ：WebSearch 6 本（固定）＋ GitHub Trending 1 回</text>
+  <text x="44" y="396" class="s">製品名でなく主題で検索。英 4 本・日 2 本。摘要だけ読む</text>
+
+  <path d="M245,408 L245,430" class="arrow"/>
+  <rect x="30" y="430" width="430" height="58" class="box in"/>
+  <text x="44" y="454" class="t">L3  候補プール照合</text>
+  <text x="44" y="476" class="s">candidates.json の名前を L1/L2 の結果で grep。個別検索は週 1 回（月曜）</text>
+  <text x="700" y="460" class="file">candidates.json（読む）</text>
+
+  <path d="M245,488 L245,520" class="arrow"/>
+  <text x="30" y="520" class="lane">③ 選題と検証</text>
+  <rect x="30" y="530" width="430" height="96" class="box"/>
+  <text x="44" y="554" class="t">L4  採点 → 候補 ≤ 12 件</text>
+  <text x="44" y="576" class="s">仕事の仕方／クライアントが聞くか／一次証拠／新鮮さ（各 0–2、合計 ≥5）</text>
+  <text x="44" y="596" class="s">除外：資金調達・比較まとめ・噂・seen.json 重複　政策は 3 条件すべて</text>
+  <text x="44" y="616" class="s">視点タグ DEV / CONSULT / PM と「So what」が書けないものは落とす</text>
+
+  <path d="M245,626 L245,648" class="arrow"/>
+  <rect x="30" y="648" width="430" height="76" class="box"/>
+  <text x="44" y="672" class="t">検証：候補の一次 URL だけ WebFetch（≤ 12 回）</text>
+  <text x="44" y="694" class="s">本文を取得できたか／一次情報の日付が 48h 内か（例外なし）</text>
+  <text x="44" y="714" class="s">落ちたら除外して代替は探さない。足りなければ候補プールの 1 件を深読み</text>
+
+  <path d="M245,724 L245,756" class="arrow"/>
+  <text x="30" y="756" class="lane">④ 執筆</text>
+  <rect x="30" y="766" width="430" height="96" class="box out"/>
+  <text x="44" y="790" class="t">HTML 1 ファイル（3–6 件、最大 8）＋短信＋候補プールの動き</text>
+  <text x="44" y="812" class="s">各記事：見出し／本文 200–300 字／視点別 So what／重要度（高は「どう試す」付き）</text>
+  <text x="44" y="832" class="s">／一次出典／コメント 1 文。index.html の先頭に追加</text>
+  <text x="44" y="852" class="s">seen.json に収録分を追記、candidates.json を更新（新規・昇格・退出）</text>
+  <text x="700" y="790" class="file">outputs/ai-briefing-YYYY-MM-DD.html</text>
+  <text x="700" y="808" class="file">index.html</text>
+  <text x="700" y="826" class="file">seen.json（追記）</text>
+  <text x="700" y="844" class="file">candidates.json（更新）</text>
+
+  <path d="M245,862 L245,894" class="arrow"/>
+  <text x="30" y="894" class="lane">⑤ 公開と通知</text>
+  <rect x="30" y="904" width="430" height="76" class="box pub"/>
+  <text x="44" y="928" class="t">commit → push 作業ブランチ → push main → ls-tree で確認</text>
+  <text x="44" y="950" class="s">GitHub Pages は main 配信。state/ も一緒にコミット</text>
+  <text x="44" y="970" class="s">present_files で提示 → Slack #C0B967UK4AJ（見出しのみ、前置きタグなし）</text>
+
+  <!-- cost panel -->
+  <rect x="560" y="530" width="450" height="200" class="bad" rx="10"/>
+  <text x="576" y="556" class="t" fill="#991b1b">10/6 号（初回）の実績 — 高すぎた</text>
+  <text x="576" y="580" class="badt">WebFetch 144 回／WebSearch 59 回／約 55〜60 万トークン</text>
+  <text x="576" y="604" class="badt">原因 1：視点別に 3 体のサブエージェントが同じ収集結果を再読</text>
+  <text x="576" y="624" class="badt">原因 2：feed のない 23 ページを毎回 WebFetch（ほぼ全て変化なし）</text>
+  <text x="576" y="644" class="badt">原因 3：メインとサブエージェントが同じ URL を重複取得</text>
+  <text x="576" y="664" class="badt">原因 4：収集結果 12 万字をメインが丸ごと 2 回読んだ</text>
+  <text x="576" y="700" class="badt" font-weight="700">初回ゆえの探索コストも含む（源の当たり外れを確かめた）</text>
+
+  <rect x="560" y="904" width="450" height="130" class="good" rx="10"/>
+  <text x="576" y="930" class="t" fill="#065f46">v2.1 の予算（1 ラン）</text>
+  <text x="576" y="954" class="goodt">WebFetch ≤ 15／WebSearch ≤ 8／サブエージェント ≤ 1／≤ 15 万トークン</text>
+  <text x="576" y="976" class="goodt">ページ差分はスクリプトが判定（0 トークン）、収集結果は 2 万トークン程度</text>
+  <text x="576" y="996" class="goodt">サブエージェントは使わない。検証は候補 URL のみ</text>
+  <text x="576" y="1016" class="goodt">超えたら範囲を広げず手元の材料で定稿</text>
+
+  <text x="30" y="1060" class="s">凡例：青枠＝収集（入力）、紫枠＝判断、橙枠＝生成（出力）、緑枠＝公開。</text>
+  <text x="30" y="1080" class="s">スクリプトが担う部分（L1、ページ差分、公開確認）はトークンを消費しない。LLM が担うのは L2 の検索判断、L4 の採点、検証、執筆。</text>
+  <text x="30" y="1110" class="s">変更する場所：源を足す→ sources.json（取得確認してから）／選題基準→ docs/briefing-design.md／手順→ docs/briefing-prompt.md（routine に貼り直す）</text>
+</svg>
