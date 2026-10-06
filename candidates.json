@@ -1,11 +1,231 @@
 {
   "_comment": "候補プール。first_seen/last_seen は YYYY-MM-DD。sources は独立した出典 URL。status: seed | candidate | watching | retired。昇格・退出の規則は docs/briefing-design.md 第 4 節。",
   "items": [
-    {"name": "Jev (TypeSafe AI)", "kind": "agent-infra", "status": "seed", "first_seen": "2026-10-02", "last_seen": "2026-10-02", "mentions": 0, "sources": [], "note": "テキストを生成せず型付きの判断だけ返す決定モデル。エージェントの小さな判断（ツール選択、安全性、停止判断）を主モデルから分離する発想。対照: 主モデル自前判断、他の router/guard モデル"},
-    {"name": "Refero Styles / DESIGN.md", "kind": "context-engineering", "status": "seed", "first_seen": "2026-10-02", "last_seen": "2026-10-02", "mentions": 0, "sources": [], "note": "実在サイトのデザインシステムを DESIGN.md に抽出してコーディングエージェントに渡す。対照: 他の DESIGN.md ライブラリ、デザイントークン書き出しツール"},
-    {"name": "WorkBuddy (Tencent Cloud)", "kind": "agent-product", "status": "seed", "first_seen": "2026-10-02", "last_seen": "2026-10-02", "mentions": 0, "sources": [], "note": "ローカルで動く業務エージェント。対照: OpenClaw, Meta Muse, Grok Bot, ChatGPT dots"},
-    {"name": "LLM-maintained wiki (RAG wiki)", "kind": "knowledge", "status": "seed", "first_seen": "2026-10-02", "last_seen": "2026-10-02", "mentions": 0, "sources": [], "note": "LLM が一次資料から wiki を継続的に編集・維持する知識蓄積の方式。対照: Obsidian+agent、各社 memory 機能"},
-    {"name": "SOUL.md / AGENTS.md / CLAUDE.md（エージェントの人格・規範ファイル）", "kind": "context-engineering", "status": "seed", "first_seen": "2026-10-02", "last_seen": "2026-10-02", "mentions": 0, "sources": [], "note": ".md でエージェントの振る舞いを規定する手法。効果の実証研究・ベストプラクティスを追う"},
-    {"name": "AI 生成 PR の人間レビュー枠組み", "kind": "process", "status": "seed", "first_seen": "2026-10-02", "last_seen": "2026-10-02", "mentions": 0, "sources": [], "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"}
+    {
+      "name": "Jev (TypeSafe AI)",
+      "kind": "agent-infra",
+      "status": "candidate",
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-06",
+      "mentions": 1,
+      "sources": [
+        "https://arxiv.org/abs/2610.02267"
+      ],
+      "note": "テキストを生成せず型付きの判断だけ返す決定モデル。エージェントの小さな判断（ツール選択、安全性、停止判断）を主モデルから分離する発想。対照: 主モデル自前判断、他の router/guard モデル"
+    },
+    {
+      "name": "Refero Styles / DESIGN.md",
+      "kind": "context-engineering",
+      "status": "seed",
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "mentions": 0,
+      "sources": [],
+      "note": "実在サイトのデザインシステムを DESIGN.md に抽出してコーディングエージェントに渡す。対照: 他の DESIGN.md ライブラリ、デザイントークン書き出しツール"
+    },
+    {
+      "name": "WorkBuddy (Tencent Cloud)",
+      "kind": "agent-product",
+      "status": "seed",
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-02",
+      "mentions": 0,
+      "sources": [],
+      "note": "ローカルで動く業務エージェント。対照: OpenClaw, Meta Muse, Grok Bot, ChatGPT dots"
+    },
+    {
+      "name": "LLM-maintained wiki (RAG wiki)",
+      "kind": "knowledge",
+      "status": "watching",
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-06",
+      "mentions": 1,
+      "sources": [
+        "https://cognition.com/agent-memory-repo",
+        "https://github.com/AgentMemoryRepo/agentmemoryrepo"
+      ],
+      "note": "LLM が一次資料から wiki を継続的に編集・維持する知識蓄積の方式。対照: Obsidian+agent、各社 memory 機能"
+    },
+    {
+      "name": "SOUL.md / AGENTS.md / CLAUDE.md（エージェントの人格・規範ファイル）",
+      "kind": "context-engineering",
+      "status": "candidate",
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-06",
+      "mentions": 1,
+      "sources": [
+        "https://zenn.dev/fukorohouse/articles/e2659fcd7c530f"
+      ],
+      "note": ".md でエージェントの振る舞いを規定する手法。効果の実証研究・ベストプラクティスを追う"
+    },
+    {
+      "name": "AI 生成 PR の人間レビュー枠組み",
+      "kind": "process",
+      "status": "watching",
+      "first_seen": "2026-10-02",
+      "last_seen": "2026-10-06",
+      "mentions": 2,
+      "sources": [
+        "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
+        "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing"
+      ],
+      "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
+    },
+    {
+      "name": "ReviewBench (GitHub)",
+      "kind": "process",
+      "status": "candidate",
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "mentions": 1,
+      "sources": [
+        "https://github.com/review-bench/ReviewBench"
+      ],
+      "note": "AIコードレビューの公開ベンチマーク。219 PR / 19言語"
+    },
+    {
+      "name": "Agent Memory Repo / Dreaming (Cognition)",
+      "kind": "knowledge",
+      "status": "candidate",
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "mentions": 1,
+      "sources": [
+        "https://github.com/AgentMemoryRepo/agentmemoryrepo"
+      ],
+      "note": "git リポジトリ型エージェント記憶の公開仕様。Devin の夜間整理 Dreaming"
+    },
+    {
+      "name": "AI Modernization Flow (AWS Japan)",
+      "kind": "process",
+      "status": "candidate",
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "mentions": 1,
+      "sources": [
+        "https://github.com/aws-samples/sample-ai-modernization-flow"
+      ],
+      "note": "Method/Playbook/Harness の3層で移行作業をエージェントに規律付け"
+    },
+    {
+      "name": "textGrain (OpenAI)",
+      "kind": "policy",
+      "status": "candidate",
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "mentions": 1,
+      "sources": [
+        "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/"
+      ],
+      "note": "EU 向けテキスト透かし。API は世界でオプトイン"
+    },
+    {
+      "name": "decision pins (Pinning Decisions Before Failure)",
+      "kind": "process",
+      "status": "candidate",
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "mentions": 1,
+      "sources": [
+        "https://arxiv.org/abs/2610.03237"
+      ],
+      "note": "曖昧な要件の読み分かれを実行可能な記録として固定"
+    },
+    {
+      "name": "hacktrace",
+      "kind": "agent-infra",
+      "status": "candidate",
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "mentions": 1,
+      "sources": [
+        "https://arxiv.org/abs/2610.03055"
+      ],
+      "note": "コード生成中の報酬ハッキング検知"
+    },
+    {
+      "name": "Laya (open-weight decision model)",
+      "kind": "agent-infra",
+      "status": "candidate",
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "mentions": 1,
+      "sources": [
+        "https://arxiv.org/abs/2610.02267"
+      ],
+      "note": "Jev の比較対象"
+    },
+    {
+      "name": "Agent Fleet (k-k1)",
+      "kind": "agent-infra",
+      "status": "candidate",
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "mentions": 1,
+      "sources": [
+        "https://github.com/k-k1/agent-fleet"
+      ],
+      "note": "複数 CLI エージェントをブラウザ 1 画面から動かす self-hosted 基盤"
+    },
+    {
+      "name": "claude-mem",
+      "kind": "knowledge",
+      "status": "candidate",
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "mentions": 1,
+      "sources": [
+        "https://github.com/thedotmack/claude-mem"
+      ],
+      "note": "hooks で記憶を圧縮・再注入。GitHub Trending 常連"
+    },
+    {
+      "name": "SwarmChase",
+      "kind": "agent-infra",
+      "status": "candidate",
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "mentions": 1,
+      "sources": [
+        "https://swarmcha.se/posts/chinese-agent-fleet"
+      ],
+      "note": "エージェント群の観測・分析"
+    },
+    {
+      "name": "AGENTIC STAR パートナー制度 (SoftBank)",
+      "kind": "agent-product",
+      "status": "candidate",
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "mentions": 1,
+      "sources": [
+        "https://www.softbank.jp/business/news/2026/1006-01"
+      ],
+      "note": "法人向けエージェント基盤の SIer パートナー制度"
+    },
+    {
+      "name": "Beam (Reflection AI)",
+      "kind": "model",
+      "status": "candidate",
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "mentions": 1,
+      "sources": [
+        "https://reflection.ai/blog/introducing-beam"
+      ],
+      "note": "501B オープン重み、重みは今月中に公開予定"
+    },
+    {
+      "name": "Spec-driven delivery (Akka Specify)",
+      "kind": "process",
+      "status": "candidate",
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "mentions": 1,
+      "sources": [
+        "https://akka.io/blog/we-ported-65-oss-projects"
+      ],
+      "note": "65 OSS 移植実験。一次は 9/3 で範囲外だが概念として追跡"
+    }
   ]
 }
