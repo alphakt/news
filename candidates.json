@@ -4,12 +4,14 @@
     {
       "name": "Jev (TypeSafe AI)",
       "kind": "agent-infra",
-      "status": "candidate",
+      "status": "watching",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-06",
-      "mentions": 1,
+      "last_seen": "2026-10-07",
+      "mentions": 3,
       "sources": [
-        "https://arxiv.org/abs/2610.02267"
+        "https://arxiv.org/abs/2610.02267",
+        "https://developers.openai.com/api/docs/guides/decisions",
+        "https://www.thoughtworks.com/insights/blog/generative-ai/how-jev-can-help-improve-the-efficiency-of-rag-pipelines"
       ],
       "note": "テキストを生成せず型付きの判断だけ返す決定モデル。エージェントの小さな判断（ツール選択、安全性、停止判断）を主モデルから分離する発想。対照: 主モデル自前判断、他の router/guard モデル"
     },
@@ -63,11 +65,12 @@
       "kind": "process",
       "status": "watching",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-06",
-      "mentions": 2,
+      "last_seen": "2026-10-07",
+      "mentions": 3,
       "sources": [
         "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
-        "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing"
+        "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
+        "https://arxiv.org/abs/2610.05399"
       ],
       "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
     },
@@ -226,6 +229,42 @@
         "https://akka.io/blog/we-ported-65-oss-projects"
       ],
       "note": "65 OSS 移植実験。一次は 9/3 で範囲外だが概念として追跡"
+    },
+    {
+      "name": "OpenAI Decisions API",
+      "kind": "agent-infra",
+      "status": "candidate",
+      "first_seen": "2026-10-07",
+      "last_seen": "2026-10-07",
+      "mentions": 1,
+      "sources": [
+        "https://developers.openai.com/api/docs/guides/decisions"
+      ],
+      "note": "判断専用API（gpt-6-luna、入力$0.10/M、出力課金なし）"
+    },
+    {
+      "name": "Mistral Large 4",
+      "kind": "model",
+      "status": "candidate",
+      "first_seen": "2026-10-07",
+      "last_seen": "2026-10-07",
+      "mentions": 1,
+      "sources": [
+        "https://mistral.ai/news/mistral-large-4/"
+      ],
+      "note": "1T/49B active、重みは10月末公開予定"
+    },
+    {
+      "name": "AFCRA（AIレビュアー攻撃）",
+      "kind": "process",
+      "status": "candidate",
+      "first_seen": "2026-10-07",
+      "last_seen": "2026-10-07",
+      "mentions": 1,
+      "sources": [
+        "https://arxiv.org/abs/2610.05399"
+      ],
+      "note": "AIレビュアーを騙すフィードバック誘導型攻撃"
     }
   ]
 }

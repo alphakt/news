@@ -110,6 +110,36 @@
       "date": "2026-09-30",
       "key": "america-gov-launch",
       "url": "https://fedscoop.com/trump-launches-ai-site-america-gov/"
+    },
+    {
+      "date": "2026-10-07",
+      "key": "openai-decisions-api",
+      "url": "https://developers.openai.com/api/docs/guides/decisions"
+    },
+    {
+      "date": "2026-10-07",
+      "key": "atena-claude-bedrock-case",
+      "url": "https://aws.amazon.com/jp/blogs/news/claude-code-case-study-atena/"
+    },
+    {
+      "date": "2026-10-07",
+      "key": "mistral-large-4",
+      "url": "https://mistral.ai/news/mistral-large-4/"
+    },
+    {
+      "date": "2026-10-07",
+      "key": "arxiv-2610.05399-afcra",
+      "url": "https://arxiv.org/abs/2610.05399"
+    },
+    {
+      "date": "2026-10-07",
+      "key": "arxiv-2610.04433-harness-tokens",
+      "url": "https://arxiv.org/abs/2610.04433"
+    },
+    {
+      "date": "2026-10-07",
+      "key": "github-git-infra-agent-scale",
+      "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/"
     }
   ]
 }

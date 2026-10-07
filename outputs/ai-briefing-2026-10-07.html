@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年10月7日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年10月7日（水）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">各記事に視点タグと視点ごとの「だから何か」を付け、重要度は「今すぐ試せる・対応が要るか」で決めています。出典はすべて本文を取得して確認した一次情報で、公開が48時間を超えるものは載せていません。方針の全文は <a href="https://github.com/alphakt/news/blob/main/docs/briefing-design.md" target="_blank" rel="noopener">docs/briefing-design.md</a> を参照。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>OpenAI、判断専用の「Decisions API」を公開ベータに——テキスト・画像に対し確率・選択肢・スコアを型付きで返し、入力 $0.10/100万トークン、出力課金なし</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">OpenAIの開発者ドキュメントに、新しい「Decisions API」が掲載された。文章を生成せず、入力（テキストや画像）と質問を渡すと、条件に当てはまる確率（predicate）、固定の選択肢からの選択と確信度（choice）、基準に沿った評価点（score）を型付きで返す。Responses APIの約10倍速いとされ、用途は分類、問い合わせの振り分け、優先度付け。現在使えるモデルは gpt-6-luna のみで、入力は100万トークンあたり0.10ドル、出力トークンは課金されない。公開ベータで、GAは近いと記されている。HIPAAとZero Data Retentionにも対応する。候補プールで追ってきた「決定モデル」（Jev）と同じ発想が、主要ベンダーの正式APIとして出た形だ。</p>
+      <div class="howto"><b>どう試す／どう対応する：</b>自社の問い合わせ振り分けやPRの重要度判定など、すでにLLMで分類している処理を1つ選び、同じ100件を現行APIとDecisions APIに流して、一致率・遅延・費用を比べる。</div>
+      <ul class="sowhat"><li><b>DEV</b>エージェントの小さな判断（ツール選択、安全判定、ルーティング）を主モデルから切り出す標準部品になる。確率で返るため、閾値で人間確認へ回す設計がしやすい。</li><li><b>PM</b>判断処理は出力課金なしで安い。トークン費用の統制では「どの判断を安価な判定APIに寄せるか」が新しい見積項目になる。</li><li><b>CONSULT</b>業務フローの分類・振り分けを「生成」でなく「判定」で組む提案が可能に。HIPAA/ZDR対応なので機密度の高い業種でも説明しやすい。</li></ul>
+      <div class="source">出典：
+        <a href="https://developers.openai.com/api/docs/guides/decisions" target="_blank" rel="noopener">OpenAI Developers「Decisions API」ガイド（2026-10-07 取得、公開ベータ）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>ガイドに公開日の記載はなく、OpenAI Developers Changelog への新規掲載（48時間以内）で日付を判断した。判断が安く速くなるほど、精度の測り方（事前処理の費用を含めた end-to-end）が論点になる。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>AWS Japan 公開の事例：アテナが Claude Desktop を Amazon Bedrock につなぎ非エンジニア約200名へ展開——PoC 9営業日の費用は Team プラン席の約3.9倍、利用者間の差は51倍</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">AWS Japan Blogは10月7日、株式会社アテナと共同執筆した導入事例を公開した。Claude Desktop のバックエンドを Amazon Bedrock に向け、Microsoft Entra ID の OIDC フェデレーションで認証する構成。統制は3層で、ID基盤は既存の従業員ライフサイクル管理を流用、AWS側は有効期限12時間の一時認証情報と日本国内の推論プロファイルのみ許可、端末側はMDMのレジストリ配布でWeb検索などの機能を制限した。PoCは2026年9月に28台・有志22名で実施し、約200名への全社展開を予定する。成果は業務時間が半分程度に減り、提案資料の約9割をAIで作成できたこと。一方、9営業日の測定を月額換算すると22名で Claude Team 22席分の約3.9倍になり、利用者別には51倍の開き、上位2名で費用の約半分を占めた。非エンジニア社員が自分でCLAUDE.mdを作り込んだ点も目を引く。</p>
+      <div class="howto"><b>どう試す／どう対応する：</b>クライアントの「全社展開」提案に、PoCで利用者別のトークン費用分布を必ず測る工程を入れる。席課金との損益分岐は、平均でなく上位利用者の偏りで試算する。</div>
+      <ul class="sowhat"><li><b>CONSULT</b>日本国内推論・一時認証・MDM制限という統制の型が、そのまま日本企業向けの参照構成になる。Teamプラン席との費用比較は必ず聞かれる。</li><li><b>PM</b>従量課金の見積りは平均値で作らない。51倍の偏りがあるため、上位利用者の上限・アラート設計を予算に含める。</li><li><b>DEV</b>非エンジニアがCLAUDE.mdを自作するところまで進んだ。配布する雛形とレビューの仕組みを先に用意すると、全社展開で品質が揃う。</li></ul>
+      <div class="source">出典：
+        <a href="https://aws.amazon.com/jp/blogs/news/claude-code-case-study-atena/" target="_blank" rel="noopener">AWS Japan Blog「株式会社アテナが Claude Code on Amazon Bedrock で実現した、非エンジニア向け生成 AI 全社展開」（2026-10-07）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>成果の「半分程度」「約9割」は自己申告で、測定は9営業日と短い。それでも費用の偏りを数字で公開している点が貴重で、日本企業向けの費用議論の叩き台として使える。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Mistral、1兆パラメータ（アクティブ490億）の「Mistral Large 4」を発表——入力 $1.36／出力 $4.18（100万トークン）、重みは10月末に公開予定</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Mistral AIは10月6日、マルチモーダルの新フラッグシップ「Mistral Large 4」を発表した。総パラメータ1兆、アクティブ490億、160以上の言語に対応。Mistral Studio でAPIの公開プレビューが始まっており、価格は入力100万トークンあたり1.36ドル、出力4.18ドル。重みは「月末までに公開する」としている。同社の発表ではコーディング（DeepSWE v1.1で61.7%）、サイバーセキュリティ（脆弱性再現82%）、エージェント業務（AutomationBenchで59.9%）で強く、オープンモデルとしてはサイバー・金融・法務で最高水準を主張する。学習は欧州のデータセンターで行われ、欧州域内での利用も案内されている。ベンチマークは自社発表であり、独立した検証はこれからだ。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>データ所在地や外部送信を避けたい日本企業に、「欧州発・オープン重み・自社運用可」という選択肢が加わる。重み公開後にGPU費用込みで比較できる。</li><li><b>DEV</b>ツール利用・コード用途の新しい比較対象。10月末の重み公開までは、API版で自社の評価セットを流して見ておく。</li></ul>
+      <div class="source">出典：
+        <a href="https://mistral.ai/news/mistral-large-4/" target="_blank" rel="noopener">Mistral AI「Mistral Large 4」（2026-10-06）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>数字はすべて自社発表。1兆規模のオープン重みを自前で動かせる企業は限られるので、実際の選択肢になるのはAPIかクラウド経由だろう。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>arXiv：AIのPRレビュアーは「指摘に従って直したふり」で脆弱性を通せる——フィードバック誘導型の攻撃が、従来手法の2.5〜12.5倍の成功率</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">10月6日にarXivへ掲載された論文（2610.05399）は、AIレビュアーの指摘を攻撃者が逆手に取る手口「AFCRA」を示した。レビュアーが挙げた問題を表面上は直しつつ、根本の脆弱性を残したコードに修正を重ねていく方式で、実行可能なエクスプロイトを持つ159件の既知脆弱性からベンチマーク（AFCRA-Bench）を作って検証した。Sonnet 5 と GPT-5.5 をレビュアーにして5ラウンド繰り返したところ、テキストやコメントだけで騙す最強の従来攻撃に対し、成功率は2.5倍から12.5倍に上がった。論文は開発者、AI提供側、レビュアー、著者それぞれへの対策も提案している。AIレビュアーをマージの唯一の門番にする運用の弱点を、再現可能な形で示した研究だ。</p>
+      <div class="howto"><b>どう試す／どう対応する：</b>自社のレビューボット運用で「ボットの指摘→修正→再レビュー」の往復回数に上限を置き、セキュリティ関連の変更は人間の承認を必須にするルールを今週のレビュー規約に足す。</div>
+      <ul class="sowhat"><li><b>DEV</b>AIレビューは「通ったから安全」の根拠にならない。修正の往復を重ねるほど騙されやすいため、再レビューは回数制限と人間確認を併用する。</li><li><b>PM</b>AIレビュー導入の品質計画に、攻撃的な利用（外部コントリビューターや侵害されたエージェント）を想定した統制を入れる。</li></ul>
+      <div class="source">出典：
+        <a href="https://arxiv.org/abs/2610.05399" target="_blank" rel="noopener">arXiv:2610.05399「Adaptive Code Revision Attacks on AI Pull Request Reviewers」（2026-10-06掲載）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>昨日のReviewBenchが「どのボットが良いか」を測る話なら、こちらは「良いボットでも門番にならない」条件を示す話。2つ並べて読むと、レビュー体制の設計が見える。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>arXiv：「ハーネスが買うのはトークンだけ」——Claude Code と最軽量ハーネスのSWE-bench成績は5ポイント以内、1タスクの費用は最大3倍違う</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">10月6日掲載の論文（2610.04433、Liu・Han）は、5つのモデルと3つの実運用ハーネス（Claude Code、mini-SWE-agent、OpenCode）をSWE-bench Verified（447タスク）で比べた。最も重いハーネスと最も軽いハーネスの成績差は5ポイント以内で、ハーネスを替えて結果が入れ替わるタスクの割合（約13%）は、同じ条件でやり直した場合の揺れと同程度だった。一方、1タスクあたりの費用は同じモデル・同じタスクでも最大3倍違い、原因はステップごとに送られるシステムプロンプトの前置きとツール定義の大きさだという。さらに現行のタスク数ではハーネス改良の効果を検出しにくく、45タスクでは13ポイントの差を半分の確率でしか拾えないとも指摘する。</p>
+      <div class="howto"><b>どう試す／どう対応する：</b>自社で使うコーディングエージェントについて、同じ10〜20タスクで「システムプロンプト＋ツール定義」の送信トークン量を計測し、不要なツール定義を外した構成の費用と成績を比べる。</div>
+      <ul class="sowhat"><li><b>PM</b>エージェント選定の費用比較は、成績でなく1タスクあたりのトークン量で行う。ハーネス乗り換えの見積りに「成績は同等、費用は最大3倍差」を使える。</li><li><b>DEV</b>ツール定義とプロンプトの前置きを削るのが最も確実な節約策になる。評価は小さなタスク集合では判断できないので、母数を増やす。</li><li><b>CONSULT</b>クライアントの「どのエージェントが賢いか」という質問には、成績差より運用費差で答える方が説得力がある。</li></ul>
+      <div class="source">出典：
+        <a href="https://arxiv.org/abs/2610.04433" target="_blank" rel="noopener">arXiv:2610.04433「What Does a Harness Buy? Tokens, Mostly」（2026-10-06掲載）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>モデルやハーネスの成績比較を売りにする資料への解毒剤になる。ただし評価対象はSWE-bench Verifiedのみで、業務タスクへそのまま当てはまるとは限らない。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>GitHub、エージェント規模の開発に備えGit基盤を再構築——9月のコミットは73.8億件で前年の5倍、書き込み性能は最大35倍を見込む</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">GitHubは10月6日、Git基盤を稼働を止めずに作り替えていると技術ブログで説明した。Git関連イベントは前年比2倍（月2,182億→4,733億）、9月のコミットは73.8億件で前年の5倍、プッシュは4.9倍、PRマージは約4倍、GitHub Actionsは32.6億回で4倍に増えている。従来は耐久性と規模が結びついていたため読み取りレプリカを増やすと書き込みが遅くなった。新方式は保存と計算を分離し、リポジトリデータをAzure Blob Storageへ移し、軽量なワーカーが読み取りを担い、圧縮やガベージコレクションは別処理にする。書き込みのクリティカルパスは参照の更新のみに絞り、最大35倍の書き込みスループットを見込む。ブランチ保護、監査ログ、レビュー制御は維持される。</p>
+      <ul class="sowhat"><li><b>PM</b>エージェントが量を桁違いに増やす前提で、基盤側も作り替えが要る段階に来ている。自社CIやリポジトリ運用の上限・レート制限は、エージェント導入前に見直す。</li><li><b>DEV</b>大量のコミット・PRを生む運用では、リポジトリ側の待ち時間や制限が詰まりどころになり得る。ブランチ保護や監査が維持される点は安心材料。</li></ul>
+      <div class="source">出典：
+        <a href="https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/" target="_blank" rel="noopener">GitHub Blog「Building Git infrastructure for agent-scale development」（2026-10-06）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>直接試せる話ではないが、AI生成コードの量が数字で見える一次資料。レビューがボトルネックになるという今週の流れを、基盤側の数字で裏づける。</div>
+    </div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>昇格：</b>「決定モデル（Jev）」を <i>watching</i> に。OpenAI Decisions API（主要ベンダーの採用）、Thoughtworks の RAG 記事、Simon Willison のプラグインと独立出典が揃った。</li>
+      <li><b>新規：</b>OpenAI Decisions API（gpt-6-luna）、Mistral Large 4、AFCRA（AIレビュアー攻撃）。</li>
+      <li><b>見送り：</b>Gartner の FDE 予測（一次が9月29日で範囲外）、Anthropic Managed Agents のドメイン制限（公開日が確認できず）、Wikimedia と OpenAI の件（収録済み）。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池（29 feed＋24ページ）と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
