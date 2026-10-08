@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年10月8日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年10月8日（木）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">各記事に視点タグと視点ごとの「だから何か」を付け、重要度は「今すぐ試せる・対応が要るか」で決めています。出典はすべて本文を取得して確認した一次情報で、公開が48時間を超えるものは載せていません。方針の全文は <a href="https://github.com/alphakt/news/blob/main/docs/briefing-design.md" target="_blank" rel="noopener">docs/briefing-design.md</a> を参照。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Anthropic、「Claude Haiku 5.5」を公開——入力 $0.10／出力 $0.50（100万トークン）でHaiku 4.5の約1/10、Sonnet 5.5のキャッシュ読み取りも半額に</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Anthropicは10月7日、小型モデルの新版Haiku 5.5を発表した。価格は100万トークンあたり入力0.10ドル・出力0.50ドル（10万トークン超は0.50／2.50ドル）で、Haiku 4.5（1／5ドル）から大幅に下がり、同社は平均コストを約75%低いとしている。同時にSonnet 5.5のキャッシュ読み取り価格も半額になった。同社発表のベンチマークではOSWorld 2.1が15.7%から72.4%、Terminal-Bench 4.0が0.0%から39.2%へ伸びたが、Sonnet 5.5（83.9%／70.6%）には届かない。Haikuとして初めて推論の強度を調整でき、モデルID claude-haiku-5-5でClaude Platform、AWS Bedrock、Google Vertex AI、Azureから使える。用途は要約、コンパクション、分類、DBクエリ、サブエージェントなど。トークナイザーが更新され、同じ作業でもわずかにトークン数が増える点には注意がいる。</p>
+      <div class="howto"><b>どう試す／どう対応する：</b>現行でSonnet等に流している要約・分類・サブエージェント処理を1つ選び、同じ100件をHaiku 5.5に流して、品質・遅延・費用（トークナイザー変更分を含む）をSonnet 5.5と比べる。</div>
+      <ul class="sowhat"><li><b>DEV</b>エージェントの下請け作業（要約、コンテキスト圧縮、検索の絞り込み）を安価なモデルに振り分ける設計の採算が大きく変わる。複雑なコーディングは引き続き上位モデルに残す。</li><li><b>PM</b>トークン費用の統制で、モデルの使い分け（上位は計画・判断、Haikuは大量処理）が最も効く削減策になる。キャッシュ半額と合わせて見積りの前提を更新する。</li><li><b>CONSULT</b>「安いモデルで十分な業務はどれか」がクライアントに必ず聞かれる。自社発表の数字を鵜呑みにせず、業務別に小さな評価を回す工程を提案に含められる。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.anthropic.com/claude-haiku-5-5" target="_blank" rel="noopener">Anthropic「Claude Haiku 5.5」（2026-10-07）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>性能の数字はすべてAnthropic自身の発表で、独立した検証はこれから。それでも価格差が10倍あるため、「どこまで下位モデルに任せられるか」の線引きを見直す好機になる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>GitHub、AIエージェントによるコード急増に合わせシークレット保護を拡張——文脈を読む分類器で、押し込み時に防げる漏えいを2倍以上に</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">GitHubは10月7日、シークレット保護の拡張を発表した。GitHub上のPRの約3分の1がAIエージェントを含み（1年前は10分の1未満）、公開プッシュは2024年Q2の2.02億件から2026年Q2に5.74億件へ2.8倍、シークレットを含むプッシュは2.59倍に増えた。一方でプッシュあたりの混入率に有意な上昇は見られず、問題は「漏えい後の対応」にあるという。手動での失効に平均約40日かかり、新たに検出されたシークレットのうちプッシュ保護で防げているのは約30%にとどまる。そこでModernBERTベースの分類器を導入し、周囲のコードからデータベースURLやKubernetes Secret、Dockerfile内のパスワードらしき値を判別する。プッシュ保護への統合は現在プライベートプレビューで、月内にSecret Protection契約のEnterprise CloudとTeams向けに提供予定。利用にはAIクレジットを消費する。</p>
+      <div class="howto"><b>どう試す／どう対応する：</b>GitHub Secret Protectionを契約している組織は、プッシュ保護の対象とAIクレジットの上限設定を確認し、月内の提供開始に備えて失効手順（誰が何日以内に回すか）を決めておく。</div>
+      <ul class="sowhat"><li><b>DEV</b>構造化されていないパスワードやDB接続文字列は従来の検出で漏れやすい。エージェントが.envや設定を書く場面では、プッシュ時のブロックを前提に作業フローを組む。</li><li><b>PM</b>「検出」より「失効の平均40日」が真のリスク。エージェント導入の運用計画に、漏えい時の失効担当と期限を入れる。AIクレジット消費も予算項目になる。</li><li><b>CONSULT</b>クライアントのエージェント導入審査で、秘密情報の漏えい対策の具体例として使える。ただし機能は一部プレビューで、契約条件に注意。</li></ul>
+      <div class="source">出典：
+        <a href="https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/" target="_blank" rel="noopener">GitHub Blog「Secret protection must scale with software」（2026-10-07）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>数字はGitHub自身の集計で、新分類器の効果は「2倍以上」という主張にとどまる。評価の前提は提供開始後に自社リポジトリで確かめたい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>arXiv：32モデル・3世代の追跡で「新しいモデルほど安全なコード」は自動では成り立たず——どの系列も機能と安全性のギャップを埋めきれていない</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">10月6日にarXivへ掲載された研究（2610.08240）は、7つのモデル系列・32モデルについて、各系列の3世代（フラッグシップ版とコンパクト版）が生成するコードを、5言語・31種類の弱点（CWE）にまたがる119タスクのCWEvalで比べた。結論は、新しいモデルは絶対値では安全になっているが、「どの系列もギャップを解消していない」こと。オープンウェイトかどうかは差を説明せず、コンパクト版は概ねフラッグシップより安全性が低い。ログインジェクション（CWE-117）などの弱点は残り、最新のプロプラエタリモデルではメモリ・整数関連で後退も見られた。著者は、モデル更新で安全性が自動的に上がると想定せず、モデルを変えるたびにセキュリティチェックを再実行するよう勧めている。個別の数値は要旨には示されていない。</p>
+      <div class="howto"><b>どう試す／どう対応する：</b>エージェントやCIで使うモデルを切り替える手順に、静的解析とセキュリティテストの再実行を必須項目として追加する（Haiku 5.5など下位モデルへの切替時は特に）。</div>
+      <ul class="sowhat"><li><b>DEV</b>モデルのバージョンアップやコンパクト版への切替は、セキュリティテストの再実行とセットにする。安全なAPIをコンテキストに渡すことも有効とされる。</li><li><b>PM</b>「新しいモデルに替えたから安全」は品質計画の根拠にならない。モデル変更を変更管理の対象にし、検査の再実行コストを見積りに入れる。</li></ul>
+      <div class="source">出典：
+        <a href="https://arxiv.org/abs/2610.08240" target="_blank" rel="noopener">arXiv:2610.08240「Newer and Bigger, but Safer? A Longitudinal Study of the Functionality-Security Gap in LLM-Generated Code」（2026-10-06提出）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>要旨には具体的な割合が載っておらず、まだ査読前。方向性は実務の直感と一致するが、数値の確認は本文を読んでからにしたい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>arXiv：コーディングエージェントで作った本番の医療基盤の事例——テスト・監視・レビュー用エージェントのいずれも誤り、網羅的レビューだけの人間統制は信頼できない</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">10月6日掲載の論文（2610.08651）は、正式なソフトウェア工学の訓練を受けていない運用者が、コーディングエージェントで構築した本番稼働中の医療プラットフォームを事例に、AI製ソフトウェアの品質保証を検証した。当初の単純なワークフローは、一つのエージェントがコードを書き、別のエージェントが監視・レビューし、プロジェクトのルールで教訓を引き継ぐ人間主導のメタエージェント体制へ発展した。しかし、テスト、監視ツール、レビュー用エージェントはいずれも誤りうること、監視が成果でなく代理指標を測っていたこと、監査がエラーを出さずに失敗したこと、必要なチェック項目が報告から黙って消えたこと、自動修復が運用障害を起こしたことが分かった。著者は、意図した成果、その証拠、エージェントの権限、最終的な人間の判断を同じ目的に結びつけて初めて、人間による統制が機能すると結論づける。</p>
+      <div class="howto"><b>どう試す／どう対応する：</b>自社のエージェント運用で、監視・監査が「何を測っているか」（成果か代理指標か）を1つ洗い出し、チェックが黙って抜けた場合に気づける仕組み（件数の突き合わせ）を足す。</div>
+      <ul class="sowhat"><li><b>PM</b>「人がレビューするから安全」では足りない。成果・証拠・権限・最終判断を紐づけた統制の設計を、品質計画とエージェント権限設計の両方に入れる。</li><li><b>DEV</b>チェックを行うエージェント自体が静かに失敗する前提で、実行されたチェックの一覧と件数を毎回出力させる。</li><li><b>CONSULT</b>医療のような規制業種でAI製ソフトを納める提案では、AIレビュー導入だけでなく統制設計を示せるかが差になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://arxiv.org/abs/2610.08651" target="_blank" rel="noopener">arXiv:2610.08651「A Case Study in Assuring AI-Written Software」（2026-10-06提出）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>単一事例で一般化には限界があるが、「静かな失敗」の具体例が揃っているのが価値。昨日までのレビュー系研究と並べて読むと、人間統制の設計論として続いている。</div>
+    </div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>追記：</b>「AI 生成 PR の人間レビュー枠組み」に AI製ソフトの品質保証事例（2610.08651）を出典として追加。新規に「Claude Haiku 5.5」「GitHub シークレット保護の分類器」を登録。</li>
+      <li><b>見送り：</b>Strands Decider 2B（一次の公開が10月1日で範囲外。Jev と同系統の決定モデルとして候補に追記のみ）、GPT-6 の発表と Atlassian–OpenAI 提携（公式ページを取得できず）、Wikimedia と OpenAI の件（収録済み）。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

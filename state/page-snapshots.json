@@ -32,7 +32,7 @@
    "https://code.claude.com/docs/en/output-styles",
    "https://code.claude.com/docs/en/hooks"
   ],
-  "checked": "2026-10-07T01:05:55.902033+00:00"
+  "checked": "2026-10-08T01:06:05.871380+00:00"
  },
  "https://www.anthropic.com/engineering": {
   "links": [
@@ -79,7 +79,7 @@
    "https://www.anthropic.com/legal/consumer-terms",
    "https://www.anthropic.com/legal/aup"
   ],
-  "checked": "2026-10-07T01:05:56.192902+00:00"
+  "checked": "2026-10-08T01:06:06.172377+00:00"
  },
  "https://docs.anthropic.com/en/release-notes/overview": {
   "links": [
@@ -92,24 +92,32 @@
    "https://docs.anthropic.com/docs/en/release-notes/overview",
    "https://docs.anthropic.com/docs/en/api/overview",
    "https://docs.anthropic.com/docs/en/managed-agents/migration",
-   "https://docs.anthropic.com/docs/en/about-claude/model-deprecations",
+   "https://docs.anthropic.com/docs/en/manage-claude/compliance-api",
+   "https://docs.anthropic.com/docs/en/manage-claude/compliance-content-data",
+   "https://docs.anthropic.com/docs/en/build-with-claude/context-windows",
+   "https://docs.anthropic.com/docs/en/build-with-claude/thinking",
+   "https://docs.anthropic.com/docs/en/build-with-claude/effort",
    "https://docs.anthropic.com/docs/en/build-with-claude/claude-in-amazon-bedrock",
    "https://docs.anthropic.com/docs/en/build-with-claude/claude-platform-on-aws",
    "https://docs.anthropic.com/docs/en/build-with-claude/claude-on-vertex-ai",
    "https://docs.anthropic.com/docs/en/build-with-claude/claude-in-microsoft-foundry",
+   "https://docs.anthropic.com/docs/en/models/haiku-5-5/whats-new-haiku-5-5",
+   "https://docs.anthropic.com/docs/en/models/haiku-5-5/migration-guide",
+   "https://docs.anthropic.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-haiku-5-5",
+   "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/browser-use-tool",
+   "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
+   "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/browser-use-sdk",
+   "https://docs.anthropic.com/docs/en/about-claude/api-credits-for-subscribers",
+   "https://docs.anthropic.com/docs/en/managed-agents/tools-web-restrictions",
+   "https://docs.anthropic.com/docs/en/about-claude/model-deprecations",
    "https://docs.anthropic.com/docs/en/models/sonnet-5-5/overview",
    "https://docs.anthropic.com/docs/en/models/sonnet-5-5/whats-new-sonnet-5-5",
    "https://docs.anthropic.com/docs/en/models/sonnet-5-5/migration-guide",
    "https://docs.anthropic.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-sonnet-5-5",
-   "https://docs.anthropic.com/docs/en/manage-claude/compliance-api",
    "https://docs.anthropic.com/docs/en/manage-claude/compliance-activity-feed",
    "https://docs.anthropic.com/docs/en/build-with-claude/cache-diagnostics",
-   "https://docs.anthropic.com/docs/en/build-with-claude/context-windows",
-   "https://docs.anthropic.com/docs/en/build-with-claude/thinking",
    "https://docs.anthropic.com/docs/en/models/opus-5-5/whats-new-opus-5-5",
-   "https://docs.anthropic.com/docs/en/build-with-claude/effort",
    "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/strict-tool-use",
-   "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
    "https://docs.anthropic.com/docs/en/build-with-claude/compaction-on-demand",
    "https://docs.anthropic.com/docs/en/cli-sdks-libraries/cli/sessions-connect",
    "https://docs.anthropic.com/docs/en/cli-sdks-libraries/cli/apply",
@@ -121,10 +129,8 @@
    "https://docs.anthropic.com/docs/en/manage-claude/analytics-api",
    "https://docs.anthropic.com/docs/en/api/versioning",
    "https://docs.anthropic.com/docs/en/manage-claude/compliance-sessions",
-   "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/browser-use-tool",
    "https://docs.anthropic.com/docs/en/agents-and-tools/agent-skills/overview",
    "https://docs.anthropic.com/docs/en/build-with-claude/skills-guide",
-   "https://docs.anthropic.com/docs/en/managed-agents/tools-web-restrictions",
    "https://docs.anthropic.com/docs/en/managed-agents/self-hosted-sandboxes",
    "https://docs.anthropic.com/docs/en/managed-agents/memory",
    "https://docs.anthropic.com/docs/en/managed-agents/self-hosted-sandboxes-memory",
@@ -183,7 +189,7 @@
    "https://docs.anthropic.com/docs/en/build-with-claude/token-counting",
    "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/parallel-tool-use"
   ],
-  "checked": "2026-10-07T01:05:56.840597+00:00"
+  "checked": "2026-10-08T01:06:06.948439+00:00"
  },
  "https://developers.openai.com/changelog": {
   "links": [
@@ -477,6 +483,7 @@
    "https://developers.openai.com/codex/enterprise/workspace-model-availability",
    "https://developers.openai.com/codex/amazon-bedrock",
    "https://developers.openai.com/codex/enterprise/govcloud-configuration",
+   "https://developers.openai.com/codex/enterprise/sign-in-with-chatgpt-through-a-gateway",
    "https://developers.openai.com/codex/enterprise/connect-to-a-gateway",
    "https://developers.openai.com/codex/enterprise/roll-out-a-gateway",
    "https://developers.openai.com/codex/enterprise/gateway-compatibility",
@@ -512,11 +519,12 @@
    "https://developers.openai.com/learn/cua",
    "https://developers.openai.com/learn/imagegen",
    "https://developers.openai.com/learn/videogen",
+   "https://developers.openai.com/community/codex-ambassadors/directory",
+   "https://developers.openai.com/api/docs/guides/latest-model",
    "https://developers.openai.com/api/docs/pricing?latest-pricing=ultrafast",
    "https://developers.openai.com/api/docs/guides/agents-api/quickstart",
    "https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst",
    "https://developers.openai.com/api/docs/models/gpt-image-2.5-flare",
-   "https://developers.openai.com/api/docs/guides/latest-model",
    "https://developers.openai.com/api/docs/guides/error-codes",
    "https://developers.openai.com/api/docs/guides/rate-limits",
    "https://developers.openai.com/api/docs/guides/mutual-tls",
@@ -575,7 +583,7 @@
    "https://developers.openai.com/api/docs/models/dall-e-3",
    "https://developers.openai.com/api/docs/models/text-moderation-latest"
   ],
-  "checked": "2026-10-07T01:05:57.302141+00:00"
+  "checked": "2026-10-08T01:06:07.375034+00:00"
  },
  "https://cursor.com/changelog": {
   "links": [
@@ -597,7 +605,7 @@
    "https://cursor.com/en-US/cookie-policy",
    "https://cursor.com/en-US/security"
   ],
-  "checked": "2026-10-07T01:05:57.567946+00:00"
+  "checked": "2026-10-08T01:06:07.622503+00:00"
  },
  "https://ai.google.dev/gemini-api/docs/changelog": {
   "links": [
@@ -728,7 +736,7 @@
    "https://ai.google.dev/gemini-api/docs/system-instructions",
    "https://ai.google.dev/gemini-api/docs/api-versions"
   ],
-  "checked": "2026-10-07T01:05:57.872858+00:00"
+  "checked": "2026-10-08T01:06:09.545853+00:00"
  },
  "https://www.ipa.go.jp/digital/ai/": {
   "links": [
@@ -936,7 +944,7 @@
    "https://www.ipa.go.jp/siteinfo.html",
    "https://www.ipa.go.jp/accessibility.html"
   ],
-  "checked": "2026-10-07T01:05:58.196225+00:00"
+  "checked": "2026-10-08T01:06:10.257228+00:00"
  },
  "https://www.ppc.go.jp/news/": {
   "links": [
@@ -1026,11 +1034,12 @@
    "https://www.ppc.go.jp/application/kisei_kaikaku/",
    "https://www.ppc.go.jp/aboutus/commission/access/ppc_relocation?ref=topnews"
   ],
-  "checked": "2026-10-07T01:05:59.295670+00:00"
+  "checked": "2026-10-08T01:06:12.141134+00:00"
  },
  "https://www.soumu.go.jp/menu_news/s-news/": {
   "links": [
    "https://www.soumu.go.jp/english/index.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01kiban16_02000392.html",
    "https://www.soumu.go.jp/menu_news/s-news/01zaisei02_02000423.html",
    "https://www.soumu.go.jp/menu_news/s-news/01zaisei02_02000378_00032.html",
    "https://www.soumu.go.jp/menu_news/s-news/01zaisei02_02000378_00029.html",
@@ -1045,7 +1054,7 @@
    "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001266.html",
    "https://www.soumu.go.jp/menu_kyotsuu/policy/shuwa-link.html"
   ],
-  "checked": "2026-10-07T01:06:00.041592+00:00"
+  "checked": "2026-10-08T01:06:12.918450+00:00"
  },
  "https://www.anthropic.com/customers": {
   "links": [
@@ -1067,6 +1076,7 @@
    "https://www.anthropic.com/contact-sales",
    "https://www.anthropic.com/customers",
    "https://www.anthropic.com/news",
+   "https://www.anthropic.com/customers/zendesk",
    "https://www.anthropic.com/customers/irc-qa",
    "https://www.anthropic.com/customers/irc",
    "https://www.anthropic.com/customers/supermetrics",
@@ -1081,7 +1091,6 @@
    "https://www.anthropic.com/customers/rocket-money-qa",
    "https://www.anthropic.com/customers/rocket-money",
    "https://www.anthropic.com/customers/league-qa",
-   "https://www.anthropic.com/customers/notion-qa",
    "https://www.anthropic.com/product/cowork",
    "https://www.anthropic.com/solutions/small-business",
    "https://www.anthropic.com/programs/frontier-academy",
@@ -1103,7 +1112,7 @@
    "https://www.anthropic.com/legal/consumer-terms",
    "https://www.anthropic.com/legal/aup"
   ],
-  "checked": "2026-10-07T01:06:00.723413+00:00"
+  "checked": "2026-10-08T01:06:13.784741+00:00"
  },
  "https://cloud.google.com/customers": {
   "links": [
@@ -1131,7 +1140,6 @@
    "https://cloud.google.com/customers/quantrosecurity",
    "https://cloud.google.com/customers/atlassian-anthropic",
    "https://cloud.google.com/blog/products/ai-machine-learning/google-named-a-leader-in-the-gartner-magic-quadrant",
-   "https://cloud.google.com/products/gemini-enterprise-for-customer-experience",
    "https://cloud.google.com/why-google-cloud",
    "https://cloud.google.com/ai",
    "https://cloud.google.com/multicloud",
@@ -1382,7 +1390,7 @@
    "https://cloud.google.com/product-terms",
    "https://cloud.google.com/sustainability"
   ],
-  "checked": "2026-10-07T01:06:01.469002+00:00"
+  "checked": "2026-10-08T01:06:14.271589+00:00"
  },
  "https://www.microsoft.com/en-us/customers/": {
   "links": [
@@ -1421,8 +1429,8 @@
    "https://www.microsoft.com/en/customers/story/23953-accenture-azure-ai-foundry",
    "https://www.microsoft.com/en/customers/story/23957-pacers-sports-and-entertainment-azure-ai-foundry?msockid=2ec07b5eae8061f029906e78afad60f7",
    "https://www.microsoft.com/ai/",
-   "https://www.microsoft.com/surface/devices/surface-laptop",
    "https://www.microsoft.com/en-us/surface/devices/surface-laptop-ultra?icid=DSM_Footer_WhatsNew_SurfaceLaptopUltra",
+   "https://www.microsoft.com/surface/devices/surface-laptop",
    "https://www.microsoft.com/en-us/surface/devices/surface-rtx-spark-dev-box?icid=DSM_Footer_WhatsNew_SurfaceRTXSparkDevBox",
    "https://www.microsoft.com/en-us/copilot?icid=DSM_Footer_WhatsNew_Copilot",
    "https://www.microsoft.com/en-us/microsoft-products-and-apps",
@@ -1454,7 +1462,7 @@
    "https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_Footer_Sustainability",
    "https://www.microsoft.com/customers/locale"
   ],
-  "checked": "2026-10-07T01:06:01.812031+00:00"
+  "checked": "2026-10-08T01:06:14.689116+00:00"
  },
  "https://www.nri.com/jp/news": {
   "links": [
@@ -1468,7 +1476,7 @@
    "https://www.nri.com/jp/privacy.html",
    "https://www.nri.com/jp/security_declare.html"
   ],
-  "checked": "2026-10-07T01:06:02.778342+00:00"
+  "checked": "2026-10-08T01:06:15.568068+00:00"
  },
  "https://www.deloitte.com/jp/ja/about/press-room.html": {
   "links": [
@@ -1555,11 +1563,12 @@
    "https://www.deloitte.com/jp/ja/legal/smap.html?icid=bn_smap",
    "https://www.deloitte.com/jp/ja/about/governance/network-brand-alliances/about-the-network.html"
   ],
-  "checked": "2026-10-07T01:06:03.168454+00:00"
+  "checked": "2026-10-08T01:06:15.955714+00:00"
  },
  "https://www.kpmg.com/jp/ja/home/media/press-releases.html": {
   "links": [
    "https://www.kpmg.com/jp/ja/misc/generic-contact-page.html",
+   "https://www.kpmg.com/jp/ja/media/press-releases/2026/10/kc-international-research.html",
    "https://www.kpmg.com/jp/ja/media/press-releases/2026/10/kc-servicenow-worldforum2026.html",
    "https://www.kpmg.com/jp/ja/media/press-releases/2026/09/kc-coupa-alliance.html",
    "https://www.kpmg.com/jp/ja/media/press-releases/2026/09/fra-fraud-survey.html",
@@ -2082,7 +2091,7 @@
    "https://www.kpmg.com/jp/ja/about.html",
    "https://www.kpmg.com/jp/ja/media.html"
   ],
-  "checked": "2026-10-07T01:06:04.744815+00:00"
+  "checked": "2026-10-08T01:06:17.913616+00:00"
  },
  "https://www.ey.com/ja_jp/newsroom": {
   "links": [
@@ -2167,6 +2176,7 @@
    "https://www.ey.com/ja_jp/about-us/corporate-responsibility/ey-japan-ripples",
    "https://www.ey.com/ja_jp/shape-the-future-with-confidence",
    "https://www.ey.com/ja_jp/integrated-report/top-message",
+   "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-07",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-01",
    "https://www.ey.com/ja_jp/newsroom/2026/09/ey-japan-news-release-2026-09-28-02",
    "https://www.ey.com/ja_jp/newsroom/2026/09/ey-japan-news-release-2026-09-28",
@@ -2174,7 +2184,6 @@
    "https://www.ey.com/ja_jp/newsroom/2026/09/ey-japan-news-release-2026-09-18",
    "https://www.ey.com/ja_jp/newsroom/2026/09/ey-japan-news-release-2026-09-17",
    "https://www.ey.com/ja_jp/newsroom/2026/09/ey-japan-news-release-2026-09-16",
-   "https://www.ey.com/ja_jp/newsroom/2026/09/ey-japan-news-release-2026-09-11",
    "https://www.ey.com/ja_jp/industries/government-public-sector/public-projects/2026/ey-japan-pp-2026-09-07",
    "https://www.ey.com/ja_jp/newsroom/2026/08/ey-japan-news-release-2026-08-31",
    "https://www.ey.com/ja_jp/newsroom/2026/07/ey-japan-news-release-2026-07-30",
@@ -2187,11 +2196,11 @@
    "https://www.ey.com/ja_jp/people/ey-japan",
    "https://www.ey.com/ja_jp/legal-and-privacy/hotline"
   ],
-  "checked": "2026-10-07T01:06:06.832436+00:00"
+  "checked": "2026-10-08T01:06:18.680338+00:00"
  },
  "https://dora.dev/": {
   "links": [],
-  "checked": "2026-10-07T01:06:07.015546+00:00"
+  "checked": "2026-10-08T01:06:18.888115+00:00"
  },
  "https://www.thoughtworks.com/radar": {
   "links": [
@@ -2267,11 +2276,11 @@
    "https://www.thoughtworks.com/content/dam/thoughtworks/documents/tw_anti-bribery_corruption_policy_2026.pdf",
    "https://www.thoughtworks.com/about-us/fraud-advisory-notice"
   ],
-  "checked": "2026-10-07T01:06:07.419655+00:00"
+  "checked": "2026-10-08T01:06:19.143793+00:00"
  },
  "https://newsletter.pragmaticengineer.com/": {
   "links": [],
-  "checked": "2026-10-07T01:06:07.673020+00:00"
+  "checked": "2026-10-08T01:06:19.385755+00:00"
  },
  "https://linear.app/changelog": {
   "links": [
@@ -2300,7 +2309,7 @@
    "https://linear.app/integrations",
    "https://linear.app/docs"
   ],
-  "checked": "2026-10-07T01:06:08.133761+00:00"
+  "checked": "2026-10-08T01:06:19.812595+00:00"
  },
  "https://www.atlassian.com/blog": {
   "links": [
@@ -2319,7 +2328,7 @@
    "https://www.atlassian.com/resources",
    "https://www.atlassian.com/legal/privacy-policy"
   ],
-  "checked": "2026-10-07T01:06:08.420783+00:00"
+  "checked": "2026-10-08T01:06:20.104005+00:00"
  },
  "https://digital-strategy.ec.europa.eu/en/news": {
   "links": [
@@ -2345,6 +2354,6 @@
    "https://digital-strategy.ec.europa.eu/en",
    "https://digital-strategy.ec.europa.eu/en/pages/accessibility"
   ],
-  "checked": "2026-10-07T01:06:08.828744+00:00"
+  "checked": "2026-10-08T01:06:20.599907+00:00"
  }
 }

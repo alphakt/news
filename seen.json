@@ -140,6 +140,26 @@
       "date": "2026-10-07",
       "key": "github-git-infra-agent-scale",
       "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/"
+    },
+    {
+      "date": "2026-10-08",
+      "key": "claude-haiku-5-5",
+      "url": "https://www.anthropic.com/claude-haiku-5-5"
+    },
+    {
+      "date": "2026-10-08",
+      "key": "github-secret-protection-classifier",
+      "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/"
+    },
+    {
+      "date": "2026-10-08",
+      "key": "arxiv-2610.08240-security-gap",
+      "url": "https://arxiv.org/abs/2610.08240"
+    },
+    {
+      "date": "2026-10-08",
+      "key": "arxiv-2610.08651-assuring-ai-software",
+      "url": "https://arxiv.org/abs/2610.08651"
     }
   ]
 }

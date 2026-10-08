@@ -6,12 +6,13 @@
       "kind": "agent-infra",
       "status": "watching",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-07",
-      "mentions": 3,
+      "last_seen": "2026-10-08",
+      "mentions": 4,
       "sources": [
         "https://arxiv.org/abs/2610.02267",
         "https://developers.openai.com/api/docs/guides/decisions",
-        "https://www.thoughtworks.com/insights/blog/generative-ai/how-jev-can-help-improve-the-efficiency-of-rag-pipelines"
+        "https://www.thoughtworks.com/insights/blog/generative-ai/how-jev-can-help-improve-the-efficiency-of-rag-pipelines",
+        "https://strandsagents.com/blog/introducing-strands-decider/"
       ],
       "note": "テキストを生成せず型付きの判断だけ返す決定モデル。エージェントの小さな判断（ツール選択、安全性、停止判断）を主モデルから分離する発想。対照: 主モデル自前判断、他の router/guard モデル"
     },
@@ -65,12 +66,13 @@
       "kind": "process",
       "status": "watching",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-07",
-      "mentions": 3,
+      "last_seen": "2026-10-08",
+      "mentions": 4,
       "sources": [
         "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
         "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
-        "https://arxiv.org/abs/2610.05399"
+        "https://arxiv.org/abs/2610.05399",
+        "https://arxiv.org/abs/2610.08651"
       ],
       "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
     },
@@ -265,6 +267,30 @@
         "https://arxiv.org/abs/2610.05399"
       ],
       "note": "AIレビュアーを騙すフィードバック誘導型攻撃"
+    },
+    {
+      "name": "Claude Haiku 5.5",
+      "kind": "model",
+      "status": "candidate",
+      "first_seen": "2026-10-08",
+      "last_seen": "2026-10-08",
+      "mentions": 1,
+      "sources": [
+        "https://www.anthropic.com/claude-haiku-5-5"
+      ],
+      "note": "低価格小型モデル。下請け処理の振り分け・費用統制の論点"
+    },
+    {
+      "name": "GitHub Secret Protection 分類器",
+      "kind": "security",
+      "status": "candidate",
+      "first_seen": "2026-10-08",
+      "last_seen": "2026-10-08",
+      "mentions": 1,
+      "sources": [
+        "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/"
+      ],
+      "note": "エージェント時代のシークレット漏えい対策。月内にプレビュー提供予定"
     }
   ]
 }
