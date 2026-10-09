@@ -6,13 +6,14 @@
       "kind": "agent-infra",
       "status": "watching",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-08",
-      "mentions": 4,
+      "last_seen": "2026-10-09",
+      "mentions": 5,
       "sources": [
         "https://arxiv.org/abs/2610.02267",
         "https://developers.openai.com/api/docs/guides/decisions",
         "https://www.thoughtworks.com/insights/blog/generative-ai/how-jev-can-help-improve-the-efficiency-of-rag-pipelines",
-        "https://strandsagents.com/blog/introducing-strands-decider/"
+        "https://strandsagents.com/blog/introducing-strands-decider/",
+        "https://blog.cloudflare.com/clef-decision-models/"
       ],
       "note": "テキストを生成せず型付きの判断だけ返す決定モデル。エージェントの小さな判断（ツール選択、安全性、停止判断）を主モデルから分離する発想。対照: 主モデル自前判断、他の router/guard モデル"
     },
@@ -54,10 +55,11 @@
       "kind": "context-engineering",
       "status": "candidate",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-06",
-      "mentions": 1,
+      "last_seen": "2026-10-09",
+      "mentions": 2,
       "sources": [
-        "https://zenn.dev/fukorohouse/articles/e2659fcd7c530f"
+        "https://zenn.dev/fukorohouse/articles/e2659fcd7c530f",
+        "https://arxiv.org/abs/2610.08875"
       ],
       "note": ".md でエージェントの振る舞いを規定する手法。効果の実証研究・ベストプラクティスを追う"
     },
@@ -66,13 +68,14 @@
       "kind": "process",
       "status": "watching",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-08",
-      "mentions": 4,
+      "last_seen": "2026-10-09",
+      "mentions": 5,
       "sources": [
         "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
         "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
         "https://arxiv.org/abs/2610.05399",
-        "https://arxiv.org/abs/2610.08651"
+        "https://arxiv.org/abs/2610.08651",
+        "https://arxiv.org/abs/2610.08900"
       ],
       "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
     },
@@ -291,6 +294,42 @@
         "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/"
       ],
       "note": "エージェント時代のシークレット漏えい対策。月内にプレビュー提供予定"
+    },
+    {
+      "name": "Gemini agent (Google)",
+      "kind": "agent-product",
+      "status": "candidate",
+      "first_seen": "2026-10-09",
+      "last_seen": "2026-10-09",
+      "mentions": 1,
+      "sources": [
+        "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+      ],
+      "note": "専用ID・監査ログ・支出上限を備えた全社向けエージェント。対照: Copilot, ChatGPT Enterprise"
+    },
+    {
+      "name": "さくらのAI Engine プライベートエディション",
+      "kind": "infra",
+      "status": "candidate",
+      "first_seen": "2026-10-09",
+      "last_seen": "2026-10-09",
+      "mentions": 1,
+      "sources": [
+        "https://www.sakura.ad.jp/corporate/information/newsreleases/2026/10/08/1968225874/"
+      ],
+      "note": "GPU専有・月額定額の国内マネージドLLM基盤"
+    },
+    {
+      "name": "Clef (Cloudflare)",
+      "kind": "agent-infra",
+      "status": "candidate",
+      "first_seen": "2026-10-09",
+      "last_seen": "2026-10-09",
+      "mentions": 1,
+      "sources": [
+        "https://blog.cloudflare.com/clef-decision-models/"
+      ],
+      "note": "Apache 2.0 の決定モデル。Jev API 互換。一次公開 10/1"
     }
   ]
 }

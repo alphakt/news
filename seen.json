@@ -160,6 +160,31 @@
       "date": "2026-10-08",
       "key": "arxiv-2610.08651-assuring-ai-software",
       "url": "https://arxiv.org/abs/2610.08651"
+    },
+    {
+      "date": "2026-10-09",
+      "key": "thoughtworks-agentic-overreach",
+      "url": "https://www.thoughtworks.com/insights/articles/real-world-lessons-agentic-authority-overreach"
+    },
+    {
+      "date": "2026-10-09",
+      "key": "arxiv-2610.08875-agent-skills-utility",
+      "url": "https://arxiv.org/abs/2610.08875"
+    },
+    {
+      "date": "2026-10-09",
+      "key": "google-gemini-agent-at-work",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+    },
+    {
+      "date": "2026-10-09",
+      "key": "sakura-ai-engine-private",
+      "url": "https://www.sakura.ad.jp/corporate/information/newsreleases/2026/10/08/1968225874/"
+    },
+    {
+      "date": "2026-10-09",
+      "key": "arxiv-2610.08900-humanize",
+      "url": "https://arxiv.org/abs/2610.08900"
     }
   ]
 }

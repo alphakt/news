@@ -32,7 +32,7 @@
    "https://code.claude.com/docs/en/output-styles",
    "https://code.claude.com/docs/en/hooks"
   ],
-  "checked": "2026-10-08T01:06:05.871380+00:00"
+  "checked": "2026-10-09T01:05:58.691317+00:00"
  },
  "https://www.anthropic.com/engineering": {
   "links": [
@@ -79,7 +79,7 @@
    "https://www.anthropic.com/legal/consumer-terms",
    "https://www.anthropic.com/legal/aup"
   ],
-  "checked": "2026-10-08T01:06:06.172377+00:00"
+  "checked": "2026-10-09T01:05:58.967408+00:00"
  },
  "https://docs.anthropic.com/en/release-notes/overview": {
   "links": [
@@ -140,6 +140,7 @@
    "https://docs.anthropic.com/docs/en/manage-claude/inference-hooks",
    "https://docs.anthropic.com/docs/en/models/opus-5/overview",
    "https://docs.anthropic.com/docs/en/build-with-claude/refusals-and-fallback",
+   "https://docs.anthropic.com/docs/en/managed-agents/event-deltas",
    "https://docs.anthropic.com/docs/en/build-with-claude/mid-conversation-system-messages",
    "https://docs.anthropic.com/docs/en/manage-claude/access-transparency",
    "https://docs.anthropic.com/docs/en/models/sonnet-5/overview",
@@ -189,7 +190,7 @@
    "https://docs.anthropic.com/docs/en/build-with-claude/token-counting",
    "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/parallel-tool-use"
   ],
-  "checked": "2026-10-08T01:06:06.948439+00:00"
+  "checked": "2026-10-09T01:05:59.608465+00:00"
  },
  "https://developers.openai.com/changelog": {
   "links": [
@@ -520,8 +521,8 @@
    "https://developers.openai.com/learn/imagegen",
    "https://developers.openai.com/learn/videogen",
    "https://developers.openai.com/community/codex-ambassadors/directory",
-   "https://developers.openai.com/api/docs/guides/latest-model",
    "https://developers.openai.com/api/docs/pricing?latest-pricing=ultrafast",
+   "https://developers.openai.com/api/docs/guides/latest-model",
    "https://developers.openai.com/api/docs/guides/agents-api/quickstart",
    "https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst",
    "https://developers.openai.com/api/docs/models/gpt-image-2.5-flare",
@@ -583,7 +584,7 @@
    "https://developers.openai.com/api/docs/models/dall-e-3",
    "https://developers.openai.com/api/docs/models/text-moderation-latest"
   ],
-  "checked": "2026-10-08T01:06:07.375034+00:00"
+  "checked": "2026-10-09T01:06:00.005328+00:00"
  },
  "https://cursor.com/changelog": {
   "links": [
@@ -605,7 +606,7 @@
    "https://cursor.com/en-US/cookie-policy",
    "https://cursor.com/en-US/security"
   ],
-  "checked": "2026-10-08T01:06:07.622503+00:00"
+  "checked": "2026-10-09T01:06:00.244167+00:00"
  },
  "https://ai.google.dev/gemini-api/docs/changelog": {
   "links": [
@@ -736,7 +737,7 @@
    "https://ai.google.dev/gemini-api/docs/system-instructions",
    "https://ai.google.dev/gemini-api/docs/api-versions"
   ],
-  "checked": "2026-10-08T01:06:09.545853+00:00"
+  "checked": "2026-10-09T01:06:00.562403+00:00"
  },
  "https://www.ipa.go.jp/digital/ai/": {
   "links": [
@@ -944,7 +945,7 @@
    "https://www.ipa.go.jp/siteinfo.html",
    "https://www.ipa.go.jp/accessibility.html"
   ],
-  "checked": "2026-10-08T01:06:10.257228+00:00"
+  "checked": "2026-10-09T01:06:01.614644+00:00"
  },
  "https://www.ppc.go.jp/news/": {
   "links": [
@@ -1034,11 +1035,13 @@
    "https://www.ppc.go.jp/application/kisei_kaikaku/",
    "https://www.ppc.go.jp/aboutus/commission/access/ppc_relocation?ref=topnews"
   ],
-  "checked": "2026-10-08T01:06:12.141134+00:00"
+  "checked": "2026-10-09T01:06:03.842791+00:00"
  },
  "https://www.soumu.go.jp/menu_news/s-news/": {
   "links": [
    "https://www.soumu.go.jp/english/index.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01toukei07_01000294.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01gyosei17_02000274.html",
    "https://www.soumu.go.jp/menu_news/s-news/01kiban16_02000392.html",
    "https://www.soumu.go.jp/menu_news/s-news/01zaisei02_02000423.html",
    "https://www.soumu.go.jp/menu_news/s-news/01zaisei02_02000378_00032.html",
@@ -1054,7 +1057,7 @@
    "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001266.html",
    "https://www.soumu.go.jp/menu_kyotsuu/policy/shuwa-link.html"
   ],
-  "checked": "2026-10-08T01:06:12.918450+00:00"
+  "checked": "2026-10-09T01:06:04.605639+00:00"
  },
  "https://www.anthropic.com/customers": {
   "links": [
@@ -1112,7 +1115,7 @@
    "https://www.anthropic.com/legal/consumer-terms",
    "https://www.anthropic.com/legal/aup"
   ],
-  "checked": "2026-10-08T01:06:13.784741+00:00"
+  "checked": "2026-10-09T01:06:05.293050+00:00"
  },
  "https://cloud.google.com/customers": {
   "links": [
@@ -1122,11 +1125,6 @@
    "https://cloud.google.com/customers/kohls",
    "https://cloud.google.com/customers/shopify-compute",
    "https://cloud.google.com/customers/kraftheinz",
-   "https://cloud.google.com/customers/intl/es-419/dia-espana?hl=es-419",
-   "https://cloud.google.com/customers/eversana?hl=en",
-   "https://cloud.google.com/customers/wipro",
-   "https://cloud.google.com/customers/natura?hl=en",
-   "https://cloud.google.com/customers/swarovski?hl=en",
    "https://cloud.google.com/customers/ksneducation",
    "https://cloud.google.com/customers/midnightfoundation",
    "https://cloud.google.com/customers/angelus",
@@ -1162,28 +1160,27 @@
    "https://cloud.google.com/solutions/supply-chain-logistics",
    "https://cloud.google.com/gov",
    "https://cloud.google.com/edu/higher-education",
-   "https://cloud.google.com/solutions/camp",
-   "https://cloud.google.com/solutions/modernize-traditional-applications",
-   "https://cloud.google.com/solutions/migrate-from-paas",
+   "https://cloud.google.com/solutions/modernize",
+   "https://cloud.google.com/solutions/application-modernization-with-ai",
+   "https://cloud.google.com/gemini-enterprise",
+   "https://cloud.google.com/ai-infrastructure",
    "https://cloud.google.com/solutions/mainframe-modernization",
-   "https://cloud.google.com/solutions/software-delivery",
+   "https://cloud.google.com/products/databases",
+   "https://cloud.google.com/solutions/data-lakehouse",
+   "https://cloud.google.com/solutions/data-migration",
+   "https://cloud.google.com/solutions/apis-and-applications",
+   "https://cloud.google.com/solutions/platform-engineering",
    "https://cloud.google.com/devops",
    "https://cloud.google.com/sre",
-   "https://cloud.google.com/solutions/platform-engineering",
-   "https://cloud.google.com/solutions/architect-multicloud",
    "https://cloud.google.com/solutions/ai",
    "https://cloud.google.com/gemini-enterprise-cx",
-   "https://cloud.google.com/gemini-enterprise",
    "https://cloud.google.com/gemini-enterprise-cx/commerce",
    "https://cloud.google.com/ai/gemini",
    "https://cloud.google.com/solutions/physical-ai",
-   "https://cloud.google.com/solutions/apis-and-applications",
    "https://cloud.google.com/solutions/new-channels-using-apis",
    "https://cloud.google.com/solutions/unlocking-legacy-applications",
    "https://cloud.google.com/solutions/open-banking-apix",
    "https://cloud.google.com/solutions/data-analytics-and-ai",
-   "https://cloud.google.com/solutions/data-migration",
-   "https://cloud.google.com/solutions/data-lakehouse",
    "https://cloud.google.com/solutions/stream-analytics",
    "https://cloud.google.com/solutions/marketing-analytics",
    "https://cloud.google.com/datasets",
@@ -1195,24 +1192,18 @@
    "https://cloud.google.com/solutions/database-migration",
    "https://cloud.google.com/solutions/database-modernization",
    "https://cloud.google.com/solutions/databases/games",
-   "https://cloud.google.com/products/databases",
    "https://cloud.google.com/solutions/oracle",
    "https://cloud.google.com/solutions/open-source-databases",
    "https://cloud.google.com/sql-server",
    "https://cloud.google.com/products/gemini/databases",
-   "https://cloud.google.com/solutions/infrastructure-modernization",
-   "https://cloud.google.com/solutions/application-migration",
-   "https://cloud.google.com/solutions/sap",
-   "https://cloud.google.com/solutions/hpc",
-   "https://cloud.google.com/windows",
-   "https://cloud.google.com/solutions/data-center-migration",
-   "https://cloud.google.com/solutions/active-assist",
-   "https://cloud.google.com/solutions/virtual-desktops",
    "https://cloud.google.com/solutions/cloud-migration-program",
-   "https://cloud.google.com/solutions/backup-dr",
-   "https://cloud.google.com/solutions/redhat",
+   "https://cloud.google.com/solutions/data-center-migration",
+   "https://cloud.google.com/solutions/application-migration",
    "https://cloud.google.com/solutions/cross-cloud-network",
-   "https://cloud.google.com/ai-infrastructure",
+   "https://cloud.google.com/solutions/hpc",
+   "https://cloud.google.com/vmware-engine",
+   "https://cloud.google.com/solutions/sap",
+   "https://cloud.google.com/windows",
    "https://cloud.google.com/identity",
    "https://cloud.google.com/solutions/security",
    "https://cloud.google.com/solutions/agentic-soc",
@@ -1252,7 +1243,6 @@
    "https://cloud.google.com/compute/docs/nodes/sole-tenant-nodes",
    "https://cloud.google.com/bare-metal",
    "https://cloud.google.com/recommender/docs/whatis-activeassist",
-   "https://cloud.google.com/vmware-engine",
    "https://cloud.google.com/build",
    "https://cloud.google.com/artifact-registry/docs",
    "https://cloud.google.com/code",
@@ -1309,6 +1299,7 @@
    "https://cloud.google.com/cost-management",
    "https://cloud.google.com/carbon-footprint",
    "https://cloud.google.com/config-connector/docs/overview",
+   "https://cloud.google.com/solutions/active-assist",
    "https://cloud.google.com/earth-engine",
    "https://cloud.google.com/livestream/docs",
    "https://cloud.google.com/transcoder/docs",
@@ -1390,7 +1381,7 @@
    "https://cloud.google.com/product-terms",
    "https://cloud.google.com/sustainability"
   ],
-  "checked": "2026-10-08T01:06:14.271589+00:00"
+  "checked": "2026-10-09T01:06:05.914490+00:00"
  },
  "https://www.microsoft.com/en-us/customers/": {
   "links": [
@@ -1462,7 +1453,7 @@
    "https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_Footer_Sustainability",
    "https://www.microsoft.com/customers/locale"
   ],
-  "checked": "2026-10-08T01:06:14.689116+00:00"
+  "checked": "2026-10-09T01:06:06.233548+00:00"
  },
  "https://www.nri.com/jp/news": {
   "links": [
@@ -1476,7 +1467,7 @@
    "https://www.nri.com/jp/privacy.html",
    "https://www.nri.com/jp/security_declare.html"
   ],
-  "checked": "2026-10-08T01:06:15.568068+00:00"
+  "checked": "2026-10-09T01:06:07.071276+00:00"
  },
  "https://www.deloitte.com/jp/ja/about/press-room.html": {
   "links": [
@@ -1563,7 +1554,7 @@
    "https://www.deloitte.com/jp/ja/legal/smap.html?icid=bn_smap",
    "https://www.deloitte.com/jp/ja/about/governance/network-brand-alliances/about-the-network.html"
   ],
-  "checked": "2026-10-08T01:06:15.955714+00:00"
+  "checked": "2026-10-09T01:06:07.386191+00:00"
  },
  "https://www.kpmg.com/jp/ja/home/media/press-releases.html": {
   "links": [
@@ -2091,7 +2082,7 @@
    "https://www.kpmg.com/jp/ja/about.html",
    "https://www.kpmg.com/jp/ja/media.html"
   ],
-  "checked": "2026-10-08T01:06:17.913616+00:00"
+  "checked": "2026-10-09T01:06:08.620235+00:00"
  },
  "https://www.ey.com/ja_jp/newsroom": {
   "links": [
@@ -2184,9 +2175,9 @@
    "https://www.ey.com/ja_jp/newsroom/2026/09/ey-japan-news-release-2026-09-18",
    "https://www.ey.com/ja_jp/newsroom/2026/09/ey-japan-news-release-2026-09-17",
    "https://www.ey.com/ja_jp/newsroom/2026/09/ey-japan-news-release-2026-09-16",
+   "https://www.ey.com/ja_jp/industries/government-public-sector/public-projects/2026/ey-japan-pp-2026-10-08",
    "https://www.ey.com/ja_jp/industries/government-public-sector/public-projects/2026/ey-japan-pp-2026-09-07",
    "https://www.ey.com/ja_jp/newsroom/2026/08/ey-japan-news-release-2026-08-31",
-   "https://www.ey.com/ja_jp/newsroom/2026/07/ey-japan-news-release-2026-07-30",
    "https://www.ey.com/ja_jp/newsroom/information/2026/ey-japan-info-2026-09-25",
    "https://www.ey.com/ja_jp/newsroom/information/2026/ey-japan-info-2026-08-27",
    "https://www.ey.com/ja_jp/newsroom/information/2026/ey-japan-info-2026-08-19",
@@ -2196,11 +2187,11 @@
    "https://www.ey.com/ja_jp/people/ey-japan",
    "https://www.ey.com/ja_jp/legal-and-privacy/hotline"
   ],
-  "checked": "2026-10-08T01:06:18.680338+00:00"
+  "checked": "2026-10-09T01:06:09.393954+00:00"
  },
  "https://dora.dev/": {
   "links": [],
-  "checked": "2026-10-08T01:06:18.888115+00:00"
+  "checked": "2026-10-09T01:06:09.593647+00:00"
  },
  "https://www.thoughtworks.com/radar": {
   "links": [
@@ -2276,17 +2267,20 @@
    "https://www.thoughtworks.com/content/dam/thoughtworks/documents/tw_anti-bribery_corruption_policy_2026.pdf",
    "https://www.thoughtworks.com/about-us/fraud-advisory-notice"
   ],
-  "checked": "2026-10-08T01:06:19.143793+00:00"
+  "checked": "2026-10-09T01:06:09.907391+00:00"
  },
  "https://newsletter.pragmaticengineer.com/": {
   "links": [],
-  "checked": "2026-10-08T01:06:19.385755+00:00"
+  "checked": "2026-10-09T01:06:10.144655+00:00"
  },
  "https://linear.app/changelog": {
   "links": [
    "https://linear.app/now/product-launches",
    "https://linear.app/now/team",
    "https://linear.app/now/community",
+   "https://linear.app/changelog/2026-10-08-stacked-pull-requests",
+   "https://linear.app/settings/usage",
+   "https://linear.app/docs/ai-credits",
    "https://linear.app/changelog/2026-09-24-new-controls-for-linear-coding-agent",
    "https://linear.app/changelog/2026-06-11-coding-sessions",
    "https://linear.app/settings/ai/coding-agent",
@@ -2300,16 +2294,13 @@
    "https://linear.app/docs/linear-agent",
    "https://linear.app/changelog/2026-07-20-introducing-loops",
    "https://linear.app/changelog/2026-07-02-initiative-properties",
-   "https://linear.app/changelog/2026-06-18-agent-assisted-project-updates",
-   "https://linear.app/download",
-   "https://linear.app/developers/oauth-app-manifests",
    "https://linear.app/changelog/page/2",
    "https://linear.app/coding-sessions",
    "https://linear.app/customer-requests",
    "https://linear.app/integrations",
    "https://linear.app/docs"
   ],
-  "checked": "2026-10-08T01:06:19.812595+00:00"
+  "checked": "2026-10-09T01:06:10.546660+00:00"
  },
  "https://www.atlassian.com/blog": {
   "links": [
@@ -2328,7 +2319,7 @@
    "https://www.atlassian.com/resources",
    "https://www.atlassian.com/legal/privacy-policy"
   ],
-  "checked": "2026-10-08T01:06:20.104005+00:00"
+  "checked": "2026-10-09T01:06:10.839314+00:00"
  },
  "https://digital-strategy.ec.europa.eu/en/news": {
   "links": [
@@ -2354,6 +2345,6 @@
    "https://digital-strategy.ec.europa.eu/en",
    "https://digital-strategy.ec.europa.eu/en/pages/accessibility"
   ],
-  "checked": "2026-10-08T01:06:20.599907+00:00"
+  "checked": "2026-10-09T01:06:11.381755+00:00"
  }
 }
