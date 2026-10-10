@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年10月10日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年10月10日（土）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">各記事に視点タグと視点ごとの「だから何か」を付け、重要度は「今すぐ試せる・対応が要るか」で決めています。出典はすべて本文を取得して確認した一次情報で、公開が48時間を超えるものは載せていません。方針の全文は <a href="https://github.com/alphakt/news/blob/main/docs/briefing-design.md" target="_blank" rel="noopener">docs/briefing-design.md</a> を参照。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Anthropic、定時実行エージェントの作り方を公開——「読めなかった」を「何もなかった」と報告させない、投稿確認後に記録する、実行ごとに支出上限を置く</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Anthropicは10月8日、Claude Managed Agents（ベータ）で毎日の要約を自動投稿するエージェントの参照実装と設計指針を公開した。構成はソース（読み取り専用の一覧）、宛先（書き込める場所は1か所）、エージェント定義、cronの定時実行、記憶、ガードレールの6要素。失敗の典型として、ソースへのアクセスを黙って失う、読み取り失敗を「新着なし」と誤認する、投稿の重複や欠落、古い設定の残存を挙げる。対策は、「直近24時間」ではなくソースごとの最終取得時刻（ブックマーク）から読む、読み取り失敗は失敗として本文に明記する、Slackが ok と投稿IDを返してから送信済みとして記録する、投稿直前に各項目の状態を再確認する、設定は毎回読み直す、認証情報は金庫に置く、読み取り専用トークンとネットワーク許可リスト、実行ごとの上限額（通常の3〜5倍から開始）である。参照コードはanthropics/claude-quickstartsのmanaged-agents/daily-briefにある。</p>
+      <div class="howto"><b>どう試す／どう対応する：</b>自社の定時エージェント（日次レポート等）を1つ選び、「読み取り失敗が本文に出るか」「投稿成功を確認してから記録しているか」「実行ごとの上限額があるか」の3点を点検する。</div>
+      <ul class="sowhat"><li><b>DEV</b>定時実行のエージェントは「失敗を静かな日として報告する」ことが最大の落とし穴。取得時刻の保存、投稿確認後の記録、失敗の明示を実装の基本形にできる。</li><li><b>PM</b>無人運用の統制は設計項目として工数に入れる。実行ごとの上限額は、低すぎると「静かな日」に見えるので、実測の3〜5倍から始めて絞る。</li><li><b>CONSULT</b>「毎朝の要約・監視をエージェントに任せたい」という依頼への設計テンプレートとして、そのまま提案に使える。ベータ版である点は説明が必要。</li></ul>
+      <div class="source">出典：
+        <a href="https://claude.dev/blog/building-effective-agent-automations/" target="_blank" rel="noopener">Claude Developer Blog「Building effective agent automations」（2026-10-08）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>製品はAnthropic側のものだが、検討事項（取得位置、投稿確認、上限額）は他の基盤でもそのまま通用する。この簡報の自動生成の運用点検にも使える。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>arXiv「One Skill Too Many」：似たSkillを併用すると約5回に1回は別のSkillが実行され、最終応答で明示されるのは0.9%</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">10月8日に投稿された研究（2610.11647）は、コーディングエージェントに併用導入されたSkillの競合を調べた。2万947リポジトリから82万件超の類似Skill対を抽出し、確認済みの312対を3つのモデルで6,368回実行している。結果は、導入済みSkillのほぼ4件に1件が同じ役割の別Skillと共存していること、タスクの合格率が下がらないまま約5回に1回は類似Skillが選ばれて実行されること、類似Skillが先に読まれると本来のSkill固有の中核機能が3分の1超失われることだった。どちらが使われるかは導入場所で決まり、一覧の並び順の影響は小さい。実際に使われたSkillが最終応答で示されたのは入れ替わった実行の0.9%のみで、競合は最初のSkill読み込みの時点で決着する。その時点にフックを挟むと中核機能の維持率が回復した。</p>
+      <div class="howto"><b>どう試す／どう対応する：</b>現在のエージェントに入れているSkillを一覧にし、役割が重なるもの（コピーしたコレクション由来を含む）を探して1つに絞る。重要なSkillには、使用時にその名前を出力させる指示を入れて実際に使われたか確認する。</div>
+      <ul class="sowhat"><li><b>DEV</b>Skillは増やすほど安全ではなく、重複は黙って差し替わる。導入場所と重複を点検し、使われたSkillを可視化する。</li><li><b>PM</b>Skill整備の品質は「合格したか」だけでは測れない。固有機能が実行されたかを評価項目に加える。</li></ul>
+      <div class="source">出典：
+        <a href="https://arxiv.org/abs/2610.11647" target="_blank" rel="noopener">arXiv:2610.11647「One Skill Too Many: How Co-Installed Skills Conflict in Coding Agents」（2026-10-08投稿）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>LLM判定を含む査読前の結果で、評価したモデル名は確認できなかった。それでも「Skillの入れ過ぎ」への実測の警告で、昨日の効果検証の研究と合わせて読むと筋が通る。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>arXiv：AI作成PRのレビューで効くのは「AIか否か」ではなく説明責任——範囲・根拠・CI以上の検証・応答・マージ後の担当者</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">10月8日に投稿された研究（2610.11179）は、31か国のコードレビュー経験者239人への質問紙調査で、AIが作成したプルリクエスト（AIPR）をどう扱うかを調べた。AIが書いたこと自体は一律の却下理由にならず、レビューの労力は、そのAIPRが責任ある貢献として示されているかで変わると報告する。レビューに値するとされた条件は、範囲が限定されていること、プロジェクトに即した根拠があること、CI以上の検証があること、投稿者が応答すること、マージ後の担当者が特定できることの5つ。人の関与が見えない場合、レビュアーは指導の縮小、精査の強化、判断の先送り、担当の振り分けといった行動をとるという。著者は、根拠・検証・責任が欠けたときにレビュアーが肩代わりする作業を「レビュー可能性の負債」と呼ぶ。この要約からは具体的な割合は確認できなかった。</p>
+      <ul class="sowhat"><li><b>DEV</b>AIで作ったPRには、変更範囲、根拠、CI以外の検証内容、マージ後の担当者を説明欄に書く。これだけでレビュアーの負担が変わる。</li><li><b>PM</b>レビュー待ちの滞留は人数の問題ではなく、PRが持つ説明責任の欠落かもしれない。PRテンプレートに上記5項目を入れて滞留の変化を見る。</li></ul>
+      <div class="source">出典：
+        <a href="https://arxiv.org/abs/2610.11179" target="_blank" rel="noopener">arXiv:2610.11179「Who Pays the Review Cost? Triage, Fairness, and Accountability in AI-authored Pull Requests」（2026-10-08投稿）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>質問紙調査であり、実際の滞留を計測したデータではない。それでも「AI作成だから重い」のでなく「責任が見えないから重い」という整理は、運用ルールに落としやすい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>損保ジャパン、Gemini Enterpriseを約2万人に展開——AIリテラシー試験の合格者にだけ権限を付与し、監査ログとModel Armorで統制</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">キーマンズネットは10月9日、損害保険ジャパンのDX推進部が2026年1月から約2万人にGemini Enterpriseを展開した運用を紹介した。2026年6月時点で平日の日次利用者が5割超、週次利用者は約8割という。統制の特徴は、全員配布ではなくAIリテラシーの試験に合格した社員にだけ権限を付与し、人事名簿と合格者一覧を毎日突き合わせて利用者を自動更新する点にある。監査ログはBigQueryに送り、部門別に利用の定着を分析する。独自エージェントの作成・共有も、別の研修修了後に開放した（2026年5月）。リスク面では、Model Armorでプロンプトと応答をリアルタイムに検査して危険なものを遮断し、Cloud Monitoringでエラー・規則違反・クォータの3種類を警告する。機能の制限ではなく、監視と是正で規則を守らせる方針で、生成内容の確認責任は利用者本人にあるとしている。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>国内大手の運用事例として、「教育を受けた人だけに権限、ログで部門別に定着を見る、危険な入出力は機械で止める」という型を提案資料に使える。</li><li><b>PM</b>展開計画に、利用者名簿と研修結果の自動連携、クォータの警告、定着の部門別分析を最初から入れる。クォータの引き上げには時間がかかるため先に予約する。</li></ul>
+      <div class="source">出典：
+        <a href="https://kn.itmedia.co.jp/kn/article/2610/09/2000002145/" target="_blank" rel="noopener">キーマンズネット（ITmedia）「損保ジャパン、2万人の「Gemini活用」どう管理？」（2026-10-09）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>当事者へのインタビュー記事であり、企業の一次資料ではない。数値は当事者の発言として読み、費用面の記述がないため、投資対効果の判断材料にはならない。</div>
+    </div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>追記：</b>「AI 生成 PR の人間レビュー枠組み」に Who Pays the Review Cost（2610.11179）を、「SOUL.md / AGENTS.md / CLAUDE.md」系に One Skill Too Many（2610.11647）を出典として追加。新規に「Claude Managed Agents 定時エージェント（daily-brief）」「損保ジャパン Gemini Enterprise 展開」を登録。</li>
+      <li><b>見送り：</b>GitHub の Copilot ランタイム Rust 移行は一次ブログが9月17日で範囲外。Anthropic の評価環境のネット遮断は報道（TechCrunch）のみで、Anthropic の一次記事を確認できず。AI生成の架空判例を含む書籍の絶版は、朝日・47NEWS が取得できず本文未確認のため載せていない。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

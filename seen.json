@@ -185,6 +185,26 @@
       "date": "2026-10-09",
       "key": "arxiv-2610.08900-humanize",
       "url": "https://arxiv.org/abs/2610.08900"
+    },
+    {
+      "date": "2026-10-10",
+      "key": "anthropic-agent-automations-daily-brief",
+      "url": "https://claude.dev/blog/building-effective-agent-automations/"
+    },
+    {
+      "date": "2026-10-10",
+      "key": "arxiv-2610.11647-one-skill-too-many",
+      "url": "https://arxiv.org/abs/2610.11647"
+    },
+    {
+      "date": "2026-10-10",
+      "key": "arxiv-2610.11179-who-pays-review-cost",
+      "url": "https://arxiv.org/abs/2610.11179"
+    },
+    {
+      "date": "2026-10-10",
+      "key": "sompo-japan-gemini-20k-governance",
+      "url": "https://kn.itmedia.co.jp/kn/article/2610/09/2000002145/"
     }
   ]
 }

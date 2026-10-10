@@ -55,11 +55,12 @@
       "kind": "context-engineering",
       "status": "candidate",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-09",
-      "mentions": 2,
+      "last_seen": "2026-10-10",
+      "mentions": 3,
       "sources": [
         "https://zenn.dev/fukorohouse/articles/e2659fcd7c530f",
-        "https://arxiv.org/abs/2610.08875"
+        "https://arxiv.org/abs/2610.08875",
+        "https://arxiv.org/abs/2610.11647"
       ],
       "note": ".md でエージェントの振る舞いを規定する手法。効果の実証研究・ベストプラクティスを追う"
     },
@@ -68,14 +69,15 @@
       "kind": "process",
       "status": "watching",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-09",
-      "mentions": 5,
+      "last_seen": "2026-10-10",
+      "mentions": 6,
       "sources": [
         "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
         "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
         "https://arxiv.org/abs/2610.05399",
         "https://arxiv.org/abs/2610.08651",
-        "https://arxiv.org/abs/2610.08900"
+        "https://arxiv.org/abs/2610.08900",
+        "https://arxiv.org/abs/2610.11179"
       ],
       "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
     },
@@ -330,6 +332,30 @@
         "https://blog.cloudflare.com/clef-decision-models/"
       ],
       "note": "Apache 2.0 の決定モデル。Jev API 互換。一次公開 10/1"
+    },
+    {
+      "name": "Claude Managed Agents 定時エージェント（daily-brief）",
+      "kind": "agent-infra",
+      "status": "candidate",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "mentions": 1,
+      "sources": [
+        "https://claude.dev/blog/building-effective-agent-automations/"
+      ],
+      "note": "ブックマーク読み取り・投稿確認後の記録・実行ごとの上限額。無人運用エージェントの設計テンプレート"
+    },
+    {
+      "name": "損保ジャパン Gemini Enterprise 展開",
+      "kind": "enterprise-case",
+      "status": "candidate",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "mentions": 1,
+      "sources": [
+        "https://kn.itmedia.co.jp/kn/article/2610/09/2000002145/"
+      ],
+      "note": "リテラシー試験合格者のみ権限、BigQuery 監査ログ、Model Armor。国内大手の統制事例"
     }
   ]
 }
