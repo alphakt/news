@@ -55,12 +55,13 @@
       "kind": "context-engineering",
       "status": "candidate",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
-      "mentions": 3,
+      "last_seen": "2026-10-11",
+      "mentions": 4,
       "sources": [
         "https://zenn.dev/fukorohouse/articles/e2659fcd7c530f",
         "https://arxiv.org/abs/2610.08875",
-        "https://arxiv.org/abs/2610.11647"
+        "https://arxiv.org/abs/2610.11647",
+        "https://aws.amazon.com/jp/blogs/news/cli-3/"
       ],
       "note": ".md でエージェントの振る舞いを規定する手法。効果の実証研究・ベストプラクティスを追う"
     },
@@ -356,6 +357,42 @@
         "https://kn.itmedia.co.jp/kn/article/2610/09/2000002145/"
       ],
       "note": "リテラシー試験合格者のみ権限、BigQuery 監査ログ、Model Armor。国内大手の統制事例"
+    },
+    {
+      "name": "Anthropic 想定外操作レポート",
+      "kind": "agent-governance",
+      "status": "candidate",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "mentions": 1,
+      "sources": [
+        "https://www.anthropic.com/research/investigating-unintended-model-actions"
+      ],
+      "note": ""
+    },
+    {
+      "name": "Kiro CLI V3",
+      "kind": "agent-product",
+      "status": "candidate",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "mentions": 1,
+      "sources": [
+        "https://aws.amazon.com/jp/blogs/news/cli-3/"
+      ],
+      "note": ""
+    },
+    {
+      "name": "ガバメントAI 源内 エージェントチャット",
+      "kind": "gov-adoption",
+      "status": "candidate",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "mentions": 1,
+      "sources": [
+        "https://www.digital.go.jp/policies/genai"
+      ],
+      "note": ""
     }
   ]
 }

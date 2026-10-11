@@ -205,6 +205,21 @@
       "date": "2026-10-10",
       "key": "sompo-japan-gemini-20k-governance",
       "url": "https://kn.itmedia.co.jp/kn/article/2610/09/2000002145/"
+    },
+    {
+      "date": "2026-10-11",
+      "key": "anthropic-unintended-model-actions",
+      "url": "https://www.anthropic.com/research/investigating-unintended-model-actions"
+    },
+    {
+      "date": "2026-10-11",
+      "key": "kiro-cli-v3-default",
+      "url": "https://aws.amazon.com/jp/blogs/news/cli-3/"
+    },
+    {
+      "date": "2026-10-11",
+      "key": "digital-agency-gennai-agent-chat",
+      "url": "https://www.digital.go.jp/policies/genai"
     }
   ]
 }
