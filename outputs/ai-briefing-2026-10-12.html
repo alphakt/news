@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年10月12日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年10月12日（月）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">各記事に視点タグと視点ごとの「だから何か」を付け、重要度は「今すぐ試せる・対応が要るか」で決めています。出典はすべて本文を取得して確認した一次情報（または筆者自身の実測記事）で、公開が48時間を超えるものは載せていません。方針の全文は <a href="https://github.com/alphakt/news/blob/main/docs/briefing-design.md" target="_blank" rel="noopener">docs/briefing-design.md</a> を参照。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Microsoftが判断特化モデル「Microsoft-Decision-1」を公開——文章を生成せず選択肢ごとの確率だけを返し、入力100万トークン0.042ドル</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Microsoftは10月9日（米国時間）、Qwen3.5-9Bを追加学習した判断特化モデルをMicrosoft FoundryとOpenRouterで提供開始した。状況・質問・固定の選択肢（はい／いいえ、多肢選択、評価尺度）を渡すと、各選択肢の確率を1回の推論で返す。ルーブリックによるAI応答やエージェント行動の採点にも使える。価格は入力100万トークンあたり0.042ドルで、出力は無料。Microsoftは、学習に使っていない36のベンチマーク（約15万問）で最高精度、GPT-6 Solより中央値で約35倍高速としているが、いずれも自社測定である。Xbox研究部門は品質が同等で14倍高速・200倍安価と報告した。重大な判断の単独利用は避けるよう注意書きがある。判断特化モデルはTypeSafe AIのJev、OpenAIのDecisions APIに続く3例目で、「エージェントの小さな判断を主モデルから切り出す」設計が各社の標準部品になりつつある。</p>
+      <div class="howto"><b>どう試す／どう対応する：</b>自社エージェントの「ツール選択」「承認要否」「応答の合否採点」のうち1つを選び、OpenRouter経由でこのモデルに置き換えて、現行の主モデル判断と一致率・遅延・費用を比べる。</div>
+      <ul class="sowhat"><li><b>DEV</b>分岐判断を確率付きJSONで受け取れるため、閾値で自動実行と人間確認を切り分けるゲートを短いコードで作れる。</li><li><b>PM</b>判断呼び出しを小型モデルに分ければ、トークン費用と待ち時間の見積もりが変わる。ただしベンチマークは自社測定なので、自案件のデータで検証する工程が要る。</li><li><b>CONSULT</b>「エージェントの判断をどう統制するか」という質問に、判断を分離して確率を記録する設計の具体例として示せる。人に関わる重大判断への単独利用は不可という条件も併せて伝える。</li></ul>
+      <div class="source">出典：
+        <a href="https://commandline.microsoft.com/microsoft-decision-1-model-foundry/" target="_blank" rel="noopener">Microsoft「Microsoft-Decision-1」（2026-10-09）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>Jevに続く3社目で潮流は確定的だが、精度・速度の優位は各社が自社ベンチで主張している段階なので、乗り換えは自前評価を経てからにしたい。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Claude Codeのdenyに相対パス「../」を書いても隣のフォルダへの書き込みが止まらない——2.1.296での実測報告</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Zennの筆者が10月11日に公開した検証記事によると、Windows 10・Claude Code 2.1.296・非対話の claude -p で、.claude/settings.json の deny に Edit(../shared/partner/**) のような相対パスを書いても、Write・Edit・Bash（echo や node による書き込み）のいずれも止まらず、起動時の警告も出なかった。判定はダミーファイルのハッシュ比較による。同じ場所を絶対パスで書くと Write・Edit・Bash の echo は止まったが、Bash を自動許可していると node スクリプトからの書き込みは絶対パスでも止まらなかった。また deny の書き込み禁止は Write(...) ではなく Edit(...) で書く必要がある。筆者は、作業フォルダ外を守る規則は絶対パスで書く、Bash を自動許可しない、規則は書いたあと実際に止まるか試す、deny は壁ではなくブレーキなので OS の権限分離やコンテナも併用する、と述べている。検証は筆者1人の環境の結果である。</p>
+      <div class="howto"><b>どう試す／どう対応する：</b>自分の settings.json にある deny のうち「../」や相対パスで書いたものを洗い出し、捨てファイルを対象に Write・Edit・Bash で本当に拒否されるかを確かめる。止まらなければ絶対パスに書き直し、Bash の自動許可を見直す。</div>
+      <ul class="sowhat"><li><b>DEV</b>deny は書いただけでは効いている保証がなく、拒否されることを実際に試して確認する習慣が必要になる。</li><li><b>PM</b>エージェントの権限統制を設定ファイルだけに頼る計画は危うい。環境の隔離（コンテナ・別ユーザー）を標準要件にするかを判断する材料になる。</li><li><b>CONSULT</b>「エージェントに触らせない範囲を設定で守れるか」というクライアントの問いに、設定は補助でありOS・環境側の隔離が本体、と根拠付きで説明できる。</li></ul>
+      <div class="source">出典：
+        <a href="https://zenn.dev/emilk1225/articles/73356c9b0e156d" target="_blank" rel="noopener">Zenn「Claude Code の deny に ../ を書いたら、隣のフォルダへの書き込みが止まらなかった（2.1.296で実測）」（2026-10-11）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>公式の仕様確認ではなく個人環境（Windows）での実測なので、Mac／Linuxや新しい版で同じかは別途確かめる必要があるが、確認コストが低いので先に自分の設定を点検する価値は高い。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Claude Codeのサブエージェント1体の消費を数え直したら、画面表示157,630トークンに対しログでは3,514,672トークン（約22倍）だった</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Zennの筆者が10月12日に公開した記事で、調べもの担当のサブエージェントを1体走らせたところ、会話に表示された消費は157,630トークンだったが、Claude Codeが記録するログから数え直すと3,514,672トークンで、約22倍あったと報告している。測定は8月30日と9月21日に行われた。差の大部分はキャッシュ読み取りで、会話に出る数字には含まれていないという。筆者は、消費を減らすには文章量よりもやり取りの往復回数を減らす方が効く、定額プランでもサブエージェントを同時に複数走らせると使用量が跳ね上がると指摘する。なお原因分析の後半は有料部分のため確認できておらず、キャッシュ読み取りがどの料金区分でどう課金されるかは本文からは分からない。一人の実測であり、一般化には自分の環境での再計測が要る。</p>
+      <ul class="sowhat"><li><b>PM</b>画面の表示値を基にしたトークン費用の見積もりは過小になりうる。コスト統制はログ集計を基準にする運用を検討する。</li><li><b>DEV</b>サブエージェントの多用は往復回数を増やして消費を膨らませる。並列数と往復回数を設計時の指標にする。</li></ul>
+      <div class="source">出典：
+        <a href="https://zenn.dev/claire_ai/articles/token-shohi-kiji-9ac90f" target="_blank" rel="noopener">Zenn「Claude Code の担当が使ったトークンを数え直したら、画面に出た数字の22倍だった」（2026-10-12）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>キャッシュ読み取りは単価が低いため、22倍がそのまま費用の22倍ではない点に注意しつつ、「表示値は全体像ではない」という前提だけは持っておきたい。</div>
+    </div>
+
+    <div class="section-title">📝 本日の状況</div>
+    <div class="brief"><ul>
+      <li>48時間以内に一次情報で確認できた収録候補が少なく、3件にとどめた（無理に件数を埋めていない）。</li>
+    </ul></div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>追記：</b>「Jev (TypeSafe AI)」（関心対象）に Microsoft-Decision-1 を出典として追加（判断特化モデルは3例目）。新規に「Microsoft-Decision-1」「Claude Code の権限規則（deny）の実効性」「サブエージェントのトークン計測差」を登録。</li>
+      <li><b>見送り：</b>Nadella氏の「緊急ブレーキ」投稿は一次情報（X）を取得できず除外。Anthropicの想定外操作に対する米政権・警察の反応はAxiosが取得不可、ITmedia記事は二次情報のため除外。DuckDB CLI の agent mode と青山財産ネットワークスのAIエージェント7件は一次情報の日付が48時間を超えるため除外。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

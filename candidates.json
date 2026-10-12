@@ -6,14 +6,15 @@
       "kind": "agent-infra",
       "status": "watching",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-09",
-      "mentions": 5,
+      "last_seen": "2026-10-12",
+      "mentions": 6,
       "sources": [
         "https://arxiv.org/abs/2610.02267",
         "https://developers.openai.com/api/docs/guides/decisions",
         "https://www.thoughtworks.com/insights/blog/generative-ai/how-jev-can-help-improve-the-efficiency-of-rag-pipelines",
         "https://strandsagents.com/blog/introducing-strands-decider/",
-        "https://blog.cloudflare.com/clef-decision-models/"
+        "https://blog.cloudflare.com/clef-decision-models/",
+        "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
       ],
       "note": "テキストを生成せず型付きの判断だけ返す決定モデル。エージェントの小さな判断（ツール選択、安全性、停止判断）を主モデルから分離する発想。対照: 主モデル自前判断、他の router/guard モデル"
     },
@@ -393,6 +394,42 @@
         "https://www.digital.go.jp/policies/genai"
       ],
       "note": ""
+    },
+    {
+      "name": "Microsoft-Decision-1",
+      "kind": "agent-infra",
+      "status": "candidate",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "mentions": 1,
+      "sources": [
+        "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
+      ],
+      "note": "Qwen3.5-9B ベースの判断特化モデル。Jev・OpenAI Decisions API と同系統。Foundry/OpenRouter で入力 $0.042/1M"
+    },
+    {
+      "name": "Claude Code の権限規則（deny）の実効性",
+      "kind": "governance",
+      "status": "candidate",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "mentions": 1,
+      "sources": [
+        "https://zenn.dev/emilk1225/articles/73356c9b0e156d"
+      ],
+      "note": "相対パス ../ の deny が効かない実測（2.1.296）。絶対パス・Edit()・Bash 自動許可の扱い"
+    },
+    {
+      "name": "サブエージェントのトークン計測差",
+      "kind": "cost",
+      "status": "candidate",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-10-12",
+      "mentions": 1,
+      "sources": [
+        "https://zenn.dev/claire_ai/articles/token-shohi-kiji-9ac90f"
+      ],
+      "note": "画面表示とログ集計で約22倍の差。キャッシュ読み取りが主因"
     }
   ]
 }

@@ -220,6 +220,21 @@
       "date": "2026-10-11",
       "key": "digital-agency-gennai-agent-chat",
       "url": "https://www.digital.go.jp/policies/genai"
+    },
+    {
+      "date": "2026-10-12",
+      "key": "microsoft-decision-1",
+      "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
+    },
+    {
+      "date": "2026-10-12",
+      "key": "claude-code-deny-relative-path-2.1.296",
+      "url": "https://zenn.dev/emilk1225/articles/73356c9b0e156d"
+    },
+    {
+      "date": "2026-10-12",
+      "key": "claude-code-subagent-token-22x",
+      "url": "https://zenn.dev/claire_ai/articles/token-shohi-kiji-9ac90f"
     }
   ]
 }
