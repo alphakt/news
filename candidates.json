@@ -6,15 +6,16 @@
       "kind": "agent-infra",
       "status": "watching",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-12",
-      "mentions": 6,
+      "last_seen": "2026-10-13",
+      "mentions": 7,
       "sources": [
         "https://arxiv.org/abs/2610.02267",
         "https://developers.openai.com/api/docs/guides/decisions",
         "https://www.thoughtworks.com/insights/blog/generative-ai/how-jev-can-help-improve-the-efficiency-of-rag-pipelines",
         "https://strandsagents.com/blog/introducing-strands-decider/",
         "https://blog.cloudflare.com/clef-decision-models/",
-        "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
+        "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
+        "https://www.thoughtworks.com/insights/articles/decision-models-and-the-possibility-of-no-ops"
       ],
       "note": "テキストを生成せず型付きの判断だけ返す決定モデル。エージェントの小さな判断（ツール選択、安全性、停止判断）を主モデルから分離する発想。対照: 主モデル自前判断、他の router/guard モデル"
     },
@@ -430,6 +431,30 @@
         "https://zenn.dev/claire_ai/articles/token-shohi-kiji-9ac90f"
       ],
       "note": "画面表示とログ集計で約22倍の差。キャッシュ読み取りが主因"
+    },
+    {
+      "name": "ソニー銀行 勘定系×Claude Code 事例",
+      "kind": "case",
+      "status": "candidate",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "mentions": 1,
+      "sources": [
+        "https://aws.amazon.com/jp/blogs/news/casestudy-sonybank-agent-in-development/"
+      ],
+      "note": "基幹系開発への段階適用。期間30%短縮・工数40%削減。"
+    },
+    {
+      "name": "エージェント型決済の権限モデル",
+      "kind": "governance",
+      "status": "candidate",
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "mentions": 1,
+      "sources": [
+        "https://www.thoughtworks.com/insights/blog/generative-ai/why-agentic-payments-require-executable-model-organizational-authority"
+      ],
+      "note": "権限を機械が実行できる形で定義。"
     }
   ]
 }

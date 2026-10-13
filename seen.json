@@ -235,6 +235,21 @@
       "date": "2026-10-12",
       "key": "claude-code-subagent-token-22x",
       "url": "https://zenn.dev/claire_ai/articles/token-shohi-kiji-9ac90f"
+    },
+    {
+      "date": "2026-10-13",
+      "key": "sonybank-claude-code-core-banking",
+      "url": "https://aws.amazon.com/jp/blogs/news/casestudy-sonybank-agent-in-development/"
+    },
+    {
+      "date": "2026-10-13",
+      "key": "thoughtworks-agentic-payments-authority",
+      "url": "https://www.thoughtworks.com/insights/blog/generative-ai/why-agentic-payments-require-executable-model-organizational-authority"
+    },
+    {
+      "date": "2026-10-13",
+      "key": "thoughtworks-decision-models-noops",
+      "url": "https://www.thoughtworks.com/insights/articles/decision-models-and-the-possibility-of-no-ops"
     }
   ]
 }

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年10月13日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年10月13日（火）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">各記事に視点タグと視点ごとの「だから何か」を付け、重要度は「今すぐ試せる・対応が要るか」で決めています。出典はすべて本文を取得して確認した一次情報（または筆者自身の実測記事）で、公開が48時間を超えるものは載せていません。方針の全文は <a href="https://github.com/alphakt/news/blob/main/docs/briefing-design.md" target="_blank" rel="noopener">docs/briefing-design.md</a> を参照。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>ソニー銀行が稼働中の勘定系システム開発にClaude Codeを適用——基本設計から結合テストまでの期間30%短縮・工数40%削減（AWS公開事例）</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">AWS Japanが10月13日に公開した事例で、ソニー銀行は富士通と共同で、本番稼働中の勘定系システムの開発にAmazon Bedrock経由のClaude Codeを適用した。2025年9月に製造・単体テストから始め、設計・結合テストへ対象を広げ、2026年7月時点で基本設計から結合テストまでの開発期間を30%短縮、工数を40%削減したという。統制面では、中央の生成AIタスクフォースがSkills（作業手順の部品）を作成して配り、AIの出力は人が最終レビューする。教訓として、設計書や開発規約などの既存資産を整えたうえで、統制を開発環境に組み込むことが挙げられている。金融の基幹系という保守的な領域で、工程を段階的に広げた実績が数値付きで示された点が特徴である。</p>
+      <div class="howto"><b>どう試す／どう対応する：</b>自社の案件で「設計書・規約が機械可読か」「AI出力の最終レビュー者は誰か」を1枚で点検し、製造・単体テストから段階的に広げる提案の雛形にする。</div>
+      <ul class="sowhat"><li><b>CONSULT</b>金融・基幹系のクライアントに対し、「製造から始めて設計・結合へ広げる」段階導入の国内実例として示せる。数値は同社・AWSの発表値である点を添える。</li><li><b>PM</b>見積・工程計画にAI効果（期間30%・工数40%）を織り込む議論が現実味を帯びる。ただし前提は既存資産の整備と人の最終レビューなので、その準備工数も計画に入れる。</li><li><b>DEV</b>中央チームがSkillsを作り配布する運用は、規約をコードとして共有する実例になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://aws.amazon.com/jp/blogs/news/casestudy-sonybank-agent-in-development/" target="_blank" rel="noopener">AWS Japan Blog「ソニー銀行が勘定系システムの開発に AI エージェントを適用し基本設計から結合テストまでの開発期間を 30% 短縮」（2026-10-13）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>成果の数字よりも「統制を開発環境に組み込む」「人が最終レビュー」という運用設計のほうが、他社が真似できる部分である。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Thoughtworks「エージェント型決済には、組織の権限を機械が実行できる形で定義することが要る」——取引単体でなく累積の影響も評価せよ</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Thoughtworksが10月12日に公開した記事は、AIエージェントが購買・支払いを行う場面では、取引ごとの承認だけでは足りず、責任主体・目的・予算・期間・取引先といった組織の権限を、機械が実行できる形で定義する必要があると主張する。個々の取引に加え、時間をかけた累積的な影響も評価すべきだとする。推奨は四つで、①固定予算内の小額な定型購入など範囲を絞って始める、②金額・可逆性・新規性に応じて追加検証や人間の承認を設ける、③ベンダー集中や契約義務、データ露出を継続的に監視する、④失効・緊急停止の仕組みと責任者を明確にする。</p>
+      <ul class="sowhat"><li><b>PM</b>エージェントに支出権限を渡す案件では、予算・期間・取引先の上限を要件として明文化し、失効と緊急停止の責任者を決めておく。</li><li><b>CONSULT</b>エージェント導入の統制設計を提案する際、「承認フロー」ではなく「権限モデルの実装」という切り口を加えられる。</li><li><b>DEV</b>権限を設定ファイルや文書でなく、実行時に評価できるポリシーとして実装する発想の参考になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.thoughtworks.com/insights/blog/generative-ai/why-agentic-payments-require-executable-model-organizational-authority" target="_blank" rel="noopener">Thoughtworks「Why agentic payments require an executable model of organizational authority」（2026-10-12）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>決済に限らず、エージェントの権限を「上限と期限付きで機械が判定できる形」にする考え方は、そのまま社内業務エージェントの統制設計に流用できる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Thoughtworks「判断モデルがNoOpsを可能にする」——運用の人の役割は作業から統治へ、リスクは制御層に移る</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Thoughtworksが10月12日に公開した記事は、企業IT運用が「人が作業を実行する」から「人がAIの実行を統治する」へ移ると論じる。AIOpsを、AIが対応案を示す段階（2024年第4四半期）から、判断モデルが振り分けを担う段階（2026年秋）までの4段階で整理する。Jevのような判断モデルは文章を生成せず分類と判断に特化し、LLMより低コストで、あらゆる依頼を受付・振り分け・自動復旧または人への引き上げという同じ型で処理できるとする。リスクは振り分けや検証を司る制御層に移るため、AI制御基盤は外部委託せず自社で握るべきだと提言し、運用担当は統治・観察・制御の役割へ移るべきだとしている。</p>
+      <ul class="sowhat"><li><b>PM</b>運用保守の見積・体制を「作業人数」から「制御層の設計と監視」へ組み替える論点になる。引き上げ（エスカレーション）基準の設計を計画に入れる。</li><li><b>CONSULT</b>運用保守を請け負う提案で、AI前提の運用モデルと制御基盤の保有方針を示す材料になる。マネージドサービス事業者にもAI負荷の運用を今から始めるよう促している。</li><li><b>DEV</b>受付→振り分け→自動復旧／引き上げの型に、判断モデルをどこへ差し込むかを設計する参考になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.thoughtworks.com/insights/articles/decision-models-and-the-possibility-of-no-ops" target="_blank" rel="noopener">Thoughtworks「Decision models and the possibility of NoOps」（2026-10-12）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>これは提言の記事で実測データはなく、「NoOps」は将来像として読むべきだが、昨日のMicrosoft-Decision-1と合わせて、判断モデルの置き場所が議論の中心になりつつある。</div>
+    </div>
+
+    <div class="section-title">📝 本日の状況</div>
+    <div class="brief"><ul>
+      <li>48時間以内に一次情報で日付を確認できた収録候補が少なく、3件にとどめた（無理に件数を埋めていない）。</li>
+    </ul></div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>追記：</b>「Jev (TypeSafe AI)」（関心対象）に Thoughtworks の NoOps 記事を出典として追加。新規に「ソニー銀行 勘定系×Claude Code 事例」「エージェント型決済の権限モデル」を登録。</li>
+      <li><b>見送り：</b>Spotify のAI開発品質（原典は9月）、GitLab 19.4（9月17日）、Gartner の FDE 予測（9月29日）、Accenture のトークン予算調査（9月17日）、Codex CLI の常駐デーモン issue（9月25日）、arXiv のコードレビューエージェント評価・エージェントPR研究（10月9日提出）は、一次情報の日付が48時間を超えるため除外。Nadella氏の投稿とAnthropicの動的ワークフローは一次情報（X）を取得できず除外。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
