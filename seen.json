@@ -250,6 +250,26 @@
       "date": "2026-10-13",
       "key": "thoughtworks-decision-models-noops",
       "url": "https://www.thoughtworks.com/insights/articles/decision-models-and-the-possibility-of-no-ops"
+    },
+    {
+      "date": "2026-10-14",
+      "key": "fowler-are-harnesses-worth-the-cost",
+      "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html"
+    },
+    {
+      "date": "2026-10-14",
+      "key": "gemini-4-argon-ga-pricing",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+    },
+    {
+      "date": "2026-10-14",
+      "key": "anthropic-scion-source-control",
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control"
+    },
+    {
+      "date": "2026-10-14",
+      "key": "cursor-origin-app-marketplace",
+      "url": "https://cursor.com/changelog/origin-app-marketplace"
     }
   ]
 }

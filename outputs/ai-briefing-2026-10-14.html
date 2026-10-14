@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年10月14日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年10月14日（水）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">各記事に視点タグと視点ごとの「だから何か」を付け、重要度は「今すぐ試せる・対応が要るか」で決めています。出典はすべて本文を取得して確認した一次情報で、公開が48時間を超えるものは載せていません。方針の全文は <a href="https://github.com/alphakt/news/blob/main/docs/briefing-design.md" target="_blank" rel="noopener">docs/briefing-design.md</a> を参照。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Martin Fowler掲載の実測「ハーネスは元が取れるか」——上位モデルでは品質が変わらずコスト約7倍、低コストモデルでは合格率が3/10→10/10に</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Naresh Jain氏（Specmatic創業者）が10月13日に martinfowler.com で公開した記事。Javaで書くBFFサービスを題材に、OpenAPI/AsyncAPI契約・リクエスト例・契約駆動のモック・開発用スキルからなる「振る舞いハーネス」の有無を、GPT-6 Sol（上位）とGPT-6 Luna（低コスト）で各10回ずつ比較し、独立した178件の受け入れテストで判定した。Solはハーネスなしでも10/10合格で、ありの場合はトークン約11倍・時間約3倍・推定コスト約7倍（約$0.41→$2.68）となった。Lunaはハーネスなしで3/10、ありで10/10となり、コストはハーネス付きでもSolのハーネスなしより約33%安かった。失敗はタイムアウト経路やKafkaメッセージ契約などプロトコル境界に集中した。著者は、上位モデルには最終の受け入れゲートだけを置き、低コストモデルには開発中ずっとセンサーを走らせる使い分けを勧める。ただし1サービス・小標本で、ハーネスの整備費は未計測である。</p>
+      <div class="howto"><b>どう試す／どう対応する：</b>自案件のエージェント開発で、上位モデルは「最終に受け入れテストを1回」、低コストモデルは「契約・テストを毎ステップで走らせる」の2構成を同じタスクで比べ、合格率とトークンを記録する。</div>
+      <ul class="sowhat"><li><b>PM</b>「ハーネスを厚くすれば品質もコストも良くなる」は成り立たない。モデル階層ごとに検証の置き場所を決め、トークン予算の見積に反映する。</li><li><b>DEV</b>契約（OpenAPI等）を機械可読にしておくことが、安いモデルを使えるようにする前提になる。</li><li><b>CONSULT</b>AI開発のコスト最適化を聞かれたら、「モデルを下げ、検証を厚くする」選択肢を実測つきで示せる。数値は著者の推定（API換算）である。</li></ul>
+      <div class="source">出典：
+        <a href="https://martinfowler.com/articles/are-harnesses-worth-the-cost.html" target="_blank" rel="noopener">martinfowler.com「Are Harnesses Worth the Cost?」Naresh Jain（2026-10-13）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>制約は大きいが、「ハーネスの価値はモデルの強さで変わる」と実測で示した点が新しく、ハーネス設計の議論をコストの言葉に置き換えてくれる。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Gemini 4 Argonが一般提供に——API単価は入力$2／出力$10（11月30日まで導入価格）、その後は2倍に</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Googleは10月13日、Gemini 4 ArgonをGoogle AI StudioおよびGemini APIの有料枠で提供開始した。Geminiアプリ／AIモードはGoogle AI Pro・Ultra契約者、Antigravityは Ultra 契約者が対象で、記事は提供が全世界とするが日本への言及はない。API価格は導入期間中が入力100万トークンあたり$2、出力$10（キャッシュ入力は95%引き）で、11月30日以降は$4／$20になる。コンテキストは入出力合わせて100万トークン。Googleの報告では、Vals Index（金融・コーディング・法務・税務）で首位、間接プロンプトインジェクション評価で攻撃成功率0.7%、社内のAntigravityでエージェントによるコード提出が35%以上増え、ロールバックは約3分の1減ったとされる。いずれもGoogle側の発表値で、第三者の検証は本文からは確認できない。</p>
+      <div class="howto"><b>どう試す／どう対応する：</b>導入価格が続く11月30日までに、自社の代表的なエージェントタスク2〜3件を現行モデルと同条件で走らせ、品質とトークン量を比べる。12月以降の2倍単価で試算した費用も併記する。</div>
+      <ul class="sowhat"><li><b>CONSULT</b>クライアントのモデル選定・費用試算では、導入価格と12月以降の単価の両方で見積を出す。日本での提供条件は記事に無いため、契約・リージョンは別途確認する。</li><li><b>DEV</b>1Mトークンの文脈と、プロンプトインジェクション耐性の自社評価を、既存のエージェント基盤で試す価値がある。</li><li><b>PM</b>期間限定価格はコスト計画の前提を崩す。予算は12月以降の単価で組み、導入価格は上振れ余地として扱う。</li></ul>
+      <div class="source">出典：
+        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/" target="_blank" rel="noopener">Google「Gemini 4 Argon: Built to solve your hardest problems」（2026-10-13）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>性能の数字は発表値だが、価格改定の日付が明記されているので、実務上の締切（11月30日）は確かである。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Anthropicがgitのモノレポを5か月でScionへ移行——1日のマージが2,500件から3万件超へ増え、ボトルネックはソース管理に移った</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Anthropicのエンジニアリングブログ（10月13日）によると、1日のマージ数は2026年5月の約2,500件から9月には3万件超へ増え、履歴が約100GB、1日約2,500万回のCIチェックアウトという規模でgitの設計（オフラインの人間が全履歴を持つ前提）が合わなくなった。そこでサーバー中心の独自VCS「Scion」と、意味単位の承認規則を持つレビューツール「Antique」を7人で開発し、5か月で移行した。サーバー側が履歴・blame・マージを担い、クライアントは必要な部分だけ取得する。基盤のCPU・メモリは旧ミラー群の約200分の1、チェックアウトは分単位から秒単位になったという。グローバルなマージキューのロックは、マージ後・デプロイ前の自動テストに置き換えた。人は変更の意図のレビューと設計判断に集中し、エージェントの過剰設計を差し戻す役になったと述べている。Scionは汎用のgit代替ではなく、巨大モノレポとエージェント多用の環境向けである。</p>
+      <ul class="sowhat"><li><b>PM</b>コード生成が速くなると、次の制約はソース管理・CI・レビューに移る。AI導入の計画には、生成量が増えた後の詰まり箇所の事前点検を入れる。</li><li><b>DEV</b>「常時接続するエージェント」を前提に、サーバー側APIとスパースチェックアウトで設計する発想は、規模が小さくても参考になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.anthropic.com/engineering/redesigning-source-control" target="_blank" rel="noopener">Anthropic Engineering「Redesigning source control at Anthropic」（2026-10-13）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>自社専用の仕組みなので真似はできないが、「生成が10倍になると詰まる場所が変わる」という観察は、規模を問わずレビュー・CI体制の見直しに使える。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>CursorがOrigin向けアプリマーケットを公開——デプロイ・CI・コードレビュー・セキュリティの20超の連携が並び、誰でも出品可能</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Cursorは10月13日、同社プラットフォームOriginのアプリマーケットを公開した。提携アプリは20超で、デプロイ（Cloudflare、Netlify、Vercelなど）、CI（Buildkite、CircleCIなど）、コードレビュー（CodeRabbit、Greptile、Tenki）、セキュリティ（Semgrep、Socket Security、Artemis Security、Upwind）、監視（Sentry）、プロジェクト管理（Linear）が含まれる。公開投稿も受け付けており、名前空間でアプリを非公開のまま作り、Origin APIで構築したうえで、スラッグ・タグ・デモ動画を添えて申請するとCursorの審査後に掲載される。変更履歴のページには、管理者による承認やアクセス制限など企業向けの統制の記載はない。エージェントが触れる外部ツールの範囲を、開発基盤側が束ねる動きとして読める。</p>
+      <ul class="sowhat"><li><b>DEV</b>レビュー・CI・セキュリティの各ツールをエディタ側の連携として組み込める。既存の連携方法との差は、導入前に自環境で確かめる。</li><li><b>PM</b>誰でも出品できる市場に対し、企業向けの承認・権限の仕組みが書かれていない。採用するなら、使えるアプリの範囲と権限の管理ルールを先に決める。</li></ul>
+      <div class="source">出典：
+        <a href="https://cursor.com/changelog/origin-app-marketplace" target="_blank" rel="noopener">Cursor Changelog「Origin App Marketplace」（2026-10-13）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>連携の数よりも、統制の記載がまだ無い点が実務上の論点である。</div>
+    </div>
+
+    <div class="section-title">📝 本日の状況</div>
+    <div class="brief"><ul>
+      <li>48時間以内に一次情報で日付を確認でき、3視点のいずれかにSo whatが書けたものは4件。無理に件数を埋めていない。</li>
+    </ul></div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>新規：</b>「ハーネスの費用対効果（Fowler/Jain）」「Cursor Origin アプリマーケット」「Scion（Anthropic 社内VCS）」を登録。「Gemini 4 Argon」は10/1の発表に続き一般提供・価格を追記。</li>
+      <li><b>見送り：</b>Spotify のAI開発品質・GitLab 19.4・Codex CLI の常駐デーモン issue（9/25 起票）は一次情報の日付が48時間超。Nadella氏の投稿は一次情報（X）を取得できず除外。Gemini agent は10/13号までに収録済みのため重複。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

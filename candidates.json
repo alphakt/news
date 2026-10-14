@@ -57,7 +57,7 @@
       "kind": "context-engineering",
       "status": "candidate",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-10-14",
       "mentions": 4,
       "sources": [
         "https://zenn.dev/fukorohouse/articles/e2659fcd7c530f",
@@ -72,7 +72,7 @@
       "kind": "process",
       "status": "watching",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-10",
+      "last_seen": "2026-10-14",
       "mentions": 6,
       "sources": [
         "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
@@ -455,6 +455,54 @@
         "https://www.thoughtworks.com/insights/blog/generative-ai/why-agentic-payments-require-executable-model-organizational-authority"
       ],
       "note": "権限を機械が実行できる形で定義。"
+    },
+    {
+      "name": "ハーネスの費用対効果（Fowler/Jain）",
+      "kind": "process",
+      "status": "candidate",
+      "first_seen": "2026-10-14",
+      "last_seen": "2026-10-14",
+      "mentions": 1,
+      "sources": [
+        "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html"
+      ],
+      "note": "モデル階層で検証の置き場所を変える。上位は最終ゲート、低コストモデルは常時センサー"
+    },
+    {
+      "name": "Cursor Origin アプリマーケット",
+      "kind": "agent-infra",
+      "status": "candidate",
+      "first_seen": "2026-10-14",
+      "last_seen": "2026-10-14",
+      "mentions": 1,
+      "sources": [
+        "https://cursor.com/changelog/origin-app-marketplace"
+      ],
+      "note": "開発基盤側でエージェントが触れる外部ツールを束ねる。企業統制の記載なし"
+    },
+    {
+      "name": "Scion (Anthropic 社内VCS)",
+      "kind": "process",
+      "status": "candidate",
+      "first_seen": "2026-10-14",
+      "last_seen": "2026-10-14",
+      "mentions": 1,
+      "sources": [
+        "https://www.anthropic.com/engineering/redesigning-source-control"
+      ],
+      "note": "エージェント多用でgitが詰まる事例。生成10倍後のボトルネック移動"
+    },
+    {
+      "name": "Gemini 4 Argon（GA・価格）",
+      "kind": "model",
+      "status": "candidate",
+      "first_seen": "2026-10-14",
+      "last_seen": "2026-10-14",
+      "mentions": 1,
+      "sources": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+      ],
+      "note": "10/13 GA。導入価格 $2/$10 は11/30まで、以降 $4/$20"
     }
   ]
 }
