@@ -503,6 +503,54 @@
         "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
       ],
       "note": "10/13 GA。導入価格 $2/$10 は11/30まで、以降 $4/$20"
+    },
+    {
+      "name": "AIエージェントによるWeb攻撃（Scutum観測）",
+      "kind": "security",
+      "status": "candidate",
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "mentions": 1,
+      "sources": [
+        "https://www.scutum.jp/information/waf_tech_blog/2026/10/waf-blog-085.html"
+      ],
+      "note": "10/10〜10/14に3IPを観測。最長約8時間弱・10段階。対策は従来と同じくAPI脆弱性の洗い出しとWAF"
+    },
+    {
+      "name": "AIエージェント・ハーネス（Thoughtworks）",
+      "kind": "agent-infra",
+      "status": "candidate",
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "mentions": 1,
+      "sources": [
+        "https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/ai-agent-harness"
+      ],
+      "note": "モデル＋ハーネスの6要素整理。10/14 Fowler『ハーネスの費用対効果』と対"
+    },
+    {
+      "name": "勘定系×AI駆動開発（MUFG）",
+      "kind": "case",
+      "status": "candidate",
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "mentions": 1,
+      "sources": [
+        "https://xtech.nikkei.com/atcl/nxt/mag/nc/18/020800017/100601513/"
+      ],
+      "note": "仕様書・コード生成から開始、生産性3割は目標。ソニー銀行(10/13)と同系列"
+    },
+    {
+      "name": "査定業務AI（チューリッヒ生命 New Business 2.0）",
+      "kind": "case",
+      "status": "candidate",
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "mentions": 1,
+      "sources": [
+        "https://xtech.nikkei.com/atcl/nxt/mag/nc/18/020800017/100601512/"
+      ],
+      "note": "査定時間 約14分→平均7分以下。有料記事で設計詳細は未確認"
     }
   ]
 }

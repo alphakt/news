@@ -270,6 +270,26 @@
       "date": "2026-10-14",
       "key": "cursor-origin-app-marketplace",
       "url": "https://cursor.com/changelog/origin-app-marketplace"
+    },
+    {
+      "date": "2026-10-15",
+      "key": "scutum-ai-agent-web-attacks-japan",
+      "url": "https://www.scutum.jp/information/waf_tech_blog/2026/10/waf-blog-085.html"
+    },
+    {
+      "date": "2026-10-15",
+      "key": "mufg-ai-driven-core-banking",
+      "url": "https://xtech.nikkei.com/atcl/nxt/mag/nc/18/020800017/100601513/"
+    },
+    {
+      "date": "2026-10-15",
+      "key": "zurich-life-underwriting-ai",
+      "url": "https://xtech.nikkei.com/atcl/nxt/mag/nc/18/020800017/100601512/"
+    },
+    {
+      "date": "2026-10-15",
+      "key": "thoughtworks-ai-agent-harness",
+      "url": "https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/ai-agent-harness"
     }
   ]
 }

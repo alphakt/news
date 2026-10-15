@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年10月15日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年10月15日（木）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">各記事に視点タグと視点ごとの「だから何か」を付け、重要度は「今すぐ試せる・対応が要るか」で決めています。出典はすべて本文を取得して確認した一次情報で、公開が48時間を超えるものは載せていません。本日は大きな製品発表が少なく、日付と中身を確認できた4件に絞っています。方針の全文は <a href="https://github.com/alphakt/news/blob/main/docs/briefing-design.md" target="_blank" rel="noopener">docs/briefing-design.md</a> を参照。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>国内企業サイトへのAIエージェント攻撃をScutumが観測——最長は約8時間弱・10段階で、手口を切り替えながら続いた</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">WAF「Scutum」の開発チームは、10月10日夜からAIエージェントによる攻撃かどうかを判別する仕組みで監視を始め、10月14日までに日本企業のWebサイトへの攻撃を3つのIPアドレスから確認したと公表した。うち1つは約2時間23分で5段階（脆弱性スキャン、Rangeヘッダ付きスキャン、約800パスの網羅、SQLi関連、問い合わせフォームへの約210件の自動POST）、別の1つは約8時間弱・10段階で、Nmapや既知脆弱性への攻撃、ログイン総当たり（約250件）まで、ツールを切り替えながら続けた。判別方法は対策を避けるため非公開で、検知漏れはありうるとしている。対策は攻撃者がAIかどうかで大きく変わらず、バックエンドAPIを含む脆弱性の事前洗い出しと、シグネチャだけに頼らないWAFが有効としている。</p>
+      <div class="howto"><b>どう試す／どう対応する：</b>自社とクライアントのWAF・アクセスログで、同一IPが数時間かけてスキャン→総当たり→フォーム連投と段階を変えていないかを確認し、問い合わせフォームとログインにレート制限があるかを点検する。</div>
+      <ul class="sowhat"><li><b>CONSULT</b>「AIで攻撃が変わるのか」とクライアントに聞かれたら、攻撃は長時間化・多段化するが基本対策は同じ、と観測事実つきで答えられる。脆弱性の棚卸しとWAF設定の見直しは提案に入れやすい。</li><li><b>PM</b>公開Webを持つ案件では、脆弱性診断とフォーム・認証まわりの制限を、リリース前の必須項目として工程に置く根拠になる。</li><li><b>DEV</b>フロントだけでなく、バックエンドAPIとフォーム受付の入力検証・回数制限を確認する。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.scutum.jp/information/waf_tech_blog/2026/10/waf-blog-085.html" target="_blank" rel="noopener">Scutum技術ブログ「AIエージェントによるウェブサイトへの攻撃の注意喚起」（2026-10-14）</a>
+      </div>
+      <div class="note">観測は3つのIPのみで、ベンダー自身の判別手法によるもの。IPは正規通信にも使われている可能性があると本文にも注記がある。</div>
+      <div class="comment"><b>コメント：</b>件数は少ないが、段階の切り替わりが時刻つきで公開されており、自社ログと照合できる点に価値がある。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>三菱UFJ銀行が次期勘定系の開発にAI駆動開発を導入——モジュール仕様書とソースコードの生成に使い、中長期で開発生産性3割向上を目標に</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">日経コンピュータ（10月15日号）によると、三菱UFJ銀行のIT子会社MUITは、勘定系システムの刷新でAI駆動開発を始めた。現時点では一部機能のモジュール仕様書とソースコードの生成に使い、見出しではPL/Iのコード生成にも触れている。第1期の稼働は2027年度を目指しており、第2期以降はレガシーマイグレーションや新規開発にも適用を広げる計画で、目標は「中長期的に開発生産性を3割向上させる」こと。記事の副題は、みずほやソニー銀行にも同様の動きが広がっていると伝えている。なお本記事は有料会員限定で、確認できたのは冒頭部分のみのため、実績値や開発規模は不明である。3割は達成結果ではなく目標値である。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>金融の基幹系でAI駆動開発が「仕様書とコードの生成」から始まった事例として、大手行のクライアントとの会話で使える。実績ではなく目標である点は区別して伝える。</li><li><b>PM</b>生産性3割という目標値は、見積の前提を決める際の参考値になる。ただし根拠となる実測は未公開なので、自案件では小さく測ってから採用する。</li><li><b>DEV</b>PL/Iのような古い言語でも仕様書・コード生成の対象になっている。レガシー刷新案件で、まず仕様書の生成から試す入口になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://xtech.nikkei.com/atcl/nxt/mag/nc/18/020800017/100601513/" target="_blank" rel="noopener">日経クロステック／日経コンピュータ「三菱UFJが勘定系刷新でAI駆動開発」（2026-10-15、有料記事・冒頭のみ確認）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>数字は目標にとどまるが、ソニー銀行（10/13号）に続き、勘定系という保守的な領域で動きが出ている点が追跡に値する。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>チューリッヒ生命が保険の査定業務にAIを導入——1件あたりの査定時間が約14分から平均7分以下に</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">日経クロステックによると、チューリッヒ生命保険は2026年7月、新契約の引き受け可否を判断する査定業務をAIで支援する「New Business 2.0」を導入した。査定者が扱う案件では、1件あたりの査定時間が約14分から平均7分以下に短縮されたという。記事の見出しとタグには「マルチエージェントで回答精度向上」とあるが、確認できた冒頭部分には設計の詳細や精度の数値はなく、有料部分にあるとみられる。導入は7月で、記事は10月15日付。判断を人（査定者）が持ち続ける支援型の導入で、時間短縮の効果が数字で語られている点が、導入事例としての要点である。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>保険・金融の業務AIで「時間が半分」という具体的な数字つきの事例。ただし対象は査定者が扱う案件に限られるため、他社に当てはめる際は条件を確認する。</li><li><b>PM</b>効果指標を「1件あたりの処理時間」で置き、導入前後で比較する形は、自案件のKPI設計にそのまま使える。</li></ul>
+      <div class="source">出典：
+        <a href="https://xtech.nikkei.com/atcl/nxt/mag/nc/18/020800017/100601512/" target="_blank" rel="noopener">日経クロステック「チューリッヒ生命、査定業務にAI　マルチエージェントで回答精度向上」（2026-10-15、有料記事・冒頭のみ確認）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>精度の中身が有料部分で見えないため、数字は事例の紹介にとどめ、提案の根拠にするなら全文を読んでからにしたい。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>Thoughtworksが「AIエージェント＝モデル＋ハーネス」と整理——文脈・ツール・実行環境・状態・フィードバック・境界の6要素</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Thoughtworksは10月14日、Piyush Sonawane氏の記事でエージェントを「モデルとそれを取り巻くハーネスの組み合わせ」と定義した。ハーネスの要素は、指示と文脈（規約、実行コマンド、テスト方法）、ツール、実行環境（権限・依存関係）、状態管理（完了・失敗の記録）、フィードバック（テスト・リンター・型チェック）、境界と統制（本番デプロイ等は人が承認）。助言は、情報を必要な時に与える、隔離環境で実行して権限を最小にする、読み取りやローカル変更は自動化しつつ本番影響のある操作は人が確認する、失敗を見える化する、モデル単体でなく全体で評価する、の5点。既存のフレームワークで足りる部分は使い、独自要件だけ自作するとも述べている。新しい実測はなく、整理の記事である。</p>
+      <ul class="sowhat"><li><b>DEV</b>CLAUDE.md・テスト・権限設定が「ハーネスの一部」として並ぶため、自分のエージェント環境の抜けを点検するチェックリストに使える。</li><li><b>PM</b>エージェント導入の見積に、モデル費用だけでなくハーネス整備（テスト、権限、ログ）の工数を入れる根拠になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/ai-agent-harness" target="_blank" rel="noopener">Thoughtworks「AI Agent Harness」Piyush Sonawane（2026-10-14）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>10/14号のFowler記事が「ハーネスの費用対効果」を測ったのに対し、こちらは構成要素の整理であり、二つを並べて使うと議論しやすい。</div>
+    </div>
+
+    <div class="section-title">📰 短信</div>
+    <div class="brief"><ul>
+      <li>デジタル庁が10月14日、「政府情報システムの設計開発及び運用保守における内部開発に対するAI有用性の調査研究事業」の企画競争を再公告（目的・要件は調達ポータル側で、本稿では未確認）。<a href="https://www.digital.go.jp/procurement" target="_blank" rel="noopener">デジタル庁 調達情報</a></li>
+    </ul></div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>新規：</b>「AIエージェントによるWeb攻撃（Scutum観測）」「AIエージェント・ハーネス（Thoughtworks）」「勘定系×AI駆動開発（MUFG）」「査定業務AI（チューリッヒ生命）」を登録。「ソニー銀行 勘定系×Claude Code」は MUFG と合わせて金融基幹系の動きとして追記。</li>
+      <li><b>見送り：</b>Microsoft Execution Containers（発表10/7）、Codex CLI 常駐デーモン（issue 9/25 起票）、arXiv 2610.15567（投稿10/11）・Cortex（投稿10/9）、AWS 本番エージェント6本柱（原文9/2）は一次情報の日付が48時間超。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
