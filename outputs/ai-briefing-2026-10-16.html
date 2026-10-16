@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年10月16日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年10月16日（金）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">各記事に視点タグと視点ごとの「だから何か」を付け、重要度は「今すぐ試せる・対応が要るか」で決めています。出典はすべて本文を取得して確認した一次情報で、一次情報の公開が48時間を超えるものは載せていません。本日は国内メディアが報じた話題の多くが一次情報の公開日で範囲外だったため、日付と中身を確認できた4件に絞っています。方針の全文は <a href="https://github.com/alphakt/news/blob/main/docs/briefing-design.md" target="_blank" rel="noopener">docs/briefing-design.md</a> を参照。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>IBMが「Granite Switch 4.1」を公開——チャット・判断（Decision）・音声認識・安全判定を1つのエンドポイントに束ねた</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">IBMはHugging Faceで、Granite Switch 4.1（8Bと30Bの2モデル）を公開した。ベースのGraniteモデルに、分類型の出力を返す汎用のDecisionアダプタ、安全関連の判断を担うGuardianアダプタ、音声認識モデルGranite-Speech-5.0-Turbo-CTCを同梱している。アダプタはActivated LoRA（aLoRA）で作られ、ベースモデルの生成時のKVキャッシュを再利用するため、チャット・判断・音声の切り替えが速いという。同梱しても必要なGPUメモリはベースモデル単体とほぼ同じとされる。用途別のアダプタはGraniteライブラリから追加でき、音声から判断を返すデモSpaceも用意されている。ライセンスは本文に記載がなく、モデルカードで確認が必要。エージェントの小さな判断を主モデルから切り離す流れ（Jev、OpenAI Decisions、Clefなど）に、オープンな選択肢が加わった形だ。</p>
+      <div class="howto"><b>どう試す：</b>Hugging Faceの Granite Switch 4.1 コレクションから8Bを取り、ツール選択や入力の安全判定を「Decision」呼び出しに置き換えた場合の精度と遅延を、手元のエージェントのログで比べる。まずは同梱の Speech-to-Decisions デモSpaceで挙動を見る。</div>
+      <ul class="sowhat"><li><b>DEV</b>エージェントの「次にどのツールを呼ぶか」「この入力は安全か」を、主モデルに生成させず型付きの判断として分離する設計を、オープンモデルで検証できる。</li><li><b>PM</b>判断を小さなモデルに任せられれば、主モデルのトークン費用と待ち時間を下げる余地がある。見積には効果の実測を入れて判断する。</li><li><b>CONSULT</b>自社環境に置ける小型モデルでガードレールと判断を持てる、という提案の選択肢が増える。ただしライセンスは未確認。</li></ul>
+      <div class="source">出典：
+        <a href="https://huggingface.co/blog/ibm-granite/granite-switch-4-1" target="_blank" rel="noopener">Hugging Face Blog（IBM Granite）「Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint」（2026-10-15）</a>
+      </div>
+      <div class="note">精度や遅延の数値は本文で確認できていない。aLoRAによる高速切り替えはIBM自身の説明。</div>
+      <div class="comment"><b>コメント：</b>「判断モデル」がベンダー各社の専用品からオープンなアダプタ方式にも広がり、置き換えの検証がしやすくなった。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Metaがオープンウェイトの「Muse Spark Open」を公開——総パラメータ約8,160億・1Mトークン文脈で、Mac（M3 Ultra 512GB）でも動く</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">MetaはHugging Face上でMuse Spark Openを公開した。MoE構成で総パラメータ約816B、1トークンあたりの有効パラメータは約42B、256エキスパートから8つを選んで使う。入力はテキスト・画像・音声・動画、出力はテキストで、文脈長は最大約100万トークン。チェックポイントはBF16（約1.5TB）とNVFP4（NVIDIA Blackwell向け）があり、llama.cppのGGUF、MLXの量子化版も出ている。Macでは、M3 Ultra（512GB）でllama.cppの2bit量子化が約18トークン/秒（約304GB使用）、MLXの3bit系が生成約21トークン/秒（約344GB使用）と記載されている。「米国で最も高性能なオープンウェイトモデル」と自称するが、本文にベンチマークの数値はなく、ライセンスの記載も確認できなかった。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>機密データを外に出せない日本企業から「オープンウェイトで自社運用できるか」と聞かれたとき、現実的な必要メモリ（Macで300GB超、本番はBlackwell級GPU）を数字で示せる。ライセンス確認までは断定しない。</li><li><b>DEV</b>vLLM・SGLang・Transformersで動かせるため、自前環境での評価に組み込みやすい。ただし大型のため、小型モデルとの切り分け検証が前提になる。</li><li><b>PM</b>自社運用は、モデル利用料の代わりにGPU・メモリの調達と運用の工数が乗る。API利用との総コスト比較を計画に入れる。</li></ul>
+      <div class="source">出典：
+        <a href="https://huggingface.co/blog/meta-muse-spark-open" target="_blank" rel="noopener">Hugging Face Blog「Welcome Muse Spark Open」（2026-10-15）</a>
+      </div>
+      <div class="note">性能比較の数値とライセンスは本文から確認できていない。速度はMetaが示した特定条件（1024トークン入力・128トークン生成）での値。</div>
+      <div class="comment"><b>コメント：</b>評価の数字が出るまでは「動く」ことと「業務で使える」ことを分けて話すのが安全だ。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>NRIセキュアが「AI駆動開発のセキュリティ支援サービス」を提供開始——利用ルール、ハーネス整備、CI/CDでの品質ゲートまでを一括で請け負う</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">NRIセキュアテクノロジーズは10月15日、生成AIやAIエージェントでソフトウェアを開発する企業向けのセキュリティ支援サービスを開始した。開発の速度を落とさずに対策を足すことを狙い、メニューは4つ。(1)AIエージェント利用ガイドライン（組織共通ルール、ツール別設定、利用者と管理者の役割定義）、(2)セキュアなAIエージェントハーネス（ルール・許可ツール・手順・期待する出力を定める指示ファイルや設定の整備と継続レビュー）、(3)CI/CDを土台にした開発プロセス設計（品質基準を満たさないAI生成物を次工程に進めない）、(4)AIによる脆弱性の優先度付け（最終判断は人）。料金は発表文に記載がない。国内の大手SIer系が、AGENTS.md・CLAUDE.mdに当たるハーネス整備を商品として名指しした点が目を引く。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>競合が「ハーネス整備」と「AI生成物の品質ゲート」を正式な商品にした。自社の提案でも、指示ファイル・権限・CI基準を一式で示せるかが比較される。</li><li><b>PM</b>AI駆動開発の計画に、利用ルールと工程内のゲート設計を最初から作業項目として入れる根拠になる。</li><li><b>DEV</b>指示ファイルや許可ツールの設定が、セキュリティ審査の対象として扱われ始める。自分のリポジトリの権限設定を説明できるようにしておく。</li></ul>
+      <div class="source">出典：
+        <a href="https://prtimes.jp/main/html/rd/p/000000212.000052432.html" target="_blank" rel="noopener">NRIセキュアテクノロジーズ プレスリリース（PR TIMES、2026-10-15）</a>
+      </div>
+      <div class="note">発表文のみで、導入実績や料金は未公開。</div>
+      <div class="comment"><b>コメント：</b>ガイドライン作成から品質ゲートまでの流れが一列に並んでおり、競合の提案書の骨格として読んでおく価値がある。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>Jev 1.14.0がプレビュー公開——多言語の改善と、本番非推奨の「danger zone」機能（画像入力・バウンディングボックス型・長文脈）を追加</h2>
+      <div class="tags"><span class="tag dev">DEV</span></div>
+      <p class="detail">型付きの判断だけを返す決定モデルJevの開発元TypeSafe AIは、1.14.0を「jev-preview」で公開した。全体に小さな改善があり、最大の伸びは多言語対応とされる。「jev-latest」は1週間後に1.14.0へ移る予定で、1.13.0は当面残り、廃止予告は1.13.0が60日、1.14.0が30日。試験機能として、画像の差し込み（ヘッダ指定で有効化）、単一のバウンディングボックスを返すBox型、本番上限を超える長文脈、クエリ共有への任意参加（学習には使わないと明記）が加わった。画像入力は全モデルがテキストより精度が落ちると注記されている。社内の知能測定はオープンウェイトのモデル同士の比較で、自社に有利な可能性があるとして数値は出していない。</p>
+      <ul class="sowhat"><li><b>DEV</b>日本語を含む多言語の判断精度が上がるなら、日本語の入力を扱うエージェントで再評価する理由になる。試験機能は本番に入れない。</li></ul>
+      <div class="source">出典：
+        <a href="https://typesafe.ai/blog/jev-1-14" target="_blank" rel="noopener">TypeSafe AI「We're releasing Jev 1.14.0 along with experimental features for dreamers」（2026-10-14／15）</a>
+      </div>
+      <div class="note">ベンダー自身の発表で、性能の数値は示されていない。本文の日付表記が10/14と10/15でずれている。</div>
+      <div class="comment"><b>コメント：</b>上のGranite Switchと並べて見ると、判断モデルの選択肢が一気に増えたのが分かる。</div>
+    </div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>新規：</b>「Granite Switch 4.1（IBM）」「Muse Spark Open（Meta）」「NRIセキュア AI駆動開発セキュリティ支援」を登録。Jev は 1.14.0 を追記（言及 8 件目）。判断モデル系（Jev・Clef・Microsoft-Decision-1・Laya・OpenAI Decisions・Granite Switch）が同一週に6本になったため、深読みの候補として継続。</li>
+      <li><b>見送り：</b>AI Writes Faster Than Humans Can Review（arXiv 2607.01904、一次の投稿は7月）、Microsoft Execution Containers（発表10/7）、Anthropic利用ポリシー改定（発表10/8、施行11/12）、AWS エージェント4原則（原文4/2）、Umios×Chronos-2（AWS Japanブログ9/10）、Instagram×Compose（Android Developers Blog 9月）は一次情報の日付が48時間超。Figmaの新エージェント機能（10/14）は一次の公式発表を取得できず、OpenAI×Sullivan &amp; Cromwell は取得が403のため載せていない。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

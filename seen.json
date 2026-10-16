@@ -290,6 +290,26 @@
       "date": "2026-10-15",
       "key": "thoughtworks-ai-agent-harness",
       "url": "https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/ai-agent-harness"
+    },
+    {
+      "date": "2026-10-16",
+      "key": "granite-switch-4-1",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
+    },
+    {
+      "date": "2026-10-16",
+      "key": "meta-muse-spark-open",
+      "url": "https://huggingface.co/blog/meta-muse-spark-open"
+    },
+    {
+      "date": "2026-10-16",
+      "key": "nri-secure-ai-dev-security-service",
+      "url": "https://prtimes.jp/main/html/rd/p/000000212.000052432.html"
+    },
+    {
+      "date": "2026-10-16",
+      "key": "jev-1-14",
+      "url": "https://typesafe.ai/blog/jev-1-14"
     }
   ]
 }

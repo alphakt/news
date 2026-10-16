@@ -6,8 +6,8 @@
       "kind": "agent-infra",
       "status": "watching",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-13",
-      "mentions": 7,
+      "last_seen": "2026-10-16",
+      "mentions": 8,
       "sources": [
         "https://arxiv.org/abs/2610.02267",
         "https://developers.openai.com/api/docs/guides/decisions",
@@ -15,7 +15,8 @@
         "https://strandsagents.com/blog/introducing-strands-decider/",
         "https://blog.cloudflare.com/clef-decision-models/",
         "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
-        "https://www.thoughtworks.com/insights/articles/decision-models-and-the-possibility-of-no-ops"
+        "https://www.thoughtworks.com/insights/articles/decision-models-and-the-possibility-of-no-ops",
+        "https://typesafe.ai/blog/jev-1-14"
       ],
       "note": "テキストを生成せず型付きの判断だけ返す決定モデル。エージェントの小さな判断（ツール選択、安全性、停止判断）を主モデルから分離する発想。対照: 主モデル自前判断、他の router/guard モデル"
     },
@@ -551,6 +552,42 @@
         "https://xtech.nikkei.com/atcl/nxt/mag/nc/18/020800017/100601512/"
       ],
       "note": "査定時間 約14分→平均7分以下。有料記事で設計詳細は未確認"
+    },
+    {
+      "name": "Granite Switch 4.1 (IBM)",
+      "kind": "agent-infra",
+      "status": "candidate",
+      "first_seen": "2026-10-16",
+      "last_seen": "2026-10-16",
+      "mentions": 1,
+      "sources": [
+        "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
+      ],
+      "note": "分類型のDecisionアダプタとGuardianを同梱し1エンドポイントで提供。判断モデル系の一つ"
+    },
+    {
+      "name": "Muse Spark Open (Meta)",
+      "kind": "model",
+      "status": "candidate",
+      "first_seen": "2026-10-16",
+      "last_seen": "2026-10-16",
+      "mentions": 1,
+      "sources": [
+        "https://huggingface.co/blog/meta-muse-spark-open"
+      ],
+      "note": "816B/42B active のオープンウェイト。1M文脈、Macでも動作"
+    },
+    {
+      "name": "NRIセキュア AI駆動開発セキュリティ支援",
+      "kind": "consulting-service",
+      "status": "candidate",
+      "first_seen": "2026-10-16",
+      "last_seen": "2026-10-16",
+      "mentions": 1,
+      "sources": [
+        "https://prtimes.jp/main/html/rd/p/000000212.000052432.html"
+      ],
+      "note": "ハーネス整備・品質ゲートを商品化した国内SIer系の動き"
     }
   ]
 }
