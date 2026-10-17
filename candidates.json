@@ -73,15 +73,16 @@
       "kind": "process",
       "status": "watching",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-14",
-      "mentions": 6,
+      "last_seen": "2026-10-17",
+      "mentions": 7,
       "sources": [
         "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
         "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
         "https://arxiv.org/abs/2610.05399",
         "https://arxiv.org/abs/2610.08651",
         "https://arxiv.org/abs/2610.08900",
-        "https://arxiv.org/abs/2610.11179"
+        "https://arxiv.org/abs/2610.11179",
+        "https://claude.dev/blog/solving-code-review-at-anthropic/"
       ],
       "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
     },
@@ -588,6 +589,54 @@
         "https://prtimes.jp/main/html/rd/p/000000212.000052432.html"
       ],
       "note": "ハーネス整備・品質ゲートを商品化した国内SIer系の動き"
+    },
+    {
+      "name": "Claude Codeチームのレビュー体制（7層）",
+      "kind": "process",
+      "status": "candidate",
+      "first_seen": "2026-10-17",
+      "last_seen": "2026-10-17",
+      "mentions": 1,
+      "sources": [
+        "https://claude.dev/blog/solving-code-review-at-anthropic/"
+      ],
+      "note": "リスク別承認0/1/2人、AIレビュー指摘のマージブロック。社内数値。"
+    },
+    {
+      "name": "Cursor クラウドエージェント Canvas / Environments API",
+      "kind": "agent-product",
+      "status": "candidate",
+      "first_seen": "2026-10-17",
+      "last_seen": "2026-10-17",
+      "mentions": 1,
+      "sources": [
+        "https://cursor.com/changelog/cloud-agent-canvases-and-environments"
+      ],
+      "note": "環境API（ベータ）、300リポジトリ環境。プラン未記載。"
+    },
+    {
+      "name": "Anthropic×METR 常駐評価",
+      "kind": "governance",
+      "status": "candidate",
+      "first_seen": "2026-10-17",
+      "last_seen": "2026-10-17",
+      "mentions": 1,
+      "sources": [
+        "https://www.anthropic.com/news/an-update-on-independent-evaluators"
+      ],
+      "note": "公表拒否権なし。METRの最初の公表物を待つ。"
+    },
+    {
+      "name": "CodeHealth とレビュートークン費用",
+      "kind": "research",
+      "status": "candidate",
+      "first_seen": "2026-10-17",
+      "last_seen": "2026-10-17",
+      "mentions": 1,
+      "sources": [
+        "https://arxiv.org/abs/2610.21914"
+      ],
+      "note": "観察研究。ファイルサイズで調整すると効果が消える。"
     }
   ]
 }

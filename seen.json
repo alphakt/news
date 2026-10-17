@@ -310,6 +310,26 @@
       "date": "2026-10-16",
       "key": "jev-1-14",
       "url": "https://typesafe.ai/blog/jev-1-14"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "claude-code-team-code-review",
+      "url": "https://claude.dev/blog/solving-code-review-at-anthropic/"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "cursor-cloud-agent-canvases-environments",
+      "url": "https://cursor.com/changelog/cloud-agent-canvases-and-environments"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "anthropic-metr-resident-evaluator",
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
+    },
+    {
+      "date": "2026-10-17",
+      "key": "arxiv-2610.21914-codehealth-token-cost",
+      "url": "https://arxiv.org/abs/2610.21914"
     }
   ]
 }

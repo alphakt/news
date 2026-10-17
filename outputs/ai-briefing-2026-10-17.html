@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年10月17日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年10月17日（土）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">各記事に視点タグと視点ごとの「だから何か」を付け、重要度は「今すぐ試せる・対応が要るか」で決めています。出典はすべて本文を取得して確認した一次情報で、一次情報の公開が48時間を超えるものは載せていません。本日は土曜で新規の発表が少なく、国内メディアが取り上げた論文・発表の多くが一次情報の日付で範囲外だったため、日付と中身を確認できた4件に絞っています。方針の全文は <a href="https://github.com/alphakt/news/blob/main/docs/briefing-design.md" target="_blank" rel="noopener">docs/briefing-design.md</a> を参照。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Claude Codeチームが自分たちのコードレビュー体制を公開——「人間のレビュー時間を最小化」しつつ、リスクに応じて承認者を0〜2人に変える</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Anthropicは、Claude Codeのコードの約9割をClaudeが書く中で、どうレビューしているかを公式ブログで説明した。方針は「リバートや障害を増やさない範囲で、人間のレビュー時間を最小にする」こと。PR前にClaude自身がテスト・ビルド・lintを回し、フレッシュなコンテキストのサブエージェントが差分を見る。PRごとに複数のエージェントがバグを探し、別の検証エージェントが投票した指摘だけを投稿する。バグ・セキュリティ指摘が未解決ならマージをブロックし、人間の承認は低リスク0人、中リスク1人、高リスク2人で、機微なパスは必ず人が見る。6〜9月でマージPRは2倍超、リバート率は4割超低下し、PRにつく実質的コメントの割合は16%から54%に上がった。モノレポは1日約2,500件から3万件超の変更に増えたという。数値はAnthropic自身の社内データである。</p>
+      <div class="howto"><b>どう試す：</b>自社リポジトリで「変更パスごとのリスク区分（承認0/1/2人）」を CODEOWNERS とブランチ保護に落とし、AIレビューの未解決指摘をマージ必須チェックにする。まず1リポジトリで、リバート率とレビュー待ち時間を2週間計測する。</div>
+      <ul class="sowhat"><li><b>DEV</b>「人が全行を読む」を前提にせず、事前検証・AIレビュー・必須CI・リスク別承認の層で品質を担保する具体的な型として、そのまま設計に使える。</li><li><b>PM</b>レビュー待ちがボトルネックになる前に、承認者数をリスクで変える運用と、リバート率・収束ラウンド数（5回以上は8.9%から1.5%）という指標を計画に入れられる。</li><li><b>CONSULT</b>「AIが書いたコードは誰がどこまで見るか」というクライアントの定番の質問に、実データ付きの参照事例として答えられる。ただし社内数値なので自社環境での再現は別途必要。</li></ul>
+      <div class="source">出典：
+        <a href="https://claude.dev/blog/solving-code-review-at-anthropic/" target="_blank" rel="noopener">claude.dev Blog「How the Claude Code team does code review」（Addy Osmani ほか、2026-10-15）</a>
+      </div>
+      <div class="note">数値（PR数・リバート率・コメント率）はAnthropicの社内集計で、第三者検証はない。</div>
+      <div class="comment"><b>コメント：</b>「読む量を減らす」のではなく「読む場所をリスクで選ぶ」という整理が、今週のレビュー関連の話題の中で最も実装に落としやすい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Cursorのクラウドエージェントが「Canvas」を作れるようになり、環境の管理用API（ベータ）と最大300リポジトリの環境にも対応</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Cursorは10月16日の更新で、クラウドエージェントの3点を発表した。（1）エージェントが作業の一部としてインタラクティブなCanvasを作成でき、完成したものはリンクでチームに共有できる。（2）クラウドエージェントが動く環境を、プログラムから作成・管理できるEnvironments APIをベータで提供する。（3）1つの環境で最大300リポジトリを扱え、大規模な環境の読み込みが5倍速くなった。変更履歴のページには、これらがどのプランで使えるかの記載がない。Canvasは調査結果や設計案を、コードの差分とは別の「読める成果物」として渡す用途に向く。複数リポジトリにまたがる改修を1つのエージェント環境で扱えるようになる点も、業務システムの保守では実務上の意味がある。</p>
+      <ul class="sowhat"><li><b>DEV</b>複数リポジトリにまたがる変更や調査を、環境を共有したままクラウドエージェントに任せる前提で作業を分けられる。APIで環境を用意すれば、チーム標準の環境を揃えやすい。</li><li><b>PM</b>エージェントの成果物が差分以外にも出てくるため、レビュー対象に「Canvas」を含めるかどうかを、運用ルールとして先に決めておく必要がある。</li><li><b>CONSULT</b>クラウド型エージェントの環境管理が自動化できるようになった点は、導入時の「環境統制をどう標準化するか」の提案材料になる。プランと料金は未確認なので提示前に確認する。</li></ul>
+      <div class="source">出典：
+        <a href="https://cursor.com/changelog/cloud-agent-canvases-and-environments" target="_blank" rel="noopener">Cursor Changelog「Cloud agent canvases and environments」（2026-10-16）</a>
+      </div>
+      <div class="note">利用できるプラン・料金は変更履歴に記載がない。Environments APIはベータ。</div>
+      <div class="comment"><b>コメント：</b>機能そのものより「環境をコードで管理する」流れが各社で揃ってきた点が、導入側には効いてくる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>AnthropicがMETRの評価チームを社内に常駐させ、従業員並みのアクセスを付与——公表の拒否権はなく、伏せ字化の要請のみ</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">Anthropicは10月15日、独立評価機関METRの6人に、社内の端末・オフィス・社内ツールへの従業員並みのアクセスを与えたと発表した。範囲は同社のリスク評価チームとおおむね同等で、顧客データ、秘匿特権のある通信、モデルのアーキテクチャ情報などは対象外である。METRはAnthropicのリスクレベル、インシデント、運用についての分析を公表でき、Anthropicは公表を拒否できない。事前に定めた区分の情報について伏せ字化を求められるだけで、METRはその妥当性についても見解を示せる。評価機関との連携は3段階で設計されており、METRは最上位の第3段階にあたる。第1段階では範囲を絞った調査で、公表にAnthropicの承認が要る。同社の報告にはない第三者の見解が出ること自体が、今回の変化である。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>クライアントが「ベンダーのAI安全性をどう確認したか」と聞かれたときに、第三者評価の受け入れ方（アクセス範囲・公表権・伏せ字）という比較軸を示せる。評価結果はまだ出ていない。</li><li><b>PM</b>AIベンダー選定のリスク評価に、「独立評価の公表権があるか」を確認項目として加える根拠になる。ただし本件は発表の段階で、今すぐ対応が要るものではない。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.anthropic.com/news/an-update-on-independent-evaluators" target="_blank" rel="noopener">Anthropic「An update on independent evaluators」（2026-10-15）</a>
+      </div>
+      <div class="note">DEV視点のSo whatは書けないため付けていない。METRの分析はこれから公表される予定で、内容は未確認。</div>
+      <div class="comment"><b>コメント：</b>ベンダー自身の説明に頼らない評価の形が出てきたが、効果が分かるのはMETRの最初の公表物が出てからである。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>コード品質が高いほどAIレビューのトークン費用は下がる——エージェント作成の465PRで、CodeHealth 1点あたり3.5〜6.1%低下（ただしファイルサイズの影響を除くと消える）</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Heander、BorgらはarXivに、コード品質指標CodeHealthがAIエージェントのレビュー・修正にかかるトークン数を予測するかを調べた事前登録研究を投稿した。AIDevデータセットの246リポジトリ、エージェントが作成した465件のPRに、3種類のLLMで5エージェント構成の固定パイプラインを実行している。3モデルすべてで、CodeHealthが高いほどトークン費用は低く、1点あたり3.5〜6.1%低い。PRの規模では説明できなかった。事前に登録した3つのコードの臭いのうち2つが修正費用を予測し、差は主にレビュー段階で出た。品質の低いコードではエージェントが反復を増やすが、コメント数は増えない。一方で、対象ファイルのサイズで調整すると関連が吸収され、著者はファイルサイズによる媒介と解釈している。</p>
+      <ul class="sowhat"><li><b>PM</b>AI活用の費用見積に「対象コードの健全性」を入れる根拠になる。劣化したコードに対するエージェント作業は、トークン費用が膨らむ見込みで積む。</li><li><b>DEV</b>大きく肥大化したファイルを分割すると、人にもエージェントにも読みやすくなり、レビュー費用が下がる可能性がある。ただし因果は確認されていない。</li></ul>
+      <div class="source">出典：
+        <a href="https://arxiv.org/abs/2610.21914" target="_blank" rel="noopener">arXiv:2610.21914「CodeHealth Predicts the Token Cost of Agentic Code Review」（2026-10-15）</a>
+      </div>
+      <div class="note">観察研究で、因果は示されていない。ファイルサイズで調整すると効果が消える点に注意。</div>
+      <div class="comment"><b>コメント：</b>「きれいなコードはAIにも安い」はもっともらしいが、実態はファイルサイズの話かもしれない。</div>
+    </div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>新規：</b>「Claude Codeチームのレビュー体制（7層）」「Cursor クラウドエージェント Canvas / Environments API」「Anthropic×METR 常駐評価」「CodeHealth とレビュー費用（arXiv 2610.21914）」を登録。「AI 生成 PR の人間レビュー枠組み」は言及 7 件目で継続。</li>
+      <li><b>見送り：</b>AWS エージェント4原則（原文4/2）、Microsoft CLIエージェント導入調査（arXiv 2607.01418、一次は7月）、AI Writes Faster Than Humans Can Review（arXiv 2607.01904、一次は7月）、Grafana のエージェント SLO（Grafana 公式9/24）は一次情報が48時間超。OpenAI×Itaú は取得が403、Chainguard Workspaces は一次の公式ページを確認できず、OpenRouter Armor は一次を取得していないため載せていない。Codex セキュリティ cookbook は日付が確認できず見送り。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
