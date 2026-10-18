@@ -330,6 +330,21 @@
       "date": "2026-10-17",
       "key": "arxiv-2610.21914-codehealth-token-cost",
       "url": "https://arxiv.org/abs/2610.21914"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "cert-in-ai-agents-attack-vectors",
+      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3630"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "replit-default-openai",
+      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+    },
+    {
+      "date": "2026-10-18",
+      "key": "postgres-19-delay-ai-review",
+      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471"
     }
   ]
 }

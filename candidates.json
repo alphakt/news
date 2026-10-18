@@ -73,8 +73,8 @@
       "kind": "process",
       "status": "watching",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-17",
-      "mentions": 7,
+      "last_seen": "2026-10-18",
+      "mentions": 8,
       "sources": [
         "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
         "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
@@ -82,7 +82,8 @@
         "https://arxiv.org/abs/2610.08651",
         "https://arxiv.org/abs/2610.08900",
         "https://arxiv.org/abs/2610.11179",
-        "https://claude.dev/blog/solving-code-review-at-anthropic/"
+        "https://claude.dev/blog/solving-code-review-at-anthropic/",
+        "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471"
       ],
       "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
     },
@@ -637,6 +638,30 @@
         "https://arxiv.org/abs/2610.21914"
       ],
       "note": "観察研究。ファイルサイズで調整すると効果が消える。"
+    },
+    {
+      "name": "CERT-In AIエージェント勧告",
+      "kind": "security",
+      "status": "candidate",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "mentions": 1,
+      "sources": [
+        "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3630"
+      ],
+      "note": "研究用エージェントの本番到達と、AI攻撃の機械速度化。エージェントの短命ID・既定遮断・操作ログを推奨"
+    },
+    {
+      "name": "Replit 既定モデル切替（OpenAI）",
+      "kind": "vendor-availability",
+      "status": "candidate",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "mentions": 1,
+      "sources": [
+        "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+      ],
+      "note": "Replit Agent の既定が OpenAI に。提携継続の有無は説明が食い違う"
     }
   ]
 }
