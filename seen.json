@@ -1,350 +1,365 @@
 {
-  "_comment": "収録済みの事象。重複収録を防ぐ。date = 収録日。key = 事象を一意に表す短い英語キー（URL が変わっても同一事象を検出できるように）。",
-  "items": [
-    {
-      "date": "2026-10-06",
-      "key": "atmarkit-token-waste",
-      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/06/news004.html"
-    },
-    {
-      "date": "2026-10-06",
-      "key": "softbank-agentic-star-partners",
-      "url": "https://www.softbank.jp/business/news/2026/1006-01"
-    },
-    {
-      "date": "2026-10-06",
-      "key": "gemini-free-plan-flash-lite",
-      "url": "https://japan.cnet.com/article/35253255/"
-    },
-    {
-      "date": "2026-10-06",
-      "key": "arxiv-2610.02267-jev-laya-eval",
-      "url": "https://arxiv.org/abs/2610.02267"
-    },
-    {
-      "date": "2026-10-06",
-      "key": "openai-eu-text-watermark",
-      "url": "https://openai.com/index/eu-text-provenance"
-    },
-    {
-      "date": "2026-10-06",
-      "key": "aws-ai-modernization-flow",
-      "url": "https://aws.amazon.com/jp/blogs/news/aidm-introducing-ai-modernization-flow/"
-    },
-    {
-      "date": "2026-10-06",
-      "key": "zenn-claude-code-where-automation-stops",
-      "url": "https://zenn.dev/zeroyen_dev/articles/claude-code-where-automation-stops"
-    },
-    {
-      "date": "2026-10-06",
-      "key": "zenn-tests-that-test-nothing",
-      "url": "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing"
-    },
-    {
-      "date": "2026-10-06",
-      "key": "cognition-agent-memory-repo",
-      "url": "https://cognition.com/agent-memory-repo"
-    },
-    {
-      "date": "2026-10-06",
-      "key": "wikimedia-openai-rogue-agents",
-      "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/"
-    },
-    {
-      "date": "2026-10-06",
-      "key": "mizuho-cowork-poc",
-      "url": "https://prtimes.jp/main/html/rd/p/000000022.000177612.html"
-    },
-    {
-      "date": "2026-10-06",
-      "key": "github-reviewbench",
-      "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/"
-    },
-    {
-      "date": "2026-10-01",
-      "key": "gemini-4-argon-announce",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
-    },
-    {
-      "date": "2026-10-01",
-      "key": "openai-gpt-6.1-astra-shelved",
-      "url": "https://www.cnbc.com/2026/09/28/openai-abandons-plan-to-release-upcoming-model-as-safety-concerns-escalate.html"
-    },
-    {
-      "date": "2026-10-01",
-      "key": "white-house-super-intelligence-accord",
-      "url": "https://www.aljazeera.com/economy/2026/9/30/how-does-trumps-white-house-ai-accord-work"
-    },
-    {
-      "date": "2026-10-01",
-      "key": "openai-devday-2026",
-      "url": "https://www.axios.com/2026/09/29/openai-dev-day-2026-dots-space-sol"
-    },
-    {
-      "date": "2026-10-01",
-      "key": "astribot-t1-north-america",
-      "url": "https://www.einpresswire.com/article/946085980/astribot-brings-t1-to-north-america-showcasing-a-physical-ai-stack-built-on-design-for-ai"
-    },
-    {
-      "date": "2026-10-01",
-      "key": "htx-humanoid-centre",
-      "url": "https://littlebigreddot.com/htx-home-team-humanoid-robotics-centre-opens-2026"
-    },
-    {
-      "date": "2026-09-30",
-      "key": "claude-sonnet-5.5-release",
-      "url": "https://www.anthropic.com/claude-sonnet-5-5"
-    },
-    {
-      "date": "2026-09-30",
-      "key": "intelligence-explosion-whitepaper",
-      "url": "https://the-decoder.com/more-than-20-leading-ai-researchers-warn-that-automated-ai-research-poses-extreme-risks/"
-    },
-    {
-      "date": "2026-09-30",
-      "key": "openai-safety-case-guidelines",
-      "url": "https://aiweekly.co/alerts/openai-outlines-safety-case-framework-for-frontier-training"
-    },
-    {
-      "date": "2026-09-30",
-      "key": "america-gov-launch",
-      "url": "https://fedscoop.com/trump-launches-ai-site-america-gov/"
-    },
-    {
-      "date": "2026-10-07",
-      "key": "openai-decisions-api",
-      "url": "https://developers.openai.com/api/docs/guides/decisions"
-    },
-    {
-      "date": "2026-10-07",
-      "key": "atena-claude-bedrock-case",
-      "url": "https://aws.amazon.com/jp/blogs/news/claude-code-case-study-atena/"
-    },
-    {
-      "date": "2026-10-07",
-      "key": "mistral-large-4",
-      "url": "https://mistral.ai/news/mistral-large-4/"
-    },
-    {
-      "date": "2026-10-07",
-      "key": "arxiv-2610.05399-afcra",
-      "url": "https://arxiv.org/abs/2610.05399"
-    },
-    {
-      "date": "2026-10-07",
-      "key": "arxiv-2610.04433-harness-tokens",
-      "url": "https://arxiv.org/abs/2610.04433"
-    },
-    {
-      "date": "2026-10-07",
-      "key": "github-git-infra-agent-scale",
-      "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/"
-    },
-    {
-      "date": "2026-10-08",
-      "key": "claude-haiku-5-5",
-      "url": "https://www.anthropic.com/claude-haiku-5-5"
-    },
-    {
-      "date": "2026-10-08",
-      "key": "github-secret-protection-classifier",
-      "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/"
-    },
-    {
-      "date": "2026-10-08",
-      "key": "arxiv-2610.08240-security-gap",
-      "url": "https://arxiv.org/abs/2610.08240"
-    },
-    {
-      "date": "2026-10-08",
-      "key": "arxiv-2610.08651-assuring-ai-software",
-      "url": "https://arxiv.org/abs/2610.08651"
-    },
-    {
-      "date": "2026-10-09",
-      "key": "thoughtworks-agentic-overreach",
-      "url": "https://www.thoughtworks.com/insights/articles/real-world-lessons-agentic-authority-overreach"
-    },
-    {
-      "date": "2026-10-09",
-      "key": "arxiv-2610.08875-agent-skills-utility",
-      "url": "https://arxiv.org/abs/2610.08875"
-    },
-    {
-      "date": "2026-10-09",
-      "key": "google-gemini-agent-at-work",
-      "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
-    },
-    {
-      "date": "2026-10-09",
-      "key": "sakura-ai-engine-private",
-      "url": "https://www.sakura.ad.jp/corporate/information/newsreleases/2026/10/08/1968225874/"
-    },
-    {
-      "date": "2026-10-09",
-      "key": "arxiv-2610.08900-humanize",
-      "url": "https://arxiv.org/abs/2610.08900"
-    },
-    {
-      "date": "2026-10-10",
-      "key": "anthropic-agent-automations-daily-brief",
-      "url": "https://claude.dev/blog/building-effective-agent-automations/"
-    },
-    {
-      "date": "2026-10-10",
-      "key": "arxiv-2610.11647-one-skill-too-many",
-      "url": "https://arxiv.org/abs/2610.11647"
-    },
-    {
-      "date": "2026-10-10",
-      "key": "arxiv-2610.11179-who-pays-review-cost",
-      "url": "https://arxiv.org/abs/2610.11179"
-    },
-    {
-      "date": "2026-10-10",
-      "key": "sompo-japan-gemini-20k-governance",
-      "url": "https://kn.itmedia.co.jp/kn/article/2610/09/2000002145/"
-    },
-    {
-      "date": "2026-10-11",
-      "key": "anthropic-unintended-model-actions",
-      "url": "https://www.anthropic.com/research/investigating-unintended-model-actions"
-    },
-    {
-      "date": "2026-10-11",
-      "key": "kiro-cli-v3-default",
-      "url": "https://aws.amazon.com/jp/blogs/news/cli-3/"
-    },
-    {
-      "date": "2026-10-11",
-      "key": "digital-agency-gennai-agent-chat",
-      "url": "https://www.digital.go.jp/policies/genai"
-    },
-    {
-      "date": "2026-10-12",
-      "key": "microsoft-decision-1",
-      "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
-    },
-    {
-      "date": "2026-10-12",
-      "key": "claude-code-deny-relative-path-2.1.296",
-      "url": "https://zenn.dev/emilk1225/articles/73356c9b0e156d"
-    },
-    {
-      "date": "2026-10-12",
-      "key": "claude-code-subagent-token-22x",
-      "url": "https://zenn.dev/claire_ai/articles/token-shohi-kiji-9ac90f"
-    },
-    {
-      "date": "2026-10-13",
-      "key": "sonybank-claude-code-core-banking",
-      "url": "https://aws.amazon.com/jp/blogs/news/casestudy-sonybank-agent-in-development/"
-    },
-    {
-      "date": "2026-10-13",
-      "key": "thoughtworks-agentic-payments-authority",
-      "url": "https://www.thoughtworks.com/insights/blog/generative-ai/why-agentic-payments-require-executable-model-organizational-authority"
-    },
-    {
-      "date": "2026-10-13",
-      "key": "thoughtworks-decision-models-noops",
-      "url": "https://www.thoughtworks.com/insights/articles/decision-models-and-the-possibility-of-no-ops"
-    },
-    {
-      "date": "2026-10-14",
-      "key": "fowler-are-harnesses-worth-the-cost",
-      "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html"
-    },
-    {
-      "date": "2026-10-14",
-      "key": "gemini-4-argon-ga-pricing",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
-    },
-    {
-      "date": "2026-10-14",
-      "key": "anthropic-scion-source-control",
-      "url": "https://www.anthropic.com/engineering/redesigning-source-control"
-    },
-    {
-      "date": "2026-10-14",
-      "key": "cursor-origin-app-marketplace",
-      "url": "https://cursor.com/changelog/origin-app-marketplace"
-    },
-    {
-      "date": "2026-10-15",
-      "key": "scutum-ai-agent-web-attacks-japan",
-      "url": "https://www.scutum.jp/information/waf_tech_blog/2026/10/waf-blog-085.html"
-    },
-    {
-      "date": "2026-10-15",
-      "key": "mufg-ai-driven-core-banking",
-      "url": "https://xtech.nikkei.com/atcl/nxt/mag/nc/18/020800017/100601513/"
-    },
-    {
-      "date": "2026-10-15",
-      "key": "zurich-life-underwriting-ai",
-      "url": "https://xtech.nikkei.com/atcl/nxt/mag/nc/18/020800017/100601512/"
-    },
-    {
-      "date": "2026-10-15",
-      "key": "thoughtworks-ai-agent-harness",
-      "url": "https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/ai-agent-harness"
-    },
-    {
-      "date": "2026-10-16",
-      "key": "granite-switch-4-1",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
-    },
-    {
-      "date": "2026-10-16",
-      "key": "meta-muse-spark-open",
-      "url": "https://huggingface.co/blog/meta-muse-spark-open"
-    },
-    {
-      "date": "2026-10-16",
-      "key": "nri-secure-ai-dev-security-service",
-      "url": "https://prtimes.jp/main/html/rd/p/000000212.000052432.html"
-    },
-    {
-      "date": "2026-10-16",
-      "key": "jev-1-14",
-      "url": "https://typesafe.ai/blog/jev-1-14"
-    },
-    {
-      "date": "2026-10-17",
-      "key": "claude-code-team-code-review",
-      "url": "https://claude.dev/blog/solving-code-review-at-anthropic/"
-    },
-    {
-      "date": "2026-10-17",
-      "key": "cursor-cloud-agent-canvases-environments",
-      "url": "https://cursor.com/changelog/cloud-agent-canvases-and-environments"
-    },
-    {
-      "date": "2026-10-17",
-      "key": "anthropic-metr-resident-evaluator",
-      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
-    },
-    {
-      "date": "2026-10-17",
-      "key": "arxiv-2610.21914-codehealth-token-cost",
-      "url": "https://arxiv.org/abs/2610.21914"
-    },
-    {
-      "date": "2026-10-18",
-      "key": "cert-in-ai-agents-attack-vectors",
-      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3630"
-    },
-    {
-      "date": "2026-10-18",
-      "key": "replit-default-openai",
-      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
-    },
-    {
-      "date": "2026-10-18",
-      "key": "postgres-19-delay-ai-review",
-      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471"
-    }
-  ]
+ "_comment": "収録済みの事象。重複収録を防ぐ。date = 収録日。key = 事象を一意に表す短い英語キー（URL が変わっても同一事象を検出できるように）。",
+ "items": [
+  {
+   "date": "2026-10-06",
+   "key": "atmarkit-token-waste",
+   "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/06/news004.html"
+  },
+  {
+   "date": "2026-10-06",
+   "key": "softbank-agentic-star-partners",
+   "url": "https://www.softbank.jp/business/news/2026/1006-01"
+  },
+  {
+   "date": "2026-10-06",
+   "key": "gemini-free-plan-flash-lite",
+   "url": "https://japan.cnet.com/article/35253255/"
+  },
+  {
+   "date": "2026-10-06",
+   "key": "arxiv-2610.02267-jev-laya-eval",
+   "url": "https://arxiv.org/abs/2610.02267"
+  },
+  {
+   "date": "2026-10-06",
+   "key": "openai-eu-text-watermark",
+   "url": "https://openai.com/index/eu-text-provenance"
+  },
+  {
+   "date": "2026-10-06",
+   "key": "aws-ai-modernization-flow",
+   "url": "https://aws.amazon.com/jp/blogs/news/aidm-introducing-ai-modernization-flow/"
+  },
+  {
+   "date": "2026-10-06",
+   "key": "zenn-claude-code-where-automation-stops",
+   "url": "https://zenn.dev/zeroyen_dev/articles/claude-code-where-automation-stops"
+  },
+  {
+   "date": "2026-10-06",
+   "key": "zenn-tests-that-test-nothing",
+   "url": "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing"
+  },
+  {
+   "date": "2026-10-06",
+   "key": "cognition-agent-memory-repo",
+   "url": "https://cognition.com/agent-memory-repo"
+  },
+  {
+   "date": "2026-10-06",
+   "key": "wikimedia-openai-rogue-agents",
+   "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/"
+  },
+  {
+   "date": "2026-10-06",
+   "key": "mizuho-cowork-poc",
+   "url": "https://prtimes.jp/main/html/rd/p/000000022.000177612.html"
+  },
+  {
+   "date": "2026-10-06",
+   "key": "github-reviewbench",
+   "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/"
+  },
+  {
+   "date": "2026-10-01",
+   "key": "gemini-4-argon-announce",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+  },
+  {
+   "date": "2026-10-01",
+   "key": "openai-gpt-6.1-astra-shelved",
+   "url": "https://www.cnbc.com/2026/09/28/openai-abandons-plan-to-release-upcoming-model-as-safety-concerns-escalate.html"
+  },
+  {
+   "date": "2026-10-01",
+   "key": "white-house-super-intelligence-accord",
+   "url": "https://www.aljazeera.com/economy/2026/9/30/how-does-trumps-white-house-ai-accord-work"
+  },
+  {
+   "date": "2026-10-01",
+   "key": "openai-devday-2026",
+   "url": "https://www.axios.com/2026/09/29/openai-dev-day-2026-dots-space-sol"
+  },
+  {
+   "date": "2026-10-01",
+   "key": "astribot-t1-north-america",
+   "url": "https://www.einpresswire.com/article/946085980/astribot-brings-t1-to-north-america-showcasing-a-physical-ai-stack-built-on-design-for-ai"
+  },
+  {
+   "date": "2026-10-01",
+   "key": "htx-humanoid-centre",
+   "url": "https://littlebigreddot.com/htx-home-team-humanoid-robotics-centre-opens-2026"
+  },
+  {
+   "date": "2026-09-30",
+   "key": "claude-sonnet-5.5-release",
+   "url": "https://www.anthropic.com/claude-sonnet-5-5"
+  },
+  {
+   "date": "2026-09-30",
+   "key": "intelligence-explosion-whitepaper",
+   "url": "https://the-decoder.com/more-than-20-leading-ai-researchers-warn-that-automated-ai-research-poses-extreme-risks/"
+  },
+  {
+   "date": "2026-09-30",
+   "key": "openai-safety-case-guidelines",
+   "url": "https://aiweekly.co/alerts/openai-outlines-safety-case-framework-for-frontier-training"
+  },
+  {
+   "date": "2026-09-30",
+   "key": "america-gov-launch",
+   "url": "https://fedscoop.com/trump-launches-ai-site-america-gov/"
+  },
+  {
+   "date": "2026-10-07",
+   "key": "openai-decisions-api",
+   "url": "https://developers.openai.com/api/docs/guides/decisions"
+  },
+  {
+   "date": "2026-10-07",
+   "key": "atena-claude-bedrock-case",
+   "url": "https://aws.amazon.com/jp/blogs/news/claude-code-case-study-atena/"
+  },
+  {
+   "date": "2026-10-07",
+   "key": "mistral-large-4",
+   "url": "https://mistral.ai/news/mistral-large-4/"
+  },
+  {
+   "date": "2026-10-07",
+   "key": "arxiv-2610.05399-afcra",
+   "url": "https://arxiv.org/abs/2610.05399"
+  },
+  {
+   "date": "2026-10-07",
+   "key": "arxiv-2610.04433-harness-tokens",
+   "url": "https://arxiv.org/abs/2610.04433"
+  },
+  {
+   "date": "2026-10-07",
+   "key": "github-git-infra-agent-scale",
+   "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/"
+  },
+  {
+   "date": "2026-10-08",
+   "key": "claude-haiku-5-5",
+   "url": "https://www.anthropic.com/claude-haiku-5-5"
+  },
+  {
+   "date": "2026-10-08",
+   "key": "github-secret-protection-classifier",
+   "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/"
+  },
+  {
+   "date": "2026-10-08",
+   "key": "arxiv-2610.08240-security-gap",
+   "url": "https://arxiv.org/abs/2610.08240"
+  },
+  {
+   "date": "2026-10-08",
+   "key": "arxiv-2610.08651-assuring-ai-software",
+   "url": "https://arxiv.org/abs/2610.08651"
+  },
+  {
+   "date": "2026-10-09",
+   "key": "thoughtworks-agentic-overreach",
+   "url": "https://www.thoughtworks.com/insights/articles/real-world-lessons-agentic-authority-overreach"
+  },
+  {
+   "date": "2026-10-09",
+   "key": "arxiv-2610.08875-agent-skills-utility",
+   "url": "https://arxiv.org/abs/2610.08875"
+  },
+  {
+   "date": "2026-10-09",
+   "key": "google-gemini-agent-at-work",
+   "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+  },
+  {
+   "date": "2026-10-09",
+   "key": "sakura-ai-engine-private",
+   "url": "https://www.sakura.ad.jp/corporate/information/newsreleases/2026/10/08/1968225874/"
+  },
+  {
+   "date": "2026-10-09",
+   "key": "arxiv-2610.08900-humanize",
+   "url": "https://arxiv.org/abs/2610.08900"
+  },
+  {
+   "date": "2026-10-10",
+   "key": "anthropic-agent-automations-daily-brief",
+   "url": "https://claude.dev/blog/building-effective-agent-automations/"
+  },
+  {
+   "date": "2026-10-10",
+   "key": "arxiv-2610.11647-one-skill-too-many",
+   "url": "https://arxiv.org/abs/2610.11647"
+  },
+  {
+   "date": "2026-10-10",
+   "key": "arxiv-2610.11179-who-pays-review-cost",
+   "url": "https://arxiv.org/abs/2610.11179"
+  },
+  {
+   "date": "2026-10-10",
+   "key": "sompo-japan-gemini-20k-governance",
+   "url": "https://kn.itmedia.co.jp/kn/article/2610/09/2000002145/"
+  },
+  {
+   "date": "2026-10-11",
+   "key": "anthropic-unintended-model-actions",
+   "url": "https://www.anthropic.com/research/investigating-unintended-model-actions"
+  },
+  {
+   "date": "2026-10-11",
+   "key": "kiro-cli-v3-default",
+   "url": "https://aws.amazon.com/jp/blogs/news/cli-3/"
+  },
+  {
+   "date": "2026-10-11",
+   "key": "digital-agency-gennai-agent-chat",
+   "url": "https://www.digital.go.jp/policies/genai"
+  },
+  {
+   "date": "2026-10-12",
+   "key": "microsoft-decision-1",
+   "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
+  },
+  {
+   "date": "2026-10-12",
+   "key": "claude-code-deny-relative-path-2.1.296",
+   "url": "https://zenn.dev/emilk1225/articles/73356c9b0e156d"
+  },
+  {
+   "date": "2026-10-12",
+   "key": "claude-code-subagent-token-22x",
+   "url": "https://zenn.dev/claire_ai/articles/token-shohi-kiji-9ac90f"
+  },
+  {
+   "date": "2026-10-13",
+   "key": "sonybank-claude-code-core-banking",
+   "url": "https://aws.amazon.com/jp/blogs/news/casestudy-sonybank-agent-in-development/"
+  },
+  {
+   "date": "2026-10-13",
+   "key": "thoughtworks-agentic-payments-authority",
+   "url": "https://www.thoughtworks.com/insights/blog/generative-ai/why-agentic-payments-require-executable-model-organizational-authority"
+  },
+  {
+   "date": "2026-10-13",
+   "key": "thoughtworks-decision-models-noops",
+   "url": "https://www.thoughtworks.com/insights/articles/decision-models-and-the-possibility-of-no-ops"
+  },
+  {
+   "date": "2026-10-14",
+   "key": "fowler-are-harnesses-worth-the-cost",
+   "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html"
+  },
+  {
+   "date": "2026-10-14",
+   "key": "gemini-4-argon-ga-pricing",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+  },
+  {
+   "date": "2026-10-14",
+   "key": "anthropic-scion-source-control",
+   "url": "https://www.anthropic.com/engineering/redesigning-source-control"
+  },
+  {
+   "date": "2026-10-14",
+   "key": "cursor-origin-app-marketplace",
+   "url": "https://cursor.com/changelog/origin-app-marketplace"
+  },
+  {
+   "date": "2026-10-15",
+   "key": "scutum-ai-agent-web-attacks-japan",
+   "url": "https://www.scutum.jp/information/waf_tech_blog/2026/10/waf-blog-085.html"
+  },
+  {
+   "date": "2026-10-15",
+   "key": "mufg-ai-driven-core-banking",
+   "url": "https://xtech.nikkei.com/atcl/nxt/mag/nc/18/020800017/100601513/"
+  },
+  {
+   "date": "2026-10-15",
+   "key": "zurich-life-underwriting-ai",
+   "url": "https://xtech.nikkei.com/atcl/nxt/mag/nc/18/020800017/100601512/"
+  },
+  {
+   "date": "2026-10-15",
+   "key": "thoughtworks-ai-agent-harness",
+   "url": "https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/ai-agent-harness"
+  },
+  {
+   "date": "2026-10-16",
+   "key": "granite-switch-4-1",
+   "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
+  },
+  {
+   "date": "2026-10-16",
+   "key": "meta-muse-spark-open",
+   "url": "https://huggingface.co/blog/meta-muse-spark-open"
+  },
+  {
+   "date": "2026-10-16",
+   "key": "nri-secure-ai-dev-security-service",
+   "url": "https://prtimes.jp/main/html/rd/p/000000212.000052432.html"
+  },
+  {
+   "date": "2026-10-16",
+   "key": "jev-1-14",
+   "url": "https://typesafe.ai/blog/jev-1-14"
+  },
+  {
+   "date": "2026-10-17",
+   "key": "claude-code-team-code-review",
+   "url": "https://claude.dev/blog/solving-code-review-at-anthropic/"
+  },
+  {
+   "date": "2026-10-17",
+   "key": "cursor-cloud-agent-canvases-environments",
+   "url": "https://cursor.com/changelog/cloud-agent-canvases-and-environments"
+  },
+  {
+   "date": "2026-10-17",
+   "key": "anthropic-metr-resident-evaluator",
+   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
+  },
+  {
+   "date": "2026-10-17",
+   "key": "arxiv-2610.21914-codehealth-token-cost",
+   "url": "https://arxiv.org/abs/2610.21914"
+  },
+  {
+   "date": "2026-10-18",
+   "key": "cert-in-ai-agents-attack-vectors",
+   "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADV01&CACODE=CICA-2026-3630"
+  },
+  {
+   "date": "2026-10-18",
+   "key": "replit-default-openai",
+   "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+  },
+  {
+   "date": "2026-10-18",
+   "key": "postgres-19-delay-ai-review",
+   "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471"
+  },
+  {
+   "date": "2026-10-19",
+   "key": "bedrock-api-key-self-service-portal",
+   "url": "https://zenn.dev/aws_japan/articles/bedrock-api-key-self-service-portal-cdk"
+  },
+  {
+   "date": "2026-10-19",
+   "key": "deepseek-v4-1-flash-1017",
+   "url": "https://api-docs.deepseek.com/news/news261017/"
+  },
+  {
+   "date": "2026-10-19",
+   "key": "querypie-qev-decision-model",
+   "url": "https://prtimes.jp/main/html/rd/p/000000008.000166345.html"
+  }
+ ]
 }

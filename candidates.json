@@ -6,8 +6,8 @@
       "kind": "agent-infra",
       "status": "watching",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-16",
-      "mentions": 8,
+      "last_seen": "2026-10-19",
+      "mentions": 9,
       "sources": [
         "https://arxiv.org/abs/2610.02267",
         "https://developers.openai.com/api/docs/guides/decisions",
@@ -16,7 +16,8 @@
         "https://blog.cloudflare.com/clef-decision-models/",
         "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
         "https://www.thoughtworks.com/insights/articles/decision-models-and-the-possibility-of-no-ops",
-        "https://typesafe.ai/blog/jev-1-14"
+        "https://typesafe.ai/blog/jev-1-14",
+        "https://prtimes.jp/main/html/rd/p/000000008.000166345.html"
       ],
       "note": "テキストを生成せず型付きの判断だけ返す決定モデル。エージェントの小さな判断（ツール選択、安全性、停止判断）を主モデルから分離する発想。対照: 主モデル自前判断、他の router/guard モデル"
     },
@@ -33,11 +34,13 @@
     {
       "name": "WorkBuddy (Tencent Cloud)",
       "kind": "agent-product",
-      "status": "seed",
+      "status": "candidate",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-02",
-      "mentions": 0,
-      "sources": [],
+      "last_seen": "2026-10-19",
+      "mentions": 1,
+      "sources": [
+        "https://api-docs.deepseek.com/news/news261017/"
+      ],
       "note": "ローカルで動く業務エージェント。対照: OpenClaw, Meta Muse, Grok Bot, ChatGPT dots"
     },
     {
@@ -662,6 +665,42 @@
         "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
       ],
       "note": "Replit Agent の既定が OpenAI に。提携継続の有無は説明が食い違う"
+    },
+    {
+      "name": "Bedrock API キー自己発行ポータル",
+      "kind": "governance",
+      "status": "candidate",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "mentions": 1,
+      "sources": [
+        "https://zenn.dev/aws_japan/articles/bedrock-api-key-self-service-portal-cdk"
+      ],
+      "note": "PoC で Claude Code/Codex を配るときのキー期限・許可モデル・失効の統制実装"
+    },
+    {
+      "name": "DeepSeek V4.1 Flash 1017",
+      "kind": "model",
+      "status": "candidate",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "mentions": 1,
+      "sources": [
+        "https://api-docs.deepseek.com/news/news261017/"
+      ],
+      "note": "重み公開。検索/取得エンドポイントが 10/31 まで Claude Code/Codex から無料"
+    },
+    {
+      "name": "QueryPie QEV（機密検知の判断モデル）",
+      "kind": "agent-infra",
+      "status": "candidate",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "mentions": 1,
+      "sources": [
+        "https://prtimes.jp/main/html/rd/p/000000008.000166345.html"
+      ],
+      "note": "DLP 用の分類特化モデル。Jev 系の判断モデルの流れ。精度は自社テストのみ"
     }
   ]
 }

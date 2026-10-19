@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年10月19日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年10月19日（月）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">各記事に視点タグと視点ごとの「だから何か」を付け、重要度は「今すぐ試せる・対応が要るか」で決めています。出典は本文を取得して確認した一次情報です。本日は一次情報の日付が48時間以内で確認できたものが少なく、AWS Well-Architected Agent（10/1）、Claude Code auto mode の既定化（8/7）、DeNA のオンボーディング事例（10/7）、Anthropic の雇用調査（10/16）などは日付が範囲外のため見送り、確認できた3件のみにしています。方針の全文は <a href="https://github.com/alphakt/news/blob/main/docs/briefing-design.md" target="_blank" rel="noopener">docs/briefing-design.md</a> を参照。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>AWS Japan の有志が、Bedrock の API キーを参加者に自己発行させるポータルを CDK で公開——Claude Code と Codex を PoC で配るときの権限・期限・費用の統制をまとめて実装</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">社内PoCで参加者全員に Claude Code や Codex を Amazon Bedrock 経由で使わせたいとき、キーの配布と統制が課題になる。この記事は AWS CDK（TypeScript）で、Cognito 認証、API Gateway と Lambda、DynamoDB、S3＋CloudFront からなる発行ポータルをデプロイする構成を示す。参加者ごとに IAM ユーザーを作り、許可したモデルの推論だけを許す Bedrock API キーを発行する。キーは保存せず、発行直後に一度だけ表示する。有効期限は既定7日で上限30日、管理画面から新規発行の停止、利用者ごとの一時停止・失効ができる。費用は Cost Explorer で見るが、利用者別の内訳にはコスト配分タグの有効化が必要で、反映に最大24時間かかる。Budgets は通知のみで利用は止まらない。Claude Code は環境変数4つで接続でき、モデルを必ず指定しないと403になる。AWS 公式でも長期キーは検証用途とされ、PoC 専用アカウントで動かすことが前提である。</p>
+      <div class="howto"><b>どう試す：</b>検証用の AWS アカウントでポータルをデプロイし、自分で1本発行して <code>CLAUDE_CODE_USE_BEDROCK=1</code>、<code>AWS_REGION</code>、<code>AWS_BEARER_TOKEN_BEDROCK</code>、<code>ANTHROPIC_MODEL</code> を設定して Claude Code を動かす。成功したら、有効期限と許可モデルを絞った状態で次のワークショップに使えるか確認する。</div>
+      <ul class="sowhat"><li><b>PM</b>PoCのキー配布は「誰が・どのモデルを・いつまで・いくらまで」を最初に決める作業になる。Budgets が通知のみという点を踏まえ、利用停止は管理画面の操作で行う前提で運用を設計できる。</li><li><b>DEV</b>Bedrock 経由なら Claude Code と Codex の両方を同じキー発行の仕組みに載せられる。ただしモデル未指定の403や、IAM 反映の遅れによる発行直後の失敗など、はまりどころが具体的に書かれている。</li><li><b>CONSULT</b>クライアントの生成AI PoC で「全員にキーを配ってよいか」と聞かれたとき、短命キー・許可モデルの限定・利用者別の失効を備えた実装例を示せる。本番は短期認証情報や SSO への移行が前提になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://zenn.dev/aws_japan/articles/bedrock-api-key-self-service-portal-cdk" target="_blank" rel="noopener">Zenn「Bedrock API キーをセルフサービス発行するポータルを CDK でデプロイし、Claude Code と Codex から使う」（2026-10-18、AWS Japan 有志の Publication）</a>
+      </div>
+      <div class="note">AWS の公式ドキュメントではなく、AWS 社員の有志による技術記事である。記事自身が、PoC 専用アカウントでの利用と、本番での長期キーの回避を推奨している。ポータルのコードは取得して動作確認していない。</div>
+      <div class="comment"><b>コメント：</b>「キーを配る」より「配ったキーを止められる」ことが PoC の安全性を決めるので、止め方まで書いてある点が実用的である。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>DeepSeek が V4.1 Flash を「1017」版に更新——重みを公開し、検索・取得エンドポイントは Claude Code や Codex からの利用が10月末まで無料</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">DeepSeek は10月17日、DeepSeek-V4.1-Flash-1017 を公開し、Web サイト、アプリ、API で使えるとした。前のバージョンに比べてベンチマークの成績が上がり、タスクの完了が速く、出力が短くなったとして、性能と費用の両面で改善したと説明している。強化学習で、ゲームや3Dモデルのようなプロジェクトを最初から最後まで作る能力を高めた。重みは Hugging Face と ModelScope で公開されている。DeepSeek Harness、Tencent の CodeBuddy と WorkBuddy 向けに最適化されており、DeepSeek Harness は v0.2.1-rc.1 以降が推奨されている。あわせて、検索と取得のエンドポイントは1,000回あたり0.75ドルで、DeepSeek Harness、Claude Code、Codex のサーバー側ツールから呼ぶ分は、課金が始まる10月31日16時（UTC）まで無料とされた。ただし、モデル自体のトークン単価と API 上の正式なモデル名は公式ページに載っておらず、性能の図にも数値がない。</p>
+      <ul class="sowhat"><li><b>DEV</b>重みが公開されているため、自社環境での検証や、Claude Code・Codex の検索・取得ツールの差し替えを無料期間中に試せる。性能の主張は図のみなので、手元のタスクで測ってから判断する必要がある。</li><li><b>CONSULT</b>クライアントから低価格な中国発モデルの採用可否を聞かれる場面が増える。データの扱いと提供条件は公式ページで確認できていないため、機密データを渡す前提の提案には使えない。</li><li><b>PM</b>10月31日で無料が終わり、検索・取得は従量課金に変わる。無料期間中に試す場合は、その後の費用を見積に入れておく。</li></ul>
+      <div class="source">出典：
+        <a href="https://api-docs.deepseek.com/news/news261017/" target="_blank" rel="noopener">DeepSeek API Docs「DeepSeek-V4.1-Flash-1017」（2026-10-17）</a>
+        <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank" rel="noopener">Hugging Face（重み）</a>
+      </div>
+      <div class="note">ベンチマークの数値、モデルのトークン単価、API の正式なモデル名は公式ページで確認できなかった。Hugging Face のページ自体は取得していない。</div>
+      <div class="comment"><b>コメント：</b>性能の話より先に「検索・取得が無料で試せる期限が10月31日」という条件が、今週試すかどうかの判断材料になる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>QueryPie AI が機密情報の検知に特化した「判断モデル」QEV を公開——文章を型付きの区分に分類し、自社の商用 API より見逃しを減らしたと主張</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">QueryPie AI は10月19日、Gemma 4 をベースに独自の判断AI技術で作ったモデル QEV を発表した。文章を生成せず、入力を「機密情報なし」「個人情報」「社内機密」「両方」の4区分に分類し、確率つきで返す。顧客名や連絡先、住所を個人情報、未発表の価格や割引条件を社内機密と文脈から判断し、種類や具体的な内容も特定できる。日本語・英語・韓国語の3,167文書の社内テストで、見逃しは商用の JEV API の46件に対し QEV は4件、誤検知は34件に対し50件だった。機密を含む1,281文書での検出率は99.69%としている。Hugging Face で公開され、SaaS とオンプレミスの両方で提供される。価格は個別見積である。数値はいずれも同社の社内テストの結果で、第三者による検証は確認できない。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>生成AIに社内文書を渡す前の情報漏えい対策として、生成モデルとは別の小さな分類モデルで入力を検査する設計を提案できる。オンプレミスで動かせる点は、データを外に出せないクライアントに合う。</li><li><b>DEV</b>エージェントの入出力に挟む検査を、型付きの判断だけを返すモデルに任せる設計の実例である。誤検知より見逃しを減らす方向に調整されているため、止めすぎる運用になる可能性は手元のデータで測る必要がある。</li><li><b>PM</b>検知の精度は同社のテスト条件で示された数字で、誤検知が増えるほど確認作業の工数も増える。導入前に自社データでの検証期間を見積に入れる。</li></ul>
+      <div class="source">出典：
+        <a href="https://prtimes.jp/main/html/rd/p/000000008.000166345.html" target="_blank" rel="noopener">PR TIMES / QueryPie AI「機密情報の検知に特化した意思決定AIモデル「QEV」を開発」（2026-10-19）</a>
+      </div>
+      <div class="note">発表元のプレスリリースのみを確認した。精度の数値は社内テストの自己申告で、比較対象の JEV API の条件も公開されていない。</div>
+      <div class="comment"><b>コメント：</b>「判断だけを返す小さなモデル」を安全装置に使う流れが、候補プールの Jev に続いて国内ベンダーからも出てきた。</div>
+    </div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>新規：</b>「Bedrock API キー自己発行ポータル」「DeepSeek V4.1 Flash 1017」「QueryPie QEV（判断モデル）」を登録。QEV は判断モデルの流れ（Jev / Laya / Microsoft-Decision-1）に連なるため、Jev の言及を1件追加。WorkBuddy（seed）は DeepSeek の公式ページで最適化対象として初めて言及された。</li>
+      <li><b>見送り：</b>AWS Well-Architected Agent（公式10/1）、Claude Code auto mode の既定化（公式8/7）、DeNA のオンボーディング事例（10/7）、Anthropic の雇用調査（公式10/16）、Gartner Japan のハイプ・サイクル（9/28）は一次の日付が48時間超。Sphinx（コミット前に理解度を問うフック）は一次の日付を確認できず載せていない。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
