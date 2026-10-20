@@ -395,12 +395,13 @@
       "kind": "gov-adoption",
       "status": "candidate",
       "first_seen": "2026-10-11",
-      "last_seen": "2026-10-11",
-      "mentions": 1,
+      "last_seen": "2026-10-20",
+      "mentions": 2,
       "sources": [
-        "https://www.digital.go.jp/policies/genai"
+        "https://www.digital.go.jp/policies/genai",
+        "https://www.digital.go.jp/policies/genai/agent-safety-standard"
       ],
-      "note": ""
+      "note": "エージェントチャット提供開始＋源内基準公開。工房は12月頃、OSS Ver.2.0 は2027年2月頃予定"
     },
     {
       "name": "Microsoft-Decision-1",
@@ -701,6 +702,66 @@
         "https://prtimes.jp/main/html/rd/p/000000008.000166345.html"
       ],
       "note": "DLP 用の分類特化モデル。Jev 系の判断モデルの流れ。精度は自社テストのみ"
+    },
+    {
+      "name": "ARTEX（AI自律型ペンテストの悪用）",
+      "kind": "threat",
+      "status": "candidate",
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "mentions": 1,
+      "sources": [
+        "https://gmo-cybersecurity.com/blog/20261019/"
+      ],
+      "note": "国内約20社を標的、8社が漏えい公表。CrowdStrike が韓国金融機関での使用を報道"
+    },
+    {
+      "name": "源内基準（政府職員向けAIエージェント安全基準）",
+      "kind": "gov-policy",
+      "status": "candidate",
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "mentions": 1,
+      "sources": [
+        "https://www.digital.go.jp/policies/genai/agent-safety-standard"
+      ],
+      "note": "AISI 協力。利用者・管理者・開発者の3者の責務"
+    },
+    {
+      "name": "Microsoft Guardian Agents / Dynamic Permissions",
+      "kind": "agent-governance",
+      "status": "candidate",
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "mentions": 1,
+      "sources": [
+        "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/"
+      ],
+      "note": "提供区分・時期は未記載。Ignite 11/17-20"
+    },
+    {
+      "name": "NEC Claude Code 全社展開（CoE＋チャンピオン）",
+      "kind": "consulting-case",
+      "status": "candidate",
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "mentions": 1,
+      "sources": [
+        "https://aws.amazon.com/jp/blogs/news/nec-claude-code-bedrock-coe-anthropic/"
+      ],
+      "note": "3万人は目標。効果数値は無し"
+    },
+    {
+      "name": "OpenCode Console 侵害",
+      "kind": "security-incident",
+      "status": "candidate",
+      "first_seen": "2026-10-20",
+      "last_seen": "2026-10-20",
+      "mentions": 1,
+      "sources": [
+        "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/"
+      ],
+      "note": "二次報道のみ。一次は X 投稿"
     }
   ]
 }

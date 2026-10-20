@@ -360,6 +360,26 @@
    "date": "2026-10-19",
    "key": "querypie-qev-decision-model",
    "url": "https://prtimes.jp/main/html/rd/p/000000008.000166345.html"
+  },
+  {
+   "date": "2026-10-20",
+   "key": "gmo-artex-ai-pentest-attacks",
+   "url": "https://gmo-cybersecurity.com/blog/20261019/"
+  },
+  {
+   "date": "2026-10-20",
+   "key": "digital-agency-gennai-standard-agent-env",
+   "url": "https://www.digital.go.jp/policies/genai/agent-safety-standard"
+  },
+  {
+   "date": "2026-10-20",
+   "key": "microsoft-guardian-agents-dynamic-permissions",
+   "url": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/"
+  },
+  {
+   "date": "2026-10-20",
+   "key": "nec-claude-code-bedrock-rollout",
+   "url": "https://aws.amazon.com/jp/blogs/news/nec-claude-code-bedrock-coe-anthropic/"
   }
  ]
 }

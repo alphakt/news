@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年10月20日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年10月20日（火）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">各記事に視点タグと視点ごとの「だから何か」を付け、重要度は「今すぐ試せる・対応が要るか」で決めています。出典は本文を取得して確認した一次情報です。OpenCode Console の不正アクセス（公式発表は X の投稿のみで取得できず）、米 DHS の DeepSeek 排除命令（官報の原本を確認できず）、Sphinx（一次の日付を確認できず）は見送りました。方針の全文は <a href="https://github.com/alphakt/news/blob/main/docs/briefing-design.md" target="_blank" rel="noopener">docs/briefing-design.md</a> を参照。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>GMO サイバーセキュリティ byイエラエが、国内の相次ぐ不正アクセスの攻撃元で AI 自律型ペネトレーションテストシステム「ARTEX」の使用を確認——日本企業約20社を業種を絞って狙い、8社が漏えいを公表済み</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">GMO サイバーセキュリティ byイエラエは10月19日、10月14日の前回記事の続報として、日本企業を狙った侵害事案の攻撃元インフラを調べた結果、AI による自律型ペネトレーションテストシステム ARTEX が使われていたことを確認したと公表した。前回はフォレンジックログから AI による攻撃の可能性が高いと推定していたもので、今回それが裏付けられた。観測できた範囲では攻撃元インフラはほぼ日本のみを標的とし、約20社を狙い、うち9社は同業種だった。国と業種を絞ったキャンペーンごとに別の攻撃用ホストを用意しているとみられ、デジタルギフト、保険・金融、EC・物流など業種の異なる攻撃インフラがさらに6台見つかっている。標的とされた日本企業のうち8社は、9〜10月にすでに情報漏えいを公表している。CrowdStrike が9月下旬から韓国の金融機関への攻撃で ARTEX が使われたと報じており、同じ手口が日本にも向けられたと同社は推察する。日本と韓国以外が狙われているかは調査中で、情報は法執行機関に共有された。記事に具体的な対策の記載はない。</p>
+      <div class="howto"><b>どう対応する：</b>GMO の続報で標的業種に挙がったクライアント（EC・物流・保険・金融・ギフト・教育など）には、外部公開資産の脆弱性診断と修正状況の棚卸しを今週中に提案する。AI が脆弱性を自動で探して突く前提で、診断の頻度と修正の期限を短くする（具体的な対策は出典に記載がないため、これは編集部の提案である）。</div>
+      <ul class="sowhat"><li><b>CONSULT</b>クライアントから「AI を使った攻撃は本当に来ているのか」と聞かれたとき、国内企業の漏えい公表8社と結び付いた一次の分析を示せる。標的業種に当たる顧客には、診断と修正の優先度を上げる提案の根拠になる。</li><li><b>PM</b>進行中の案件で外部公開する環境がある場合、脆弱性の修正期限と診断の実施時期を前倒しするかをリリース計画で確認する。</li><li><b>DEV</b>攻撃側が脆弱性の探索から侵入までを自動化している前提で、公開 API や管理画面の既知の脆弱性・設定不備を放置しない運用にしておく必要がある。</li></ul>
+      <div class="source">出典：
+        <a href="https://gmo-cybersecurity.com/blog/20261019/" target="_blank" rel="noopener">GMOサイバーセキュリティ byイエラエ「相次ぐ不正アクセスの攻撃元の多くがAIであることを確認」（2026-10-19）</a>
+      </div>
+      <div class="note">調査主体の発表のみを確認した。「韓国での使用」は同記事が引用する CrowdStrike の報道であり、CrowdStrike の元記事は取得していない。</div>
+      <div class="comment"><b>コメント：</b>「AI が攻撃に使われた可能性」から「使われたツール名とインフラが特定された」に進んだ点が、クライアントへの説明の質を変える。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>デジタル庁が約18万人の政府職員向けに AI エージェント環境の提供を開始し、AISI の協力で作った安全基準「源内基準」を公開——2027年2月頃には環境ごと OSS 化の予定</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">デジタル庁は10月20日、ガバメント AI「源内」で、約18万人の職員に2種類の AI エージェント利用環境を提供すると発表した。手軽にエージェントを作って動かせる「エージェントチャット」は各府省庁へ順次導入し、高度なエージェントを作れる「源内工房」は令和8年12月頃までの導入を目指す。両環境は「源内 OSS Ver.2.0」として令和9年2月頃を目途に公開される予定で、地方公共団体や民間事業者も利用・改変・再配布できる形にする方針という。あわせて公開された「源内基準」は、職員が AI エージェントを安全に使うための基本的な考え方と遵守事項をまとめたもので、AI セーフティ・インスティテュート（AISI）の協力を得て作られた。「利用者」「管理者」「開発者」の3者それぞれの責務を定め、民間事業者が安全性と活用を両立させる際のモデルになるとされる。個別の要件は添付 PDF にあり、今回はその本文までは確認していない。</p>
+      <div class="howto"><b>どう試す：</b>源内基準の PDF を取得し、クライアントのエージェント利用規程やレビュー観点（利用者・管理者・開発者の責務分担）と並べて差分を確認する。</div>
+      <ul class="sowhat"><li><b>CONSULT</b>官公庁・自治体や、それらに納める企業から「政府はどんな基準でエージェントを使わせるのか」と聞かれる。提案書のガバナンス章で、利用者・管理者・開発者の3者に責務を分ける枠組みを参照できる。</li><li><b>PM</b>エージェントの権限と責務を役割別に分ける考え方は、社内の利用ルールや案件のレビュー体制の設計にそのまま使える。OSS 版の公開時期（2027年2月頃）は調達・内製判断の時間軸になる。</li><li><b>DEV</b>2027年2月頃に環境が OSS で公開される予定のため、構成を見て自社のエージェント基盤と比較する材料になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.digital.go.jp/policies/genai/agent-safety-standard" target="_blank" rel="noopener">デジタル庁「ガバメントAI 源内におけるAIエージェント利用環境の提供開始のお知らせと「源内基準」」（2026-10-20）</a>
+      </div>
+      <div class="note">発表日は本文に明記がなく、添付ファイル名の日付（20261020）とデジタル庁の新着一覧（10/20）から判断した。源内基準の PDF 本文と具体的な要件は取得していない。</div>
+      <div class="comment"><b>コメント：</b>国が「全職員に使わせる前提」の基準を先に出し、OSS で外に出すと言っている点が、日本企業の規程作りの参照点になる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Microsoft が「エージェントは新しい内部者」として Guardian Agents と動的権限を発表——Defender の検出対象は Claude Code・Codex など60種のローカルエージェントに拡大</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Microsoft は10月19日のセキュリティブログで、AI エージェントを内部者になぞらえ、Project Perception の中に Playbooks と Guardian Agents を加えると発表した。方針や承認の境界は人が決め、Guardian Agents がリスクの変化の説明、証拠の調査、封じ込めの提案・実行を機械の速度で行う。Microsoft Defender の検出は60種のローカルエージェント（Claude Code、OpenAI Codex、GitHub Copilot を含む。従来から35種増）に広がり、見つけたエージェントは所有者・活動・リスクを追う統合レジストリに載せられる。制御として、エージェントを権限ゼロから始め、タスクごと・期限付きで権限を与える Dynamic Permissions、複数のシグナルでリスクを採点する Dynamic Agent Risk、リスクに応じて読み取りのみ許可や隔離まで段階的に絞る Dynamic Conditional Access を挙げ、影響の大きい操作には人の承認を求められるとする。ただしプレビューか一般提供か、提供時期はブログに書かれていない。Ignite 2026（11月17〜20日）が案内されている。</p>
+      <ul class="sowhat"><li><b>PM</b>社員が持ち込む Claude Code や Codex の把握と、タスク単位・期限付きの権限という考え方を、案件のエージェント運用ルール（誰が何を許可するか）に落とせる。提供時期が不明なため、製品導入を前提にした計画は立てられない。</li><li><b>CONSULT</b>Microsoft 環境のクライアントから「社員が勝手に使うエージェントをどう管理するか」と聞かれる場面で、主要ベンダーの設計方針として示せる。提供状況は Ignite で確認する必要がある。</li><li><b>DEV</b>開発者が使うエージェントがレジストリと権限制御の対象になりうる。権限の設計は「既定で権限なし、タスクごとに付与」が前提になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/" target="_blank" rel="noopener">Microsoft Security Blog「Agents are your newest insiders: security must move at their speed」（2026-10-19）</a>
+      </div>
+      <div class="note">ブログは各機能のプレビュー／一般提供の区分と提供日を示していない。TechCrunch が引用する別のブログ記事（blogs.microsoft.com）は取得できていない。</div>
+      <div class="comment"><b>コメント：</b>製品の細部より、「エージェントを権限ゼロから始めて、タスクごとに期限付きで与える」という既定の置き方が、今後の設計の基準になりそうである。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>NEC が Claude Code を Amazon Bedrock 経由で全社展開——CoE・チャンピオン制度と工程別 Skills で「約3万人の AI ネイティブエンジニア体制」を目指す</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">AWS Japan のブログ（10月20日）が、NEC と Anthropic Japan の協力のもと、NEC の Claude Code 展開の進め方を紹介している。SI サービス CoE が中心になり、各事業部門に部門 CoE を置き、現場をリードするチャンピオンを育てる体制である。業務手順やノウハウをまとめた Skills で知見を標準化し、要件定義・設計・製造・テストの各工程向けの専門 Skills を整備中という。NEC と AWS が共催したワークショップは、7月16日の入門編と8月25日の応用編（部門推薦の中級者限定、ハーネスエンジニアリングの実践）の2回で、延べ158名が参加した。入門編のアンケートでは、開発業務で活用したい人が93%、満足度が88%だった。全社員向けには Amazon Bedrock 上の Claude Desktop を展開し、約3万人の体制は目標として書かれている。一方、工数削減などの定量的な業務効果と、利用ルールや統制の具体策は記事に載っていない。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>日本の大手 SIer が「CoE＋チャンピオン＋工程別 Skills」で展開している実例として、競合の動きと、クライアントの全社展開提案の型の両方に使える。効果の数値がまだ無い点も含めて伝える必要がある。</li><li><b>PM</b>教育を入門編と部門推薦の応用編に分け、個人利用からチーム・部門単位の活用へ移す段階設計は、展開計画の工程にそのまま使える。</li></ul>
+      <div class="source">出典：
+        <a href="https://aws.amazon.com/jp/blogs/news/nec-claude-code-bedrock-coe-anthropic/" target="_blank" rel="noopener">AWS Japan Blog「約3万人のAIネイティブエンジニア体制へ ― NEC は Claude Code をどう全社展開しているのか？」（2026-10-20）</a>
+      </div>
+      <div class="note">満足度などは入門編ワークショップ参加者のアンケートで、業務効果の実測ではない。3万人は目標値である。</div>
+      <div class="comment"><b>コメント：</b>効果の数字より先に、「推進組織と教育の段階」を公開した点が、同業の SIer と比べるときの材料になる。</div>
+    </div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>新規：</b>「ARTEX（AI 自律型ペンテスト基盤の悪用）」「源内基準」「Microsoft Guardian Agents / Dynamic Permissions」「NEC Claude Code 全社展開」を登録。源内エージェント環境は10/11の候補が実提供と基準公開に進んだため、言及を1件追加。</li>
+      <li><b>追跡：</b>OpenCode Console 侵害（TechCrunch 報道のみ）、DHS の DeepSeek 排除命令（報道のみ）は一次確認ができるまで候補のまま。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
