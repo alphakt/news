@@ -380,6 +380,21 @@
    "date": "2026-10-20",
    "key": "nec-claude-code-bedrock-rollout",
    "url": "https://aws.amazon.com/jp/blogs/news/nec-claude-code-bedrock-coe-anthropic/"
+  },
+  {
+   "date": "2026-10-21",
+   "key": "altk-evolve-learned-memory",
+   "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc"
+  },
+  {
+   "date": "2026-10-21",
+   "key": "arxiv-2610.26394-pace-prd",
+   "url": "https://arxiv.org/abs/2610.26394"
+  },
+  {
+   "date": "2026-10-21",
+   "key": "digital-agency-jichitai-bybyn-pilot",
+   "url": "https://www.digital.go.jp/policies/genai/0ef07948-2f5d-4b45-8ebe-ea974c20a3ac"
   }
  ]
 }

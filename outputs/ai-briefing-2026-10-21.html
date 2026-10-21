@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年10月21日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年10月21日（水）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は大きな動きが少なく、一次情報で日付と本文を確認できた3件に絞りました。AWS Japan の AI コーディングエージェント統制フレームワーク（日本語版は10/21だが原文は7/30）、Anthropic の封じ込め解説（5/25）、Genkit Agents API（原文7/14）、Cloudflare OS のマネージド提供（一次の発表を取得できず）、DMG森精機のサービスエージェント・GMO の RAG 連携（企業の一次発表を取得できず）は見送りました。方針の全文は <a href="https://github.com/alphakt/news/blob/main/docs/briefing-design.md" target="_blank" rel="noopener">docs/briefing-design.md</a> を参照。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>IBM Research が、エージェントの試行履歴から「行動ルール集」を自動で作って system prompt に足す OSS「ALTK-Evolve」を公開——τ²-bench の小売で Pass^4 が 57.5% から 67.5% に上昇</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">IBM Research は10月20日、エージェントの「学習メモリ」を扱う OSS ライブラリ ALTK-Evolve（GitHub: AgentToolkit/altk-evolve）を紹介した。訓練タスクでのエージェントの成功・失敗をエージェントと同じモデル（GPT-4.1）に読ませ、「顧客の本人確認の手順」「取引前の確認」のような短い行動ルールに要約し、各ルールにそれを裏付けたタスク数（support count）を付けて system prompt に追記する。重みの更新も人手の注釈も要らない。τ²-bench の小売（未見のテストタスク）では、GPT-4.1 の Pass^4 が基準の 57.5% から全ルール適用で 67.5%、平均正答率は 78.1% から 82.5% に上がった。航空では Pass^4 が 35.0% から 45.0%（support 3 以上の中核ルールのみ）。リーダーボードでは小売 Pass^4 の 67.5% が首位だった。一方で費用は小売の1会話あたり $0.084 から $0.139 へ約65%増え、航空も約32%増える。ライセンスは記事に記載がない。</p>
+      <div class="howto"><b>どう試す：</b>リポジトリを取得し、自社で評価できるエージェントタスク（問い合わせ対応など）1種類で、ルールあり・なしの成功率と1件あたりの費用を比べる。ライセンスは導入前に GitHub 側で確認する。</div>
+      <ul class="sowhat"><li><b>DEV</b>モデルを替えず、プロンプトに載るルールの形で改善できる。ルールごとに裏付けタスク数が残るため、人がレビューして不要なものを外せる点が、ブラックボックスの memory 機能と違う。</li><li><b>PM</b>精度が約10ポイント上がる代わりに費用が3割〜6割増える。エージェント案件の見積では、精度向上策に費用の増分を併記して比較する必要がある。</li><li><b>CONSULT</b>「エージェントは使うほど賢くなるのか」と聞かれたときに、実測値と費用増をセットで答えられる。数値は公開ベンチマーク上のもので、顧客の業務での効果は別に測る前提で伝える。</li></ul>
+      <div class="source">出典：
+        <a href="https://huggingface.co/blog/ibm-research/altk-evolve-bc" target="_blank" rel="noopener">Hugging Face Blog（IBM Research）「ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model」（2026-10-20）</a>
+      </div>
+      <div class="note">数値はいずれも IBM 側の記述である。記事の見出しは「フロンティアモデル不要」だが、リーダーボードの航空 82.0% は GPT-5.5 を使った結果で、GPT-4.1 では8位（44%）だった。</div>
+      <div class="comment"><b>コメント：</b>「記憶」を重みでなく読める規則として残す設計は、CLAUDE.md や AGENTS.md の自動生成版とも言え、レビュー可能性の点で評価できる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>PRD 駆動のエージェント開発を成熟した企業リポジトリで測る新ベンチマーク「PACE」——最上位モデルでも要件を完全に納品できたのは 14.0%</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">arXiv に10月19日に提出（20日に掲載）された論文は、コーディングエージェントが製品要求仕様書（PRD）を成熟したリポジトリの中でどこまで納品できるかを測るベンチマーク PACE を提案した。企業の実務に即した43タスクと、専門家が監査した750の Code Point（確認項目）からなり、要件の再構成、基準の作成、証拠に基づく評価の3段階で採点する。11のモデルとスキャフォールドの組み合わせを試した結果、多くは52.1〜78.1点に収まったが、要件を完全に納品できた割合は最上位でも14.0%にとどまった。主な障害は「実装が一部しか終わらない」ことと「部品が統合されない」ことで、個々の部品ができても全体の納品にならない。評価は専門家の合意と95.2%一致した。ハーネスを改良すると、同じモデル・同じタスクで平均が59.4から63.0に上がった。論文のタイトルが示す「レビューが追いつかない」点は、この要旨だけでは確認できない。</p>
+      <ul class="sowhat"><li><b>PM</b>エージェントが「動くコード片」を出しても、要件の充足や統合は別に検収が要る。見積やスケジュールで、統合と受入の工程を AI 作業の後ろに明示的に置く根拠になる。</li><li><b>DEV</b>PRD を渡して任せる運用では、要件ごとにチェックリスト化して差分を確認する仕組みが必要になる。ハーネスの改良だけでも点数が動く点は、モデル選びより先に手を入れる余地を示す。</li><li><b>CONSULT</b>「AI に仕様書を渡せば作ってくれるのか」と聞かれたとき、完全納品が14%という数値で、過度な期待を抑える材料になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://arxiv.org/abs/2610.26394" target="_blank" rel="noopener">arXiv:2610.26394「When Coding Agents Outpace Review: Evaluating PRD-Driven Development in Mature Enterprise Repositories」（2026-10-19）</a>
+      </div>
+      <div class="note">要旨のみを確認した。論文本文は取得していない。ベンチマークは43タスクと規模が小さい。</div>
+      <div class="comment"><b>コメント：</b>「部品はできるが納品にならない」は現場の実感に近く、検収工程の設計を数字で議論できる。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>デジタル庁が、国と地方で共通利用する生成 AI「自治体版バイバイン」の実証に参加する自治体を募集——10月26日から11月13日まで、50〜100団体</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">デジタル庁は10月20日、「自治体からの照会事務の自動化などの国・地方AI共通サービスに関する実証事業」の参加自治体の募集を公表した。自治体職員が政府機関へ行う問い合わせ・照会の事務を省力化するため、データの検索・整理・分析ができる生成 AI 機能「自治体版バイバイン」を参加自治体に試験的に提供し、有用性、利便性、課題を検証する。対象は都道府県および市区町村の50〜100団体程度で、同一団体の複数部署の参加もできる。募集は10月26日（月）16時予定から11月13日（金）まで、実証の実施期間は11月24日から2027年2月10日まで。応募は Microsoft Forms で、オンライン説明会が10月26日と28日にある。事務局の運営は委託先のシンプレクス株式会社が担う。自治体版バイバインの機能の詳細や費用負担は、ページからは確認できなかった。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>自治体のクライアントに対し、国の AI 共通サービスに早期に関わる機会として参加を提案できる。締切が11月13日と近いため、関心のある先には今週中に知らせる必要がある。</li><li><b>PM</b>自治体向け案件では、国の共通サービスが提供する機能と自前の開発範囲の線引きが今後変わりうる。実証結果（2027年2月以降）を要件定義の前提に入れる時期の目安になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.digital.go.jp/policies/genai/0ef07948-2f5d-4b45-8ebe-ea974c20a3ac" target="_blank" rel="noopener">デジタル庁「自治体からの照会事務の自動化などの国・地方AI共通サービスに関する実証事業」の参加自治体を募集します（2026-10-20 掲載）</a>
+      </div>
+      <div class="note">募集開始前の予告で、日程は「予定」である。ページ自体に掲載日の表示はなく、日付はデジタル庁の新着一覧による。政策の署名・成立済みという基準には当たらないため、募集の事実のみを載せる。</div>
+      <div class="comment"><b>コメント：</b>制度というより参加機会の告知だが、国の共通サービスの使いどころを自治体に説明する入口になる。</div>
+    </div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>新規：</b>「ALTK-Evolve（IBM、学習メモリ）」「PACE（PRD 駆動の納品ベンチマーク）」「自治体版バイバイン実証」を登録。</li>
+      <li><b>追跡：</b>Cloudflare OS のマネージド提供（Cloudflare の一次発表を取得できず）、DMG森精機のサービスエージェント（同社発表が503で取得できず）は確認できるまで候補のまま。決定モデル Jev は10/17 の arXiv で「Terminal-Bench で費用が19%増・成功率は同じ」という外部評価が出ており、提出日が48時間を超えるため今回は載せず、経過だけ記録した。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

@@ -6,8 +6,8 @@
       "kind": "agent-infra",
       "status": "watching",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-19",
-      "mentions": 9,
+      "last_seen": "2026-10-21",
+      "mentions": 10,
       "sources": [
         "https://arxiv.org/abs/2610.02267",
         "https://developers.openai.com/api/docs/guides/decisions",
@@ -17,7 +17,8 @@
         "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/",
         "https://www.thoughtworks.com/insights/articles/decision-models-and-the-possibility-of-no-ops",
         "https://typesafe.ai/blog/jev-1-14",
-        "https://prtimes.jp/main/html/rd/p/000000008.000166345.html"
+        "https://prtimes.jp/main/html/rd/p/000000008.000166345.html",
+        "https://arxiv.org/abs/2610.24649"
       ],
       "note": "テキストを生成せず型付きの判断だけ返す決定モデル。エージェントの小さな判断（ツール選択、安全性、停止判断）を主モデルから分離する発想。対照: 主モデル自前判断、他の router/guard モデル"
     },
@@ -76,8 +77,8 @@
       "kind": "process",
       "status": "watching",
       "first_seen": "2026-10-02",
-      "last_seen": "2026-10-18",
-      "mentions": 8,
+      "last_seen": "2026-10-21",
+      "mentions": 9,
       "sources": [
         "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
         "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
@@ -762,6 +763,54 @@
         "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/"
       ],
       "note": "二次報道のみ。一次は X 投稿"
+    },
+    {
+      "name": "ALTK-Evolve (IBM)",
+      "kind": "agent-memory",
+      "status": "candidate",
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "mentions": 1,
+      "sources": [
+        "https://huggingface.co/blog/ibm-research/altk-evolve-bc"
+      ],
+      "note": "試行履歴から行動ルールを蒸留して system prompt に足す OSS。対照: Agent Memory Repo, claude-mem"
+    },
+    {
+      "name": "PACE（PRD駆動の納品ベンチマーク）",
+      "kind": "process",
+      "status": "candidate",
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "mentions": 1,
+      "sources": [
+        "https://arxiv.org/abs/2610.26394"
+      ],
+      "note": "PRD を企業リポジトリで完全納品できる割合を測る。対照: ReviewBench, SWE-Residual"
+    },
+    {
+      "name": "自治体版バイバイン実証（デジタル庁）",
+      "kind": "gov-ai",
+      "status": "candidate",
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "mentions": 1,
+      "sources": [
+        "https://www.digital.go.jp/policies/genai/0ef07948-2f5d-4b45-8ebe-ea974c20a3ac"
+      ],
+      "note": "国・地方AI共通サービスの実証。募集10/26〜11/13"
+    },
+    {
+      "name": "Cloudflare OS マネージド提供",
+      "kind": "agent-platform",
+      "status": "candidate",
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "mentions": 1,
+      "sources": [
+        "https://www.publickey1.jp/blog/26/cloudflare_osgithubgmail.html"
+      ],
+      "note": "Publickey のみ確認。Cloudflare 一次未取得"
     }
   ]
 }
