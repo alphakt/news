@@ -6,7 +6,7 @@
    "kind": "agent-infra",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-10-21",
+   "last_seen": "2026-10-23",
    "mentions": 10,
    "sources": [
     "https://arxiv.org/abs/2610.02267",
@@ -253,7 +253,7 @@
    "kind": "agent-infra",
    "status": "candidate",
    "first_seen": "2026-10-07",
-   "last_seen": "2026-10-07",
+   "last_seen": "2026-10-23",
    "mentions": 1,
    "sources": [
     "https://developers.openai.com/api/docs/guides/decisions"
@@ -385,10 +385,11 @@
    "kind": "agent-product",
    "status": "candidate",
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-11",
-   "mentions": 1,
+   "last_seen": "2026-10-23",
+   "mentions": 2,
    "sources": [
-    "https://aws.amazon.com/jp/blogs/news/cli-3/"
+    "https://aws.amazon.com/jp/blogs/news/cli-3/",
+    "https://aws.amazon.com/jp/blogs/news/how-kiro-fixes-itself/"
    ],
    "note": ""
   },
@@ -422,10 +423,11 @@
    "kind": "governance",
    "status": "candidate",
    "first_seen": "2026-10-12",
-   "last_seen": "2026-10-12",
-   "mentions": 1,
+   "last_seen": "2026-10-23",
+   "mentions": 2,
    "sources": [
-    "https://zenn.dev/emilk1225/articles/73356c9b0e156d"
+    "https://zenn.dev/emilk1225/articles/73356c9b0e156d",
+    "https://zenn.dev/starken/articles/claude-code-hook-gate-bash-bypass"
    ],
    "note": "相対パス ../ の deny が効かない実測（2.1.296）。絶対パス・Edit()・Bash 自動許可の扱い"
   },
@@ -860,6 +862,42 @@
     "https://www.digital.go.jp/resources/machine-readability-rule/harunobu"
    ],
    "note": "機械可読性ルール適合チェック。AI 判定補助は任意"
+  },
+  {
+   "name": "Agent Skills の AAIF 寄贈",
+   "kind": "standard",
+   "status": "candidate",
+   "first_seen": "2026-10-23",
+   "last_seen": "2026-10-23",
+   "mentions": 1,
+   "sources": [
+    "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+   ],
+   "note": "Skills 標準を Linux Foundation 傘下の AAIF へ。70超のプラットフォーム対応（Anthropic 記述）"
+  },
+  {
+   "name": "Claude Duet",
+   "kind": "agent-product",
+   "status": "candidate",
+   "first_seen": "2026-10-23",
+   "last_seen": "2026-10-23",
+   "mentions": 1,
+   "sources": [
+    "https://claude.com/product/claude-duet"
+   ],
+   "note": "常時稼働の個人エージェント。米国 Pro/Max のウェイトリスト。対照: WorkBuddy 等"
+  },
+  {
+   "name": "Kiro の自己修正（kiro-trace）",
+   "kind": "harness",
+   "status": "candidate",
+   "first_seen": "2026-10-23",
+   "last_seen": "2026-10-23",
+   "mentions": 1,
+   "sources": [
+    "https://aws.amazon.com/jp/blogs/news/how-kiro-fixes-itself/"
+   ],
+   "note": "実行軌跡から自らのハーネスを修正。3段階ゲートと人の最終マージ"
   }
  ]
 }

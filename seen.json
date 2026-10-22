@@ -415,6 +415,26 @@
    "date": "2026-10-22",
    "key": "digital-agency-harunobu",
    "url": "https://www.digital.go.jp/resources/machine-readability-rule/harunobu"
+  },
+  {
+   "date": "2026-10-23",
+   "key": "claude-code-hook-gate-bash-bypass",
+   "url": "https://zenn.dev/starken/articles/claude-code-hook-gate-bash-bypass"
+  },
+  {
+   "date": "2026-10-23",
+   "key": "agent-skills-donated-to-aaif",
+   "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+  },
+  {
+   "date": "2026-10-23",
+   "key": "kiro-self-fix-kiro-trace",
+   "url": "https://aws.amazon.com/jp/blogs/news/how-kiro-fixes-itself/"
+  },
+  {
+   "date": "2026-10-23",
+   "key": "claude-duet-research-preview",
+   "url": "https://claude.com/product/claude-duet"
   }
  ]
 }

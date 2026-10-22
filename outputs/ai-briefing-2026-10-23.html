@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年10月23日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年10月23日（金）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は一次情報で日付と本文を確認できた4件に絞りました。見送ったもの：arXiv の Merge-Gate 論文（提出10/19）、Harvard／Jellyfish の AI 生産性研究（一次の原稿は8/4版で、InfoQ の報道のみ10/22）、OpenAI の Decisions API と Uber の ChatGPT Work 全社展開（一次情報が403で本文を取得できず）、Google Cloud 上の Claude（Anthropic managed）の文書（日付を確認できず）。方針の全文は <a href="https://github.com/alphakt/news/blob/main/docs/briefing-design.md" target="_blank" rel="noopener">docs/briefing-design.md</a> を参照。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Claude Code のフックで止めたはずの <code>~/.claude</code> への書き込みが、Bash の <code>ln</code>・<code>touch</code> では通っていた——利用者が実測して公開</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">個人開発者が10月22日（23日更新）に公開した記事は、Claude Code のフックで <code>Edit|Write</code> にゲートを掛けても、Bash の <code>ln</code>・<code>touch</code>・<code>rsync</code>・<code>mv</code> で <code>~/.claude</code> 配下のファイルを書き換えられたと報告している。観測は9月8日〜28日、Claude Code 2.1.270・macOS 13.7.8。原因は、フックの matcher がツール名で起動するため Bash の呼び出しではゲートが動かず、Bash 向けの文字列検査も <code>ln</code>・<code>rsync</code>・<code>touch</code> を書き込みの語として数えていなかったことだと筆者は述べる。逆に、<code>2&gt;/dev/null</code> や引用符内の <code>&gt;</code> で読み取りだけのコマンドが誤って止まる誤検知もあった。リダイレクトの除去（9/19）と、ゲートが開いている間の Bash 書き込みを判定役サブエージェントとバックアップ経由にする対策（9/12）は入れたが、ゲートが閉じている間の <code>ln</code>・<code>rsync</code>・<code>touch</code> の検出漏れは未解決という。</p>
+      <div class="howto"><b>どう試す：</b>自社で使っているフックの matcher が Bash を含むか確認し、保護対象のテスト用ファイルに <code>ln -sf</code> や <code>touch</code> をかけて、書き換えが止まるかを試す。止まらなければ、文字列照合に頼らない制限（権限の deny 規則やサンドボックス）の併用を検討する。</div>
+      <ul class="sowhat"><li><b>DEV</b>ツール名単位のフックは、別のツール経由の同じ操作を止めない。「書き込みを禁止した」設定は、書き込める経路ごとに実際に破れるか試して初めて言える。</li><li><b>PM</b>エージェントの権限統制をフックで説明している案件では、検証した経路の範囲を確認してから「統制済み」と報告する。未検証の経路は残余リスクとして計上する。</li><li><b>CONSULT</b>クライアントから「エージェントの書き込みは制限済み」と聞いたとき、Bash などの別経路での再現テストを実施したかを確認する観点になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://zenn.dev/starken/articles/claude-code-hook-gate-bash-bypass" target="_blank" rel="noopener">Zenn「Claude Codeのフックで止めたはずの書き込みが、Bashのlnやtouchで通っていた」（2026-10-22 公開）</a>
+      </div>
+      <div class="note">個人の環境での観測で、確認したのは筆者自作のフック4本のみ。<code>Edit|Write</code> だけにゲートを掛けた他の環境で同じ穴が開くという点は筆者の推測で、Claude Code 本体の仕様は確認していない。観測日は9月で、現行バージョンでの再現は未確認。</div>
+      <div class="comment"><b>コメント：</b>利用者の失敗記録は、公式ドキュメントに載らない権限設計の落とし穴を先に教えてくれる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Anthropic が Agent Skills の標準を Agentic AI Foundation（Linux Foundation 傘下）に寄贈——70 超のプラットフォームが対応、公開スキルは約100万</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">Anthropic は10月22日、エージェントに専門知識や手順を渡す Agent Skills のオープン標準を、Agentic AI Foundation（AAIF）に寄贈すると発表した。AAIF は Anthropic、Block、OpenAI が共同設立した Linux Foundation 傘下の団体で、MCP もすでに寄贈されている。寄贈の対象は標準そのもののほか、名称とロゴ、GitHub の組織、agentskills.io のドメイン。Anthropic、Google、OpenAI などのエンジニアが個人の立場でメンテナを務め、リード・メンテナは David Soria Parra 氏と Mahesh Murag 氏。提案中のロードマップには、バージョン付きのリリース、正式な提案手続き、スキルの作者と導入者向けのセキュリティ指針が入っている。Anthropic によると、2025年12月の公開以降、ChatGPT、Cursor、GitHub Copilot、VS Code を含む70超のプラットフォームが対応し、公開されたスキルは約100万、インストールは約2億8000万回に達した。利用者に必要な手続きはない。</p>
+      <ul class="sowhat"><li><b>DEV</b>スキルを特定ベンダー専用でなく、複数のエージェントで使い回せる資産として作る前提が固まる。外部のスキルを入れる際は、セキュリティ指針が出るまで提供元を自分で確認する。</li><li><b>CONSULT</b>「エージェント基盤のロックインは大丈夫か」への答えとして、MCP に続き Skills も中立の財団に置かれたことを示せる。ロードマップは「提案中」の段階である点は添える。</li><li><b>PM</b>社内の手順をスキルとして整備する投資が、特定製品の寿命に左右されにくくなる。スキルの棚卸しと審査の担当を決める時期の目安になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank" rel="noopener">Anthropic「Donating Agent Skills to the Agentic AI Foundation」（2026-10-22）</a>
+      </div>
+      <div class="note">採用数・公開数・インストール数はいずれも Anthropic の記述で、独立した検証はない。</div>
+      <div class="comment"><b>コメント：</b>標準を手放して中立化する動きは MCP と同じ型で、実装側にとっては規格の継続性という安心材料になる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>AWS が AI コーディングエージェント Kiro の自己修正の仕組みを公開——自分の実行軌跡を読んで61,742回届いた誤った一文などを見つけ、最初の1週間で8件の PR を作り7件をマージ</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">AWS Japan のブログ（10月21日公開）は、Kiro のツール説明に、ハーネスの動作について事実と異なる一文があり、数百のセッションで61,742回モデルに届いていたのに誰も問題にしていなかったと述べる。Amazon は Kiro 自身の実行軌跡を読んで失敗や無駄を探す社内システム「kiro-trace」を作った。モデルが変更を提案し、受け入れるかどうかは決定的なコードが判定する。最初の1週間で8件の PR を作り7件がマージされ、冗長なファイル再読み込みの約83%削減、読み取りツールの拒否205件とサブエージェントの拒否167件の解消、約8回に1回失敗していた検索の修正などが入った。検証は、対象の失敗の再現確認、過去の修正をすべて含む退行テスト（100%維持が必須）、リリース前のベンチマーク（89タスク×各5回）の3段階で、最終的なマージは人が行う。削減したツール構成では Terminal-Bench 2.1 の pass@1 が77.5%から82.4%に上がりトークン費用は約3分の1とされるが、既定への反映は製品判断が必要で未リリース。</p>
+      <ul class="sowhat"><li><b>DEV</b>CLAUDE.md やツール説明に書いた一文が実際に効いているか、実行ログで確かめる発想を取り入れられる。まず自分のエージェントの拒否ログと再読み込みの回数を数えるだけでも手がかりになる。</li><li><b>PM</b>修正を受け入れる判定を決定的なコードに置き、最終マージを人に残す構成は、エージェントによる自己改善を統制する実例として使える。</li><li><b>CONSULT</b>「エージェントが自分で改善する」提案には、退行テストと人の最終承認という歯止めをセットで示せる。</li></ul>
+      <div class="source">出典：
+        <a href="https://aws.amazon.com/jp/blogs/news/how-kiro-fixes-itself/" target="_blank" rel="noopener">AWS Japan Blog「Kiro はどのように自らを修正し、その修正の正しさをどう担保しているか」（2026-10-21）</a>
+      </div>
+      <div class="note">数値は AWS の記述で、第三者による再現はない。ページには10月21日公開とあるが、日本語版の公開日であり原文の日付は確認していない。</div>
+      <div class="comment"><b>コメント：</b>「プロンプトの一文が61,742回無駄に届いた」という実数が、ハーネス保守の費用を具体的に示している。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>Anthropic が常時稼働型の個人エージェント「Claude Duet」をリサーチプレビューで公開——米国の Pro / Max 向けウェイトリスト、Team / Enterprise は対象外</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">Claude Duet は、メッセージ（テキストまたは音声）で頼むと Anthropic のクラウド上の専用環境で作業し、終わったときや判断が要るときに連絡してくる個人向けエージェント。Claude Opus 5.5 をベースにし、Claude の記憶、スキル、アプリのほか、Gmail・Slack・Stripe・QuickBooks など6,000超のコネクタとプラグインを使う。受信箱とカレンダーの確認、返信の下書き、未払い請求書への催促の下書き、資料や表の作成を例に挙げる。メッセージの送信や支払いなど重要な操作は承認を求め、承認・ログイン・安全確認は利用者専用のクラウド環境内で行われる。提供は米国の Pro・Max 契約者向けのウェイトリスト制で、iOS・Android アプリと claude.ai で使える。別料金はなく、定期的な背景確認も含めて契約プランの利用上限を消費する。ページ自身が、スレッドの読み違いや緊急度の誤判断、確認と確認の間に届いたものの見落としがありうると明記している。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>クライアントの従業員が個人契約の Pro / Max で業務メールや社内 Slack をつなぐ「個人利用のエージェント」が現実になる。利用規程で、会社のデータを接続してよい範囲を先に決めておく話につながる。</li><li><b>PM</b>利用上限を背景処理と共有するため、大きな作業は想定より早く上限に達しうる。業務利用の費用見積の対象は Team / Enterprise が対象外の間は立てにくい。</li></ul>
+      <div class="source">出典：
+        <a href="https://claude.com/product/claude-duet" target="_blank" rel="noopener">Claude「Claude Duet」製品ページ</a>
+      </div>
+      <div class="note">製品ページに公開日の表示はない。日付は Hacker News への掲載（10月22日）と ITmedia AI+ の報道（10月22日）による。日本での提供可否はページから確認できなかった。</div>
+      <div class="comment"><b>コメント：</b>業務の窓口を人間の代わりに開き続ける設計なので、権限と承認の範囲が日本企業の導入可否を左右する。</div>
+    </div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>新規：</b>「Agent Skills の AAIF 寄贈」「Claude Duet」「Kiro の自己修正（kiro-trace）」「Claude Code フックの Bash 迂回」を登録。</li>
+      <li><b>追跡：</b>Claude Code の権限規則・フックの実効性（今回の Zenn 記事で再出現）、OpenAI Decisions API と Jev（一次情報が取得できず今回は載せず）。AI 生成 PR のレビュー負荷は arXiv 2610.28683（提出10/19）が出たが提出日が48時間を超えるため記録のみ。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
