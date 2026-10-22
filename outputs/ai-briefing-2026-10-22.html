@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年10月22日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年10月22日（木）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は、セキュリティの緊急対応が2件（PHP、LiteLLM）あり、一次情報で日付と本文を確認できた4件に絞りました。AWS の AI コーディングエージェント統制フレームワーク（原文は7/30）、OpenAI の Patch the Planet 発表（ページ取得不可）、Kiro のメモリ機能（ページ取得不可）、OpenAI の COBOL 移行（未確認）は見送りました。方針の全文は <a href="https://github.com/alphakt/news/blob/main/docs/briefing-design.md" target="_blank" rel="noopener">docs/briefing-design.md</a> を参照。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>PHP に認証なしのリモートコード実行が2件見つかり、10月21日に修正版（8.5.12 / 8.4.27 / 8.3.36 / 8.2.35）が公開された——Wiz が AI ツールで発見、OpenAI は確認用 OSS を公開</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">PHP プロジェクトは10月21日（UTC 14:00）、PHP 8.x 系の2件の脆弱性（CVE-2026-109618、CVE-2026-109619、いずれも CVSS v4.0 で 9.2）を修正するセキュリティリリースを出した。前者はメモリ不足時の処理が中途半端な内部データを残す問題、後者はリクエスト固有の内部状態が解放後も残り、同じワーカーの次のリクエストで使われる問題で、どちらも認証なしで任意コードを実行され得る。リスクが最も高いのは mod_php とされる。一時的な緩和策（memory_limit=-1、post_max_size を小さくする、session.upload_progress.enabled=0）はあるが、PHP 側は「完全な対策は更新のみ」としている。Simon Willison の記事によれば、Wiz Research が8月24日に PHP チームへ報告し、最初の1件は AI ツールで見つけたという。CVE ID が10月20日に漏れたため、公開は予定の22日から前倒しされた。OpenAI は PHP のバージョンを HTTP ヘッダーなどから判定する OSS「php2shell-checker」を公開している。</p>
+      <div class="howto"><b>どう対応する：</b>PHP を使う自社・顧客の Web サーバーで、バージョンを 8.5.12 / 8.4.27 / 8.3.36 / 8.2.35 以上に更新する（OS のパッケージ版は配布元の修正有無を確認）。8.1 以前は公式の更新が終わっており、PHP チームが公表した最小限のバックポートか移行が要る。</div>
+      <ul class="sowhat"><li><b>DEV</b>自分たちの PHP 環境（本番・検証・古い社内ツール）を棚卸しして更新する。バージョン判定ツールはヘッダーが隠れていると「不明」になり、「不明」は安全の意味ではない。</li><li><b>CONSULT</b>PHP 製の基幹・社内システムを持つクライアントから「うちは大丈夫か」と聞かれる。バージョン確認と更新計画を今週の提案に入れられる。PHP 8.2 は2026年12月31日にサポートが終わる点も併せて伝えられる。</li><li><b>PM</b>運用保守を請け負う案件では、緊急パッチの工数と停止時間を早急に見積もり、顧客に連絡する担当と期限を決める。</li></ul>
+      <div class="source">出典：<a href="https://www.php.net/archive/2026.php" target="_blank" rel="noopener">php.net「Security release」（2026-10-20 予告・10-21 公開）</a><a href="https://simonwillison.net/2026/Oct/21/php-security-release/" target="_blank" rel="noopener">Simon Willison（2026-10-21）</a><a href="https://github.com/openai/php2shell-checker" target="_blank" rel="noopener">GitHub: openai/php2shell-checker</a></div>
+      <div class="note">OpenAI の発表ページ（Patch the Planet）は取得できなかったため、発見の経緯は Simon Willison の記述による。「AI が見つけた」の範囲は Wiz の説明に基づき、2件目以降の経緯は未確認。</div>
+      <div class="comment"><b>コメント：</b>AI が古い基盤ソフトの深い欠陥を見つける時代になり、「更新を後回しにできる期間」が短くなった。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>PyPI の LiteLLM 1.107.0 に認証情報を盗むマルウェアが混入——SSH 鍵・クラウド認証・LLM の API キーを外部に送信、PyPI は当該版を削除</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">セキュリティ企業 SafeDep が10月21日に公表した。LiteLLM 1.107.0（全 wheel とソース配布）をインストールすると、site-packages に cook.pth、cook.py、sitecustomize.py が置かれる。cook.pth は Python のプロセスが起動するたびに動き、SSH 鍵、クラウドや CI/CD の認証情報、AI ツールのトークン、ブラウザのパスワード、LiteLLM プロキシのデータベースにある LLM プロバイダーのキーを集めて暗号化し、外部ドメインへ送る。sitecustomize.py は毎時動くバックグラウンドプロセスを起動し、GitHub 上のファイルから接続先を読み、そこからコードを取得して実行する。SafeDep によると、1.106.2、1.107.0rc1、1.107.0rc2 と、companion の litellm-proxy-extras 0.4.110、litellm-enterprise 0.1.78 は影響を受けない。PyPI は 13:40 UTC 時点で 1.107.0 を削除済みと記載されている。</p>
+      <div class="howto"><b>どう対応する：</b>pip list / lockfile で litellm==1.107.0 が入っていないか確認する。入っていた環境は、SafeDep の記事に載っている痕跡（cook.pth などのファイル、/tmp 配下のロックファイルなど）を調べ、その環境の鍵・トークンはすべて失効させて再発行する。当面は 1.106.2 に固定する。</div>
+      <ul class="sowhat"><li><b>DEV</b>LLM ゲートウェイとして LiteLLM を使う環境（開発機、CI、社内プロキシ）の依存を確認し、バージョンを固定する。インストールした端末の認証情報は漏えい前提で扱う。</li><li><b>PM</b>依存パッケージの自動更新を開いたままにしているプロジェクトは、更新の反映までに待機期間を設ける運用を検討する。LLM の API キーも他の秘密情報と同じ失効手順に含める。</li><li><b>CONSULT</b>クライアントが AI 基盤の部品として OSS ゲートウェイを採用しているかを確認する材料になる。ソフトウェア部品表（SBOM）と依存の固定を提案に含められる。</li></ul>
+      <div class="source">出典：<a href="https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/" target="_blank" rel="noopener">SafeDep「Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor」（2026-10-21）</a></div>
+      <div class="note">一次情報は発見者の SafeDep の記事のみで、LiteLLM 側の公式声明は取得していない。記事は対処手順を明記していないため、「どう対応する」の失効手順は編集部の推奨である。</div>
+      <div class="comment"><b>コメント：</b>認証情報の集中するゲートウェイ系の OSS が狙われた形で、AI 基盤の供給網リスクが現実になった。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>OpenAI のモデル（GPT-6 Astra / GPT-6.1 Sol / GPT-6 Luna）が Google Cloud の Model Garden に登場——限定プレビュー、請求は Google Cloud に一本化</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Google Cloud は10月21日、OpenAI の3モデルを Model Garden で提供すると発表した。GPT-6 Astra は高度なコーディングやコンピューター操作、専門・科学分野向けの最上位、GPT-6.1 Sol は Astra に近い性能を低コストで出す中位、GPT-6 Luna は日常業務を大量に処理する軽量版とされる。現時点では一部の企業顧客向けの限定プレビューで、ゼロデータ保持（ZDR）と Confidential Compute は「近日対応」と記載されている。請求は Google Cloud Marketplace を通じて既存の契約に組み込め、Flexible Savings Plans の対象にもなる。プロンプト・文脈・出力は顧客が指定したデータ境界内に留まり、基盤モデルの学習には使われないと説明されている。Codex CLI やデスクトップ版を Google の基盤に接続する使い方も示された。リージョンについてはページに記載がなく、日本での提供時期は不明である。</p>
+      
+      <ul class="sowhat"><li><b>CONSULT</b>「OpenAI を使いたいが調達は Google Cloud に寄せたい」という日本企業に、選択肢として説明できる。ただし限定プレビューで、東京リージョンなどの提供有無は未確認のため、確約はしない。</li><li><b>PM</b>モデル利用料を既存のクラウド契約の枠で消化できるため、コスト管理と承認の経路を一本化できる可能性がある。プレビュー参加の申込みと、ZDR の提供時期の確認が先になる。</li><li><b>DEV</b>Gemini と OpenAI のモデルを同じ Google の API とログ基盤で切り替えて評価できるようになる見込み。利用開始にはプレビュー申込みが要る。</li></ul>
+      <div class="source">出典：<a href="https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers?hl=en" target="_blank" rel="noopener">Google Cloud Blog（2026-10-21）</a></div>
+      <div class="note">価格・リージョン・日本での提供は一次情報に記載がない。プレビュー参加には申込みフォームでの関心表明が必要。</div>
+      <div class="comment"><b>コメント：</b>クラウド各社が複数ベンダーのモデルを並べる流れが一段進み、モデル選定とクラウド選定を切り離して考えやすくなる。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>デジタル庁が、Excel・CSV を機械可読なデータに直すためのチェックツール「Harunobu」を公開——100点満点の採点と違反箇所の一覧、AI 判定補助は任意</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span></div>
+      <p class="detail">デジタル庁は10月21日（新着一覧の日付）、行政データの「機械可読性に関するルール」への適合を調べるツール Harunobu を掲載した。Excel、CSV、TSV を読み込み、100点満点の点数と、違反の場所・理由を一覧で示す。重大な違反があるとその水準の点は0になる。使い方はブラウザ画面（Streamlit）、コマンドライン（harunobu analyze）、Python API の3通りで、GitHub で公開されている。判定は既定ではローカルの機械的なロジックで行われ、ファイルの内容は外部に送られない。任意の「AI による判定補助」を有効にすると、利用者が設定した外部の AI API（Gemini、ChatGPT、Claude など）にデータが送られるため、組織のセキュリティ方針を確認するよう注意書きがある。判定できないルールもあり、制約は GitHub に記載されている。</p>
+      
+      <ul class="sowhat"><li><b>CONSULT</b>「神 Excel」を抱える自治体・企業に、AI 活用の前にデータ整備が要ることを示す材料になる。AI 判定を使う場合は、データの外部送信の可否を先に確認する必要がある。</li><li><b>DEV</b>社内の表データを RAG や分析に使う前の品質チェックに、CLI で組み込める可能性がある。適用範囲は行政データ向けのルールである点に注意。</li></ul>
+      <div class="source">出典：<a href="https://www.digital.go.jp/resources/machine-readability-rule/harunobu" target="_blank" rel="noopener">デジタル庁「機械可読性ルール適合チェックツール『Harunobu』」</a></div>
+      <div class="note">ページ自体に掲載日の表示はなく、日付はデジタル庁の新着一覧（10/21 15:00）による。ツールの公開であり、政策の署名・成立という基準には当たらない。</div>
+      <div class="comment"><b>コメント：</b>派手さはないが、AI 導入が止まる原因の多くが「データの形」にあることを国が正面から扱った。</div>
+    </div>
+
+    <div class="section-title">📰 短信</div>
+    <div class="brief"><ul>
+      <li>GitHub Trending では、コーディングエージェントのトークンを圧縮する headroom、エージェント間で長期記憶を引き継ぐ ai-memory、コードを知識グラフ化する graphify が上位に入った（リポジトリの説明のみ確認、評価は未検証）。</li>
+    </ul></div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>新規：</b>「PHP2Shell（PHP RCE 2件）」「LiteLLM 1.107.0 供給網攻撃」「OpenAI モデルの Google Cloud 提供」「Harunobu（デジタル庁）」を登録。</li>
+      <li><b>追跡：</b>headroom / ai-memory（エージェントの記憶・圧縮系）が Trending に出現。claude-mem と合わせて「エージェント記憶」の主題で追跡する。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

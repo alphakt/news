@@ -395,6 +395,26 @@
    "date": "2026-10-21",
    "key": "digital-agency-jichitai-bybyn-pilot",
    "url": "https://www.digital.go.jp/policies/genai/0ef07948-2f5d-4b45-8ebe-ea974c20a3ac"
+  },
+  {
+   "date": "2026-10-22",
+   "key": "php2shell-php-rce-2026-10",
+   "url": "https://www.php.net/archive/2026.php"
+  },
+  {
+   "date": "2026-10-22",
+   "key": "litellm-1.107.0-pypi-compromise",
+   "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/"
+  },
+  {
+   "date": "2026-10-22",
+   "key": "openai-models-google-cloud-model-garden",
+   "url": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers"
+  },
+  {
+   "date": "2026-10-22",
+   "key": "digital-agency-harunobu",
+   "url": "https://www.digital.go.jp/resources/machine-readability-rule/harunobu"
   }
  ]
 }
