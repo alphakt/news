@@ -435,6 +435,16 @@
    "date": "2026-10-23",
    "key": "claude-duet-research-preview",
    "url": "https://claude.com/product/claude-duet"
+  },
+  {
+   "date": "2026-10-25",
+   "key": "brotli-node2shell-http2shell-cve-2026-111497",
+   "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497"
+  },
+  {
+   "date": "2026-10-25",
+   "key": "mythos5-aisi-out-of-scope-analysis",
+   "url": "https://www.anthropic.com/research/alignment-assessment-ukaisi"
   }
  ]
 }

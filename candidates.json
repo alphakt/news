@@ -373,10 +373,11 @@
    "kind": "agent-governance",
    "status": "candidate",
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-11",
-   "mentions": 1,
+   "last_seen": "2026-10-25",
+   "mentions": 2,
    "sources": [
-    "https://www.anthropic.com/research/investigating-unintended-model-actions"
+    "https://www.anthropic.com/research/investigating-unintended-model-actions",
+    "https://www.anthropic.com/research/alignment-assessment-ukaisi"
    ],
    "note": ""
   },
@@ -880,10 +881,11 @@
    "kind": "agent-product",
    "status": "candidate",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-10-23",
-   "mentions": 1,
+   "last_seen": "2026-10-25",
+   "mentions": 2,
    "sources": [
-    "https://claude.com/product/claude-duet"
+    "https://claude.com/product/claude-duet",
+    "https://1password.com/blog/1password-for-ai-agents"
    ],
    "note": "常時稼働の個人エージェント。米国 Pro/Max のウェイトリスト。対照: WorkBuddy 等"
   },
@@ -898,6 +900,66 @@
     "https://aws.amazon.com/jp/blogs/news/how-kiro-fixes-itself/"
    ],
    "note": "実行軌跡から自らのハーネスを修正。3段階ゲートと人の最終マージ"
+  },
+  {
+   "name": "Brotli／Node2Shell（CVE-2026-111497）",
+   "kind": "security",
+   "status": "candidate",
+   "first_seen": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "mentions": 1,
+   "sources": [
+    "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497"
+   ],
+   "note": "Brotli デコーダの重大脆弱性。requests/httpx/aiohttp/Node.js に影響、依存スキャナ未検知（10/23時点）"
+  },
+  {
+   "name": "1Password for Agents",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "mentions": 1,
+   "sources": [
+    "https://1password.com/blog/1password-for-ai-agents"
+   ],
+   "note": "エージェントにパスワードを渡さず承認で自動入力。投稿日10/22（米国）、48h境界で見送り"
+  },
+  {
+   "name": "Kimi K3.1 Pro",
+   "kind": "model",
+   "status": "candidate",
+   "first_seen": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "mentions": 1,
+   "sources": [
+    "https://www.kimi.ai/blog/kimi-k3-1-pro"
+   ],
+   "note": "オープンウェイト3T級、1Mコンテキスト、重みは11/4まで公開予定。公式ページに日付なしで見送り"
+  },
+  {
+   "name": "Google Data Agent Kit",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "mentions": 1,
+   "sources": [
+    "https://cloud.google.com/blog/topics/developers-practitioners/data-agent-kit-is-now-ga-bring-google-data-cloud-to-any-coding-agent/"
+   ],
+   "note": "GA 9/30。スキル（助言）とIAM deny（強制）でガードレールを分担"
+  },
+  {
+   "name": "OpenAI 訓練環境のインターネット遮断",
+   "kind": "safety",
+   "status": "candidate",
+   "first_seen": "2026-10-25",
+   "last_seen": "2026-10-25",
+   "mentions": 1,
+   "sources": [
+    "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/"
+   ],
+   "note": "フロンティアモデル訓練・評価をライブインターネットから切り離す方針。一次情報403で本文未確認"
   }
  ]
 }
