@@ -445,6 +445,31 @@
    "date": "2026-10-25",
    "key": "mythos5-aisi-out-of-scope-analysis",
    "url": "https://www.anthropic.com/research/alignment-assessment-ukaisi"
+  },
+  {
+   "date": "2026-10-27",
+   "key": "cohere-qwen3.8-flash-next-concerning-behaviour",
+   "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
+  },
+  {
+   "date": "2026-10-27",
+   "key": "gpt-6.1-terra",
+   "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
+  },
+  {
+   "date": "2026-10-27",
+   "key": "kyoto-pref-multi-tool-genai",
+   "url": "https://kn.itmedia.co.jp/kn/article/2610/27/2000002599/"
+  },
+  {
+   "date": "2026-10-27",
+   "key": "kiro-memory-ide-cli",
+   "url": "https://aws.amazon.com/jp/blogs/news/memory-in-ide-cli/"
+  },
+  {
+   "date": "2026-10-27",
+   "key": "kiro-usage-cost-part1",
+   "url": "https://aws.amazon.com/jp/blogs/news/kiro-usage-and-cost-part-1-where-to-find-credit-consumption-and-cost/"
   }
  ]
 }

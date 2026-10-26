@@ -62,13 +62,15 @@
    "kind": "context-engineering",
    "status": "candidate",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-10-14",
-   "mentions": 4,
+   "last_seen": "2026-10-27",
+   "mentions": 5,
    "sources": [
     "https://zenn.dev/fukorohouse/articles/e2659fcd7c530f",
     "https://arxiv.org/abs/2610.08875",
     "https://arxiv.org/abs/2610.11647",
-    "https://aws.amazon.com/jp/blogs/news/cli-3/"
+    "https://aws.amazon.com/jp/blogs/news/cli-3/",
+    "https://arxiv.org/abs/2610.31715",
+    "https://arxiv.org/abs/2610.32578"
    ],
    "note": ".md でエージェントの振る舞いを規定する手法。効果の実証研究・ベストプラクティスを追う"
   },
@@ -373,8 +375,8 @@
    "kind": "agent-governance",
    "status": "candidate",
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-25",
-   "mentions": 2,
+   "last_seen": "2026-10-27",
+   "mentions": 3,
    "sources": [
     "https://www.anthropic.com/research/investigating-unintended-model-actions",
     "https://www.anthropic.com/research/alignment-assessment-ukaisi"
@@ -960,6 +962,90 @@
     "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/"
    ],
    "note": "フロンティアモデル訓練・評価をライブインターネットから切り離す方針。一次情報403で本文未確認"
+  },
+  {
+   "name": "Qwen3.8-Flash-Next 未依頼通信（Cohere）",
+   "kind": "model-safety",
+   "status": "candidate",
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-10-27",
+   "mentions": 1,
+   "sources": [
+    "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
+   ],
+   "note": "オープンウェイトモデルの稀な外向き通信試行。エージェント環境の egress 既定拒否"
+  },
+  {
+   "name": "GPT-6.1 Terra",
+   "kind": "model",
+   "status": "candidate",
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-10-27",
+   "mentions": 1,
+   "sources": [
+    "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
+   ],
+   "note": "入力$1/出力$5、computer_use、100万トークン"
+  },
+  {
+   "name": "Kiro メモリ",
+   "kind": "agent-memory",
+   "status": "candidate",
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-10-27",
+   "mentions": 1,
+   "sources": [
+    "https://aws.amazon.com/jp/blogs/news/memory-in-ide-cli/"
+   ],
+   "note": "ローカルのみ・既定オフ。steering との線引き"
+  },
+  {
+   "name": "Kiro 利用状況とコスト（CUR 2.0）",
+   "kind": "cost-control",
+   "status": "candidate",
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-10-27",
+   "mentions": 1,
+   "sources": [
+    "https://aws.amazon.com/jp/blogs/news/kiro-usage-and-cost-part-1-where-to-find-credit-consumption-and-cost/"
+   ],
+   "note": "ダッシュボード/日次レポート/CUR の使い分け"
+  },
+  {
+   "name": "京都府庁 複数ツール併用・親子エージェント",
+   "kind": "case",
+   "status": "candidate",
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-10-27",
+   "mentions": 1,
+   "sources": [
+    "https://kn.itmedia.co.jp/kn/article/2610/27/2000002599/"
+   ],
+   "note": "Copilot＋RAG付きChatAI、審査を3子エージェントに分割"
+  },
+  {
+   "name": "Cloudflare Auto Router",
+   "kind": "router",
+   "status": "candidate",
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-10-27",
+   "mentions": 1,
+   "sources": [
+    "https://www.infoq.com/news/2026/10/cloudflare-auto-router/"
+   ],
+   "note": "cloudflare/auto。Jev 系の判断モデルに近い"
+  },
+  {
+   "name": "NVIDIA SkillSpector",
+   "kind": "skills-security",
+   "status": "candidate",
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-10-27",
+   "mentions": 1,
+   "sources": [
+    "https://github.com/NVIDIA/SkillSpector"
+   ],
+   "note": "エージェントスキルの導入前スキャナ"
   }
  ]
 }
