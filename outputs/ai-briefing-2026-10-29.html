@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年10月29日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年10月29日（木）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は一次情報で日付と本文を確認できた5件に絞りました。見送ったもの：Forever（旧 Rebora）の「ダウンロードフォルダの AGENTS.md によるエージェント乗っ取り」（一次ブログは10/22で48時間超過、ITmedia 報道のみ新しい）、パナソニックの約33万人分の個人情報の外部生成AIへのアップロード（発表は10/23で超過）、Cursor Agent SDK（10/20で超過）、Atlassian「State of Developer Experience 2026」（報道は10/27だが、一次ページで公開日を確認できず）、みずほFGの「みずほ Cowork」約3万人展開（日経の報道のみで一次情報を未確認）。方針の全文は <a href="https://github.com/alphakt/news/blob/main/docs/briefing-design.md" target="_blank" rel="noopener">docs/briefing-design.md</a> を参照。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>AWS Kiro チームが「週1,000件の PR を人が全行読まずに安定させる」運用を公開——指摘の重大度ティア分けと「PR Readiness」判定</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">AWS Japan ブログ（10月28日、原文は10月26日）で Kiro Crew チームが、週1,000件の PR をマージしながら品質を保つ方法を紹介した。最初の人間による全件レビューは1日も続かず、自動テストと検証で担保する方針に切り替えたという。指摘は重大度で分け、ブロッキングは同じ PR で直し、軽微なものは後続の課題にする。ブロッキングには場所・根拠・発生条件・結果が必須で、説明できない指摘は参考意見に落とす。レビュアーは設計・第一原理・UX の役割と、異なるモデルファミリーで分担し、指摘は1ラウンドで出し切る。「失敗がない」ではなく「期待されるチェックがすべて実行されて成功した」を1つの合否信号にまとめ、prepare-pr スキルが緑になるまで修正と push を繰り返す。全 PR で80件以上のチェックを走らせ、テストカバレッジは90%超、開発時間の約20%を自動化基盤に充てているという。</p>
+      <div class="howto"><b>どう試す：</b>自チームの AI レビュー設定に「ブロッキング指摘は場所・根拠・発生条件・結果を書けなければ参考意見にする」というルールを入れ、1週間分の PR で往復回数が減るかを測る。</div>
+      <ul class="sowhat"><li><b>DEV</b>レビュー規約を「指摘の書式」まで落とすと、AI レビュアーのノイズ（根拠のない指摘）を機械的に切り分けられる。合否信号を1つにまとめる発想もそのまま真似できる。</li><li><b>PM</b>見積もりに「自動化基盤の構築＝開発時間の約2割」を入れる根拠になる。人間レビューを前提にしたスループット計画は、PR が増えた時点で破綻する。</li><li><b>CONSULT</b>「AI が書いたコードの品質は誰が保証するのか」という質問に、人の目視ではなく検証の仕組みで答える具体例として示せる。数値は AWS 自身の報告で、他社の再現は未確認。</li></ul>
+      <div class="source">出典：
+        <a href="https://aws.amazon.com/jp/blogs/news/software-factory-stability/" target="_blank" rel="noopener">AWS Japan ブログ「週 1,000 件の PR でもソフトウェアファクトリーを安定させる方法」（2026-10-28）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「人間が全行を読まない」ことを前提に、責任の置き場を「レビュー記録」に移している点が、他の組織が最も議論を呼びそうな部分だ。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>PFN が国産「PLaMo 3.1 Prime」を提供開始——オンプレ対応の Deep Research、API は上限付き無料プランあり</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Preferred Networks は10月27日、国産基盤モデル PLaMo 3.1 Prime を PLaMo Chat、PLaMo API、オンプレミスで同日から提供開始した。Web 検索に加え、調査計画の立案から出典付きレポート作成までを自律的に行う Deep Research を、オンプレ環境でも使えるようにした。社内文書の検索システムと連携すれば、社内文書だけ、または Web と組み合わせた調査もでき、閉域環境での利用も可能とされる。ハルシネーション関連の8ベンチマークで前モデル比平均約15%の改善、投機的デコーディングで処理速度は1.7倍、非推論モードでは出力トークンを約90%削減したと説明している。一方、STEM・コーディング・Web 検索を伴う回答では競合を下回ったと PFN 自身が報告している。API は Free プラン（上限あり・無料）と Standard プラン（100万トークンあたり入力60円・出力250円）があり、PLaMo Chat の Deep Research は11月30日まで1日2回まで無料。</p>
+      <div class="howto"><b>どう試す：</b>API の Free プランで、自社の社内文書を想定した日本語の質問10問を投げ、出典の付き方と誤りの出方を、普段使うモデルと並べて記録する。PLaMo Chat の Deep Research は11月30日までの無料枠で試せる。</div>
+      <ul class="sowhat"><li><b>CONSULT</b>「データを国外に出せない・閉域で使いたい」という金融・製造・官公庁クライアントに、国産モデルをオンプレで動かす選択肢を具体的な価格付きで示せる。コーディング性能は競合に劣ると PFN 自身が認めており、用途の切り分けが提案の要点になる。</li><li><b>DEV</b>社内文書検索と Deep Research を閉域で組む構成の試作先になる。ただし開発用途の性能は劣後なので、コード生成は別モデルに任せる前提で比較する。</li><li><b>PM</b>入力60円・出力250円（100万トークン）は費用見積もりに使える。無料枠の上限は記載がないため、本番想定の負荷試験は有償プランで行う。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.preferred.jp/ja/news/pr20261027" target="_blank" rel="noopener">Preferred Networks プレスリリース（2026-10-27）</a>
+        <a href="https://www.itmedia.co.jp/aiplus/article/2610/28/2000002652/" target="_blank" rel="noopener">ITmedia AI+（2026-10-28、解説）</a>
+      </div>
+      <div class="note">性能の数値はすべて PFN の説明による。技術ブログ（preferred.jp/ja/blog/tech/plamo-3-1-prime-release）は取得していない。</div>
+      <div class="comment"><b>コメント：</b>「得意でない領域を自分で書いている」ことが、国産モデルを提案に載せるときの信頼材料になる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Google が「Gemini 4 Carbon」を発表——長時間の自律コーディングとサイバー防御を強化、提供はまず限定</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">Google は10月28日、フロンティアモデル Gemini 4 Carbon を発表した。数日にわたる多段階のエンジニアリング作業（大規模コードベースでの原因特定と修正など）を想定した設計で、Artificial Analysis Intelligence Index v5.0 で59点の首位、WebDev Arena は4位（1768 Elo）としている。サイバー面では脆弱性発見の SEC-bench Pro で88.2%、悪用の ExploitGym で54.8%、修正の CWE-bench で71.0%、安全なコード生成は前モデル Argon の2倍超とする。ただし提供は当面、一部のサイバー防御者に限られ、Fairwind Program を通じた信頼されたパートナーへ広げる段階で、開発者・企業・一般への提供は「近く」とされるだけで日程はない。価格は導入期間中 Argon と同じ入力$2・出力$10（100万トークン、キャッシュ入力は95%引き）で、期間後は入力$4・出力$20に上がる。</p>
+      <ul class="sowhat"><li><b>DEV</b>今は試せない。提供開始に備え、長時間タスクを任せたい案件（バグ修正の連鎖など）の評価用タスクを1〜2本、手元に用意しておく。</li><li><b>CONSULT</b>導入期間後に単価が2倍になる点は、クライアントの予算説明に直結する。「Argon と同価格」の見積もりは期間限定だと伝える。</li><li><b>PM</b>ベンチマークは Google 自身の数値で、提供も限定的。計画には組み込まず、提供開始の通知を追う扱いにする。</li></ul>
+      <div class="source">出典：
+        <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank" rel="noopener">Google「Gemini 4 Carbon: our next frontier model」（2026-10-28）</a>
+      </div>
+      <div class="note">ベンチマークと安全性の数値はすべて Google の発表による。第三者の検証は未確認。</div>
+      <div class="comment"><b>コメント：</b>能力の発表と提供開始が離れているので、価格表の「期間後2倍」を先に頭に入れておくのが実務的だ。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Anthropic が Claude Enterprise 向けに「Smart reports」「アプリ内アンケート」「グループ共有予算」を提供——AI 費用が何を生んだかを可視化</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Anthropic は10月28日、Claude Enterprise 向けの3機能を一般提供とした。Smart reports は、選んだ期間・製品のチームの会話記録を抽出して分析し、作業を流れごとにまとめ、費用・成果物・つまずきやすい点を示す。スキル化すべきワークフローなどの提案も付く。目的は導入状況の把握と計画で、個人の評価や雇用判断には使わないとされる。アプリ内アンケートは、返信後に表示される短いカードで、既定の質問は価値と節約時間。管理者が質問・対象・タイミングを変えられ、回答は表計算へ書き出せる。グループ共有予算は、グループごとに月次の共有枠を設け、個人の上限も併存する（先に尽きた方で止まる）。管理者は50・75・95・100%でメール通知を受け、メンバーはアプリ内から追加を申請できる。HIPAA 構成や顧客管理の暗号鍵など、構成によって利用可否が異なる。</p>
+      <ul class="sowhat"><li><b>PM</b>Atlassian 調査など「時間が浮いたという自己申告」が当てにならない局面で、アンケート（自己申告）と会話記録の分析（実態）を突き合わせる材料になる。共有予算の4段階通知は、費用統制の運用にそのまま使える。</li><li><b>CONSULT</b>「AI を配ったが効果が見えない」という相談に、必要なデータ（費用・成果物・阻害要因・自己申告）の組み合わせを示せる。ただし会話記録を分析する機能なので、従業員への説明と社内規程の整理が前提になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets" target="_blank" rel="noopener">Claude「Smart reports, in-app surveys, and pooled group budgets」（2026-10-28）</a>
+        <a href="https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/" target="_blank" rel="noopener">TechCrunch（2026-10-28、報道）</a>
+      </div>
+      <div class="note">Enterprise プランのみ。Smart reports と共有予算の学習利用の扱いは該当ページに記載がなく、商用規約またはヘルプセンターでの確認が必要。</div>
+      <div class="comment"><b>コメント：</b>「分析対象は会話記録」という点を従業員にどう説明するかが、機能そのものより先に決めるべき論点になる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>GitHub Universe 2026：Copilot app・Fusion・自動化・「Code review Max」を発表——Enterprise は別契約なしで利用、課金は AI クレジット従量</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">GitHub は10月28日、Universe で「エージェント優先」の機能群を発表した。Copilot app は、課題からマージまでの作業をエージェントとツールで束ねる。Copilot Fusion はタスクごとに1つ以上のモデルでの実行方法を選び、Fusion Max は Artificial Analysis Coding Agent Index で Opus 5.5 Max に2点差まで迫りつつ、費用は半分、1タスクあたりの時間は40%短いと GitHub は述べている。Copilot projects は複数リポジトリのエージェント作業を並列に管理し、クラウドエージェントのセッションは GitHub アプリ・VS Code・CLI・Web をまたいで継続できる。Copilot automations は手動・イベント・スケジュールで動くクラウド上の自動ワークフローで、改善案は人が承認する。Code review Max は ReviewBench の高重大度指摘で最高の F1 を出したとする深い審査ティアで、Lite・Balanced も残る。GitHub Enterprise 顧客は別サブスクリプションなしで全機能を使え、使った AI クレジット分を支払う。提供は GitHub の営業経由で、セルフサービスは「近く」。</p>
+      <ul class="sowhat"><li><b>DEV</b>Enterprise 契約があれば営業経由で試せる。複数リポジトリにまたがる変更と、スケジュール実行の自動化を、小さなリポジトリ1つで試して挙動を確認する。</li><li><b>PM</b>席数課金から AI クレジットの従量課金に寄る。ツール費用は使われた量で変動するため、月次の消費上限と通知を先に決めておく。</li><li><b>CONSULT</b>「Copilot を入れているが次に何が来るか」という質問に、課金モデルの変化（従量化）を含めて説明できる。Fusion の費用・速度比較は GitHub 自身の数値で、第三者の検証は未確認。</li></ul>
+      <div class="source">出典：
+        <a href="https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/" target="_blank" rel="noopener">GitHub Blog「GitHub Universe 2026: Evolving every layer of the stack」（2026-10-28）</a>
+      </div>
+      <div class="note">具体的な価格・クレジット単価は記事に記載がない。エージェントのガバナンス機能への言及もなかった。</div>
+      <div class="comment"><b>コメント：</b>機能の多さより「席数課金から従量課金へ」という請求の形の変化が、来週のクライアントとの会話では効いてくる。</div>
+    </div>
+
+    <div class="section-title">📰 短信</div>
+    <div class="brief"><ul>
+      <li>GitHub Trending に JetBrains/thinkrail（pi エージェントで「vibe coding」を行う軽量 IDE）、obra/superpowers（エージェント用スキルフレームワーク）、pbakaus/impeccable・Nutlope/hallmark（デザイン品質をエージェントに守らせるスキル）、expo/skills。出典：<a href="https://github.com/trending" target="_blank" rel="noopener">GitHub Trending</a>。公開日・内容は各リポジトリの README を未確認。</li>
+    </ul></div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>新規：</b>「Kiro のレビュー重大度ティア（PR Readiness）」「PLaMo 3.1 Prime」「Gemini 4 Carbon」「Claude Smart reports／共有予算」「GitHub Copilot app／Fusion／Code review Max」「ダウンロードフォルダ経由の AGENTS.md 攻撃（Forever）」「みずほ Cowork 3万人展開」を登録。</li>
+      <li><b>追跡：</b>「AI 生成 PR の人間レビュー枠組み」に Kiro の事例が加わる。「ReviewBench」は GitHub の Code review Max で再出現。「SOUL.md／AGENTS.md／CLAUDE.md」は悪意ある AGENTS.md の攻撃報道（日付超過で非収録）で再出現。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

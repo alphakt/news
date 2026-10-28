@@ -31,7 +31,7 @@
    "https://code.claude.com/docs/en/output-styles",
    "https://code.claude.com/docs/en/hooks"
   ],
-  "checked": "2026-10-26T23:06:24.912282+00:00"
+  "checked": "2026-10-28T23:06:24.681872+00:00"
  },
  "https://www.anthropic.com/engineering": {
   "links": [
@@ -63,7 +63,7 @@
    "https://www.anthropic.com/research/team/interpretability",
    "https://www.anthropic.com/research/team/societal-impacts"
   ],
-  "checked": "2026-10-26T23:06:25.152088+00:00"
+  "checked": "2026-10-28T23:06:24.917434+00:00"
  },
  "https://docs.anthropic.com/en/release-notes/overview": {
   "links": [
@@ -185,7 +185,7 @@
    "https://docs.anthropic.com/docs/en/build-with-claude/token-counting",
    "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/parallel-tool-use"
   ],
-  "checked": "2026-10-26T23:06:26.212969+00:00"
+  "checked": "2026-10-28T23:06:25.636740+00:00"
  },
  "https://developers.openai.com/changelog": {
   "links": [
@@ -207,6 +207,7 @@
    "https://developers.openai.com/learn",
    "https://developers.openai.com/community",
    "https://developers.openai.com/api/docs/concepts",
+   "https://developers.openai.com/api/docs/guides/chatgpt-api-credits",
    "https://developers.openai.com/api/docs/guides/migrate-to-responses",
    "https://developers.openai.com/api/docs/guides/decisions",
    "https://developers.openai.com/api/docs/guides/conversation-state",
@@ -371,6 +372,7 @@
    "https://developers.openai.com/siwc/request-client-id",
    "https://developers.openai.com/siwc/website",
    "https://developers.openai.com/siwc/chatgpt-plugin",
+   "https://developers.openai.com/siwc/account-security-notification",
    "https://developers.openai.com/siwc/ui-ux-guidelines",
    "https://developers.openai.com/siwc/token-sharing-open-source/sign-in",
    "https://developers.openai.com/siwc/token-sharing-open-source/profiles-and-sessions",
@@ -492,7 +494,6 @@
    "https://developers.openai.com/codex/enterprise/workspace-model-availability",
    "https://developers.openai.com/codex/amazon-bedrock",
    "https://developers.openai.com/codex/enterprise/govcloud-configuration",
-   "https://developers.openai.com/codex/enterprise/sign-in-with-chatgpt-through-a-gateway",
    "https://developers.openai.com/codex/enterprise/connect-to-a-gateway",
    "https://developers.openai.com/codex/enterprise/roll-out-a-gateway",
    "https://developers.openai.com/codex/enterprise/gateway-compatibility",
@@ -595,7 +596,7 @@
    "https://developers.openai.com/api/docs/models/dall-e-3",
    "https://developers.openai.com/api/docs/models/text-moderation-latest"
   ],
-  "checked": "2026-10-26T23:06:26.616541+00:00"
+  "checked": "2026-10-28T23:06:26.059913+00:00"
  },
  "https://cursor.com/changelog": {
   "links": [
@@ -624,7 +625,7 @@
    "https://cursor.com/en-US/cookie-policy",
    "https://cursor.com/en-US/security"
   ],
-  "checked": "2026-10-26T23:06:26.834501+00:00"
+  "checked": "2026-10-28T23:06:26.319288+00:00"
  },
  "https://ai.google.dev/gemini-api/docs/changelog": {
   "links": [
@@ -707,6 +708,9 @@
    "https://ai.google.dev/gemini-api/docs/available-regions",
    "https://ai.google.dev/gemini-api/docs/usage-policies",
    "https://ai.google.dev/gemini-api/docs/feedback-policies",
+   "https://ai.google.dev/gemini-api/docs/cli",
+   "https://ai.google.dev/gemini-api/docs/interactions",
+   "https://ai.google.dev/gemini-api/docs/agents",
    "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
    "https://ai.google.dev/gemini-api/docs/whats-new-gemini-3.7",
    "https://ai.google.dev/gemini-api/docs/whats-new-gemini-3.8",
@@ -732,7 +736,6 @@
    "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash",
    "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite",
    "https://ai.google.dev/gemini-api/docs/models/gemini-3-pro-image",
-   "https://ai.google.dev/gemini-api/docs/agents",
    "https://ai.google.dev/gemini-api/docs/models/antigravity-preview-05-2026",
    "https://ai.google.dev/gemini-api/docs/models/gemini-robotics-er-1.6-preview",
    "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-tts-preview",
@@ -760,7 +763,7 @@
    "https://ai.google.dev/gemini-api/docs/system-instructions",
    "https://ai.google.dev/gemini-api/docs/api-versions"
   ],
-  "checked": "2026-10-26T23:06:27.152468+00:00"
+  "checked": "2026-10-28T23:06:26.752836+00:00"
  },
  "https://www.ipa.go.jp/digital/ai/": {
   "links": [
@@ -811,6 +814,7 @@
    "https://www.ipa.go.jp/digital/ai/data.html",
    "https://www.ipa.go.jp/digital/ai/software-engineering.html",
    "https://www.ipa.go.jp/digital/ai/hr.html",
+   "https://www.ipa.go.jp/digital/ai/expert-group-on-aigfb.html",
    "https://www.ipa.go.jp/archive/press/2023/press20240201.html",
    "https://www.ipa.go.jp/archive/press/2023/press20240214.html",
    "https://www.ipa.go.jp/digital/architecture/guidelines/scdata-guide.html",
@@ -969,7 +973,7 @@
    "https://www.ipa.go.jp/siteinfo.html",
    "https://www.ipa.go.jp/accessibility.html"
   ],
-  "checked": "2026-10-26T23:06:27.501623+00:00"
+  "checked": "2026-10-28T23:06:27.221074+00:00"
  },
  "https://www.ppc.go.jp/news/": {
   "links": [
@@ -1059,11 +1063,18 @@
    "https://www.ppc.go.jp/application/kisei_kaikaku/",
    "https://www.ppc.go.jp/aboutus/commission/access/ppc_relocation?ref=topnews"
   ],
-  "checked": "2026-10-26T23:06:28.662279+00:00"
+  "checked": "2026-10-28T23:06:28.251647+00:00"
  },
  "https://www.soumu.go.jp/menu_news/s-news/": {
   "links": [
    "https://www.soumu.go.jp/english/index.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01gyosei01_02000379.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001287.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01toukei05_01000348.html",
+   "https://www.soumu.go.jp/menu_news/s-news/02kiban14_04001374.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01cyber01_02000001_00308.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01kiban03_02001027.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01kiban05_02000409.html",
    "https://www.soumu.go.jp/menu_news/s-news/01gyosei05_02000256.html",
    "https://www.soumu.go.jp/menu_news/s-news/01ryutsu04_02000270.html",
    "https://www.soumu.go.jp/menu_news/s-news/01tsushin03_02000475.html",
@@ -1115,7 +1126,7 @@
    "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001266.html",
    "https://www.soumu.go.jp/menu_kyotsuu/policy/shuwa-link.html"
   ],
-  "checked": "2026-10-26T23:06:29.669223+00:00"
+  "checked": "2026-10-28T23:06:29.196752+00:00"
  },
  "https://www.anthropic.com/customers": {
   "links": [
@@ -1144,7 +1155,6 @@
    "https://www.anthropic.com/news",
    "https://www.anthropic.com/customers/stripe",
    "https://www.anthropic.com/customers/mid-ohio-food-collective",
-   "https://www.anthropic.com/customers/care-international",
    "https://www.anthropic.com/customers/montgomery-county-food-bank",
    "https://www.anthropic.com/customers/zendesk",
    "https://www.anthropic.com/customers/irc-qa",
@@ -1158,6 +1168,7 @@
    "https://www.anthropic.com/customers/atlassian",
    "https://www.anthropic.com/customers/spellbook",
    "https://www.anthropic.com/customers/evenup",
+   "https://www.anthropic.com/customers/rocket-money-qa",
    "https://www.anthropic.com/solutions/small-business",
    "https://www.anthropic.com/programs/frontier-academy",
    "https://www.anthropic.com/engineering",
@@ -1178,7 +1189,7 @@
    "https://www.anthropic.com/legal/consumer-terms",
    "https://www.anthropic.com/legal/aup"
   ],
-  "checked": "2026-10-26T23:06:30.159525+00:00"
+  "checked": "2026-10-28T23:06:29.880174+00:00"
  },
  "https://cloud.google.com/customers": {
   "links": [
@@ -1189,17 +1200,17 @@
    "https://cloud.google.com/customers/shopify-compute",
    "https://cloud.google.com/customers/kraftheinz",
    "https://cloud.google.com/customers/ksneducation",
+   "https://cloud.google.com/customers/rosebudai",
+   "https://cloud.google.com/customers/businesscapital",
+   "https://cloud.google.com/customers/enerjigroup",
+   "https://cloud.google.com/customers/cdao",
+   "https://cloud.google.com/customers/natrio",
+   "https://cloud.google.com/customers/qdexconsulting",
    "https://cloud.google.com/customers/facile-it-ai",
    "https://cloud.google.com/customers/hematogenix",
    "https://cloud.google.com/customers/deutsche-boerse-group",
    "https://cloud.google.com/customers/pactum-ai",
    "https://cloud.google.com/customers/campdigital",
-   "https://cloud.google.com/customers/imgix",
-   "https://cloud.google.com/customers/hi-luca",
-   "https://cloud.google.com/customers/esky",
-   "https://cloud.google.com/customers/flora",
-   "https://cloud.google.com/customers/fao",
-   "https://cloud.google.com/customers/wekoi",
    "https://cloud.google.com/blog/products/ai-machine-learning/google-named-a-leader-in-the-gartner-magic-quadrant",
    "https://cloud.google.com/why-google-cloud",
    "https://cloud.google.com/ai",
@@ -1443,7 +1454,7 @@
    "https://cloud.google.com/product-terms",
    "https://cloud.google.com/sustainability"
   ],
-  "checked": "2026-10-26T23:06:30.727254+00:00"
+  "checked": "2026-10-28T23:06:30.495934+00:00"
  },
  "https://www.microsoft.com/en-us/customers/": {
   "links": [
@@ -1515,7 +1526,7 @@
    "https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_Footer_Sustainability",
    "https://www.microsoft.com/customers/locale"
   ],
-  "checked": "2026-10-26T23:06:30.955431+00:00"
+  "checked": "2026-10-28T23:06:30.741700+00:00"
  },
  "https://www.nri.com/jp/news": {
   "links": [
@@ -1529,7 +1540,7 @@
    "https://www.nri.com/jp/privacy.html",
    "https://www.nri.com/jp/security_declare.html"
   ],
-  "checked": "2026-10-26T23:06:31.777279+00:00"
+  "checked": "2026-10-28T23:06:31.665167+00:00"
  },
  "https://www.deloitte.com/jp/ja/about/press-room.html": {
   "links": [
@@ -1616,11 +1627,13 @@
    "https://www.deloitte.com/jp/ja/legal/smap.html?icid=bn_smap",
    "https://www.deloitte.com/jp/ja/about/governance/network-brand-alliances/about-the-network.html"
   ],
-  "checked": "2026-10-26T23:06:32.120058+00:00"
+  "checked": "2026-10-28T23:06:31.974620+00:00"
  },
  "https://www.kpmg.com/jp/ja/home/media/press-releases.html": {
   "links": [
    "https://www.kpmg.com/jp/ja/misc/generic-contact-page.html",
+   "https://www.kpmg.com/jp/ja/media/press-releases/2026/10/kc-alliance-resilire.html",
+   "https://www.kpmg.com/jp/ja/media/press-releases/2026/10/kc-ipbusiness-development.html",
    "https://www.kpmg.com/jp/ja/media/press-releases/2026/10/gaes-2026.html",
    "https://www.kpmg.com/jp/ja/media/press-releases/2026/10/kc-higashinaruse-dx.html",
    "https://www.kpmg.com/jp/ja/media/press-releases/2026/10/cybersecurity-survey2026-27.html",
@@ -2147,7 +2160,7 @@
    "https://www.kpmg.com/jp/ja/about.html",
    "https://www.kpmg.com/jp/ja/media.html"
   ],
-  "checked": "2026-10-26T23:06:33.593636+00:00"
+  "checked": "2026-10-28T23:06:33.348062+00:00"
  },
  "https://www.ey.com/ja_jp/newsroom": {
   "links": [
@@ -2232,6 +2245,7 @@
    "https://www.ey.com/ja_jp/about-us/corporate-responsibility/ey-japan-ripples",
    "https://www.ey.com/ja_jp/shape-the-future-with-confidence",
    "https://www.ey.com/ja_jp/integrated-report/top-message",
+   "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-27",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-22",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-20",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-16",
@@ -2239,25 +2253,24 @@
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-14",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-09",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-07",
-   "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-01",
    "https://www.ey.com/ja_jp/industries/government-public-sector/public-projects/2026/ey-japan-pp-2026-10-15",
    "https://www.ey.com/ja_jp/industries/government-public-sector/public-projects/2026/ey-japan-pp-2026-10-08",
    "https://www.ey.com/ja_jp/newsroom/2026/09/ey-japan-news-release-2026-09-16",
    "https://www.ey.com/ja_jp/industries/government-public-sector/public-projects/2026/ey-japan-pp-2026-09-07",
+   "https://www.ey.com/ja_jp/newsroom/information/2026/ey-japan-info-2026-10-27",
    "https://www.ey.com/ja_jp/newsroom/information/2026/ey-japan-info-2026-09-25",
    "https://www.ey.com/ja_jp/newsroom/information/2026/ey-japan-info-2026-08-27",
    "https://www.ey.com/ja_jp/newsroom/information/2026/ey-japan-info-2026-08-19",
-   "https://www.ey.com/ja_jp/newsroom/information/2026/ey-japan-info-2026-08-03",
    "https://www.ey.com/ja_jp/newsroom/information/2021/ey-japan-info-2021-07-19",
    "https://www.ey.com/ja_jp/newsroom/information/2021/ey-japan-info-2021-05-14",
    "https://www.ey.com/ja_jp/people/ey-japan",
    "https://www.ey.com/ja_jp/legal-and-privacy/hotline"
   ],
-  "checked": "2026-10-26T23:06:34.112946+00:00"
+  "checked": "2026-10-28T23:06:34.119668+00:00"
  },
  "https://dora.dev/": {
   "links": [],
-  "checked": "2026-10-26T23:06:34.279972+00:00"
+  "checked": "2026-10-28T23:06:34.270585+00:00"
  },
  "https://www.thoughtworks.com/radar": {
   "links": [
@@ -2336,11 +2349,11 @@
    "https://www.thoughtworks.com/about-us/fraud-advisory-notice",
    "https://www.thoughtworks.com/about-us/compliance"
   ],
-  "checked": "2026-10-26T23:06:34.519143+00:00"
+  "checked": "2026-10-28T23:06:34.512573+00:00"
  },
  "https://newsletter.pragmaticengineer.com/": {
   "links": [],
-  "checked": "2026-10-26T23:06:34.733061+00:00"
+  "checked": "2026-10-28T23:06:34.702810+00:00"
  },
  "https://linear.app/changelog": {
   "links": [
@@ -2369,13 +2382,13 @@
    "https://linear.app/integrations",
    "https://linear.app/docs"
   ],
-  "checked": "2026-10-26T23:06:35.013668+00:00"
+  "checked": "2026-10-28T23:06:34.988191+00:00"
  },
  "https://www.atlassian.com/blog": {
   "links": [
    "https://www.atlassian.com/blog",
-   "https://www.atlassian.com/blog/search?topic[0]=how-we-build",
    "https://www.atlassian.com/blog/search?topic[0]=company-news",
+   "https://www.atlassian.com/blog/search?topic[0]=how-we-build",
    "https://www.atlassian.com/blog/ai-research",
    "https://www.atlassian.com/blog/about",
    "https://www.atlassian.com/software/jira/service-management",
@@ -2388,7 +2401,7 @@
    "https://www.atlassian.com/resources",
    "https://www.atlassian.com/legal/privacy-policy"
   ],
-  "checked": "2026-10-26T23:06:35.259723+00:00"
+  "checked": "2026-10-28T23:06:35.280645+00:00"
  },
  "https://digital-strategy.ec.europa.eu/en/news": {
   "links": [
