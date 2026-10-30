@@ -31,7 +31,7 @@
    "https://code.claude.com/docs/en/output-styles",
    "https://code.claude.com/docs/en/hooks"
   ],
-  "checked": "2026-10-28T23:06:24.681872+00:00"
+  "checked": "2026-10-30T23:06:09.938980+00:00"
  },
  "https://www.anthropic.com/engineering": {
   "links": [
@@ -63,7 +63,7 @@
    "https://www.anthropic.com/research/team/interpretability",
    "https://www.anthropic.com/research/team/societal-impacts"
   ],
-  "checked": "2026-10-28T23:06:24.917434+00:00"
+  "checked": "2026-10-30T23:06:10.185292+00:00"
  },
  "https://docs.anthropic.com/en/release-notes/overview": {
   "links": [
@@ -77,6 +77,9 @@
    "https://docs.anthropic.com/docs/en/api/overview",
    "https://docs.anthropic.com/docs/en/managed-agents/migration",
    "https://docs.anthropic.com/docs/en/api/migration-2026-10-21",
+   "https://docs.anthropic.com/docs/en/manage-claude/usage-cost-analytics-api",
+   "https://docs.anthropic.com/docs/en/manage-claude/usage-cost-api",
+   "https://docs.anthropic.com/docs/en/manage-claude/analytics-api",
    "https://docs.anthropic.com/docs/en/manage-claude/claude-tag-api",
    "https://docs.anthropic.com/docs/en/build-with-claude/claude-models-on-google-cloud/anthropic-managed",
    "https://docs.anthropic.com/docs/en/manage-claude/user-profiles",
@@ -123,7 +126,6 @@
    "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/code-execution-tool",
    "https://docs.anthropic.com/docs/en/manage-claude/user-management",
    "https://docs.anthropic.com/docs/en/manage-claude/spend-limits-api",
-   "https://docs.anthropic.com/docs/en/manage-claude/analytics-api",
    "https://docs.anthropic.com/docs/en/api/versioning",
    "https://docs.anthropic.com/docs/en/manage-claude/compliance-sessions",
    "https://docs.anthropic.com/docs/en/agents-and-tools/agent-skills/overview",
@@ -175,7 +177,6 @@
    "https://docs.anthropic.com",
    "https://docs.anthropic.com/docs/en/manage-claude/claude-code-analytics-api",
    "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/handle-tool-calls",
-   "https://docs.anthropic.com/docs/en/manage-claude/usage-cost-api",
    "https://docs.anthropic.com/docs/en/api/beta/organization/retrieve",
    "https://docs.anthropic.com/docs/en/agents-and-tools/mcp-connector",
    "https://docs.anthropic.com/docs/en/cli-sdks-libraries/libraries/openai-sdk",
@@ -185,7 +186,7 @@
    "https://docs.anthropic.com/docs/en/build-with-claude/token-counting",
    "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/parallel-tool-use"
   ],
-  "checked": "2026-10-28T23:06:25.636740+00:00"
+  "checked": "2026-10-30T23:06:11.039093+00:00"
  },
  "https://developers.openai.com/changelog": {
   "links": [
@@ -489,6 +490,7 @@
    "https://developers.openai.com/codex/enterprise/windows-deployment",
    "https://developers.openai.com/codex/enterprise/manage-app-updates",
    "https://developers.openai.com/codex/enterprise/managed-configuration",
+   "https://developers.openai.com/codex/enterprise/configuration-server",
    "https://developers.openai.com/codex/enterprise/security-cookbook",
    "https://developers.openai.com/codex/remote-connections",
    "https://developers.openai.com/codex/enterprise/workspace-model-availability",
@@ -596,7 +598,7 @@
    "https://developers.openai.com/api/docs/models/dall-e-3",
    "https://developers.openai.com/api/docs/models/text-moderation-latest"
   ],
-  "checked": "2026-10-28T23:06:26.059913+00:00"
+  "checked": "2026-10-30T23:06:11.431023+00:00"
  },
  "https://cursor.com/changelog": {
   "links": [
@@ -625,7 +627,7 @@
    "https://cursor.com/en-US/cookie-policy",
    "https://cursor.com/en-US/security"
   ],
-  "checked": "2026-10-28T23:06:26.319288+00:00"
+  "checked": "2026-10-30T23:06:11.717842+00:00"
  },
  "https://ai.google.dev/gemini-api/docs/changelog": {
   "links": [
@@ -763,7 +765,7 @@
    "https://ai.google.dev/gemini-api/docs/system-instructions",
    "https://ai.google.dev/gemini-api/docs/api-versions"
   ],
-  "checked": "2026-10-28T23:06:26.752836+00:00"
+  "checked": "2026-10-30T23:06:12.027413+00:00"
  },
  "https://www.ipa.go.jp/digital/ai/": {
   "links": [
@@ -907,6 +909,7 @@
    "https://www.ipa.go.jp/digital/dx-suishin/bunseki-report.html",
    "https://www.ipa.go.jp/digital/dx-suishin/syucyu.html",
    "https://www.ipa.go.jp/digital/dx-nintei/dx-nintei-faq.html",
+   "https://www.ipa.go.jp/digital/dx-nintei/hojyo.html",
    "https://www.ipa.go.jp/digital/model/model20201222.html",
    "https://www.ipa.go.jp/digital/model/agile20200331.html",
    "https://www.ipa.go.jp/digital/chiiki/dx-local.html",
@@ -973,7 +976,7 @@
    "https://www.ipa.go.jp/siteinfo.html",
    "https://www.ipa.go.jp/accessibility.html"
   ],
-  "checked": "2026-10-28T23:06:27.221074+00:00"
+  "checked": "2026-10-30T23:06:12.662822+00:00"
  },
  "https://www.ppc.go.jp/news/": {
   "links": [
@@ -1063,11 +1066,30 @@
    "https://www.ppc.go.jp/application/kisei_kaikaku/",
    "https://www.ppc.go.jp/aboutus/commission/access/ppc_relocation?ref=topnews"
   ],
-  "checked": "2026-10-28T23:06:28.251647+00:00"
+  "checked": "2026-10-30T23:06:13.745237+00:00"
  },
  "https://www.soumu.go.jp/menu_news/s-news/": {
   "links": [
    "https://www.soumu.go.jp/english/index.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01kanbo01_02001184.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01zeimu02_02000477.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001301.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01gyosei01_02000380.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01kiban06_02000143.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01gyosei14_02000129.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001300.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01gyosei08_02000335.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000810.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000809.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01ryutsu14_02000181.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01gyosei17_02000276.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01gyosei07_02000185.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01toukei08_01000356.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01toukei04_01000307.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01kiban07_02000134.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01kiban07_02000133.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01cyber01_02000001_00309.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001290.html",
    "https://www.soumu.go.jp/menu_news/s-news/01gyosei01_02000379.html",
    "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001287.html",
    "https://www.soumu.go.jp/menu_news/s-news/01toukei05_01000348.html",
@@ -1126,11 +1148,12 @@
    "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001266.html",
    "https://www.soumu.go.jp/menu_kyotsuu/policy/shuwa-link.html"
   ],
-  "checked": "2026-10-28T23:06:29.196752+00:00"
+  "checked": "2026-10-30T23:06:14.784559+00:00"
  },
  "https://www.anthropic.com/customers": {
   "links": [
    "https://www.anthropic.com/product/cowork",
+   "https://www.anthropic.com/platform/api",
    "https://www.anthropic.com/product/claude-security",
    "https://www.anthropic.com/product/claude-science",
    "https://www.anthropic.com/claude-in-chrome",
@@ -1139,9 +1162,8 @@
    "https://www.anthropic.com/claude/mythos",
    "https://www.anthropic.com/import-memory",
    "https://www.anthropic.com/download",
-   "https://www.anthropic.com/platform/api",
-   "https://www.anthropic.com/product/claude-code/enterprise",
    "https://www.anthropic.com/platform/claude-managed-agents",
+   "https://www.anthropic.com/product/claude-code/enterprise",
    "https://www.anthropic.com/solutions/customer-support",
    "https://www.anthropic.com/solutions/cybersecurity",
    "https://www.anthropic.com/solutions/financial-advisors",
@@ -1189,7 +1211,7 @@
    "https://www.anthropic.com/legal/consumer-terms",
    "https://www.anthropic.com/legal/aup"
   ],
-  "checked": "2026-10-28T23:06:29.880174+00:00"
+  "checked": "2026-10-30T23:06:15.339158+00:00"
  },
  "https://cloud.google.com/customers": {
   "links": [
@@ -1200,17 +1222,17 @@
    "https://cloud.google.com/customers/shopify-compute",
    "https://cloud.google.com/customers/kraftheinz",
    "https://cloud.google.com/customers/ksneducation",
+   "https://cloud.google.com/customers/bestbuybq",
+   "https://cloud.google.com/customers/rightmove",
+   "https://cloud.google.com/customers/warehouseexchange",
+   "https://cloud.google.com/customers/funkemediengruppe",
+   "https://cloud.google.com/customers/adgoat",
+   "https://cloud.google.com/customers/myer",
    "https://cloud.google.com/customers/rosebudai",
    "https://cloud.google.com/customers/businesscapital",
    "https://cloud.google.com/customers/enerjigroup",
    "https://cloud.google.com/customers/cdao",
    "https://cloud.google.com/customers/natrio",
-   "https://cloud.google.com/customers/qdexconsulting",
-   "https://cloud.google.com/customers/facile-it-ai",
-   "https://cloud.google.com/customers/hematogenix",
-   "https://cloud.google.com/customers/deutsche-boerse-group",
-   "https://cloud.google.com/customers/pactum-ai",
-   "https://cloud.google.com/customers/campdigital",
    "https://cloud.google.com/blog/products/ai-machine-learning/google-named-a-leader-in-the-gartner-magic-quadrant",
    "https://cloud.google.com/why-google-cloud",
    "https://cloud.google.com/ai",
@@ -1454,7 +1476,7 @@
    "https://cloud.google.com/product-terms",
    "https://cloud.google.com/sustainability"
   ],
-  "checked": "2026-10-28T23:06:30.495934+00:00"
+  "checked": "2026-10-30T23:06:15.923714+00:00"
  },
  "https://www.microsoft.com/en-us/customers/": {
   "links": [
@@ -1465,6 +1487,7 @@
    "https://www.microsoft.com/customers/search?filters=product%3Amicrosoft-security",
    "https://www.microsoft.com/customers/search?filters=product%3Amicrosoft-power-platform",
    "https://www.microsoft.com/customers/search?filters=product%3Amicrosoft-teams",
+   "https://www.microsoft.com/en-us/customers/brand-collections/levi-strauss-and-company-modernizing-retail-foundations",
    "https://www.microsoft.com/en-us/customers/brand-collections/mercedes-f1-race-performance-and-strategy ",
    "https://www.microsoft.com/en-us/customers/brand-collections/premier-league-innovations",
    "https://www.microsoft.com/en-us/microsoft-365/business/sales-support",
@@ -1526,7 +1549,7 @@
    "https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_Footer_Sustainability",
    "https://www.microsoft.com/customers/locale"
   ],
-  "checked": "2026-10-28T23:06:30.741700+00:00"
+  "checked": "2026-10-30T23:06:16.288064+00:00"
  },
  "https://www.nri.com/jp/news": {
   "links": [
@@ -1540,7 +1563,7 @@
    "https://www.nri.com/jp/privacy.html",
    "https://www.nri.com/jp/security_declare.html"
   ],
-  "checked": "2026-10-28T23:06:31.665167+00:00"
+  "checked": "2026-10-30T23:06:17.227956+00:00"
  },
  "https://www.deloitte.com/jp/ja/about/press-room.html": {
   "links": [
@@ -1581,7 +1604,7 @@
    "https://www.deloitte.com/jp/ja/Industries/banking-capital-markets.html?icid=top_banking-capital-markets",
    "https://www.deloitte.com/jp/ja/Industries/investment-management.html?icid=top_investment-management",
    "https://www.deloitte.com/jp/ja/Industries/central-government.html?icid=top_central-government",
-   "https://www.deloitte.com/jp/ja/Industries/defense-security-justice.html?icid=top_defense-security-justice",
+   "https://www.deloitte.com/jp/ja/Industries/defense-security-justice/about.html?icid=top_about",
    "https://www.deloitte.com/jp/ja/Industries/health-human-services.html?icid=top_health-human-services",
    "https://www.deloitte.com/jp/ja/Industries/infrastructure.html?icid=top_infrastructure",
    "https://www.deloitte.com/jp/ja/Industries/life-sciences.html?icid=top_life-sciences",
@@ -1598,7 +1621,6 @@
    "https://www.deloitte.com/jp/ja/Industries/banking-capital-markets/about.html?icid=top_about",
    "https://www.deloitte.com/jp/ja/Industries/investment-management/about.html?icid=top_about",
    "https://www.deloitte.com/jp/ja/Industries/central-government/about.html?icid=top_about",
-   "https://www.deloitte.com/jp/ja/Industries/defense-security-justice/about.html?icid=top_about",
    "https://www.deloitte.com/jp/ja/Industries/health-human-services/about.html?icid=top_about",
    "https://www.deloitte.com/jp/ja/Industries/infrastructure/about.html?icid=top_about",
    "https://www.deloitte.com/jp/ja/Industries/life-sciences/about.html?icid=top_about",
@@ -1627,11 +1649,13 @@
    "https://www.deloitte.com/jp/ja/legal/smap.html?icid=bn_smap",
    "https://www.deloitte.com/jp/ja/about/governance/network-brand-alliances/about-the-network.html"
   ],
-  "checked": "2026-10-28T23:06:31.974620+00:00"
+  "checked": "2026-10-30T23:06:17.541350+00:00"
  },
  "https://www.kpmg.com/jp/ja/home/media/press-releases.html": {
   "links": [
    "https://www.kpmg.com/jp/ja/misc/generic-contact-page.html",
+   "https://www.kpmg.com/jp/ja/media/press-releases/2026/10/rolling-forecast.html",
+   "https://www.kpmg.com/jp/ja/media/press-releases/2026/10/cfo-survey-2026.html",
    "https://www.kpmg.com/jp/ja/media/press-releases/2026/10/kc-alliance-resilire.html",
    "https://www.kpmg.com/jp/ja/media/press-releases/2026/10/kc-ipbusiness-development.html",
    "https://www.kpmg.com/jp/ja/media/press-releases/2026/10/gaes-2026.html",
@@ -2160,7 +2184,7 @@
    "https://www.kpmg.com/jp/ja/about.html",
    "https://www.kpmg.com/jp/ja/media.html"
   ],
-  "checked": "2026-10-28T23:06:33.348062+00:00"
+  "checked": "2026-10-30T23:06:18.809380+00:00"
  },
  "https://www.ey.com/ja_jp/newsroom": {
   "links": [
@@ -2245,14 +2269,14 @@
    "https://www.ey.com/ja_jp/about-us/corporate-responsibility/ey-japan-ripples",
    "https://www.ey.com/ja_jp/shape-the-future-with-confidence",
    "https://www.ey.com/ja_jp/integrated-report/top-message",
+   "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-30",
+   "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-29",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-27",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-22",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-20",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-16",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-15",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-14",
-   "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-09",
-   "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-07",
    "https://www.ey.com/ja_jp/industries/government-public-sector/public-projects/2026/ey-japan-pp-2026-10-15",
    "https://www.ey.com/ja_jp/industries/government-public-sector/public-projects/2026/ey-japan-pp-2026-10-08",
    "https://www.ey.com/ja_jp/newsroom/2026/09/ey-japan-news-release-2026-09-16",
@@ -2266,11 +2290,11 @@
    "https://www.ey.com/ja_jp/people/ey-japan",
    "https://www.ey.com/ja_jp/legal-and-privacy/hotline"
   ],
-  "checked": "2026-10-28T23:06:34.119668+00:00"
+  "checked": "2026-10-30T23:06:19.169658+00:00"
  },
  "https://dora.dev/": {
   "links": [],
-  "checked": "2026-10-28T23:06:34.270585+00:00"
+  "checked": "2026-10-30T23:06:19.337706+00:00"
  },
  "https://www.thoughtworks.com/radar": {
   "links": [
@@ -2349,11 +2373,11 @@
    "https://www.thoughtworks.com/about-us/fraud-advisory-notice",
    "https://www.thoughtworks.com/about-us/compliance"
   ],
-  "checked": "2026-10-28T23:06:34.512573+00:00"
+  "checked": "2026-10-30T23:06:19.567523+00:00"
  },
  "https://newsletter.pragmaticengineer.com/": {
   "links": [],
-  "checked": "2026-10-28T23:06:34.702810+00:00"
+  "checked": "2026-10-30T23:06:19.765861+00:00"
  },
  "https://linear.app/changelog": {
   "links": [
@@ -2382,7 +2406,7 @@
    "https://linear.app/integrations",
    "https://linear.app/docs"
   ],
-  "checked": "2026-10-28T23:06:34.988191+00:00"
+  "checked": "2026-10-30T23:06:20.052107+00:00"
  },
  "https://www.atlassian.com/blog": {
   "links": [
@@ -2401,7 +2425,7 @@
    "https://www.atlassian.com/resources",
    "https://www.atlassian.com/legal/privacy-policy"
   ],
-  "checked": "2026-10-28T23:06:35.280645+00:00"
+  "checked": "2026-10-30T23:06:20.317636+00:00"
  },
  "https://digital-strategy.ec.europa.eu/en/news": {
   "links": [
@@ -2411,22 +2435,22 @@
    "https://digital-strategy.ec.europa.eu/sk/news",
    "https://digital-strategy.ec.europa.eu/sl/news",
    "https://digital-strategy.ec.europa.eu/en/consultations",
-   "https://digital-strategy.ec.europa.eu/en/news/commission-holds-special-meeting-scientific-panel-frontier-ai-safety-and-risks",
+   "https://digital-strategy.ec.europa.eu/en/news/commission-accepts-temus-action-plan-remedy-breach-digital-services-act",
+   "https://digital-strategy.ec.europa.eu/en/news/commission-investigate-how-bookingcom-combats-scams-and-fraud-under-digital-services-act",
    "https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu",
-   "https://digital-strategy.ec.europa.eu/en/news/commission-designates-chatgpt-reddit-roblox-under-digital-services-act",
-   "https://digital-strategy.ec.europa.eu/en/news/eu-sets-out-new-strategy-arctic",
-   "https://digital-strategy.ec.europa.eu/en/news/commission-launched-raise-pledging-initiative-boost-ai-support-researchers-across-europe",
-   "https://digital-strategy.ec.europa.eu/en/news/commission-hosts-hackathon-develop-forward-looking-tools-support-farmers-future",
-   "https://digital-strategy.ec.europa.eu/en/news/3d-4ch-offers-new-funding-opportunities-hands-training-3d-cultural-heritage",
-   "https://digital-strategy.ec.europa.eu/en/news/nominees-european-digital-connectivity-awards-2026",
-   "https://digital-strategy.ec.europa.eu/en/news/digital-talent-eu-days-2026-building-skills-europes-digital-future",
-   "https://digital-strategy.ec.europa.eu/en/news/ai-adoption-more-doubles-almost-every-eu-strategic-sector",
-   "https://digital-strategy.ec.europa.eu/en/news/eurobarometer-survey-highlights-growing-use-ai-european-companies",
-   "https://digital-strategy.ec.europa.eu/en/news/commission-encourages-eu-code-week-community-explore-imagine-and-have-fun-age-ai",
-   "https://digital-strategy.ec.europa.eu/en/news/eu-and-ukraine-deepen-cooperation-cyber-security-5th-cyber-dialogue",
+   "https://digital-strategy.ec.europa.eu/en/news/eu-and-canada-team-supercomputing-and-quantum",
+   "https://digital-strategy.ec.europa.eu/en/news/first-virtual-worlds-partnership-annual-forum-take-place-valencia",
+   "https://digital-strategy.ec.europa.eu/en/news/commission-announces-winners-eosc-eu-node-framework-procurement-2026",
+   "https://digital-strategy.ec.europa.eu/en/news/eu-and-canada-partner-tackle-climate-risks-through-destination-earth",
+   "https://digital-strategy.ec.europa.eu/en/news/commission-opens-depth-investigation-proposed-changes-swedens-fixed-location-wholesale-local-access",
+   "https://digital-strategy.ec.europa.eu/en/news/commission-decisions-related-art3233-european-electronic-communications-code",
+   "https://digital-strategy.ec.europa.eu/en/news/twelfth-code-conduct-disinformation-plenary-takes-stock-election-risks-crisis-response-and",
+   "https://digital-strategy.ec.europa.eu/en/news/commission-approves-eu319-million-austrian-state-aid-first-kind-semiconductor-manufacturing",
+   "https://digital-strategy.ec.europa.eu/en/news/commission-accepts-temus-corrective-measures-terminate-breach-digital-services-act",
+   "https://digital-strategy.ec.europa.eu/en/news/commission-brings-banks-and-online-platforms-together-fight-against-online-scams",
    "https://digital-strategy.ec.europa.eu/en",
    "https://digital-strategy.ec.europa.eu/en/pages/accessibility"
   ],
-  "checked": "2026-10-21T01:06:29.112047+00:00"
+  "checked": "2026-10-30T23:06:20.664105+00:00"
  }
 }

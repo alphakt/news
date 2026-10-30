@@ -62,15 +62,16 @@
    "kind": "context-engineering",
    "status": "candidate",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-10-29",
-   "mentions": 6,
+   "last_seen": "2026-10-31",
+   "mentions": 7,
    "sources": [
     "https://zenn.dev/fukorohouse/articles/e2659fcd7c530f",
     "https://arxiv.org/abs/2610.08875",
     "https://arxiv.org/abs/2610.11647",
     "https://aws.amazon.com/jp/blogs/news/cli-3/",
     "https://arxiv.org/abs/2610.31715",
-    "https://arxiv.org/abs/2610.32578"
+    "https://arxiv.org/abs/2610.32578",
+    "https://arxiv.org/abs/2610.38521"
    ],
    "note": ".md でエージェントの振る舞いを規定する手法。効果の実証研究・ベストプラクティスを追う"
   },
@@ -196,8 +197,8 @@
    "kind": "knowledge",
    "status": "candidate",
    "first_seen": "2026-10-06",
-   "last_seen": "2026-10-22",
-   "mentions": 2,
+   "last_seen": "2026-10-31",
+   "mentions": 3,
    "sources": [
     "https://github.com/thedotmack/claude-mem",
     "https://github.com/trending"
@@ -269,10 +270,11 @@
    "kind": "model",
    "status": "candidate",
    "first_seen": "2026-10-07",
-   "last_seen": "2026-10-07",
-   "mentions": 1,
+   "last_seen": "2026-10-31",
+   "mentions": 2,
    "sources": [
-    "https://mistral.ai/news/mistral-large-4/"
+    "https://mistral.ai/news/mistral-large-4/",
+    "https://mistral.ai/news/mistral-large-4-oss/"
    ],
    "note": "1T/49B active、重みは10月末公開予定"
   },
@@ -390,11 +392,12 @@
    "kind": "agent-product",
    "status": "candidate",
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-23",
-   "mentions": 2,
+   "last_seen": "2026-10-31",
+   "mentions": 3,
    "sources": [
     "https://aws.amazon.com/jp/blogs/news/cli-3/",
-    "https://aws.amazon.com/jp/blogs/news/how-kiro-fixes-itself/"
+    "https://aws.amazon.com/jp/blogs/news/how-kiro-fixes-itself/",
+    "https://aws.amazon.com/jp/blogs/news/kiro-cli-agent-write-boundaries/"
    ],
    "note": ""
   },
@@ -1132,6 +1135,54 @@
     "https://xtech.nikkei.com/atcl/nxt/mag/nc/18/020800017/102201515/"
    ],
    "note": "2027年度にも。日経報道のみ"
+  },
+  {
+   "name": "Claude Code 拡張の改ざん版（Cursor Marketplace）",
+   "kind": "supply-chain",
+   "status": "candidate",
+   "first_seen": "2026-10-31",
+   "last_seen": "2026-10-31",
+   "mentions": 1,
+   "sources": [
+    "https://cursor.com/blog/claude-code-extension-security-notice"
+   ],
+   "note": "2.1.312/2.1.313 が約11時間配布。AI 開発ツールのサプライチェーン対策"
+  },
+  {
+   "name": "impeccable (pbakaus)",
+   "kind": "context-engineering",
+   "status": "candidate",
+   "first_seen": "2026-10-31",
+   "last_seen": "2026-10-31",
+   "mentions": 1,
+   "sources": [
+    "https://github.com/trending"
+   ],
+   "note": "AI 生成 UI の癖を決定論的ルールで検出するスキル"
+  },
+  {
+   "name": "CopilotKit/OpenBot",
+   "kind": "agent-product",
+   "status": "candidate",
+   "first_seen": "2026-10-31",
+   "last_seen": "2026-10-31",
+   "mentions": 1,
+   "sources": [
+    "https://github.com/trending"
+   ],
+   "note": "実行前確認・実行後ログ付きの AI 同僚"
+  },
+  {
+   "name": "ガバメントAI 源内 利用状況アンケート",
+   "kind": "gov-adoption",
+   "status": "candidate",
+   "first_seen": "2026-10-31",
+   "last_seen": "2026-10-31",
+   "mentions": 1,
+   "sources": [
+    "https://www.digital.go.jp/policies/genai/f9ed1b1c-b22f-4466-8e50-c1c9adf9f8eb"
+   ],
+   "note": "満足71.7%、週約1.83時間削減、31.2%はほぼ不使用"
   }
  ]
 }

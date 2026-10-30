@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年10月31日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年10月31日（土）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は動きが小さく、一次情報で日付と本文を確認できた4件に絞りました。見送ったもの：arXiv「Security Impact of Coding Agent's Memory Files」（投稿10/28）と「Cognitive Debt in the GenAI Era」（投稿10/27）は一次の日付が48時間超過、OpenAI「Model Spec 改定」「ChatGPT Pro／Business の API クレジット」「AI 学習の robots.txt シグナル」は一次ページが 403 で本文を確認できず、アクセンチュア×OpenAI のセキュリティ基盤は日経 xTECH の報道のみで一次情報を未確認。方針の全文は <a href="https://github.com/alphakt/news/blob/main/docs/briefing-design.md" target="_blank" rel="noopener">docs/briefing-design.md</a> を参照。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Cursor のマーケットプレイスで「Claude Code」拡張の改ざん版（2.1.312／2.1.313）が約11時間配布——インストールした人は SSH 鍵の有無を今すぐ確認</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Cursor は10月29日（30日更新）、同社の拡張機能マーケットプレイスで Anthropic.claude-code の悪意ある改変版が配布されていたと公表した。Cursor によれば Anthropic が作ったものではない。対象は 2.1.312 と 2.1.313 の macOS・Windows 版で、配布時間は10月29日の午前2時27分頃から午後1時35分頃（太平洋時間）までの約11時間。拡張はホストとユーザーの情報を集め、攻撃者の SSH 鍵の追加、SSH サービスの有効化、リバース SSH トンネルの確立を試み、macOS では LaunchAgent、Windows ではスケジュールタスクで永続化を図った。Cursor は、鍵の追加・永続化の設置・ホスト情報の送信は行われたとしている。攻撃者のサーバーは停止中だが、拡張を消すだけでは不十分な場合があり、該当端末は隔離して再構築も検討するよう促している。他のバージョンや公式配布経路への影響の証拠は見つかっていないという。</p>
+      <div class="howto"><b>どう対応する：</b>この期間に Cursor で拡張を入れた・更新した端末で、authorized_keys に「svc-telemetry」の鍵がないかを Cursor の手順で確認する。あれば隔離し、その端末から触れた認証情報とセッションを別の端末から更新する。</div>
+      <ul class="sowhat"><li><b>DEV</b>AI コーディング拡張は端末上でファイルとシェルに触れる高権限ソフトだ。自動更新に任せず、入手元とバージョンを固定する運用に変える理由になる。</li><li><b>PM</b>チームの全員が Cursor・VS Code 系の拡張を入れているなら、今日中に該当有無の棚卸しが必要になる。インシデント時の窓口と連絡手順を確認しておく。</li><li><b>CONSULT</b>「AI 開発ツールのサプライチェーンはどう守るのか」と聞かれたとき、実際に起きた配布経路の改ざん事例として示せる。クライアントの許可拡張リストの見直し提案につながる。</li></ul>
+      <div class="source">出典：
+        <a href="https://cursor.com/blog/claude-code-extension-security-notice" target="_blank" rel="noopener">Cursor「Security notice — malicious version of Anthropic.claude-code (2.1.313) identified in the Cursor Extension Marketplace」（2026-10-29、10-30更新）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>被害の大小より、エージェントを動かす端末に「誰が作った拡張か」を確認する習慣がなかったことが露呈した点が重い。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>AWS ブログが Kiro CLI で「書き込み境界」を作り1か月運用した記録を公開——変更範囲の事前宣言と差分照合、OS 層での強制</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">AWS Japan ブログ（10月30日）に、BrightFlow の池田健人氏が寄稿した。計画役の ChatGPT が MCP 経由で依頼し、Kiro CLI が実装して PR を作る仕組み「BRIDGE」を8月末から約1か月運用した記録で、主題は書き込み権限をどこに置くかである。境界は4つ。チャット側の AI に認証情報を持たせず、リポジトリと base ブランチをサーバー側で固定する。タスクごとに変更してよいファイルを宣言させ、実行後の差分と照合して宣言外ならタスクを失敗にする。Kiro は bubblewrap と seccomp のサンドボックスで動かし、AI の自己申告は判定に使わない。マージはレビューした PR の HEAD SHA と一致した場合だけ許す。運用では PR の約51%（317件）がマージされ、マージまでの中央値は32秒、GitHub 上のレビューは0件だった。19件は、レビュー後に main が進んだ状態で検証なしにマージされていた。</p>
+      <div class="howto"><b>どう試す：</b>エージェントへの依頼テンプレートに「変更してよいファイル一覧」を必須項目として加え、PR 作成後に差分がその一覧に収まるかを CI で照合するだけでも始められる。</div>
+      <ul class="sowhat"><li><b>DEV</b>「宣言と差分の照合」と「HEAD SHA 固定のマージ」は、既存の CI とブランチ保護で再現できる。AI の自己申告ではなく環境が止める設計に寄せられる。</li><li><b>PM</b>自動マージまで任せる場合、レビュー後に main が進む問題が実測で出た（19件）。完了条件を「PR 作成」にしない、最新 main での再検証を入れる、といった運用規程の具体例になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://aws.amazon.com/jp/blogs/news/kiro-cli-agent-write-boundaries/" target="_blank" rel="noopener">AWS Japan ブログ「AI エージェントに書き込みを任せるとき、境界をどこに置くか ― Kiro CLI で仕組みを作り、1 か月運用した記録」（2026-10-30）</a>
+      </div>
+      <div class="note">寄稿者自身が、この構成は AWS が推奨するものではないと明記している。数値は寄稿者の1か月分の運用による。</div>
+      <div class="comment"><b>コメント：</b>うまくいった数字より「未検証のままマージされた19件」を隠さず書いている点に、そのまま使える知見がある。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>デジタル庁が「ガバメントAI 源内」の初の利用状況アンケートを公表——満足71.7%、週平均約1.8時間の削減、一方で3割は「ほぼ使わない」</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">デジタル庁は、政府職員向け生成 AI 基盤「源内」の第1回利用状況アンケート結果を公表した。回答者は各府省庁の利用者6,439人。「満足」とした人は71.7%、源内を使った業務で週1時間以上の時間削減があったと答えた人は54.4%だった。庁が回答の区間の中央値などから試算した1人あたりの平均削減は週約1.83時間（約110分）。一方で、ほぼ使わない・全く使わないと答えた人が31.2%いた。課題には、回答の正確性・信頼性が足りないこと、効果的な使い方が分からないことが挙がった。庁は第2回を2027年1月ごろに実施する予定という。同庁は同日、源内に国会答弁の作成支援アプリのプロトタイプ版を追加したことも発表している。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>日本企業の担当者に「官公庁でも定着は7割弱、3割は使っていない」という公的な数字で、研修と使い方の支援を含めた導入提案を裏づけられる。</li><li><b>PM</b>時間削減の効果を自己申告のアンケートで測る場合の設計例になる。効果の算出方法（区間の中央値と保守的な値）が明記されており、社内展開の効果測定にそのまま参考にできる。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.digital.go.jp/policies/genai/f9ed1b1c-b22f-4466-8e50-c1c9adf9f8eb" target="_blank" rel="noopener">デジタル庁「ガバメントAI 源内 利用状況アンケート調査（第1回）の結果を公表しました」</a>
+      </div>
+      <div class="note">ページ本文に公開日の記載はなく、サイトの新着一覧では10月30日掲載。添付資料名から10月30日と判断した。効果は自己申告ベース。</div>
+      <div class="comment"><b>コメント：</b>満足度の高さより、使わない3割の理由が「精度」と「使い方が分からない」だった点が、民間の展開にもそのまま当てはまりそうだ。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Mistral が約1兆パラメータの「Mistral Large 4」の重みを公開——修正 MIT ライセンス、API 提供事業者は別途契約が必要</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Mistral AI は、マルチモーダルで推論と指示追従を併せ持つ混合専門家（MoE）モデル Mistral Large 4 の重みを Hugging Face で公開した（リポジトリ名は 1T-A52B で、約520億の活性パラメータと推測される。ページに明記はない）。ライセンスは修正 MIT 系の「Mistral Ecosystem Open-Weight」で、利用・改変・微調整・商用化は自由だが、モデルを API として提供する事業者は商用ライセンスが別途必要になる。同社の公表ベンチマークは Terminal-Bench 4.0 が41%、BrowseComp が84.5%。vLLM や SGLang で自前環境に展開できるほか、API は入力100万トークンあたり0.70ドル、出力2.10ドルで提供される。必要な GPU 構成はページに書かれていない。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>「機密データを外に出さず、フロンティア級の性能を自社環境で動かせるか」という相談に、選択肢が1つ増えた。ただし1兆規模の運用コストの見積もりは別に必要になる。</li><li><b>DEV</b>自前ホスティングを検討するときの候補になる。ハードウェア要件が未公表のため、まず API で挙動を確認してから判断する。</li><li><b>PM</b>ライセンス条項（MaaS は別契約）を調達・法務の確認項目に入れておく。ベンチマークは Mistral 自身の公表値で、第三者の再現は未確認。</li></ul>
+      <div class="source">出典：
+        <a href="https://mistral.ai/news/mistral-large-4-oss/" target="_blank" rel="noopener">Mistral AI「Mistral Large 4 open weights」</a>
+      </div>
+      <div class="note">ページに正確な公開日の記載はない。Hugging Face ブログの掲載（10月29日）とニュース報道から10月29日公開と判断した。</div>
+      <div class="comment"><b>コメント：</b>「重みが公開された」ことより、API 提供だけが別契約という一線が、事業としての使い方を左右する。</div>
+    </div>
+
+    <div class="section-title">📰 短信</div>
+    <div class="brief"><ul>
+      <li>GitHub Trending に thedotmack/claude-mem（セッション記録を圧縮して次回に渡す）、pbakaus/impeccable（AI 生成 UI の「らしさ」を検出するデザイン語彙）、CopilotKit/OpenBot（実行前に確認し、実行後にログを残す AI 同僚）、obra/superpowers、mattpocock/skills。出典：<a href="https://github.com/trending" target="_blank" rel="noopener">GitHub Trending</a>。各リポジトリの README は未確認。</li>
+    </ul></div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>新規：</b>「Claude Code 拡張の改ざん版（Cursor Marketplace）」「Kiro CLI の書き込み境界（BRIDGE）」「ガバメントAI 源内 利用状況アンケート」「Mistral Large 4 重み公開」「CopilotKit/OpenBot」「impeccable」を登録。</li>
+      <li><b>追跡：</b>「claude-mem」は GitHub Trending で再出現。「SOUL.md／AGENTS.md／CLAUDE.md」は記憶ファイルのセキュリティ研究（arXiv、投稿10/28で日付超過のため非収録）で再出現。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
