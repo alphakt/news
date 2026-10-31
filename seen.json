@@ -515,6 +515,31 @@
    "date": "2026-10-31",
    "key": "mistral-large-4-open-weights",
    "url": "https://mistral.ai/news/mistral-large-4-oss/"
+  },
+  {
+   "date": "2026-11-01",
+   "key": "claude-code-2.1.314-316",
+   "url": "https://code.claude.com/docs/en/changelog"
+  },
+  {
+   "date": "2026-11-01",
+   "key": "kiro-spec-hardening",
+   "url": "https://aws.amazon.com/jp/blogs/news/spec-it-safe/"
+  },
+  {
+   "date": "2026-11-01",
+   "key": "talos-volta-infostealer",
+   "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/"
+  },
+  {
+   "date": "2026-11-01",
+   "key": "gennai-kokkai-tobensupport",
+   "url": "https://www.digital.go.jp/policies/genai/b736d2d7-b03b-43f0-9932-eba7da7f8142"
+  },
+  {
+   "date": "2026-11-01",
+   "key": "infoq-ladder-missing-rungs",
+   "url": "https://www.infoq.com/presentations/ai-software-engineering-pipeline/"
   }
  ]
 }

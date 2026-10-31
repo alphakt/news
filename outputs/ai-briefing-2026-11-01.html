@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月1日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月1日（日）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は一次情報で日付と本文を確認できた5件に絞りました。見送ったもの：Claude Enterprise の新機能（収録済み）、Google「PageBreak」（一次情報の公開が9月24日）、ChatGPT 共有リンクの脆弱性調査（一次情報が10月28日）、SB Intuitions「Sarashina3.2 mini thinking」とLINEヤフーコミュニケーションズの運営モデル転換（いずれも発表が10月29日）、OpenAI の Model Spec 改定とAI学習に関する robots.txt（本文を取得できず未確認）。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Claude Code 2.1.314／2.1.316 が作業ディレクトリ外への書き込みを設定で禁止できるように——Opus 4.8 の fast mode は11月30日に削除</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Claude Code の変更履歴によると、10月30日公開の 2.1.314 で permissions.blockWritesOutsideWorkingDirectories が加わった。true にすると Write・Edit・NotebookEdit が作業ディレクトリ外のパスをどの権限モードでも拒否する。同版では、claude -p --resume で入った worktree にサンドボックスが効いていなかった問題も直った。31日公開の 2.1.316 では、Opus 4.8 の fast mode が10月30日付で非推奨となり、11月30日に削除される。削除後の fast mode 要求はエラーになり、通常の Opus 4.8 へは切り替わらない。速度を保つには Opus 5.5 へ移る必要がある。管理者設定の autoMode.allow や --restricted セッションのファイル送信に関する修正も入った。</p>
+      <div class="howto"><b>どう対応する：</b>チームの settings.json に blockWritesOutsideWorkingDirectories: true を入れて、普段の作業が止まらないか試す。あわせて fast mode を指定している設定とスクリプトを検索し、11月30日までに Opus 5.5 へ置き換える。</div>
+      <ul class="sowhat"><li><b>DEV</b>書き込み範囲の制限をプロンプトの約束ではなく設定で強制できる。AI に任せる作業の「やってはいけない範囲」を、リポジトリ共通の設定として配布できる。</li><li><b>PM</b>fast mode を指定した定時タスクや CI は、11月30日以降エラーで止まる。期限付きの変更として、使用箇所の棚卸しを今月中の作業に入れたい。</li><li><b>CONSULT</b>クライアントのエージェント導入では「どこまで書き換えられるか」が必ず聞かれる。管理者設定で書き込み範囲を強制できる具体例として、そのまま提示できる。</li></ul>
+      <div class="source">出典：
+        <a href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">Claude Code 変更履歴（2.1.314：2026-10-30／2.1.316：2026-10-31）</a>
+      </div>
+      <div class="note">変更履歴ページは非常に長く、2.1.314〜2.1.316 の範囲だけを確認した。</div>
+      <div class="comment"><b>コメント：</b>機能追加より、期限つきの廃止が静かに混ざっている点を見落とさないための記事である。</div>
+    </div>
+
+<div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Kiro のブログが「仕様のハードニング」を公開——コードを生成する前に、要件へ CWE 由来のセキュリティ制約を EARS 形式で追記する</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Kiro ブログの記事（10月30日）の日本語版が、31日付で AWS Japan ブログに載った。仕様の多くは機能だけを書き、誤用されたときの振る舞いを書かないため、機能テストは通っても脆弱性が残る。記事は、60の CWE を8領域に分けたライブラリで要件中のキーワードや正規表現から該当を検出し、足りない制約を [SECURITY: …] タグ付きで requirements.md に追記する方法を示す。認可の不備のような字句で拾えない問題は、エージェントの意味的レビューで補う。追記は差分で採否を決められる。SAST・DAST・人のレビューの代わりではなく、実験的な取り組みと明記されている。</p>
+      <div class="howto"><b>どう試す：</b>既存の requirements.md に上記4項目を書き足し、AI が出した差分をレビューするとき、仕様のどの行に対応するかを確認する。Kiro なら「harden my specs」と依頼すれば試せる。</div>
+      <ul class="sowhat"><li><b>DEV</b>「認証失敗時は拒否」「入力検証」「パラメータ化クエリ」「返却項目の最小化」を仕様に書いておけば、エージェントが従う具体的な目標になる。Kiro 以外の仕様駆動でも真似できる。</li><li><b>PM</b>セキュリティの確認をコード完成後の検査から、仕様レビューの段階へ前倒しする工程設計の例になる。仕様の追記を誰が承認するかを、役割として決めておく必要がある。</li><li><b>CONSULT</b>AI 開発の品質統制を相談されたとき、「実行時の防御」とは別の「上流の統制点」として提案できる。</li></ul>
+      <div class="source">出典：
+        <a href="https://aws.amazon.com/jp/blogs/news/spec-it-safe/" target="_blank" rel="noopener">AWS Japan ブログ「Spec it safe：セキュリティ要件で仕様をハードニングし、シフトレフトを実現する」（原文 2026-10-30、日本語版 2026-10-31）</a>
+      </div>
+      <div class="note">手順は記事の記述による。ツールの動作は未検証。</div>
+      <div class="comment"><b>コメント：</b>ツールの宣伝に見えて、実際は「仕様に書かれていないことは、エージェントが既定動作で埋める」という問題の整理が価値である。</div>
+    </div>
+
+<div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Cisco Talos が、盗んだデータを LLM に渡して被害者の「価値」を順位づけするインフォスティーラー VOLTA を報告</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Cisco Talos のブログ（10月31日）によると、VOLTA は認証情報、セッション、暗号資産ウォレット、SSH やクラウドの鍵などを盗んだあと、集めたデータを JSON にして OpenRouter 経由で LLM に送る。LLM は「フォレンジック分析官」として、資産を収益化しやすい順に並べた評価と、被害者のパスワード管理の癖を返す。既定のモデルは anthropic/claude-opus-4.6 で、拒否応答を検知すると別のモデルに切り替わる。攻撃者はモデルの拒否を想定していたと考えられる。Talos は、非開発者のプロセスによる Chrome の --headless 起動を制限すること、認証情報をハードウェアで保護された保管庫に置くことなどを勧めている。</p>
+      <ul class="sowhat"><li><b>DEV</b>開発端末は SSH 鍵やクラウドの鍵を持つため、評価で上位に置かれやすい。鍵を端末内のファイルではなくハードウェア保護の保管庫に移す理由が具体的になる。</li><li><b>PM</b>端末侵害時の初動に、トークンの失効とパスワード変更の担当・手順を入れておく。復旧の対象に「開発者の端末にある各種鍵」を含めること。</li><li><b>CONSULT</b>「攻撃側も AI を使う」という相談に、被害者の選別という実例で答えられる。防御の提案では、端末のアプリケーション制御を入口にできる。</li></ul>
+      <div class="source">出典：
+        <a href="https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/" target="_blank" rel="noopener">Cisco Talos「Appraisal by AI: Model-driven victim prioritization in the VOLTA infostealer」（2026-10-31）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>AI が攻撃を自動化するというより、攻撃者の「次に何を狙うか」の判断を肩代わりしている点が実務上の新しさである。</div>
+    </div>
+
+<div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>デジタル庁が「源内」に国会答弁の作成支援アプリ（プロトタイプ）を追加——約18万人の職員が試験利用、責任は答弁者に残す設計</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">デジタル庁は、ガバメントAI「源内」に、国会答弁案の作成を支援するアプリのプロトタイプを加えた。政府職員の約18万人が使える。情報の検索と整理、答弁案の生成、内容の検証支援を行う。開発では16省庁が公募した実務経験のある職員102名が評価者として画面や機能に意見を出し、一部は改修に反映された。第222回臨時国会で試験的に提供し、有効性・操作性・出力品質を実業務で検証して、来年1月の通常国会で本格提供する計画である。AI の出力はそのまま使わず、根拠資料との照合を職員が行い、答弁の責任は答弁者が負うと明記されている。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>「AI の出力に誰が責任を持つか」という問いに、官公庁が公式に書いた運用原則を示せる。社内文書の起案支援を提案する際の根拠になる。</li><li><b>PM</b>現場の職員を評価者に入れて試験運用し、結果を見て本格提供する進め方は、そのまま導入計画の型として使える。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.digital.go.jp/policies/genai/b736d2d7-b03b-43f0-9932-eba7da7f8142" target="_blank" rel="noopener">デジタル庁「ガバメントAI 源内で「国会答弁作成支援AIアプリ」のプロトタイプ版を提供開始します」</a>
+      </div>
+      <div class="note">ページ本文に公開日の記載はなく、サイトの新着一覧では10月30日掲載。添付資料名から10月30日と判断した。</div>
+      <div class="comment"><b>コメント：</b>便利さの宣伝より、「支援ツールであり判断の代替ではない」を先に書いた点が、日本企業への提案でも使える型である。</div>
+    </div>
+
+<div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>InfoQ 公開の講演「はしごの段が抜けている」——AI が若手の下積みを代替すると、レビューと育成が先に詰まる</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">InfoQ が10月30日付で公開した講演で、登壇者の Alasdair Allan 氏は AI がコーディングを担うことで若手が経験を積む「はしご」が欠けると論じる。監督に必要な力が AI の利用で衰える「監督のパラドックス」を挙げ、METR の実験では経験豊富な開発者が AI 利用で19%遅くなったのに、本人は約20%速くなったと感じていたと紹介した。Faros AI の約1万人の調査として、PR のマージが98%増え、レビュー時間が91%増えた数字も示す。提案は、速度より理解度を測る、基礎作業を意図的に残す、レビュー担当を確保する、など。登壇者自身が「明確な答えはない」と述べている。</p>
+      <ul class="sowhat"><li><b>PM</b>AI 導入後のボトルネックはコードを書く側ではなくレビュー側に移る。見積もりと要員計画にレビューの工数を別枠で入れる根拠になる。</li><li><b>DEV</b>AI の出力を理解したうえで使う習慣が、将来のレビュー力を左右する。AI なしでデバッグする機会を意図して残す案は、チームですぐ試せる。</li><li><b>CONSULT</b>クライアントの「若手の育て方」の相談に、論点の一覧として使える。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.infoq.com/presentations/ai-software-engineering-pipeline/" target="_blank" rel="noopener">InfoQ「The Ladder Is Missing Rungs: Engineering Progression When AI Ate the Middle」（2026-10-30）</a>
+      </div>
+      <div class="note">数値は講演内の提示による。METR・Anthropic・Faros AI などの原典は確認していない。</div>
+      <div class="comment"><b>コメント：</b>数字は講演での提示で、原典は未確認。結論より、レビューの工数を別に見積もるという論点が使える。</div>
+    </div>
+
+    <div class="section-title">📰 短信</div>
+    <div class="brief"><ul>
+      <li>GitHub Trending に Orkas-AI/Orkas（指揮役のエージェントが専門エージェントや Claude Code を束ねるローカル型デスクトップアプリ）、claude-mem、mattpocock/skills、obra/superpowers。出典：<a href="https://github.com/trending" target="_blank" rel="noopener">GitHub Trending</a></li>
+    </ul></div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>新規：</b>「Claude Code の書き込み範囲強制（blockWritesOutsideWorkingDirectories）」「仕様のハードニング（Kiro）」「VOLTA（LLM による被害者評価）」「源内 答弁支援AI」「AI が奪う若手の下積み（監督のパラドックス）」「Orkas」を登録。</li>
+      <li><b>追跡：</b>「claude-mem」は GitHub Trending で再出現（連続）。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
