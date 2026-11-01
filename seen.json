@@ -540,6 +540,31 @@
    "date": "2026-11-01",
    "key": "infoq-ladder-missing-rungs",
    "url": "https://www.infoq.com/presentations/ai-software-engineering-pipeline/"
+  },
+  {
+   "date": "2026-11-02",
+   "key": "claude-ultra-rename",
+   "url": "https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan"
+  },
+  {
+   "date": "2026-11-02",
+   "key": "copilot-fusion-ga",
+   "url": "https://docs.github.com/ja/copilot/concepts/models/copilot-fusion"
+  },
+  {
+   "date": "2026-11-02",
+   "key": "hono-closes-external-prs",
+   "url": "https://slides.yusu.ke/foss4g-2026"
+  },
+  {
+   "date": "2026-11-02",
+   "key": "robots-ai-training-token",
+   "url": "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/"
+  },
+  {
+   "date": "2026-11-02",
+   "key": "zenn-pr-path-review-count",
+   "url": "https://zenn.dev/tasukina/articles/claude-code-pr-count-by-paths"
   }
  ]
 }

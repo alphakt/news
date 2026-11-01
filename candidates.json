@@ -197,8 +197,8 @@
    "kind": "knowledge",
    "status": "candidate",
    "first_seen": "2026-10-06",
-   "last_seen": "2026-11-01",
-   "mentions": 4,
+   "last_seen": "2026-11-02",
+   "mentions": 5,
    "sources": [
     "https://github.com/thedotmack/claude-mem",
     "https://github.com/trending"
@@ -1255,6 +1255,42 @@
     "https://github.com/trending"
    ],
    "note": "指揮役エージェントが専門エージェントを束ねるローカル型アプリ"
+  },
+  {
+   "name": "Copilot Fusion",
+   "kind": "agent-product",
+   "status": "candidate",
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "mentions": 1,
+   "sources": [
+    "https://docs.github.com/ja/copilot/concepts/models/copilot-fusion"
+   ],
+   "note": "タスクごとにモデルと実行パターン（Single/Cascade/Critique）を選ぶルーター。対照: 手動モデル選択、他社 router"
+  },
+  {
+   "name": "AI学習可否の共通 robots.txt トークン",
+   "kind": "policy-standard",
+   "status": "candidate",
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "mentions": 1,
+   "sources": [
+    "https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/"
+   ],
+   "note": "__usage_ai-training。IETF個人ドラフト、OpenAI/Google/Microsoft 対応表明"
+  },
+  {
+   "name": "外部PR受付停止（Hono）",
+   "kind": "oss-practice",
+   "status": "candidate",
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "mentions": 1,
+   "sources": [
+    "https://slides.yusu.ke/foss4g-2026"
+   ],
+   "note": "AI でPR急増→collaborator のみ。対照: AI PR 禁止方針、issue+fork 方式"
   }
  ]
 }

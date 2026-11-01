@@ -31,7 +31,7 @@
    "https://code.claude.com/docs/en/output-styles",
    "https://code.claude.com/docs/en/hooks"
   ],
-  "checked": "2026-10-31T23:06:36.831281+00:00"
+  "checked": "2026-11-01T23:06:11.931673+00:00"
  },
  "https://www.anthropic.com/engineering": {
   "links": [
@@ -63,7 +63,7 @@
    "https://www.anthropic.com/research/team/interpretability",
    "https://www.anthropic.com/research/team/societal-impacts"
   ],
-  "checked": "2026-10-31T23:06:37.068404+00:00"
+  "checked": "2026-11-01T23:06:12.160859+00:00"
  },
  "https://docs.anthropic.com/en/release-notes/overview": {
   "links": [
@@ -186,7 +186,7 @@
    "https://docs.anthropic.com/docs/en/build-with-claude/token-counting",
    "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/parallel-tool-use"
   ],
-  "checked": "2026-10-31T23:06:37.925168+00:00"
+  "checked": "2026-11-01T23:06:12.865376+00:00"
  },
  "https://developers.openai.com/changelog": {
   "links": [
@@ -598,7 +598,7 @@
    "https://developers.openai.com/api/docs/models/dall-e-3",
    "https://developers.openai.com/api/docs/models/text-moderation-latest"
   ],
-  "checked": "2026-10-31T23:06:38.360944+00:00"
+  "checked": "2026-11-01T23:06:13.402709+00:00"
  },
  "https://cursor.com/changelog": {
   "links": [
@@ -627,7 +627,7 @@
    "https://cursor.com/en-US/cookie-policy",
    "https://cursor.com/en-US/security"
   ],
-  "checked": "2026-10-31T23:06:38.594551+00:00"
+  "checked": "2026-11-01T23:06:13.602824+00:00"
  },
  "https://ai.google.dev/gemini-api/docs/changelog": {
   "links": [
@@ -765,7 +765,7 @@
    "https://ai.google.dev/gemini-api/docs/system-instructions",
    "https://ai.google.dev/gemini-api/docs/api-versions"
   ],
-  "checked": "2026-10-31T23:06:38.956038+00:00"
+  "checked": "2026-11-01T23:06:14.516354+00:00"
  },
  "https://www.ipa.go.jp/digital/ai/": {
   "links": [
@@ -976,7 +976,7 @@
    "https://www.ipa.go.jp/siteinfo.html",
    "https://www.ipa.go.jp/accessibility.html"
   ],
-  "checked": "2026-10-31T23:06:39.286982+00:00"
+  "checked": "2026-11-01T23:06:14.867907+00:00"
  },
  "https://www.ppc.go.jp/news/": {
   "links": [
@@ -1066,89 +1066,16 @@
    "https://www.ppc.go.jp/application/kisei_kaikaku/",
    "https://www.ppc.go.jp/aboutus/commission/access/ppc_relocation?ref=topnews"
   ],
-  "checked": "2026-10-31T23:06:40.571968+00:00"
+  "checked": "2026-11-01T23:06:16.454030+00:00"
  },
  "https://www.soumu.go.jp/menu_news/s-news/": {
   "links": [
    "https://www.soumu.go.jp/english/index.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kanbo01_02001184.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01zeimu02_02000477.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001301.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01gyosei01_02000380.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban06_02000143.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01gyosei14_02000129.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001300.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01gyosei08_02000335.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000810.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000809.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01ryutsu14_02000181.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01gyosei17_02000276.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01gyosei07_02000185.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01toukei08_01000356.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01toukei04_01000307.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban07_02000134.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban07_02000133.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01cyber01_02000001_00309.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001290.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01gyosei01_02000379.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001287.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01toukei05_01000348.html",
-   "https://www.soumu.go.jp/menu_news/s-news/02kiban14_04001374.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01cyber01_02000001_00308.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban03_02001027.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban05_02000409.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01gyosei05_02000256.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01ryutsu04_02000270.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01tsushin03_02000475.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban09_02000604.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban09_02000603.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01ryutsu02_02000497.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01toukei08_01000354.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01toukei05_01000347.html",
-   "https://www.soumu.go.jp/menu_news/s-news/hyouka_261022000193158.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01ryutsu14_02000180.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01tsushin06_02000357.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01zaisei05_261021.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01gyosei18_02000211.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000807.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01tsushin08_02000210.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01tsushin09_02000195.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01toukei09_01000108.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01ryutsu14_02000179.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01gyosei01_02000378.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban04_02000284.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban18_01000296.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban04_02000286.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01ryutsu06_02000489.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01toukei09_01000107.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001260.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001275.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban04_02000285.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban13_02000138.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban13_02000137.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001274.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban14_02000806.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban07_02000130.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban07_02000129.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01gyosei12_02000168.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01toukei07_01000294.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01gyosei17_02000274.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01kiban16_02000392.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01zaisei02_02000423.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01zaisei02_02000378_00032.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01zaisei02_02000378_00029.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01gyosei01_02000377.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01tsushin06_02000353.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001269.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01cyber01_02000001_00305.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01toukei04_01000305.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01toukei08_01000353.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01tsushin03_02000473.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01gyosei08_02000332.html",
-   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001266.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001279.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01kougai01_20261101.html",
    "https://www.soumu.go.jp/menu_kyotsuu/policy/shuwa-link.html"
   ],
-  "checked": "2026-10-31T23:06:41.486087+00:00"
+  "checked": "2026-11-01T23:06:17.539035+00:00"
  },
  "https://www.anthropic.com/customers": {
   "links": [
@@ -1211,7 +1138,7 @@
    "https://www.anthropic.com/legal/consumer-terms",
    "https://www.anthropic.com/legal/aup"
   ],
-  "checked": "2026-10-31T23:06:42.201578+00:00"
+  "checked": "2026-11-01T23:06:18.222751+00:00"
  },
  "https://cloud.google.com/customers": {
   "links": [
@@ -1476,7 +1403,7 @@
    "https://cloud.google.com/product-terms",
    "https://cloud.google.com/sustainability"
   ],
-  "checked": "2026-10-31T23:06:42.731082+00:00"
+  "checked": "2026-11-01T23:06:18.744726+00:00"
  },
  "https://www.microsoft.com/en-us/customers/": {
   "links": [
@@ -1549,7 +1476,7 @@
    "https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_Footer_Sustainability",
    "https://www.microsoft.com/customers/locale"
   ],
-  "checked": "2026-10-31T23:06:43.315371+00:00"
+  "checked": "2026-11-01T23:06:19.158923+00:00"
  },
  "https://www.nri.com/jp/news": {
   "links": [
@@ -1563,7 +1490,7 @@
    "https://www.nri.com/jp/privacy.html",
    "https://www.nri.com/jp/security_declare.html"
   ],
-  "checked": "2026-10-31T23:06:44.077904+00:00"
+  "checked": "2026-11-01T23:06:20.015428+00:00"
  },
  "https://www.deloitte.com/jp/ja/about/press-room.html": {
   "links": [
@@ -1649,7 +1576,7 @@
    "https://www.deloitte.com/jp/ja/legal/smap.html?icid=bn_smap",
    "https://www.deloitte.com/jp/ja/about/governance/network-brand-alliances/about-the-network.html"
   ],
-  "checked": "2026-10-31T23:06:44.378451+00:00"
+  "checked": "2026-11-01T23:06:20.281629+00:00"
  },
  "https://www.kpmg.com/jp/ja/home/media/press-releases.html": {
   "links": [
@@ -2184,7 +2111,7 @@
    "https://www.kpmg.com/jp/ja/about.html",
    "https://www.kpmg.com/jp/ja/media.html"
   ],
-  "checked": "2026-10-31T23:06:45.602345+00:00"
+  "checked": "2026-11-01T23:06:21.242232+00:00"
  },
  "https://www.ey.com/ja_jp/newsroom": {
   "links": [
@@ -2290,11 +2217,11 @@
    "https://www.ey.com/ja_jp/people/ey-japan",
    "https://www.ey.com/ja_jp/legal-and-privacy/hotline"
   ],
-  "checked": "2026-10-31T23:06:45.981980+00:00"
+  "checked": "2026-11-01T23:06:21.576889+00:00"
  },
  "https://dora.dev/": {
   "links": [],
-  "checked": "2026-10-31T23:06:46.153605+00:00"
+  "checked": "2026-11-01T23:06:21.773180+00:00"
  },
  "https://www.thoughtworks.com/radar": {
   "links": [
@@ -2373,11 +2300,11 @@
    "https://www.thoughtworks.com/about-us/fraud-advisory-notice",
    "https://www.thoughtworks.com/about-us/compliance"
   ],
-  "checked": "2026-10-31T23:06:46.432254+00:00"
+  "checked": "2026-11-01T23:06:21.955979+00:00"
  },
  "https://newsletter.pragmaticengineer.com/": {
   "links": [],
-  "checked": "2026-10-31T23:06:46.618364+00:00"
+  "checked": "2026-11-01T23:06:22.139018+00:00"
  },
  "https://linear.app/changelog": {
   "links": [
@@ -2406,7 +2333,7 @@
    "https://linear.app/integrations",
    "https://linear.app/docs"
   ],
-  "checked": "2026-10-31T23:06:46.939855+00:00"
+  "checked": "2026-11-01T23:06:22.420148+00:00"
  },
  "https://www.atlassian.com/blog": {
   "links": [
@@ -2425,7 +2352,7 @@
    "https://www.atlassian.com/resources",
    "https://www.atlassian.com/legal/privacy-policy"
   ],
-  "checked": "2026-10-31T23:06:47.179877+00:00"
+  "checked": "2026-11-01T23:06:22.679728+00:00"
  },
  "https://digital-strategy.ec.europa.eu/en/news": {
   "links": [
@@ -2451,6 +2378,6 @@
    "https://digital-strategy.ec.europa.eu/en",
    "https://digital-strategy.ec.europa.eu/en/pages/accessibility"
   ],
-  "checked": "2026-10-31T23:06:47.505958+00:00"
+  "checked": "2026-11-01T23:06:23.131863+00:00"
  }
 }

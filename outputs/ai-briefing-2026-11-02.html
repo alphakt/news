@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月2日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月2日（月）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は一次情報で日付と本文を確認できた5件に絞りました。見送ったもの：ChatGPT 共有リンク脆弱性の調査（一次情報が10月28日）、OpenAI の利用上限統合ヘルプ（取得不可）、資金調達・株価関連の報道、Claude Enterprise 新機能（収録済み）。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Claude の個人向け有料プランが「Max」「Ultra」に改称——Ultra（月200ドル）は検証済みアカウントで5時間ごとの利用制限が撤廃</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Anthropic は10月30日（米国時間）、月100ドルの「Max 5x」を「Max」に、月200ドルの「Max 20x」を「Ultra」に改称した。価格は据え置きで、既存の契約者は自動で移行する。ヘルプページによれば、Ultra は Pro の10倍の利用量を週単位で提供し、全モデル共通の週間上限と Fable 用の別の週間上限がある。検証済みのアカウントでは5時間ごとの上限（Current session）がなくなる。検証は口座と決済の履歴で自動的に行われ、未検証のアカウントには一時的な5時間上限が残るが、自動で外れる。確認方法は Settings > Usage を開き、「Current session」のバーが出なければ検証済みである。旧「20x」は5時間枠の倍率だったため、新しい「10x（週単位）」と単純には比べられない。</p>
+      <div class="howto"><b>どう試す：</b>Claude を個人契約で使っているメンバーは Settings > Usage を開き、Current session バーの有無で5時間上限が外れたか確認する。チームの利用計画書にある「Max 20x」の表記は「Ultra」に置き換える。</div>
+      <ul class="sowhat"><li><b>CONSULT</b>クライアントから「Claude の上位プランは何が変わったか」と聞かれたとき、価格は同じで、5時間制限の撤廃と週単位の倍率表記に変わった点を正確に説明できる。</li><li><b>PM</b>長時間のエージェント作業が5時間枠で止まる前提で組んだ工数・運用ルールを見直せる。週間上限は残るため、上限到達の管理は引き続き必要である。</li><li><b>DEV</b>Claude Code を長時間回す人にとって、セッション途中の制限待ちが減る可能性がある。実際の効き方は検証状況に依存する。</li></ul>
+      <div class="source">出典：
+        <a href="https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan" target="_blank" rel="noopener">Claude ヘルプ「What is the Ultra plan?」（更新：今週、10月30日発表）</a>
+      </div>
+      <div class="note">ヘルプページに正確な更新日の記載はなく、発表日は ITmedia NEWS（2026-11-02）の記述による。</div>
+      <div class="comment"><b>コメント：</b>名称変更より、倍率の基準が5時間枠から週枠へ移った点が、過去の資料との比較で混乱を招きやすい。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>GitHub Copilot Fusion が一般提供——タスクごとにモデルと実行パターン（Single／Cascade／Critique）を自動選択、有料プランは11月30日までモデル費用30%割引</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">GitHub のドキュメントによると、Copilot Fusion はタスクごとにモデルと実行パターンを選ぶ実行時ルーターである。Single は1モデル、Cascade は効率型モデルの草案を判定役が受理するかより高性能なモデルへ回し、Critique は草案を複数モデルが並列でレビューして元のモデルが直す。作業レベルは Standard（全プラン）、High（Pro+ 以上）、Max（Max／Business／Enterprise）。Fusion 自体に追加料金はなく、使ったモデルごとの標準料金がかかる。High と Max は複数モデルを使うため消費が増えうる。有料プランでは2026年11月30日までモデル費用が30%割引になる。VS Code、Copilot CLI、GitHub Copilot app、JetBrains で使え、管理者ポリシーやデータ常駐の制限でモデルが使えない場合はモデルピッカーに出ない。ローカルモデルの自動ルーティングは公開プレビューである。</p>
+      <div class="howto"><b>どう試す：</b>VS Code のモデルピッカーで特定のモデルではなく「Copilot Fusion」を選び、日常のタスクを Standard で数日流す。応答下の作業レベル名にカーソルを合わせると使われたモデルを確認できる。</div>
+      <ul class="sowhat"><li><b>DEV</b>モデル選びの手間を減らせる。Critique は別系統のモデルが自分の草案を見直すため、AI 生成コードのレビュー前段として試す価値がある。</li><li><b>PM</b>料金は使用モデル単位の従量で、High と Max は消費が増えうる。30%割引の期間（11月30日まで）に自チームの消費量を測り、割引終了後の費用を見積もっておく。</li><li><b>CONSULT</b>「どのモデルを使うべきか」という相談に、単一モデルの選定ではなくルーティングで運用するという選択肢を提示できる。管理者ポリシーによる制限も説明材料になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://docs.github.com/ja/copilot/concepts/models/copilot-fusion" target="_blank" rel="noopener">GitHub Docs「Copilot Fusion」</a>
+        <a href="https://www.publickey1.jp/blog/26/githubcopilot_fusionaigithub_universe_2026.html" target="_blank" rel="noopener">Publickey（2026-11-02、GitHub Universe 2026 の報道）</a>
+      </div>
+      <div class="note">ドキュメントに公開日の記載はなく、日付は Publickey の報道（11月2日）と GitHub Universe（10月28〜29日）による。</div>
+      <div class="comment"><b>コメント：</b>割引期限が付いているため、効果の判断を急がされる構造である。割引後の単価で測り直す前提で試したい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Hono が10月5日から外部 PR の受付を停止——AI で PR 数が82件から345件に増え、「コードの希少性が消えた」と説明</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Hono の作者 Yusuke Wada 氏が11月1日の FOSS4G 分科会シンポジウムで、Hono が10月5日から外部コントリビューターの PR を受け付けず、PR を出せるのは collaborator のみにした理由を説明した。7〜9月の PR 数は2025年の82件から2026年は345件に増え、朝に十数件が届く日や、issue を立てた直後に修正 PR が付く例があった。氏は「AI スロップ」が問題なのではなく、モデルの改善でコード品質は上がったと述べる。問題は、直す必要のない箇所を探して履歴書や景品のために出す PR が増えたことと、コードを誰でも書けるため、メンテナ自身が書けば足りることだという。代替として、issue での実需の報告、変更のレビュー依頼、issue に fork ブランチを貼る方法（メンテナが PR 化し、貢献者は共同作者として残す）を挙げている。</p>
+      <ul class="sowhat"><li><b>PM</b>AI でコードの供給が増えた結果、レビューする側の時間が最大のボトルネックになる。OSS を依存先にする計画では、メンテナの受付方針の変更を依存リスクとして管理できる。</li><li><b>DEV</b>OSS に貢献する際、PR を出す前に issue で実需を書く手順が必要になる場合がある。社内の自社 OSS・共通ライブラリでも、同じ受付ルールを検討できる。</li><li><b>CONSULT</b>AI 導入後に「コードは増えたがレビューが追いつかない」と訴えるクライアントに、受付を絞る選択肢を実例として示せる。</li></ul>
+      <div class="source">出典：
+        <a href="https://slides.yusu.ke/foss4g-2026" target="_blank" rel="noopener">Yusuke Wada「HonoがPRを閉じた理由」（FOSS4G 2026、2026-11-01）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>「AI が悪い」ではなく「コードを書くコストが下がった」ことが原因だという整理が、他のプロジェクトにも当てはまる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>OpenAI・Google・Microsoft が robots.txt の共通トークンで AI 学習の可否を示す仕組みに対応表明——Microsoft は2027年2月1日から参照、Anthropic も実装中</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">ITmedia の報道によると、OpenAI、Google、Microsoft は10月30日（米国時間）、Web サイト運営者が AI 学習への利用可否を一括で示せる共通の仕組みに対応すると発表した。提案は Anthropic の担当者による IETF の個人 Internet-Draft で、まだ標準ではない。User-Agent の下に共通トークン「__usage_ai-training」を置き、Disallow で拒否、Allow で許可を示す。クロール自体の制御は従来のクローラー別ルールのままである。Google は、共通シグナルで拒否し Google-Extended を明示していない場合は、Google-Extended も拒否とみなす。Microsoft は2027年2月1日から読み取りを開始し、従来の NoArchive／NoCache は3月1日までの移行を求める。OpenAI は数か月以内、Google は2027年を目標とし、Anthropic は時期を示していない。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>自社サイトやクライアントの公開コンテンツの AI 学習利用に関する方針を、robots.txt で一括して示せるようになる。2027年の対応開始前に、方針を決める作業を提案できる。</li><li><b>PM</b>Web サイトを運用する案件では、robots.txt の設定変更と、Microsoft の移行期限（2027年3月1日）をスケジュールに入れる必要がある。</li></ul>
+      <div class="source">出典：
+        <a href="https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/" target="_blank" rel="noopener">IETF Internet-Draft「Machine-Readable Training Preference Signal」</a>
+        <a href="https://www.itmedia.co.jp/news/article/2611/01/2000002776/" target="_blank" rel="noopener">ITmedia NEWS（2026-11-01、各社の発表への案内を含む）</a>
+      </div>
+      <div class="note">IETF ドラフトの本文は未取得で、仕様の内容は ITmedia の記述による。各社の発表日は10月30日（米国時間）。</div>
+      <div class="comment"><b>コメント：</b>標準化前の個人ドラフトに3社が先に乗った点が実質的な動きで、導入時期は会社ごとにずれる。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>Zenn「AI に作らせた PR のうち、人のレビューを省けたかもしれないものを、過去の PR のファイル名で数える」——自動マージ可否をパスの規則で仕分ける</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Zenn の記事（11月2日）が、Claude Code に PR を作らせている会社で、人のレビューを省けた可能性のある PR をどう数えるかを示す。`gh pr list --json files` で変更ファイル名を集め、2つの正規表現リストで仕分ける。一つはレビューを省きうるファイル（予測コード、そのテスト、バージョンファイル）、もう一つは触れさせないファイル（CI、デプロイ設定、課金、Dockerfile、マイグレーション）である。各 PR は「never（1つでも該当）」「auto（全ファイルが auto）」「review（それ以外）」に分かれる。10月15〜18日は4件中1件（約25%）が auto だった。あくまで「省けたかもしれない」件数で、安全の検証ではなく、CI 状態やブランチは見ていないと著者自身が断っている。</p>
+      <ul class="sowhat"><li><b>PM</b>AI の PR のレビュー工数を、過去の変更ファイルから見積もる最小手順になる。レビュー必須の領域を先に決める議論の材料にできる。</li><li><b>DEV</b>「never」リストに CI やマイグレーションを置く発想は、リポジトリごとの自動マージ範囲の設計にそのまま使える。</li></ul>
+      <div class="source">出典：
+        <a href="https://zenn.dev/tasukina/articles/claude-code-pr-count-by-paths" target="_blank" rel="noopener">Zenn「AI に作らせた PR のうち、人のレビューを省けたかもしれないものを、過去の PR のファイル名で数える」（2026-11-02）</a>
+      </div>
+      <div class="note">1社の個人記録で、数値は小標本。コマンドは未検証。</div>
+      <div class="comment"><b>コメント：</b>数字より、「ファイル名の規則でレビューの要否を先に決める」という切り口が持ち帰れる。</div>
+    </div>
+
+    <div class="section-title">📰 短信</div>
+    <div class="brief"><ul>
+      <li>GitHub Trending に claude-mem（セッション記録を圧縮して次回に戻す）、lightpanda-io/browser（AI エージェント向けヘッドレスブラウザ）、Donchitos/Claude-Code-Game-Studios。出典：<a href="https://github.com/trending" target="_blank" rel="noopener">GitHub Trending</a></li>
+    </ul></div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>新規：</b>「Copilot Fusion（モデルルーティング）」「AI 学習可否の共通 robots.txt トークン」「外部 PR の受付停止（Hono）」「PR のパス規則による仕分け」。</li>
+      <li><b>追跡：</b>「claude-mem」は GitHub Trending で再出現（連続）。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
