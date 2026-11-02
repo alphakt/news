@@ -565,6 +565,31 @@
    "date": "2026-11-02",
    "key": "zenn-pr-path-review-count",
    "url": "https://zenn.dev/tasukina/articles/claude-code-pr-count-by-paths"
+  },
+  {
+   "date": "2026-11-03",
+   "key": "claude-code-block-writes-bash-windows",
+   "url": "https://zenn.dev/tamao825/articles/claude-code-block-writes-outside-bash-powershell"
+  },
+  {
+   "date": "2026-11-03",
+   "key": "chatgpt-chat-work-merge-codex-limits",
+   "url": "https://www.itmedia.co.jp/aiplus/article/2611/02/2000002781/"
+  },
+  {
+   "date": "2026-11-03",
+   "key": "nissay-it-ai-dlc-v2",
+   "url": "https://aws.amazon.com/jp/blogs/news/ai-dlc-unicorn-gym-nissay-it-202611/"
+  },
+  {
+   "date": "2026-11-03",
+   "key": "zenn-design-review-first",
+   "url": "https://zenn.dev/tanashun/articles/review-before-ai-writes"
+  },
+  {
+   "date": "2026-11-03",
+   "key": "uber-mcp-gateway-seen",
+   "url": "https://www.uber.com/us/en/blog/designing-mcp-gateway/"
   }
  ]
 }

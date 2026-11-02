@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月3日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月3日（火）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は一次情報で日付と本文を確認できた4件に絞りました。見送ったもの：Cursor マーケットプレイスの Claude Code 改ざん版（一次情報が10月29日〜30日で48時間超。収録済み）、Uber の MCP ゲートウェイ（InfoQ は11月2日だが一次の Uber ブログは10月1日）、資金調達・買収・株価関連の報道。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Claude Code の「作業ディレクトリ外への書き込み禁止」設定は Bash・PowerShell に効かない——Windows での実測と、PreToolUse hook による止め方</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Zenn の実測記事（11月2日）によると、Claude Code 2.1.314 で入った <code>permissions.blockWritesOutsideWorkingDirectories</code> を true にしても、対象は Write・Edit・NotebookEdit だけだった。Windows 11（Git for Windows、PowerShell 5.1）の Claude Code 2.1.316 では、Bash の <code>echo &gt;</code>・<code>cp</code> や PowerShell の <code>Set-Content</code> で作業フォルダの外にファイルが作られた。bypassPermissions でも通常モードでも同じ結果である。Write は絶対パス、<code>..</code>、8.3 短い名前、ジャンクションなど7通りの書き方をすべて拒否した。一方、フォルダ内のパスを全大文字や短い名前で書くと誤って拒否される例もあった。旧版の 2.1.303 ではこの設定が警告なしに無視された。記事は、Bash|PowerShell に PreToolUse hook を掛け、コマンド中の外向きパスを終了コード 2 で止める方法を示す。ただし <code>cd</code> 後の相対パスや変数、<code>rm -rf ~</code> は止められず、ネイティブ Windows では sandbox が効かない（公式文書の記述）ため、確実に防ぐなら WSL2 を勧めている。各ケース1回の実測である。</p>
+      <div class="howto"><b>どう試す：</b>Windows で Claude Code を使うメンバーは <code>claude --version</code> が 2.1.314 以上か確認し、設定を入れたうえで、捨てても良いフォルダで Bash から外への <code>echo &gt; ../x.txt</code> を試して実際に止まるか確かめる。止まらなければ記事の PreToolUse hook を導入する。</div>
+      <ul class="sowhat"><li><b>DEV</b>「設定を入れたから安全」と思わず、Bash 経由の書き込みは別の手段（hook、WSL2、sandbox）で塞ぐ必要がある。</li><li><b>PM</b>エージェントの権限統制を「設定済み」で報告させるだけでは不十分で、実際に止まるかの動作確認を受け入れ基準に入れられる。</li><li><b>CONSULT</b>クライアントの Windows 端末でエージェントを展開する案件では、権限設定の効く範囲と OS 差を説明し、WSL2 を含む構成を提案できる。</li></ul>
+      <div class="source">出典：
+        <a href="https://zenn.dev/tamao825/articles/claude-code-block-writes-outside-bash-powershell" target="_blank" rel="noopener">Zenn「Claude Code の作業ディレクトリ外の書き込み禁止は Bash・PowerShell に効かない：Windows の実測と止め方」（2026-11-02）</a>
+      </div>
+      <div class="note">個人による実測で、各ケース1回。公式文書（permissions／sandboxing）との関係は記事の記述による。</div>
+      <div class="comment"><b>コメント：</b>11月1日号の「書き込み範囲の強制」を使う前に、効く範囲の限界を確認しておくための必読の補足である。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>OpenAI が ChatGPT の「Chat」と「Work」を統合へ——ChatGPT と Codex の利用量制限は12月に共通化</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span></div>
+      <p class="detail">ITmedia と TechCrunch の報道によると、OpenAI は11月1日（現地時間）、ChatGPT Work のエージェント機能を ChatGPT に統合する方針を利用者へのメールで通知した。統合は2026年中に行い、まず一部の利用者に提供して意見を集めてから広げる。Codex は ChatGPT のデスクトップアプリで別の体験として残る。また、ChatGPT と Codex は同じ利用枠（トークンの配分）から消費する形になり、共通化は12月の予定とされる。OpenAI は大半の利用者に影響はないとする一方、利用内容やモデルによっては利用枠のリセットを待つ頻度が増える人も出るとしている。即時回答の「Instant」は利用枠を消費せず、残量とリセット時刻は「設定」の「使用状況」で確認できる。OpenAI の公式ヘルプページは本日の環境で取得できず、以上は報道の記述による。</p>
+      <ul class="sowhat"><li><b>PM</b>Codex を長時間のコーディングに使い、同じアカウントで ChatGPT も業務利用しているチームでは、12月以降は両者の消費が合算されて上限に当たりやすくなる可能性がある。繁忙期の前に消費量を測っておける。</li><li><b>CONSULT</b>クライアントから「ChatGPT と Codex の契約はどう変わるか」と聞かれたとき、統合の方向と利用枠の共通化（12月予定）を、時期の未確定部分を含めて説明できる。</li><li><b>DEV</b>Codex を使う開発者は、チャットでの調べものが Codex の利用枠を減らす構成になる点を意識して使い分ける。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.itmedia.co.jp/aiplus/article/2611/02/2000002781/" target="_blank" rel="noopener">ITmedia AI＋（2026-11-02）</a>
+        <a href="https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/" target="_blank" rel="noopener">TechCrunch（2026-11-02）</a>
+      </div>
+      <div class="note">OpenAI の一次情報（利用者へのメール、ヘルプ記事）は取得できず、両報道の記述による。ITmedia が参照するヘルプは help.openai.com の「ChatGPT と Codex の利用量制限」。</div>
+      <div class="comment"><b>コメント：</b>製品の統合そのものより、利用枠の共通化が実際のコスト管理に効く点に注目したい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>ニッセイ情報テクノロジーが個人保険の基幹系保守で AI-DLC v2 を適用——3日間で7つの作業単位のうち2つを完了、ボトルネックは「人の確認待ち」へ</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">AWS ジャパンのブログ（11月2日）が、ニッセイ情報テクノロジーの事例を紹介した。AWS の AI 駆動開発の方法論「AI-DLC」の v2 と、Claude Agent SDK・自作の MCP サーバー・Amazon Bedrock（国内リージョン）の Claude を組み合わせた内製ツールを使い、個人保険基幹系の法人向け通知帳票の改修に取り組んだ。2026年9月14〜16日のワークショップには54名・7チームが参加し、3日間で7つの Intent のうち2つを完了した。通常は6名・約6か月の案件を、4名・約3か月で終えられる見込みと述べ、ウォーターフォールと並行して比較検証中である。承認はエンジンが管理するゲートで、人の応答が記録されるまで次の段階に進まない。多忙な課長層の承認は、バックログ作成とテスト引き渡しの2か所に絞った。課題として、暗黙知は AI が把握できず人が補うこと、AI が速くなるほど人の意思決定と確認待ちが律速になることを挙げている。工期の短縮は本人たちの見込みで、比較検証の結果はまだ出ていない。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>金融の基幹系保守という、日本企業のクライアントに近い題材で、人の承認点の置き方まで公開された貴重な実例である。提案資料の「承認は2か所に絞る」設計の根拠に使える。</li><li><b>PM</b>見積もりの「6名6か月→4名3か月」は見込み値で、検証中である。AI で速くなった分、承認者の待ち時間が工期の制約になるため、承認者の稼働を計画に入れる必要がある。</li><li><b>DEV</b>業務文書を Markdown にして人が整え、リポジトリ経由でナレッジベースに取り込む運用は、暗黙知を AI に渡す手順の参考になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://aws.amazon.com/jp/blogs/news/ai-dlc-unicorn-gym-nissay-it-202611/" target="_blank" rel="noopener">AWS ジャパン ブログ「大規模金融系保守開発における AI 適用への挑戦」（2026-11-02）</a>
+      </div>
+      <div class="comment"><b>コメント：</b>AWS 自身のブログであり、効果の数値は事例企業の見込みとして読む必要がある。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>Zenn「コードレビューより設計レビュー」——AI が書く前に計画を人が確認し、コードレビューでは「頼んでいない変更が足されていないか」の1点を見る</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Zenn の記事（11月2日）は、AI が書いた PR を人がどこまで読むべきかという問いに、人のレビューの重心をコードから設計に移す答えを出す。手順は、AI が実装前に計画を書き、人が「要件と合っているか」「どこを触るか」「データや API の形」の3点を確認し、通った計画を実装用の指示書にする。実装を担当する AI には設計判断をさせず、指示書どおりに書かせる。指示書への適合は AI のレビューで確かめ、軽いレビューは実装のたびに、重いレビューは PR 作成前に観点別に並列で回す。最後に人がコードレビューで見るのは「要件にないものが AI の判断で足されていないか」の1点で、設計で触る範囲を先に決めているため範囲外の変更が見つけやすくなる。著者は、設計の範囲外で起きたことは設計レビューでは防げないため、コードを全く読まないわけではないと断っている。</p>
+      <ul class="sowhat"><li><b>DEV</b>計画の確認項目が3点に絞られており、既存のレビュー手順にそのまま足せる。</li><li><b>PM</b>レビュー工数を、実装後の差分読みから、短い計画の確認へ前倒しする案として、チームの運用ルールの議論に使える。</li></ul>
+      <div class="source">出典：
+        <a href="https://zenn.dev/tanashun/articles/review-before-ai-writes" target="_blank" rel="noopener">Zenn「コードレビューより設計レビュー」（2026-11-02）</a>
+      </div>
+      <div class="note">個人の実践記事で、効果の測定は含まれない。</div>
+      <div class="comment"><b>コメント：</b>11月2日号の Hono・パス仕分けと合わせると、「人が見る場所を先に決める」流れが続いていることがわかる。</div>
+    </div>
+
+    <div class="section-title">📰 短信</div>
+    <div class="brief"><ul>
+      <li>GitHub Trending に vercel-labs/agent-desktop（AI エージェントに PC を操作させる CLI）、claude-mem、mattpocock/skills（エージェント用 skills 集）、worktrunk（複数エージェント並列用の Git worktree 管理）。出典：<a href="https://github.com/trending" target="_blank" rel="noopener">GitHub Trending</a></li>
+    </ul></div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>新規：</b>「ChatGPT Chat／Work 統合と Codex 利用枠の共通化」「AI-DLC v2（ニッセイ情報テクノロジー）」「設計レビュー先行の PR 運用」。</li>
+      <li><b>追跡：</b>「Claude Code 書き込み範囲の強制」は Bash・PowerShell に効かない実測で2回目の出現。「claude-mem」は GitHub Trending で連続して出現。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

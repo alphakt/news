@@ -31,7 +31,7 @@
    "https://code.claude.com/docs/en/output-styles",
    "https://code.claude.com/docs/en/hooks"
   ],
-  "checked": "2026-11-01T23:06:11.931673+00:00"
+  "checked": "2026-11-02T23:05:58.854859+00:00"
  },
  "https://www.anthropic.com/engineering": {
   "links": [
@@ -63,7 +63,7 @@
    "https://www.anthropic.com/research/team/interpretability",
    "https://www.anthropic.com/research/team/societal-impacts"
   ],
-  "checked": "2026-11-01T23:06:12.160859+00:00"
+  "checked": "2026-11-02T23:05:59.127764+00:00"
  },
  "https://docs.anthropic.com/en/release-notes/overview": {
   "links": [
@@ -77,6 +77,9 @@
    "https://docs.anthropic.com/docs/en/api/overview",
    "https://docs.anthropic.com/docs/en/managed-agents/migration",
    "https://docs.anthropic.com/docs/en/api/migration-2026-10-21",
+   "https://docs.anthropic.com/docs/en/build-with-claude/message-threads",
+   "https://docs.anthropic.com/docs/en/build-with-claude/claude-platform-on-aws",
+   "https://docs.anthropic.com/docs/en/build-with-claude/claude-in-microsoft-foundry",
    "https://docs.anthropic.com/docs/en/manage-claude/usage-cost-analytics-api",
    "https://docs.anthropic.com/docs/en/manage-claude/usage-cost-api",
    "https://docs.anthropic.com/docs/en/manage-claude/analytics-api",
@@ -91,7 +94,6 @@
    "https://docs.anthropic.com/settings/capabilities",
    "https://docs.anthropic.com/docs/en/managed-agents/tools-web-restrictions",
    "https://docs.anthropic.com/docs/en/manage-claude/compliance-api",
-   "https://docs.anthropic.com/docs/en/build-with-claude/claude-in-microsoft-foundry",
    "https://docs.anthropic.com/docs/en/manage-claude/opentelemetry",
    "https://docs.anthropic.com/docs/en/managed-agents/scheduled-deployments",
    "https://docs.anthropic.com/docs/en/managed-agents/workflow-runs",
@@ -100,7 +102,6 @@
    "https://docs.anthropic.com/docs/en/build-with-claude/thinking",
    "https://docs.anthropic.com/docs/en/build-with-claude/effort",
    "https://docs.anthropic.com/docs/en/build-with-claude/claude-in-amazon-bedrock",
-   "https://docs.anthropic.com/docs/en/build-with-claude/claude-platform-on-aws",
    "https://docs.anthropic.com/docs/en/build-with-claude/claude-models-on-google-cloud/google-managed",
    "https://docs.anthropic.com/docs/en/models/haiku-5-5/whats-new-haiku-5-5",
    "https://docs.anthropic.com/docs/en/models/haiku-5-5/migration-guide",
@@ -186,7 +187,7 @@
    "https://docs.anthropic.com/docs/en/build-with-claude/token-counting",
    "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/parallel-tool-use"
   ],
-  "checked": "2026-11-01T23:06:12.865376+00:00"
+  "checked": "2026-11-02T23:05:59.957517+00:00"
  },
  "https://developers.openai.com/changelog": {
   "links": [
@@ -258,6 +259,7 @@
    "https://developers.openai.com/api/docs/guides/agents-api/sessions/events",
    "https://developers.openai.com/api/docs/guides/agents-api/sessions/manage",
    "https://developers.openai.com/api/docs/guides/agents-api/sessions/automations",
+   "https://developers.openai.com/api/docs/guides/agents-api/sessions/approvals",
    "https://developers.openai.com/api/docs/guides/agents-api/environments/openai-hosted",
    "https://developers.openai.com/api/docs/guides/agents-api/environments/self-hosted",
    "https://developers.openai.com/api/docs/guides/agents-api/environments/lifecycle",
@@ -488,6 +490,7 @@
    "https://developers.openai.com/codex/enterprise/access-tokens",
    "https://developers.openai.com/codex/enterprise/service-accounts",
    "https://developers.openai.com/codex/enterprise/windows-deployment",
+   "https://developers.openai.com/codex/environments/network-file-systems",
    "https://developers.openai.com/codex/enterprise/manage-app-updates",
    "https://developers.openai.com/codex/enterprise/managed-configuration",
    "https://developers.openai.com/codex/enterprise/configuration-server",
@@ -598,7 +601,7 @@
    "https://developers.openai.com/api/docs/models/dall-e-3",
    "https://developers.openai.com/api/docs/models/text-moderation-latest"
   ],
-  "checked": "2026-11-01T23:06:13.402709+00:00"
+  "checked": "2026-11-02T23:06:00.435003+00:00"
  },
  "https://cursor.com/changelog": {
   "links": [
@@ -627,145 +630,11 @@
    "https://cursor.com/en-US/cookie-policy",
    "https://cursor.com/en-US/security"
   ],
-  "checked": "2026-11-01T23:06:13.602824+00:00"
+  "checked": "2026-11-02T23:06:00.732495+00:00"
  },
  "https://ai.google.dev/gemini-api/docs/changelog": {
-  "links": [
-   "https://ai.google.dev/api",
-   "https://ai.google.dev/gemini-api/docs/coding-agents",
-   "https://ai.google.dev/gemini-api/docs/latest-model",
-   "https://ai.google.dev/gemini-api/docs/omni",
-   "https://ai.google.dev/gemini-api/docs/realtime-music-generation",
-   "https://ai.google.dev/gemini-api/docs/lyria-prompt-guide",
-   "https://ai.google.dev/gemini-api/docs/voice-design",
-   "https://ai.google.dev/gemini-api/docs/voice-replication",
-   "https://ai.google.dev/gemini-api/docs/live-api/live-translate",
-   "https://ai.google.dev/gemini-api/docs/robotics-spatial",
-   "https://ai.google.dev/gemini-api/docs/robotics-agentic",
-   "https://ai.google.dev/gemini-api/docs/robotics-orchestration",
-   "https://ai.google.dev/gemini-api/docs/robotics-streaming",
-   "https://ai.google.dev/gemini-api/docs/robotics-video-progress",
-   "https://ai.google.dev/gemini-api/docs/image-generation",
-   "https://ai.google.dev/gemini-api/docs/image-understanding",
-   "https://ai.google.dev/gemini-api/docs/video",
-   "https://ai.google.dev/gemini-api/docs/video-understanding",
-   "https://ai.google.dev/gemini-api/docs/speech-generation",
-   "https://ai.google.dev/gemini-api/docs/audio",
-   "https://ai.google.dev/gemini-api/docs/transcribe",
-   "https://ai.google.dev/gemini-api/docs/thought-signatures",
-   "https://ai.google.dev/gemini-api/docs/structured-output",
-   "https://ai.google.dev/gemini-api/docs/function-calling",
-   "https://ai.google.dev/gemini-api/docs/long-context",
-   "https://ai.google.dev/gemini-api/docs/antigravity-agent",
-   "https://ai.google.dev/gemini-api/docs/custom-agents",
-   "https://ai.google.dev/gemini-api/docs/agent-environment",
-   "https://ai.google.dev/gemini-api/docs/deep-research",
-   "https://ai.google.dev/gemini-api/docs/google-search",
-   "https://ai.google.dev/gemini-api/docs/code-execution",
-   "https://ai.google.dev/gemini-api/docs/computer-use",
-   "https://ai.google.dev/gemini-api/docs/tool-combination",
-   "https://ai.google.dev/gemini-api/docs/live-api/get-started-sdk",
-   "https://ai.google.dev/gemini-api/docs/live-api/get-started-websocket",
-   "https://ai.google.dev/gemini-api/docs/live-api/capabilities",
-   "https://ai.google.dev/gemini-api/docs/live-api/live-transcribe",
-   "https://ai.google.dev/gemini-api/docs/live-api/session-management",
-   "https://ai.google.dev/gemini-api/docs/live-api/ephemeral-tokens",
-   "https://ai.google.dev/gemini-api/docs/live-api/best-practices",
-   "https://ai.google.dev/gemini-api/docs/flex-inference",
-   "https://ai.google.dev/gemini-api/docs/priority-inference",
-   "https://ai.google.dev/gemini-api/docs/caching",
-   "https://ai.google.dev/gemini-api/docs/interactions-overview",
-   "https://ai.google.dev/gemini-api/docs/background-execution",
-   "https://ai.google.dev/gemini-api/docs/file-input-methods",
-   "https://ai.google.dev/gemini-api/docs/openai",
-   "https://ai.google.dev/gemini-api/docs/media-resolution",
-   "https://ai.google.dev/gemini-api/docs/tokens",
-   "https://ai.google.dev/gemini-api/docs/prompting-strategies",
-   "https://ai.google.dev/gemini-api/docs/logs-datasets",
-   "https://ai.google.dev/gemini-api/docs/logs-policy",
-   "https://ai.google.dev/gemini-api/docs/safety-settings",
-   "https://ai.google.dev/gemini-api/docs/safety-guidance",
-   "https://ai.google.dev/gemini-api/docs/langgraph-example",
-   "https://ai.google.dev/gemini-api/docs/vercel-ai-sdk-example",
-   "https://ai.google.dev/gemini-api/docs/changelog",
-   "https://ai.google.dev/gemini-api/docs/deprecations",
-   "https://ai.google.dev/gemini-api/docs/migrate",
-   "https://ai.google.dev/gemini-api/docs/migrate-to-interactions",
-   "https://ai.google.dev/gemini-api/docs/interactions-breaking-changes-may-2026",
-   "https://ai.google.dev/gemini-api/docs/billing",
-   "https://ai.google.dev/gemini-api/docs/troubleshooting",
-   "https://ai.google.dev/gemini-api/docs/partner-integration",
-   "https://ai.google.dev/gemini-api/docs/google-ai-plans",
-   "https://ai.google.dev/gemini-api/docs/aistudio-build-mode",
-   "https://ai.google.dev/gemini-api/docs/aistudio-fullstack",
-   "https://ai.google.dev/gemini-api/docs/aistudio-android",
-   "https://ai.google.dev/gemini-api/docs/aistudio-deploying",
-   "https://ai.google.dev/gemini-api/docs/aistudio-agents",
-   "https://ai.google.dev/gemini-api/docs/learnlm",
-   "https://ai.google.dev/gemini-api/docs/troubleshoot-ai-studio",
-   "https://ai.google.dev/gemini-api/docs/workspace",
-   "https://ai.google.dev/gemini-api/docs/migrate-to-cloud",
-   "https://ai.google.dev/gemini-api/docs/oauth",
-   "https://ai.google.dev/gemini-api/terms",
-   "https://ai.google.dev/gemini-api/docs/available-regions",
-   "https://ai.google.dev/gemini-api/docs/usage-policies",
-   "https://ai.google.dev/gemini-api/docs/feedback-policies",
-   "https://ai.google.dev/gemini-api/docs/cli",
-   "https://ai.google.dev/gemini-api/docs/interactions",
-   "https://ai.google.dev/gemini-api/docs/agents",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
-   "https://ai.google.dev/gemini-api/docs/whats-new-gemini-3.7",
-   "https://ai.google.dev/gemini-api/docs/whats-new-gemini-3.8",
-   "https://ai.google.dev/gemini-api/docs/whats-new-gemini-3.5",
-   "https://ai.google.dev/gemini-api/docs/whats-new-gemini-3.6",
-   "https://ai.google.dev/gemini-api/docs/models/deep-research-preview-04-2026",
-   "https://ai.google.dev/gemini-api/docs/models/deep-research-max-preview-04-2026",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-image",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash-tts",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash-lite-tts",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live-extended-thinking",
-   "https://ai.google.dev/gemini-api/docs/live-api",
-   "https://ai.google.dev/gemini-api/docs/live-api/thinking",
-   "https://ai.google.dev/gemini-api/docs/music-generation",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-omni-flash",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-transcribe",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
-   "https://ai.google.dev/gemini-api/docs/robotics-overview",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite-image",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-3-pro-image",
-   "https://ai.google.dev/gemini-api/docs/models/antigravity-preview-05-2026",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-robotics-er-1.6-preview",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-tts-preview",
-   "https://ai.google.dev/gemini-api/docs/models/veo-3.1-lite-generate-preview",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite-preview",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-live-preview",
-   "https://ai.google.dev/gemini-api/docs/models/lyria-3-clip-preview",
-   "https://ai.google.dev/gemini-api/docs/models/lyria-3-pro-preview",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview",
-   "https://ai.google.dev/gemini-api/docs/live-guide",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-native-audio-preview-12-2025",
-   "https://ai.google.dev/gemini-api/docs/gemini-3",
-   "https://ai.google.dev/gemini-api/docs/maps-grounding",
-   "https://ai.google.dev/gemini-api/docs/url-context",
-   "https://ai.google.dev/gemini-api/docs/model-tuning",
-   "https://ai.google.dev/gemini-api/docs/grounding",
-   "https://ai.google.dev/gemini-api/docs/models/experimental-models",
-   "https://ai.google.dev/gemini-api/docs/models/gemini",
-   "https://ai.google.dev/gemini-api/docs/imagen",
-   "https://ai.google.dev/gemini-api/docs/thinking",
-   "https://ai.google.dev/gemini-api/docs/thinking-mode",
-   "https://ai.google.dev/gemini-api/docs/models/gemini-v2",
-   "https://ai.google.dev/gemini-api/docs/document-processing",
-   "https://ai.google.dev/gemini-api/docs/prompting_with_media",
-   "https://ai.google.dev/gemini-api/docs/system-instructions",
-   "https://ai.google.dev/gemini-api/docs/api-versions"
-  ],
-  "checked": "2026-11-01T23:06:14.516354+00:00"
+  "links": [],
+  "checked": "2026-11-02T23:06:02.055675+00:00"
  },
  "https://www.ipa.go.jp/digital/ai/": {
   "links": [
@@ -976,7 +845,7 @@
    "https://www.ipa.go.jp/siteinfo.html",
    "https://www.ipa.go.jp/accessibility.html"
   ],
-  "checked": "2026-11-01T23:06:14.867907+00:00"
+  "checked": "2026-11-02T23:06:02.883912+00:00"
  },
  "https://www.ppc.go.jp/news/": {
   "links": [
@@ -1066,16 +935,19 @@
    "https://www.ppc.go.jp/application/kisei_kaikaku/",
    "https://www.ppc.go.jp/aboutus/commission/access/ppc_relocation?ref=topnews"
   ],
-  "checked": "2026-11-01T23:06:16.454030+00:00"
+  "checked": "2026-11-02T23:06:04.721446+00:00"
  },
  "https://www.soumu.go.jp/menu_news/s-news/": {
   "links": [
    "https://www.soumu.go.jp/english/index.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001280.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01kiban03_02001028.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01tsushin03_02000476.html",
    "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001279.html",
    "https://www.soumu.go.jp/menu_news/s-news/01kougai01_20261101.html",
    "https://www.soumu.go.jp/menu_kyotsuu/policy/shuwa-link.html"
   ],
-  "checked": "2026-11-01T23:06:17.539035+00:00"
+  "checked": "2026-11-02T23:06:05.745161+00:00"
  },
  "https://www.anthropic.com/customers": {
   "links": [
@@ -1138,7 +1010,7 @@
    "https://www.anthropic.com/legal/consumer-terms",
    "https://www.anthropic.com/legal/aup"
   ],
-  "checked": "2026-11-01T23:06:18.222751+00:00"
+  "checked": "2026-11-02T23:06:06.318793+00:00"
  },
  "https://cloud.google.com/customers": {
   "links": [
@@ -1149,6 +1021,8 @@
    "https://cloud.google.com/customers/shopify-compute",
    "https://cloud.google.com/customers/kraftheinz",
    "https://cloud.google.com/customers/ksneducation",
+   "https://cloud.google.com/customers/via-cristais",
+   "https://cloud.google.com/customers/haya-therapeutics",
    "https://cloud.google.com/customers/commerzbank-ai",
    "https://cloud.google.com/customers/keybank",
    "https://cloud.google.com/customers/bestbuybq",
@@ -1158,8 +1032,6 @@
    "https://cloud.google.com/customers/adgoat",
    "https://cloud.google.com/customers/myer",
    "https://cloud.google.com/customers/rosebudai",
-   "https://cloud.google.com/customers/businesscapital",
-   "https://cloud.google.com/customers/enerjigroup",
    "https://cloud.google.com/blog/products/ai-machine-learning/google-named-a-leader-in-the-gartner-magic-quadrant",
    "https://cloud.google.com/why-google-cloud",
    "https://cloud.google.com/ai",
@@ -1403,7 +1275,7 @@
    "https://cloud.google.com/product-terms",
    "https://cloud.google.com/sustainability"
   ],
-  "checked": "2026-11-01T23:06:18.744726+00:00"
+  "checked": "2026-11-02T23:06:06.940625+00:00"
  },
  "https://www.microsoft.com/en-us/customers/": {
   "links": [
@@ -1476,7 +1348,7 @@
    "https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_Footer_Sustainability",
    "https://www.microsoft.com/customers/locale"
   ],
-  "checked": "2026-11-01T23:06:19.158923+00:00"
+  "checked": "2026-11-02T23:06:07.309178+00:00"
  },
  "https://www.nri.com/jp/news": {
   "links": [
@@ -1490,7 +1362,7 @@
    "https://www.nri.com/jp/privacy.html",
    "https://www.nri.com/jp/security_declare.html"
   ],
-  "checked": "2026-11-01T23:06:20.015428+00:00"
+  "checked": "2026-11-02T23:06:08.154087+00:00"
  },
  "https://www.deloitte.com/jp/ja/about/press-room.html": {
   "links": [
@@ -1576,7 +1448,7 @@
    "https://www.deloitte.com/jp/ja/legal/smap.html?icid=bn_smap",
    "https://www.deloitte.com/jp/ja/about/governance/network-brand-alliances/about-the-network.html"
   ],
-  "checked": "2026-11-01T23:06:20.281629+00:00"
+  "checked": "2026-11-02T23:06:08.495663+00:00"
  },
  "https://www.kpmg.com/jp/ja/home/media/press-releases.html": {
   "links": [
@@ -2111,7 +1983,7 @@
    "https://www.kpmg.com/jp/ja/about.html",
    "https://www.kpmg.com/jp/ja/media.html"
   ],
-  "checked": "2026-11-01T23:06:21.242232+00:00"
+  "checked": "2026-11-02T23:06:09.955160+00:00"
  },
  "https://www.ey.com/ja_jp/newsroom": {
   "links": [
@@ -2196,6 +2068,7 @@
    "https://www.ey.com/ja_jp/about-us/corporate-responsibility/ey-japan-ripples",
    "https://www.ey.com/ja_jp/shape-the-future-with-confidence",
    "https://www.ey.com/ja_jp/integrated-report/top-message",
+   "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-02",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-30",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-29",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-27",
@@ -2203,7 +2076,6 @@
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-20",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-16",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-15",
-   "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-14",
    "https://www.ey.com/ja_jp/industries/government-public-sector/public-projects/2026/ey-japan-pp-2026-10-15",
    "https://www.ey.com/ja_jp/industries/government-public-sector/public-projects/2026/ey-japan-pp-2026-10-08",
    "https://www.ey.com/ja_jp/newsroom/2026/09/ey-japan-news-release-2026-09-16",
@@ -2217,11 +2089,11 @@
    "https://www.ey.com/ja_jp/people/ey-japan",
    "https://www.ey.com/ja_jp/legal-and-privacy/hotline"
   ],
-  "checked": "2026-11-01T23:06:21.576889+00:00"
+  "checked": "2026-11-02T23:06:10.333355+00:00"
  },
  "https://dora.dev/": {
   "links": [],
-  "checked": "2026-11-01T23:06:21.773180+00:00"
+  "checked": "2026-11-02T23:06:10.473260+00:00"
  },
  "https://www.thoughtworks.com/radar": {
   "links": [
@@ -2300,11 +2172,11 @@
    "https://www.thoughtworks.com/about-us/fraud-advisory-notice",
    "https://www.thoughtworks.com/about-us/compliance"
   ],
-  "checked": "2026-11-01T23:06:21.955979+00:00"
+  "checked": "2026-11-02T23:06:10.698999+00:00"
  },
  "https://newsletter.pragmaticengineer.com/": {
   "links": [],
-  "checked": "2026-11-01T23:06:22.139018+00:00"
+  "checked": "2026-11-02T23:06:10.953551+00:00"
  },
  "https://linear.app/changelog": {
   "links": [
@@ -2333,7 +2205,7 @@
    "https://linear.app/integrations",
    "https://linear.app/docs"
   ],
-  "checked": "2026-11-01T23:06:22.420148+00:00"
+  "checked": "2026-11-02T23:06:11.430533+00:00"
  },
  "https://www.atlassian.com/blog": {
   "links": [
@@ -2352,7 +2224,7 @@
    "https://www.atlassian.com/resources",
    "https://www.atlassian.com/legal/privacy-policy"
   ],
-  "checked": "2026-11-01T23:06:22.679728+00:00"
+  "checked": "2026-11-02T23:06:11.797875+00:00"
  },
  "https://digital-strategy.ec.europa.eu/en/news": {
   "links": [
@@ -2366,11 +2238,11 @@
    "https://digital-strategy.ec.europa.eu/en/news/commission-investigate-how-bookingcom-combats-scams-and-fraud-under-digital-services-act",
    "https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu",
    "https://digital-strategy.ec.europa.eu/en/news/eu-and-canada-team-supercomputing-and-quantum",
+   "https://digital-strategy.ec.europa.eu/en/news/eu-and-canada-partner-tackle-climate-risks-through-destination-earth",
    "https://digital-strategy.ec.europa.eu/en/news/first-virtual-worlds-partnership-annual-forum-take-place-valencia",
    "https://digital-strategy.ec.europa.eu/en/news/commission-announces-winners-eosc-eu-node-framework-procurement-2026",
-   "https://digital-strategy.ec.europa.eu/en/news/eu-and-canada-partner-tackle-climate-risks-through-destination-earth",
-   "https://digital-strategy.ec.europa.eu/en/news/commission-opens-depth-investigation-proposed-changes-swedens-fixed-location-wholesale-local-access",
    "https://digital-strategy.ec.europa.eu/en/news/commission-decisions-related-art3233-european-electronic-communications-code",
+   "https://digital-strategy.ec.europa.eu/en/news/commission-opens-depth-investigation-proposed-changes-swedens-fixed-location-wholesale-local-access",
    "https://digital-strategy.ec.europa.eu/en/news/twelfth-code-conduct-disinformation-plenary-takes-stock-election-risks-crisis-response-and",
    "https://digital-strategy.ec.europa.eu/en/news/commission-approves-eu319-million-austrian-state-aid-first-kind-semiconductor-manufacturing",
    "https://digital-strategy.ec.europa.eu/en/news/commission-accepts-temus-corrective-measures-terminate-breach-digital-services-act",
@@ -2378,6 +2250,6 @@
    "https://digital-strategy.ec.europa.eu/en",
    "https://digital-strategy.ec.europa.eu/en/pages/accessibility"
   ],
-  "checked": "2026-11-01T23:06:23.131863+00:00"
+  "checked": "2026-11-02T23:06:12.523099+00:00"
  }
 }
