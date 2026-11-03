@@ -31,7 +31,7 @@
    "https://code.claude.com/docs/en/output-styles",
    "https://code.claude.com/docs/en/hooks"
   ],
-  "checked": "2026-11-02T23:05:58.854859+00:00"
+  "checked": "2026-11-03T23:05:57.446476+00:00"
  },
  "https://www.anthropic.com/engineering": {
   "links": [
@@ -63,7 +63,7 @@
    "https://www.anthropic.com/research/team/interpretability",
    "https://www.anthropic.com/research/team/societal-impacts"
   ],
-  "checked": "2026-11-02T23:05:59.127764+00:00"
+  "checked": "2026-11-03T23:05:57.732329+00:00"
  },
  "https://docs.anthropic.com/en/release-notes/overview": {
   "links": [
@@ -77,6 +77,7 @@
    "https://docs.anthropic.com/docs/en/api/overview",
    "https://docs.anthropic.com/docs/en/managed-agents/migration",
    "https://docs.anthropic.com/docs/en/api/migration-2026-10-21",
+   "https://docs.anthropic.com/docs/en/build-with-claude/text-watermark",
    "https://docs.anthropic.com/docs/en/build-with-claude/message-threads",
    "https://docs.anthropic.com/docs/en/build-with-claude/claude-platform-on-aws",
    "https://docs.anthropic.com/docs/en/build-with-claude/claude-in-microsoft-foundry",
@@ -187,7 +188,7 @@
    "https://docs.anthropic.com/docs/en/build-with-claude/token-counting",
    "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/parallel-tool-use"
   ],
-  "checked": "2026-11-02T23:05:59.957517+00:00"
+  "checked": "2026-11-03T23:05:58.911962+00:00"
  },
  "https://developers.openai.com/changelog": {
   "links": [
@@ -601,7 +602,7 @@
    "https://developers.openai.com/api/docs/models/dall-e-3",
    "https://developers.openai.com/api/docs/models/text-moderation-latest"
   ],
-  "checked": "2026-11-02T23:06:00.435003+00:00"
+  "checked": "2026-11-03T23:05:59.286441+00:00"
  },
  "https://cursor.com/changelog": {
   "links": [
@@ -630,11 +631,11 @@
    "https://cursor.com/en-US/cookie-policy",
    "https://cursor.com/en-US/security"
   ],
-  "checked": "2026-11-02T23:06:00.732495+00:00"
+  "checked": "2026-11-03T23:05:59.563766+00:00"
  },
  "https://ai.google.dev/gemini-api/docs/changelog": {
   "links": [],
-  "checked": "2026-11-02T23:06:02.055675+00:00"
+  "checked": "2026-11-03T23:06:00.098175+00:00"
  },
  "https://www.ipa.go.jp/digital/ai/": {
   "links": [
@@ -845,7 +846,7 @@
    "https://www.ipa.go.jp/siteinfo.html",
    "https://www.ipa.go.jp/accessibility.html"
   ],
-  "checked": "2026-11-02T23:06:02.883912+00:00"
+  "checked": "2026-11-03T23:06:00.415024+00:00"
  },
  "https://www.ppc.go.jp/news/": {
   "links": [
@@ -935,7 +936,7 @@
    "https://www.ppc.go.jp/application/kisei_kaikaku/",
    "https://www.ppc.go.jp/aboutus/commission/access/ppc_relocation?ref=topnews"
   ],
-  "checked": "2026-11-02T23:06:04.721446+00:00"
+  "checked": "2026-11-03T23:06:01.461595+00:00"
  },
  "https://www.soumu.go.jp/menu_news/s-news/": {
   "links": [
@@ -947,7 +948,7 @@
    "https://www.soumu.go.jp/menu_news/s-news/01kougai01_20261101.html",
    "https://www.soumu.go.jp/menu_kyotsuu/policy/shuwa-link.html"
   ],
-  "checked": "2026-11-02T23:06:05.745161+00:00"
+  "checked": "2026-11-03T23:06:02.155188+00:00"
  },
  "https://www.anthropic.com/customers": {
   "links": [
@@ -1010,7 +1011,7 @@
    "https://www.anthropic.com/legal/consumer-terms",
    "https://www.anthropic.com/legal/aup"
   ],
-  "checked": "2026-11-02T23:06:06.318793+00:00"
+  "checked": "2026-11-03T23:06:03.208540+00:00"
  },
  "https://cloud.google.com/customers": {
   "links": [
@@ -1275,7 +1276,7 @@
    "https://cloud.google.com/product-terms",
    "https://cloud.google.com/sustainability"
   ],
-  "checked": "2026-11-02T23:06:06.940625+00:00"
+  "checked": "2026-11-03T23:06:03.816227+00:00"
  },
  "https://www.microsoft.com/en-us/customers/": {
   "links": [
@@ -1348,7 +1349,7 @@
    "https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_Footer_Sustainability",
    "https://www.microsoft.com/customers/locale"
   ],
-  "checked": "2026-11-02T23:06:07.309178+00:00"
+  "checked": "2026-11-03T23:06:04.049963+00:00"
  },
  "https://www.nri.com/jp/news": {
   "links": [
@@ -1362,7 +1363,7 @@
    "https://www.nri.com/jp/privacy.html",
    "https://www.nri.com/jp/security_declare.html"
   ],
-  "checked": "2026-11-02T23:06:08.154087+00:00"
+  "checked": "2026-11-03T23:06:04.693468+00:00"
  },
  "https://www.deloitte.com/jp/ja/about/press-room.html": {
   "links": [
@@ -1448,7 +1449,7 @@
    "https://www.deloitte.com/jp/ja/legal/smap.html?icid=bn_smap",
    "https://www.deloitte.com/jp/ja/about/governance/network-brand-alliances/about-the-network.html"
   ],
-  "checked": "2026-11-02T23:06:08.495663+00:00"
+  "checked": "2026-11-03T23:06:05.052417+00:00"
  },
  "https://www.kpmg.com/jp/ja/home/media/press-releases.html": {
   "links": [
@@ -1983,7 +1984,7 @@
    "https://www.kpmg.com/jp/ja/about.html",
    "https://www.kpmg.com/jp/ja/media.html"
   ],
-  "checked": "2026-11-02T23:06:09.955160+00:00"
+  "checked": "2026-11-03T23:06:06.378400+00:00"
  },
  "https://www.ey.com/ja_jp/newsroom": {
   "links": [
@@ -2089,11 +2090,11 @@
    "https://www.ey.com/ja_jp/people/ey-japan",
    "https://www.ey.com/ja_jp/legal-and-privacy/hotline"
   ],
-  "checked": "2026-11-02T23:06:10.333355+00:00"
+  "checked": "2026-11-03T23:06:06.800528+00:00"
  },
  "https://dora.dev/": {
   "links": [],
-  "checked": "2026-11-02T23:06:10.473260+00:00"
+  "checked": "2026-11-03T23:06:06.943785+00:00"
  },
  "https://www.thoughtworks.com/radar": {
   "links": [
@@ -2172,11 +2173,11 @@
    "https://www.thoughtworks.com/about-us/fraud-advisory-notice",
    "https://www.thoughtworks.com/about-us/compliance"
   ],
-  "checked": "2026-11-02T23:06:10.698999+00:00"
+  "checked": "2026-11-03T23:06:07.165066+00:00"
  },
  "https://newsletter.pragmaticengineer.com/": {
   "links": [],
-  "checked": "2026-11-02T23:06:10.953551+00:00"
+  "checked": "2026-11-03T23:06:07.346434+00:00"
  },
  "https://linear.app/changelog": {
   "links": [
@@ -2205,7 +2206,7 @@
    "https://linear.app/integrations",
    "https://linear.app/docs"
   ],
-  "checked": "2026-11-02T23:06:11.430533+00:00"
+  "checked": "2026-11-03T23:06:07.640305+00:00"
  },
  "https://www.atlassian.com/blog": {
   "links": [
@@ -2224,7 +2225,7 @@
    "https://www.atlassian.com/resources",
    "https://www.atlassian.com/legal/privacy-policy"
   ],
-  "checked": "2026-11-02T23:06:11.797875+00:00"
+  "checked": "2026-11-03T23:06:07.887656+00:00"
  },
  "https://digital-strategy.ec.europa.eu/en/news": {
   "links": [
@@ -2237,19 +2238,19 @@
    "https://digital-strategy.ec.europa.eu/en/news/commission-accepts-temus-action-plan-remedy-breach-digital-services-act",
    "https://digital-strategy.ec.europa.eu/en/news/commission-investigate-how-bookingcom-combats-scams-and-fraud-under-digital-services-act",
    "https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu",
+   "https://digital-strategy.ec.europa.eu/en/news/digitaleu-web-summit-2026-supporting-businesses-and-startups-grow-and-innovate",
    "https://digital-strategy.ec.europa.eu/en/news/eu-and-canada-team-supercomputing-and-quantum",
-   "https://digital-strategy.ec.europa.eu/en/news/eu-and-canada-partner-tackle-climate-risks-through-destination-earth",
    "https://digital-strategy.ec.europa.eu/en/news/first-virtual-worlds-partnership-annual-forum-take-place-valencia",
    "https://digital-strategy.ec.europa.eu/en/news/commission-announces-winners-eosc-eu-node-framework-procurement-2026",
-   "https://digital-strategy.ec.europa.eu/en/news/commission-decisions-related-art3233-european-electronic-communications-code",
+   "https://digital-strategy.ec.europa.eu/en/news/eu-and-canada-partner-tackle-climate-risks-through-destination-earth",
    "https://digital-strategy.ec.europa.eu/en/news/commission-opens-depth-investigation-proposed-changes-swedens-fixed-location-wholesale-local-access",
+   "https://digital-strategy.ec.europa.eu/en/news/commission-decisions-related-art3233-european-electronic-communications-code",
    "https://digital-strategy.ec.europa.eu/en/news/twelfth-code-conduct-disinformation-plenary-takes-stock-election-risks-crisis-response-and",
    "https://digital-strategy.ec.europa.eu/en/news/commission-approves-eu319-million-austrian-state-aid-first-kind-semiconductor-manufacturing",
-   "https://digital-strategy.ec.europa.eu/en/news/commission-accepts-temus-corrective-measures-terminate-breach-digital-services-act",
    "https://digital-strategy.ec.europa.eu/en/news/commission-brings-banks-and-online-platforms-together-fight-against-online-scams",
    "https://digital-strategy.ec.europa.eu/en",
    "https://digital-strategy.ec.europa.eu/en/pages/accessibility"
   ],
-  "checked": "2026-11-02T23:06:12.523099+00:00"
+  "checked": "2026-11-03T23:06:08.474870+00:00"
  }
 }

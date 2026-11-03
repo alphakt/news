@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月4日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月4日（水）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は大きな動きが少なく、一次情報で日付と本文を確認できた3件に絞りました。見送ったもの：Uber の MCP ゲートウェイ（InfoQ は11月2日だが一次の Uber ブログは10月1日）、Postman の AI プラグイン自動インストール（GitHub の Issue は10月25日）、パナソニックの個人情報流出（発表は10月23日）、Anthropic のテキスト透かし（公開は8月14日）、Anthropic の FlashProve（一次の公式記事を取得できず）、OpenAI の Scaling Git・Qodo 連携（取得不能）、資金調達・買収・決算の報道。</div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Kiro が自社エージェント基盤の26関数を Lean で形式検証——96個の性質のうち18個が反例で崩れ、「常に許可」パスの glob 誤判定などの不具合が見つかった</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">AWS の Kiro チームは、エージェント基盤（ハーネス）のうち26の関数（Kiro CLI v3 と Kiro Crew を含む）を証明支援系言語 Lean 4 でモデル化し、96個の性質を調べた。結果は、70個が前提のもとで全入力について証明され、2個が有界検証、18個が反例で否定（各反例は実コードで再現）、6個が部分結果や観察である。証明できた例には、サブエージェントの権限判断が親を超えないこと、重複添付の除去でプロンプトキャッシュの接頭辞が変わらないことがある。見つかった不具合は、キャンセル直後に再実行されるジョブ、UTF-16 単位の切り詰めで CJK のページが意図の約1.5倍に達する出力、「常に許可」パスの glob 文字（Next.js の <code>[slug]</code> など）が想定より広く許可される例などで、セキュリティ問題はないとされる。作業の大半は Kiro CLI（Amazon Bedrock 上の Claude Opus 5.5）が行い、人は定理の記述を確認し、Lean の検査機構が証明を検査した。</p>
+      <ul class="sowhat"><li><b>DEV</b>権限判断・コンテキスト管理・状態遷移のように「テストでは静かに漏れる」部分は、性質を定理として書き、実コードと差分テストで突き合わせる方法が、自作ハーネスにも応用できる。</li><li><b>PM</b>エージェント基盤の品質保証に「境界での表現のずれ」と「稀なイベント順序」という観点を加え、権限・キャンセル周りを重点レビュー項目にできる。</li><li><b>CONSULT</b>「エージェントの権限は親を超えない」を証明で裏付けた例は、クライアントの統制説明で使える。ただし検証対象は分析した特定コミットに限られる点も併せて伝える。</li></ul>
+      <div class="source">出典：
+        <a href="https://aws.amazon.com/jp/blogs/news/harness-properties-in-lean/" target="_blank" rel="noopener">AWS Japan Blog「Kiro が自身のハーネスの性質を Lean で証明する」（2026-11-03、原文は11月2日）</a>
+      </div>
+      <div class="note">結果は各モデルが実コードを正しく写している前提による。修正がいつ利用者に届くかは記事に記載がない。</div>
+      <div class="comment"><b>コメント：</b>エージェントの安全性を「テストが通った」ではなく「性質が証明された」で語る事例が出てきたことは、11月3日号の権限設定の実測と対にして読む価値がある。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Thoughtworks「トークン出血」：単価は最大98%下がったのに AI 予算は増え、開発者1人あたりの消費は1年足らずで18.6倍</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Thoughtworks は11月3日の記事で、2024年以降にトークン単価が最大98%下がった一方、企業の AI 予算が120万ドルから700万ドル超に増え、開発者1人あたりのトークン消費が1年足らずで18.6倍になったと述べる。原因はエージェント型コーディングが同じ文脈を繰り返し送ることにある、という整理だ。事例として、ある金融機関が集中管理の制御基盤で品質を保ったままトークンの無駄を40%減らした、Uber が年間の AI 予算を4か月で使い切った、Meta が社内のトークン使用量ランキングを数日で止めた、などを挙げる。提言は、エージェントごとのトークン予算と費用の責任者を置く、月次ではなくリアルタイムで見る、実行時に自動停止する遮断器を設ける、繰り返し文脈をキャッシュする、モデルを費用と能力で使い分ける、成果に紐づけて予算を割り当てる、など。</p>
+      <ul class="sowhat"><li><b>PM</b>AI 費用を「ライセンス料」ではなく「変動する計算コスト」として見積に入れ、エージェント単位の予算と上限停止を運用ルールに含められる。</li><li><b>CONSULT</b>「単価が下がったのに請求が増える」はクライアントの CFO が必ず聞く論点で、予算・遮断器・モデル使い分けを一式の提案に組み込める。</li><li><b>DEV</b>文脈のキャッシュと、軽い作業を小さなモデルへ回す設計は、自分のハーネスでも今日から費用を下げる手段になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.thoughtworks.com/insights/articles/the-token-bleed-reality" target="_blank" rel="noopener">Thoughtworks「The token bleed reality」（2026-11-03）</a>
+      </div>
+      <div class="note">数値と各社の事例は同記事の記述で、個々の企業の発表を一次確認したものではない。</div>
+      <div class="comment"><b>コメント：</b>数字は鵜呑みにせず、「費用の責任者を決める・上限で止める」という運用の骨格だけをまず持ち帰るのがよい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>「コーディングエージェントは自分のバグを見つけない」——テストに書かれていない欠陥を避けられた割合は、11モデルで6〜25%</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">arXiv に掲載された論文（提出は10月31日、arXiv の新着掲載は11月3日）は、タスクに明記されていない問題をエージェントが先回りして避けられるかを測るベンチマーク Foresight-SWE を提案する。4言語・35の著名 OSS リポジトリから212件を集め、各件は「最初の PR」と「その欠陥を直す後続 PR」の組になっている。元のタスクを完了し、かつ後続 PR が指摘する欠陥を作らなかった割合（FRR）は、11のモデルで6.13%〜24.53%だった。著者らは、モデルは最初の PR が持ち込む問題にほとんど対処できないと結論し、コーディング向けの学習や整合のあり方、コードレビューツールの改善に課題があるとする。</p>
+      <ul class="sowhat"><li><b>DEV</b>「テストが通った」は欠陥が無い証拠にならない。エージェントの出力には、書いた本人とは別の観点のレビューを必ず通す必要がある。</li><li><b>PM</b>AI が書いたコードのレビューと後工程の手戻りを、見積から外さずに工数として確保する根拠に使える。</li></ul>
+      <div class="source">出典：
+        <a href="https://arxiv.org/abs/2611.01181" target="_blank" rel="noopener">arXiv:2611.01181「Do Coding Agents Catch Their Own Bugs? (They Don't.)」</a>
+      </div>
+      <div class="note">査読前のプレプリント。提出日は10月31日で、arXiv 掲載日（11月3日）を公開日として扱った。</div>
+      <div class="comment"><b>コメント：</b>11月3日号の「設計レビュー先行」や過去号のレビュー枠組みを支える定量的な裏付けとして位置づけられる。</div>
+    </div>
+
+    <div class="section-title">📰 短信</div>
+    <div class="brief"><ul>
+      <li>GitHub Trending に Donchitos/Claude-Code-Game-Studios（Claude Code を49エージェントのゲームスタジオにするテンプレート）が新たに入り、claude-mem、mattpocock/skills も継続。出典：<a href="https://github.com/trending" target="_blank" rel="noopener">GitHub Trending</a></li>
+    </ul></div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>新規：</b>「Foresight-SWE（エージェントの先回り欠陥回避）」「トークン費用の統制（Thoughtworks）」。</li>
+      <li><b>追跡：</b>「Kiro CLI V3」はハーネス形式検証で4回目の出現。「claude-mem」は GitHub Trending で連続して出現。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

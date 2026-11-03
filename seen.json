@@ -590,6 +590,21 @@
    "date": "2026-11-03",
    "key": "uber-mcp-gateway-seen",
    "url": "https://www.uber.com/us/en/blog/designing-mcp-gateway/"
+  },
+  {
+   "date": "2026-11-04",
+   "key": "kiro-harness-lean-proofs",
+   "url": "https://aws.amazon.com/jp/blogs/news/harness-properties-in-lean/"
+  },
+  {
+   "date": "2026-11-04",
+   "key": "thoughtworks-token-bleed",
+   "url": "https://www.thoughtworks.com/insights/articles/the-token-bleed-reality"
+  },
+  {
+   "date": "2026-11-04",
+   "key": "foresight-swe-coding-agents-bugs",
+   "url": "https://arxiv.org/abs/2611.01181"
   }
  ]
 }

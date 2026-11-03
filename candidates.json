@@ -197,10 +197,11 @@
    "kind": "knowledge",
    "status": "candidate",
    "first_seen": "2026-10-06",
-   "last_seen": "2026-11-03",
-   "mentions": 6,
+   "last_seen": "2026-11-04",
+   "mentions": 7,
    "sources": [
     "https://github.com/thedotmack/claude-mem",
+    "https://github.com/trending",
     "https://github.com/trending",
     "https://github.com/trending"
    ],
@@ -393,12 +394,13 @@
    "kind": "agent-product",
    "status": "candidate",
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-31",
-   "mentions": 3,
+   "last_seen": "2026-11-04",
+   "mentions": 4,
    "sources": [
     "https://aws.amazon.com/jp/blogs/news/cli-3/",
     "https://aws.amazon.com/jp/blogs/news/how-kiro-fixes-itself/",
-    "https://aws.amazon.com/jp/blogs/news/kiro-cli-agent-write-boundaries/"
+    "https://aws.amazon.com/jp/blogs/news/kiro-cli-agent-write-boundaries/",
+    "https://aws.amazon.com/jp/blogs/news/harness-properties-in-lean/"
    ],
    "note": ""
   },
@@ -1329,6 +1331,30 @@
     "https://zenn.dev/tanashun/articles/review-before-ai-writes"
    ],
    "note": ""
+  },
+  {
+   "name": "Foresight-SWE（エージェントの先回り欠陥回避）",
+   "kind": "benchmark",
+   "status": "candidate",
+   "first_seen": "2026-11-04",
+   "last_seen": "2026-11-04",
+   "mentions": 1,
+   "sources": [
+    "https://arxiv.org/abs/2611.01181"
+   ],
+   "note": "明記されていない欠陥をエージェントが避けられるかを測る。11モデルでFRR 6〜25%"
+  },
+  {
+   "name": "トークン費用の統制（Thoughtworks）",
+   "kind": "cost-governance",
+   "status": "candidate",
+   "first_seen": "2026-11-04",
+   "last_seen": "2026-11-04",
+   "mentions": 1,
+   "sources": [
+    "https://www.thoughtworks.com/insights/articles/the-token-bleed-reality"
+   ],
+   "note": "エージェント単位の予算・遮断器・キャッシュ・モデル使い分け"
   }
  ]
 }
