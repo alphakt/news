@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月5日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月5日（木）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は一次情報で日付と本文を確認できた5件に絞りました。見送ったもの：Docker のエージェント保護指針（InfoQ は11月4日だが Docker の原文は10月14日）、GitHub Copilot Code Review Max（原文は10月28日）、Anthropic の FlashProve（公式記事は11月2日）、OpenAI「A thousand fewer paths to root」（取得不能）、Kimi K3.1 Pro の重み公開（モデルカードに公開日の記載なし）。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>MCP ツール32個を毎ターン全投入する代わりに「検索ツール1つ」から始めると、入力トークンが92.7%減り、テストは20/20のまま——1回の実測</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Zenn の検証記事（11月5日）は、同じモデル・同じ20件の非公開テストで、MCP ツールの渡し方を2通り比べた。A は廃止予定やおとりを含む32個のスキーマを毎ターン送る方式、B は軽量な search_tools だけを最初に載せ、必要な2個を後から取り込む方式である。累計の入力トークンは79,773から5,844（−92.7%）、推定 API 費用は約0.074ドルから約0.011ドル（−84.8%）、所要時間は37.0秒から19.1秒に減り、おとりツールの誤呼び出しは2回から0回になった。独立テストの合格は両方式とも20/20。ただし1タスク・1回の実行で、ばらつきは示されていない。著者はツールが約10個を超えたら遅延読み込みを検討し、廃止ツールは検索層で除外するよう勧める。</p>
+      <ul class="sowhat"><li><b>DEV</b>自分のエージェントに接続している MCP ツールの数とスキーマ分のトークンを数え、10個を超えるなら検索経由の遅延読み込みに替えるだけで、毎ターンの固定費を削れる可能性がある。</li><li><b>PM</b>トークン費用の統制は上限設定だけでなく「何を毎回送っているか」の棚卸しから始められ、ツール定義の整理を低コストの改善項目として計画に入れられる。</li></ul>
+      <div class="howto"><b>どう試す：</b>使っているエージェントの MCP ツール一覧を出し、使用頻度の低いもの・廃止予定のものを外すか、search_tools 型のゲートウェイ経由に切り替えて、同じタスクの入力トークンを前後で比較する。</div>
+      <div class="source">出典：
+        <a href="https://zenn.dev/tappers/articles/ai-labo-e14-progressive-tool-search" target="_blank" rel="noopener">Zenn「MCPツール定義の『スキーマ税』…」（2026-11-05）</a>
+      </div>
+      <div class="note">著者自身の測定で、単一タスク・1回のみ。数値は再現前の参考値として扱う。</div>
+      <div class="comment"><b>コメント：</b>11月4日号のトークン出血の話を、手元で今日から確かめられる具体策に落とした実測で、まず自分のツール数を数えるところから始められる。</div>
+    </div>
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Thoughtworks「ハーネスはプロダクトだ」：責任者を置き、実タスク20〜30件の評価セットで変更ごとに回帰確認し、自己改善は「提案は自動、承認は人」に</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Thoughtworks は11月4日の記事で、モデルと仕事の間にあるエージェントの実行基盤（ハーネス）を、実装の詳細ではなく管理すべきプロダクトとして扱うよう提案した。構成要素は指示とスキル、ツール、権限とサンドボックス、コンテキスト方針、状態、オーケストレーション、評価、テレメトリの8つ。実務上の勧めは、責任者を明示する、実際に任せたい20〜30件のタスクで評価セットを作りハーネスと一緒にバージョン管理する、意味のある変更のたびに回帰評価する（「評価なしの変更はしない」）、トークン数や提案の採用数といった活動量を品質の代わりにしない、の4点である。自己改善するハーネスには、評価基盤・変更の出所の記録・巻き戻し手段の3条件を求める。</p>
+      <ul class="sowhat"><li><b>DEV</b>CLAUDE.md やスキル、フックの変更を「実タスク20件程度で前後比較」してから入れる運用に変えられる。</li><li><b>PM</b>「誰が持ち主か、最後の変更が改善だとどう分かるか、何に触れてよいか」の3問を、チームのエージェント基盤の点検項目にできる。</li><li><b>CONSULT</b>承認済みの導入経路を回避策より速くしないと現場が勝手なツールを使う、という指摘は、クライアントのエージェント導入方針に組み込める。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.thoughtworks.com/insights/blog/generative-ai/harness-is-a-product" target="_blank" rel="noopener">Thoughtworks「The harness is a product」（2026-11-04）</a>
+      </div>
+      <div class="note">記事に実測値や採用統計はなく、提案と考え方の整理である。</div>
+      <div class="comment"><b>コメント：</b>11月4日号の Kiro の形式検証が「基盤の中身の保証」なら、こちらは「基盤を運用する体制」で、2本を並べると自社ハーネスの抜けが見える。</div>
+    </div>
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Inkitt が Slack・Linear から起動する「ワンショット PR 作成」を自作：モデルより難しかったのは冪等性・ロック・再試行の上限・権限</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">InfoQ は11月4日、小説投稿サービスの Inkitt が小さく低リスクな変更を、タスク受付からテスト待ちのドラフト PR まで自動化した事例を報じた。起動は Slack、Linear、他のエージェントからの API 呼び出し。イベント駆動のオーケストレーターが使い捨てのエージェント用コンテナを動かし、仕様・実装・検証・CI 失敗の修復・マージ競合の解消を別々の段階として扱う。各実行は DB に保存され途中から再開できる。エージェントのコンテナには短命のトークンしか渡さず、Slack や Linear の資格情報は持たせない。検証・修復・競合解消は各2回まで、DB マイグレーション、認証、決済、CI 設定、パッケージの追加更新を含む作業は拒否し、PR はドラフトのまま人が承認する。</p>
+      <ul class="sowhat"><li><b>DEV</b>自社でエージェントの PR 自動化を組む場合、「状態機械の遷移ロジックを副作用から分離する」「差分で禁止パスを検査する」といった設計を、そのまま下敷きにできる。</li><li><b>PM</b>自動化の対象を「禁止タスクの一覧」で先に決め、再試行回数に上限を置く方式は、エージェント導入の範囲と責任分界を合意する材料になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://www.infoq.com/news/2026/11/inkitt-one-shot-pr-creator-agent/" target="_blank" rel="noopener">InfoQ「Inkitt Builds a One-Shot PR Creator with Resumable Agent Orchestration」（2026-11-04）</a>
+      </div>
+      <div class="note">InfoQ の報道を確認したもので、同記事が引く Inkitt の技術ブログ本文は取得して確認していない。成果は同社の説明による。</div>
+      <div class="comment"><b>コメント：</b>「モデルは簡単な部分だった」という現場の言葉は、見積で運用設計と権限設計の工数を厚めに見る根拠になる。</div>
+    </div>
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>AI の「完了しました」を読まない設計：仕様から検証可能な主張を抽出し、人が承認し、終了コードで機械判定する spec-gate（Zenn）</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Zenn の記事（11月5日）は、AI が書いたコードが自然言語の仕様に沿うかを判定する自作ツール spec-gate を紹介する。仕様とコードを直接比べず、仕様から「主張」（入出力例や性質）を AI に複数回抽出させ、一致度（3/3 など）を付けて人が承認・却下・曖昧に分類する。承認時に仕様文の hash を記録するため、仕様が変わると stale になって再承認が要る。検査は機械が行い、結果は pass／unapproved／stale／fail／unverified の5種で、エージェントの自己申告は判定に使わない。機械検査が無い主張は合格に数えず人の確認に回す。設定例では fuzz を200回、変異テストで80%以上の注入バグを検出できない計画は確定させない。</p>
+      <ul class="sowhat"><li><b>DEV</b>Claude Code のフックから終了コード2で修正を差し戻す構成は、「完了」報告を読まずに品質ゲートを置く実装例として自分の環境にも写せる。</li><li><b>PM</b>「機械検査が無い主張は合格に数えない」という扱いは、AI 成果物の受け入れ基準に未検証の項目を明示する運用の参考になる。</li></ul>
+      <div class="source">出典：
+        <a href="https://zenn.dev/nozomi720/articles/spec-gate-harness" target="_blank" rel="noopener">Zenn「AIは嘘をつく前提で。仕様準拠を exit code で判定する『spec-gate』を作った」（2026-11-05）</a>
+      </div>
+      <div class="note">個人の自作ツールで、合格率や欠陥検出数などの実測はない（数値は設定例）。著者表記が記事内の GitHub リンクと一致しない点があり、導入前にリポジトリ側を確認したい。</div>
+      <div class="comment"><b>コメント：</b>実測がない段階の設計案だが、「人が承認する主張」と「機械が判定する検査」を分ける考え方は11月2〜4日号のレビュー関連の話と一貫している。</div>
+    </div>
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>Qwen 3.8 27B を手元のノート PC で動かすと、強化学習モデルの重みだけから「何のゲームか」を推定できた——ただし1回ずつで、数十分から1時間超かかる</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Simon Willison が11月3日の記事で、論文「Sparks of Weight-Space Programming」の実験1（ニューラルネットの生の重みだけを見て、学習したゲームを当てる）を、ローカルの Qwen 3.8 27B（Q4_K_M、約17GB、LM Studio）で追試した。ブレイクアウト用の重みでは Arkanoid 風のブロック崩しと88%の確信度で答え、パックマン用は「パックマン風の迷路」（72%）、ポン用はポン風（75%）と推定、フリーウェイ用は外れた。所要は約46分〜1時間超で、長いコンテキストとタイムアウトの延長が必要だった。各ゲーム1回の試行である。Kimi K3.1 Pro は OpenRouter 経由で約9分41秒、推論トークン19,493でブレイクアウトを当てた。Willison は論文の主張は誇張だと見ている。</p>
+      <ul class="sowhat"><li><b>DEV</b>27B 級のローカルモデルで長い数値入力を扱うには、コンテキスト長とタイムアウトの設定が実用上のボトルネックになる点を押さえておける。</li><li><b>CONSULT</b>「LLM が重みを読み書きする」という話題がクライアントに出た場合、元の実験は1回ずつの試行で、第三者から過大評価との批判もあると伝えられる。</li></ul>
+      <div class="source">出典：
+        <a href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/" target="_blank" rel="noopener">Simon Willison「Qwen 3.8 27B on my laptop can interpret model weights, too」（2026-11-03）</a>
+      </div>
+      <div class="note">試行は各1回で、パックマンの回答が正解かは記事に明記がない。論文本体は確認していない。</div>
+      <div class="comment"><b>コメント：</b>派手な話題ほど追試が1回の実測にとどまりやすい、という注意を添えて読むのがよい。</div>
+    </div>
+
+    <div class="section-title">📰 短信</div>
+    <div class="brief"><ul>
+      <li>GitHub Trending には NVIDIA/auto-ontology、vercel-labs/agent-desktop、mattpocock/skills、claude-mem などが並び、エージェント向けの記憶・スキル・PC 操作系が引き続き目立つ。出典：<a href="https://github.com/trending" target="_blank" rel="noopener">GitHub Trending</a></li>
+    </ul></div>
+
+    <div class="section-title">🧭 候補プールの動き</div>
+    <div class="pool"><ul>
+      <li><b>新規：</b>「MCP の遅延ツール読み込み（search_tools 型）」「spec-gate（仕様の主張を終了コードで判定）」。</li>
+      <li><b>追跡：</b>「ハーネス工学（Thoughtworks）」は11月4日号のトークン費用に続き2回目、「Copilot Code Review Max」「Docker Sandboxes」「FlashProve」は期限外のため次回以降の言及待ち。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

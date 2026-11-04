@@ -1355,6 +1355,78 @@
     "https://www.thoughtworks.com/insights/articles/the-token-bleed-reality"
    ],
    "note": "エージェント単位の予算・遮断器・キャッシュ・モデル使い分け"
+  },
+  {
+   "name": "MCP 遅延ツール読み込み (search_tools)",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-05",
+   "last_seen": "2026-11-05",
+   "mentions": 1,
+   "sources": [
+    "https://zenn.dev/tappers/articles/ai-labo-e14-progressive-tool-search"
+   ],
+   "note": "全ツールのスキーマを毎ターン送らず検索ツール経由で必要分だけ読み込む。対照: 全件投入"
+  },
+  {
+   "name": "spec-gate",
+   "kind": "dev-practice",
+   "status": "candidate",
+   "first_seen": "2026-11-05",
+   "last_seen": "2026-11-05",
+   "mentions": 1,
+   "sources": [
+    "https://zenn.dev/nozomi720/articles/spec-gate-harness"
+   ],
+   "note": "仕様から検証可能な主張を抽出→人が承認→終了コードで機械判定。対照: AI 自己申告、レビュー門番"
+  },
+  {
+   "name": "Harness engineering",
+   "kind": "concept",
+   "status": "candidate",
+   "first_seen": "2026-11-05",
+   "last_seen": "2026-11-05",
+   "mentions": 1,
+   "sources": [
+    "https://www.thoughtworks.com/insights/blog/generative-ai/harness-is-a-product"
+   ],
+   "note": "ハーネスを責任者・評価セット・バージョン管理を持つプロダクトとして扱う"
+  },
+  {
+   "name": "Copilot Code Review Max",
+   "kind": "dev-tool",
+   "status": "candidate",
+   "first_seen": "2026-11-05",
+   "last_seen": "2026-11-05",
+   "mentions": 1,
+   "sources": [
+    "https://github.blog/changelog/2026-10-28-copilot-code-review-merge-with-confidence-with-max-and-approvals/"
+   ],
+   "note": "複数モデルのレビューエージェント＋集約。公開プレビュー（原文10/28）"
+  },
+  {
+   "name": "Docker Sandboxes",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-05",
+   "last_seen": "2026-11-05",
+   "mentions": 1,
+   "sources": [
+    "https://www.docker.com/blog/ai-agent-security-risks/"
+   ],
+   "note": "エージェントを使い捨て microVM で隔離。Docker AI Governance と併用（原文10/14）"
+  },
+  {
+   "name": "FlashProve",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-05",
+   "last_seen": "2026-11-05",
+   "mentions": 1,
+   "sources": [
+    "https://www.anthropic.com/research/provable-inference"
+   ],
+   "note": "zkSNARK でモデル出力の出所を証明する研究プロトタイプ（11/2）"
   }
  ]
 }

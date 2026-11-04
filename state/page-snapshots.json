@@ -31,7 +31,7 @@
    "https://code.claude.com/docs/en/output-styles",
    "https://code.claude.com/docs/en/hooks"
   ],
-  "checked": "2026-11-03T23:05:57.446476+00:00"
+  "checked": "2026-11-04T23:05:48.399780+00:00"
  },
  "https://www.anthropic.com/engineering": {
   "links": [
@@ -63,7 +63,7 @@
    "https://www.anthropic.com/research/team/interpretability",
    "https://www.anthropic.com/research/team/societal-impacts"
   ],
-  "checked": "2026-11-03T23:05:57.732329+00:00"
+  "checked": "2026-11-04T23:05:48.679866+00:00"
  },
  "https://docs.anthropic.com/en/release-notes/overview": {
   "links": [
@@ -188,7 +188,7 @@
    "https://docs.anthropic.com/docs/en/build-with-claude/token-counting",
    "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/parallel-tool-use"
   ],
-  "checked": "2026-11-03T23:05:58.911962+00:00"
+  "checked": "2026-11-04T23:05:49.335987+00:00"
  },
  "https://developers.openai.com/changelog": {
   "links": [
@@ -253,7 +253,6 @@
    "https://developers.openai.com/api/docs/guides/image-prompting",
    "https://developers.openai.com/api/docs/guides/realtime",
    "https://developers.openai.com/api/docs/guides/voice-agents",
-   "https://developers.openai.com/api/docs/guides/deep-research",
    "https://developers.openai.com/api/docs/guides/agents-api/architecture",
    "https://developers.openai.com/api/docs/guides/agents-api/configuration",
    "https://developers.openai.com/api/docs/guides/agents-api/sessions",
@@ -310,6 +309,7 @@
    "https://developers.openai.com/api/docs/guides/realtime-translation",
    "https://developers.openai.com/api/docs/guides/text-to-speech",
    "https://developers.openai.com/api/docs/guides/audio-chat-completions",
+   "https://developers.openai.com/api/docs/guides/api-keys",
    "https://developers.openai.com/api/docs/guides/deployment-checklist",
    "https://developers.openai.com/api/docs/guides/ultrafast-mode",
    "https://developers.openai.com/api/docs/guides/latency-optimization",
@@ -405,6 +405,7 @@
    "https://developers.openai.com/workspace-agents/authentication",
    "https://developers.openai.com/codex/get-started-with-work",
    "https://developers.openai.com/codex/import",
+   "https://developers.openai.com/codex/working-with-agents",
    "https://developers.openai.com/codex/model-selection",
    "https://developers.openai.com/codex/personalize",
    "https://developers.openai.com/codex/skills-and-plugins",
@@ -518,6 +519,7 @@
    "https://developers.openai.com/codex/enterprise/usage-insights",
    "https://developers.openai.com/codex/enterprise/analytics-api",
    "https://developers.openai.com/codex/enterprise/agent-security",
+   "https://developers.openai.com/codex/enterprise/dots-security",
    "https://developers.openai.com/codex/hipaa-configuration",
    "https://developers.openai.com/codex/enterprise/compliance-api",
    "https://developers.openai.com/codex/use-cases",
@@ -573,6 +575,7 @@
    "https://developers.openai.com/api/docs/guides/agent-builder",
    "https://developers.openai.com/api/docs/models/o3-deep-research",
    "https://developers.openai.com/api/docs/models/o4-mini-deep-research",
+   "https://developers.openai.com/api/docs/guides/deep-research",
    "https://developers.openai.com/chat/edit",
    "https://developers.openai.com/api/docs/api-reference/responses/create",
    "https://developers.openai.com/api/docs/models/gpt-4o-audio-preview",
@@ -602,7 +605,7 @@
    "https://developers.openai.com/api/docs/models/dall-e-3",
    "https://developers.openai.com/api/docs/models/text-moderation-latest"
   ],
-  "checked": "2026-11-03T23:05:59.286441+00:00"
+  "checked": "2026-11-04T23:05:49.694080+00:00"
  },
  "https://cursor.com/changelog": {
   "links": [
@@ -631,11 +634,11 @@
    "https://cursor.com/en-US/cookie-policy",
    "https://cursor.com/en-US/security"
   ],
-  "checked": "2026-11-03T23:05:59.563766+00:00"
+  "checked": "2026-11-04T23:05:49.910019+00:00"
  },
  "https://ai.google.dev/gemini-api/docs/changelog": {
   "links": [],
-  "checked": "2026-11-03T23:06:00.098175+00:00"
+  "checked": "2026-11-04T23:05:50.650690+00:00"
  },
  "https://www.ipa.go.jp/digital/ai/": {
   "links": [
@@ -846,7 +849,7 @@
    "https://www.ipa.go.jp/siteinfo.html",
    "https://www.ipa.go.jp/accessibility.html"
   ],
-  "checked": "2026-11-03T23:06:00.415024+00:00"
+  "checked": "2026-11-04T23:05:51.151987+00:00"
  },
  "https://www.ppc.go.jp/news/": {
   "links": [
@@ -936,11 +939,14 @@
    "https://www.ppc.go.jp/application/kisei_kaikaku/",
    "https://www.ppc.go.jp/aboutus/commission/access/ppc_relocation?ref=topnews"
   ],
-  "checked": "2026-11-03T23:06:01.461595+00:00"
+  "checked": "2026-11-04T23:05:51.856431+00:00"
  },
  "https://www.soumu.go.jp/menu_news/s-news/": {
   "links": [
    "https://www.soumu.go.jp/english/index.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01tsushin06_02000364.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001298.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01kiban18_01000299.html",
    "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001280.html",
    "https://www.soumu.go.jp/menu_news/s-news/01kiban03_02001028.html",
    "https://www.soumu.go.jp/menu_news/s-news/01tsushin03_02000476.html",
@@ -948,7 +954,7 @@
    "https://www.soumu.go.jp/menu_news/s-news/01kougai01_20261101.html",
    "https://www.soumu.go.jp/menu_kyotsuu/policy/shuwa-link.html"
   ],
-  "checked": "2026-11-03T23:06:02.155188+00:00"
+  "checked": "2026-11-04T23:05:52.563591+00:00"
  },
  "https://www.anthropic.com/customers": {
   "links": [
@@ -1011,7 +1017,7 @@
    "https://www.anthropic.com/legal/consumer-terms",
    "https://www.anthropic.com/legal/aup"
   ],
-  "checked": "2026-11-03T23:06:03.208540+00:00"
+  "checked": "2026-11-04T23:05:53.257109+00:00"
  },
  "https://cloud.google.com/customers": {
   "links": [
@@ -1022,6 +1028,9 @@
    "https://cloud.google.com/customers/shopify-compute",
    "https://cloud.google.com/customers/kraftheinz",
    "https://cloud.google.com/customers/ksneducation",
+   "https://cloud.google.com/customers/uni-presidentchainstorecorporation",
+   "https://cloud.google.com/customers/hdfcbank",
+   "https://cloud.google.com/customers/national-laboratory-of-the-rockies",
    "https://cloud.google.com/customers/via-cristais",
    "https://cloud.google.com/customers/haya-therapeutics",
    "https://cloud.google.com/customers/commerzbank-ai",
@@ -1030,9 +1039,6 @@
    "https://cloud.google.com/customers/rightmove",
    "https://cloud.google.com/customers/warehouseexchange",
    "https://cloud.google.com/customers/funkemediengruppe",
-   "https://cloud.google.com/customers/adgoat",
-   "https://cloud.google.com/customers/myer",
-   "https://cloud.google.com/customers/rosebudai",
    "https://cloud.google.com/blog/products/ai-machine-learning/google-named-a-leader-in-the-gartner-magic-quadrant",
    "https://cloud.google.com/why-google-cloud",
    "https://cloud.google.com/ai",
@@ -1276,7 +1282,7 @@
    "https://cloud.google.com/product-terms",
    "https://cloud.google.com/sustainability"
   ],
-  "checked": "2026-11-03T23:06:03.816227+00:00"
+  "checked": "2026-11-04T23:05:53.644549+00:00"
  },
  "https://www.microsoft.com/en-us/customers/": {
   "links": [
@@ -1349,7 +1355,7 @@
    "https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_Footer_Sustainability",
    "https://www.microsoft.com/customers/locale"
   ],
-  "checked": "2026-11-03T23:06:04.049963+00:00"
+  "checked": "2026-11-04T23:05:53.893249+00:00"
  },
  "https://www.nri.com/jp/news": {
   "links": [
@@ -1363,7 +1369,7 @@
    "https://www.nri.com/jp/privacy.html",
    "https://www.nri.com/jp/security_declare.html"
   ],
-  "checked": "2026-11-03T23:06:04.693468+00:00"
+  "checked": "2026-11-04T23:05:54.714115+00:00"
  },
  "https://www.deloitte.com/jp/ja/about/press-room.html": {
   "links": [
@@ -1449,11 +1455,12 @@
    "https://www.deloitte.com/jp/ja/legal/smap.html?icid=bn_smap",
    "https://www.deloitte.com/jp/ja/about/governance/network-brand-alliances/about-the-network.html"
   ],
-  "checked": "2026-11-03T23:06:05.052417+00:00"
+  "checked": "2026-11-04T23:05:54.960144+00:00"
  },
  "https://www.kpmg.com/jp/ja/home/media/press-releases.html": {
   "links": [
    "https://www.kpmg.com/jp/ja/misc/generic-contact-page.html",
+   "https://www.kpmg.com/jp/ja/media/press-releases/2026/10/Iwata-asian-para-2026-2.html",
    "https://www.kpmg.com/jp/ja/media/press-releases/2026/10/rolling-forecast.html",
    "https://www.kpmg.com/jp/ja/media/press-releases/2026/10/cfo-survey-2026.html",
    "https://www.kpmg.com/jp/ja/media/press-releases/2026/10/kc-alliance-resilire.html",
@@ -1984,7 +1991,7 @@
    "https://www.kpmg.com/jp/ja/about.html",
    "https://www.kpmg.com/jp/ja/media.html"
   ],
-  "checked": "2026-11-03T23:06:06.378400+00:00"
+  "checked": "2026-11-04T23:05:56.206910+00:00"
  },
  "https://www.ey.com/ja_jp/newsroom": {
   "links": [
@@ -2069,6 +2076,7 @@
    "https://www.ey.com/ja_jp/about-us/corporate-responsibility/ey-japan-ripples",
    "https://www.ey.com/ja_jp/shape-the-future-with-confidence",
    "https://www.ey.com/ja_jp/integrated-report/top-message",
+   "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-04",
    "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-02",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-30",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-29",
@@ -2076,7 +2084,6 @@
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-22",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-20",
    "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-16",
-   "https://www.ey.com/ja_jp/newsroom/2026/10/ey-japan-news-release-2026-10-15",
    "https://www.ey.com/ja_jp/industries/government-public-sector/public-projects/2026/ey-japan-pp-2026-10-15",
    "https://www.ey.com/ja_jp/industries/government-public-sector/public-projects/2026/ey-japan-pp-2026-10-08",
    "https://www.ey.com/ja_jp/newsroom/2026/09/ey-japan-news-release-2026-09-16",
@@ -2090,11 +2097,11 @@
    "https://www.ey.com/ja_jp/people/ey-japan",
    "https://www.ey.com/ja_jp/legal-and-privacy/hotline"
   ],
-  "checked": "2026-11-03T23:06:06.800528+00:00"
+  "checked": "2026-11-04T23:05:56.674245+00:00"
  },
  "https://dora.dev/": {
   "links": [],
-  "checked": "2026-11-03T23:06:06.943785+00:00"
+  "checked": "2026-11-04T23:05:56.857664+00:00"
  },
  "https://www.thoughtworks.com/radar": {
   "links": [
@@ -2128,36 +2135,38 @@
    "https://www.thoughtworks.com/about-us",
    "https://www.thoughtworks.com/radar/byor",
    "https://www.thoughtworks.com/radar/languages-and-frameworks",
-   "https://www.thoughtworks.com/radar/techniques/spec-driven-development",
-   "https://www.thoughtworks.com/radar/techniques/codebase-cognitive-debt",
-   "https://www.thoughtworks.com/radar/techniques/zero-trust-architecture",
-   "https://www.thoughtworks.com/radar/techniques/mutation-testing",
-   "https://www.thoughtworks.com/radar/techniques/dora-metrics",
-   "https://www.thoughtworks.com/radar/techniques/measuring-collaboration-quality-with-coding-agents",
-   "https://www.thoughtworks.com/radar/techniques/agent-skills",
-   "https://www.thoughtworks.com/radar/techniques/agent-instruction-bloat",
-   "https://www.thoughtworks.com/radar/tools/claude-code-plugin-marketplace",
-   "https://www.thoughtworks.com/radar/languages-and-frameworks/github-spec-kit",
-   "https://www.thoughtworks.com/radar/techniques/feedback-sensors-for-coding-agents",
-   "https://www.thoughtworks.com/radar/tools/cargo-mutants",
-   "https://www.thoughtworks.com/radar/techniques/fuzz-testing",
-   "https://www.thoughtworks.com/radar/techniques/architecture-drift-reduction-with-llms",
-   "https://www.thoughtworks.com/insights/blog/technology-strategy/macro-trends-tech-industry-april-2026",
-   "https://www.thoughtworks.com/insights/blog/generative-ai/cognitive-demands-ai-novelty",
-   "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/themes-technology-radar-34",
+   "https://www.thoughtworks.com/radar/platforms/agent-plugins",
+   "https://www.thoughtworks.com/radar/techniques/agent-plugin-marketplace",
+   "https://www.thoughtworks.com/radar/tools/agent-package-manager",
+   "https://www.thoughtworks.com/radar/techniques/harness-quality-evaluation",
+   "https://www.thoughtworks.com/radar/techniques/self-improving-harness",
+   "https://www.thoughtworks.com/radar/techniques/feedback-flywheel",
+   "https://www.thoughtworks.com/radar/techniques/enterprise-harness",
+   "https://www.thoughtworks.com/radar/techniques/platform-engineering-product-teams",
+   "https://www.thoughtworks.com/radar/techniques/open-weight-models",
+   "https://www.thoughtworks.com/radar/techniques/local-coding-models",
+   "https://www.thoughtworks.com/radar/techniques/foundation-models-for-structured-data",
+   "https://www.thoughtworks.com/radar/platforms/decision-models",
+   "https://www.thoughtworks.com/radar/techniques/blanket-frontier-model-usage",
+   "https://www.thoughtworks.com/radar/techniques/unattended-overnight-agentic-builds",
+   "https://www.thoughtworks.com/radar/techniques/team-of-coding-agents",
+   "https://www.thoughtworks.com/radar/techniques/coding-agent-swarms",
+   "https://www.thoughtworks.com/radar/techniques/human-in-the-loop-theater",
+   "https://www.thoughtworks.com/radar/techniques/path-to-production-mapping",
+   "https://www.thoughtworks.com/radar/platforms/vast-datastore",
+   "https://www.thoughtworks.com/insights/blog/technology-strategy/macro-trends-tech-industry-november-2026",
+   "https://www.thoughtworks.com/insights/blog/generative-ai/harness-is-a-product",
+   "https://www.thoughtworks.com/insights/podcasts/technology-podcasts/themes-technology-radar-vol-35",
    "https://www.thoughtworks.com/profiles/leaders/rachel-laycock",
-   "https://www.thoughtworks.com/profiles/a/abdul-kader-jeelani",
    "https://www.thoughtworks.com/profiles/a/alessio-ferri",
-   "https://www.thoughtworks.com/profiles/bharani-subramaniam",
-   "https://www.thoughtworks.com/profiles/birgitta-bockeler",
    "https://www.thoughtworks.com/profiles/b/brandon-cook",
    "https://www.thoughtworks.com/profiles/c/cecilia-geraldo",
    "https://www.thoughtworks.com/profiles/c/chris-chakrit-likitkhajorn0",
-   "https://www.thoughtworks.com/profiles/j/jagdsh-lk-chand",
-   "https://www.thoughtworks.com/profiles/n/nimisha-Asthagiri",
+   "https://www.thoughtworks.com/profiles/m/muhilvarnan-v",
    "https://www.thoughtworks.com/profiles/r/renan-martins",
-   "https://www.thoughtworks.com/profiles/s/sarang-kulkarni",
    "https://www.thoughtworks.com/profiles/s/selvakumar-natesan",
+   "https://www.thoughtworks.com/profiles/t/thiago-gregorio",
+   "https://www.thoughtworks.com/profiles/v/vanitha-kumar",
    "https://www.thoughtworks.com/radar/archive",
    "https://www.thoughtworks.com/about-us/partnerships",
    "https://www.thoughtworks.com/what-we-do/enterprise-ai/agent/works",
@@ -2173,11 +2182,11 @@
    "https://www.thoughtworks.com/about-us/fraud-advisory-notice",
    "https://www.thoughtworks.com/about-us/compliance"
   ],
-  "checked": "2026-11-03T23:06:07.165066+00:00"
+  "checked": "2026-11-04T23:05:57.103572+00:00"
  },
  "https://newsletter.pragmaticengineer.com/": {
   "links": [],
-  "checked": "2026-11-03T23:06:07.346434+00:00"
+  "checked": "2026-11-04T23:05:57.305606+00:00"
  },
  "https://linear.app/changelog": {
   "links": [
@@ -2204,15 +2213,16 @@
    "https://linear.app/coding-sessions",
    "https://linear.app/customer-requests",
    "https://linear.app/integrations",
-   "https://linear.app/docs"
+   "https://linear.app/docs",
+   "https://linear.app/legal"
   ],
-  "checked": "2026-11-03T23:06:07.640305+00:00"
+  "checked": "2026-11-04T23:05:57.670673+00:00"
  },
  "https://www.atlassian.com/blog": {
   "links": [
    "https://www.atlassian.com/blog",
-   "https://www.atlassian.com/blog/search?topic[0]=company-news",
    "https://www.atlassian.com/blog/search?topic[0]=how-we-build",
+   "https://www.atlassian.com/blog/search?topic[0]=company-news",
    "https://www.atlassian.com/blog/ai-research",
    "https://www.atlassian.com/blog/about",
    "https://www.atlassian.com/software/jira/service-management",
@@ -2225,7 +2235,7 @@
    "https://www.atlassian.com/resources",
    "https://www.atlassian.com/legal/privacy-policy"
   ],
-  "checked": "2026-11-03T23:06:07.887656+00:00"
+  "checked": "2026-11-04T23:05:58.265642+00:00"
  },
  "https://digital-strategy.ec.europa.eu/en/news": {
   "links": [
@@ -2238,19 +2248,19 @@
    "https://digital-strategy.ec.europa.eu/en/news/commission-accepts-temus-action-plan-remedy-breach-digital-services-act",
    "https://digital-strategy.ec.europa.eu/en/news/commission-investigate-how-bookingcom-combats-scams-and-fraud-under-digital-services-act",
    "https://digital-strategy.ec.europa.eu/en/news/eu-kids-act-restrict-social-media-platforms-access-children-eu",
+   "https://digital-strategy.ec.europa.eu/en/news/joint-statement-cyber-incidents-refrigeration-systems-across-eu",
+   "https://digital-strategy.ec.europa.eu/en/news/eu525-million-investment-set-drive-new-generation-european-chip-design-companies",
+   "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-advertising-repositories-under-digital-services-act",
    "https://digital-strategy.ec.europa.eu/en/news/digitaleu-web-summit-2026-supporting-businesses-and-startups-grow-and-innovate",
    "https://digital-strategy.ec.europa.eu/en/news/eu-and-canada-team-supercomputing-and-quantum",
+   "https://digital-strategy.ec.europa.eu/en/news/eu-and-canada-partner-tackle-climate-risks-through-destination-earth",
    "https://digital-strategy.ec.europa.eu/en/news/first-virtual-worlds-partnership-annual-forum-take-place-valencia",
    "https://digital-strategy.ec.europa.eu/en/news/commission-announces-winners-eosc-eu-node-framework-procurement-2026",
-   "https://digital-strategy.ec.europa.eu/en/news/eu-and-canada-partner-tackle-climate-risks-through-destination-earth",
-   "https://digital-strategy.ec.europa.eu/en/news/commission-opens-depth-investigation-proposed-changes-swedens-fixed-location-wholesale-local-access",
    "https://digital-strategy.ec.europa.eu/en/news/commission-decisions-related-art3233-european-electronic-communications-code",
-   "https://digital-strategy.ec.europa.eu/en/news/twelfth-code-conduct-disinformation-plenary-takes-stock-election-risks-crisis-response-and",
-   "https://digital-strategy.ec.europa.eu/en/news/commission-approves-eu319-million-austrian-state-aid-first-kind-semiconductor-manufacturing",
-   "https://digital-strategy.ec.europa.eu/en/news/commission-brings-banks-and-online-platforms-together-fight-against-online-scams",
+   "https://digital-strategy.ec.europa.eu/en/news/commission-opens-depth-investigation-proposed-changes-swedens-fixed-location-wholesale-local-access",
    "https://digital-strategy.ec.europa.eu/en",
    "https://digital-strategy.ec.europa.eu/en/pages/accessibility"
   ],
-  "checked": "2026-11-03T23:06:08.474870+00:00"
+  "checked": "2026-11-04T23:05:58.603818+00:00"
  }
 }
