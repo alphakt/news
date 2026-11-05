@@ -1427,6 +1427,30 @@
     "https://www.anthropic.com/research/provable-inference"
    ],
    "note": "zkSNARK でモデル出力の出所を証明する研究プロトタイプ（11/2）"
+  },
+  {
+   "name": "context rot",
+   "kind": "context-engineering",
+   "status": "watching",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "mentions": 1,
+   "sources": [
+    "https://www.thoughtworks.com/insights/blog/generative-ai/what-is-context-rot"
+   ],
+   "note": "文脈の肥大・陳腐化でエージェントの判断が劣化する現象と5つの対処"
+  },
+  {
+   "name": "Kiro credit pooling",
+   "kind": "agent-infra",
+   "status": "watching",
+   "first_seen": "2026-11-06",
+   "last_seen": "2026-11-06",
+   "mentions": 1,
+   "sources": [
+    "https://aws.amazon.com/jp/blogs/news/credit-pooling/"
+   ],
+   "note": "組織でクレジットを共有し3段階で上限設定する課金設計"
   }
  ]
 }

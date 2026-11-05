@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月6日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月6日（金）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は一次情報で日付と本文を確認できた6件に絞りました。見送ったもの：OpenAI「A thousand fewer paths to root」と GPT-6 Cyber（取得不能・未確認）、GitHub Copilot Dreaming（発表は10月28〜29日の Universe）、Docker のエージェント保護指針（原文は10月14日で前号で見送り済み）。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>IPA が「AI時代の要求管理ハンドブック」Ver.1.0.0 を公開——AI の不確実性・データ品質・人と AI の役割分担を「要求」として書く方法を5部構成で整理</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">IPA は11月5日、要求管理の考え方と実践方法をまとめたハンドブックを公開した。要望・要求・要件の違いといった基礎から始まり、AI 時代に要求管理がどう変わるか（AI システムの要求・要件、AI による要求管理支援）、モデリングとトレーサビリティ、法令・規制・社内規則を要件につなぐ考え方、組織への定着（役割分担・導入ステップ・成熟度・代表的な成果物）の全5部で構成される。要求は一度定義して終わりにせず、関係者の共通理解を作りながら変化に応じて継続的に管理するとし、AI の不確実性、データ品質、人と AI の役割分担を要求・要件として定義する点を扱う。読者は開発者に限らず、経営・事業部門、法務・調達、プロジェクト責任者まで想定され、全体を一律に適用せず役割や案件に応じて必要な部分を参照する前提である。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>日本の公的機関が出した共通の言葉なので、AI 案件の要件定義や提案書で「AI の不確実性・データ品質・役割分担をどう要求に落とすか」の拠り所として、クライアントに引用できる。</li><li><b>PM</b>要求と設計・実装・評価・運用を関連付ける追跡可能性の章が、AI 案件の変更影響の把握や成熟度の自己診断の雛形になる。</li><li><b>DEV</b>AI による要求の抽出・分析・整合性確認の支援にも触れており、仕様をエージェントに渡す前段の整理手順を見直す材料になる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>進行中の AI 案件を1件選び、第2部「AI時代に要求管理はどう変わるか」と第5部の成熟度・成果物一覧を、現行の要件定義書と見比べて不足項目（AI の不確実性・データ品質・人と AI の分担）を洗い出す。</div>
+      <div class="source">出典：<a href="https://www.ipa.go.jp/digital/kaihatsu/youkyu-kanri.html" target="_blank" rel="noopener">IPA「AI時代の要求管理ハンドブック」（2026-11-05）</a></div>
+      <div class="note">章の詳細は未精読。ページの概要に基づく。</div>
+      <div class="comment"><b>コメント：</b>要件定義の抜けを AI 時代向けに点検できる公的な物差しが無料で手に入り、提案の根拠として使いやすい。</div>
+    </div>
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Thoughtworks が「エージェントの文脈腐敗（context rot）」の見分け方と5つの対処を公開——テスト出力はフィルタし、CLAUDE.md は定期的に棚卸しする</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Thoughtworks は11月5日の記事で、文脈が長くなる・ノイズが増える・古くなることでモデルが文脈をうまく使えなくなる現象を context rot と定義した。症状は、前に決めた制約を無視する、失敗した方法を繰り返す、古い計画や最新のテスト結果を見落とす、無関係なファイルや巨大なツール出力に労力を使う、の5つ。対処は、ツール出力を次の判断に必要な分だけ渡す、長い作業は目標・制約・失敗した方法とその理由を要約する、必要になった時点で読み込む、AGENTS.md や CLAUDE.md の恒久ルールと一時的な作業状態を分ける、作業が大きく変わったら引き継ぎメモを付けて新しい文脈で始める、の5つである。トークン数ではなくタスク完了などの結果で評価することも勧めている。</p>
+      <ul class="sowhat"><li><b>DEV</b>テスト実行後は失敗したテスト・エラー・関連スタックトレースだけを次の呼び出しに渡す設定と、CLAUDE.md の古い・矛盾する記述の定期削除を、今日から運用に入れられる。</li><li><b>PM</b>エージェントが同じ失敗を繰り返す・終盤で品質が落ちるときは「文脈の問題」として切り分けられ、タスクの区切り方や引き継ぎメモの様式をチームの標準にできる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>直近でエージェントが迷走した作業を1つ選び、その直前の文脈に何が入っていたかを確認する。巨大なツール出力があれば出力を絞り、CLAUDE.md の矛盾を消してから同じタスクを再実行して比べる。</div>
+      <div class="source">出典：<a href="https://www.thoughtworks.com/insights/blog/generative-ai/what-is-context-rot" target="_blank" rel="noopener">Thoughtworks「Context rot in AI agents」（2026-11-05）</a></div>
+      <div class="note">実測値は示されていない。実践的な指針の記事。</div>
+      <div class="comment"><b>コメント：</b>11月4日・5日号のトークンとハーネスの話を、「何を渡さないか」という運用の言葉にまとめた一本で、手元の CLAUDE.md を読み直すきっかけになる。</div>
+    </div>
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>トヨタ北米の SAP 運用基盤 BasisPilot：AI は68の型付きツールを「要求」するだけで、承認・RBAC・監査はアプリ側——カーネル更新は約2.5時間から約45分</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">AWS Japan ブログ（11月5日）は、トヨタ北米が AWS 上の SAP 20システム・60台超の EC2 を1つのダッシュボードで運用する BasisPilot の構成を紹介した。Bedrock のツール使用でモデルは68種の型付きツールを要求でき、実行前にアプリが検証・RBAC 確認・承認を行う。AI が任意のシェルを実行することはなく、本番や破壊的操作は必ず承認待ちで、古い承認は失効する。作業前に AMI やバックアップを取り、完了はコマンドの受付ではなくライブの状態確認で判定し、全呼び出しをユーザー ID 付きで記録する。報告値は、運用情報の収集・分析時間が少なくとも約20%減、ステータス確認チケットが推定約25%減、カーネル更新が約2.5時間から約45分、ファイルシステム縮小が約3〜4時間から約1時間（いずれも観察件数に基づく報告値）。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>基幹システム運用への AI 導入で必ず出る「AI に勝手に操作させて大丈夫か」に対し、許可リスト・承認ゲート・巻き戻し・監査の具体的な設計例として示せる。</li><li><b>PM</b>効果を「時間削減○%」と観察件数つきで測っており、AI 運用案件の効果測定の書き方と、承認待ちを工程に組み込む見積りの参考になる。</li><li><b>DEV</b>モデルには「要求」だけをさせ、実行側で検証する構成は、エージェントの権限設計のそのまま使える型になる。</li></ul>
+      
+      <div class="source">出典：<a href="https://aws.amazon.com/jp/blogs/news/how-toyota-built-basispilot-an-ai-assisted-sap-operations-platform-on-aws/" target="_blank" rel="noopener">AWS Japan Blog「トヨタはいかにして BasisPilot を構築したか」（2026-11-05）</a></div>
+      <div class="note">効果の数値はトヨタ側の報告値でパイロットに基づく推定を含む。AWS の公式ブログである点に留意。</div>
+      <div class="comment"><b>コメント：</b>機能の派手さではなく「承認・失効・復旧・監査」を前面に出した事例で、日本企業の慎重な運用部門に説明しやすい。</div>
+    </div>
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Bloomberg の大規模コード移行：2,333件の PR のうち成功は729件（約31%）——ボトルネックは生成ではなく、受け取るチームのレビュー・テスト・デプロイ</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">arXiv（11月3日投稿）の Bloomberg の論文は、約1,900リポジトリの Python パッケージング移行と約6,700リポジトリの C++ ビルドシステム移行に、LLM と決定論的処理を組み合わせたパイプラインを使った結果を報告する。LLM は事前に計算した文脈内の限定的なファイル変換だけを担い、実行ログや利用トレースなど本番テレメトリも使う。PR は計2,333件、成功した移行は729件（約31%、掲載値からの計算）。著者らは、移行の生成は容易な部分で、主なボトルネックは所有チームがレビュー・テスト・デプロイする費用だと述べる。PR を出す前にパイプライン内で検証できる場合（C++ のコンパイルとテスト）と、リポジトリが均質で修正を横展開できる場合に費用が下がった。</p>
+      <ul class="sowhat"><li><b>PM</b>AI による大規模移行の見積りでは「生成量」ではなく受け手側のレビュー工数と成功率（この例は約3割）を計画に入れる必要がある。</li><li><b>DEV</b>PR を出す前に自動で検証する工程を作るほど、受け手の負担が下がることが示された。</li><li><b>CONSULT</b>レガシー移行を AI で安く速くと提案する際、均質な対象から始める・事前検証を組み込む、という現実的な進め方の根拠にできる。</li></ul>
+      
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.05457" target="_blank" rel="noopener">arXiv:2611.05457「Hybrid LLM-Deterministic Pipelines for Enterprise-Scale Code Migration at Bloomberg」（2026-11-03）</a></div>
+      <div class="note">「約31%」は取得したアブストラクト上の数値からの計算で、論文側の成功率の定義は未確認。</div>
+      <div class="comment"><b>コメント：</b>「AI が書いた後にレビューが詰まる」ことを企業規模の実数で示した数少ない報告で、PM の見積り根拠になる。</div>
+    </div>
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Kiro Enterprise にクレジットプーリング：月$20・最小2シート・各500クレジットを組織で共有、追加は1クレジット$0.04、上限は3段階で設定</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Kiro チームは11月4日、AWS Japan ブログは11月5日に、Kiro Enterprise でチーム全体のクレジットを1つの共有プールにまとめて使える機能を紹介した。シート料金は月額$20で最小2シート、各シートに毎月リセットされる500クレジットが含まれる。追加クレジットは1クレジット$0.04で購入直後にプールへ入り、最長12か月繰り越せる。消費順はシート分が先、次に追加購入分（期限の近いものから）。複数グループに所属する利用者でも支払いは1シート分で、利用上限はプロファイル・グループ・個人の3段階で設定でき、上限到達で追加購入まで利用がブロックされる。使用率80%と100%で管理者に通知が届く。第三者 ID プロバイダーによるグループ管理と管理 API は近日対応予定とされる。</p>
+      <ul class="sowhat"><li><b>PM</b>パワーユーザーとライトユーザーの消費差を吸収でき、AI コーディング費用をシート単位ではなくプール＋上限で統制する具体例として、予算計画に使える。</li><li><b>CONSULT</b>AI 開発ツールの価格体系の事例として、クライアントのライセンス設計（シート方式か従量か）の比較に引用できる。</li></ul>
+      
+      <div class="source">出典：<a href="https://aws.amazon.com/jp/blogs/news/credit-pooling/" target="_blank" rel="noopener">AWS Japan Blog「クレジットプーリングで Kiro のクレジットをチーム全体で共有する」（2026-11-05）</a></div>
+      <div class="note">設定手順は公式ドキュメント側にあり、本稿では未確認。新規 Enterprise 顧客は既定で有効、既存顧客は有効化が必要。</div>
+      <div class="comment"><b>コメント：</b>「上限に達すると止まる」設計はコスト統制には効くが、業務が止まるリスクとの引き換えなので、上限値の決め方が運用の肝になる。</div>
+    </div>
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>GitHub が新しい Git ストレージ構成を公開：1リポジトリに5,000エージェント・毎秒7,200 push を社内試験、限定プライベートプレビュー</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">GitHub ブログ（11月5日）は、エージェントの増加で混雑するリポジトリに対応するための新しい Git ストレージ構成を説明した。ある1リポジトリの1日あたりのリクエストが3月から5月で約4倍になったという。Git オブジェクトは内容で名付けられた不変データなので調整なしに保存でき、合意が必要なのは参照の更新だけという考えから、データは Azure Blob Storage に置き、参照とパック管理は複製ログ（Ref-CAS）で扱う。社内試験では5,000の同時エージェント、毎秒7,200 push、参照操作は毎秒数万件を達成した。利用者の操作や保護機能は従来どおりで、限定プライベートプレビュー、広い提供は来年初めの予定。</p>
+      <ul class="sowhat"><li><b>DEV</b>今すぐ使える機能ではないが、エージェントが1リポジトリに大量に push する運用で起きるボトルネックの種類（参照更新の競合）を知っておける。</li><li><b>PM</b>並列エージェントを増やす計画では、リポジトリ基盤側の上限も検討項目になる。提供は来年初めの見込みで、それまでの運用上限は現行のままである。</li></ul>
+      
+      <div class="source">出典：<a href="https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/" target="_blank" rel="noopener">GitHub Blog「Inside GitHub’s new Git storage architecture」（2026-11-05）</a></div>
+      <div class="note">数値は GitHub 社内試験の値。一般提供は未定（来年初めに広い展開を予定）。</div>
+      <div class="comment"><b>コメント：</b>エージェントの並列化が、モデルではなくインフラ側の設計を変え始めたことを示す。</div>
+    </div>
+
+    <div class="section-title">短信</div>
+    <div class="brief"><ul>
+      <li>GitHub トレンドは agent skills 系（mattpocock/skills、google/skills）と worktree 管理（worktrunk）が目立つ。ただし日付の一次確認は未実施で、参考情報。</li>
+    </ul></div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>新規：context rot（文脈腐敗）、Kiro クレジットプーリング。既存の「ハーネス」「エージェント権限・監査」系に Toyota BasisPilot の事例を追加。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

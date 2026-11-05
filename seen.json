@@ -630,6 +630,36 @@
    "date": "2026-11-05",
    "key": "qwen38-weight-space",
    "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/"
+  },
+  {
+   "date": "2026-11-06",
+   "key": "ipa-youkyu-kanri-handbook",
+   "url": "https://www.ipa.go.jp/digital/kaihatsu/youkyu-kanri.html"
+  },
+  {
+   "date": "2026-11-06",
+   "key": "thoughtworks-context-rot",
+   "url": "https://www.thoughtworks.com/insights/blog/generative-ai/what-is-context-rot"
+  },
+  {
+   "date": "2026-11-06",
+   "key": "toyota-basispilot",
+   "url": "https://aws.amazon.com/jp/blogs/news/how-toyota-built-basispilot-an-ai-assisted-sap-operations-platform-on-aws/"
+  },
+  {
+   "date": "2026-11-06",
+   "key": "bloomberg-hybrid-code-migration",
+   "url": "https://arxiv.org/abs/2611.05457"
+  },
+  {
+   "date": "2026-11-06",
+   "key": "kiro-credit-pooling",
+   "url": "https://aws.amazon.com/jp/blogs/news/credit-pooling/"
+  },
+  {
+   "date": "2026-11-06",
+   "key": "github-new-git-storage",
+   "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/"
   }
  ]
 }
