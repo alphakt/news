@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月7日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月7日（土）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は一次情報で日付と本文を確認できた5件に絞りました。見送ったもの：OpenAI「GPT-6 Cyber」（一次ページが取得不能で未確認）、METR の AI 研究加速に関する報告（一次情報に到達できず）、cloudflare/security-audit-skill（GitHub トレンド入りだが公開日を確認できず）、OpenAI の追加調達（資金調達のため対象外）。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Claude Code がアカウントのメールアドレスを Web リクエストの User-Agent に載せていた問題——v2.1.317 以降は遮断用の内蔵 mod が既定で有効、ただし抜け穴の報告が続く</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">GitHub の公式リポジトリで11月5日に起票された Issue #107757（v2.1.318・macOS）は、Claude Code が Web 検索時の HTTP リクエストの User-Agent ヘッダーにアカウントのメールアドレスを入れ、第三者のサイトに送っていると報告した。起票者は迷惑メールが1日数十通届くと述べ、設定ではなく機能自体の削除を求めている。コメント欄では、Anthropic 側の貢献者が v2.1.317 で追加した内蔵 mod「cc-plugin-privacy」が該当の挙動を決定論的に止めると説明した（既定で有効、/plugins で無効化可能）。一方11月6日には別の利用者が、モデルが自作の curl や Python スクリプトで User-Agent を組み立てる際にプロジェクト名や顧客名、メールアドレスを入れる例を報告し、mod はアカウントのメールだけを照合するためファイル経由・メールなしの記述は通ると指摘した。Issue は執筆時点で未解決である。</p>
+      <ul class="sowhat"><li><b>DEV</b>自分の環境で内蔵 mod が有効か（/plugins）を確認し、エージェントが生成するスクリプトの User-Agent やヘッダーに識別情報が入っていないかをレビュー項目に加えられる。</li><li><b>CONSULT</b>顧客案件で AI エージェントに外部アクセスさせる場合、「エージェントが送信先に何を付けるか」を情報漏えい経路として説明・確認する材料になる（個人情報の取扱いの観点）。</li><li><b>PM</b>エージェント利用の標準ルールに、外部通信のログ確認とバージョン更新の運用（最新版へ上げる担当・頻度）を入れる根拠になる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>Claude Code を最新版に更新し、/plugins で cc-plugin-privacy が無効になっていないことを確認する。顧客案件では外部通信の許可先を絞り、エージェント作成スクリプトの送信ヘッダーを一度目視する。</div>
+      <div class="source">出典：<a href="https://github.com/anthropics/claude-code/issues/107757" target="_blank" rel="noopener">GitHub anthropics/claude-code Issue #107757「Privacy violation in User-Agent header」（起票 2026-11-05、更新 2026-11-06）</a></div>
+      <div class="note">Anthropic の公式声明ではなく Issue 上の貢献者コメントに基づく。mod の仕様と抜け穴は利用者の報告で、当方では再現していない。</div>
+      <div class="comment"><b>コメント：</b>便利さの裏で「エージェントが外へ何を名乗るか」が新しい管理対象になった。修正の完了を待たず、今日の運用で確認できる。</div>
+    </div>
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Anthropic Engineering が「エージェントの記憶」の構成要素を整理——注入する最上層は小さく保ち、記憶を定期的に見直す「dreaming」で wiki 検索の正答率が13%→48%</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Anthropic Engineering は11月6日、記憶を「セッションをまたいで保持される経験由来の知識」と定義し（重み更新・文脈内学習・圧縮は除外）、5層で説明した。会話の記録（transcripts）、記憶ノート、wiki 形式などの表現、毎回読み込む注入文脈、そしてオフラインで記録とノートを見直して誤りを直し最上層を更新する dreaming である。推奨は、記憶の目的を伝えるが使い方は細かく指定しない、最上層は小さくし詳細は下層にリンクで置く、画面から読める状態は保存しない、wiki は担当ごとにページを分けて重要語は原文のまま引用する、など。実測では CL-Bench の DB タスクで Opus 5.5 が平均報酬0.655→0.838、Stainless の文書25問で wiki 単独の正答率が128回の dreaming で13%→48%、wiki＋検索は61%（検索単独53%）で1問あたり約2万トークン節約と報告している。</p>
+      <ul class="sowhat"><li><b>DEV</b>CLAUDE.md や記憶ファイルを「常時読み込む少量の核」と「必要時に辿る下層」に分け、定期的に記録と照合して誤りを直す運用を設計に組み込める。</li><li><b>PM</b>記憶は放置すると誤りが信頼されて残るので、棚卸しの担当と頻度を運用計画に入れる根拠になる。トークン節約の数値も費用見積りの参考になる。</li></ul>
+      
+      <div class="source">出典：<a href="https://www.anthropic.com/research/components-of-agent-memory" target="_blank" rel="noopener">Anthropic Engineering「The components of agent memory」（2026-11-06）</a></div>
+      <div class="note">数値は Anthropic 自身の評価で、タスクとモデルが限定的。dreaming の実装手順は本稿では未確認。</div>
+      <div class="comment"><b>コメント：</b>4日前の context rot の話と合わせて読むと、「入れすぎない・直し続ける」が文脈運用の共通原則に見えてくる。</div>
+    </div>
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>GitHub が「コード生成の先」のエージェント開発ガイドを公開——AI 導入が進むとレビュー待ちが441%延びるという Faros AI の調査を引き、積み上げ PR と事前の自動検証を勧める</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">GitHub ブログは11月6日、「コードを書くのは速くなったが周辺の作業は速くならなかった」と述べ、計画・実装・レビュー・運用の4段階で Copilot の機能を使う実践をまとめた。引用データは、10月の1週間で12億超のコミット（前年比400%超）と、AI 導入が低から高に進んだチームで PR のレビュー時間が441%長くなったという Faros AI の調査である。レビュー段階の推奨は、大きな変更を依存関係つきの小さな積み上げ PR に分ける、人のレビュー前に Code Quality や Copilot code review、AI によるシークレット検出などを走らせる、セキュリティ指摘は自動修正に回す、など。計画段階では Plan Mode で方針を承認してから実装に入ること、規約や検証コマンドをリポジトリの指示ファイルに置くことも挙げる。</p>
+      <ul class="sowhat"><li><b>PM</b>「書く時間は減ったがレビューが詰まる」を数字で示す根拠になり、見積りでレビュー・検証工数を別枠で持つ提案に使える（441%は Faros の調査値）。</li><li><b>DEV</b>積み上げ PR と人のレビュー前の自動検証という順序は、Copilot 以外のツールでも取り入れられる。</li></ul>
+      
+      <div class="source">出典：<a href="https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/" target="_blank" rel="noopener">GitHub Blog「Beyond code generation: A developer’s guide to agentic engineering」（2026-11-06）</a></div>
+      <div class="note">ベンダー自社製品の紹介を兼ねる記事。Faros AI の調査は原典未確認で、GitHub の引用に基づく。</div>
+      <div class="comment"><b>コメント：</b>製品宣伝を差し引いても、「レビューが次の詰まり」という見立ては複数の事例（11月6日号の Bloomberg など）と一致している。</div>
+    </div>
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>AWS の Kiro Crew で「Bot」が一般提供——名前付きの常駐エージェントが並行セッションを束ね、権限は役割ごとに最小化、承認するまで変わらない</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">AWS Japan ブログ（11月6日付）は、Kiro Crew で Bot の一般提供が11月5日に始まったと紹介した。Bot は名前とアバターを持ち、1つのチャットを継続して使い、ゴールに向けて自分から動く。Bot ごとにメモリと作業ログを持ち、ワーカーエージェントのセッションを並行起動して計画から外れたものを修正し、結果を1つのチャットにまとめる。定期実行（夜間ビルドの確認や週次リリースノート作成）、Bot ごとのダッシュボード、Bot とワーカーでのモデル使い分けにも対応する。統制面では、調査用 Bot は読み取りと Web 検索のみ、デプロイ用 Bot は変更前に承認を求める、レビュー用 Bot はコメントはできても承認・マージはできない、といった設計が可能で、Bot がツール追加を依頼しても承認するまで権限は変わらない。記憶は表示・編集・削除できる。料金は記事に記載がない。</p>
+      <ul class="sowhat"><li><b>DEV</b>Bot ごとに権限・メモリ・モデルを分ける設計は、自作のエージェント基盤でも「役割ごとの最小権限」の型として参照できる。</li><li><b>PM</b>レビュー Bot が承認やマージをできない設計は、AI の判断と人の承認を工程で分ける実例で、運用ルール作りに使える。</li><li><b>CONSULT</b>AWS がチーム常駐型エージェントを製品化した事例として、クライアントの AWS 前提の開発体制提案で比較材料になる。</li></ul>
+      
+      <div class="source">出典：<a href="https://aws.amazon.com/jp/blogs/news/crew-bots/" target="_blank" rel="noopener">AWS Japan Blog「Kiro Crew の Bot のご紹介」（2026-11-06、GA は11-05）</a></div>
+      <div class="note">料金・クレジット消費は記事に記載がなく未確認。実機では試していない。</div>
+      <div class="comment"><b>コメント：</b>前日のクレジットプーリングと合わせ、Kiro は「統制しやすいチーム用エージェント」に寄せている。常駐の自律動作は便利な反面、上限と承認の設計次第で費用が読めなくなる。</div>
+    </div>
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>KPMG ジャパンが CFO・経営管理部門向けの「経営管理AIエージェント」導入・活用支援サービスを開始——専門エージェントが予実差異分析からシナリオ分析、資料生成まで連携</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span></div>
+      <p class="detail">KPMG ジャパンは11月6日、CFO や FP&A を担う組織向けに、経営管理 AI エージェントの導入・活用を支援するサービスの提供開始を発表した。複数の専門エージェント（データ検証、予実差異分析、シナリオ分析、リスク検知、論点整理、資料生成など）が問い合わせに応じて連携し、ERP・EPM の財務・非財務データに加え会議資料などの非構造データ、市況・競合・業界動向の外部情報を横断して分析する。論点・仮説・選択肢と根拠の整理から、施策・責任者・期限・KPI の設定までを支援し、導入ではユースケース選定、AI と人の役割分担、データモデル、運用ルール、効果検証を設計する。運用中は実行状況の監視と効果検証を行い、エージェントの精度と運用ルールを継続改善するとしている。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>Big4 が「経営管理×エージェント」をサービス化した。クライアントの経理・企画部門から競合比較を聞かれた際の位置づけ把握と、自社提案の差別化の論点整理に使える。</li></ul>
+      
+      <div class="source">出典：<a href="https://www.kpmg.com/jp/ja/media/press-releases/2026/11/aiagent-cfo.html" target="_blank" rel="noopener">KPMG ジャパン ニュースリリース（2026-11-06）</a></div>
+      <div class="note">価格・導入実績・効果の数値は発表にない。プレスリリースに基づく。</div>
+      <div class="comment"><b>コメント：</b>発表内容は「役割分担・運用ルール・効果検証を設計する」という導入側の方法論が中心で、製品差ではなく進め方が売りに見える。</div>
+    </div>
+
+    <div class="section-title">短信</div>
+    <div class="brief"><ul>
+      <li>GitHub トレンドは agent skills 系（mattpocock/skills、google/skills）と Cloudflare のセキュリティ監査スキルが上位。日付の一次確認は未実施で参考情報。</li>
+      <li>日本の SIer では野村総合研究所の4〜9月期が営業利益率20%超との報道（日経クロステック）。一次の決算資料は未確認のため本文には載せていない。</li>
+    </ul></div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>新規：agent memory / dreaming、Kiro Crew Bot、Claude Code の外部送信（プライバシー）。既存の「LLM wiki」系に Anthropic の記憶5層の整理を追加。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

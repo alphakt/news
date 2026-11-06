@@ -660,6 +660,31 @@
    "date": "2026-11-06",
    "key": "github-new-git-storage",
    "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/"
+  },
+  {
+   "date": "2026-11-07",
+   "key": "claude-code-ua-email",
+   "url": "https://github.com/anthropics/claude-code/issues/107757"
+  },
+  {
+   "date": "2026-11-07",
+   "key": "anthropic-agent-memory-components",
+   "url": "https://www.anthropic.com/research/components-of-agent-memory"
+  },
+  {
+   "date": "2026-11-07",
+   "key": "github-agentic-engineering-guide",
+   "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/"
+  },
+  {
+   "date": "2026-11-07",
+   "key": "kiro-crew-bots-ga",
+   "url": "https://aws.amazon.com/jp/blogs/news/crew-bots/"
+  },
+  {
+   "date": "2026-11-07",
+   "key": "kpmg-keiei-kanri-agent",
+   "url": "https://www.kpmg.com/jp/ja/media/press-releases/2026/11/aiagent-cfo.html"
   }
  ]
 }
