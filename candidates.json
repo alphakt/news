@@ -49,12 +49,13 @@
    "kind": "knowledge",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-07",
-   "mentions": 2,
+   "last_seen": "2026-11-09",
+   "mentions": 3,
    "sources": [
     "https://cognition.com/agent-memory-repo",
     "https://github.com/AgentMemoryRepo/agentmemoryrepo",
-    "https://www.anthropic.com/research/components-of-agent-memory"
+    "https://www.anthropic.com/research/components-of-agent-memory",
+    "https://www.lorekit.io/blog/open-agent-memory-format"
    ],
    "note": "LLM が一次資料から wiki を継続的に編集・維持する知識蓄積の方式。対照: Obsidian+agent、各社 memory 機能"
   },
@@ -1458,10 +1459,11 @@
    "kind": "context-engineering",
    "status": "watching",
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-07",
-   "mentions": 1,
+   "last_seen": "2026-11-09",
+   "mentions": 2,
    "sources": [
-    "https://www.anthropic.com/research/components-of-agent-memory"
+    "https://www.anthropic.com/research/components-of-agent-memory",
+    "https://www.lorekit.io/blog/open-agent-memory-format"
    ],
    "note": "記憶5層（記録・ノート・表現・注入文脈・dreaming）。注入層は小さく、定期見直しで誤りを訂正"
   },
@@ -1488,6 +1490,42 @@
     "https://github.com/anthropics/claude-code/issues/107757"
    ],
    "note": "エージェントが外部へ付与する識別情報。cc-plugin-privacy mod の抜け穴報告"
+  },
+  {
+   "name": "Kiro Auto モデルカスケード",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-09",
+   "last_seen": "2026-11-09",
+   "mentions": 1,
+   "sources": [
+    "https://aws.amazon.com/jp/blogs/news/model-cascade/"
+   ],
+   "note": ""
+  },
+  {
+   "name": "agent memory 共通仕様（LoreKit）",
+   "kind": "knowledge",
+   "status": "candidate",
+   "first_seen": "2026-11-09",
+   "last_seen": "2026-11-09",
+   "mentions": 1,
+   "sources": [
+    "https://www.lorekit.io/blog/open-agent-memory-format"
+   ],
+   "note": ""
+  },
+  {
+   "name": "Preserved reasoning (OpenAI)",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-09",
+   "last_seen": "2026-11-09",
+   "mentions": 1,
+   "sources": [
+    "https://developers.openai.com/api/docs/guides/preserved-reasoning"
+   ],
+   "note": ""
   }
  ]
 }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月9日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月9日（月）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は48時間以内に一次情報で本文と日付を確認できた動きが少なく、2件に絞りました（無理に件数を埋めていません）。見送ったもの：Claude Code の「今後確認しない」による秘密情報漏えい報告（Apiiro の一次ページが403で未確認）、Goldman Sachs の Claude Code 利用制限（一次の Bloomberg に到達できず）、Grab のアプリ安定性（公開10/21）、Entire の Git forge（公開10/26）、MCP Ruby SDK の Tier 1（公開10/30）はいずれも一次情報の日付が48時間を超えるため除外。OpenAI の資金調達は対象外です。</div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Kiro の Auto が「モデルカスケード」で動作——最初は効率のよいモデルで始め、独立した検証で行き詰まりを検知したら高性能モデルへ引き継ぐ。社内評価では高性能モデル単独に近い成績で、約8割は最初のモデルだけで完了</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">AWS Japan ブログ（11月7日、原文 Kiro ブログは11月6日）は、Kiro の Auto がどのモデルで作業するかを説明した。すべてのセッションは日常作業に十分な効率のよいモデルで始まり、別のモデルがバックグラウンドで作業の流れを非同期に確認する。効率が落ちた兆しを見つけると、作業の要点を渡して上位モデルに引き継ぐ（現状は上位への一方向のみ）。社内評価（DeepSWE v1.1、各3回平均）では、最初のモデルのみ63.96%、高性能モデルのみ70.57%、カスケード69.37%で、カスケードと高性能モデル単独の差は実行ごとのばらつきの範囲内だった。タスクの80.48%は最初のモデルだけで完了し、約5件に1件が途中で引き継がれた。引き継ぎは多層にまたがる変更や整合性維持が要る作業、検証・統合の段階で起きやすい。引き継ぎ先もチームが許可したモデルから選ばれ、同じガバナンス設定が適用される。</p>
+      <ul class="sowhat"><li><b>DEV</b>「安いモデルで始め、独立した検証で上位に引き継ぐ」は自作エージェントのモデル切替設計の参考になる。作業中のモデル自身に自己採点させない点が要点。</li><li><b>PM</b>全作業を最上位モデルで回す前提を見直す材料。ただし引き継ぎ割合は平均で、セッションごとのコストはぶれる前提で見積る必要がある。</li><li><b>CONSULT</b>クライアントの AI 開発費用の質問に対し、モデル使い分けの考え方と、許可モデルの管理（ガバナンス設定）を一緒に説明できる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>Kiro を使う案件では、チームで許可しているモデルの一覧を確認し、Auto の引き継ぎ先がその範囲に収まることを確かめる。自社の作業ログがあれば、引き継ぎが起きた作業の傾向を見る。</div>
+      <div class="source">出典：<a href="https://aws.amazon.com/jp/blogs/news/model-cascade/" target="_blank" rel="noopener">AWS Japan Blog「Kiro の Auto がモデルカスケードで作業に合ったモデルを使い分ける仕組み」（2026-11-07）</a></div>
+      <div class="note">数値は AWS の社内ハーネスでの1評価で、公開リーダーボードと直接比較できず、本番での結果を保証しない。原文（11-06）は未取得で日本語版に基づく。</div>
+      <div class="comment"><b>コメント：</b>「安く始めて必要なときだけ上げる」を製品の既定にした点が新しい。数値は社内評価なので、自分たちの作業で引き継ぎ率を測ってから信じたい。</div>
+    </div>
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>「エージェントの記憶にも OpenTelemetry のような共通仕様を」——LoreKit 作者が、ツール間で記憶を読み合えない現状と、誰が書いたかを記録する必要性を論じる</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">LoreKit の作者 Mads Thines は、Anthropic の記憶ツール、Mem0、Letta、LangGraph、Graphiti、指示ファイルなどの記憶形式が互いに読めないと指摘し、観測性が OpenTelemetry でデータモデルと規約、プロトコルを揃えたように、記憶にも共通の合意が要ると主張した。記録には、適用先を示す address と key、id、真でなくなる時期を示す lifecycle、書いたのが人か agent かサービスかを示す written_by を持たせ、本文は YAML フロントマター付き Markdown、操作は MCP で write・read・list・search・archive の最小限にする構想を示す。既存の提案は主にベンダー間のエクスポートで、複数ツールが同じ記憶を同時に共有する場面は未解決とする。共有記憶にはプロンプトインジェクションのリスクがあり、書き手の記録が信頼判断に要るとも述べる。仕様自体は未公開で、フィールド名も提案ではないと明記している。</p>
+      <ul class="sowhat"><li><b>DEV</b>複数のコーディングエージェントを併用する場合、記憶・指示ファイルが分断される問題の整理として使える。記憶に書き手と有効期限を持たせる発想は今すぐ自作の運用にも取り込める。</li><li><b>PM</b>エージェントが書いた記憶を誰がいつ見直すかという運用責任（棚卸し）を計画に入れる根拠になる。</li></ul>
+      
+      <div class="source">出典：<a href="https://www.lorekit.io/blog/open-agent-memory-format" target="_blank" rel="noopener">LoreKit Blog「Agent memory needs its OpenTelemetry moment」（2026-11-07）</a></div>
+      <div class="note">仕様は未公開の提案段階で、著者は自社ツール LoreKit の開発者。公開日は日付のみ確認でき時刻は未確認のため、48時間の境界上にあることに注意。</div>
+      <div class="comment"><b>コメント：</b>標準化の話は先走りがちだが、「誰が書いたか」「いつまで真か」の2項目は仕様を待たずに運用できる。</div>
+    </div>
+
+    <div class="section-title">短信</div>
+    <div class="brief"><ul>
+      <li>GitHub トレンドには anthropics/skills、vercel-labs/agent-browser、meta/astryx（AI エージェント向けデザインシステム）などが並ぶ。日付の一次確認は未実施で参考情報。</li>
+      <li>OpenAI の API ガイドに「Preserved reasoning」のページが追加（日付は表示なし）。履歴の先頭側を編集すると推論が破棄されるため、修正は末尾への追記で行う、とある。</li>
+    </ul></div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>新規：Kiro Auto のモデルカスケード、agent memory の共通仕様（LoreKit）、Preserved reasoning（OpenAI）。既存の「LLM wiki」系・「agent memory / dreaming」の関連として LoreKit を追加。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

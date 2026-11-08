@@ -685,6 +685,16 @@
    "date": "2026-11-07",
    "key": "kpmg-keiei-kanri-agent",
    "url": "https://www.kpmg.com/jp/ja/media/press-releases/2026/11/aiagent-cfo.html"
+  },
+  {
+   "date": "2026-11-09",
+   "key": "kiro-model-cascade",
+   "url": "https://aws.amazon.com/jp/blogs/news/model-cascade/"
+  },
+  {
+   "date": "2026-11-09",
+   "key": "lorekit-open-agent-memory-format",
+   "url": "https://www.lorekit.io/blog/open-agent-memory-format"
   }
  ]
 }
