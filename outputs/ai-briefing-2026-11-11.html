@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月11日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月11日（水）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は、Anthropic の新フラッグシップ「Claude Fable 5.2」と、「文章を生成しない決定モデル」が実運用・標準ツールの両面で一段進んだ動きが中心です。見送ったもの：Google の「エージェントの脱線（agent distraction）」研究（一次の Google ブログは11月6日公開で48時間超）、ニューヨーク州 RAISE 法の登録開始（州政府の一次ページを未確認、また義務を負うのは年商5億ドル超の大手開発者で施行は2027年1月）、Claude の Compliance API「Security posture」（一次ページに日付表示なし）。Anthropic の IPO 関連は対象外です。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Anthropic が「Claude Fable 5.2」と「Mythos 5.2」を公開——5.1 比で出力最大30%高速、価格は入力$8／出力$40（100万トークン）。ただし日常の開発・知識作業の既定は Opus 5.5 を推奨</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">Anthropic は11月9日、Fable 5.2 と Mythos 5.2 を発表した。両者は同じ基盤モデルで、Fable はサイバー・生物分野の安全策を強めて全ユーザーに提供し、Mythos は検証プログラムを通った組織に限る。出力は 5.1 比で最大30%速く、任意の fast モード（最大2.5倍速、価格は2倍）も Claude Code などで使える。Claude アプリと Claude Code の既定は medium effort で、5.1 より少ないトークンで作業を終えるとする。社内比較では FrontierSWE v2 で 69.9%（Opus 5.5 は 62.3%）など上回るが、Anthropic 自身は「ほとんどのコーディングと知識作業の日常用途は Opus 5.5、最も難しい作業に Fable」と位置づけた。安全分類器に止められた要求は旧モデルへ落ちる仕組みで、ブロックは 5.1 比約55%減。API の ID は <code>claude-fable-5-2</code>。</p>
+      <ul class="sowhat"><li><b>DEV</b>難所だけ Fable に回し、通常は Opus 5.5 という使い分けがベンダー公式の推奨になった。セキュリティ系タスクは分類器で別モデルに落ちる場合がある点に注意。</li><li><b>CONSULT</b>「最新最上位を全社標準に」という相談には、ベンダー自身が用途別の使い分けを勧めていることを根拠に、費用と用途で段を分ける提案ができる。</li><li><b>PM</b>出力単価 $40 は高価格帯。fast モードは単価2倍なので、見積では「どの工程を Fable にするか」を先に決めておく必要がある。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>Claude Code で既存の難所タスク（大規模リファクタや原因不明の不具合）を1件選び、Opus 5.5 と Fable 5.2 で同じ指示を流してトークン数と結果を比べる。社内の利用ポリシーにモデル別の使用範囲を1行追記する。</div>
+      <div class="source">出典：<a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener">Anthropic「Claude Fable 5.2 and Mythos 5.2」（2026-11-09）</a></div>
+      <div class="note">ベンチマーク値は Anthropic の発表値。コンテキスト長と提供終了予定は発表ページに記載なし。</div>
+      <div class="comment"><b>コメント：</b>性能の話より、ベンダーが「普段は一つ下を使え」と明言した点が実務的に効く。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Amazon 社内のチケット分類で Claude Sonnet 4.6 を決定モデル「Strands Decider」に置き換え——1件あたり費用は約98%減、応答は78%短縮。旧新を本番で並走させて差分を見てから切り替え</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Strands Agents チームのブログ（11月9日）によると、Amazon の大規模な社内チケットシステムで約20カテゴリへのラベル付けを担っていた Sonnet 4.6 を、テキストを生成せず選択肢ごとの確率と確信度だけを返す Strands Decider（Gemma 4 E4B ベース）に置き換えた。長いプロンプトは「各ラベルの1〜2文の基準＋該当なし」という単一の選択問題に書き直した。平均応答は 4,215ms→897ms、1件あたりトークンは 6,724→2,010（出力は170→1）、費用は約$0.0222→約$0.0005。検証は AppConfig の3段スイッチ（旧のみ／並走／新のみ）で本番トラフィックに両方を流し、不一致を確認した。ロールバックは約45秒。精度は「同等」とするが具体的な数値は示していない。</p>
+      <ul class="sowhat"><li><b>DEV</b>「閉じた選択肢・高頻度・低遅延」の判断を大モデルから外す設計の実例。JSON のキー順で確率が最大0.19動いたので、リクエストのキーをソートするという細かい知見もそのまま使える。</li><li><b>PM</b>旧新並走→差分レビュー→切替の段取りと、45秒で戻せるスイッチは、AI 機能の移行計画のひな形になる。</li><li><b>CONSULT</b>問い合わせ分類・振り分けを生成 AI で回している顧客には、費用を桁で下げる選択肢として示せる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>自社・顧客の LLM 呼び出しのうち「出力が数語のラベルだけ」の処理を洗い出し、件数と単価を一覧にする。候補を1つ選び、まず並走モードで1週間分の不一致率を測る。</div>
+      <div class="source">出典：<a href="https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/" target="_blank" rel="noopener">Strands Agents Blog「Amazon saves millions by replacing Sonnet 4.6 with Strands Decider」（2026-11-09）</a></div>
+      <div class="note">費用は us-east-1 の公開価格で試算した値。著者は Strands Agents チーム（自社製品の事例）。説明が必要な判断や頻繁に変わる選択肢には向かない、と本文自身が注記している。</div>
+      <div class="comment"><b>コメント：</b>決定モデルの話で初めて「本番で何をどう切り替えたか」まで書かれた事例で、数字より並走スイッチの設計に価値がある。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Hugging Face Transformers に「decision」パイプラインが追加——テキストを生成せず、選択・スコア・真偽の確率だけを返すモデルを標準の書き方で呼べるように</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Hugging Face は11月10日、決定モデル（decision models）への対応を発表した。状態（入力文脈）と質問の組を渡すと、生成ではなく、あらかじめ決めた答えへの確率分布を返す。質問の型は choice（選択）、score（順序尺度の期待値）、noul（真偽の確率）の3種。Transformers に <code>pipeline("decision", ...)</code> と <code>AutoModelForDecision</code> が加わり、Hub には <code>decision-model</code> タグ、<code>transformers serve</code> と llama.cpp には <code>/v1/systemone</code> エンドポイントが用意された。例として GEV-26B-Decide、JEV-9B、Kev-4B-GGUF などを挙げ、概念の起源を TypeSafe AI の Jev としている。ファインチューニング例も載るが、TRL の正式対応は未マージで、ベンチマークは示していない。</p>
+      <ul class="sowhat"><li><b>DEV</b>決定モデルがベンダー固有 API でなく、Transformers・llama.cpp の標準機能で手元実行できるようになった。ローカルで判断部分だけを試す障壁が下がった。</li><li><b>PM</b>上の Amazon 事例と合わせ、「判断は小さなモデル、生成は大きなモデル」という分担が技術選定の選択肢として定着しつつある。</li></ul>
+      <div class="source">出典：<a href="https://huggingface.co/blog/decision" target="_blank" rel="noopener">Hugging Face Blog「Decision Models in Hugging Face」（2026-11-10）</a></div>
+      <div class="comment"><b>コメント：</b>候補プールで追っている Jev 系の発想が、エコシステムの標準 API になった節目。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>KPMG ジャパンが「AIコスト適正化（AI FinOps）支援サービス」を開始——トークン料からガバナンス・人材育成まで3層で総コストを捉え、「成果当たりのコスト」で評価</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">KPMG ジャパンは11月10日、生成 AI・AI エージェントの全社展開に伴う費用を管理する支援サービスを発表した。エージェントの多段推論や再試行、外部ツール呼び出しで増える直接コストに、導入・運用・統制のコスト、業務変革や人材育成の間接コストを加えた3層で総コストを可視化する。「AI 資産の把握」「契約・課金モデル」「需要予測」「コスト監視」「統制・最適化」の5視点で診断から定着まで支援し、利用上限や部門配賦に加えて、モデルルーティング、プロンプトキャッシュ、コンテキスト・メモリ設計を設計段階で組み込む「Cost by Design」を掲げる。ユースケースごとに成果指標と Cost per Outcome を定義し、CDO・CIO・CFO が採算を継続評価できるようにするという。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>Big4 が AI 費用統制を独立メニュー化した。顧客から同種の相談が来る前提で、自社の提案にもモデル使い分け・キャッシュ・成果単価の枠組みを用意しておきたい。</li><li><b>PM</b>「成果当たりのコスト」をユースケースごとに先に定義する、という考え方は自プロジェクトの KPI 設計にもそのまま使える。</li></ul>
+      <div class="source">出典：<a href="https://www.kpmg.com/jp/ja/media/press-releases/2026/11/ai-finops-support.html" target="_blank" rel="noopener">KPMG ジャパン プレスリリース「AIの投資対効果を高めるAIコスト適正化（AI FinOps）支援サービスの提供開始」（2026-11-10）</a></div>
+      <div class="note">発表には市場規模や導入実績などの定量データは含まれていない。</div>
+      <div class="comment"><b>コメント：</b>技術的な打ち手（ルーティング、キャッシュ）を会計の言葉で売る形で、競合として押さえておくべき型。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>何週間も動く長期エージェントには「耐久実行（durable execution）」が要る——ただし「耐久」は「正しい」ではない。martinfowler.com が設計パターンを整理</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Thoughtworks の Kiran Prakash は11月10日、人や外部システムを待ちながら数週間続くエージェントには、外部に触れる各ステップの結果を記録し、障害後は記録を再生して状態を戻す耐久実行が必要だと論じた。Temporal、Cloudflare Workflows、Restate、Inngest、DBOS などを挙げ、べき等キーを再試行でも変えない、取り消せない操作は補償処理（saga）で戻す、承認や見積に期限を付けて実行前に事実を再確認する、といったパターンを示す。要点は「ランタイムが直すのは一般的な分散システムの障害だけ」で、古い情報や検証されていない外部テキストに基づく行動は、ツール内の決定的なチェックやコードでのルール強制でハーネス側が防ぐ必要があるという点。生成に Claude、次のツール選択に決定モデル Jev を使う構成例も載る。</p>
+      <ul class="sowhat"><li><b>DEV</b>長時間エージェントを作るなら、プロンプトより先に「どのステップを記録し、どれをべき等にするか」を設計する。ルールはプロンプトでなくツール側に置く。</li><li><b>PM</b>業務ルール変更時に実行中のワークフローをどう扱うか（旧ルールで完走させる並行変更）を、リリース計画の確認項目に加えられる。</li></ul>
+      <div class="source">出典：<a href="https://martinfowler.com/articles/durable-execution-agents.html" target="_blank" rel="noopener">martinfowler.com「Long-horizon agents and durable execution」（2026-11-10）</a></div>
+      <div class="comment"><b>コメント：</b>エージェントの信頼性を「モデルの賢さ」から「分散システムの古典」に引き戻してくれる良い整理。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>Anthropic、Fable 5.2 の1,000体エージェントチームで数学の大規模形式化を約29時間で完了——外部通信なし・鍵なし・ツール呼び出しごとの分類器など、安全境界の設計を詳細に公開</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">claude.dev ブログ（11月9日）は、リーダー1体と補助999体の Fable 5.2 チームでフェルマーの最終定理の Lean 形式化を約28.7時間で完了した実験を報告した。調整は共有 Postgres（指示・割当・メモ・サブタスク・完了記録の5表）と Git のみで、メッセージ機能は持たせない。各エージェントは専用の軽量 VM で、ネットワークなし・認証情報なし・sudo なし、外部への出口は身元を付与するゲートウェイ1本。自分のブランチにだけ push でき、統合は別ジョブが判定する。各ツール呼び出しは実行前に LLM 分類器が検査し（失敗時は遮断）、事後にも監視する。100万回超の呼び出しで遮断に至ったものはなかった。出力トークンは9月の同種実験の約3分の1。著者自身が「おもちゃの実験」と位置づけている。</p>
+      <ul class="sowhat"><li><b>DEV</b>多数のエージェントを並列で動かすときの隔離・最小権限・ブランチ単位の統合という構成は、社内のエージェント基盤設計のチェックリストとして使える。</li><li><b>PM</b>「補助エージェントが早々に不可能と判断した課題の多くが実は解けた」という観察は、エージェントの見積・諦め判断を人が見直す工程が要ることを示す。</li></ul>
+      <div class="source">出典：<a href="https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/" target="_blank" rel="noopener">claude.dev Blog「Safely scaling multi-agent teams with Claude Fable 5.2」（2026-11-09）</a></div>
+      <div class="note">研究目的の実験で、製品機能の発表ではない。</div>
+      <div class="comment"><b>コメント：</b>成果より、安全境界を「実験前に」設計して公開した手順書としての価値が大きい。</div>
+    </div>
+
+    <div class="section-title">短信</div>
+    <div class="brief"><ul>
+      <li>Notion が、委託先の AI 基盤 Fireworks AI のセキュリティインシデントで、1%未満のワークスペースの Notion AI チャット記録（Insights 機能）が漏えいした可能性を告知。通知を受けたワークスペースは、期間中に AI へ貼った認証情報を即時ローテーションするよう求めている（<a href="https://www.notion.com/ja/help/security-incident-involving-a-third-party-ai-vendor" target="_blank" rel="noopener">Notion ヘルプセンター</a>。ページに公開日表示はなく、記載上の最新経過は11月8日）。</li>
+      <li>GitHub トレンドに anthropics/skills、addyosmani/agent-skills、mattpocock/skills と「スキル」集が3つ並ぶ。日付の一次確認は未実施で参考情報。</li>
+    </ul></div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>関心対象「Jev（決定モデル）」：Amazon の本番置き換え事例、Hugging Face の標準パイプライン化、Fowler 記事での構成例と、独立3出典で言及が急増。</li>
+      <li>新規：Claude Fable 5.2、AI FinOps（KPMG）、耐久実行（durable execution）、エージェントの脱線（Google、今回は日付超過で見送り）、Notion／Fireworks AI 委託先インシデント。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

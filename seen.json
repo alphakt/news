@@ -695,6 +695,41 @@
    "date": "2026-11-09",
    "key": "lorekit-open-agent-memory-format",
    "url": "https://www.lorekit.io/blog/open-agent-memory-format"
+  },
+  {
+   "date": "2026-11-11",
+   "key": "claude-fable-mythos-5-2",
+   "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+  },
+  {
+   "date": "2026-11-11",
+   "key": "amazon-strands-decider-ticket-labeling",
+   "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/"
+  },
+  {
+   "date": "2026-11-11",
+   "key": "hf-decision-pipeline",
+   "url": "https://huggingface.co/blog/decision"
+  },
+  {
+   "date": "2026-11-11",
+   "key": "kpmg-ai-finops",
+   "url": "https://www.kpmg.com/jp/ja/media/press-releases/2026/11/ai-finops-support.html"
+  },
+  {
+   "date": "2026-11-11",
+   "key": "fowler-durable-execution-agents",
+   "url": "https://martinfowler.com/articles/durable-execution-agents.html"
+  },
+  {
+   "date": "2026-11-11",
+   "key": "anthropic-1000-agent-team-fable",
+   "url": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/"
+  },
+  {
+   "date": "2026-11-11",
+   "key": "notion-fireworks-incident",
+   "url": "https://www.notion.com/ja/help/security-incident-involving-a-third-party-ai-vendor"
   }
  ]
 }

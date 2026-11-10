@@ -6,8 +6,8 @@
    "kind": "agent-infra",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-10-23",
-   "mentions": 10,
+   "last_seen": "2026-11-11",
+   "mentions": 13,
    "sources": [
     "https://arxiv.org/abs/2610.02267",
     "https://developers.openai.com/api/docs/guides/decisions",
@@ -18,7 +18,10 @@
     "https://www.thoughtworks.com/insights/articles/decision-models-and-the-possibility-of-no-ops",
     "https://typesafe.ai/blog/jev-1-14",
     "https://prtimes.jp/main/html/rd/p/000000008.000166345.html",
-    "https://arxiv.org/abs/2610.24649"
+    "https://arxiv.org/abs/2610.24649",
+    "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+    "https://huggingface.co/blog/decision",
+    "https://martinfowler.com/articles/durable-execution-agents.html"
    ],
    "note": "テキストを生成せず型付きの判断だけ返す決定モデル。エージェントの小さな判断（ツール選択、安全性、停止判断）を主モデルから分離する発想。対照: 主モデル自前判断、他の router/guard モデル"
   },
@@ -1086,10 +1089,11 @@
    "kind": "model",
    "status": "candidate",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-10-29",
-   "mentions": 1,
+   "last_seen": "2026-11-11",
+   "mentions": 2,
    "sources": [
-    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "https://www.itmedia.co.jp/news/article/2611/11/2000003083/"
    ],
    "note": "限定提供、導入期間後に価格2倍"
   },
@@ -1526,6 +1530,78 @@
     "https://developers.openai.com/api/docs/guides/preserved-reasoning"
    ],
    "note": ""
+  },
+  {
+   "name": "Claude Fable 5.2 / Mythos 5.2",
+   "kind": "model",
+   "status": "candidate",
+   "first_seen": "2026-11-11",
+   "last_seen": "2026-11-11",
+   "mentions": 1,
+   "sources": [
+    "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+   ],
+   "note": "5.1比で高速化、$8/$40。Anthropic は日常用途は Opus 5.5、難所は Fable と推奨。"
+  },
+  {
+   "name": "AI FinOps（KPMG ジャパン）",
+   "kind": "consulting-service",
+   "status": "candidate",
+   "first_seen": "2026-11-11",
+   "last_seen": "2026-11-11",
+   "mentions": 1,
+   "sources": [
+    "https://www.kpmg.com/jp/ja/media/press-releases/2026/11/ai-finops-support.html"
+   ],
+   "note": "3層の総コスト可視化と Cost per Outcome。Big4 の AI 費用統制メニュー。"
+  },
+  {
+   "name": "耐久実行（durable execution）for agents",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-11",
+   "last_seen": "2026-11-11",
+   "mentions": 1,
+   "sources": [
+    "https://martinfowler.com/articles/durable-execution-agents.html"
+   ],
+   "note": "長期エージェントの記録・再生・べき等・saga。Temporal/Restate/Inngest/DBOS 等。"
+  },
+  {
+   "name": "エージェントの脱線（agent distraction, Google）",
+   "kind": "research",
+   "status": "candidate",
+   "first_seen": "2026-11-11",
+   "last_seen": "2026-11-11",
+   "mentions": 1,
+   "sources": [
+    "https://developers.googleblog.com/agent-distraction/"
+   ],
+   "note": "古い TODO(bug) がコーディングエージェントを脱線させ、トークン+77%。一次は11/6で今回は日付超過。"
+  },
+  {
+   "name": "1,000体エージェントチームの安全境界（Anthropic）",
+   "kind": "agent-governance",
+   "status": "candidate",
+   "first_seen": "2026-11-11",
+   "last_seen": "2026-11-11",
+   "mentions": 1,
+   "sources": [
+    "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/"
+   ],
+   "note": "VM隔離・鍵なし・ゲートウェイ・ツール呼び出しごとの分類器。"
+  },
+  {
+   "name": "Notion／Fireworks AI 委託先インシデント",
+   "kind": "security-incident",
+   "status": "candidate",
+   "first_seen": "2026-11-11",
+   "last_seen": "2026-11-11",
+   "mentions": 1,
+   "sources": [
+    "https://www.notion.com/ja/help/security-incident-involving-a-third-party-ai-vendor"
+   ],
+   "note": "AI 委託先経由で Notion AI チャット記録漏えいの可能性。"
   }
  ]
 }
