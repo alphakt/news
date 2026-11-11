@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月12日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月12日（木）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は、Google が「決定モデル」に参入した Gemini Decisions API、エージェントの承認待ちを LLM 判定で減らす Kiro の新機能、そして「AI が書いたコードをどう検証・計測するか」を扱う研究・論考が中心です。見送ったもの：GitHub Agentic Workflows の GA（一次の GitHub 発表は10月28日で48時間超）、Claude Enterprise のセキュリティ機能強化（一次発表は11月5日で48時間超）、政府の AI 事業者への罰則検討報道（検討段階の観測記事のため政策基準に満たない）。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Google が「Gemini Decisions API」を公開——文章を生成せず、選択肢ごとの確率だけを150〜250ミリ秒で返す。入力100万トークン0.10ドル、出力は無料</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Google は11月11日、ツール選択、ポリシー判定、モデルのルーティング、文脈の採点といった「閉じた選択肢の判断」に特化した API を発表した。モデルは Gemini Decision 1。テキスト・画像・音声・動画・PDF を含む最大256Kトークンの共通入力に対し、1リクエストで最大1,000個の質問を投げられる。質問の型は真偽（noul）、2〜255択の選択（choice）、順序尺度の採点（score）の3種で、回答文は生成せず確率と0〜1の確信度だけを返す。遅延は端から端まで150〜250ミリ秒で、質問数を1から100に増やしてもほぼ変わらないという。Google 自身も Gemini Notebook のモデル振り分け（日常的な質問で遅延最大40%減）や、Google 検索の MCP ツール向け安全層に使っている。AI Studio で API キーを取って試せ、OpenRouter、LangChain、LiteLLM などの対応も順次進む。Google Cloud（Vertex AI）での提供は「近日」。</p>
+      <ul class="sowhat"><li><b>DEV</b>エージェントの小さな判断（どのツールを呼ぶか、止めるか、危険か）を主モデルから外す構成が、主要クラウド各社の API で組めるようになった。</li><li><b>PM</b>出力課金ゼロ・共通入力は1回課金なので、高頻度の分類・判定処理の単価見積もりを作り直す価値がある。</li><li><b>CONSULT</b>OpenAI、Amazon（Strands Decider）に続き Google も参入し、「判断は専用モデル」が業界の型になった。顧客のコスト削減提案の定番メニューに入れられる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>AI Studio の無料枠で、既存の LLM 呼び出しのうち「出力がラベル1語」の処理を1つ選び、同じ入力で Decisions API と現行モデルの一致率・遅延を比べる。</div>
+      <div class="source">出典：<a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/" target="_blank" rel="noopener">Google Blog「Gemini Decisions API: Fast, calibrated multimodal decisions」（2026-11-11）</a></div>
+      <div class="note">精度・費用の比較（Gemini 3.5 Flash-Lite 比で約5分の1の費用など）は Google 自身のベンチマークによる。プレビューか GA か、対応リージョンは発表に記載なし。</div>
+      <div class="comment"><b>コメント：</b>決定モデルは「面白い研究」から「大手3社が値札を付けて売る部品」に変わった。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Claude に共同編集の「Sheets」「Whiteboards」と、ダッシュボード機能の正式版「Claude Data」が登場——Enterprise プランでは Claude Data が11月19日に既定で有効化</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">Anthropic は11月10日、Claude の成果物機能を拡張した。Whiteboards（β）はチームで Claude とブレインストーミングする共有ボードで、話した計画を担当者・期日付きのボードに変換できる。Sheets（β）は数式・書式・プルダウン付きの表を生成し、各編集の内容を示して追跡できる。従来の Claude Dashboards は「Claude Data」として正式提供となり、データ部門が指標の定義を「認定」すると、グラフに認定バッジが付き、共有先には承認済みクエリだけが見える（認定クエリとライブ共有はβ）。Adobe、Atlassian、Box、Notion などは会話の横でアプリとして開けるようになった。全有料プランで Web・デスクトップ・モバイルに提供。管理設定は、Team プランでは3機能とも既定で有効、Enterprise プランでは Whiteboards と Sheets は既定で無効、Claude Data は11月19日に既定で有効になる。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>Claude Enterprise を入れている顧客は、19日までに Claude Data を使わせるか（どのデータ接続を許すか）を決めておく必要がある。</li><li><b>PM</b>振り返りの議事メモ→担当付きアクション、予算表の叩き台などをチャット内で完結できる。Office や Miro との使い分けをチームで決めておきたい。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>Enterprise 管理者は「組織設定 > Artifacts」で3機能の状態を確認し、Claude Data を19日の自動有効化前に方針どおり設定する。</div>
+      <div class="source">出典：<a href="https://claude.com/resources/articles/sheets-whiteboards-data" target="_blank" rel="noopener">Claude「Claude Whiteboards, Claude Sheets, and Claude Data」（2026-11-10）</a></div>
+      <div class="note">Sheets は現時点で「簡易な表計算機能」との記載。本格的な Excel 機能は .xlsx 出力か Claude for Excel を使う。地域別の提供状況は記載なし。</div>
+      <div class="comment"><b>コメント：</b>機能そのものより、Enterprise で「既定オン」になる日付が決まっていることが顧客対応上の要点。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Kiro に「Approve for me」——規則で決まらない操作を LLM が審査し、安全なら自動実行、危険なら阻止、迷うものだけ人に聞く。社内計測では審査対象の約97%が確認なしで実行</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Kiro は11月10日、エージェントの操作承認を減らす機能を Kiro IDE・CLI・Web に追加した。まず従来の許可規則（allow／ask／deny）が適用され、規則に当たらない操作だけを LLM（現在は Anthropic のモデル）が審査する。結果は「安全なら実行」「危険なら阻止」「不確かなら人に確認」の3つで、3回連続で阻止されると理由付きで人に戻す。社内の1週間のサンプルでは、CLI のツール呼び出しの15.8%で確認を求め、その97.1%を利用者が承認していた。新機能では約7割が規則で処理され、約3割が審査に回り、そのうち約97%は確認なし、約2%が人へ、1%未満が阻止。審査の中央値は1秒未満。既定は無効で、有料ユーザー向け（us-east-1、eu-central-1）。審査分は利用枠を消費する。</p>
+      <ul class="sowhat"><li><b>DEV</b>「全部許可」と「毎回確認」の間に、規則＋LLM 審査という第3の選択肢ができた。ただしシェルコマンド実行後のアクセス範囲は制限しないので、ローカルサンドボックスと併用が前提。</li><li><b>PM</b>「確認の97%は承認されるだけ」という数字は、承認作業が形骸化している証拠。チームの権限規則（deny を何にするか）を先に整える価値がある。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>Kiro IDE 1.4.154 以上／CLI 2.36 以上に更新し、チャット入力メニューから有効化。まず deny 規則（本番接続、秘密情報、push など）を書いてから試す。</div>
+      <div class="source">出典：<a href="https://kiro.dev/blog/introducing-approve-for-me/" target="_blank" rel="noopener">Kiro Blog「Introducing 'Approve for me' in Kiro」（2026-11-10）</a></div>
+      <div class="note">数値は Kiro の社内計測。審査判断のログ・監査証跡の扱いは記事に記載なし。</div>
+      <div class="comment"><b>コメント：</b>人の承認を「規則で決まらない残り」に絞るという設計で、決定モデル的な発想が権限管理に入ってきた。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>「AI がコードを書くなら、テストはコードでなく“データ”で持て」——martinfowler.com が、エージェントに書き換えられにくい顧客テストの作り方を具体例付きで公開</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Thoughtworks の Matteo Vaccari は11月11日、AI が書くテストは読みにくく、実装に密結合し、ときにバグをそのまま正とする、と問題提起した。提案は、AI がコードを書くなら開発者は「顧客」になるので、人と AI の契約は開発者テストではなく顧客テストにし、それをテストコードではなく YAML・CSV・表などのデータで持つこと。入力・前提・期待結果だけを書き、パーサーとテストランナーは AI に書かせる。人は最初のサンプルを書いて結果をレビューし、AI はそれを型に事例を増やす。DSL の文法で検証項目を必須にして弱い確認を書けなくする、テストデータのファイルを読み取り専用や CI の変更チェックで守る、公式ドキュメントや別実装を基準にテスト自体を検証する、といった実践も挙げる。COBOL インタプリタの例では、実機 IBM i と照合している。</p>
+      <ul class="sowhat"><li><b>DEV</b>エージェントに「テストを通すためにテストを直す」余地を与えない具体策。テストデータのファイルを変更禁止にするだけでも今日からできる。</li><li><b>PM</b>人のレビューを「コード全行」から「表形式の期待結果」に移せるので、AI 生成 PR のレビュー負荷と品質保証の分担を設計し直す材料になる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>既存の判定ロジック（権限、料金計算など）を1つ選び、入力と期待結果を CSV にしてエージェントにランナーを書かせる。その CSV を CLAUDE.md／AGENTS.md で「編集禁止」と明記し、CI でも変更を検知する。</div>
+      <div class="source">出典：<a href="https://martinfowler.com/articles/tests-as-data.html" target="_blank" rel="noopener">martinfowler.com「Tests as data: ensuring AI-generated code does what we want」（2026-11-11）</a></div>
+      <div class="comment"><b>コメント：</b>レガシー移行（旧新システムに同じテストデータを流す）にもそのまま使え、SIer 案件との相性が良い。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>AWS が「Nitro Sandboxes」を提供開始——EC2 上でハードウェア分離の軽量 VM を追加料金なしで動かし、AI エージェントが生成したコードの実行先に。EKS・ECS ではポッド／タスク単位で隔離</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">AWS は Nitro Sandboxes を発表した（AWS ジャパンブログの EKS 向け記事は11月10日）。親となる EC2 インスタンスの vCPU とメモリを使い、Nitro ハイパーバイザー上で親と並んで動く軽量 VM で、ワークロード同士や親インスタンスのメモリから分離される。用途としてドキュメントは「利用者のコードを実行する AI エージェント」「別テナントのワークロード」「ビルドジョブ」を挙げる。EKS では各ポッド、ECS では各タスクを個別のサンドボックスで動かせ、自前の環境では Firecracker で起動する。親からもメモリを読めない機密モード（既定、暗号学的な証明付き）と、親とメモリを共有する直接モードを選べる。追加料金はなく、親インスタンス 1vCPU あたり最大5個、1台で最大896個まで。GPU のパススルーは未対応。</p>
+      <ul class="sowhat"><li><b>DEV</b>コンテナはカーネルを共有するため、エージェントに任意コードを実行させる環境の隔離境界を VM 単位に上げる選択肢が、既存の EKS 運用のまま取れるようになった。</li><li><b>CONSULT</b>「エージェントの実行環境は安全か」という顧客の問いに、AWS 標準機能で答えられる。Lambda MicroVMs、Nitro Enclaves との使い分けがドキュメントに整理されている。</li></ul>
+      <div class="source">出典：<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-nitro-sandboxes.html" target="_blank" rel="noopener">Amazon EC2 ユーザーガイド「Isolate workloads with AWS Nitro Sandboxes」</a><a href="https://aws.amazon.com/jp/blogs/news/aws-nitro-sandboxes-hardware-enforced-workload-isolation-on-amazon-eks/" target="_blank" rel="noopener">AWS ジャパンブログ「AWS Nitro Sandboxes: Amazon EKS で実現するハードウェア強制型ワークロード分離」（2026-11-10）</a></div>
+      <div class="note">注意点としてドキュメントは、親が NAT で通信を中継すると、サンドボックスから親の IMDS（IAM 認証情報）に届くため 169.254.169.254 宛を拒否すべきと明記している。</div>
+      <div class="comment"><b>コメント：</b>エージェント実行基盤の「サンドボックス」がクラウドの標準部品になりつつあり、自前で作る理由が減っている。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>「トークン消費量は AI 時代のコード行数か？」——JetBrains の技術者404人・5週間のデータでは、消費量は成果をほとんど表さず「使った量」を表すだけ</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">11月10日に arXiv に投稿された論文は、JetBrains の技術者404人のコーディングエージェントのトークン消費を5週間分、コミットと結び付けて分析し、412人への社内調査と合わせて検討した。消費量の差は主に個人間の差で、多く使う人は期間を通じてほぼ同じ顔ぶれだった。コミット数が同程度の週同士でも、上位10%の消費量は下位10%の39〜240倍。同じ人の中では、消費を2倍にしてもコミットは約10%増えるだけだった。手元の作業指標で説明できたのは、個人間の差の38%、週ごとの変動の13%にとどまる。調査では、エージェントの用途は分析・調査・計画にも広く及んでいた。著者らは、トークン消費は「最大でも資源の会計」に使い、成果の評価には実際の作業内容と結果を使うべきだと結論づける。</p>
+      <ul class="sowhat"><li><b>PM</b>トークン消費量をチームや個人の生産性指標・評価に使うのは避ける。費用管理の指標として予算と切り分けて扱う。</li><li><b>CONSULT</b>顧客が「AI 活用度＝トークン消費量」のダッシュボードを作ろうとしていたら、この研究を根拠に成果指標の設計を提案できる。</li></ul>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.13396" target="_blank" rel="noopener">arXiv「The AI Era's Lines of Code? A Case Study on What an Engineer's Token Spend Measures」（2026-11-10 投稿）</a></div>
+      <div class="note">査読前の論文。単一企業（JetBrains）のデータ。</div>
+      <div class="comment"><b>コメント：</b>「使った量で測る」誘惑に、実データで歯止めをかけてくれる貴重な研究。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>コーディングエージェントは AGENTS.md の指示に従っているか——実在のコンテキストファイルの指示を検査スクリプトに変換して測ると、「おおむね従う」が、常に守られる指示と一度も守られない指示に二極化</h2>
+      <div class="tags"><span class="tag dev">DEV</span></div>
+      <p class="detail">11月10日に arXiv に投稿された研究は、実際のリポジトリにある AGENTS.md などのエージェント用コンテキストファイルと、それに紐づくエージェント作成のコミットを分析した。まずファイルに書かれた明示的で実行可能な指示を分類し、それぞれを自動で確認できる検査スクリプトに変換して、指示単位の遵守率を測った。観測できる指示の大半は検査可能な形に変換できた。エージェントは指示に「従わないより従うことの方が多い」が、遵守は二極化しており、毎回守られる指示がある一方で一度も守られない指示もある。遵守率は指示の種類とエージェントの種類によって異なる。著者らは、守られにくい種類の指示は書き方を変え、守らないエージェントにはコンテキストファイルの外での強制（フックや CI）を加えるべきだと提言する。</p>
+      <ul class="sowhat"><li><b>DEV</b>CLAUDE.md／AGENTS.md の重要な指示は「書いたら守られる」前提にせず、検査スクリプトや CI で守られたかを確かめる仕組みとセットにする。</li></ul>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.13709" target="_blank" rel="noopener">arXiv「Do They Do as They Are Told? Investigating Coding Agents' Adherence to Explicit Instructions in Context Files」（2026-11-10 投稿）</a></div>
+      <div class="note">査読前の論文。抄録時点ではエージェント名・指示の種類別の数値は未確認（本文参照）。</div>
+      <div class="comment"><b>コメント：</b>上の「テストをデータで持つ」と同じく、指示は書くだけでなく機械で検証する時代になった。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>Thoughtworks の社内ハッカソンで作った AI 制御プレーン「Heimdall」——4週間・6人の試行で、有料 API に届くリクエストを63.6%削減し、個人情報の送信を4,170件止めた</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Thoughtworks のブログ（11月10日）は、アプリや IDE 拡張と LLM 提供元の間に置くプロキシ型の制御プレーンを紹介した。OpenAI 互換の入口（ベース URL を変えるだけで導入）、Presidio などによる個人情報・認証情報の黒塗り（エラー時は止める fail-closed）、意味的キャッシュ、難易度に応じて最も安いモデルを選ぶルーター、チーム・モデル・期間ごとの予算（超過時は遮断せず Opus→Sonnet→Haiku→ローカルへ段階的に格下げ）、OpenTelemetry による可観測性の6部品で構成する。キャッシュ命中率は34.2%、追加遅延は約14ミリ秒。キャッシュのキーから IDE のメタデータを除くことが、アルゴリズム選びより効いたという。</p>
+      <ul class="sowhat"><li><b>PM</b>「遮断ではなく格下げ」という予算超過時の振る舞いは、チームの AI 予算ルールを決める際の参考になる。</li><li><b>DEV</b>ゲートウェイの部品構成と、キャッシュキー正規化の知見はそのまま流用できる。</li></ul>
+      <div class="source">出典：<a href="https://www.thoughtworks.com/insights/blog/generative-ai/we-built-ai-control-plane-reduce-LLM-expenses-prevent-data-leaks" target="_blank" rel="noopener">Thoughtworks「We built an AI control plane to reduce LLM expenses and prevent data leaks」（2026-11-10）</a></div>
+      <div class="note">6人・4週間のハッカソン試行で、金額ベースの削減率は示されていない。</div>
+      <div class="comment"><b>コメント：</b>規模は小さいが、AI 費用統制の「部品の並べ方」の見本として手元に置いておきたい。</div>
+    </div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>関心対象「Jev（決定モデル）」：Google が Gemini Decisions API で参入し、OpenAI・Amazon・Hugging Face に続く独立出典がさらに増加。Kiro の LLM 審査による承認も同系統の発想。</li>
+      <li>「SOUL.md / AGENTS.md / CLAUDE.md」「AI 生成 PR の人間レビュー枠組み」「トークン費用の統制」に、それぞれ今回の研究・論考で言及追加。Gemini 4 Carbon は GA で独立出典3件となり関心対象へ昇格。</li>
+      <li>新規：Kiro Approve for me、AWS Nitro Sandboxes、tests as data（顧客テストのデータ化）、トークン消費量の指標化（JetBrains 研究）、AI 制御プレーン Heimdall。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

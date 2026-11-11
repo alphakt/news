@@ -730,6 +730,46 @@
    "date": "2026-11-11",
    "key": "notion-fireworks-incident",
    "url": "https://www.notion.com/ja/help/security-incident-involving-a-third-party-ai-vendor"
+  },
+  {
+   "date": "2026-11-12",
+   "key": "gemini-decisions-api",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+  },
+  {
+   "date": "2026-11-12",
+   "key": "claude-sheets-whiteboards-data",
+   "url": "https://claude.com/resources/articles/sheets-whiteboards-data"
+  },
+  {
+   "date": "2026-11-12",
+   "key": "kiro-approve-for-me",
+   "url": "https://kiro.dev/blog/introducing-approve-for-me/"
+  },
+  {
+   "date": "2026-11-12",
+   "key": "fowler-tests-as-data",
+   "url": "https://martinfowler.com/articles/tests-as-data.html"
+  },
+  {
+   "date": "2026-11-12",
+   "key": "aws-nitro-sandboxes",
+   "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-nitro-sandboxes.html"
+  },
+  {
+   "date": "2026-11-12",
+   "key": "jetbrains-token-spend-study",
+   "url": "https://arxiv.org/abs/2611.13396"
+  },
+  {
+   "date": "2026-11-12",
+   "key": "acf-instruction-adherence",
+   "url": "https://arxiv.org/abs/2611.13709"
+  },
+  {
+   "date": "2026-11-12",
+   "key": "thoughtworks-heimdall-control-plane",
+   "url": "https://www.thoughtworks.com/insights/blog/generative-ai/we-built-ai-control-plane-reduce-LLM-expenses-prevent-data-leaks"
   }
  ]
 }

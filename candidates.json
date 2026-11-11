@@ -6,8 +6,8 @@
    "kind": "agent-infra",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-11",
-   "mentions": 13,
+   "last_seen": "2026-11-12",
+   "mentions": 14,
    "sources": [
     "https://arxiv.org/abs/2610.02267",
     "https://developers.openai.com/api/docs/guides/decisions",
@@ -21,7 +21,8 @@
     "https://arxiv.org/abs/2610.24649",
     "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
     "https://huggingface.co/blog/decision",
-    "https://martinfowler.com/articles/durable-execution-agents.html"
+    "https://martinfowler.com/articles/durable-execution-agents.html",
+    "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
    ],
    "note": "テキストを生成せず型付きの判断だけ返す決定モデル。エージェントの小さな判断（ツール選択、安全性、停止判断）を主モデルから分離する発想。対照: 主モデル自前判断、他の router/guard モデル"
   },
@@ -67,8 +68,8 @@
    "kind": "context-engineering",
    "status": "candidate",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-10-31",
-   "mentions": 7,
+   "last_seen": "2026-11-12",
+   "mentions": 8,
    "sources": [
     "https://zenn.dev/fukorohouse/articles/e2659fcd7c530f",
     "https://arxiv.org/abs/2610.08875",
@@ -76,7 +77,8 @@
     "https://aws.amazon.com/jp/blogs/news/cli-3/",
     "https://arxiv.org/abs/2610.31715",
     "https://arxiv.org/abs/2610.32578",
-    "https://arxiv.org/abs/2610.38521"
+    "https://arxiv.org/abs/2610.38521",
+    "https://arxiv.org/abs/2611.13709"
    ],
    "note": ".md でエージェントの振る舞いを規定する手法。効果の実証研究・ベストプラクティスを追う"
   },
@@ -85,8 +87,8 @@
    "kind": "process",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-10-29",
-   "mentions": 10,
+   "last_seen": "2026-11-12",
+   "mentions": 11,
    "sources": [
     "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
     "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
@@ -96,7 +98,8 @@
     "https://arxiv.org/abs/2610.11179",
     "https://claude.dev/blog/solving-code-review-at-anthropic/",
     "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
-    "https://aws.amazon.com/jp/blogs/news/software-factory-stability/"
+    "https://aws.amazon.com/jp/blogs/news/software-factory-stability/",
+    "https://martinfowler.com/articles/tests-as-data.html"
    ],
    "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
   },
@@ -1087,13 +1090,14 @@
   {
    "name": "Gemini 4 Carbon",
    "kind": "model",
-   "status": "candidate",
+   "status": "watching",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-11",
-   "mentions": 2,
+   "last_seen": "2026-11-12",
+   "mentions": 3,
    "sources": [
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-    "https://www.itmedia.co.jp/news/article/2611/11/2000003083/"
+    "https://www.itmedia.co.jp/news/article/2611/11/2000003083/",
+    "https://www.itmedia.co.jp/aiplus/article/2611/11/2000003093/"
    ],
    "note": "限定提供、導入期間後に価格2倍"
   },
@@ -1355,10 +1359,12 @@
    "kind": "cost-governance",
    "status": "candidate",
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-04",
-   "mentions": 1,
+   "last_seen": "2026-11-12",
+   "mentions": 3,
    "sources": [
-    "https://www.thoughtworks.com/insights/articles/the-token-bleed-reality"
+    "https://www.thoughtworks.com/insights/articles/the-token-bleed-reality",
+    "https://arxiv.org/abs/2611.13396",
+    "https://www.thoughtworks.com/insights/blog/generative-ai/we-built-ai-control-plane-reduce-LLM-expenses-prevent-data-leaks"
    ],
    "note": "エージェント単位の予算・遮断器・キャッシュ・モデル使い分け"
   },
@@ -1602,6 +1608,90 @@
     "https://www.notion.com/ja/help/security-incident-involving-a-third-party-ai-vendor"
    ],
    "note": "AI 委託先経由で Notion AI チャット記録漏えいの可能性。"
+  },
+  {
+   "name": "Gemini Decisions API (Google)",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "mentions": 1,
+   "sources": [
+    "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+   ],
+   "note": "Google の決定モデル API（Gemini Decision 1）。生成せず確率を返す。Jev 系の主要ベンダー参入"
+  },
+  {
+   "name": "Kiro Approve for me",
+   "kind": "agent-governance",
+   "status": "candidate",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "mentions": 1,
+   "sources": [
+    "https://kiro.dev/blog/introducing-approve-for-me/"
+   ],
+   "note": "規則で決まらない操作を LLM が審査し自動承認・阻止・人への確認を振り分ける"
+  },
+  {
+   "name": "AWS Nitro Sandboxes",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "mentions": 1,
+   "sources": [
+    "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-nitro-sandboxes.html"
+   ],
+   "note": "EC2 上のハードウェア分離軽量 VM。エージェント生成コードの実行隔離。EKS/ECS 対応"
+  },
+  {
+   "name": "tests as data（顧客テストのデータ化）",
+   "kind": "practice",
+   "status": "candidate",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "mentions": 1,
+   "sources": [
+    "https://martinfowler.com/articles/tests-as-data.html"
+   ],
+   "note": "AI に書き換えられにくい YAML/CSV の顧客テストを人と AI の契約にする"
+  },
+  {
+   "name": "トークン消費量の指標化（JetBrains 研究）",
+   "kind": "pm-metric",
+   "status": "candidate",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "mentions": 1,
+   "sources": [
+    "https://arxiv.org/abs/2611.13396"
+   ],
+   "note": "トークン消費は成果を測らない。資源会計に限定すべき"
+  },
+  {
+   "name": "AI 制御プレーン Heimdall (Thoughtworks)",
+   "kind": "cost-governance",
+   "status": "candidate",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "mentions": 1,
+   "sources": [
+    "https://www.thoughtworks.com/insights/blog/generative-ai/we-built-ai-control-plane-reduce-LLM-expenses-prevent-data-leaks"
+   ],
+   "note": "PII 黒塗り・キャッシュ・ルーティング・予算格下げのゲートウェイ"
+  },
+  {
+   "name": "Claude Sheets / Whiteboards / Data",
+   "kind": "product",
+   "status": "candidate",
+   "first_seen": "2026-11-12",
+   "last_seen": "2026-11-12",
+   "mentions": 1,
+   "sources": [
+    "https://claude.com/resources/articles/sheets-whiteboards-data"
+   ],
+   "note": "Claude の共同編集成果物。Enterprise では Claude Data が 11/19 既定有効"
   }
  ]
 }

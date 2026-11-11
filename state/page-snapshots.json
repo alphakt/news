@@ -31,7 +31,7 @@
    "https://code.claude.com/docs/en/output-styles",
    "https://code.claude.com/docs/en/hooks"
   ],
-  "checked": "2026-11-10T23:06:15.729150+00:00"
+  "checked": "2026-11-11T23:06:13.908940+00:00"
  },
  "https://www.anthropic.com/engineering": {
   "links": [
@@ -63,7 +63,7 @@
    "https://www.anthropic.com/research/team/interpretability",
    "https://www.anthropic.com/research/team/societal-impacts"
   ],
-  "checked": "2026-11-10T23:06:15.993455+00:00"
+  "checked": "2026-11-11T23:06:14.123895+00:00"
  },
  "https://docs.anthropic.com/en/release-notes/overview": {
   "links": [
@@ -79,9 +79,9 @@
    "https://docs.anthropic.com/docs/en/api/migration-2026-10-21",
    "https://docs.anthropic.com/docs/en/build-with-claude/context-windows",
    "https://docs.anthropic.com/docs/en/build-with-claude/thinking",
+   "https://docs.anthropic.com/docs/en/build-with-claude/claude-on-amazon-bedrock-legacy",
    "https://docs.anthropic.com/docs/en/build-with-claude/claude-platform-on-aws",
    "https://docs.anthropic.com/docs/en/build-with-claude/claude-models-on-google-cloud/anthropic-managed",
-   "https://docs.anthropic.com/docs/en/build-with-claude/claude-in-amazon-bedrock",
    "https://docs.anthropic.com/docs/en/build-with-claude/claude-models-on-google-cloud/google-managed",
    "https://docs.anthropic.com/docs/en/build-with-claude/claude-in-microsoft-foundry",
    "https://docs.anthropic.com/docs/en/models/fable-5-2/whats-new-fable-5-2",
@@ -111,6 +111,7 @@
    "https://docs.anthropic.com/docs/en/managed-agents/workflow-runs",
    "https://docs.anthropic.com/docs/en/manage-claude/compliance-content-data",
    "https://docs.anthropic.com/docs/en/build-with-claude/effort",
+   "https://docs.anthropic.com/docs/en/build-with-claude/claude-in-amazon-bedrock",
    "https://docs.anthropic.com/docs/en/models/haiku-5-5/whats-new-haiku-5-5",
    "https://docs.anthropic.com/docs/en/models/haiku-5-5/migration-guide",
    "https://docs.anthropic.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-haiku-5-5",
@@ -129,7 +130,7 @@
    "https://docs.anthropic.com/docs/en/build-with-claude/compaction-on-demand",
    "https://docs.anthropic.com/docs/en/cli-sdks-libraries/cli/sessions-connect",
    "https://docs.anthropic.com/docs/en/cli-sdks-libraries/cli/apply",
-   "https://docs.anthropic.com/docs/en/models/fable-5-1/whats-new-fable-5-1",
+   "https://docs.anthropic.com/docs/en/models/fable-5-1/overview",
    "https://docs.anthropic.com/docs/en/build-with-claude/structured-outputs",
    "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/code-execution-tool",
    "https://docs.anthropic.com/docs/en/manage-claude/user-management",
@@ -195,7 +196,7 @@
    "https://docs.anthropic.com/docs/en/build-with-claude/token-counting",
    "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/parallel-tool-use"
   ],
-  "checked": "2026-11-10T23:06:16.698322+00:00"
+  "checked": "2026-11-11T23:06:14.901559+00:00"
  },
  "https://developers.openai.com/changelog": {
   "links": [
@@ -613,7 +614,7 @@
    "https://developers.openai.com/api/docs/models/dall-e-3",
    "https://developers.openai.com/api/docs/models/text-moderation-latest"
   ],
-  "checked": "2026-11-10T23:06:17.085144+00:00"
+  "checked": "2026-11-11T23:06:15.250155+00:00"
  },
  "https://cursor.com/changelog": {
   "links": [
@@ -641,11 +642,11 @@
    "https://cursor.com/en-US/cookie-policy",
    "https://cursor.com/en-US/security"
   ],
-  "checked": "2026-11-10T23:06:17.287219+00:00"
+  "checked": "2026-11-11T23:06:15.455616+00:00"
  },
  "https://ai.google.dev/gemini-api/docs/changelog": {
   "links": [],
-  "checked": "2026-11-10T23:06:17.701531+00:00"
+  "checked": "2026-11-11T23:06:16.040713+00:00"
  },
  "https://www.ipa.go.jp/digital/ai/": {
   "links": [
@@ -745,6 +746,7 @@
    "https://www.ipa.go.jp/digital/architecture/public_comment/4dspatio-temporal-guidelines_public-comment.html",
    "https://www.ipa.go.jp/digital/architecture/public_comment/4dspatio-temporal-guideline_1_2_beta.html",
    "https://www.ipa.go.jp/digital/architecture/public_comment/infrastructure-management-dx-guideline-1_0.html",
+   "https://www.ipa.go.jp/digital/architecture/public_comment/guide_sc-ba-cfp_1_0.html",
    "https://www.ipa.go.jp/digital/architecture/public_comment/scresilience-guideline_0_1_beta.html",
    "https://www.ipa.go.jp/digital/architecture/public_comment/smartbuilding-guidelines_public-comment.html",
    "https://www.ipa.go.jp/digital/architecture/public_comment/checkin-system-guideline_1_0.html",
@@ -857,7 +859,7 @@
    "https://www.ipa.go.jp/siteinfo.html",
    "https://www.ipa.go.jp/accessibility.html"
   ],
-  "checked": "2026-11-10T23:06:17.998393+00:00"
+  "checked": "2026-11-11T23:06:16.378838+00:00"
  },
  "https://www.ppc.go.jp/news/": {
   "links": [
@@ -947,11 +949,13 @@
    "https://www.ppc.go.jp/application/kisei_kaikaku/",
    "https://www.ppc.go.jp/aboutus/commission/access/ppc_relocation?ref=topnews"
   ],
-  "checked": "2026-11-10T23:06:19.571223+00:00"
+  "checked": "2026-11-11T23:06:17.451589+00:00"
  },
  "https://www.soumu.go.jp/menu_news/s-news/": {
   "links": [
    "https://www.soumu.go.jp/english/index.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001309.html",
+   "https://www.soumu.go.jp/menu_news/s-news/01tsushin03_02000477.html",
    "https://www.soumu.go.jp/menu_news/s-news/01toukei04_01000308.html",
    "https://www.soumu.go.jp/menu_news/s-news/01toukei09_01000109.html",
    "https://www.soumu.go.jp/menu_news/s-news/01toukei07_01000296.html",
@@ -978,7 +982,7 @@
    "https://www.soumu.go.jp/menu_news/s-news/01kougai01_20261101.html",
    "https://www.soumu.go.jp/menu_kyotsuu/policy/shuwa-link.html"
   ],
-  "checked": "2026-11-10T23:06:20.417333+00:00"
+  "checked": "2026-11-11T23:06:18.256570+00:00"
  },
  "https://www.anthropic.com/customers": {
   "links": [
@@ -1041,7 +1045,7 @@
    "https://www.anthropic.com/legal/consumer-terms",
    "https://www.anthropic.com/legal/aup"
   ],
-  "checked": "2026-11-10T23:06:21.344279+00:00"
+  "checked": "2026-11-11T23:06:18.764714+00:00"
  },
  "https://cloud.google.com/customers": {
   "links": [
@@ -1305,7 +1309,7 @@
    "https://cloud.google.com/product-terms",
    "https://cloud.google.com/sustainability"
   ],
-  "checked": "2026-11-10T23:06:21.775546+00:00"
+  "checked": "2026-11-11T23:06:19.225771+00:00"
  },
  "https://www.microsoft.com/en-us/customers/": {
   "links": [
@@ -1378,7 +1382,7 @@
    "https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_Footer_Sustainability",
    "https://www.microsoft.com/customers/locale"
   ],
-  "checked": "2026-11-10T23:06:22.281802+00:00"
+  "checked": "2026-11-11T23:06:20.177548+00:00"
  },
  "https://www.nri.com/jp/news": {
   "links": [
@@ -1392,7 +1396,7 @@
    "https://www.nri.com/jp/privacy.html",
    "https://www.nri.com/jp/security_declare.html"
   ],
-  "checked": "2026-11-10T23:06:23.141434+00:00"
+  "checked": "2026-11-11T23:06:21.000546+00:00"
  },
  "https://www.deloitte.com/jp/ja/about/press-room.html": {
   "links": [
@@ -1478,7 +1482,7 @@
    "https://www.deloitte.com/jp/ja/legal/smap.html?icid=bn_smap",
    "https://www.deloitte.com/jp/ja/about/governance/network-brand-alliances/about-the-network.html"
   ],
-  "checked": "2026-11-10T23:06:23.542085+00:00"
+  "checked": "2026-11-11T23:06:21.277715+00:00"
  },
  "https://www.kpmg.com/jp/ja/home/media/press-releases.html": {
   "links": [
@@ -2018,7 +2022,7 @@
    "https://www.kpmg.com/jp/ja/about.html",
    "https://www.kpmg.com/jp/ja/media.html"
   ],
-  "checked": "2026-11-10T23:06:24.603585+00:00"
+  "checked": "2026-11-11T23:06:22.591979+00:00"
  },
  "https://www.ey.com/ja_jp/newsroom": {
   "links": [
@@ -2124,11 +2128,11 @@
    "https://www.ey.com/ja_jp/people/ey-japan",
    "https://www.ey.com/ja_jp/legal-and-privacy/hotline"
   ],
-  "checked": "2026-11-10T23:06:24.895189+00:00"
+  "checked": "2026-11-11T23:06:23.150517+00:00"
  },
  "https://dora.dev/": {
   "links": [],
-  "checked": "2026-11-10T23:06:25.030809+00:00"
+  "checked": "2026-11-11T23:06:23.313861+00:00"
  },
  "https://www.thoughtworks.com/radar": {
   "links": [
@@ -2209,11 +2213,11 @@
    "https://www.thoughtworks.com/about-us/fraud-advisory-notice",
    "https://www.thoughtworks.com/about-us/compliance"
   ],
-  "checked": "2026-11-10T23:06:25.340944+00:00"
+  "checked": "2026-11-11T23:06:23.516762+00:00"
  },
  "https://newsletter.pragmaticengineer.com/": {
   "links": [],
-  "checked": "2026-11-10T23:06:25.564044+00:00"
+  "checked": "2026-11-11T23:06:23.724830+00:00"
  },
  "https://linear.app/changelog": {
   "links": [
@@ -2243,7 +2247,7 @@
    "https://linear.app/docs",
    "https://linear.app/legal"
   ],
-  "checked": "2026-11-10T23:06:25.891440+00:00"
+  "checked": "2026-11-11T23:06:24.010598+00:00"
  },
  "https://www.atlassian.com/blog": {
   "links": [
@@ -2262,7 +2266,7 @@
    "https://www.atlassian.com/resources",
    "https://www.atlassian.com/legal/privacy-policy"
   ],
-  "checked": "2026-11-10T23:06:26.148306+00:00"
+  "checked": "2026-11-11T23:06:24.307264+00:00"
  },
  "https://digital-strategy.ec.europa.eu/en/news": {
   "links": [
@@ -2275,19 +2279,19 @@
    "https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-you-feed-breach-digital-services-act-harmful-rabbit-holes",
    "https://digital-strategy.ec.europa.eu/en/news/commission-accepts-temus-action-plan-remedy-breach-digital-services-act",
    "https://digital-strategy.ec.europa.eu/en/news/commission-investigate-how-bookingcom-combats-scams-and-fraud-under-digital-services-act",
-   "https://digital-strategy.ec.europa.eu/en/news/commission-invites-views-draft-revised-election-guidelines-under-digital-services-act",
-   "https://digital-strategy.ec.europa.eu/en/news/eu-nato-hold-structured-dialogue-cyber",
+   "https://digital-strategy.ec.europa.eu/en/news/eu-ukraine-drone-alliance-board-meets-accelerate-development-and-production-drone-and-counter-drone",
    "https://digital-strategy.ec.europa.eu/en/news/high-level-platform-meets-moldova-strengthen-digital-connectivity-between-eu-black-sea-region-south",
    "https://digital-strategy.ec.europa.eu/en/news/wifi4eu-eu-investment-lasting-local-impact",
+   "https://digital-strategy.ec.europa.eu/en/news/eu-nato-hold-structured-dialogue-cyber",
+   "https://digital-strategy.ec.europa.eu/en/news/commission-invites-views-draft-revised-election-guidelines-under-digital-services-act",
    "https://digital-strategy.ec.europa.eu/en/news/eu-and-india-conclude-negotiations-association-horizon-europe",
    "https://digital-strategy.ec.europa.eu/en/news/commission-opens-negotiations-extend-roam-home-western-balkans",
-   "https://digital-strategy.ec.europa.eu/en/news/european-innovation-council-launches-eu18-billion-funding-2027",
-   "https://digital-strategy.ec.europa.eu/en/news/semiconductor-alliance-meets-discuss-tech-sovereignty-package",
-   "https://digital-strategy.ec.europa.eu/en/news/ai-toolbox-supports-public-administrations-put-apply-ai-strategy-practice",
    "https://digital-strategy.ec.europa.eu/en/news/commission-launches-education-and-skills-package-tackle-declining-basic-skills-rapid-digital-change",
+   "https://digital-strategy.ec.europa.eu/en/news/ai-toolbox-supports-public-administrations-put-apply-ai-strategy-practice",
+   "https://digital-strategy.ec.europa.eu/en/news/european-innovation-council-launches-eu18-billion-funding-2027",
    "https://digital-strategy.ec.europa.eu/en",
    "https://digital-strategy.ec.europa.eu/en/pages/accessibility"
   ],
-  "checked": "2026-11-10T23:06:26.414147+00:00"
+  "checked": "2026-11-11T23:06:24.559419+00:00"
  }
 }
