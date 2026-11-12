@@ -29,7 +29,7 @@
   {
    "name": "Refero Styles / DESIGN.md",
    "kind": "context-engineering",
-   "status": "seed",
+   "status": "retired",
    "first_seen": "2026-10-02",
    "last_seen": "2026-10-02",
    "mentions": 0,
@@ -68,8 +68,8 @@
    "kind": "context-engineering",
    "status": "candidate",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-12",
-   "mentions": 8,
+   "last_seen": "2026-11-13",
+   "mentions": 9,
    "sources": [
     "https://zenn.dev/fukorohouse/articles/e2659fcd7c530f",
     "https://arxiv.org/abs/2610.08875",
@@ -78,7 +78,8 @@
     "https://arxiv.org/abs/2610.31715",
     "https://arxiv.org/abs/2610.32578",
     "https://arxiv.org/abs/2610.38521",
-    "https://arxiv.org/abs/2611.13709"
+    "https://arxiv.org/abs/2611.13709",
+    "https://martinfowler.com/bliki/GeneratedGlossary.html"
    ],
    "note": ".md でエージェントの振る舞いを規定する手法。効果の実証研究・ベストプラクティスを追う"
   },
@@ -87,8 +88,8 @@
    "kind": "process",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-12",
-   "mentions": 11,
+   "last_seen": "2026-11-13",
+   "mentions": 12,
    "sources": [
     "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
     "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
@@ -99,7 +100,8 @@
     "https://claude.dev/blog/solving-code-review-at-anthropic/",
     "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
     "https://aws.amazon.com/jp/blogs/news/software-factory-stability/",
-    "https://martinfowler.com/articles/tests-as-data.html"
+    "https://martinfowler.com/articles/tests-as-data.html",
+    "https://tech-blog.rakus.co.jp/entry/20261112/characterization-test-review"
    ],
    "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
   },
@@ -119,7 +121,7 @@
   {
    "name": "Agent Memory Repo / Dreaming (Cognition)",
    "kind": "knowledge",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-06",
    "last_seen": "2026-10-06",
    "mentions": 1,
@@ -131,7 +133,7 @@
   {
    "name": "AI Modernization Flow (AWS Japan)",
    "kind": "process",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-06",
    "last_seen": "2026-10-06",
    "mentions": 1,
@@ -143,7 +145,7 @@
   {
    "name": "textGrain (OpenAI)",
    "kind": "policy",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-06",
    "last_seen": "2026-10-06",
    "mentions": 1,
@@ -155,7 +157,7 @@
   {
    "name": "decision pins (Pinning Decisions Before Failure)",
    "kind": "process",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-06",
    "last_seen": "2026-10-06",
    "mentions": 1,
@@ -167,7 +169,7 @@
   {
    "name": "hacktrace",
    "kind": "agent-infra",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-06",
    "last_seen": "2026-10-06",
    "mentions": 1,
@@ -179,7 +181,7 @@
   {
    "name": "Laya (open-weight decision model)",
    "kind": "agent-infra",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-06",
    "last_seen": "2026-10-06",
    "mentions": 1,
@@ -191,7 +193,7 @@
   {
    "name": "Agent Fleet (k-k1)",
    "kind": "agent-infra",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-06",
    "last_seen": "2026-10-06",
    "mentions": 1,
@@ -218,7 +220,7 @@
   {
    "name": "SwarmChase",
    "kind": "agent-infra",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-06",
    "last_seen": "2026-10-06",
    "mentions": 1,
@@ -230,7 +232,7 @@
   {
    "name": "AGENTIC STAR パートナー制度 (SoftBank)",
    "kind": "agent-product",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-06",
    "last_seen": "2026-10-06",
    "mentions": 1,
@@ -242,7 +244,7 @@
   {
    "name": "Beam (Reflection AI)",
    "kind": "model",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-06",
    "last_seen": "2026-10-06",
    "mentions": 1,
@@ -254,7 +256,7 @@
   {
    "name": "Spec-driven delivery (Akka Specify)",
    "kind": "process",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-06",
    "last_seen": "2026-10-06",
    "mentions": 1,
@@ -291,7 +293,7 @@
   {
    "name": "AFCRA（AIレビュアー攻撃）",
    "kind": "process",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-07",
    "last_seen": "2026-10-07",
    "mentions": 1,
@@ -303,7 +305,7 @@
   {
    "name": "Claude Haiku 5.5",
    "kind": "model",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-08",
    "last_seen": "2026-10-08",
    "mentions": 1,
@@ -315,7 +317,7 @@
   {
    "name": "GitHub Secret Protection 分類器",
    "kind": "security",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-08",
    "last_seen": "2026-10-08",
    "mentions": 1,
@@ -327,7 +329,7 @@
   {
    "name": "Gemini agent (Google)",
    "kind": "agent-product",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-09",
    "last_seen": "2026-10-09",
    "mentions": 1,
@@ -339,7 +341,7 @@
   {
    "name": "さくらのAI Engine プライベートエディション",
    "kind": "infra",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-09",
    "last_seen": "2026-10-09",
    "mentions": 1,
@@ -351,7 +353,7 @@
   {
    "name": "Clef (Cloudflare)",
    "kind": "agent-infra",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-09",
    "last_seen": "2026-10-09",
    "mentions": 1,
@@ -363,7 +365,7 @@
   {
    "name": "Claude Managed Agents 定時エージェント（daily-brief）",
    "kind": "agent-infra",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-10",
    "last_seen": "2026-10-10",
    "mentions": 1,
@@ -375,7 +377,7 @@
   {
    "name": "損保ジャパン Gemini Enterprise 展開",
    "kind": "enterprise-case",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-10",
    "last_seen": "2026-10-10",
    "mentions": 1,
@@ -428,7 +430,7 @@
   {
    "name": "Microsoft-Decision-1",
    "kind": "agent-infra",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
    "mentions": 1,
@@ -453,7 +455,7 @@
   {
    "name": "サブエージェントのトークン計測差",
    "kind": "cost",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
    "mentions": 1,
@@ -465,7 +467,7 @@
   {
    "name": "ソニー銀行 勘定系×Claude Code 事例",
    "kind": "case",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-13",
    "mentions": 1,
@@ -477,7 +479,7 @@
   {
    "name": "エージェント型決済の権限モデル",
    "kind": "governance",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-13",
    "mentions": 1,
@@ -883,16 +885,18 @@
    "note": "機械可読性ルール適合チェック。AI 判定補助は任意"
   },
   {
-   "name": "Agent Skills の AAIF 寄贈",
+   "name": "Agent Skills（SKILL.md）",
    "kind": "standard",
-   "status": "candidate",
+   "status": "watching",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-10-23",
-   "mentions": 1,
+   "last_seen": "2026-11-13",
+   "mentions": 3,
    "sources": [
-    "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+    "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+    "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
+    "https://github.com/addyosmani/agent-skills"
    ],
-   "note": "Skills 標準を Linux Foundation 傘下の AAIF へ。70超のプラットフォーム対応（Anthropic 記述）"
+   "note": "Skills 標準を Linux Foundation 傘下の AAIF へ。70超のプラットフォーム対応（Anthropic 記述）。2026-11-13 GitHub が実践ガイドで採用（主要ベンダー採用により昇格）"
   },
   {
    "name": "Claude Duet",
@@ -1092,12 +1096,13 @@
    "kind": "model",
    "status": "watching",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-12",
-   "mentions": 3,
+   "last_seen": "2026-11-13",
+   "mentions": 4,
    "sources": [
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
     "https://www.itmedia.co.jp/news/article/2611/11/2000003083/",
-    "https://www.itmedia.co.jp/aiplus/article/2611/11/2000003093/"
+    "https://www.itmedia.co.jp/aiplus/article/2611/11/2000003093/",
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
    ],
    "note": "限定提供、導入期間後に価格2倍"
   },
@@ -1178,8 +1183,8 @@
    "kind": "agent-product",
    "status": "candidate",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-10-31",
-   "mentions": 1,
+   "last_seen": "2026-11-13",
+   "mentions": 2,
    "sources": [
     "https://github.com/trending"
    ],
@@ -1692,6 +1697,114 @@
     "https://claude.com/resources/articles/sheets-whiteboards-data"
    ],
    "note": "Claude の共同編集成果物。Enterprise では Claude Data が 11/19 既定有効"
+  },
+  {
+   "name": "Gemini 4 Hydrogen",
+   "kind": "model",
+   "status": "candidate",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "mentions": 1,
+   "sources": [
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+   ],
+   "note": "普及帯モデル。入力$1.50／出力$7.50、1Mコンテキスト。Antigravity Orchestrator で Carbon と併用"
+  },
+  {
+   "name": "AWS Emulator（エージェントのみで構築）",
+   "kind": "process",
+   "status": "candidate",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "mentions": 1,
+   "sources": [
+    "https://www.aboutamazon.com/news/aws/how-autonomous-ai-agents-built-aws-emulator"
+   ],
+   "note": "人はコードを書かずレビューもしない。忠実度テスト＋マージ門で品質を保つ。CC0"
+  },
+  {
+   "name": "生成用語集（Generated Glossary, Fowler）",
+   "kind": "context-engineering",
+   "status": "candidate",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "mentions": 1,
+   "sources": [
+    "https://martinfowler.com/bliki/GeneratedGlossary.html"
+   ],
+   "note": "社内用語を LLM に下書きさせ専門家が修正。文脈ごとに分ける"
+  },
+  {
+   "name": "フォーティエンス AIガバナンス診断",
+   "kind": "competitor-service",
+   "status": "candidate",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "mentions": 1,
+   "sources": [
+    "https://prtimes.jp/main/html/rd/p/000000134.000043765.html"
+   ],
+   "note": "NTTデータグループ。6領域×5段階、クイック診断は最短1営業日"
+  },
+  {
+   "name": "Linear BYOK（コーディングセッション）",
+   "kind": "product",
+   "status": "candidate",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "mentions": 1,
+   "sources": [
+    "https://linear.app/changelog/2026-11-12-bring-your-own-key"
+   ],
+   "note": "クラウド型コーディングエージェントに自社 API キーを持ち込み"
+  },
+  {
+   "name": "OpenAI API 国内推論（GPT-6 Luna）",
+   "kind": "availability",
+   "status": "candidate",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "mentions": 1,
+   "sources": [
+    "https://www.itmedia.co.jp/aiplus/article/2611/12/2000003129/"
+   ],
+   "note": "未検証（一次情報の日付を確認できず 2026-11-13 見送り）。Luna のみ、Standard のみ"
+  },
+  {
+   "name": "常駐エージェントの保護（OpenAI / OpenClaw）",
+   "kind": "agent-governance",
+   "status": "candidate",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "mentions": 1,
+   "sources": [
+    "https://developers.openai.com/blog/securing-persistent-agents-like-openclaw-at-openai"
+   ],
+   "note": "本文は確認済みだが公開日の記載がなく 2026-11-13 見送り。制御面と実行面の分離、許可リスト、エージェント固有 ID"
+  },
+  {
+   "name": "Codex Security CLI (OpenAI)",
+   "kind": "security",
+   "status": "candidate",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "mentions": 1,
+   "sources": [
+    "https://github.com/openai/codex-security"
+   ],
+   "note": "未検証。GitHub Trending と OpenAI Changelog の新規リンクで確認"
+  },
+  {
+   "name": "Claude Managed Agents セルフホスト",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-13",
+   "last_seen": "2026-11-13",
+   "mentions": 1,
+   "sources": [
+    "https://docs.anthropic.com/docs/en/managed-agents/self-hosted"
+   ],
+   "note": "未検証。Anthropic Release Notes の新規リンクで確認"
   }
  ]
 }

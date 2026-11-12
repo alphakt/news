@@ -770,6 +770,41 @@
    "date": "2026-11-12",
    "key": "thoughtworks-heimdall-control-plane",
    "url": "https://www.thoughtworks.com/insights/blog/generative-ai/we-built-ai-control-plane-reduce-LLM-expenses-prevent-data-leaks"
+  },
+  {
+   "date": "2026-11-13",
+   "key": "gemini-4-hydrogen",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+  },
+  {
+   "date": "2026-11-13",
+   "key": "aws-emulator-agents-built",
+   "url": "https://www.aboutamazon.com/news/aws/how-autonomous-ai-agents-built-aws-emulator"
+  },
+  {
+   "date": "2026-11-13",
+   "key": "github-agent-skills-practical-guide",
+   "url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/"
+  },
+  {
+   "date": "2026-11-13",
+   "key": "rakus-characterization-test-review",
+   "url": "https://tech-blog.rakus.co.jp/entry/20261112/characterization-test-review"
+  },
+  {
+   "date": "2026-11-13",
+   "key": "fowler-generated-glossary",
+   "url": "https://martinfowler.com/bliki/GeneratedGlossary.html"
+  },
+  {
+   "date": "2026-11-13",
+   "key": "fortience-ai-governance-shindan",
+   "url": "https://prtimes.jp/main/html/rd/p/000000134.000043765.html"
+  },
+  {
+   "date": "2026-11-13",
+   "key": "linear-byok-coding-sessions",
+   "url": "https://linear.app/changelog/2026-11-12-bring-your-own-key"
   }
  ]
 }

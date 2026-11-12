@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月13日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月13日（金）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は、Google の普及帯モデル「Gemini 4 Hydrogen」、AI エージェントだけで書かれた AWS 公式のローカルエミュレータ、そして GitHub によるエージェントスキルの実践ガイドが中心です。国内からは、AI で量産したテストのレビューが詰まった実例（ラクス）を取り上げます。見送ったもの：OpenAI API の国内推論対応（GPT-6 Luna のみ。一次情報の公開日を確認できず）、OpenAI「常駐エージェントの保護」記事（公開日の記載なし）、GitHub Agentic Workflows の GA（一次発表は10月28日で48時間超）、NVIDIA の CEO 交代報道（可用性・価格への影響が未確定）。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Google が「Gemini 4 Hydrogen」を公開——上位の Carbon／Argon の下に置く高速・低価格モデルで、入力100万トークン1.50ドル・出力7.50ドル。Gemini API と AI Studio ですぐ使える</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">Google は11月12日、Gemini 4 系の普及帯モデル Hydrogen を発表した。日常的なコーディングとエージェント処理向けの位置付けで、入力・出力とも最大100万トークン。料金はコンテキスト長によらず一律で、入力1.50ドル・出力7.50ドル（100万トークンあたり）。Google の発表では Terminal-Bench 4.1 で57%（Gemini 3.8 Flash は18.2%）。Antigravity には Carbon と Hydrogen をセッション内で切り替える Orchestrator が入り、Carbon に近い成功率で利用枠を24%節約したという。Gemini API、AI Studio、Android Studio、Gemini Enterprise、Gemini アプリ、Google 検索に順次展開する。</p>
+      <ul class="sowhat"><li><b>DEV</b>3.8 Flash を実行役に使っているエージェントは、モデル ID を <code>gemini-4-hydrogen</code> に替えて比較できる。ファイル読み取りや検索の並列実行にも対応する。</li><li><b>CONSULT</b>「高性能モデルで計画し、安いモデルで実行する」構成が Google 純正で組めるようになった。顧客の Gemini 利用費の見積もりは単価と構成の両方で見直しになる。</li><li><b>PM</b>コンテキスト長で単価が変わらないので、長い入力を扱う処理の費用見積もりが単純になる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>AI Studio で <code>gemini-4-hydrogen</code> を選び、現在 3.8 Flash や他社の中位モデルで回している定型タスクを1つ流して、成功率・所要時間・費用を比べる。</div>
+      <div class="source">出典：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener">Google Blog「Introducing Gemini 4 Hydrogen」（2026-11-12）</a></div>
+      <div class="note">ベンチマークはすべて Google 自身の発表値。プレビューか GA か、旧モデルの廃止予定、Vertex AI での提供は発表に記載なし。</div>
+      <div class="comment"><b>コメント：</b>「賢いモデルを1つ選ぶ」から「上位と普及帯を組み合わせて回す」へ、ベンダー自身が既定の使い方を変え始めた。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>AWS が公式のローカルエミュレータ「AWS Emulator」を公開——コードは全行を数千の自律エージェントが書き、人は一行も書かずレビューもしていない。人が設計したのは仕様・忠実度テスト・マージ門だけ</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">AWS は11月11日、AWS の API を手元で再現するエミュレータを公開した。AWS アカウントなしでテストでき、Linux は RPM／Debian パッケージ、macOS と Windows は Docker で動かす。ライセンスは CC0。開発の仕方が異例で、AWS の技術者によれば、438の API モデルを受ける空のサーバーから始め、3つのエージェント群が1つのリポジトリで働いた。テスト作成役が実際の AWS で確かめた忠実度テストを作り、発見役がエミュレータで再生して不一致を起票し、修正役が1件ずつ直す。変更はビルド・コーディング規約・セキュリティ・忠実度の退行を調べるマージ門を通ったものだけが入る。数百のエージェントが並行し、1日に数千件を修正する。未対応の API はリポジトリの <code>issues/things-that-do-not-work/</code> に公開されている。</p>
+      <ul class="sowhat"><li><b>DEV</b>CI やエージェントの検証ループで、実 AWS を呼ばずに統合テストを回せる。コーディングエージェント用のスキルも AWS CLI から追加できる。</li><li><b>PM</b>人のコードレビューを置かず「正解と照合するテスト＋自動の門」で品質を保つ大規模な実例。正解（実 AWS）が存在する移行・互換実装の案件ほど当てはめやすい。</li><li><b>CONSULT</b>「AI だけで作ったソフトを公式製品として出す」事例として顧客に聞かれる。成立条件（機械的に照合できる正解があること）まで説明できるようにしておく。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>SQS や S3 など1サービスだけ使う既存の統合テストを、エンドポイントをエミュレータに向けて実行する。先に <code>issues/things-that-do-not-work/</code> で使う API の対応状況を確かめる。</div>
+      <div class="source">出典：<a href="https://www.aboutamazon.com/news/aws/how-autonomous-ai-agents-built-aws-emulator" target="_blank" rel="noopener">About Amazon「How autonomous AI agents built AWS Emulator」（2026-11-11）</a><a href="https://github.com/aws/aws-emulator" target="_blank" rel="noopener">GitHub「aws/aws-emulator」</a></div>
+      <div class="note">本番用途・セキュリティ検証用途ではないと明記。テレメトリは既定で有効（無効化可）。外部からのプルリクエストは受け付けない。対応サービス数の総数は記載なし。</div>
+      <div class="comment"><b>コメント：</b>見どころはエミュレータ自体より、「人はレビューせず、照合の仕組みを設計する」という分担が AWS の製品で実行されたこと。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>GitHub が「エージェントスキル」の実践ガイドを公開——SKILL.md を1つの原本にして Claude Code・Cursor・GitHub Copilot 向けに自動で包み直し、検証は別のエージェントに任せる</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">GitHub は11月12日、繰り返す開発作業をスキルとして書き、複数のエージェントで使い回す方法を実例で解説した。スキルは <code>SKILL.md</code> を中心とするバージョン管理されたディレクトリで、名前、何をするか、いつ使うか、何を確かめてどんな証拠を返すかを書く。原本は <code>skills/*/SKILL.md</code> に置き、パッケージ用スクリプトが Claude Code、Cursor、Copilot 用の設定ファイルを生成する。プロジェクト固有の名前やスキーマはスキルに書かず、別のマニフェストに分ける。例のデータ基盤ワークフローは7段階すべてに人の確認点を置き、スキーマ変更の前に承認を求める。検証は「自己検証は検証ではない」として別の検証エージェントが PASS／FAIL／PARTIAL を根拠付きで返す。</p>
+      <ul class="sowhat"><li><b>DEV</b>チームで同じ説明を何度もエージェントにしている作業を、ツールを問わず使える形で持てる。パッケージの整合は CI（<code>--check</code>）で確かめる。</li><li><b>PM</b>スキルは権限を与えない。ツール・認証情報・権限は環境側で別に用意し、エージェントごとに動作確認が要る点を計画に入れる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>説明に飽きた定型作業を1つ選び、必要な入力・止まる地点・レビュー者に見せる証拠を SKILL.md に書く。2つ目のエージェントで動かして直す。</div>
+      <div class="source">出典：<a href="https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/" target="_blank" rel="noopener">GitHub Blog「Build once, run on any agent: A practical guide to agent skills」（2026-11-12）</a></div>
+      <div class="note">例の検証用 GitHub Action は差分を読むだけで、コードの実行やテストはしない。</div>
+      <div class="comment"><b>コメント：</b>下のラクスの事例が「レビュー観点をスキルにした」実践で、このガイドの裏付けになっている。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>ラクス「AI でテストを約900本作ったら、レビューが重くなった」——約460行・約220分岐の処理に安全網を張る過程で、レビューが「AI の意図をたどる作業」に。基準を先に揃え、指摘をスキル化して解消</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">ラクスの開発者ブログ（11月12日）は、楽楽精算の伝票画面の表示処理（約460行、約220分岐）を作り直す前に、現状の振る舞いを固定するテストを AI で作った経過を報告した。4人が10の申請種別を分担し、1種別あたり約90本、全体で約900本近く。大枠は共有していたが、モックの組み方、アサートの書き方、粒度が揃っておらず、レビュー者はテスト1本ごとに分岐条件やモック設定をたどることになり、他種別への展開日程にも響いた。対策は2つ。1種別を基準に全員でレビューして方針を固めてから展開すること、レビュー指摘を4群の観点としてスキルにし、作業者が AI と自己点検すること。特に効いたのは、通っているのに何も保証していないテストの検出で、対象の分岐を消しても成功するかで見分ける。</p>
+      <ul class="sowhat"><li><b>DEV</b>AI にテストを書かせる前に、モック・アサート・粒度の基準を1件の見本で決める。「分岐を消しても通るテスト」は機械的に点検する。</li><li><b>PM</b>並行で量産してから揃えると手戻りが出る。「1件を基準化→横展開」の順を計画に組み、レビュー者の確認項目を絞る。</li></ul>
+      <div class="source">出典：<a href="https://tech-blog.rakus.co.jp/entry/20261112/characterization-test-review" target="_blank" rel="noopener">RAKUS Developers Blog「AIでテストを量産したら、レビューが重くなった——レガシーコードの安全網づくり」（2026-11-12）</a></div>
+      <div class="note">レビュー負荷の軽減は「感じている」との記述で、定量的な改善値は示されていない。</div>
+      <div class="comment"><b>コメント：</b>国内の業務システムで「AI が書いた後にレビューが詰まる」を具体的な本数で示した、貴重な一次報告。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Martin Fowler「生成用語集（Generated Glossary）」——社内文書から LLM に用語と定義を下書きさせ、専門家が直してバージョン管理する。全社で1つにせず、文脈ごとに分ける</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Martin Fowler は11月12日、専門領域で LLM がうまく働かない原因を「社内の言葉が学習データにないこと」とし、用語集を作って渡す実践を紹介した。作り方は、文書・メール・チャット・会議の文字起こしを集め、LLM に用語の候補（特に、一般的な語を独自の意味で使っているもの）を挙げさせ、辞書形式の定義を下書きさせ、領域の専門家が誤りを直す。保守は、トークンを節約できる形で保存し、バージョン管理し、エージェントと人の両方で定期的に見直す。大きい用語集は用語とリンクだけ先に読み込み、定義は必要時に取得する。使い道は、生成するコードや文書の命名の統一、ハーネスでの用語チェック、社内用語を顧客向け文面に出さないこと。避ける語と代替、廃止語も記録する。</p>
+      <ul class="sowhat"><li><b>DEV</b>CLAUDE.md／AGENTS.md に用語を書き連ねる代わりに、用語集を別ファイルにして必要時に引かせる構成の根拠になる。</li><li><b>CONSULT</b>導入初期の成果物として提案しやすい。部門ごとに同じ語の意味が違うこと自体が、業務整理の材料になる。</li></ul>
+      <div class="source">出典：<a href="https://martinfowler.com/bliki/GeneratedGlossary.html" target="_blank" rel="noopener">martinfowler.com「Generated Glossary」（2026-11-12）</a></div>
+      <div class="note">Fowler は「全社標準の用語集がうまくいった例は見たことがない」とし、文脈（bounded context）ごとに分けることを勧めている。</div>
+      <div class="comment"><b>コメント：</b>業界用語と社内用語が混ざる日本企業の案件では、RAG より先に効く地味な一手になりうる。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>NTT データグループのフォーティエンスコンサルティングが「AI ガバナンス診断サービス」を開始——6領域を5段階の成熟度で評価し、クイック診断は最短1営業日</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span></div>
+      <p class="detail">フォーティエンスコンサルティング（旧クニエ）は11月11日、企業の AI ガバナンスの整備状況を診断するサービスの提供を始めた。総務省・経済産業省の「AI 事業者ガイドライン」を踏まえた独自の枠組みで、「組織・体制」「方針・ルール」「人材育成」「リスク管理」「データ・セキュリティ」「透明性・モニタリング」の6領域を5段階の成熟度で評価する。クイック診断は必要情報の確認後、最短1営業日で結果を示し、本診断は4週間から。成果物は領域別スコアのレーダーチャートと、優先度を付けた施策一覧。診断後は方針・体制の設計（2か月から）、規程・ガイドラインの制定やリスク確認プロセスの構築（3か月から）、ISO/IEC 42001 の認証取得まで支援する。料金は個別見積もりで、製造・流通・金融・公共など幅広い業界を対象とする。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>競合の「入口商品」の型（短期の無料に近い診断→本診断→規程整備→認証支援）が見える。自社の提案で領域の切り方と所要期間を比べる基準になる。</li></ul>
+      <div class="source">出典：<a href="https://prtimes.jp/main/html/rd/p/000000134.000043765.html" target="_blank" rel="noopener">フォーティエンスコンサルティング プレスリリース「AIガバナンス診断サービスを提供開始」（2026-11-11）</a></div>
+      <div class="note">料金、対象とする企業規模は記載なし。</div>
+      <div class="comment"><b>コメント：</b>診断の中身より、「最短1営業日」で入口の敷居を下げてきた点が競合上の要注意点。</div>
+    </div>
+
+    <div class="section-title">短信</div>
+    <div class="brief"><ul>
+      <li>Linear のクラウド型コーディングエージェントが BYOK（自社の API キー持ち込み）に対応（11月12日）。OpenAI、Anthropic、AWS Bedrock、Azure OpenAI などに対応し、全プランで利用可。モデル利用料は提供元から直接請求され、サンドボックス実行分は Linear の AI クレジットを消費する。<a href="https://linear.app/changelog/2026-11-12-bring-your-own-key" target="_blank" rel="noopener" style="color:#4338ca">Linear Changelog</a></li>
+    </ul></div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>昇格：「Agent Skills（SKILL.md）」を関心対象へ。GitHub が公式ガイドで採用し、GitHub Trending にも addyosmani/agent-skills が入った。「AI 生成 PR の人間レビュー枠組み」にはラクスの実例を追加。</li>
+      <li>新規：Gemini 4 Hydrogen、AWS Emulator（エージェントのみで構築）、生成用語集（Generated Glossary）、フォーティエンス AI ガバナンス診断、Linear BYOK。未検証のまま記録：OpenAI API 国内推論（GPT-6 Luna）、OpenAI の常駐エージェント保護、Codex Security CLI、Claude Managed Agents のセルフホスト。</li>
+      <li>退出：30日間言及のなかった 24 件（Refero Styles / DESIGN.md、Laya、SwarmChase、Claude Haiku 5.5 など、最終出現が10月13日以前のもの）を規則どおり退出とした。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
