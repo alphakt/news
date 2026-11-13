@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月14日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月14日（土）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は、Claude Code の実験機能「Code Mode」と、AI 開発ツール自体を狙う攻撃への備えを論じた Thoughtworks の記事が中心です。あわせて、仕様駆動ワークフローの費用対効果（SpecBench）、エージェントが「解けた後も止まらない」ことを測った研究、OSS での AI slop PR の実態調査、JR九州の内製事例を取り上げます。arXiv の論文は投稿が11月11日、公開（告知）が11月12日以降のものです。見送ったもの：OpenAI「ChatGPT Wallet」（一次情報が取得できず）、AWS Quick の Smart Approvals と Amazon Threat Intelligence の ARTEX 観測（本文を取得できず）、Google Antigravity のリモートエージェントと Google の AQuA（一次情報を未確認）、NVIDIA の CEO 辞任報道（可用性・価格への影響が未確定）。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Claude Code に実験機能「Code Mode」——ツールを1回ずつ呼ぶ代わりに、Claude が JavaScript を書いて複数のツール呼び出しを1ステップで実行する。既定はオフで、組織単位で禁止もできる</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Anthropic は11月12日公開の Claude Code v2.1.323 に Code Mode を追加した。通常は Bash・Read・Edit などを1回ずつ呼ぶが、Code Mode では Claude が JavaScript を書き、検索→編集→テストのような一連の呼び出しをまとめて実行して必要な結果だけ受け取る。多数のファイルへの同種の変更や、並列で走らせられるコマンドに向く。有効化は環境変数 <code>CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1</code>。各呼び出しには従来どおり deny／ask の権限規則と PreToolUse フックが効くが、auto モードの分類器は個々の呼び出しではなくコード全体を審査し、実行時に決まる値は見えない。</p>
+      <ul class="sowhat"><li><b>DEV</b>繰り返しの多い作業で試す価値がある。書かれたコードは <code>Ctrl+O</code> の transcript で読める。コード自体を点検したい場合は <code>REPL</code> ツールに一致する PreToolUse フックを書く。</li><li><b>PM</b>使えない構成が多い。Bedrock・Google Cloud・Microsoft Foundry・ゲートウェイ経由、ゼロデータ保持や HIPAA 構成の組織、<code>-p</code>・Agent SDK・VS Code パネル・デスクトップ・クラウドセッションは対象外。顧客環境で使えるかを先に確かめる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>個人の検証用リポジトリで <code>CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1 claude</code> を起動し、「全 Markdown のリンク切れを列挙」のような呼び出しの多い作業を流す。組織として止めるなら managed settings の <code>env</code> に同変数を <code>"0"</code> で入れる。</div>
+      <div class="source">出典：<a href="https://code.claude.com/docs/en/code-mode" target="_blank" rel="noopener">Claude Code Docs「Run tool calls from code with Code Mode」</a><a href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">Claude Code Changelog（v2.1.323、2026-11-12）</a></div>
+      <div class="note">実験機能で、予告なく変更・削除されうると明記。Code Mode のセッションは Code Mode を有効にした端末でしか再開できない。翌日の v2.1.325 で Code Mode 関連の不具合が3件修正されている。トークンや速度の改善幅は公式文書に記載なし。</div>
+      <div class="comment"><b>コメント：</b>権限規則とフックは引き続き効くが、auto モードの審査単位が「呼び出し」から「コード」に変わる点は、運用ルールを決める側が押さえておきたい。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Thoughtworks「攻撃者は、ソフトウェアを作る AI ツールそのものを狙っている」——AI コーディングツール・拡張・MCP サーバーをサプライチェーンの一部として扱い、更新の固定・権限の縮小・開発端末の監視を求める</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Thoughtworks は11月13日、AI コーディングツール（アシスタント、エディタ、拡張、MCP サーバー）はソフトウェア供給網の一部であり、開発者の端末を取られるとソースコード・認証情報・配備の経路まで露出すると論じた。実例に、10月29日に Cursor のマーケットプレイスで Claude Code 拡張の改ざん版が約11時間配布され最大5,000人に影響しえた件と、Trivy や LiteLLM を狙った TeamPCP の攻撃を挙げる。対策は、検証済みバージョンの固定と段階展開、署名と来歴の確認、管理者権限の削除、開発と本番の分離、短命な認証情報、サンドボックス化、開発端末の監視。</p>
+      <ul class="sowhat"><li><b>DEV</b>拡張と MCP サーバーの自動更新を見直す。SSH 鍵の変更、新しい自動起動、想定外の認証情報アクセス、不審なトンネルが監視対象として挙がっている。</li><li><b>PM</b>ツールの採用を「個人の好み」ではなく技術判断として扱い、開発ツールの侵害をインシデント対応手順に入れる。端末の完全初期化とリポジトリ・クラウドの監査まで想定する。</li><li><b>CONSULT</b>AI 駆動開発の導入提案に「開発ツールの供給網管理」を1項目として入れる根拠になる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>チームで使っている AI 拡張・MCP サーバーを一覧にし、自動更新の有無と、各ツールが触れる認証情報を書き出す。まず自動更新を止めてバージョンを固定し、更新は数日遅らせて適用する。</div>
+      <div class="source">出典：<a href="https://www.thoughtworks.com/insights/blog/generative-ai/attackers-are-targeting-the-ai-tools-that-produce-our-software" target="_blank" rel="noopener">Thoughtworks「Attackers are targeting the AI tools that produce our software」（2026-11-13）</a></div>
+      <div class="note">新しい攻撃の報告ではなく、既知の事例を踏まえた整理と提言。Cursor の件は本簡報10月31日号で既報。TeamPCP の時期は記事に記載なし。</div>
+      <div class="comment"><b>コメント：</b>「AI ツールを入れるか」の議論は進んでも、「入れたツールの更新を誰が管理するか」は空白のままの現場が多い。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Thoughtworks が AI 開発ワークフローの評価基盤「SpecBench」を紹介——仕様・計画・分解の段階を足すと正しさは 92.25%→95.00% に上がるが、トークンは約4倍、時間は約2倍</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Thoughtworks は11月13日、AI を使う開発ワークフローを同じ課題で走らせて比べる評価基盤 SpecBench を紹介した。実行ごとに成果物・実行記録・資源の計測を残し、振る舞いの正しさ、品質、過程、時間、トークン、推定費用を出す。対象はフロントエンド、バックエンド、フルスタック、コマンドラインの4場面。記事の実績値では、直接実装させる基準に対し、仕様・計画・分解を挟むワークフローは正しさが 92.25% から 95.00% へ上がり、4場面すべてで上回った。一方、平均時間は 83.74 分から 163.93 分、トークンは 450K から 1,782K、推定費用は 1.45 ドルから 2.25 ドルに増えた。</p>
+      <ul class="sowhat"><li><b>PM</b>「仕様駆動にすれば良くなる」を、正しさ約3ポイントと費用・時間の増加の交換として説明できる。どの案件で割に合うかを判断する材料になる。</li><li><b>DEV</b>ワークフローを変えるときは、成果物の品質だけでなく過程と資源を同じ課題で測って比べる、という型が参考になる。</li></ul>
+      <div class="source">出典：<a href="https://www.thoughtworks.com/insights/blog/generative-ai/specbench-tool-evaluate-ai-enabled-software-development-workflows" target="_blank" rel="noopener">Thoughtworks「SpecBench: A tool to evaluate AI-enabled software development workflows」（2026-11-13）</a></div>
+      <div class="note">著者は、2つの結果は実行条件が同一とは限らない記述的な実績値だと断っている。既存コードのある案件（brownfield）は未対応。公開リポジトリや利用手順は記事に記載なし。</div>
+      <div class="comment"><b>コメント：</b>仕様駆動の効果を「感触」ではなく費用込みの数字で出した例は少なく、見積もりの議論に使いやすい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>研究「Termination Lag」——コーディングエージェントは正しい修正に早く到達しているのに止まらない。成功した実行の 38〜82% は最初の編集で正解、その後のステップが実行の3〜6割を占める</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">arXiv の論文（11月11日投稿）は、エージェントが最初に正しいパッチを作ってから実行を終えるまでを「termination lag」と定義して測った。5モデル、2つのエージェント枠組み、3つの SWE-bench 系データセットで、作られたパッチをすべてテストにかけた。成功した実行の 38〜82% は最初のコード編集の時点で正解だった。正解後のステップが成功実行に占める割合の中央値は、Qwen3-Coder で 35〜37%、Laguna-XS.2 で 54〜60%。その大半は検証とリポジトリの探索だった。1〜8% では、続けた結果として正しいパッチを自分で取り消し、最終結果が不正解になった。</p>
+      <ul class="sowhat"><li><b>DEV</b>「いつ止めるか」はハーネス側で設計できる対象。テストが通った時点で止める条件や、停止判断を別の小さなモデルに任せる構成を検討する根拠になる。</li><li><b>PM</b>エージェントのトークン費用の相当部分が「解けた後」に使われている可能性がある。費用削減はモデルの単価だけでなく停止条件でも効く。</li></ul>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.14960" target="_blank" rel="noopener">arXiv 2611.14960「Termination Lag: Coding Agents Solve Early but Stop Late」（投稿 2026-11-11）</a></div>
+      <div class="note">査読前の論文。評価は SWE-bench 系のベンチマーク上で、正解かどうかをテストで判定できる課題に限られる。著者の所属は arXiv のページに記載なし。</div>
+      <div class="comment"><b>コメント：</b>決定モデルで停止判断を切り出す流れ（Jev など）に、測定値の裏付けが付いた形。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>研究：OSS のメンテナーが「AI slop」と判定したプルリクエストを調査——AI 利用を自ら開示していたのは 14%、多くは理由の説明なしに3日以内に閉じられている</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">arXiv に公開された論文（11月11日投稿）は、フリー／オープンソースのプロジェクトでメンテナーが「AI slop」（AI で作られた低品質な投稿）と明示したプルリクエストを集め、出どころ、量、特徴、閉じられた理由を調べた。件数は2025年半ばから増え、2026年5月が最多だった。内容は追加が中心で、典型的には3日以内に閉じられている。投稿者が AI の利用を自分から開示していたのは 14%、メンテナーに問われてから開示したのが 1%。大半は理由を示されないまま閉じられるか、slop と印を付けられていた。著者らは初期段階の現象に対する探索的な研究と位置付けている。</p>
+      <ul class="sowhat"><li><b>PM</b>外部や協力会社からの PR を受ける案件では、「AI 利用の開示」と「受け付けない基準」を先に文書化しておく。理由なしで閉じる運用は、投稿側の改善にもつながらない。</li><li><b>DEV</b>自分が OSS に PR を出す側でも同じ。AI を使ったなら開示し、変更の意図と検証内容を添える。</li></ul>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.15159" target="_blank" rel="noopener">arXiv 2611.15159「An Empirical Study of Maintainer-Identified AI Slop Pull Requests in Free and Open Source Software Projects」（投稿 2026-11-11）</a></div>
+      <div class="note">査読前の論文（12ページ）。対象はメンテナーが slop と明示した PR に限られ、見逃された低品質 PR や、質の高い AI 生成 PR は含まない。対象件数は要旨に記載なし。</div>
+      <div class="comment"><b>コメント：</b>Hono の外部 PR 受付停止（11月2日号）のような個別の動きを、データで俯瞰する最初の材料。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>JR九州、非 IT 部門が Gemini で業務アプリを内製——プログラミング未経験の担当者がコードの9割以上を AI に書かせ、外部委託なら半年〜1年の開発を2〜3か月で</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">キーマンズネットの取材記事（11月13日）によると、JR九州は2025年秋から Google Workspace with Gemini を導入し、非 IT 部門で業務アプリの内製を進めている。運輸部門は Streamlit で、営業運転中の車両データを可視化するアプリと、夜勤や休日当番の条件を考慮して勤務シフトを自動生成するアプリを作った。営業部門はランディングページ作成や検索窓の実装、SEO 対策を行い、スコアを約40点から約70点に上げた。担当者はプログラミング未経験で、Gemini に要件を伝え、出てきたコードを検証・改良した。背景は IT 人材の不足と外部ベンダーへの依存。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>日本の大企業で「現場部門が自分で作る」事例として顧客に聞かれる。同時に、作った後の保守・引き継ぎ・権限管理を誰が持つかが提案の入口になる。</li><li><b>PM</b>「半年〜1年→2〜3か月」は外部委託した場合との比較で、実測の対照ではない。見積もりの根拠に使うときはその前提を添える。</li></ul>
+      <div class="source">出典：<a href="https://kn.itmedia.co.jp/kn/article/2611/13/2000003142/" target="_blank" rel="noopener">キーマンズネット「JR九州の非IT部門がGeminiでPythonアプリを内製開発　2〜3カ月で完成させた方法」（2026-11-13）</a></div>
+      <div class="note">媒体による取材記事で、JR九州自身の公式発表ではない。利用ルールや推進体制、作ったアプリの保守方法は記事に記載なし。</div>
+      <div class="comment"><b>コメント：</b>内製の成功談として読むより、「野良アプリ」の管理をどう設計するかという次の相談の予告として読みたい。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>llama.cpp と ggml が v1.0.0 に到達——公開 C API の非互換はメジャー版の更新時だけ、というバージョン規則を明示</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">ローカル LLM 実行の基盤である llama.cpp と ggml は11月13日、両ライブラリ（libllama、libggml）の v1.0.0 を公開した。以後はセマンティックバージョニングに従い、<code>./include</code> の公開 C API を壊す変更はメジャー版の更新時に限る。マイナー版は後方互換のある機能・バックエンド・対応モデルの追加、パッチ版は不具合修正とする。発表によれば対応するモデル構造は150種以上。ggml のバックエンドは動的ライブラリとして実行時に読み込める。配布経路は Docker、Debian、Homebrew、conda-forge、Winget などに広がった。</p>
+      <ul class="sowhat"><li><b>DEV</b>llama.cpp を組み込んだ製品で、更新のたびに API の破壊を心配する必要が減る。依存バージョンの指定をメジャー版で固定できる。</li><li><b>CONSULT</b>データを外に出せない顧客へのローカル／オンプレ推論の提案で、基盤の安定性を説明する材料が1つ増えた。</li></ul>
+      <div class="source">出典：<a href="https://huggingface.co/blog/ggml-org/llama-cpp-v1" target="_blank" rel="noopener">Hugging Face Blog「llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem」（2026-11-13）</a></div>
+      <div class="note">v1.0.0 での具体的な非互換変更や移行手順は記事に記載なし。リリースページの確認が要る。</div>
+      <div class="comment"><b>コメント：</b>機能より「約束」の発表。ローカル推論を製品に組み込む側にとっては、この約束のほうが効く。</div>
+    </div>
+
+    <div class="section-title">短信</div>
+    <div class="brief"><ul>
+      <li>コンテキスト／ハーネス工学の成果物を集めたデータセット「AgentTorrent」が公開（arXiv、11月11日投稿）。GitHub の10,944プロジェクトから、6種のコーディングエージェント向けの設定ファイル（コンテキストファイル、スキル、フック、MCP 設定）62,374件、計画文書27,593件、AI ツールを記した120万超のコミットを収録。<a href="https://arxiv.org/abs/2611.15436" target="_blank" rel="noopener" style="color:#4338ca">arXiv 2611.15436</a></li>
+      <li>AI 支援開発の技術的負債を実務者に聞いた調査（arXiv、11月11日投稿。バングラデシュの137人に質問票、20人に面接）。懸念が多かったのはコードではなく人（73.0%）、マネジメント（70.1%）、アーキテクチャ（68.6%）。89.8% は AI 生成コードを日常的に検証していると回答。<a href="https://arxiv.org/abs/2611.15310" target="_blank" rel="noopener" style="color:#4338ca">arXiv 2611.15310</a></li>
+    </ul></div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>昇格：「Gemini 4 Hydrogen」を関心対象へ（発表翌日に Simon Willison の llm-gemini 0.37 が対応し、7日以内に独立2出典）。「AI 生成 PR の人間レビュー枠組み」に AI slop PR の実態調査を、「トークン費用の統制」に SpecBench と Termination Lag を追加。</li>
+      <li>新規：Claude Code Code Mode、SpecBench、Termination Lag、AgentTorrent、JR九州の Gemini 内製、llama.cpp v1.0。未検証のまま記録：ChatGPT Wallet、AWS Quick Smart Approvals、Google AQuA、Antigravity リモートエージェント、GitHub Trending の alibaba/open-code-review と GoogleChrome/modern-web-guidance-src。</li>
+      <li>退出：30日間言及のなかった4件（ハーネスの費用対効果、Cursor Origin アプリマーケット、Scion、Gemini 4 Argon）を規則どおり退出とした。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
