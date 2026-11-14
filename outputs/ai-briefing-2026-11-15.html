@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月15日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月15日（日）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は、Cursor が公表したセキュリティ事案の続報（侵入経路の全体像）と、Anthropic の常時稼働エージェント設計ガイドが中心です。あわせて、AI Engineer の登壇者らによる「No AI Slop Manifesto」、SCSK の専門商社向け AI エージェント、GitHub の10月可用性レポート、MCP の切断時の挙動を測った検証記事を取り上げます。見送ったもの：OpenAI「ChatGPT Wallet」（一次情報が 403 で取得できず）、AWS Quick の Smart Approvals（本文を取得できず）、Google の AQuA（一次情報の公開日が10月8日で対象外）、Lovable 製アプリのデータ露出調査（公開日の記載なし）、Brave Search API の x402 決済対応（公開が11月12日で48時間の窓の外）、NVIDIA の CEO 辞任関連（可用性・価格への影響が未確定）。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Cursor がセキュリティ事案の続報を公表——発端は委託先 Fireworks に発行したアクセスキーの露出。共有バケット内のエージェント実行記録に残っていた認証情報から、拡張マーケットプレイスの改ざんまでつながった</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Cursor は11月13日、10月29日に公表した事案の続報を出した。攻撃者は、Cursor が推論委託先の Fireworks に発行し Fireworks 側で露出したアクセスキーを使い、データ共有用のバケットを複製した。中身は Privacy Mode を使っていないセッションのコーディングエージェント実行記録（主に2025年分）で、一部に伏せ字にされていない認証情報が含まれていた。攻撃者はそれを使って一部の SaaS や保管済みの非本番リポジトリに到達し、10月29日には盗んだ認証情報で Claude Code 拡張の改ざん版をマーケットプレイスのキャッシュに置いた。API 認証情報が露出した顧客は 0.01% 未満、実行記録が含まれた利用者は 0.05% 未満で、いずれも通知済み。</p>
+      <ul class="sowhat"><li><b>DEV</b>エージェントのセッションやサポート窓口に貼った認証情報は、事業者側の記録に残り、委託先まで渡りうる。秘密はセッションに直接見せず、Privacy Mode の設定を確かめる。</li><li><b>PM</b>通知を受けた場合は、記載された鍵をローテーションする。チーム管理者には対象の鍵の一覧が届いている。通知がなければ、該当の実行記録に自分のデータは含まれていないと Cursor は説明している。</li><li><b>CONSULT</b>「AI ツール事業者のさらに先の委託先」が侵入経路になった実例。顧客の AI ツール選定で、再委託先・学習や記録の保持・データ共有の範囲を確認項目に入れる根拠になる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>Cursor を使っているチームは、(1) Cursor からの通知メールの有無を管理者に確認、(2) 10月29日に Cursor のマーケットプレイスから <code>Anthropic.claude-code</code> 2.1.312／2.1.313 を導入・更新した端末がないか確認（該当すればアンインストールだけでは足りず、10月29日の告知の手順に従う）、(3) Privacy Mode が組織で強制されているかを確認する。</div>
+      <div class="source">出典：<a href="https://cursor.com/blog/security-incident-update" target="_blank" rel="noopener">Cursor Blog「An update on our recent security incident」（2026-11-13）</a></div>
+      <div class="note">Cursor によれば、Privacy Mode のプロンプトとコード、本番システム、アプリ本体と公式アップデート、署名鍵、顧客のコードリポジトリは影響を受けていない。攻撃者の最後の活動は11月1日で、遮断された。Cursor は推論をすべて Fireworks から移し、社内の認証情報をすべて更新した。拡張の件は本簡報10月31日号、Fireworks を委託先とする Notion の件は11月11日号で既報。</div>
+      <div class="comment"><b>コメント：</b>改ざん拡張は「結果」で、原因は実行記録に残った秘密と委託先の鍵管理だった。ツールの安全性は、事業者がログをどこに置き誰と共有しているかまで含めて見る必要がある。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Anthropic が「常時稼働エージェントの作り方」を公開——イベント受信箱・タイマー・メモリ・権限・送信箱の5要素で、「眠って、起きて、1回分だけ働く」構造を説明</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Anthropic は11月13日、Claude Platform のベストプラクティスとして常時稼働エージェントの設計記事を公開した。常時稼働といっても実際は、イベントを受けて起動し、作業して状態を保存し、また眠る「ラン」の繰り返しだとする。要素は5つ。Webhook や定期実行はエージェントを直接呼ばず、耐久性のある受信箱（DB のテーブル）に書き、受信箱ごとにワーカーは1つにする。タイマーは受信箱と分けて持つ。メモリはファイルのディレクトリとして別の保存先に置き、「調べ直せないもの」だけを残す。認証情報はエージェントの外のプロキシが付与する。利用者への連絡は送信箱にまとめ、まずは少なめにする。</p>
+      <ul class="sowhat"><li><b>DEV</b>定時実行やチャット連携のエージェントを作るときの設計の型として使える。イベントの重複排除、短時間に続いたメッセージの一括処理、承認待ちでランを終えて返信で再開する「保留ツール呼び出し」が具体的に書かれている。</li><li><b>PM</b>システムプロンプト・ツール定義・メモリは毎回のランで読み込まれるため、ここが太るとそのまま費用になる。通知の量は評価で調整する対象だと明記されており、受け入れ基準に入れられる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>いま動かしている定時エージェント（日次レポート、監視、チケット振り分けなど）を5要素に照らす。特に「同じイベントで2回走らないか」「途中で落ちたら再実行されるか」「前回何を報告したかを覚えているか」の3点を確認する。</div>
+      <div class="source">出典：<a href="https://claude.com/resources/articles/building-always-on-agents" target="_blank" rel="noopener">Claude「Building always-on agents」（2026-11-13）</a></div>
+      <div class="note">設計の解説記事で、新しい API や製品の発表ではない。過去のセッションを見直してメモリを整理する「dreaming」は任意の工程として紹介。スケジューラは自作でも耐久実行エンジンでもよいとしている。</div>
+      <div class="comment"><b>コメント：</b>エージェント本体のループではなく、その外側の受信箱とタイマーが品質を決める、という整理は、PoC から運用に移る案件の設計レビューでそのまま使える。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>AI Engineer Code Summit の登壇者らが「No AI Slop Manifesto」を公開——slop を「作る労力が、読み手に求める労力を下回るもの」と定義し、開示・確認・一部は必ず人が読むことを決議</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Latent Space の11月13日付の記事によると、AIE Code Summit での議論から生まれた宣言が閉会の基調講演で紹介された。公開ページには352人の署名が並ぶ。宣言は、AI を使うこと自体は slop ではなく、品質と読み手への責任を負わずに出力を渡すことが slop だとする。巨大な PR は作る側はほぼ無料だが、レビューの費用は変わらない、という非対称も指摘する。決議は12項目で、エージェントが書いたものは開示し、重要な部分は送る前に確かめる。AI レビューやリンターは役立つが十分ではなく、重要度に応じて一部は人が見る。成果はコード行数、マージした PR 数、使ったトークン数ではなく、何が出荷され誰の役に立ったかで測る。</p>
+      <ul class="sowhat"><li><b>PM</b>「PR 数」「トークン消費」を生産性指標にしない、という主張を、実務者の連名という形で引用できる。チームのレビュー規約を書くときの叩き台になる。</li><li><b>DEV</b>コードを全部は読まなくなっても、計画・設計・結果のどれかは読み続ける、という線引きが示されている。slop を受け取ったら送り手に伝えて見直しを頼む、も決議に入っている。</li></ul>
+      <div class="source">出典：<a href="https://www.slopmanifesto.com/" target="_blank" rel="noopener">The No AI Slop Manifesto（全文と署名）</a><a href="https://latent.space/p/ainews-the-no-ai-slop-manifesto/" target="_blank" rel="noopener">Latent Space「[AINews] The No AI Slop Manifesto」（2026-11-13）</a></div>
+      <div class="note">宣言のページ自体には公開日の記載がなく、日付は関係者（swyx 氏）による Latent Space の記事に基づく。署名者の所属は記載なし。宣言は「誰も完全には分かっておらず、唯一の正解はない」と結んでいる。測定や事例を伴う報告ではない。</div>
+      <div class="comment"><b>コメント：</b>昨日号の slop PR 実態調査が「受け取る側の現状」なら、こちらは「出す側の約束」。両方をそろえるとレビュー規約の議論がしやすい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>SCSK、「専門商社向け AI エージェント」を提供開始——営業・見積・需給調整・顧客／仕入先対応の4エージェントと共通のデータ基盤を、CRM／ERP 連携と定着支援込みで提供</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span></div>
+      <p class="detail">SCSK は11月13日、専門商社・卸売業向けの AI エージェントを同日から提供すると発表した。構成は4つのエージェントと、共通で参照するデータ・ナレッジ基盤。営業・提案支援は顧客、商談、仕入先の在庫や納期を横断して集め、提案の仮説と次の行動を示し、面談メモの要約を SFA に反映する。見積・取引支援は形式の異なる見積依頼を読み取り、在庫・単価・納期・与信・取引実績と照合して、見積書の下書きから承認依頼までを支援する。SCSK は CRM／SFA や ERP との連携、業務プロセスの見直し、運用の定着まで伴走するとしている。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>国内 SIer が「業種×業務」単位でエージェントをパッケージ化し、システム連携と定着支援を一体で売る動きの一例。商社・卸の顧客から比較を求められたときは、使うモデル、価格、導入実績が発表文にない点を確認事項として挙げられる。</li></ul>
+      <div class="source">出典：<a href="https://prtimes.jp/main/html/rd/p/000000091.000152961.html" target="_blank" rel="noopener">SCSK プレスリリース「『専門商社向けAIエージェント』を提供開始」（2026-11-13）</a></div>
+      <div class="note">基盤モデル、価格、導入実績、効果の目標値は発表文に記載なし。背景として、顧客対応で複数システムや他部署への確認が要る営業担当者が 63.8% という同社調査を挙げている。今後は契約更新・保守、物流・在庫アラート、与信リスクチェックなどへ広げる計画。</div>
+      <div class="comment"><b>コメント：</b>製品というより「業種別の導入メニュー」。差がつくのはエージェントの賢さではなく、ERP や SFA のデータをどこまでつなげるかになりそうだ。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>GitHub の10月可用性レポート——Copilot は上流モデル提供元との認証情報が無効になり、GPT 系モデルへの要求の約1割が失敗。別の障害では監査ログの反映が最大1時間50分遅れた</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">GitHub は11月12日（米国時間）、10月の可用性レポートを公開した。10月28日には、Copilot が上流のモデル提供元への認証に使う認証情報が無効になり、Copilot Chat、CLI、コードレビュー、コーディングエージェントで GPT 系モデルへの要求の約10件に1件が失敗した。代替モデルのないコードスキャンの自動修正は影響が大きかった。10月21日にはイベント配信基盤のメモリ不足で、PR の更新、Actions の状態、Webhook、監査ログが遅れ、監査ログの遅延は最大1時間50分、滞留の解消まで約6時間46分かかった。10月30日は約9分間、PR のマージ試行の約 43% が失敗した。</p>
+      <ul class="sowhat"><li><b>PM</b>AI レビューやコーディングエージェントを工程に組み込むと、モデル提供元の障害がそのまま工程の停止になる。リリース前日のような日程では、AI なしでも回る手順を残しておく。</li><li><b>DEV</b>モデルを切り替えられる機能は軽傷で済み、単一モデルに固定された機能が止まった。自作のエージェントでも、代替モデルへのフォールバックと上流の認証失敗時の再試行を用意する。</li></ul>
+      <div class="source">出典：<a href="https://github.blog/news-insights/company-news/github-availability-report-october-2026/" target="_blank" rel="noopener">GitHub Blog「GitHub availability report: October 2026」（2026-11-12）</a></div>
+      <div class="note">GitHub は10月のインシデントを8件としている（10月7日は2回の障害）。継続時間は見出しと本文で数字が異なる箇所があり、ここでは本文の記述を使った。Copilot の件の対策は、上流の認証失敗時の再試行、認証情報の管理強化、警告の追加。</div>
+      <div class="comment"><b>コメント：</b>「AI が止まったときの手順」を持たないチームは、AI への依存が深まるほど月次レポートの1行が自分の遅延になる。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>検証記事：MCP のツール呼び出しを応答前に切断しても、Claude Code からの同一呼び出しの再送は34回中0件——ただし切断の位置によっては約60秒待たされ、終了コードは常に0</h2>
+      <div class="tags"><span class="tag dev">DEV</span></div>
+      <p class="detail">Zenn の検証記事（11月14日）は、MCP の HTTP 接続でツールの応答前に通信を切ったとき、ツールが二重に実行されるかを自作サーバーで調べた。環境は Claude Code 2.1.316、同一マシン上の平文 HTTP。ツールに1行書き込む副作用を持たせ、同じ JSON-RPC の <code>id</code> が二度届くかで再送を判定した。「1回だけ呼んで」と指示した17回はすべて副作用が1行で、全34実行で同一 <code>id</code> の重複は0件だった。回数の指示を外した3回では副作用が2行になったが、<code>id</code> が別だったため、再送ではなくモデルが呼び直したものと著者は判断している。応答ヘッダを流す前に切ると数秒でエラーになり、流した後に切ると約60秒後にタイムアウトが届いた。</p>
+      <ul class="sowhat"><li><b>DEV</b>二重実行の原因は通信層の再送より、モデルの「呼び直し」のほうにある。書き込み系の MCP ツールにはべき等キーを持たせ、サーバー側のログに呼び出しの通し番号を残す。終了コードでは切断とツール側のエラーを区別できない。</li></ul>
+      <div class="source">出典：<a href="https://zenn.dev/numarn/articles/mcp-http-call-interrupt-retry-handson" target="_blank" rel="noopener">Zenn「MCPの道具呼び出しを応答前に切断しても、二重に届いた回は34回中0件。切断点をずらすと60秒待たされた」（2026-11-14）</a></div>
+      <div class="note">個人による検証で、試行は34回。著者は、再送が起きる条件は見つかっていないこと、外部ネットワーク、HTTPS、他のバージョンやモデルでは試していないことを明記している。</div>
+      <div class="comment"><b>コメント：</b>規模は小さいが、「副作用の回数」と「呼び出しの id」を分けて数える切り分け方は、MCP サーバーの障害調査でそのまま真似できる。</div>
+    </div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>昇格：「Claude Code 拡張の改ざん版（Cursor Marketplace）」と「Notion／Fireworks AI 委託先インシデント」を関心対象へ（Cursor の続報で両者が同じ委託先でつながり、7日以内に独立2出典）。「ARTEX」も AWS と Classmethod の記事が続き関心対象へ（両記事は未検証のため本文には不採用）。</li>
+      <li>新規：常時稼働エージェントの5要素（Anthropic）、No AI Slop Manifesto、SCSK 専門商社向け AI エージェント、MCP 切断時の再送挙動。未検証のまま記録：Lovable 製アプリのデータ露出調査、Brave Search API の x402 決済、GitHub Trending の backnotprop/plannotator と Tencent/LoopForge。Google AQuA は一次情報が10月8日公開と確認し、収録対象外とした。</li>
+      <li>退出：30日間言及のなかった4件（AI エージェントによる Web 攻撃（Scutum 観測）、AI エージェント・ハーネス（Thoughtworks）、勘定系×AI 駆動開発（MUFG）、チューリッヒ生命の査定業務 AI）を規則どおり退出とした。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

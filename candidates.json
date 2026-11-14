@@ -69,8 +69,8 @@
    "kind": "context-engineering",
    "status": "candidate",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-14",
-   "mentions": 10,
+   "last_seen": "2026-11-15",
+   "mentions": 11,
    "sources": [
     "https://zenn.dev/fukorohouse/articles/e2659fcd7c530f",
     "https://arxiv.org/abs/2610.08875",
@@ -81,7 +81,8 @@
     "https://arxiv.org/abs/2610.38521",
     "https://arxiv.org/abs/2611.13709",
     "https://martinfowler.com/bliki/GeneratedGlossary.html",
-    "https://arxiv.org/abs/2611.15436"
+    "https://arxiv.org/abs/2611.15436",
+    "https://zenn.dev/tsugu_sukima/articles/2b19ac59da1b2a"
    ],
    "note": ".md でエージェントの振る舞いを規定する手法。効果の実証研究・ベストプラクティスを追う"
   },
@@ -90,8 +91,8 @@
    "kind": "process",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-14",
-   "mentions": 13,
+   "last_seen": "2026-11-15",
+   "mentions": 14,
    "sources": [
     "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
     "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
@@ -104,7 +105,8 @@
     "https://aws.amazon.com/jp/blogs/news/software-factory-stability/",
     "https://martinfowler.com/articles/tests-as-data.html",
     "https://tech-blog.rakus.co.jp/entry/20261112/characterization-test-review",
-    "https://arxiv.org/abs/2611.15159"
+    "https://arxiv.org/abs/2611.15159",
+    "https://www.slopmanifesto.com/"
    ],
    "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
   },
@@ -542,7 +544,7 @@
   {
    "name": "AIエージェントによるWeb攻撃（Scutum観測）",
    "kind": "security",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-15",
    "last_seen": "2026-10-15",
    "mentions": 1,
@@ -554,7 +556,7 @@
   {
    "name": "AIエージェント・ハーネス（Thoughtworks）",
    "kind": "agent-infra",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-15",
    "last_seen": "2026-10-15",
    "mentions": 1,
@@ -566,7 +568,7 @@
   {
    "name": "勘定系×AI駆動開発（MUFG）",
    "kind": "case",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-15",
    "last_seen": "2026-10-15",
    "mentions": 1,
@@ -578,7 +580,7 @@
   {
    "name": "査定業務AI（チューリッヒ生命 New Business 2.0）",
    "kind": "case",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-15",
    "last_seen": "2026-10-15",
    "mentions": 1,
@@ -734,13 +736,14 @@
   {
    "name": "ARTEX（AI自律型ペンテストの悪用）",
    "kind": "threat",
-   "status": "candidate",
+   "status": "watching",
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-14",
-   "mentions": 2,
+   "last_seen": "2026-11-15",
+   "mentions": 3,
    "sources": [
     "https://gmo-cybersecurity.com/blog/20261019/",
-    "https://aws.amazon.com/jp/blogs/news/amazon-threat-intelligence-observes-threat-actors-running-cybercrime-campaigns-with-artex-ai-agents/"
+    "https://aws.amazon.com/jp/blogs/news/amazon-threat-intelligence-observes-threat-actors-running-cybercrime-campaigns-with-artex-ai-agents/",
+    "https://dev.classmethod.jp/articles/cognito-self-signup-agentic-attack/"
    ],
    "note": "国内約20社を標的、8社が漏えい公表。CrowdStrike が韓国金融機関での使用を報道"
   },
@@ -894,13 +897,14 @@
    "kind": "standard",
    "status": "watching",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-14",
-   "mentions": 4,
+   "last_seen": "2026-11-15",
+   "mentions": 5,
    "sources": [
     "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
     "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
     "https://github.com/addyosmani/agent-skills",
-    "https://arxiv.org/abs/2611.15436"
+    "https://arxiv.org/abs/2611.15436",
+    "https://zenn.dev/itoken_lab/articles/itoken-lab-skills-intro"
    ],
    "note": "Skills 標準を Linux Foundation 傘下の AAIF へ。70超のプラットフォーム対応（Anthropic 記述）。2026-11-13 GitHub が実践ガイドで採用（主要ベンダー採用により昇格）"
   },
@@ -1163,13 +1167,14 @@
   {
    "name": "Claude Code 拡張の改ざん版（Cursor Marketplace）",
    "kind": "supply-chain",
-   "status": "candidate",
+   "status": "watching",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-11-14",
-   "mentions": 2,
+   "last_seen": "2026-11-15",
+   "mentions": 3,
    "sources": [
     "https://cursor.com/blog/claude-code-extension-security-notice",
-    "https://www.thoughtworks.com/insights/blog/generative-ai/attackers-are-targeting-the-ai-tools-that-produce-our-software"
+    "https://www.thoughtworks.com/insights/blog/generative-ai/attackers-are-targeting-the-ai-tools-that-produce-our-software",
+    "https://cursor.com/blog/security-incident-update"
    ],
    "note": "2.1.312/2.1.313 が約11時間配布。AI 開発ツールのサプライチェーン対策"
   },
@@ -1482,11 +1487,12 @@
    "kind": "context-engineering",
    "status": "watching",
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-09",
-   "mentions": 2,
+   "last_seen": "2026-11-15",
+   "mentions": 3,
    "sources": [
     "https://www.anthropic.com/research/components-of-agent-memory",
-    "https://www.lorekit.io/blog/open-agent-memory-format"
+    "https://www.lorekit.io/blog/open-agent-memory-format",
+    "https://claude.com/resources/articles/building-always-on-agents"
    ],
    "note": "記憶5層（記録・ノート・表現・注入文脈・dreaming）。注入層は小さく、定期見直しで誤りを訂正"
   },
@@ -1579,10 +1585,11 @@
    "kind": "agent-infra",
    "status": "candidate",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-11",
-   "mentions": 1,
+   "last_seen": "2026-11-15",
+   "mentions": 2,
    "sources": [
-    "https://martinfowler.com/articles/durable-execution-agents.html"
+    "https://martinfowler.com/articles/durable-execution-agents.html",
+    "https://claude.com/resources/articles/building-always-on-agents"
    ],
    "note": "長期エージェントの記録・再生・べき等・saga。Temporal/Restate/Inngest/DBOS 等。"
   },
@@ -1613,13 +1620,14 @@
   {
    "name": "Notion／Fireworks AI 委託先インシデント",
    "kind": "security-incident",
-   "status": "candidate",
+   "status": "watching",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-14",
-   "mentions": 2,
+   "last_seen": "2026-11-15",
+   "mentions": 3,
    "sources": [
     "https://www.notion.com/ja/help/security-incident-involving-a-third-party-ai-vendor",
-    "https://www.itmedia.co.jp/aiplus/article/2611/13/2000003172/"
+    "https://www.itmedia.co.jp/aiplus/article/2611/13/2000003172/",
+    "https://cursor.com/blog/security-incident-update"
    ],
    "note": "AI 委託先経由で Notion AI チャット記録漏えいの可能性。"
   },
@@ -1896,30 +1904,32 @@
    "kind": "agent-product",
    "status": "candidate",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "mentions": 1,
+   "last_seen": "2026-11-15",
+   "mentions": 2,
    "sources": [],
-   "note": "未検証（openai.com が 403）。エージェントが購入・決済を代行。手がかり: OpenAI News feed、TechCrunch 2026-11-13"
+   "note": "未検証（openai.com が 2026-11-14・15 とも 403）。エージェントによる購入・決済"
   },
   {
    "name": "AWS Quick Smart Approvals",
    "kind": "agent-governance",
    "status": "candidate",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "mentions": 1,
+   "last_seen": "2026-11-15",
+   "mentions": 2,
    "sources": [],
-   "note": "未検証（AWS Japan Blog の本文を取得できず）。エージェントの提案アクションを依頼内容と照合して自動承認／人に確認"
+   "note": "未検証（AWS Japan Blog の本文を 2026-11-14・15 とも取得できず）"
   },
   {
    "name": "Google AQuA (Ambient Quality Agent)",
    "kind": "agent-infra",
    "status": "candidate",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "mentions": 1,
-   "sources": [],
-   "note": "未検証（InfoQ 2026-11-13 経由、一次情報未確認）。本番エージェントの失敗を診断する参照実装"
+   "last_seen": "2026-11-15",
+   "mentions": 2,
+   "sources": [
+    "https://developers.googleblog.com/the-outer-loop-insights-first-an-ambient-quality-agent-that-diagnoses-your-production-agent/"
+   ],
+   "note": "一次情報（Google Developers Blog）は 2026-10-08 公開と確認、48h 外のため収録対象外。本番エージェントのセッションを抽出・審査・クラスタ化・検証する参照実装（adk-recipes）"
   },
   {
    "name": "Antigravity リモートエージェント",
@@ -1936,8 +1946,8 @@
    "kind": "code-review",
    "status": "candidate",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "mentions": 1,
+   "last_seen": "2026-11-15",
+   "mentions": 2,
    "sources": [
     "https://github.com/alibaba/open-code-review"
    ],
@@ -1948,12 +1958,109 @@
    "kind": "context-engineering",
    "status": "candidate",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "mentions": 1,
+   "last_seen": "2026-11-15",
+   "mentions": 2,
    "sources": [
     "https://github.com/GoogleChrome/modern-web-guidance-src"
    ],
    "note": "GitHub Trending 2026-11-14（1,875 stars/日）。コーディングエージェントに Web の最新ベストプラクティスを渡す。未検証"
+  },
+  {
+   "name": "常時稼働エージェントの5要素（Anthropic）",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "mentions": 1,
+   "sources": [
+    "https://claude.com/resources/articles/building-always-on-agents"
+   ],
+   "note": "イベント受信箱・タイマー・メモリ・権限・送信箱。ランは短く、受信箱が正。保留ツール呼び出しで承認待ち"
+  },
+  {
+   "name": "No AI Slop Manifesto",
+   "kind": "process",
+   "status": "candidate",
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "mentions": 1,
+   "sources": [
+    "https://www.slopmanifesto.com/",
+    "https://latent.space/p/ainews-the-no-ai-slop-manifesto/"
+   ],
+   "note": "AIE Code Summit 発。slop の定義と12の決議（開示、一部は人が読む、PR 数・トークン数で測らない）"
+  },
+  {
+   "name": "SCSK 専門商社向けAIエージェント",
+   "kind": "case-study",
+   "status": "candidate",
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "mentions": 1,
+   "sources": [
+    "https://prtimes.jp/main/html/rd/p/000000091.000152961.html"
+   ],
+   "note": "営業・見積・需給調整・顧客/仕入先対応の4エージェント＋共通データ基盤。モデル・価格・実績は非開示"
+  },
+  {
+   "name": "MCP 切断時の再送挙動",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "mentions": 1,
+   "sources": [
+    "https://zenn.dev/numarn/articles/mcp-http-call-interrupt-retry-handson"
+   ],
+   "note": "Claude Code 2.1.316 で同一 id の再送は34回中0件。二重実行はモデルの呼び直し。べき等キーとサーバーログ"
+  },
+  {
+   "name": "Lovable 製アプリのデータ露出調査",
+   "kind": "security-incident",
+   "status": "candidate",
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "mentions": 1,
+   "sources": [
+    "https://www.crissyfield.de/research/lovable-en/"
+   ],
+   "note": "未収録（公開日の記載なし）。159,041 プロジェクト分析、Supabase 利用 34,545、ログインなしでレコードを返すサイト 24,664"
+  },
+  {
+   "name": "Brave Search API x402 決済",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "mentions": 1,
+   "sources": [
+    "https://brave.com/blog/search-api-agentic-payments/"
+   ],
+   "note": "未収録（2026-11-12 公開で 48h 外）。API キー不要、要求ごとに USDC（Base）で支払い、$0.005/要求"
+  },
+  {
+   "name": "backnotprop/plannotator",
+   "kind": "dev-tool",
+   "status": "candidate",
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "mentions": 1,
+   "sources": [
+    "https://github.com/backnotprop/plannotator"
+   ],
+   "note": "未検証（GitHub Trending 2026-11-15）。エージェントの計画・成果を注釈・レビューするワークスペース"
+  },
+  {
+   "name": "Tencent/LoopForge",
+   "kind": "dev-tool",
+   "status": "candidate",
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "mentions": 1,
+   "sources": [
+    "https://github.com/Tencent/LoopForge"
+   ],
+   "note": "未検証（GitHub Trending 2026-11-15）。承認ゲート付きのコーディングエージェント納品ワークフロー（セルフホスト）"
   }
  ]
 }

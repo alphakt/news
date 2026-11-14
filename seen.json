@@ -850,6 +850,36 @@
    "date": "2026-11-14",
    "key": "arxiv-tech-debt-ai-assisted",
    "url": "https://arxiv.org/abs/2611.15310"
+  },
+  {
+   "date": "2026-11-15",
+   "key": "cursor-security-incident-update",
+   "url": "https://cursor.com/blog/security-incident-update"
+  },
+  {
+   "date": "2026-11-15",
+   "key": "anthropic-building-always-on-agents",
+   "url": "https://claude.com/resources/articles/building-always-on-agents"
+  },
+  {
+   "date": "2026-11-15",
+   "key": "no-ai-slop-manifesto",
+   "url": "https://www.slopmanifesto.com/"
+  },
+  {
+   "date": "2026-11-15",
+   "key": "scsk-trading-company-ai-agents",
+   "url": "https://prtimes.jp/main/html/rd/p/000000091.000152961.html"
+  },
+  {
+   "date": "2026-11-15",
+   "key": "github-availability-report-2026-10",
+   "url": "https://github.blog/news-insights/company-news/github-availability-report-october-2026/"
+  },
+  {
+   "date": "2026-11-15",
+   "key": "zenn-mcp-http-interrupt-retry",
+   "url": "https://zenn.dev/numarn/articles/mcp-http-call-interrupt-retry-handson"
   }
  ]
 }
