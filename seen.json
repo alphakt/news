@@ -880,6 +880,31 @@
    "date": "2026-11-15",
    "key": "zenn-mcp-http-interrupt-retry",
    "url": "https://zenn.dev/numarn/articles/mcp-http-call-interrupt-retry-handson"
+  },
+  {
+   "date": "2026-11-16",
+   "key": "zenn-claude-code-stop-hook-loop",
+   "url": "https://zenn.dev/kagaribilab/articles/claude-code-stop-hook-loop"
+  },
+  {
+   "date": "2026-11-16",
+   "key": "zenn-delegating-work-skill",
+   "url": "https://zenn.dev/itoken_lab/articles/delegating-work-with-without"
+  },
+  {
+   "date": "2026-11-16",
+   "key": "mercari-small-fullstack-teams",
+   "url": "https://www.itmedia.co.jp/business/articles/2611/16/news031.html"
+  },
+  {
+   "date": "2026-11-16",
+   "key": "autobacs-workspace-gemini-migration",
+   "url": "https://kn.itmedia.co.jp/kn/article/2611/16/2000003181/"
+  },
+  {
+   "date": "2026-11-16",
+   "key": "nikkei-xtech-it-vendor-bankruptcies-series-1",
+   "url": "https://xtech.nikkei.com/atcl/nxt/column/18/03792/110500001/"
   }
  ]
 }

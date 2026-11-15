@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月16日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月16日（月）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">週末をまたいだため、ベンダーの公式発表は少ない日です。本日は実務者の計測記事2本（Claude Code の Stop フックが止まらなくなった事例、サブエージェントへの委任を点検する Skill の比較）と、国内の導入事例2本（メルカリの開発体制、オートバックスセブンの Google Workspace／Gemini 移行）を取り上げます。見送ったもの：Cloudflare「Kitesurf」のオープンソース化（一次情報の公開が日本時間11月14日5時台で、48時間の窓を約3時間超過）、Uber の「Secure AI」フレームワーク（一次情報は11月6日公開）、PostgreSQL 19 の延期と AI レビュー（根拠のブログは10月公開で、10月16日号で既報）、Anthropic のコードレビュー体制の紹介記事（一次情報は10月17日号で既報）、NVIDIA の CEO 交代関連（可用性・価格への影響が未確定）。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Claude Code の Stop フックを自作したら、1セッションで差し戻しが1,314回・約16.5億トークンに——バックグラウンド処理の「待ち」を考慮しないフックが、約7.5秒おきのループを3時間続けた</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Zenn の記事（11月15日）は、作業が終わるまで Claude Code を止めないよう、<code>/goal</code> を使わずに Stop フックを自作した結果を報告している。フックは合格の記録や CI の結果が欠けると作業に差し戻す。ところが、裏でテストを走らせて待つしかない状態で止まろうとするたびに差し戻されるループになった。計測は Opus 5.5 の1セッションで、差し戻し1,314回・約3時間、コンテキストの読み直し2,736回（1回約60万トークン）、合計約16.5億トークン、API 定価換算で約335ドル。著者によると、8回連続の差し戻しで打ち切る公式の安全装置は、間にツール呼び出しがあると回数が数えられず、効かなかった。</p>
+      <ul class="sowhat"><li><b>DEV</b>Stop フックで「未完了なら差し戻す」を書くときは、差し戻しを1回に限る。著者は公式文書が勧める形として、フックの冒頭に <code>if (input.stop_hook_active) process.exit(0)</code> を入れて解決した。</li><li><b>PM</b>費用の大半は新しい出力ではなく、長いコンテキストのキャッシュ読みだった。無人で長時間走らせるエージェントには、セッション単位の使用量の上限か通知を用意する。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>チームのリポジトリと個人設定にある Stop フックを洗い出し、(1) <code>stop_hook_active</code> を見て2回目以降は通しているか、(2) バックグラウンドのコマンドが動いている間に差し戻していないか、を確認する。「絶対に止めない」をやめ、判定を通らないコードは push 時のフックで止める構成に替えるのが著者の結論。</div>
+      <div class="source">出典：<a href="https://zenn.dev/kagaribilab/articles/claude-code-stop-hook-loop" target="_blank" rel="noopener">Zenn「/goalを使わずStopフックを自作したら、Claude Codeが止まらず使用量が増え続けた」（2026-11-15）</a></div>
+      <div class="note">個人による1セッション分の計測。Max 5x プランでは週の利用枠が「体感で約2割」減ったとしており、これは計測値ではない。最初に試した「最長10分待ってから差し戻す」はループが遅くなっただけだった。安全装置の挙動は著者の説明で、本簡報では公式文書と照合していない。</div>
+      <div class="comment"><b>コメント：</b>「止めない仕組み」は、止まるべき場面を定義しないと費用の穴になる。完了判定はエージェントの外（push や CI）に置くほうが安全だ。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>サブエージェントの「すべて通りました」を親が測り直す Skill「delegating-work」——34ファイルの置き換えを手分けする場面で、守るべき観点の達成が 3/24 から 18/24 に</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Zenn の記事（11月15日）は、サブエージェントへの委任手順をまとめた Skill を、あり・なしで比べた。Skill は4点を指示する。任せてよい仕事を、独立して並列にできるもの・結論だけが要る調べ物・別視点のレビューに限る。依頼文に目的、機械で判定できる終了条件、検証コマンドを書き、テストの削除・skip・期待値の緩和を禁じる。報告は入力の一つとして扱い、diff を読んで終了条件を自分で測り直す。架空の3場面を各3回試した結果は、34ファイルの置き換えで 3/24 → 18/24、夜間の lint エラー解消で 6/21 → 15/21、読み取り専用の調査で 11/15 → 12/15 だった。</p>
+      <ul class="sowhat"><li><b>DEV</b>子エージェントの報告を信じず、終了条件を親が再実行して確かめる、という手順を Skill として配れる。<code>npx skills add itoken-lab-jp/skills -g --skill delegating-work</code> で導入できる。</li><li><b>PM</b>確認の手順が増えるぶん往復も増える。試験では Skill ありの6回中4回が10往復の上限に達した。品質と所要時間の交換条件として見積もりに入れる。</li></ul>
+      <div class="source">出典：<a href="https://zenn.dev/itoken_lab/articles/delegating-work-with-without" target="_blank" rel="noopener">Zenn「サブエージェントの『すべて通りました』を、AI に確かめさせる Skill」（2026-11-15）</a><a href="https://github.com/itoken-lab-jp/skills/blob/main/docs/delegating-work.md" target="_blank" rel="noopener">Skill の説明（GitHub）</a></div>
+      <div class="note">著者が明記する限界：子の振る舞いは別の AI が筋書きに沿って演じたもので、本物のサブエージェントでは測っていない。比較対象は「何も足さない」状態で、数行の禁止指示との比較ではない。場面と Skill の作者は同じ。作業役は Claude Sonnet、採点は Claude Opus。公開版には測定後に足した決まりがあり、未検証。GitHub のページは本簡報では開いていない。</div>
+      <div class="comment"><b>コメント：</b>効果の数字は割り引いて読むべきだが、「報告は証拠ではない」を依頼文と受け取り手順の両方に書く、という構成はレビュー規約にそのまま移せる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>メルカリ、画面や試作品の制作が「1〜2日→数十分」に——職種別チームを1〜3人の少人数チームに組み替えた一方、AI による大量の変更を人がどう確認するかが新しい課題に</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">ITmedia ビジネスオンラインは11月16日、メルカリのエンジニアリング責任者とデザイナーへの取材記事（全3回の第1回）を掲載した。生成 AI の導入で、1〜2日かかっていたアプリの画面や試作品の制作が数十分に縮んだという。体制も変えた。フロントエンド、バックエンド、iOS、Android、Web と専門ごとに分かれていたチームを解き、1〜3人の少人数で画面から裏側の仕組みまで作る形に移している。一方で、多数の画面にまたがる変更を AI で一度に行えるようになり、人によるレビューと品質管理を保つのが難しくなった。人が関わる箇所と AI に任せる箇所を決め直しているという。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>「AI で速くなった後、何が詰まるか」を国内の大手が自分の言葉で語った事例。開発組織の再設計を提案するとき、職種別から少人数フルスタックへの移行例として引用できる。</li><li><b>PM</b>制作が数十分になると、律速はレビューと品質保証に移る。工数の見積もりは「作る時間」ではなく「確かめる時間」を軸に組み直す必要がある。</li><li><b>DEV</b>画面から裏側まで1人で触る前提になる。余白の規則に沿った部品づくりのような繰り返し作業は AI に任せる、という分担が紹介されている。</li></ul>
+      <div class="source">出典：<a href="https://www.itmedia.co.jp/business/articles/2611/16/news031.html" target="_blank" rel="noopener">ITmedia ビジネスオンライン「メルカリ、アプリ開発『2日→数十分』へ　直面したAI時代の“意外な課題”とは？」（2026-11-16）</a></div>
+      <div class="note">取材記事で、メルカリ自身の発表文ではない。短縮の数字は記事の見出しと冒頭の記述による。レビュー課題への具体的な対処は第1回の範囲では示されておらず、続編で扱われる見込み。利用しているツールやモデルの名前は確認できていない。</div>
+      <div class="comment"><b>コメント：</b>速さの数字より、「組織を先に変え、レビューの設計が後から追いかけている」という順序のほうが、これから導入する企業への示唆になる。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>オートバックスセブン、ライセンス更新を機に表計算マクロ中心の業務から Google Workspace と Gemini へ移行——当初は従業員の約半数が従来ソフトの継続を希望</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">キーマンズネットは11月16日、オートバックスセブンの移行事例を掲載した。同社は2032年度に売上高5000億円（2022年度は2362億円）を掲げる。オフィスツールのライセンス更新で費用を見直した際、Google Workspace に Gemini などの生成 AI 機能が追加費用なしで含まれていたことが決め手になった。移行当初は従業員の約50%が従来ソフトの継続を望んだ。法務の契約書、経理の帳票、営業の複雑なマクロ計算には個別に配慮し、従来ソフトに残す業務は約25%とする計画。相談窓口を置き、DX 推進組織 ABDi が現場を支える。報告資料の作成は30分〜1時間から2〜3分になった例があるという。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>生成 AI の全社導入が、AI 単体の投資判断ではなく「オフィススイートの更新」として決まった例。ライセンス更新の時期が近い顧客には、AI 機能込みの総費用で比べる提案ができる。</li><li><b>PM</b>全部を移さず、約25%は従来ソフトに残すと最初に決めている。マクロ資産の棚卸しと「残す業務」の線引きを、移行計画の最初の成果物にする。</li></ul>
+      <div class="source">出典：<a href="https://kn.itmedia.co.jp/kn/article/2611/16/2000003181/" target="_blank" rel="noopener">キーマンズネット「ライセンス更新を機に『脱マクロ』　オートバックスセブンがGeminiで目指す売上高5000億円」（2026-11-16）</a></div>
+      <div class="note">取材記事で、同社の発表文ではない。対象人数、移行の日程、契約プランは記事に記載なし。時間短縮は記事中の一例で、全社の実測値ではない。店舗システムの仕様書やマニュアルを Gemini Notebook に集め、異動者や新入社員の立ち上がりに使う活用も紹介されている。</div>
+      <div class="comment"><b>コメント：</b>反発の大きさ（約半数）と残す範囲（約25%）を数字で出している点が貴重。移行案件の合意形成で使える目安になる。</div>
+    </div>
+
+    <div class="section-title">短信</div>
+    <div class="brief"><ul>
+      <li>日経クロステックが連載「AI時代に消えるITベンダー、残るITベンダー」を開始（11月16日）。第1回は、情報サービス業の倒産が過去10年で最多のペースにある一方で大手 SIer は堅調とし、AI による開発効率の向上で大手からの受注が減った中小の淘汰が始まったと論じる。有料会員限定で、件数やデータの出所は冒頭部分では確認できていない。<a href="https://xtech.nikkei.com/atcl/nxt/column/18/03792/110500001/" target="_blank" rel="noopener">記事</a></li>
+    </ul></div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>新規：Claude Code Stop フックの無限ループ、delegating-work Skill、メルカリの少人数フルスタック体制、オートバックスセブンの Workspace／Gemini 移行。対象外として記録：Cloudflare Kitesurf のオープンソース化（Apache 2.0、窓を約3時間超過）、Uber Secure AI（11月6日公開）。未検証のまま記録：GitHub Trending の NVIDIA/SkillEvaluator（Skill の品質検査と、あり・なし比較の枠組み。公開日を確認できず）。</li>
+      <li>継続：「Agent Skills（SKILL.md）」は今日も Skill の実測記事が出て言及6回に。GitHub Trending では alibaba/open-code-review、GoogleChrome/modern-web-guidance-src、backnotprop/plannotator、Tencent/LoopForge が前日に続いて掲載された。</li>
+      <li>退出：30日間言及のなかった3件（Granite Switch 4.1（IBM）、Muse Spark Open（Meta）、NRIセキュアの AI 駆動開発セキュリティ支援）を規則どおり退出とした。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

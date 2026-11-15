@@ -91,8 +91,8 @@
    "kind": "process",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-15",
-   "mentions": 14,
+   "last_seen": "2026-11-16",
+   "mentions": 15,
    "sources": [
     "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
     "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
@@ -106,7 +106,8 @@
     "https://martinfowler.com/articles/tests-as-data.html",
     "https://tech-blog.rakus.co.jp/entry/20261112/characterization-test-review",
     "https://arxiv.org/abs/2611.15159",
-    "https://www.slopmanifesto.com/"
+    "https://www.slopmanifesto.com/",
+    "https://www.itmedia.co.jp/business/articles/2611/16/news031.html"
    ],
    "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
   },
@@ -592,7 +593,7 @@
   {
    "name": "Granite Switch 4.1 (IBM)",
    "kind": "agent-infra",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-16",
    "last_seen": "2026-10-16",
    "mentions": 1,
@@ -604,7 +605,7 @@
   {
    "name": "Muse Spark Open (Meta)",
    "kind": "model",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-16",
    "last_seen": "2026-10-16",
    "mentions": 1,
@@ -616,7 +617,7 @@
   {
    "name": "NRIセキュア AI駆動開発セキュリティ支援",
    "kind": "consulting-service",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-16",
    "last_seen": "2026-10-16",
    "mentions": 1,
@@ -630,10 +631,11 @@
    "kind": "process",
    "status": "candidate",
    "first_seen": "2026-10-17",
-   "last_seen": "2026-10-17",
-   "mentions": 1,
+   "last_seen": "2026-11-16",
+   "mentions": 2,
    "sources": [
-    "https://claude.dev/blog/solving-code-review-at-anthropic/"
+    "https://claude.dev/blog/solving-code-review-at-anthropic/",
+    "https://www.infoq.com/news/2026/11/claude-code-review/"
    ],
    "note": "リスク別承認0/1/2人、AIレビュー指摘のマージブロック。社内数値。"
   },
@@ -897,14 +899,15 @@
    "kind": "standard",
    "status": "watching",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-15",
-   "mentions": 5,
+   "last_seen": "2026-11-16",
+   "mentions": 6,
    "sources": [
     "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
     "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
     "https://github.com/addyosmani/agent-skills",
     "https://arxiv.org/abs/2611.15436",
-    "https://zenn.dev/itoken_lab/articles/itoken-lab-skills-intro"
+    "https://zenn.dev/itoken_lab/articles/itoken-lab-skills-intro",
+    "https://zenn.dev/itoken_lab/articles/delegating-work-with-without"
    ],
    "note": "Skills 標準を Linux Foundation 傘下の AAIF へ。70超のプラットフォーム対応（Anthropic 記述）。2026-11-13 GitHub が実践ガイドで採用（主要ベンダー採用により昇格）"
   },
@@ -1622,12 +1625,13 @@
    "kind": "security-incident",
    "status": "watching",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-15",
-   "mentions": 3,
+   "last_seen": "2026-11-16",
+   "mentions": 4,
    "sources": [
     "https://www.notion.com/ja/help/security-incident-involving-a-third-party-ai-vendor",
     "https://www.itmedia.co.jp/aiplus/article/2611/13/2000003172/",
-    "https://cursor.com/blog/security-incident-update"
+    "https://cursor.com/blog/security-incident-update",
+    "https://zenn.dev/pollenjp/articles/2026-11-10-fireworks-ai-incident"
    ],
    "note": "AI 委託先経由で Notion AI チャット記録漏えいの可能性。"
   },
@@ -1946,8 +1950,8 @@
    "kind": "code-review",
    "status": "candidate",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-15",
-   "mentions": 2,
+   "last_seen": "2026-11-16",
+   "mentions": 3,
    "sources": [
     "https://github.com/alibaba/open-code-review"
    ],
@@ -1958,8 +1962,8 @@
    "kind": "context-engineering",
    "status": "candidate",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-15",
-   "mentions": 2,
+   "last_seen": "2026-11-16",
+   "mentions": 3,
    "sources": [
     "https://github.com/GoogleChrome/modern-web-guidance-src"
    ],
@@ -2043,8 +2047,8 @@
    "kind": "dev-tool",
    "status": "candidate",
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-15",
-   "mentions": 1,
+   "last_seen": "2026-11-16",
+   "mentions": 2,
    "sources": [
     "https://github.com/backnotprop/plannotator"
    ],
@@ -2055,12 +2059,96 @@
    "kind": "dev-tool",
    "status": "candidate",
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-15",
-   "mentions": 1,
+   "last_seen": "2026-11-16",
+   "mentions": 2,
    "sources": [
     "https://github.com/Tencent/LoopForge"
    ],
    "note": "未検証（GitHub Trending 2026-11-15）。承認ゲート付きのコーディングエージェント納品ワークフロー（セルフホスト）"
+  },
+  {
+   "name": "Claude Code Stop フックの無限ループ",
+   "kind": "cost-control",
+   "status": "candidate",
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "mentions": 1,
+   "sources": [
+    "https://zenn.dev/kagaribilab/articles/claude-code-stop-hook-loop"
+   ],
+   "note": "自作 Stop フックがバックグラウンド待ちを差し戻し続け 1,314回・約16.5億トークン。対処は stop_hook_active で差し戻しを1回に限定"
+  },
+  {
+   "name": "delegating-work Skill（サブエージェント委任の点検）",
+   "kind": "process",
+   "status": "candidate",
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "mentions": 1,
+   "sources": [
+    "https://zenn.dev/itoken_lab/articles/delegating-work-with-without"
+   ],
+   "note": "依頼文に終了条件・検証コマンド、報告は親が測り直す。架空3場面で 3/24→18/24 ほか。子は筋書き役で本物では未測定"
+  },
+  {
+   "name": "メルカリ 少人数フルスタック体制",
+   "kind": "case-jp",
+   "status": "candidate",
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "mentions": 1,
+   "sources": [
+    "https://www.itmedia.co.jp/business/articles/2611/16/news031.html"
+   ],
+   "note": "画面・試作品制作 1〜2日→数十分。職種別チームを1〜3人に再編。レビューと品質管理が新しい課題（ITmedia 取材、全3回）"
+  },
+  {
+   "name": "オートバックスセブン Workspace／Gemini 移行",
+   "kind": "case-jp",
+   "status": "candidate",
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "mentions": 1,
+   "sources": [
+    "https://kn.itmedia.co.jp/kn/article/2611/16/2000003181/"
+   ],
+   "note": "ライセンス更新を機に脱マクロ。当初約50%が従来ソフト継続を希望、約25%は従来ソフトに残す計画"
+  },
+  {
+   "name": "Cloudflare Kitesurf（OSS 化）",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "mentions": 1,
+   "sources": [
+    "https://blog.cloudflare.com/kitesurf-open-source/"
+   ],
+   "note": "AI エージェント向けステートレスブラウザエンジンを Apache 2.0 で公開（2026-11-13 20:20 UTC）。CDP 対応、Workers 上で動作、自前デプロイは Workers Paid が必要。48h 窓外のため未収録"
+  },
+  {
+   "name": "Uber Secure AI（AI Registry / AI Guard / Argus）",
+   "kind": "agent-governance",
+   "status": "candidate",
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "mentions": 1,
+   "sources": [
+    "https://www.uber.com/us/en/blog/securing-ai-agents/"
+   ],
+   "note": "エージェントの登録・実行時の振る舞い認可・再生検証の3層。一次情報は 2026-11-06 公開で未収録（InfoQ が 11-15 に紹介）"
+  },
+  {
+   "name": "NVIDIA/SkillEvaluator",
+   "kind": "skills-evaluation",
+   "status": "candidate",
+   "first_seen": "2026-11-16",
+   "last_seen": "2026-11-16",
+   "mentions": 1,
+   "sources": [
+    "https://github.com/NVIDIA/SkillEvaluator"
+   ],
+   "note": "未検証（GitHub Trending 2026-11-16、公開日不明）。Skill の検証・重複検出・あり/なし比較の3層。Apache 2.0"
   }
  ]
 }
