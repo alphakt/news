@@ -905,6 +905,41 @@
    "date": "2026-11-16",
    "key": "nikkei-xtech-it-vendor-bankruptcies-series-1",
    "url": "https://xtech.nikkei.com/atcl/nxt/column/18/03792/110500001/"
+  },
+  {
+   "date": "2026-11-17",
+   "key": "hf-inference-providers-openrouter",
+   "url": "https://huggingface.co/blog/openrouter"
+  },
+  {
+   "date": "2026-11-17",
+   "key": "recruit-ai-review-skill-human-selects",
+   "url": "https://blog.recruit.co.jp/data/articles/ai-review-skills/"
+  },
+  {
+   "date": "2026-11-17",
+   "key": "zenn-tests-pass-24-of-24-not-protected",
+   "url": "https://zenn.dev/t_azk/articles/ai-tests-passed-24-of-24"
+  },
+  {
+   "date": "2026-11-17",
+   "key": "credit-saison-chatgpt-enterprise-rollout",
+   "url": "https://kn.itmedia.co.jp/kn/article/2611/17/2000003219/"
+  },
+  {
+   "date": "2026-11-17",
+   "key": "arxiv-multi-agent-vs-equal-compute",
+   "url": "https://arxiv.org/abs/2611.17610"
+  },
+  {
+   "date": "2026-11-17",
+   "key": "adachi-ward-council-answer-ai-agents",
+   "url": "https://www.itmedia.co.jp/aiplus/article/2611/16/2000003196/"
+  },
+  {
+   "date": "2026-11-17",
+   "key": "qiita-claude-code-edit-tab-indent-issue",
+   "url": "https://qiita.com/homhom44/items/8f7e6e4b04257ea048cc"
   }
  ]
 }

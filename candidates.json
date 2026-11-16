@@ -91,8 +91,8 @@
    "kind": "process",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-16",
-   "mentions": 15,
+   "last_seen": "2026-11-17",
+   "mentions": 17,
    "sources": [
     "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
     "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
@@ -107,7 +107,9 @@
     "https://tech-blog.rakus.co.jp/entry/20261112/characterization-test-review",
     "https://arxiv.org/abs/2611.15159",
     "https://www.slopmanifesto.com/",
-    "https://www.itmedia.co.jp/business/articles/2611/16/news031.html"
+    "https://www.itmedia.co.jp/business/articles/2611/16/news031.html",
+    "https://blog.recruit.co.jp/data/articles/ai-review-skills/",
+    "https://zenn.dev/t_azk/articles/ai-tests-passed-24-of-24"
    ],
    "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
   },
@@ -642,7 +644,7 @@
   {
    "name": "Cursor クラウドエージェント Canvas / Environments API",
    "kind": "agent-product",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-17",
    "last_seen": "2026-10-17",
    "mentions": 1,
@@ -654,7 +656,7 @@
   {
    "name": "Anthropic×METR 常駐評価",
    "kind": "governance",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-17",
    "last_seen": "2026-10-17",
    "mentions": 1,
@@ -666,7 +668,7 @@
   {
    "name": "CodeHealth とレビュートークン費用",
    "kind": "research",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-17",
    "last_seen": "2026-10-17",
    "mentions": 1,
@@ -740,14 +742,14 @@
    "kind": "threat",
    "status": "watching",
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-15",
-   "mentions": 3,
+   "last_seen": "2026-11-17",
+   "mentions": 4,
    "sources": [
     "https://gmo-cybersecurity.com/blog/20261019/",
     "https://aws.amazon.com/jp/blogs/news/amazon-threat-intelligence-observes-threat-actors-running-cybercrime-campaigns-with-artex-ai-agents/",
     "https://dev.classmethod.jp/articles/cognito-self-signup-agentic-attack/"
    ],
-   "note": "国内約20社を標的、8社が漏えい公表。CrowdStrike が韓国金融機関での使用を報道"
+   "note": "国内約20社を標的、8社が漏えい公表。CrowdStrike が韓国金融機関での使用を報道。2026-11-17 TechCrunch が FBI の注意喚起を報道（未検証）"
   },
   {
    "name": "源内基準（政府職員向けAIエージェント安全基準）",
@@ -899,15 +901,16 @@
    "kind": "standard",
    "status": "watching",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-16",
-   "mentions": 6,
+   "last_seen": "2026-11-17",
+   "mentions": 7,
    "sources": [
     "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
     "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
     "https://github.com/addyosmani/agent-skills",
     "https://arxiv.org/abs/2611.15436",
     "https://zenn.dev/itoken_lab/articles/itoken-lab-skills-intro",
-    "https://zenn.dev/itoken_lab/articles/delegating-work-with-without"
+    "https://zenn.dev/itoken_lab/articles/delegating-work-with-without",
+    "https://blog.recruit.co.jp/data/articles/ai-review-skills/"
    ],
    "note": "Skills 標準を Linux Foundation 傘下の AAIF へ。70超のプラットフォーム対応（Anthropic 記述）。2026-11-13 GitHub が実践ガイドで採用（主要ベンダー採用により昇格）"
   },
@@ -1379,15 +1382,15 @@
    "kind": "cost-governance",
    "status": "candidate",
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-14",
-   "mentions": 4,
+   "last_seen": "2026-11-17",
+   "mentions": 5,
    "sources": [
     "https://www.thoughtworks.com/insights/articles/the-token-bleed-reality",
     "https://arxiv.org/abs/2611.13396",
     "https://www.thoughtworks.com/insights/blog/generative-ai/we-built-ai-control-plane-reduce-LLM-expenses-prevent-data-leaks",
     "https://www.thoughtworks.com/insights/blog/generative-ai/specbench-tool-evaluate-ai-enabled-software-development-workflows"
    ],
-   "note": "エージェント単位の予算・遮断器・キャッシュ・モデル使い分け"
+   "note": "エージェント単位の予算・遮断器・キャッシュ・モデル使い分け。2026-11-17 Cloudera 調査（11/4公開、窓外）で89%がトークン消費を理由に用途を再設計と報道"
   },
   {
    "name": "MCP 遅延ツール読み込み (search_tools)",
@@ -1725,8 +1728,8 @@
    "kind": "model",
    "status": "watching",
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-14",
-   "mentions": 2,
+   "last_seen": "2026-11-17",
+   "mentions": 3,
    "sources": [
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
     "https://simonwillison.net/2026/Nov/12/llm-gemini/"
@@ -1736,15 +1739,16 @@
   {
    "name": "AWS Emulator（エージェントのみで構築）",
    "kind": "process",
-   "status": "candidate",
+   "status": "watching",
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-14",
-   "mentions": 2,
+   "last_seen": "2026-11-17",
+   "mentions": 3,
    "sources": [
     "https://www.aboutamazon.com/news/aws/how-autonomous-ai-agents-built-aws-emulator",
-    "https://aws.amazon.com/jp/blogs/news/test-your-applications-against-aws-locally-with-aws-emulator/"
+    "https://aws.amazon.com/jp/blogs/news/test-your-applications-against-aws-locally-with-aws-emulator/",
+    "https://www.infoq.com/news/2026/11/aws-emulator-agents/"
    ],
-   "note": "人はコードを書かずレビューもしない。忠実度テスト＋マージ門で品質を保つ。CC0"
+   "note": "人はコードを書かずレビューもしない。忠実度テスト＋マージ門で品質を保つ。CC0。2026-11-17 InfoQ が掲載（独立2出典で昇格）"
   },
   {
    "name": "生成用語集（Generated Glossary, Fowler）",
@@ -1908,10 +1912,10 @@
    "kind": "agent-product",
    "status": "candidate",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-15",
-   "mentions": 2,
+   "last_seen": "2026-11-17",
+   "mentions": 3,
    "sources": [],
-   "note": "未検証（openai.com が 2026-11-14・15 とも 403）。エージェントによる購入・決済"
+   "note": "未検証（openai.com が 2026-11-14・15 とも 403）。エージェントによる購入・決済。2026-11-17 も openai.com は 403"
   },
   {
    "name": "AWS Quick Smart Approvals",
@@ -1950,8 +1954,8 @@
    "kind": "code-review",
    "status": "candidate",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-16",
-   "mentions": 3,
+   "last_seen": "2026-11-17",
+   "mentions": 4,
    "sources": [
     "https://github.com/alibaba/open-code-review"
    ],
@@ -2047,8 +2051,8 @@
    "kind": "dev-tool",
    "status": "candidate",
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-16",
-   "mentions": 2,
+   "last_seen": "2026-11-17",
+   "mentions": 3,
    "sources": [
     "https://github.com/backnotprop/plannotator"
    ],
@@ -2143,12 +2147,104 @@
    "kind": "skills-evaluation",
    "status": "candidate",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-16",
-   "mentions": 1,
+   "last_seen": "2026-11-17",
+   "mentions": 2,
    "sources": [
     "https://github.com/NVIDIA/SkillEvaluator"
    ],
    "note": "未検証（GitHub Trending 2026-11-16、公開日不明）。Skill の検証・重複検出・あり/なし比較の3層。Apache 2.0"
+  },
+  {
+   "name": "Hugging Face Inference Providers の OpenRouter 経由化",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17",
+   "mentions": 1,
+   "sources": [
+    "https://huggingface.co/blog/openrouter"
+   ],
+   "note": "言語モデルのリクエストを OpenRouter 経由に。提供元の自前キーは言語モデルで使用不可。HF の上乗せなし"
+  },
+  {
+   "name": "リクルート AI レビュー Skill（AI が書き人が選ぶ）",
+   "kind": "process",
+   "status": "candidate",
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17",
+   "mentions": 1,
+   "sources": [
+    "https://blog.recruit.co.jp/data/articles/ai-review-skills/"
+   ],
+   "note": "must/want/nits/ask の番号付きコメント案を人が選んで投稿。約半年運用、軽い PR で体感約50%減"
+  },
+  {
+   "name": "テストの実効性検査（1行壊して確かめる）",
+   "kind": "process",
+   "status": "candidate",
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17",
+   "mentions": 1,
+   "sources": [
+    "https://zenn.dev/t_azk/articles/ai-tests-passed-24-of-24"
+   ],
+   "note": "文字列一致の検査・対象0件の静的検査・CI 未実行テストを変異検査で発見。PHP/Laravel の1事例"
+  },
+  {
+   "name": "クレディセゾン ChatGPT Enterprise 全社導入",
+   "kind": "case-study",
+   "status": "candidate",
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17",
+   "mentions": 1,
+   "sources": [
+    "https://kn.itmedia.co.jp/kn/article/2611/17/2000003219/"
+   ],
+   "note": "315人パイロットで ROI 954%・月14時間削減、全役員参加、CoE＋Slack 共有。算出式は未確認"
+  },
+  {
+   "name": "マルチエージェントの同計算量比較（arXiv 2611.17610）",
+   "kind": "research",
+   "status": "candidate",
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17",
+   "mentions": 1,
+   "sources": [
+    "https://arxiv.org/abs/2611.17610"
+   ],
+   "note": "9研究516構成の再分析。条件を揃えると正答率が平均0.042低い。単著・査読前"
+  },
+  {
+   "name": "足立区 議会答弁 AI・区民の声エージェント",
+   "kind": "case-study",
+   "status": "candidate",
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17",
+   "mentions": 1,
+   "sources": [
+    "https://www.itmedia.co.jp/aiplus/article/2611/16/2000003196/"
+   ],
+   "note": "振り分け＋答弁案作成の2エージェント、富士通Japan と実証。区民の声は Gemini Enterprise。定量効果の記載なし"
+  },
+  {
+   "name": "Qwen4-Max",
+   "kind": "model",
+   "status": "candidate",
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17",
+   "mentions": 1,
+   "sources": [],
+   "note": "未検証（qwen.ai/blog?id=qwen4-max は本文を取得できず、2026-11-17）。HN ベスト掲載"
+  },
+  {
+   "name": "ChatGPT for Healthcare コンピューター操作エージェント",
+   "kind": "agent-product",
+   "status": "candidate",
+   "first_seen": "2026-11-17",
+   "last_seen": "2026-11-17",
+   "mentions": 1,
+   "sources": [],
+   "note": "未検証（openai.com が 2026-11-17 に 403）。医療向けプラグインも追加と feed 要約"
   }
  ]
 }

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月17日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月17日（火）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は6件。対応が要るものとして Hugging Face の推論経路の変更、すぐ試せるものとしてリクルートのレビュー Skill を先頭に置きます。見送ったもの：Qwen4-Max（公式ページの本文を取得できず、内容を確認できない）、OpenAI の ChatGPT for Healthcare へのコンピューター操作エージェント追加と ChatGPT Wallet（openai.com が今日も 403）、Cloudera の企業 AI 調査「約9割がトークン消費を理由に用途を再設計」（一次情報は11月4日公開）、Gemini 4 Hydrogen と AWS Emulator の紹介記事（いずれも既報）、カリフォルニア州司法長官による OpenAI 提訴と米国の AI チップ輸出規制の暫定規則（一次情報を確認できていない）、EU の AI 法にもとづく基本権影響評価のひな形案（意見募集の段階）、NVIDIA の CEO 交代関連（可用性・価格への影響が未確定）。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Hugging Face、言語モデルの Inference Providers を OpenRouter 経由に切り替え——コードは変えずに済むが、提供元ごとの自前 API キーは言語モデルで使えなくなった</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Hugging Face は11月16日、Inference Providers のうち言語モデルへのリクエストを、自社のルーターから OpenRouter 経由に切り替えたと発表した。OpenRouter が呼び出しごとに価格・速度・信頼性を見て提供元を選び、失敗すれば別の提供元で再試行する。OpenAI の Chat Completions／Responses と Anthropic の Messages の API 形式に対応し、モデル ID の末尾に <code>:fastest</code>、<code>:cheapest</code>、提供元名を付けて選び方を指定できる。料金は提供元の価格のままで、Hugging Face の上乗せはない。一方、言語モデルでは提供元ごとの自前 API キーが使えなくなった。</p>
+      <ul class="sowhat"><li><b>DEV</b>プロンプトキャッシュを効かせるには、会話ごとに固定の UUID を <code>X-HF-Session-Id</code> ヘッダーで送り、同じ提供元に留める。Claude Code、Codex、OpenCode 向けの設定ガイドも用意された。</li><li><b>PM</b>自前キーで提供元と直接精算していた場合、請求が Hugging Face 経由に変わる。請求の経路と月次の費用見積もりを確認する。</li><li><b>CONSULT</b>オープンウェイトモデルを使う構成では、リクエストの経由先に OpenRouter が加わる。顧客の委託先一覧とデータ取扱いの確認項目を更新する必要がある。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>Hugging Face の Inference Providers で言語モデルを呼んでいるアプリを洗い出し、自前の提供元キーを設定していたものを特定する。提供元を固定したい場合は、モデル ID に <code>:novita</code> のような接尾辞を付けるか、設定で使わない提供元を無効にする。</div>
+      <div class="source">出典：<a href="https://huggingface.co/blog/openrouter" target="_blank" rel="noopener">Hugging Face Blog「Hugging Face and OpenRouter join forces to make open-weight models easy to run」（2026-11-16）</a></div>
+      <div class="note">OpenRouter 側のデータ取扱い条件は、本簡報では確認していない。画像・動画・音声の生成は従来どおり Hugging Face が直接扱い、自前キーも引き続き使える。PRO 利用者には月2ドル、Team／Enterprise には1席あたり月2ドルのクレジットが付く。記事は、最良のオープンウェイトモデルが最難関の評価では商用の最上位に届いていないことも記している（Artificial Analysis Intelligence Index で Kimi K3.1 Pro が46、Claude Fable 5.2 が65）。</div>
+      <div class="comment"><b>コメント：</b>利用側のコードは同じでも、経由する事業者が1社増える変更。技術より先に、契約とデータの流れの棚卸しが要る。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>リクルート、PR レビューのコメント案を AI が書き、人が番号で選んで投稿する Claude Code 用 Skill を公開——約半年の運用で、Markdown だけの PR はレビューの手間が体感で約半分に</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">リクルートのデータ推進組織の技術ブログ（11月16日）は、GitHub の PR レビューコメントを下書きする Claude Code の Skill を紹介した。Skill は差分と周辺のコードを読み、紐づくチケット、Slack のスレッド、設計文書と実装を突き合わせる。そのうえで must／want／nits／ask のラベルを付けたコメント案を、番号付きの表で示す。レビュワーは「2番は外して」「3番は nits に下げて」と短く指示し、承認したものだけが1件ずつインラインで投稿される。承認なしには投稿せず、ファイルを自動で書き換えることもない。AI は業務ルールを知らず誤った指摘が混じるため、人が選ぶ形にしたという。</p>
+      <ul class="sowhat"><li><b>DEV</b>must と want の線引き（今は無害でも、変更で壊れうるか）、指摘する前に要件の出所を確かめること、GitHub API の落とし穴（インラインコメントは差分の行にしか付かない、削除行は LEFT 側）を Skill に書き込んでいる。自分の PR をレビュー依頼の前に通す使い方もある。</li><li><b>PM</b>投稿の判断を人に残すと、指摘の責任の所在を変えずに下書きの時間を減らせる。レビュワーが外した・直した内容を記録し、Skill の調整に回す運用が紹介されている。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>記事で公開されている汎用版の Skill を1つのリポジトリで試し、must／want の基準を自チームのレビュー規約に合わせて書き換える。最初は Markdown だけの PR など軽い変更から始める。</div>
+      <div class="source">出典：<a href="https://blog.recruit.co.jp/data/articles/ai-review-skills/" target="_blank" rel="noopener">Recruit Data Blog「レビューは AI が書いて、人が選ぶ」（2026-11-16）</a></div>
+      <div class="note">削減幅は著者の体感で、計測値ではない。公開されているのは社内固有のルールを除いた汎用版で、動作は保証されていない。使っているモデルの名前は記事にない。コメントの文面は、理由を添えた柔らかい言い回しに調整している（AI の下書きは断定的で強すぎたため）。</div>
+      <div class="comment"><b>コメント：</b>「AI がレビューする」ではなく「AI が候補を出し、人が選ぶ」。番号で選ばせるという小さな工夫が、人の判断を省かずに速くする鍵になっている。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>守るべき属性を外してもテストが 24/24 で通り続けた——文字列一致の検査、対象0件で合格する静的検査、CI で走っていなかった276テストが、防御を1行消して確かめる手順で見つかった</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Zenn の記事（11月16日）は、PHP／Laravel の AI 駆動開発の基盤で、監査ログの「免除属性」を既定から外す変更を入れたときの記録。属性があることを確かめるテストは、外した後も 24/24 で通った。テストがソース中の文字列を探しており、同じコミットの案内コメントにその文字列が含まれていたためだ。ほかにも、対象が0件でも合格を返す CI の静的検査、どの CI ワークフローでも実行されていなかった新設テスト群（276テスト・763アサーション）、正規表現の修飾子の誤りで狂っていた変異検査が見つかった。3件は実装とは別のエージェントによるレビューで判明した。修正後は、35通りの変異のうち34件を検知した。</p>
+      <ul class="sowhat"><li><b>DEV</b>属性やアノテーションの検査は、文字列一致ではなく Reflection や AST で宣言そのものを取って比べる。防御を1行消してテストが赤くなるか、赤くなった理由が意図どおりかまで確かめる。</li><li><b>PM</b>「テストが緑」を完了条件にするなら、静的検査の対象件数が0でないこと、新しいテスト名が CI の実行ログに出ていることを受け入れ条件に加える。</li></ul>
+      <div class="source">出典：<a href="https://zenn.dev/t_azk/articles/ai-tests-passed-24-of-24" target="_blank" rel="noopener">Zenn「『テストが通る』と『守られている』は別 ― AI が書いたテストが、仕様を変えても 24/24 で通った」（2026-11-16）</a></div>
+      <div class="note">個人による1プロジェクトの事例。著者は4件とも原因は AI ではなく人の判断だったとし、AI の出力は整っていて緑に見えるぶん、手抜きが見えにくくなると述べている。他言語への当てはめは著者の提案で、検証されていない。検知されなかった1件は、二重の防御の片側として事前に宣言されていたもの。使用した AI モデルの名前は記事にない。</div>
+      <div class="comment"><b>コメント：</b>昨日の「サブエージェントの報告を測り直す」と同じ教訓が、テストにも当てはまる。緑は証拠ではなく、壊して赤くなることが証拠だ。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>クレディセゾン、315人・約1カ月のパイロットで「1人あたり月14時間の削減」を得て、ChatGPT Enterprise を全従業員に導入——社長を含む全役員が検証に参加</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">キーマンズネットは11月17日、クレディセゾンの事例を掲載した。同社は2025年6月末から8月上旬に、OpenAI とパイロットを実施した。参加者は希望者、事務局の指名者、社長を含む全役員など315人で、国内従業員約3700人の10%弱にあたる。目標は ROI 500%と1人あたり月7.5時間の削減。結果は ROI 954%、月14時間（年換算で約169時間）だった。終了から1カ月で全社導入を決めた。推進事務局（CoE）が Slack の専用チャンネルで成功例と失敗例を共有し、OpenAI が経営層向けの研修と初心者向けのハンズオンを担った。エンジニア部門は Codex で月平均850時間の作業を減らしたとしている。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>全社導入の意思決定の型として引用できる。事前に目標値を置き、役員全員を検証に入れ、終了後1カ月で判断している。終礼の音声から実績報告を作る、法人営業の企業調査、商談のロールプレイといった用途は、業務部門への提案例になる。</li><li><b>PM</b>パイロットの設計値の目安になる。規模は全体の約1割、期間は1カ月強、成功の基準（ROI と削減時間）は開始前に決めている。</li></ul>
+      <div class="source">出典：<a href="https://kn.itmedia.co.jp/kn/article/2611/17/2000003219/" target="_blank" rel="noopener">キーマンズネット「クレディセゾンはなぜChatGPTでROI954％・年169時間削減を達成できたのか」（2026-11-17）</a></div>
+      <div class="note">取材記事で、同社の発表文ではない。会員限定の記事で、本簡報は読めた範囲に基づく。ROI の算出式や費用・便益の前提、事後調査の回答者数は確認できていない。パイロット自体は2025年の実施で、記事はその振り返り。自律的に動く機能は、顧客情報の保護を前提に検証してから展開する方針とされる。</div>
+      <div class="comment"><b>コメント：</b>ROI の数字そのものより、「目標を先に置き、役員が自分で使い、1カ月で決める」という進め方のほうが再現しやすい。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>「エージェントを増やす」は、同じ計算量の単純な方法に勝てていない——9件の研究・516構成の再分析で、条件を揃えた比較ではマルチエージェントの正答率が平均0.042低かった</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">arXiv の論文（11月13日投稿、16日掲載）は、マルチエージェント LLM の実証評価9件・516構成を、6次元の資源ベクトルと4段階のベースラインで整理し直した。サンプル数を揃えた比較と資源を揃えた比較では、マルチエージェントの正答率は平均で0.042低かった。比較可能な対比の74%で、ベースラインと同等かそれ以下だった。貪欲な1回の実行と比べても差は全体でマイナスで、最大の研究を除くとほぼゼロになる。著者は、全エージェントが同じ証拠を見ている限り、やり取りは新しい情報を足さないと論じる。利得が出る条件として、証拠の分割、外部による検証、モデル間で誤り方が異なることを挙げている。</p>
+      <ul class="sowhat"><li><b>DEV</b>エージェントを増やす前に、同じトークン量で「1体に複数回答えさせる」「考える量を増やす」構成と比べる。役割分担が効くのは、見る情報を分けるか、外部の検証を挟む場合だ。</li><li><b>PM</b>マルチエージェント構成の提案を受けたら、同じ予算の単純な構成との比較結果を求める。費用が数倍になる設計の根拠を確かめる材料になる。</li></ul>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.17610" target="_blank" rel="noopener">arXiv 2611.17610「More Agents, More Samples, or More Thinking? Untangling Coordination, Ensembling, and Test-Time Compute in Multi-Agent LLMs」（2026-11-16 掲載）</a></div>
+      <div class="note">単著の査読前論文で、所属の記載はない。本簡報は要旨の範囲だけを確認した。対象のモデル名と評価課題の名前は要旨にない。既存研究の再分析であり、新しい実験ではない。査読者向けのチェックリストと集計ツールが公開されている。</div>
+      <div class="comment"><b>コメント：</b>昨日の委任 Skill や今日のレビュー Skill が効くのは「別の証拠で確かめる」からで、この論文の条件と合う。数を増やすこと自体は効かない。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>足立区、議会答弁と「区民の声」への対応で AI エージェントを実証——担当部署の振り分けと案の作成を分け、自信がなければ「分かりません」と答えさせる</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">ITmedia AI＋は11月16日、足立区の CDO 補佐官が Google Cloud Japan の10月のイベントで語った内容を掲載した。議会答弁では、議員の質問を入力すると、振り分け役のエージェントが議事録と各部署の業務表から担当部署を選び、作成役が過去の答弁を参照して案を作る。職員は自部署分の質問と案、根拠資料、決裁の進み具合を1つの画面で確認する（富士通Japan と実証）。区民の声では、投書から氏名や住所を除いて AI に渡し、要約・振り分け・回答案の作成を分担させ、過去の回答との矛盾も点検する。参照させる資料は最新のものに絞り、AI の役割はたたき台までとして、職員の確認を必須にしている。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>公共案件で引用できる構成。個人情報の除去、振り分け、案の作成、矛盾の点検、人の確認の順に並ぶ。行政文書は改定や廃止が多く、古い資料の参照が誤答につながるという指摘は、民間の規程やマニュアルの検索にも当てはまる。</li><li><b>PM</b>RAG に入れる文書の鮮度管理（改定・廃止の反映）を、構築後の運用作業として計画に入れる。</li></ul>
+      <div class="source">出典：<a href="https://www.itmedia.co.jp/aiplus/article/2611/16/2000003196/" target="_blank" rel="noopener">ITmedia AI＋「自信がなければ『分かりません』──足立区が議会答弁AIにかけた“ガード”」（2026-11-16）</a></div>
+      <div class="note">取材記事で、足立区の発表文ではない。時間削減や精度の数字は記事にない。「分かりません」と答えさせる仕組みの実装方法も書かれていない。区民の声への対応には Gemini Enterprise（現 Gemini for Business）を使い、庁内では Gemini Notebook で作った40の bot が動いているという。</div>
+      <div class="comment"><b>コメント：</b>効果の数字がない点は割り引くべきだが、「期限を1つ間違えれば区民の生活に響く」という前提から設計を組んだ順序は、どの業種でも手本になる。</div>
+    </div>
+
+    <div class="section-title">短信</div>
+    <div class="brief"><ul>
+      <li>Claude Code の Edit ツールが、タブでインデントされたファイル（Go、PHP、Makefile など）で「String to replace not found in file」を繰り返す既知の不具合を、Qiita の記事（11月16日）が整理した。公式リポジトリの issue #11447 と #26996 は未解決のまま。CLAUDE.md に空白の扱いを書く、失敗したら sed に逃げず止まるよう指示する、といった回避策は報告ベースで、著者自身は再現も検証もしていない。<a href="https://qiita.com/homhom44/items/8f7e6e4b04257ea048cc" target="_blank" rel="noopener">記事</a></li>
+    </ul></div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>新規：Hugging Face Inference Providers の OpenRouter 経由化、リクルートの AI レビュー Skill、テストの実効性検査（1行壊して確かめる）、クレディセゾンの ChatGPT Enterprise 全社導入、マルチエージェントの同計算量比較、足立区の議会答弁 AI。未検証のまま記録：Qwen4-Max、ChatGPT for Healthcare のコンピューター操作エージェント。</li>
+      <li>継続・昇格：「AWS Emulator」は InfoQ が取り上げ、独立した出典が2つになったため関心対象に昇格。「AI 生成 PR の人間レビュー枠組み」は言及17回、「Agent Skills（SKILL.md）」は7回に。GitHub Trending では alibaba/open-code-review、backnotprop/plannotator、NVIDIA/SkillEvaluator が前日に続いて掲載された。</li>
+      <li>退出：30日間言及のなかった3件（Cursor クラウドエージェント Canvas／Environments API、Anthropic×METR 常駐評価、CodeHealth とレビュートークン費用）を規則どおり退出とした。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
