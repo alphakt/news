@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月18日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月18日（水）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は8件。Microsoft Ignite の開幕と OpenAI の新モデル発表が重なったため、上限の件数まで載せます。対応が要るものは、GPT-6.2 Astra の API 提供と、Gemini アプリの会話保存期間の変更の2件。見送ったもの：エージェント指示ファイル（AGENTS.md など）のレビューを調べた arXiv 2611.18582（掲載は11月17日だが、初回投稿は7月31日で、日付の規則により対象外）、OpenAI の ChatGPT for Sales と Astra for Law（openai.com が今日も 403）、Gemini の Tasks の無料化（消費者向け機能）、Ignite のデータベース関連の発表（AI の動向から外れる）、Google Apps Script と Gemini の連携の一般提供、Windows 11 がコーディングエージェントの利用状況を収集しているという個人ブログ（どちらも一次情報を確認していない）、NVIDIA の CEO 交代と Anthropic の上場関連（可用性・価格への影響が未確定）。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>OpenAI、最上位モデル「GPT-6.2 Astra」を API で提供——入力100万トークン8ドル・出力40ドル、入力が27.2万トークンを超えると単価が上がる</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">OpenAI は日本時間11月18日未明に GPT-6.2 Astra と Sol を発表し、開発者向け文書に Astra のモデルページを載せた。モデル ID は <code>gpt-6.2-astra</code>。コンテキストは105万トークン（入力は最大92.2万、出力は最大12.8万）、知識の締め切りは2026年5月18日。料金は100万トークンあたり入力8ドル、キャッシュ済み入力0.40ドル、出力40ドル。入力が27.2万トークンを超えるリクエストは、入力とキャッシュの単価が2倍、出力が1.5倍になる。Chat Completions、Responses、Batch で使え、コンピューター操作、MCP、スキル、ツール検索などに対応する。</p>
+      <ul class="sowhat"><li><b>DEV</b>推論の強さに <code>none</code> を指定したリクエストは API が拒否する。推論なしで呼んでいる既存コードは、モデル ID を差し替えるだけでは動かない。</li><li><b>PM</b>長い入力を前提にしたエージェントは、27.2万トークンの境界をまたぐと費用が跳ねる。見積もりは入力長の分布を見て立てる。</li><li><b>CONSULT</b>顧客から「新モデルに替えるべきか」と聞かれる。価格と仕様は答えられるが、性能の比較は自社の評価で確かめてから伝える。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>手元の評価セットを <code>gpt-6.2-astra</code> で流し、現行モデルと品質・費用を比べる。あわせて、本番リクエストのうち入力が27.2万トークンを超える割合を調べる。</div>
+      <div class="source">出典：<a href="https://developers.openai.com/api/docs/models/gpt-6.2-astra" target="_blank" rel="noopener">OpenAI Developers「GPT-6.2 Astra」モデルページ（2026-11-18 確認）</a></div>
+      <div class="note">発表記事（openai.com）は今日も 403 で取得できなかった。Sol の仕様と価格、ベンチマーク、ChatGPT 側の提供範囲は確認していない。発表時刻は OpenAI News のフィードによる。料金の補足：キャッシュ書き込みは10ドル（保持30分）、Batch は標準の50%、Fast モードは2倍、Ultrafast は2027年2月28日まで3倍、3月1日から6倍。</div>
+      <div class="comment"><b>コメント：</b>発表の日に確認できたのは仕様と価格まで。乗り換えの判断は、自分たちの課題で測った結果を待ってからでよい。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Google、Gemini アプリで履歴をオフにしても会話を約2カ月保存へ——履歴の保存と AI 学習への利用は別々の設定になる</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">Google は11月16日、Gemini アプリの設定変更を発表した。会話の履歴を残したまま、生成 AI モデルの学習への利用だけを断れるようになる。一方、新しい「履歴」設定をオフにしても、以後の会話は約2カ月保存される。保存した会話は、応答、フィードバックの処理、Google・利用者・公衆の保護に使うという。理由として Google は、AI が高度になるのに合わせた安全・セキュリティ対策を挙げた。今後数週間で全世界に展開する。TechCrunch（11月17日）によれば、これまでの保存期間は72時間で、一時チャットも同じ扱いになる。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>「履歴オフなら残らない」を前提に、個人アカウントでの Gemini 利用を認めていた顧客は、前提が変わる。利用ルールの見直しを提案できる。</li><li><b>PM</b>プロジェクトの AI 利用ルールや教育資料で、履歴オフや一時チャットを安全策として挙げている箇所は書き直しが要る。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>社内と顧客の生成 AI 利用ガイドラインで「履歴オフ」「一時チャット」に触れている箇所を探し、保存期間の記述を改める。業務データは契約のある法人向けプランだけで扱う、という原則もあわせて周知し直す。</div>
+      <div class="source">出典：<a href="https://blog.google/innovation-and-ai/products/gemini-app/updated-controls/" target="_blank" rel="noopener">Google The Keyword「Gemini アプリの設定変更」（2026-11-16）</a><a href="https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/" target="_blank" rel="noopener">TechCrunch（2026-11-17）</a></div>
+      <div class="note">Google の発表は、Workspace や教育機関のアカウントが対象かどうかを書いていない。TechCrunch の記事も個人向けアプリだけを扱っている。従来の72時間という数字は、TechCrunch が11月12日時点のプライバシーハブの保存版から引いたもの。同記事によれば、一時チャットは学習に使われず、従来の「アクティビティの保存」をオフにしていた利用者は新しい2つの設定がどちらも既定でオフになる。</div>
+      <div class="comment"><b>コメント：</b>学習に使われないことと、保存されないことは別の話。利用ルールでは、この2つを分けて書いておきたい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Microsoft、自社開発のコーディング用モデル「MAI Code 2」「MAI Code 2 Flash」を Ignite で発表——性能は GPT 6.1 Sol の98%、価格は40%としている</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Microsoft は日本時間11月18日未明に開幕した Ignite 2026 で、自社開発のコーディング用モデルを2つ発表した。Publickey によれば、上位の MAI Code 2 は、GitHub Copilot で見られる企業向けタスクの4ベンチマーク平均で GPT 6.1 Sol の98%、Claude Opus 5.5 の96%の性能を出し、価格は GPT 6.1 Sol の40%、Claude Opus 5.5 の5%程度という。MAI Code 2 Flash はコードの解説や局所的な編集向けで、GPT-6 Luna や Claude Haiku 5.5 と同等の性能を、それぞれの65%、20%程度の価格で出すとしている。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>Copilot を使う顧客から、モデルの切り替えで費用が下がるかを聞かれる。提供形態と開始時期が出てから答える。</li><li><b>PM</b>コーディングエージェントの費用は、モデルの選び方で桁が変わりうる。作業の難しさでモデルを分ける運用を検討する材料になる。</li><li><b>DEV</b>比較は Microsoft が選んだベンチマークによるもの。自分たちのリポジトリで試すまで、既定モデルは変えない。</li></ul>
+      <div class="source">出典：<a href="https://www.publickey1.jp/blog/26/aimai_code_2mai_code_2_flash.html" target="_blank" rel="noopener">Publickey「マイクロソフト、コーディング用AIモデルとして高性能かつ低価格『MAI Code 2』『MAI Code 2 Flash』発表」（2026-11-18）</a></div>
+      <div class="note">数値はいずれも Microsoft の発表による。Publickey の記事には、提供形態（GitHub Copilot、Foundry など）と提供開始時期の記載がない。Microsoft の発表記事そのものは、本簡報では取得していない。比較相手が同日発表の GPT-6.2 ではなく GPT 6.1 Sol である点にも注意。</div>
+      <div class="comment"><b>コメント：</b>モデルの提供元が、自社製の安いモデルを同じ製品に並べ始めた。選ぶ側には、作業ごとに費用と品質を測る仕組みが要る。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>GitHub と Microsoft、AI が見つけた脆弱性の候補9,791件を99件の非公開報告に絞り、OSS 6プロジェクトで55件が修正済み——人手の確認に研究者7人が1プロジェクト約2日</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">GitHub は11月17日、Microsoft と行った試行の結果を公表した。対象は AutoGPT、Caddy、Express、FastMCP、ImageMagick、Netty の6プロジェクト。Microsoft の Codename MDASH が9,791件の候補を挙げ、GitHub Security Lab の選別エージェントが重複と無効なものを除き、残りを Microsoft の研究者7人が1プロジェクトあたり約2日かけて手で確かめた。メンテナーに届いたのは99件で、候補のおよそ100件に1件。再現手順と修正案を付け、非公開の脆弱性報告で送った。11月15日時点で55件が修正され、うち14件はリリース済み。</p>
+      <ul class="sowhat"><li><b>DEV</b>AI で見つけた脆弱性を OSS に報告するなら、全件を自分で確かめ、非公開で、修正案を付けて送る。記事が勧める手順はこの3つ。</li><li><b>PM</b>AI による検出は、候補の99%が選別で落ちる前提で工数を組む。律速は人手の確認で、記事も「まだ規模を広げられない」と認めている。</li><li><b>CONSULT</b>AI による脆弱性診断を提案するときは、検出件数ではなく、確認済みの報告数と修正数を成果指標に置く。</li></ul>
+      <div class="source">出典：<a href="https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/" target="_blank" rel="noopener">GitHub Blog「Maintainers don’t need more AI bug reports. They need fixes.」（2026-11-17）</a></div>
+      <div class="note">誤検知率そのものは記事に書かれていない。Caddy は22件の報告すべてを1週間以内に直した。試行に使ったのは以前の MAI Cyber モデルで、Microsoft は後継の MAI Cyber 2 を発表済み。GitHub Secure Open Source Fund の修了プロジェクトには、確認済みの AI セキュリティスキャンを提供するという。</div>
+      <div class="comment"><b>コメント：</b>100件に1件という絞り込みの比率が、数字として出たことに価値がある。AI の検出結果をそのまま送ることが、なぜ迷惑になるのかがよく分かる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>LayerX、アラート巡回を社内エージェント「haro」に任せた約3週間半を公開——同じ学びが2回出たらルールに格上げし、調査271件から修正 PR 29本</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">LayerX は11月17日、バクラク勤怠のアラート対応を社内のバックグラウンドエージェント haro に任せた事例を公開した。平日9〜21時に1時間おきに動き、Slack の通知を Wiki の「既知の事象」と照らして振り分け、Datadog とコードで原因を調べ、直し方が明確なら draft PR を作る。merge はせず、本番データも書き換えない。つまずきは Wiki に1行ずつ残し、同じ学びが2回以上出ると「有効なルール」に格上げして次回から従う。約3週間半で調査ページ271件、アラート起点の修正 PR 29本（うち18本が merge）、ノイズ解消の PR 17本（うち9本が merge）。</p>
+      <ul class="sowhat"><li><b>DEV</b>エージェントに渡す知識を「既知の事象」と「手順・改善記録」の2ページに分け、格上げの条件を決めておく作りは、そのまま真似できる。</li><li><b>PM</b>エージェントが自分で変えてよい範囲（調査の進め方、文面）と、人の承認が要る範囲（監視対象、通知先、担当範囲）を先に線引きしている。</li></ul>
+      <div class="source">出典：<a href="https://tech.layerx.co.jp/entry/haro-alert-loop" target="_blank" rel="noopener">LayerX エンジニアブログ「内製 Background Agent “haro”に アラート対応を任せたら 回すたびに賢くなっていった」（2026-11-17）</a></div>
+      <div class="note">失敗も書かれている。調べ終えた事象を次の回でゼロから調べ直す、同じ修正 PR を重ねて作る、ログ検索の方法の違いで既知のエラーを「初めて出たエラー」と誤判定する、など。PR の重複には、作成前に open の PR と直近14日に close された PR を確かめる手順で対処した。使っているモデルは記事に書かれていない。</div>
+      <div class="comment"><b>コメント：</b>「回すたびに賢くなる」の中身は、モデルの学習ではなく、Wiki の書き方と格上げの規則。失敗例まで書いてあるので、設計の参考にしやすい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>AI 支援で書かれた PR はレビュアーの負担を増やし、AI レビューを使っても「追いつけなさ」は減らない——大手ソフトウェア企業の2,590人調査</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">11月17日に arXiv に掲載された論文（投稿は11月13日）が、AI の利用が行き渡った大手多国籍ソフトウェア企業でのコードレビューを、24件のインタビューと2,590人の調査で調べた。AI 支援でコードを書くと、レビュアーの負担が増える。要因は、作者が自分の変更に責任を持たないことと、PR の数と大きさ。調査では、レビューに AI を使っていることと、PR の量に追いつく難しさの軽さとの間に相関がなかった。開発者が役に立つと答えた対策は、組織がレビューを支えて資源を割くこと、レビューの負担を上流に押し戻すこと、レビュアーの注意を重要な点に絞ることの3つ。</p>
+      <ul class="sowhat"><li><b>PM</b>AI レビューツールを入れるだけでは、レビュー待ちは解消しない。レビューの時間を計画に入れ、PR の大きさに上限を設ける。</li><li><b>DEV</b>作者の側で、PR を出す前に自分で読み、小さく分ける。レビュアーには設計と意図の確認に集中してもらう。</li></ul>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.18939" target="_blank" rel="noopener">arXiv 2611.18939「Level Up! AI-Driven Challenges and Adaptations to Code Review Practices」（2026-11-17 掲載）</a></div>
+      <div class="note">1社での調査であり、ほかの組織にそのまま当てはまるとは限らない。本簡報は要旨を確認したもので、本文の数値表までは読んでいない。</div>
+      <div class="comment"><b>コメント：</b>「人が必ず見る」か「AI に任せて人は見ない」かの二択は、どちらも経験則にすぎない、という論文の指摘は、社内の議論の出発点になる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>エージェントの「人による承認」は、拒否したのに実行される例と、承認したのに実行されない例の両方がある——n8n の公開ワークフロー59件中4件が拒否後も実行</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">11月17日に arXiv に掲載された論文（投稿は11月14日）が、LLM エージェントの承認の仕組みを、モデル、ハーネス、ワークフローの3層で検証した。前提は、承認が統制として働くには「拒否した作業が止まる」と「承認した作業が完了する」の両方が要る、というもの。3モデルの検証では、300件の承認のうち7件が未完了のまま残った。拒否した操作が実行された例はなかった。CrewAI で状態を復元する場面では、672件の承認のうち336件が落ちた。n8n の公開ワークフローでは、比べられる59件のうち4件が、拒否のあとも実行された。論文は、この2つの性質を別々に確かめられる監査の取り決めを提案する。</p>
+      <ul class="sowhat"><li><b>PM</b>承認フローを置いたことは、統制が効いていることの証拠にならない。拒否後の停止と承認後の完了を、受け入れテストの項目に入れる。</li><li><b>DEV</b>承認を挟んだあとの再開や並列分岐で、承認済みの処理が落ちることがある。再開の経路と分岐を、それぞれテストする。</li></ul>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.19237" target="_blank" rel="noopener">arXiv 2611.19237「Auditable Authorization for LLM Agents: Empirical Evidence Across Model, Harness, and Workflow Layers」（2026-11-17 掲載）</a></div>
+      <div class="note">6ページの短い論文で、本簡報は要旨を確認したもの。検証の範囲は3モデル、5種類のプロンプト、4種類の承認設計、公開ワークフロー100件。</div>
+      <div class="comment"><b>コメント：</b>承認ボタンがあることと、承認が効いていることは別。監査で聞かれるのは後者である。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>MCP のツールを「コードで呼ぶ」方式はトークンを70〜90%減らし、手前に決定モデルを置いても上積みは確認できず——事前登録した検証</h2>
+      <div class="tags"><span class="tag dev">DEV</span></div>
+      <p class="detail">11月17日に arXiv に掲載された論文（投稿は11月14日）が、MCP ゲートウェイで大量のツールを扱う2つの方法を比べた。1つは、エージェントがツールのスタブに対してスクリプトを書く「コードモード」。もう1つは、安いモデルが使うツールを先に絞る決定層。12サーバー、最大1,958個の紛らわしいツール、オープンウェイトの3モデルで、事前登録した評価を行った。コードモードは、素の MCP に比べてトークンを70〜90%減らし、成功率も上げた。最も効いたのは、スタブに戻り値の形を書くことで、弱いモデルでは成功率が最大39.5ポイント変わった。コードモードの前に決定層を足しても、有意な改善は確認できなかった。</p>
+      <ul class="sowhat"><li><b>DEV</b>ツールが多いエージェントでは、選別用のモデルを足す前に、コードモードと、戻り値の形を書いたスタブを試す。</li></ul>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.19123" target="_blank" rel="noopener">arXiv 2611.19123「Beyond Plain MCP: Do Decision Models and Code Mode Make Tool Use Cheaper and Faster?」（2026-11-17 掲載）</a></div>
+      <div class="note">著者1名の論文で、対象はオープンウェイトの3モデル（Qwen、Gemma、Nemotron）だけ。商用モデルで同じ結果になるかは分からない。本簡報は要旨を確認したもの。評価の仕組み、ツール選別用に調整した4B のモデル、全実行記録が公開されている。</div>
+      <div class="comment"><b>コメント：</b>決定モデルは今年の流行だが、「足せば良くなる」とは限らないことを示す、数少ない対照実験。</div>
+    </div>
+
+    <div class="section-title">短信</div>
+    <div class="brief"><ul>
+      <li>GitHub が、エージェントのセッションを複数の端末から続けるための公開仕様「Agent Host Protocol」の設計を解説した（11月17日）。状態はサーバーが持ち、クライアントは操作を送る。VS Code、Copilot アプリ、GitHub のクラウド側ホストが採用し、Rust、TypeScript、Kotlin、Swift、.NET、Go のクライアントライブラリがある。<a href="https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/" target="_blank" rel="noopener">記事</a></li>
+      <li>Simon Willison 氏が、エージェント本体は外に置き、コードの実行だけを隔離環境に送る「外部サンドボックス」を紹介した（11月17日）。v86、Apple のコンテナ、QEMU を使う3つの実装が同じ localhost API を持ち、接続先の許可リストと、エージェントに秘密情報を持たせない認証の差し替えを備える。<a href="https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/" target="_blank" rel="noopener">記事</a></li>
+      <li>Thoughtworks のブログ（11月17日、著者個人の見解）が、エージェント AI の試行が本番に広がらない原因はモデルではなく、密結合のレガシーシステムとデータの準備不足だと論じた。効果の数値は同社の主張で、第三者の検証はない。<a href="https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/why-agentic-ai-pilots-dont-scale" target="_blank" rel="noopener">記事</a></li>
+    </ul></div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>新規：GPT-6.2 Astra／Sol、MAI Code 2／Flash、Codename MDASH（AI の検出結果を確認済みの修正案にする試行）、Gemini アプリの会話保存期間、LayerX の haro、承認の仕組みの監査（拒否後の停止と承認後の完了）、Agent Host Protocol、外部サンドボックス。</li>
+      <li>継続・昇格：コードモードは、Claude Code の文書（11月14日）に続き、独立した検証論文が出たため関心対象に昇格。「AI 生成 PR の人間レビュー枠組み」は言及18回、決定モデル（Jev）は16回に。haro の事例は「LLM が維持する wiki」の実践例として記録した。GitHub Trending では alibaba/open-code-review、Tencent/LoopForge、backnotprop/plannotator が引き続き掲載され、スキル関連のリポジトリが4つ並んだ。</li>
+      <li>退出：30日間言及のなかった2件（CERT-In の AI エージェント勧告、Replit の既定モデル切替）を規則どおり退出とした。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

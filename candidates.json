@@ -6,8 +6,8 @@
    "kind": "agent-infra",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-14",
-   "mentions": 15,
+   "last_seen": "2026-11-18",
+   "mentions": 16,
    "sources": [
     "https://arxiv.org/abs/2610.02267",
     "https://developers.openai.com/api/docs/guides/decisions",
@@ -23,7 +23,8 @@
     "https://huggingface.co/blog/decision",
     "https://martinfowler.com/articles/durable-execution-agents.html",
     "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-    "https://latent.space/p/jev-revolution/"
+    "https://latent.space/p/jev-revolution/",
+    "https://arxiv.org/abs/2611.19123"
    ],
    "note": "テキストを生成せず型付きの判断だけ返す決定モデル。エージェントの小さな判断（ツール選択、安全性、停止判断）を主モデルから分離する発想。対照: 主モデル自前判断、他の router/guard モデル"
   },
@@ -54,13 +55,14 @@
    "kind": "knowledge",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-09",
-   "mentions": 3,
+   "last_seen": "2026-11-18",
+   "mentions": 4,
    "sources": [
     "https://cognition.com/agent-memory-repo",
     "https://github.com/AgentMemoryRepo/agentmemoryrepo",
     "https://www.anthropic.com/research/components-of-agent-memory",
-    "https://www.lorekit.io/blog/open-agent-memory-format"
+    "https://www.lorekit.io/blog/open-agent-memory-format",
+    "https://tech.layerx.co.jp/entry/haro-alert-loop"
    ],
    "note": "LLM が一次資料から wiki を継続的に編集・維持する知識蓄積の方式。対照: Obsidian+agent、各社 memory 機能"
   },
@@ -69,8 +71,8 @@
    "kind": "context-engineering",
    "status": "candidate",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-15",
-   "mentions": 11,
+   "last_seen": "2026-11-18",
+   "mentions": 12,
    "sources": [
     "https://zenn.dev/fukorohouse/articles/e2659fcd7c530f",
     "https://arxiv.org/abs/2610.08875",
@@ -84,15 +86,15 @@
     "https://arxiv.org/abs/2611.15436",
     "https://zenn.dev/tsugu_sukima/articles/2b19ac59da1b2a"
    ],
-   "note": ".md でエージェントの振る舞いを規定する手法。効果の実証研究・ベストプラクティスを追う"
+   "note": ".md でエージェントの振る舞いを規定する手法。効果の実証研究・ベストプラクティスを追う / 2026-11-18: arXiv 2611.18582（指示ファイルのレビュー研究）は初回投稿 7/31 のため収録見送り"
   },
   {
    "name": "AI 生成 PR の人間レビュー枠組み",
    "kind": "process",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-17",
-   "mentions": 17,
+   "last_seen": "2026-11-18",
+   "mentions": 18,
    "sources": [
     "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
     "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
@@ -109,7 +111,8 @@
     "https://www.slopmanifesto.com/",
     "https://www.itmedia.co.jp/business/articles/2611/16/news031.html",
     "https://blog.recruit.co.jp/data/articles/ai-review-skills/",
-    "https://zenn.dev/t_azk/articles/ai-tests-passed-24-of-24"
+    "https://zenn.dev/t_azk/articles/ai-tests-passed-24-of-24",
+    "https://arxiv.org/abs/2611.18939"
    ],
    "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
   },
@@ -680,7 +683,7 @@
   {
    "name": "CERT-In AIエージェント勧告",
    "kind": "security",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-18",
    "last_seen": "2026-10-18",
    "mentions": 1,
@@ -692,7 +695,7 @@
   {
    "name": "Replit 既定モデル切替（OpenAI）",
    "kind": "vendor-availability",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-18",
    "last_seen": "2026-10-18",
    "mentions": 1,
@@ -901,8 +904,8 @@
    "kind": "standard",
    "status": "watching",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-17",
-   "mentions": 7,
+   "last_seen": "2026-11-18",
+   "mentions": 8,
    "sources": [
     "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
     "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
@@ -1838,14 +1841,15 @@
   {
    "name": "Claude Code Code Mode",
    "kind": "agent-infra",
-   "status": "candidate",
+   "status": "watching",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "mentions": 1,
+   "last_seen": "2026-11-18",
+   "mentions": 2,
    "sources": [
-    "https://code.claude.com/docs/en/code-mode"
+    "https://code.claude.com/docs/en/code-mode",
+    "https://arxiv.org/abs/2611.19123"
    ],
-   "note": "Claude が JavaScript を書いて複数ツール呼び出しを1ステップで実行する実験機能（v2.1.323）。auto モードの審査単位がコード全体になる。対照: 通常のツール呼び出し、MCP の code execution"
+   "note": "Claude が JavaScript を書いて複数ツール呼び出しを1ステップで実行する実験機能（v2.1.323）。auto モードの審査単位がコード全体になる。対照: 通常のツール呼び出し、MCP の code execution / 2026-11-18: 独立した検証論文（arXiv 2611.19123、コードモードでトークン70〜90%減、決定層の上積みは未確認）により昇格"
   },
   {
    "name": "SpecBench (Thoughtworks)",
@@ -1954,8 +1958,8 @@
    "kind": "code-review",
    "status": "candidate",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-17",
-   "mentions": 4,
+   "last_seen": "2026-11-18",
+   "mentions": 5,
    "sources": [
     "https://github.com/alibaba/open-code-review"
    ],
@@ -1966,8 +1970,8 @@
    "kind": "context-engineering",
    "status": "candidate",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-16",
-   "mentions": 3,
+   "last_seen": "2026-11-18",
+   "mentions": 4,
    "sources": [
     "https://github.com/GoogleChrome/modern-web-guidance-src"
    ],
@@ -2051,8 +2055,8 @@
    "kind": "dev-tool",
    "status": "candidate",
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-17",
-   "mentions": 3,
+   "last_seen": "2026-11-18",
+   "mentions": 4,
    "sources": [
     "https://github.com/backnotprop/plannotator"
    ],
@@ -2063,8 +2067,8 @@
    "kind": "dev-tool",
    "status": "candidate",
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-16",
-   "mentions": 2,
+   "last_seen": "2026-11-18",
+   "mentions": 3,
    "sources": [
     "https://github.com/Tencent/LoopForge"
    ],
@@ -2231,8 +2235,8 @@
    "kind": "model",
    "status": "candidate",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-17",
-   "mentions": 1,
+   "last_seen": "2026-11-18",
+   "mentions": 2,
    "sources": [],
    "note": "未検証（qwen.ai/blog?id=qwen4-max は本文を取得できず、2026-11-17）。HN ベスト掲載"
   },
@@ -2245,6 +2249,102 @@
    "mentions": 1,
    "sources": [],
    "note": "未検証（openai.com が 2026-11-17 に 403）。医療向けプラグインも追加と feed 要約"
+  },
+  {
+   "name": "GPT-6.2 Astra / Sol",
+   "kind": "model",
+   "status": "candidate",
+   "first_seen": "2026-11-18",
+   "last_seen": "2026-11-18",
+   "mentions": 1,
+   "sources": [
+    "https://developers.openai.com/api/docs/models/gpt-6.2-astra"
+   ],
+   "note": "Astra: gpt-6.2-astra、入力$8／出力$40（100万トークン）、27.2万トークン超で単価上昇。Sol と発表記事は未検証（openai.com 403）"
+  },
+  {
+   "name": "MAI Code 2 / MAI Code 2 Flash (Microsoft)",
+   "kind": "model",
+   "status": "candidate",
+   "first_seen": "2026-11-18",
+   "last_seen": "2026-11-18",
+   "mentions": 1,
+   "sources": [
+    "https://www.publickey1.jp/blog/26/aimai_code_2mai_code_2_flash.html"
+   ],
+   "note": "Ignite 2026 発表の自社製コーディングモデル。提供形態・開始時期は未確認。対照: GPT 6.1 Sol、Claude Opus 5.5"
+  },
+  {
+   "name": "Codename MDASH（AI 検出を確認済み修正案に）",
+   "kind": "security",
+   "status": "candidate",
+   "first_seen": "2026-11-18",
+   "last_seen": "2026-11-18",
+   "mentions": 1,
+   "sources": [
+    "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/"
+   ],
+   "note": "GitHub×Microsoft の試行。候補9,791件→報告99件→修正55件。MAI Cyber モデルを使用"
+  },
+  {
+   "name": "Gemini アプリ 履歴オフ時の保存期間（約2カ月）",
+   "kind": "availability",
+   "status": "candidate",
+   "first_seen": "2026-11-18",
+   "last_seen": "2026-11-18",
+   "mentions": 1,
+   "sources": [
+    "https://blog.google/innovation-and-ai/products/gemini-app/updated-controls/"
+   ],
+   "note": "72時間→約2カ月。履歴と学習利用の設定を分離。Workspace への適用は未確認"
+  },
+  {
+   "name": "LayerX haro（アラート巡回エージェント）",
+   "kind": "case-jp",
+   "status": "candidate",
+   "first_seen": "2026-11-18",
+   "last_seen": "2026-11-18",
+   "mentions": 1,
+   "sources": [
+    "https://tech.layerx.co.jp/entry/haro-alert-loop"
+   ],
+   "note": "社内 Background Agent。Wiki の改善記録を2回でルールに格上げ。調査271件、修正 PR 29本"
+  },
+  {
+   "name": "承認ゲートの監査（拒否後の停止・承認後の完了）",
+   "kind": "agent-governance",
+   "status": "candidate",
+   "first_seen": "2026-11-18",
+   "last_seen": "2026-11-18",
+   "mentions": 1,
+   "sources": [
+    "https://arxiv.org/abs/2611.19237"
+   ],
+   "note": "arXiv 2611.19237。n8n 59件中4件が拒否後も実行、CrewAI 復元で承認336/672が欠落"
+  },
+  {
+   "name": "Agent Host Protocol (GitHub / VS Code)",
+   "kind": "standard",
+   "status": "candidate",
+   "first_seen": "2026-11-18",
+   "last_seen": "2026-11-18",
+   "mentions": 1,
+   "sources": [
+    "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/"
+   ],
+   "note": "エージェントのセッションを複数クライアントで共有する公開仕様。microsoft/agent-host-protocol"
+  },
+  {
+   "name": "外部サンドボックス（external sandboxes）",
+   "kind": "agent-security",
+   "status": "candidate",
+   "first_seen": "2026-11-18",
+   "last_seen": "2026-11-18",
+   "mentions": 1,
+   "sources": [
+    "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/"
+   ],
+   "note": "エージェントは外、コード実行だけ隔離。v86／Apple Containers／QEMU の3実装。対照: Docker Sandboxes、AWS Nitro Sandboxes"
   }
  ]
 }

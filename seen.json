@@ -940,6 +940,66 @@
    "date": "2026-11-17",
    "key": "qiita-claude-code-edit-tab-indent-issue",
    "url": "https://qiita.com/homhom44/items/8f7e6e4b04257ea048cc"
+  },
+  {
+   "date": "2026-11-18",
+   "key": "openai-gpt-6-2-astra-sol",
+   "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra"
+  },
+  {
+   "date": "2026-11-18",
+   "key": "google-gemini-app-history-off-two-month-retention",
+   "url": "https://blog.google/innovation-and-ai/products/gemini-app/updated-controls/"
+  },
+  {
+   "date": "2026-11-18",
+   "key": "microsoft-mai-code-2-flash",
+   "url": "https://www.publickey1.jp/blog/26/aimai_code_2mai_code_2_flash.html"
+  },
+  {
+   "date": "2026-11-18",
+   "key": "github-microsoft-mdash-pilot-fixes",
+   "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/"
+  },
+  {
+   "date": "2026-11-18",
+   "key": "layerx-haro-alert-loop",
+   "url": "https://tech.layerx.co.jp/entry/haro-alert-loop"
+  },
+  {
+   "date": "2026-11-18",
+   "key": "arxiv-level-up-code-review-practices",
+   "url": "https://arxiv.org/abs/2611.18939"
+  },
+  {
+   "date": "2026-11-18",
+   "key": "arxiv-auditable-authorization-llm-agents",
+   "url": "https://arxiv.org/abs/2611.19237"
+  },
+  {
+   "date": "2026-11-18",
+   "key": "arxiv-beyond-plain-mcp-code-mode-decision",
+   "url": "https://arxiv.org/abs/2611.19123"
+  },
+  {
+   "date": "2026-11-18",
+   "key": "github-agent-host-protocol",
+   "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/"
+  },
+  {
+   "date": "2026-11-18",
+   "key": "willison-external-sandboxes",
+   "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/"
+  },
+  {
+   "date": "2026-11-18",
+   "key": "thoughtworks-why-agentic-pilots-dont-scale",
+   "url": "https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/why-agentic-ai-pilots-dont-scale"
+  },
+  {
+   "date": "2026-11-18",
+   "key": "arxiv-agent-instruction-file-reviews-out-of-window",
+   "url": "https://arxiv.org/abs/2611.18582"
   }
  ]
 }
