@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月19日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月19日（木）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は7件。対応が要るのは、AI が作った社内アプリの実行基盤「Copilot Managed Runtime」の一般提供の1件。ほかは、コンテキストの足し引きと費用の関係、エージェント操作の「元に戻せるか」の分類、国内の監査法人と JA 共済連の事例など。見送ったもの：OpenAI の「Inside the Codex sandbox」（openai.com が今日も 403）、Kiro の100万回評価の教訓（AWS ブログの本文を取得できず）、コーディングエージェントに予算を伝える効果の実験（arXiv 2611.21614、初回投稿が8月で日付の規則により対象外）、エージェントのスキルの効果を測る SkillBuffBench（結果が未掲載）、AI エージェント利用者を補償対象外とする米銀の動き（一次情報を確認していない）、Notion AI のチャット流出の日本での説明（候補プールで追跡中）、Anthropic の上場価格（可用性・価格に影響しない）。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Microsoft、AI が作った社内アプリを Microsoft 365 のテナント内で動かす「Copilot Managed Runtime」を一般提供——Entra 認証、ポリシー、監査ログ、管理センターでのアプリ一覧つき</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Microsoft は11月17日（日本時間18日）の Ignite で、Copilot Managed Runtime の一般提供を発表した。Copilot Code、Copilot Cowork、Copilot Studio、GitHub Copilot、VS Code、他社ツールで作って公開したアプリを、Microsoft が運用する環境で動かす。ホスティングやスケーリングは Microsoft が受け持つ。Entra でのサインインと共有、IT 部門が決めた範囲でのデータ接続、Git で管理された編集可能なコード、Microsoft 365 管理センターでのアプリ一覧と監視を備える。テナントへの展開は始まったところ。プレビューとして、Fabric による永続ストレージ、Copilot Studio の CLI によるローカル開発、コードで書いたエージェントのホスト（早期アクセス、申し込み制）も発表した。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>「現場が AI で作ったアプリをどこで動かすか」に、M365 を使う顧客向けの既定の答えが出た。野良アプリ対策の提案に、この基盤を前提にした統制の設計を組み込める。</li><li><b>PM</b>現場発のアプリが増えると、棚卸しと権限の見直しが運用作業になる。管理センターの一覧を誰が定期的に見るかを、体制図に入れておく。</li><li><b>DEV</b>コードは Git で管理され、GitHub Enterprise のリポジトリにもつなげられる。現場のアプリを引き取って直す道筋が用意されている。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>M365 管理センターで自テナントへの展開状況を確認し、展開済みなら Copilot Studio か VS Code で小さなアプリを公開して、接続できるデータの範囲と監査ログの記録内容を確かめる。</div>
+      <div class="source">出典：<a href="https://techcommunity.microsoft.com/blog/copilot-managed-runtime-blog/copilot-managed-runtime-is-now-generally-available-with-additional-new-preview-f/4571846" target="_blank" rel="noopener">Microsoft Tech Community「Copilot Managed Runtime is now generally available」（2026-11-17）</a><a href="https://www.publickey1.jp/blog/26/aicopilot_managed_runtime.html" target="_blank" rel="noopener">Publickey（2026-11-19）</a></div>
+      <div class="note">公式ブログは、価格とライセンス、提供地域とデータの保存場所（日本を含む）、サンドボックスの隔離方式に触れていない。Publickey は、1,500種類以上のデータソースへのコネクタ、Microsoft Graph、Work IQ が使えると伝えている。</div>
+      <div class="comment"><b>コメント：</b>作る道具の話が一巡し、作ったものをどこで管理するかに焦点が移ってきた。顧客には価格と保存場所が出るまで本番利用の判断を待つよう伝えたい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>コーディングエージェントのコンテキストを削ると、キャッシュ割引がある料金では費用が最大116%増える——2万回超の実行で測った研究</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">11月17日に arXiv に投稿された研究は、コーディングエージェントに関連コードを先に渡す方法と、古いツール出力を削る方法が費用をどう変えるかを測った。オープンモデルで SWE-bench Verified、SWE-bench、Loc-Bench を2万回以上実行し、キャッシュなしの入力、キャッシュ済み入力、出力を分けて数えた。関連コードを先に渡すと検索・読み込みのコマンドは18〜34%減ったが、キャッシュ済み入力が通常の10分の1の料金では費用が33〜42%増え、解決率に有意な改善はなかった。古い出力を削る方法は、キャッシュ割引がなければ19〜36%安くなる一方、割引があると38〜116%高くなった。短いプロンプトでも手順が増えれば安くならない、としている。</p>
+      <ul class="sowhat"><li><b>DEV</b>履歴を途中で書き換えるとキャッシュが効かなくなる。コンテキストの圧縮や削除を入れる前に、実際の料金体系で費用を測る。</li><li><b>PM</b>「トークンを減らせば安くなる」は前提にできない。費用の見積もりは、キャッシュの効き具合と手順の数を含めて立てる。</li></ul>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.22238" target="_blank" rel="noopener">arXiv 2611.22238「Context Has a Price: Adding and Removing Context for LLM Coding Agents under Prefix Caching」（2026-11-17）</a></div>
+      <div class="note">対象はオープンモデルで、商用のエージェント製品では測っていない。著者の所属はページに記載がない。同時に走らせた実験どうしがキャッシュを共有し、費用の比較がゆがむ点にも注意を促している。</div>
+      <div class="comment"><b>コメント：</b>コンテキスト管理の良し悪しは、トークン数ではなく請求額で比べるべきだという、当たり前だが見落としやすい指摘。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>JA共済連、基金の支出判断を支える AI エージェントで人の判断との一致率7〜8割に——過去の照会約600件を1件ずつのファイルに分け、先に「争点」を出させる</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">キーマンズネットが11月19日に伝えた事例。JA共済連の農業・地域活動支援部では、基金の支出対象かどうかの照会に回答まで3〜4日かかることがあった。過去の照会履歴を Excel のまま読み込ませると、AI は文脈を無視し、「冷蔵庫の購入」といった語の一致だけで誤判定した。そこで直近3年分・約600件を1件ずつ独立したマークダウンに整形してベクトル化し、いきなり可否を出させず、まず確認すべき争点を挙げてから過去事例と照らす手順に変えた。人の判断との一致は約7〜8割、照会対応の負荷は約2割減った実感があるという。基盤は Gemini Enterprise で、Copilot Studio でも同様の精度を確認中。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>「社内データを入れたのに精度が出ない」という相談への具体的な処方として使える。データを事例単位に分けることと、判断の前に論点を出させることの2点。</li><li><b>PM</b>一致率7〜8割の段階で、AI を最終回答ではなく担当者の下調べに位置づけている。検証計画で「何割なら何に使うか」を先に決める参考になる。</li></ul>
+      <div class="source">出典：<a href="https://kn.itmedia.co.jp/kn/article/2611/19/2000003297/" target="_blank" rel="noopener">キーマンズネット「AIの精度が低くて使えない――JA共済連がたどり着いた『AIエージェントの育て方』」（2026-11-19）</a></div>
+      <div class="note">数値は JA共済連の説明による。負荷の約2割減は「実感」とされ、測定方法は示されていない。開発を支援した SIer の名前は記事にない。数百人規模への展開では、回答品質の担保とモデルの評価・管理体制が課題だとしている。</div>
+      <div class="comment"><b>コメント：</b>モデルの選択より、データの切り方と考える順番で精度が変わった例。地味だが再現しやすい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>エージェントの操作を「元に戻せるか」で5段階に分類する提案——MCP サーバー20個・536ツールに付与し、攻撃とみなせる29件すべてで実行前に止めた</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">11月17日に arXiv に投稿された論文は、ツールを使う権限があることと、その結果を元に戻せることは別だと指摘し、5段階の「Reversibility Classes」を提案した。引数によって段階が変わる規則、迷ったら厳しい側に倒す既定、実行前の状態を保存する約束をあわせて定める。MCP サーバー20個の536ツールに段階を付けた登録簿を作り、ファイル、Git、SQLite、3種のブラウザで実験した。記録済みの2,158回の実行では、攻撃とみなせる29件すべてで該当操作の前に止め（読み書きだけで区別する方式は18件）、通常の1,209回で増えた承認は9回だった。ただし登録簿全体の正確さや実運用での被害減少は示せていない、と著者は書いている。</p>
+      <ul class="sowhat"><li><b>DEV</b>承認を求める条件を「書き込みかどうか」ではなく「元に戻せるかどうか」で決めると、承認の回数を増やさずに危ない操作を止めやすい。自前のフックやゲートの設計に取り入れられる。</li><li><b>PM</b>エージェントに任せる範囲を決める際、操作ごとに戻し方があるかを一覧にしておくと、権限の議論が具体的になる。</li></ul>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.22075" target="_blank" rel="noopener">arXiv 2611.22075「Can You Undo It? Reversibility Classes for AI Agent Actions」（2026-11-17）</a></div>
+      <div class="note">5段階の具体的な定義は要旨ページになく、確認していない。MCP の既存の注釈と登録簿の段階は、比較できる481ツールのうち118で食い違った。段階付けの確認は AI 支援のレビュアー1名によるもので、独立した評価ではないと著者が断っている。</div>
+      <div class="comment"><b>コメント：</b>「承認が多すぎて誰も読まない」問題への一つの答え。分類そのものより、戻せない操作だけに人を置くという考え方が使える。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>EY新日本、監査チームごとのメールや資料を読ませた専用 AI アシスタントを11月から導入——判断は会計士が行い、AI は参照元つきで情報を示す</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span></div>
+      <p class="detail">EY新日本有限責任監査法人は11月18日、生成 AI を使った「BrainHub / Document Explorer」を11月から導入したと発表した。法人共通の会計・監査基準や社内ナレッジに、各監査チームのメール、資料、過去の問い合わせと回答、チームのルールを組み合わせ、チームの数だけ専用の AI アシスタントを作る。AI は関連情報を参照元とともに示し、利用者が参照元を確かめて選ぶ。情報の検索・整理や文案の作成を支援し、会計上・監査上の判断は会計士が行うと明記した。狙いは、過年度の対応経緯やクライアントの事情を個人の記憶からチームの共有物にすること、新任者の育成や担当交代時の引き継ぎを支えることだという。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>規制業種の顧客に「チーム単位の知識を AI で引き継ぐ」形を示せる国内の実例。参照元の提示と、判断は人が行うという線引きが、説明の型としてそのまま使える。</li></ul>
+      <div class="source">出典：<a href="https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-18" target="_blank" rel="noopener">EY Japan ニュースリリース「EY新日本、監査チームごとの知見を生成AIで共有する仕組みを導入」（2026-11-18）</a></div>
+      <div class="note">対象人数・チーム数、使ったモデルやベンダー、効果の数値、監査の独立性の扱いは公表されていない。</div>
+      <div class="comment"><b>コメント：</b>全社共通のナレッジ検索ではなく、チームごとに文脈を分けたところが要点。引き継ぎに悩む顧客には響く話だ。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>curl 作者、エージェントによる Rust 書き直しを数字で評価——C 18.5万行が Rust 34万行になる間に、本家は300超のコミットと200余りのバグ修正を重ねた</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">curl の作者 Daniel Stenberg 氏は11月17日、AI エージェントで作られた curl の Rust 版（urlx と kov/curl）について書いた。氏の数えでは、約18.5万行の C が約34万行の Rust に書き換えられた。kov/curl の作者は8,600ドルかけたと主張しているが、コメント欄では API 換算の推計だと指摘されている。同じ期間に本家の curl は300を超えるコミットを取り込み、200余りのバグ修正といくつかの脆弱性修正を行ったが、Rust 版にはどれも入っていない。2026年に確認された curl の脆弱性81件のうち、メモリ安全な言語で防げたとみられるのは14件（17.3%）だという。氏は、価値はコードではなく、長年の改良、利用者と貢献者の共同体、保守者、ABI と API の安定性にあると述べた。</p>
+      <ul class="sowhat"><li><b>PM</b>AI による移植は作るまでが速くても、元のコードの修正に追従し続ける費用が残る。移行計画では書き換え後の追従の体制まで見積もる。</li><li><b>DEV</b>メモリ安全な言語への書き換えで防げる欠陥は全体の一部に限られる、という具体的な数字として使える。</li></ul>
+      <div class="source">出典：<a href="https://daniel.haxx.se/blog/2026/11/17/actual-curl-rewrites-in-rust/" target="_blank" rel="noopener">daniel.haxx.se「Actual curl rewrites in Rust」（2026-11-17）</a><a href="https://simonwillison.net/2026/Nov/18/daniel-stenberg/" target="_blank" rel="noopener">Simon Willison による引用（2026-11-18）</a></div>
+      <div class="note">氏は2つの Rust 版の作者とは連絡を取っておらず、他人から送られたリンクで知ったという。Rust 版を本家に取り込むかどうかには触れていない。</div>
+      <div class="comment"><b>コメント：</b>レガシー移行で AI を使う提案が増えるなか、作った後の追従の費用を示すよい材料。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>Claude Code のルールの置き場を「誤りが起きる瞬間」で決める判定表を3か月運用——常時読み込みのルールは48項目から80項目に増え続けた</h2>
+      <div class="tags"><span class="tag dev">DEV</span></div>
+      <p class="detail">個人開発者の HandaLab が11月18日、Claude Code に与えるルールの置き場を決める判定表と、その後3か月の記録を公開した。表は上から順に当てはめる。機械で判定できる禁止は hook で拒否、特定のファイル種別に関わるものは <code>paths</code> 付きの rules、ツールを呼ぶ前の判断は常時読み込みの rules、全作業に効く態度は <code>AGENTS.md</code>、前提が消えたものはアーカイブへ移す。迷ったら常時読み込みに倒す。結果として、常時読み込みのルールは7月12日の48項目（5,485字）から11月13日には80項目（19,019字）に増えた。9件の移設は実際に動いたが、ルールを減らす出口は候補を出す段階で止まり、判定表の効果そのものは比較対象がなく言えない、と著者は書いている。</p>
+      <ul class="sowhat"><li><b>DEV</b>ルールの「入れ方」は設計できても「減らし方」は放っておくと動かない。CLAUDE.md や rules の運用では、文字数を定期的に数え、削る仕組みを別に持つ。</li></ul>
+      <div class="source">出典：<a href="https://zenn.dev/handa_lab/articles/11-rules-placement-table" target="_blank" rel="noopener">Zenn「Claude Code のルールの置き場を判定表で決めた。3か月後に数えたら、増え方は止まっていなかった」（2026-11-18）</a></div>
+      <div class="note">個人の1環境での記録。著者自身が、効果は検証できていないと明記している。</div>
+      <div class="comment"><b>コメント：</b>うまくいかなかった点を数字で正直に書いた記録は少なく、指示ファイルの肥大化に悩むチームには参考になる。</div>
+    </div>
+
+    <div class="section-title">短信</div>
+    <div class="brief"><ul>
+      <li>Microsoft AI が Ignite で自社モデルを一括発表した（11月17日）。昨日伝えた MAI Code 2／Flash のほか、問い合わせを大きいモデルに回すかを決めるルーティング用の Decision 1.1（GPT-6.1 Sol より79倍安く、50倍速いとする）、防御エージェント向けの MAI Cyber 2 Flash（出力単価は前版より86%安い）、音声対話の MAI Realtime 1（毎分0.01ドルから）など。日本での提供には触れていない。<a href="https://microsoft.ai/news/microsoft-ignite-2026/" target="_blank" rel="noopener">記事</a></li>
+      <li>GitHub Trending では、エージェント関連が20件中10件。Claude Code 向けのバグ探索スキル集 elementalsouls/Claude-BugHunter（1日2,322スター）、スキルとプラグインを評価する NVIDIA/SkillEvaluator、Cursor のプラグイン仕様と公式プラグイン cursor/plugins などが並んだ。<a href="https://github.com/trending" target="_blank" rel="noopener">GitHub Trending</a></li>
+    </ul></div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>新規：Copilot Managed Runtime、コンテキストの足し引きとキャッシュ費用（arXiv 2611.22238）、Reversibility Classes、JA共済連 支出判断エージェント、EY新日本 BrainHub、curl の AI による Rust 書き直し、Microsoft Decision 1.1、Claude-BugHunter、cursor/plugins。</li>
+      <li>継続：「SOUL.md / AGENTS.md / CLAUDE.md」は HandaLab の運用記録で言及13回に。「トークン費用の統制」はコンテキスト費用の研究で6回に。NVIDIA/SkillEvaluator は Trending に再掲され、言及3回に。Decision 1.1 は決定モデル（Jev）の文脈にも記録した。</li>
+      <li>退出：30日間言及のなかった4件（WorkBuddy、Bedrock API キー自己発行ポータル、DeepSeek V4.1 Flash 1017、QueryPie QEV）を規則どおり退出とした。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

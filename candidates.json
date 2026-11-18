@@ -6,8 +6,8 @@
    "kind": "agent-infra",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-18",
-   "mentions": 16,
+   "last_seen": "2026-11-19",
+   "mentions": 17,
    "sources": [
     "https://arxiv.org/abs/2610.02267",
     "https://developers.openai.com/api/docs/guides/decisions",
@@ -24,7 +24,8 @@
     "https://martinfowler.com/articles/durable-execution-agents.html",
     "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
     "https://latent.space/p/jev-revolution/",
-    "https://arxiv.org/abs/2611.19123"
+    "https://arxiv.org/abs/2611.19123",
+    "https://microsoft.ai/news/microsoft-ignite-2026/"
    ],
    "note": "テキストを生成せず型付きの判断だけ返す決定モデル。エージェントの小さな判断（ツール選択、安全性、停止判断）を主モデルから分離する発想。対照: 主モデル自前判断、他の router/guard モデル"
   },
@@ -41,7 +42,7 @@
   {
    "name": "WorkBuddy (Tencent Cloud)",
    "kind": "agent-product",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-02",
    "last_seen": "2026-10-19",
    "mentions": 1,
@@ -71,8 +72,8 @@
    "kind": "context-engineering",
    "status": "candidate",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-18",
-   "mentions": 12,
+   "last_seen": "2026-11-19",
+   "mentions": 13,
    "sources": [
     "https://zenn.dev/fukorohouse/articles/e2659fcd7c530f",
     "https://arxiv.org/abs/2610.08875",
@@ -84,7 +85,8 @@
     "https://arxiv.org/abs/2611.13709",
     "https://martinfowler.com/bliki/GeneratedGlossary.html",
     "https://arxiv.org/abs/2611.15436",
-    "https://zenn.dev/tsugu_sukima/articles/2b19ac59da1b2a"
+    "https://zenn.dev/tsugu_sukima/articles/2b19ac59da1b2a",
+    "https://zenn.dev/handa_lab/articles/11-rules-placement-table"
    ],
    "note": ".md でエージェントの振る舞いを規定する手法。効果の実証研究・ベストプラクティスを追う / 2026-11-18: arXiv 2611.18582（指示ファイルのレビュー研究）は初回投稿 7/31 のため収録見送り"
   },
@@ -707,7 +709,7 @@
   {
    "name": "Bedrock API キー自己発行ポータル",
    "kind": "governance",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19",
    "mentions": 1,
@@ -719,7 +721,7 @@
   {
    "name": "DeepSeek V4.1 Flash 1017",
    "kind": "model",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19",
    "mentions": 1,
@@ -731,7 +733,7 @@
   {
    "name": "QueryPie QEV（機密検知の判断モデル）",
    "kind": "agent-infra",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-19",
    "mentions": 1,
@@ -1385,13 +1387,14 @@
    "kind": "cost-governance",
    "status": "candidate",
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-17",
-   "mentions": 5,
+   "last_seen": "2026-11-19",
+   "mentions": 6,
    "sources": [
     "https://www.thoughtworks.com/insights/articles/the-token-bleed-reality",
     "https://arxiv.org/abs/2611.13396",
     "https://www.thoughtworks.com/insights/blog/generative-ai/we-built-ai-control-plane-reduce-LLM-expenses-prevent-data-leaks",
-    "https://www.thoughtworks.com/insights/blog/generative-ai/specbench-tool-evaluate-ai-enabled-software-development-workflows"
+    "https://www.thoughtworks.com/insights/blog/generative-ai/specbench-tool-evaluate-ai-enabled-software-development-workflows",
+    "https://arxiv.org/abs/2611.22238"
    ],
    "note": "エージェント単位の予算・遮断器・キャッシュ・モデル使い分け。2026-11-17 Cloudera 調査（11/4公開、窓外）で89%がトークン消費を理由に用途を再設計と報道"
   },
@@ -2151,10 +2154,11 @@
    "kind": "skills-evaluation",
    "status": "candidate",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-17",
-   "mentions": 2,
+   "last_seen": "2026-11-19",
+   "mentions": 3,
    "sources": [
-    "https://github.com/NVIDIA/SkillEvaluator"
+    "https://github.com/NVIDIA/SkillEvaluator",
+    "https://github.com/trending"
    ],
    "note": "未検証（GitHub Trending 2026-11-16、公開日不明）。Skill の検証・重複検出・あり/なし比較の3層。Apache 2.0"
   },
@@ -2267,10 +2271,11 @@
    "kind": "model",
    "status": "candidate",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-18",
-   "mentions": 1,
+   "last_seen": "2026-11-19",
+   "mentions": 2,
    "sources": [
-    "https://www.publickey1.jp/blog/26/aimai_code_2mai_code_2_flash.html"
+    "https://www.publickey1.jp/blog/26/aimai_code_2mai_code_2_flash.html",
+    "https://microsoft.ai/news/microsoft-ignite-2026/"
    ],
    "note": "Ignite 2026 発表の自社製コーディングモデル。提供形態・開始時期は未確認。対照: GPT 6.1 Sol、Claude Opus 5.5"
   },
@@ -2345,6 +2350,114 @@
     "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/"
    ],
    "note": "エージェントは外、コード実行だけ隔離。v86／Apple Containers／QEMU の3実装。対照: Docker Sandboxes、AWS Nitro Sandboxes"
+  },
+  {
+   "name": "Copilot Managed Runtime",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "mentions": 1,
+   "sources": [
+    "https://techcommunity.microsoft.com/blog/copilot-managed-runtime-blog/copilot-managed-runtime-is-now-generally-available-with-additional-new-preview-f/4571846"
+   ],
+   "note": "AI生成の社内アプリをM365テナント内で実行。2026-11-17 GA。価格・地域未公表"
+  },
+  {
+   "name": "コンテキストの足し引きとキャッシュ費用（arXiv 2611.22238）",
+   "kind": "method",
+   "status": "candidate",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "mentions": 1,
+   "sources": [
+    "https://arxiv.org/abs/2611.22238"
+   ],
+   "note": "キャッシュ割引下では古い出力の削除で費用38〜116%増"
+  },
+  {
+   "name": "Reversibility Classes（エージェント操作の可逆性分類）",
+   "kind": "governance",
+   "status": "candidate",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "mentions": 1,
+   "sources": [
+    "https://arxiv.org/abs/2611.22075"
+   ],
+   "note": "5段階、MCP 20サーバー536ツール"
+  },
+  {
+   "name": "JA共済連 支出判断エージェント",
+   "kind": "case-jp",
+   "status": "candidate",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "mentions": 1,
+   "sources": [
+    "https://kn.itmedia.co.jp/kn/article/2611/19/2000003297/"
+   ],
+   "note": "照会600件を1件ずつmd化、争点先出しで一致7〜8割"
+  },
+  {
+   "name": "EY新日本 BrainHub / Document Explorer",
+   "kind": "case-jp",
+   "status": "candidate",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "mentions": 1,
+   "sources": [
+    "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-18"
+   ],
+   "note": "監査チーム別AIアシスタント"
+  },
+  {
+   "name": "curl の AI による Rust 書き直し（urlx / kov/curl）",
+   "kind": "practice",
+   "status": "candidate",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "mentions": 1,
+   "sources": [
+    "https://daniel.haxx.se/blog/2026/11/17/actual-curl-rewrites-in-rust/"
+   ],
+   "note": "移植後の追従費用"
+  },
+  {
+   "name": "Decision 1.1 (Microsoft)",
+   "kind": "model",
+   "status": "candidate",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "mentions": 1,
+   "sources": [
+    "https://microsoft.ai/news/microsoft-ignite-2026/"
+   ],
+   "note": "ルーティング用決定モデル"
+  },
+  {
+   "name": "elementalsouls/Claude-BugHunter",
+   "kind": "repo",
+   "status": "candidate",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "mentions": 1,
+   "sources": [
+    "https://github.com/trending"
+   ],
+   "note": "Claude Code バグ探索スキル集"
+  },
+  {
+   "name": "cursor/plugins",
+   "kind": "repo",
+   "status": "candidate",
+   "first_seen": "2026-11-19",
+   "last_seen": "2026-11-19",
+   "mentions": 1,
+   "sources": [
+    "https://github.com/trending"
+   ],
+   "note": "Cursor プラグイン仕様"
   }
  ]
 }

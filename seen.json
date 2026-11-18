@@ -1000,6 +1000,46 @@
    "date": "2026-11-18",
    "key": "arxiv-agent-instruction-file-reviews-out-of-window",
    "url": "https://arxiv.org/abs/2611.18582"
+  },
+  {
+   "date": "2026-11-19",
+   "key": "microsoft-copilot-managed-runtime-ga",
+   "url": "https://techcommunity.microsoft.com/blog/copilot-managed-runtime-blog/copilot-managed-runtime-is-now-generally-available-with-additional-new-preview-f/4571846"
+  },
+  {
+   "date": "2026-11-19",
+   "key": "arxiv-context-has-a-price-prefix-caching",
+   "url": "https://arxiv.org/abs/2611.22238"
+  },
+  {
+   "date": "2026-11-19",
+   "key": "ja-kyosairen-fund-judgment-agent",
+   "url": "https://kn.itmedia.co.jp/kn/article/2611/19/2000003297/"
+  },
+  {
+   "date": "2026-11-19",
+   "key": "arxiv-reversibility-classes-agent-actions",
+   "url": "https://arxiv.org/abs/2611.22075"
+  },
+  {
+   "date": "2026-11-19",
+   "key": "ey-shinnihon-brainhub-team-assistant",
+   "url": "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-18"
+  },
+  {
+   "date": "2026-11-19",
+   "key": "stenberg-curl-rust-rewrites",
+   "url": "https://daniel.haxx.se/blog/2026/11/17/actual-curl-rewrites-in-rust/"
+  },
+  {
+   "date": "2026-11-19",
+   "key": "zenn-handa-lab-rules-placement-table",
+   "url": "https://zenn.dev/handa_lab/articles/11-rules-placement-table"
+  },
+  {
+   "date": "2026-11-19",
+   "key": "microsoft-ai-ignite-2026-models",
+   "url": "https://microsoft.ai/news/microsoft-ignite-2026/"
   }
  ]
 }
