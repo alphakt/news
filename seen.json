@@ -1040,6 +1040,31 @@
    "date": "2026-11-19",
    "key": "microsoft-ai-ignite-2026-models",
    "url": "https://microsoft.ai/news/microsoft-ignite-2026/"
+  },
+  {
+   "date": "2026-11-20",
+   "key": "google-gemini-api-tool-retrieval",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+  },
+  {
+   "date": "2026-11-20",
+   "key": "google-gemini-4-neon",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+  },
+  {
+   "date": "2026-11-20",
+   "key": "zozo-dev-ai-agents-200usd-cap",
+   "url": "https://xtech.nikkei.com/atcl/nxt/column/18/00001/12188/"
+  },
+  {
+   "date": "2026-11-20",
+   "key": "ey-shinnihon-ai-skills-hr-evaluation",
+   "url": "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-19"
+  },
+  {
+   "date": "2026-11-20",
+   "key": "sakura-ai-engine-glm-deepseek-free-tier",
+   "url": "https://cloud.sakura.ad.jp/news/2026/11/18/glm-5-3-flash_deepseek-v4-1-flash-1017_pubpreview/"
   }
  ]
 }

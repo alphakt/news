@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月20日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月20日（金）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は5件。今すぐ試せるのは Google の2件で、Gemini API のツール遅延読み込み「Tool Retrieval」と、中位モデル「Gemini 4 Neon」。ほかは国内の3件で、ZOZO の開発 AI 展開の数字、EY新日本の AI スキルの人事評価への組み込み、さくらのAI Engine の無償枠。見送ったもの：CI/CD の権限を変えるエージェント PR の研究と、スキルの呼び出し率を測る研究（どちらも arXiv の初版が9〜10月で48時間を超える）、OpenAI の「Inside the Codex sandbox」と住友生命の事例（本文を取得できず）、Anthropic の上場関連（株価のため除外）。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Google、Gemini API に「Tool Retrieval」をプレビュー提供——数百のツールを登録したまま、引数の定義は必要になったときだけ読み込む</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Google は11月19日、Gemini API の Interactions API で Tool Retrieval をプレビュー公開した。ツールに <code>defer_loading</code> を付けると、モデルには名前と説明だけが渡り、引数の定義（スキーマ）は検索で見つけたときに読み込まれる。検索は Gemini のサーバー側で動くため索引を自前で持つ必要はなく、1回のリクエストの中で検索、読み込み、関数呼び出しまで進む。アプリ側で検索する方式も選べるが、その場合は検索ごとに往復が1回増える。MCP サーバーのツールも遅延の対象にできる。対象は Gemini 3.6 以降と Gemini 4 の全モデル。追加料金はなく、読み込んだスキーマはその後の会話で入力トークンとして課金される。</p>
+      <ul class="sowhat"><li><b>DEV</b>ツールを数十個以上つなぐエージェントで、毎回すべてのスキーマを送る設計を見直せる。MCP クライアントの遅延読み込みと同じ発想が、主要な API の標準機能になった。</li><li><b>PM</b>ツールを増やすほどトークン費用が増える構造が緩む。ただし削減量は公表されていないので、自社の利用状況で測ってから見積もりに入れる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b><code>tools</code> に <code>{"type": "tool_search"}</code> を加え、使う頻度の低い関数に <code>"defer_loading": true</code> を付ける。同じ会話ログで入力トークン数とツール選択の正しさを前後比較する（よく使うツールは遅延させないのが推奨）。</div>
+      <div class="source">出典：<a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/" target="_blank" rel="noopener">Google Blog「Introducing Tool Retrieval in the Gemini API」（2026-11-19）</a></div>
+      <div class="note">トークン削減や精度向上の具体的な数字はブログにない。Interactions API 限定のプレビューで、一般提供の時期は示されていない。</div>
+      <div class="comment"><b>コメント：</b>ツールの定義をコンテキストに入れっぱなしにしない、という設計がベンダーを問わない標準になりつつある。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Google、Gemini 4 の中位モデル「Neon」を公開——100万トークンあたり入力3ドル・出力15ドル、キャッシュ済み入力は95%引き、コーディングエージェントの指標で首位とする</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Google は11月18日、Gemini 4 ファミリーの新モデル Neon を公開した。最上位の Carbon と高速な Hydrogen の間に位置づけ、コンテキストは100万トークン。料金は100万トークンあたり入力3ドル、キャッシュ済み入力0.15ドル、出力15ドル。Gemini API の有料枠（AI Studio）、法人向け Gemini、Antigravity、Gemini アプリ（AI Pro／Ultra）で使える。Google は、Artificial Analysis の Coding Agent Index で1位（58.6）、Terminal-Bench 4.1 で65.2%としている。Neon が司令役となって Hydrogen のサブエージェントを並列に動かす使い方も示し、high 設定では1タスクあたりの費用が Carbon より32%低いという。</p>
+      <ul class="sowhat"><li><b>DEV</b>主力モデルの比較候補が1つ増えた。SWE-sweep の成績は Antigravity 上で39.0%、簡素なハーネスでは12.8%と3倍の差があり、モデルはハーネスと組み合わせて評価する必要がある。</li><li><b>CONSULT</b>「どのモデルを標準にするか」の相談で、Carbon と Neon の使い分けと、キャッシュ割引を前提にした費用試算を示せる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>AI Studio の有料枠で、自社の代表的なタスク10件ほどを現行モデルと Neon で走らせ、成功率と1タスクあたりの請求額を比べる。</div>
+      <div class="source">出典：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/" target="_blank" rel="noopener">Google Blog「Introducing Gemini 4 Neon」（2026-11-18）</a></div>
+      <div class="note">ベンチマークはいずれも Google の発表値。日本のリージョンでの提供やデータの保存場所には触れていない。</div>
+      <div class="comment"><b>コメント：</b>Gemini 4 は2か月で4モデル目。モデルの入れ替わりの速さに、顧客側の評価の仕組みが追いつけるかが問われている。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>ZOZO、開発 AI エージェントを約700人に展開し、開発の完了数が導入前の約1.8倍に——月200ドルを上限に、使うツールは各自が選ぶ</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">日経クロステックが11月20日に伝えた。ZOZO は、Anthropic の Claude Code をはじめとする開発 AI エージェントを、自社と指定したグループ会社のエンジニア全員が使えるようにした。2026年10月20日時点の利用者は約700人。2026年9月までに、開発の完了数は導入前の約1.8倍になったとしている。見出しによると、1人あたり月200ドルを上限として、使うツールは各自が自由に選べる。記事の後半では「AI 活用前提のレビュー」の進め方も扱っている。</p>
+      <ul class="sowhat"><li><b>PM</b>ツールを1つに絞らず、金額の上限で統制する方式は、費用管理と現場の選択の自由を両立させる一案。予算は「月200ドル×人数」を上限として置ける。</li><li><b>CONSULT</b>国内大手の数字付き事例。「ツールの選定に時間をかけず、予算枠で始める」という提案の根拠にできる。</li></ul>
+      <div class="source">出典：<a href="https://xtech.nikkei.com/atcl/nxt/column/18/00001/12188/" target="_blank" rel="noopener">日経クロステック「ZOZO、AI活用で開発完了数1.8倍　月200ドル上限でツールを自由選択」（2026-11-20）</a></div>
+      <div class="note">記事の大半は有料会員向けで、完了数の数え方、上限の運用、レビュー体制の詳細は確認できていない。数値は ZOZO の説明による。</div>
+      <div class="comment"><b>コメント：</b>「どのツールを標準にするか」で止まっている顧客には、上限額で決めるという発想の切り替えが効きそうだ。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>EY新日本、監査人に求める AI スキル4項目を職階別に定義し、本年度の人事評価から使用——AI 活用・価値創出・協働・ガバナンス</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">EY新日本有限責任監査法人は11月19日、既存の「職階別期待スキル」16項目に AI 関連の4項目を加えたと発表した。追加したのは「AI活用能力」「AI価値創出」「AIコラボレーション」「AIガバナンス」で、スタッフ、シニア、マネージャー、シニアマネージャーの職階ごとに期待水準を定めた。本年度（7月始まり）の人事評価から使う。あわせて、評価者ごとの甘辛をベイズ推定で統計的に補正する仕組みを、2026年度の評価サイクルから全監査事業部で始めている。デジタルリテラシーの測定と研修、デジタル人材認定制度など既存の取り組みともつなげる。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>「AI 活用を人事評価にどう入れるか」という相談に、国内の規制業種の具体例として示せる。ガバナンスを独立した評価項目にした点が説明しやすい。</li><li><b>PM</b>チームの AI 活用を個人の評価に結びつけるなら、使った量ではなく、価値創出とガバナンスを並べて測る設計が参考になる。</li></ul>
+      <div class="source">出典：<a href="https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-19" target="_blank" rel="noopener">EY Japan ニュースリリース（2026-11-19）</a></div>
+      <div class="note">各項目の評価基準、段階の数、対象人数、研修時間は公表されていない。前日に伝えた BrainHub / Document Explorer の導入とは別の発表。</div>
+      <div class="comment"><b>コメント：</b>道具の配布から評価制度の改定へ。AI 導入が人事制度の話に進んできたことを示す例だ。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>さくらインターネット、「さくらのAI Engine」で GLM-5.3-Flash と DeepSeek-V4.1-Flash-1017 をパブリックプレビュー——月3,000リクエストまで無償</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span></div>
+      <p class="detail">さくらインターネットは11月18日、生成 AI 向け推論 API「さくらのAI Engine」で、中国 Z.ai の GLM-5.3-Flash と DeepSeek の DeepSeek-V4.1-Flash-1017 をパブリックプレビューとして提供を始めた。いずれもオープンウェイトのモデルで、Chat completions 形式で <code>preview/</code> 付きのモデル名を指定して呼び出す。無償プランは1か月あたり3,000リクエストまで。通常料金は税込で1万トークンあたり入力0.4円、出力4.0円。ITmedia AI+ は、同サービスが国内のデータセンターで運用する基盤の上でモデルを提供していると伝えている。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>「海外の API にデータを出せない」顧客に、国内事業者経由でオープンモデルを試す選択肢を示せる。一方、中国発のモデルであることを調達方針の上でどう扱うかは、顧客ごとに確認が要る。</li><li><b>DEV</b>無償枠の範囲で、安価なモデルを既存の処理に差し替えたときの品質を手軽に比べられる。</li></ul>
+      <div class="source">出典：<a href="https://cloud.sakura.ad.jp/news/2026/11/18/glm-5-3-flash_deepseek-v4-1-flash-1017_pubpreview/" target="_blank" rel="noopener">さくらのクラウド ニュース（2026-11-18）</a><a href="https://www.itmedia.co.jp/aiplus/article/2611/19/2000003339/" target="_blank" rel="noopener">ITmedia AI+（2026-11-19）</a></div>
+      <div class="note">プレスリリースは、この2モデルの推論が国内で完結するかを明記していない。無償枠の終了時期も記載がない。</div>
+      <div class="comment"><b>コメント：</b>国内クラウドの「安くて国内」という訴求に、モデルの出自をどう説明するかという新しい論点が加わった。</div>
+    </div>
+
+    <div class="section-title">短信</div>
+    <div class="brief"><ul>
+      <li>GitHub Trending ではエージェントのスキル集が上位を占めた。開発手順をスキルにまとめた obra/superpowers（1日2,029スター）、前日に続き Claude-BugHunter（1,353）、話題を複数の場で調べて要約する last30days-skill、Stitch MCP 向けの google-labs-code/stitch-skills、cursor/plugins など。<a href="https://github.com/trending" target="_blank" rel="noopener">GitHub Trending</a></li>
+    </ul></div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>新規：Gemini 4 Neon、さくらのAI Engine 無償枠（GLM／DeepSeek）、EY新日本 AI スキル評価、ZOZO 月200ドル上限の開発 AI 展開、obra/superpowers、last30days-skill。</li>
+      <li>継続：「MCP 遅延ツール読み込み」は Gemini API の Tool Retrieval で主要ベンダーが採用したため関心対象に昇格（言及2回）。Claude-BugHunter と cursor/plugins は Trending に再掲され言及2回。DeepSeek V4.1 Flash 1017 はさくらでの提供で再登場し、候補に戻した。</li>
+      <li>退出：30日間言及のなかった5件（源内 エージェントチャット、源内基準、Microsoft Guardian Agents、NEC Claude Code 全社展開、OpenCode Console 侵害）を規則どおり退出とした。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
