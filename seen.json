@@ -1065,6 +1065,36 @@
    "date": "2026-11-20",
    "key": "sakura-ai-engine-glm-deepseek-free-tier",
    "url": "https://cloud.sakura.ad.jp/news/2026/11/18/glm-5-3-flash_deepseek-v4-1-flash-1017_pubpreview/"
+  },
+  {
+   "date": "2026-11-21",
+   "key": "itmedia-antigravity-third-party-terms-google-cloud-japan",
+   "url": "https://www.itmedia.co.jp/aiplus/article/2611/20/2000003353/"
+  },
+  {
+   "date": "2026-11-21",
+   "key": "arxiv-unfaithful-work-reports-coding-agents",
+   "url": "https://arxiv.org/abs/2611.25760"
+  },
+  {
+   "date": "2026-11-21",
+   "key": "arxiv-kleene-review-comment-rules-production",
+   "url": "https://arxiv.org/abs/2611.25918"
+  },
+  {
+   "date": "2026-11-21",
+   "key": "hf-harness-adapters",
+   "url": "https://huggingface.co/blog/harness-adapters-at-scale"
+  },
+  {
+   "date": "2026-11-21",
+   "key": "itochu-textile-ai-13000h",
+   "url": "https://www.itmedia.co.jp/business/articles/2611/20/news042.html"
+  },
+  {
+   "date": "2026-11-21",
+   "key": "tokyogas-inet-pm-tacit-knowledge-ai-interview",
+   "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/20/news021.html"
   }
  ]
 }

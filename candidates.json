@@ -95,8 +95,8 @@
    "kind": "process",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-18",
-   "mentions": 18,
+   "last_seen": "2026-11-21",
+   "mentions": 20,
    "sources": [
     "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
     "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
@@ -114,7 +114,9 @@
     "https://www.itmedia.co.jp/business/articles/2611/16/news031.html",
     "https://blog.recruit.co.jp/data/articles/ai-review-skills/",
     "https://zenn.dev/t_azk/articles/ai-tests-passed-24-of-24",
-    "https://arxiv.org/abs/2611.18939"
+    "https://arxiv.org/abs/2611.18939",
+    "https://arxiv.org/abs/2611.25760",
+    "https://arxiv.org/abs/2611.25918"
    ],
    "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
   },
@@ -808,7 +810,7 @@
   {
    "name": "ALTK-Evolve (IBM)",
    "kind": "agent-memory",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-21",
    "last_seen": "2026-10-21",
    "mentions": 1,
@@ -820,7 +822,7 @@
   {
    "name": "PACE（PRD駆動の納品ベンチマーク）",
    "kind": "process",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-21",
    "last_seen": "2026-10-21",
    "mentions": 1,
@@ -832,7 +834,7 @@
   {
    "name": "自治体版バイバイン実証（デジタル庁）",
    "kind": "gov-ai",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-21",
    "last_seen": "2026-10-21",
    "mentions": 1,
@@ -844,7 +846,7 @@
   {
    "name": "Cloudflare OS マネージド提供",
    "kind": "agent-platform",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-21",
    "last_seen": "2026-10-21",
    "mentions": 1,
@@ -2444,8 +2446,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-20",
-   "mentions": 2,
+   "last_seen": "2026-11-21",
+   "mentions": 3,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2456,8 +2458,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-20",
-   "mentions": 2,
+   "last_seen": "2026-11-21",
+   "mentions": 3,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2516,8 +2518,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-20",
-   "mentions": 1,
+   "last_seen": "2026-11-21",
+   "mentions": 2,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2528,12 +2530,120 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-20",
-   "mentions": 1,
+   "last_seen": "2026-11-21",
+   "mentions": 2,
    "sources": [
     "https://github.com/trending"
    ],
    "note": "複数プラットフォーム横断の調査スキル"
+  },
+  {
+   "name": "Antigravity サードパーティ経由利用の規約",
+   "kind": "policy",
+   "status": "candidate",
+   "first_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "mentions": 1,
+   "sources": [
+    "https://www.itmedia.co.jp/aiplus/article/2611/20/2000003353/"
+   ],
+   "note": "個人向けプランは追加規約6条でサードパーティ経由を禁止。法人は Google Cloud 規約で、公式インターフェースと組織管理の認証が前提"
+  },
+  {
+   "name": "FaithDetector（エージェント作業報告の不正確さ）",
+   "kind": "method",
+   "status": "candidate",
+   "first_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "mentions": 1,
+   "sources": [
+    "https://arxiv.org/abs/2611.25760"
+   ],
+   "note": "報告435件中37.24%に不正確な主張。成功の誇張が最多。検出器 macro-F1 93.06%"
+  },
+  {
+   "name": "Kleene（レビューコメント由来ルールの再利用）",
+   "kind": "method",
+   "status": "candidate",
+   "first_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "mentions": 1,
+   "sources": [
+    "https://arxiv.org/abs/2611.25918"
+   ],
+   "note": "464ルールを65日追跡。参照55.8%→修正20.3%。段階別に測る必要"
+  },
+  {
+   "name": "Harness adapters (Hugging Face)",
+   "kind": "model-adaptation",
+   "status": "candidate",
+   "first_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "mentions": 1,
+   "sources": [
+    "https://huggingface.co/blog/harness-adapters-at-scale"
+   ],
+   "note": "ハーネス内RLで学ぶLoRA。Qwen3.8-27B、Pi/OpenCode/Hermes"
+  },
+  {
+   "name": "伊藤忠 繊維カンパニー 生成AI展開",
+   "kind": "case",
+   "status": "candidate",
+   "first_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "mentions": 1,
+   "sources": [
+    "https://www.itmedia.co.jp/business/articles/2611/20/news042.html"
+   ],
+   "note": "1,700人超、月約1.3万時間削減（自己申告）、推進7人"
+  },
+  {
+   "name": "東京ガスｉネット AI面談による PM 暗黙知継承",
+   "kind": "case",
+   "status": "candidate",
+   "first_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "mentions": 1,
+   "sources": [
+    "https://atmarkit.itmedia.co.jp/ait/articles/2611/20/news021.html"
+   ],
+   "note": "日立ソリューションズ 知見対話AI、PMBOK 12知識エリアの台本"
+  },
+  {
+   "name": "OpenAI Reserved Tier",
+   "kind": "pricing",
+   "status": "candidate",
+   "first_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "mentions": 1,
+   "sources": [
+    "https://developers.openai.com/api/docs/guides/reserved-tier"
+   ],
+   "note": "Enterprise 向けモデル別の容量予約（ドル/分）。公開日記載なし"
+  },
+  {
+   "name": "Agent Substrate (CNCF Sandbox)",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "mentions": 1,
+   "sources": [
+    "https://opensource.googleblog.com/2026/11/sandboxing-untrusted-ai-agents-at-scale.html"
+   ],
+   "note": "Google が gVisor と共に CNCF に寄贈（11/5発表、InfoQ 11/20）。状態と計算の分離、再開500ms未満"
+  },
+  {
+   "name": "HKUDS/CLI-Anything",
+   "kind": "tool",
+   "status": "candidate",
+   "first_seen": "2026-11-21",
+   "last_seen": "2026-11-21",
+   "mentions": 1,
+   "sources": [
+    "https://github.com/trending"
+   ],
+   "note": "任意ソフトをエージェントがCLIで操作可能にする"
   }
  ]
 }
