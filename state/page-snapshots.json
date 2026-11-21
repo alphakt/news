@@ -32,7 +32,7 @@
    "https://code.claude.com/docs/en/output-styles",
    "https://code.claude.com/docs/en/hooks"
   ],
-  "checked": "2026-11-20T23:06:13.918205+00:00"
+  "checked": "2026-11-21T23:05:41.358258+00:00"
  },
  "https://www.anthropic.com/engineering": {
   "links": [
@@ -64,7 +64,7 @@
    "https://www.anthropic.com/research/team/interpretability",
    "https://www.anthropic.com/research/team/societal-impacts"
   ],
-  "checked": "2026-11-20T23:06:14.159101+00:00"
+  "checked": "2026-11-21T23:05:41.565069+00:00"
  },
  "https://docs.anthropic.com/en/release-notes/overview": {
   "links": [
@@ -200,7 +200,7 @@
    "https://docs.anthropic.com/docs/en/build-with-claude/token-counting",
    "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/parallel-tool-use"
   ],
-  "checked": "2026-11-20T23:06:14.751583+00:00"
+  "checked": "2026-11-21T23:05:42.028018+00:00"
  },
  "https://developers.openai.com/changelog": {
   "links": [
@@ -644,7 +644,7 @@
    "https://developers.openai.com/api/docs/models/dall-e-3",
    "https://developers.openai.com/api/docs/models/text-moderation-latest"
   ],
-  "checked": "2026-11-20T23:06:15.101697+00:00"
+  "checked": "2026-11-21T23:05:42.394841+00:00"
  },
  "https://cursor.com/changelog": {
   "links": [
@@ -672,11 +672,11 @@
    "https://cursor.com/en-US/cookie-policy",
    "https://cursor.com/en-US/security"
   ],
-  "checked": "2026-11-20T23:06:15.414857+00:00"
+  "checked": "2026-11-21T23:05:42.592761+00:00"
  },
  "https://ai.google.dev/gemini-api/docs/changelog": {
   "links": [],
-  "checked": "2026-11-20T23:06:15.979313+00:00"
+  "checked": "2026-11-21T23:05:43.180016+00:00"
  },
  "https://www.ipa.go.jp/digital/ai/": {
   "links": [
@@ -891,7 +891,7 @@
    "https://www.ipa.go.jp/siteinfo.html",
    "https://www.ipa.go.jp/accessibility.html"
   ],
-  "checked": "2026-11-20T23:06:16.291190+00:00"
+  "checked": "2026-11-21T23:05:44.135166+00:00"
  },
  "https://www.ppc.go.jp/news/": {
   "links": [
@@ -981,7 +981,7 @@
    "https://www.ppc.go.jp/application/kisei_kaikaku/",
    "https://www.ppc.go.jp/aboutus/commission/access/ppc_relocation?ref=topnews"
   ],
-  "checked": "2026-11-20T23:06:17.679356+00:00"
+  "checked": "2026-11-21T23:05:45.444428+00:00"
  },
  "https://www.soumu.go.jp/menu_news/s-news/": {
   "links": [
@@ -1041,7 +1041,7 @@
    "https://www.soumu.go.jp/menu_news/s-news/01kougai01_20261101.html",
    "https://www.soumu.go.jp/menu_kyotsuu/policy/shuwa-link.html"
   ],
-  "checked": "2026-11-20T23:06:18.725366+00:00"
+  "checked": "2026-11-21T23:05:46.417321+00:00"
  },
  "https://www.anthropic.com/customers": {
   "links": [
@@ -1104,7 +1104,7 @@
    "https://www.anthropic.com/legal/consumer-terms",
    "https://www.anthropic.com/legal/aup"
   ],
-  "checked": "2026-11-20T23:06:19.535453+00:00"
+  "checked": "2026-11-21T23:05:46.870776+00:00"
  },
  "https://cloud.google.com/customers": {
   "links": [
@@ -1369,7 +1369,7 @@
    "https://cloud.google.com/product-terms",
    "https://cloud.google.com/sustainability"
   ],
-  "checked": "2026-11-20T23:06:19.986890+00:00"
+  "checked": "2026-11-21T23:05:47.325115+00:00"
  },
  "https://www.microsoft.com/en-us/customers/": {
   "links": [
@@ -1443,7 +1443,7 @@
    "https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_Footer_Sustainability",
    "https://www.microsoft.com/customers/locale"
   ],
-  "checked": "2026-11-20T23:06:20.206381+00:00"
+  "checked": "2026-11-21T23:05:47.648204+00:00"
  },
  "https://www.nri.com/jp/news": {
   "links": [
@@ -1457,7 +1457,7 @@
    "https://www.nri.com/jp/privacy.html",
    "https://www.nri.com/jp/security_declare.html"
   ],
-  "checked": "2026-11-20T23:06:20.972652+00:00"
+  "checked": "2026-11-21T23:05:48.448386+00:00"
  },
  "https://www.deloitte.com/jp/ja/about/press-room.html": {
   "links": [
@@ -1543,7 +1543,7 @@
    "https://www.deloitte.com/jp/ja/legal/smap.html?icid=bn_smap",
    "https://www.deloitte.com/jp/ja/about/governance/network-brand-alliances/about-the-network.html"
   ],
-  "checked": "2026-11-20T23:06:21.327679+00:00"
+  "checked": "2026-11-21T23:05:48.716903+00:00"
  },
  "https://www.kpmg.com/jp/ja/home/media/press-releases.html": {
   "links": [
@@ -2086,7 +2086,7 @@
    "https://www.kpmg.com/jp/ja/about.html",
    "https://www.kpmg.com/jp/ja/media.html"
   ],
-  "checked": "2026-11-20T23:06:22.562181+00:00"
+  "checked": "2026-11-21T23:05:49.846058+00:00"
  },
  "https://www.ey.com/ja_jp/newsroom": {
   "links": [
@@ -2195,11 +2195,11 @@
    "https://www.ey.com/ja_jp/people/ey-japan",
    "https://www.ey.com/ja_jp/legal-and-privacy/hotline"
   ],
-  "checked": "2026-11-20T23:06:23.101881+00:00"
+  "checked": "2026-11-21T23:05:50.567842+00:00"
  },
  "https://dora.dev/": {
   "links": [],
-  "checked": "2026-11-20T23:06:23.270271+00:00"
+  "checked": "2026-11-21T23:05:50.718899+00:00"
  },
  "https://www.thoughtworks.com/radar": {
   "links": [
@@ -2280,11 +2280,11 @@
    "https://www.thoughtworks.com/about-us/fraud-advisory-notice",
    "https://www.thoughtworks.com/about-us/compliance"
   ],
-  "checked": "2026-11-20T23:06:23.488709+00:00"
+  "checked": "2026-11-21T23:05:50.917207+00:00"
  },
  "https://newsletter.pragmaticengineer.com/": {
   "links": [],
-  "checked": "2026-11-20T23:06:23.680732+00:00"
+  "checked": "2026-11-21T23:05:51.126413+00:00"
  },
  "https://linear.app/changelog": {
   "links": [
@@ -2314,7 +2314,7 @@
    "https://linear.app/docs",
    "https://linear.app/legal"
   ],
-  "checked": "2026-11-20T23:06:24.019444+00:00"
+  "checked": "2026-11-21T23:05:51.451154+00:00"
  },
  "https://www.atlassian.com/blog": {
   "links": [
@@ -2333,7 +2333,7 @@
    "https://www.atlassian.com/resources",
    "https://www.atlassian.com/legal/privacy-policy"
   ],
-  "checked": "2026-11-20T23:06:24.264910+00:00"
+  "checked": "2026-11-21T23:05:51.685591+00:00"
  },
  "https://digital-strategy.ec.europa.eu/en/news": {
   "links": [
@@ -2346,19 +2346,19 @@
    "https://digital-strategy.ec.europa.eu/en/news/european-digital-infrastructure-consortium-launches-today-strengthen-digital-sovereignty-education",
    "https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-temu-breach-digital-services-act-failure-tackle-sale-illegal",
    "https://digital-strategy.ec.europa.eu/en/news/commission-hosts-apply-ai-summit-boost-europes-ai-innovation-and-uptake",
-   "https://digital-strategy.ec.europa.eu/en/news/member-states-join-forces-develop-sovereign-digital-infrastructure-education",
    "https://digital-strategy.ec.europa.eu/en/news/ai-act-advisory-forum-holds-its-second-meeting",
+   "https://digital-strategy.ec.europa.eu/en/news/member-states-join-forces-develop-sovereign-digital-infrastructure-education",
    "https://digital-strategy.ec.europa.eu/en/news/ai-board-holds-its-tenth-meeting",
-   "https://digital-strategy.ec.europa.eu/en/news/first-european-standard-published-support-cyber-resilience-act",
-   "https://digital-strategy.ec.europa.eu/en/news/almost-eu24-billion-mobilised-and-614-projects-awarded-their-support-critical-technologies-europe",
-   "https://digital-strategy.ec.europa.eu/en/news/european-centre-democratic-resilience-invites-independent-organisations-join-its-stakeholder",
-   "https://digital-strategy.ec.europa.eu/en/news/press-statement-european-board-digital-services-following-its-21st-meeting",
    "https://digital-strategy.ec.europa.eu/en/news/european-citizens-panel-deliver-recommendations-strengthening-eu-democracy",
+   "https://digital-strategy.ec.europa.eu/en/news/european-centre-democratic-resilience-invites-independent-organisations-join-its-stakeholder",
+   "https://digital-strategy.ec.europa.eu/en/news/almost-eu24-billion-mobilised-and-614-projects-awarded-their-support-critical-technologies-europe",
+   "https://digital-strategy.ec.europa.eu/en/news/first-european-standard-published-support-cyber-resilience-act",
+   "https://digital-strategy.ec.europa.eu/en/news/press-statement-european-board-digital-services-following-its-21st-meeting",
    "https://digital-strategy.ec.europa.eu/en/news/call-expression-interest-european-ai-providers",
-   "https://digital-strategy.ec.europa.eu/en/news/commission-launches-over-eu290-million-boost-eu-tech-sovereignty-and-beyond",
+   "https://digital-strategy.ec.europa.eu/en/news/commission-marks-more-20-investments-boost-semiconductor-supply",
    "https://digital-strategy.ec.europa.eu/en",
    "https://digital-strategy.ec.europa.eu/en/pages/accessibility"
   ],
-  "checked": "2026-11-20T23:06:24.646700+00:00"
+  "checked": "2026-11-21T23:05:51.928167+00:00"
  }
 }

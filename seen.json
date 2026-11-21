@@ -1095,6 +1095,36 @@
    "date": "2026-11-21",
    "key": "tokyogas-inet-pm-tacit-knowledge-ai-interview",
    "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/20/news021.html"
+  },
+  {
+   "date": "2026-11-22",
+   "key": "kiro-vpc-connections-remote-workspaces",
+   "url": "https://aws.amazon.com/jp/blogs/news/private-networks/"
+  },
+  {
+   "date": "2026-11-22",
+   "key": "aws-japan-reverse-spec-flow",
+   "url": "https://aws.amazon.com/jp/blogs/news/aidm-introducing-reverse-spec-flow/"
+  },
+  {
+   "date": "2026-11-22",
+   "key": "openai-adversarial-distillation-reasoning-binding",
+   "url": "https://openai.com/index/combatting-adversarial-distillation"
+  },
+  {
+   "date": "2026-11-22",
+   "key": "signal-os-ai-agent-protection",
+   "url": "https://signal.org/blog/protecting-your-privacy/"
+  },
+  {
+   "date": "2026-11-22",
+   "key": "inkling-2-mini",
+   "url": "https://thinkingmachines.ai/news/inkling-2-mini/"
+  },
+  {
+   "date": "2026-11-22",
+   "key": "btm-tracisai-agentcore",
+   "url": "https://aws.amazon.com/jp/blogs/news/genai-case-study-btm2/"
   }
  ]
 }

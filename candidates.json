@@ -2446,8 +2446,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-21",
-   "mentions": 3,
+   "last_seen": "2026-11-22",
+   "mentions": 4,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2458,8 +2458,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-21",
-   "mentions": 3,
+   "last_seen": "2026-11-22",
+   "mentions": 4,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2518,8 +2518,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-21",
-   "mentions": 2,
+   "last_seen": "2026-11-22",
+   "mentions": 3,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2530,8 +2530,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-21",
-   "mentions": 2,
+   "last_seen": "2026-11-22",
+   "mentions": 3,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2638,12 +2638,108 @@
    "kind": "tool",
    "status": "candidate",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-21",
-   "mentions": 1,
+   "last_seen": "2026-11-22",
+   "mentions": 2,
    "sources": [
     "https://github.com/trending"
    ],
    "note": "任意ソフトをエージェントがCLIで操作可能にする"
+  },
+  {
+   "name": "Kiro VPC 接続 / リモートワークスペース",
+   "kind": "feature",
+   "status": "candidate",
+   "first_seen": "2026-11-22",
+   "last_seen": "2026-11-22",
+   "mentions": 1,
+   "sources": [
+    "https://aws.amazon.com/jp/blogs/news/private-networks/"
+   ],
+   "note": "クラウドセッションを顧客VPCに接続、IDEからSSHでリモート作業"
+  },
+  {
+   "name": "Reverse Spec Flow",
+   "kind": "method",
+   "status": "candidate",
+   "first_seen": "2026-11-22",
+   "last_seen": "2026-11-22",
+   "mentions": 1,
+   "sources": [
+    "https://aws.amazon.com/jp/blogs/news/aidm-introducing-reverse-spec-flow/"
+   ],
+   "note": "既存コードから根拠付き仕様書を起こすAWS Japanのワークフロー"
+  },
+  {
+   "name": "OpenAI 推論の会話バインド（敵対的蒸留対策）",
+   "kind": "policy",
+   "status": "candidate",
+   "first_seen": "2026-11-22",
+   "last_seen": "2026-11-22",
+   "mentions": 1,
+   "sources": [
+    "https://openai.com/index/combatting-adversarial-distillation"
+   ],
+   "note": "履歴書き換えで推論破棄、モデル系列またぎの再利用制限"
+  },
+  {
+   "name": "OSレベルAIエージェントとアプリ保護",
+   "kind": "concept",
+   "status": "candidate",
+   "first_seen": "2026-11-22",
+   "last_seen": "2026-11-22",
+   "mentions": 1,
+   "sources": [
+    "https://signal.org/blog/protecting-your-privacy/"
+   ],
+   "note": "Signalがスクショ遮断・Block Siri AIで対抗"
+  },
+  {
+   "name": "Inkling 2 Mini",
+   "kind": "model",
+   "status": "candidate",
+   "first_seen": "2026-11-22",
+   "last_seen": "2026-11-22",
+   "mentions": 1,
+   "sources": [
+    "https://thinkingmachines.ai/news/inkling-2-mini/"
+   ],
+   "note": "26.4B/3.4B MoEのローカル向けオープンウェイト"
+  },
+  {
+   "name": "TracisAI",
+   "kind": "product",
+   "status": "candidate",
+   "first_seen": "2026-11-22",
+   "last_seen": "2026-11-22",
+   "mentions": 1,
+   "sources": [
+    "https://aws.amazon.com/jp/blogs/news/genai-case-study-btm2/"
+   ],
+   "note": "BTMのログ調査エージェント、AgentCoreへ移行"
+  },
+  {
+   "name": "cathrynlavery/diagram-design",
+   "kind": "tool",
+   "status": "candidate",
+   "first_seen": "2026-11-22",
+   "last_seen": "2026-11-22",
+   "mentions": 1,
+   "sources": [
+    "https://github.com/trending"
+   ],
+   "note": "コーディングエージェント向け作図スキル"
+  },
+  {
+   "name": "Tracer-Cloud/opensre",
+   "kind": "tool",
+   "status": "candidate",
+   "first_seen": "2026-11-22",
+   "last_seen": "2026-11-22",
+   "mentions": 1,
+   "sources": [
+    "https://github.com/trending"
+   ],
+   "note": "CI/CD信頼性向けOSSエージェント"
   }
  ]
 }

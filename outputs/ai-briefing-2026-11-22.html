@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月22日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月22日（日）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は6件。すぐ試せるのは2件で、Kiro のクラウドセッションを社内ネットワークにつなぐ機能と、既存コードから根拠付きの仕様書を起こす AWS Japan の「Reverse Spec Flow」。ほかは、OpenAI の推論の再利用制限（会話履歴を書き換えると推論が捨てられる）、OS に入る AI エージェントへの Signal の対抗策、20GB で動く Inkling 2 Mini、国内 BTM のエージェント基盤の移行事例。見送ったもの：IDC の「AI で成果を出す企業ほど人を増やす」調査（一次発表が11月17日）、Microsoft Perception（発表が11月18日）、Google の Agent Substrate の CNCF 寄贈（一次発表が11月5日）。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Kiro、クラウドセッションを顧客の VPC に接続できるように——エージェントが社内のパッケージミラーや非公開の DB に届き、IDE からクラウド・Dev Container・自前マシンへ直接つなげる</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">Kiro ブログが11月20日に発表し、AWS Japan が21日に翻訳を公開した。管理者が VPC を一度登録すると、以後のクラウドセッションはすべてその VPC に自動で接続され、社内の Artifactory や Nexus、パブリック IP のないステージングの DB、Direct Connect や VPN の先のオンプレミスにも届く。セッションはサブネット内の1台のホストとして扱われ、NAT・ファイアウォール・ネットワーク ACL が効き、VPC フローログにも残る。モデルや制御系への通信は Kiro 側にとどまり VPC を通らない。設定は5段階のウィザードで、セキュリティグループは管理者が1〜5個選ぶ。IAM Identity Center を使う Enterprise プランが対象。同時に「リモートワークスペース」も始まり、Kiro IDE から SSH でクラウドセッション、Dev Container、手持ちの VM や GPU マシンに接続できる。</p>
+      <ul class="sowhat"><li><b>DEV</b>「クラウドのエージェントは社内の依存関係を取れないので結合テストは手元で」という分担が不要になる。devcontainer.json があればチームと同じ環境で動く。</li><li><b>CONSULT</b>閉域網の顧客に、ネットワーク境界に穴を開けずにクラウド型エージェントを使う構成として示せる。外向き通信は顧客の DLP で制御できる点が説明しやすい。</li><li><b>PM</b>エージェントの通信がフローログに残るため、監査部門への説明材料が既存の仕組みでそろう。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>Enterprise プランの検証環境で Kiro Settings &gt; Manage VPC connections からステージング VPC を登録し、社内レジストリからの依存取得と結合テストをクラウドセッションに任せてみる。</div>
+      <div class="source">出典：<a href="https://aws.amazon.com/jp/blogs/news/private-networks/" target="_blank" rel="noopener">AWS ブログ「Kiro のクラウドセッションからプライベートネットワークにアクセスできるようになりました」（2026-11-21）</a><a href="https://aws.amazon.com/jp/blogs/news/remote-workspaces/" target="_blank" rel="noopener">「Kiro のリモートワークスペース」（2026-11-21）</a></div>
+      <div class="note">エージェントがモデルに送るファイル内容やコマンド出力は Kiro 側の通信で、VPC の DLP の対象外になる点は確認が要る。自前マシンへの接続では Kiro は計算資源を請求しない。</div>
+      <div class="comment"><b>コメント：</b>クラウド型エージェントの導入を止めていたのはモデルの性能ではなくネットワークだった。その壁が一つ外れた。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>AWS Japan、既存コードから AI エージェント向けの仕様書を起こす「Reverse Spec Flow」を公開——全記述にコードの行番号を付け、別の AI が照合、約15万ステップの Java CMS で誤りは約5%</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">AWS Japan のソリューションアーキテクトが11月21日、AWS Samples で公開したワークフローを紹介した。仕様書がない、古い、ブラックボックスになったアプリのソースから、作り直し（Reimagine）の入力となる仕様書を作る。取り込み、コードグラフ、分析、仕様化（ISO/IEC/IEEE 29148準拠）、監査の5段階に分け、各記述に根拠のコード位置（path:line）を付けて、書き手と別の AI がソースと突き合わせる。確かめられないことは UNKNOWN として残し、完了は AI の報告ではなく点検スクリプト gates.sh の合格で判定する。仕様は現行技術の事実の層と、技術に依存しない業務ルールの層に分ける。Apache Roller（約15万ステップ）では約38時間で完了し、無作為200件の照合で約5%に部分的な誤り、完全な誤りは0件だった。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>レガシー刷新の提案で「まず仕様書を AI で起こす」工程に、手順・数字・限界（静的解析のみ、誤り約5%）つきの公開事例が使える。</li><li><b>DEV</b>根拠の行番号、別 AI による検証、スクリプトによる完了判定、という3つの規律は、仕様化以外のエージェント作業にもそのまま移せる。</li><li><b>PM</b>人の判断が要った場面が4種類に整理されており、見積もりで人の確認工数を置く場所の目安になる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>github.com/aws-samples/sample-reverse-spec-flow を取得し、社内の小さめのレガシーアプリ1本で Phase 1（コードグラフ）までを流して、網羅の分母が実態に合うかを見る。</div>
+      <div class="source">出典：<a href="https://aws.amazon.com/jp/blogs/news/aidm-introducing-reverse-spec-flow/" target="_blank" rel="noopener">AWS ブログ「[AI-Driven Modernization] 既存コードからAIエージェント向けの仕様書を起こす『Reverse Spec Flow』を公開しました」（2026-11-21）</a></div>
+      <div class="note">アプリの起動や DB への問い合わせなどの動的な確認は行わない。作り直したアプリは受け入れテストで現行と同じ動きを確かめる必要がある、と記事自身が明記している。</div>
+      <div class="comment"><b>コメント：</b>前日の「作業報告の37%に誤り」への実務側の答えがこれで、完了をAIの言葉でなく終了コードで決めている。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>OpenAI、推論の抜き取り対策を強化——GPT-6.2 Astra と Sol では推論が生成した会話に結び付き、前のメッセージを書き換えると以降の推論は破棄される</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">OpenAI は11月20日、他社が自社モデルの推論を抜き取って学習に使う「敵対的蒸留」への対策をまとめた。モデル自体に抜き取りの試みを見分けて保護された推論を出さないよう学習させ、入力と出力の分類器で、ストリーミングを含む応答やツール呼び出しの引数への推論の漏れを検出して止める。API では、保護された推論をユーザー・ワークスペース・組織・モデル系列をまたいで再利用することを制限した。GPT-6.2 Astra と Sol では推論はそれを生んだ会話に結び付けられ、前のメッセージが書き換えられると、その後の推論は API が捨てる。古い系列のモデルはこれらの推論を読めない。違反の疑いがあるアカウント網には週に数千〜数万件の措置を取っているという。</p>
+      <ul class="sowhat"><li><b>DEV</b>会話履歴を要約・圧縮して書き換えるハーネスでは、以降の推論が引き継がれず、性能やトークン消費が変わりうる。モデルをまたいで推論を渡す構成も見直しが要る。</li><li><b>CONSULT</b>OpenAI の出力を使った自社モデルの学習を検討する顧客には、規約と検知の両面で締め付けが強まっていると伝えるべきだ。</li></ul>
+      <div class="source">出典：<a href="https://openai.com/index/combatting-adversarial-distillation" target="_blank" rel="noopener">OpenAI「Combatting adversarial distillation」（2026-11-20）</a></div>
+      <div class="note">正当な利用者への影響や、規約・レート制限の変更の有無は記事に書かれていない。</div>
+      <div class="comment"><b>コメント：</b>文脈の圧縮は今や標準的な技法だが、プロバイダー側の仕様と衝突しうる点は覚えておきたい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Signal、OS に組み込まれる AI エージェントへの対抗策を発表——iOS 27 で画面撮影を遮断し「Siri AI をブロック」設定を追加、OS 各社にアプリ単位で AI のデータ取得を断る仕組みを要求</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Signal の Meredith Whittaker 氏が11月20日に公表した。Google の Gemini Intelligence や Apple の Siri AI の画面認識のように、OS に入った AI エージェントが画面を読み取って質問に答えたり操作したりすると、取り込まれたデータはローカルやサーバーに残り、Signal の暗号化では守れなくなる。対策として、iOS 27 ではアプリ内のスクリーンショットを遮断し「Block Siri AI」設定を加えた。Android では AI アシスタントが画面を読もうとするのを検知すると「画面セキュリティ」を自動で有効にする。macOS では遮断できないため、Siri の除外アプリへの登録を勧める。Apple・Google・Microsoft には、画面・ファイル・通知・API などあらゆる経路で AI のデータ取得をアプリが拒否できる、文書化された仕組みを求めた。Meta の Muse のような他社エージェントがアクセシビリティ権限を悪用する点も問題視している。</p>
+      <ul class="sowhat"><li><b>DEV</b>機密を扱う業務アプリでは、OS の AI エージェントによる画面読み取りを脅威として設計に入れる必要が出てきた。各 OS のスクリーン保護 API の対応状況を確認しておきたい。</li><li><b>CONSULT</b>金融・医療などの顧客の MDM 方針に「端末の AI アシスタントをどのアプリに許すか」という新しい論点が加わる。</li></ul>
+      <div class="source">出典：<a href="https://signal.org/blog/protecting-your-privacy/" target="_blank" rel="noopener">Signal Blog（Meredith Whittaker、2026-11-20）</a></div>
+      <div class="note">スクリーンショットの遮断では、端末に保存済みのファイルの読み取りなど別の経路は防げないと Signal 自身が認めている。保護は設定で解除できる。</div>
+      <div class="comment"><b>コメント：</b>エージェントの権限設計はサーバー側だけの話ではなく、利用者の端末の上でも始まっている。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>Thinking Machines、オープンウェイトの「Inkling 2 Mini」を公開——総26.4B・稼働3.4B の MoE で約20GB、32GB の Mac で Ollama から動き、SWE-bench Verified 79.2%（自社発表）</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">Thinking Machines は11月20日、手元の PC 向けのオープンウェイトモデル Inkling 2 Mini を発表した。総パラメータ26.4B、トークンあたりの稼働は3.4B の Mixture-of-Experts で、24層のうち中間のブロックを1トークンにつき3回繰り返す構造をとる。メモリは約20GB で、RAM 32GB 以上の Mac なら Ollama で動き、NVIDIA DGX Spark では NVFP4 で効率よく動くという。自社発表の数値は SWE-bench Verified（bash のみ）79.2%、Terminal Bench v2.1 で71.6%、DeepSWE v1.1 で48.2%（総100B未満のオープンウェイトで最高）。一方、指示の多い対話（MultiChallenge 50.0%）などでは Qwen3.8-27B を下回る。Hugging Face で重みを公開し、vLLM・SGLang・llama.cpp に対応、同社の Tinker で微調整もできる。</p>
+      <ul class="sowhat"><li><b>DEV</b>ノート PC で動くコーディングエージェント用のモデルの選択肢が増えた。手持ちのハーネスで Qwen 系と比べる価値がある。</li><li><b>CONSULT</b>コードを外に出せない顧客に、ローカル運用の候補として挙げられる。ただしライセンス名が明記されていないため、商用利用の条件は確認が先だ。</li></ul>
+      <div class="source">出典：<a href="https://thinkingmachines.ai/news/inkling-2-mini/" target="_blank" rel="noopener">Thinking Machines「Inkling 2 Mini」（2026-11-20）</a><a href="https://huggingface.co/blog/inkling2mini" target="_blank" rel="noopener">Hugging Face Blog（2026-11-20）</a></div>
+      <div class="note">ベンチマークはすべて発表元の計測。最大コンテキスト長は公式に示されていない。</div>
+      <div class="comment"><b>コメント：</b>前日のハーネスアダプターと組み合わせれば、小型モデルを自社ハーネスに合わせる実験の素材がそろう。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>BTM、販売中のログ調査エージェント「TracisAI」の実行基盤を ECS から Amazon Bedrock AgentCore へ移行——顧客 VPC での導入のつまずきを減らし、従量課金にするため</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span></div>
+      <p class="detail">AWS Japan と BTM が11月20日に共同で公開した事例。TracisAI は Slack などから自然文で依頼すると、CloudWatch Logs と運用中の DB を調べて数十秒〜数分で結果を返すエージェントで、2026年6月に AWS Marketplace で提供を始めた。当初は顧客の VPC 内の ECS で動かしていたが、ECR からのイメージ取得経路が顧客ごとに違い、非エンジニア向けの製品なのにネットワークの準備でつまずくことが多かった。常時起動のコストも課題だった。AgentCore Runtime に移すと、VPC 内に置くのは IAM で呼び出し元を絞った Lambda だけになり、実際に使った CPU とメモリの秒単位課金になった。Gateway・Identity・Memory との連携による拡張性も決め手になったという。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>国内の中堅 SI が自社のエージェントを Marketplace で外販し、基盤を作り直した経緯として、同様の製品化を考える顧客に紹介できる。</li><li><b>DEV</b>顧客 VPC にコンテナを置く方式より、VPC 外のマネージド実行と IAM で絞った VPC Lambda の組み合わせのほうが導入が楽だった、という具体的な知見。</li></ul>
+      <div class="source">出典：<a href="https://aws.amazon.com/jp/blogs/news/genai-case-study-btm2/" target="_blank" rel="noopener">AWS ブログ「株式会社 BTM 様がシステム調査エージェントを Amazon Bedrock AgentCore でリアーキテクチャするまで」（2026-11-20）</a></div>
+      <div class="note">AWS とユーザー企業の共同執筆記事で、移行による費用や導入件数の変化の数字は示されていない。</div>
+      <div class="comment"><b>コメント：</b>エージェント製品の外販では、モデルより「顧客環境に入れられるか」が先に効く。</div>
+    </div>
+
+    <div class="section-title">短信</div>
+    <div class="brief"><ul>
+      <li>GitHub Trending は Claude-BugHunter（1日1,794スター）、firecrawl（999）、obra/superpowers（884）、HKUDS/CLI-Anything（767）とスキル・エージェント基盤が上位。新顔は図を描くスキル cathrynlavery/diagram-design と CI/CD 向けエージェント Tracer-Cloud/opensre。<a href="https://github.com/trending" target="_blank" rel="noopener">GitHub Trending</a></li>
+    </ul></div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>新規：Kiro VPC 接続・リモートワークスペース、Reverse Spec Flow、OpenAI の推論の会話への結び付け、OS レベル AI エージェントとアプリの保護、Inkling 2 Mini、TracisAI、diagram-design、opensre。</li>
+      <li>継続：「AI 生成 PR の人間レビュー枠組み」は Reverse Spec Flow の別 AI 照合・スクリプト判定で言及が増えた。obra/superpowers、cursor/plugins、HKUDS/CLI-Anything は Trending に再掲し、CLI-Anything は2日連続で出現。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
