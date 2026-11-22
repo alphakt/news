@@ -1125,6 +1125,31 @@
    "date": "2026-11-22",
    "key": "btm-tracisai-agentcore",
    "url": "https://aws.amazon.com/jp/blogs/news/genai-case-study-btm2/"
+  },
+  {
+   "date": "2026-11-23",
+   "key": "claude-code-dont-ask-again-secrets",
+   "url": "https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/"
+  },
+  {
+   "date": "2026-11-23",
+   "key": "zenn-edit-deny-python-bypass",
+   "url": "https://zenn.dev/sutokei/articles/edit-deny-python-bypass"
+  },
+  {
+   "date": "2026-11-23",
+   "key": "openrouter-inference-provider-data-incidents",
+   "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"
+  },
+  {
+   "date": "2026-11-23",
+   "key": "zenn-ai-reviewed-code-mutation-35pct",
+   "url": "https://zenn.dev/beyond/articles/92657b461ebcb4"
+  },
+  {
+   "date": "2026-11-23",
+   "key": "lean-riemann-hypothesis-claude",
+   "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
   }
  ]
 }

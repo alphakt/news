@@ -95,8 +95,8 @@
    "kind": "process",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-21",
-   "mentions": 20,
+   "last_seen": "2026-11-23",
+   "mentions": 21,
    "sources": [
     "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
     "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
@@ -116,7 +116,8 @@
     "https://zenn.dev/t_azk/articles/ai-tests-passed-24-of-24",
     "https://arxiv.org/abs/2611.18939",
     "https://arxiv.org/abs/2611.25760",
-    "https://arxiv.org/abs/2611.25918"
+    "https://arxiv.org/abs/2611.25918",
+    "https://zenn.dev/beyond/articles/92657b461ebcb4"
    ],
    "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
   },
@@ -283,7 +284,7 @@
   {
    "name": "OpenAI Decisions API",
    "kind": "agent-infra",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-07",
    "last_seen": "2026-10-23",
    "mentions": 1,
@@ -459,11 +460,12 @@
    "kind": "governance",
    "status": "candidate",
    "first_seen": "2026-10-12",
-   "last_seen": "2026-10-23",
-   "mentions": 2,
+   "last_seen": "2026-11-23",
+   "mentions": 3,
    "sources": [
     "https://zenn.dev/emilk1225/articles/73356c9b0e156d",
-    "https://zenn.dev/starken/articles/claude-code-hook-gate-bash-bypass"
+    "https://zenn.dev/starken/articles/claude-code-hook-gate-bash-bypass",
+    "https://zenn.dev/sutokei/articles/edit-deny-python-bypass"
    ],
    "note": "相対パス ../ の deny が効かない実測（2.1.296）。絶対パス・Edit()・Bash 自動許可の扱い"
   },
@@ -750,12 +752,13 @@
    "kind": "threat",
    "status": "watching",
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-17",
-   "mentions": 4,
+   "last_seen": "2026-11-23",
+   "mentions": 5,
    "sources": [
     "https://gmo-cybersecurity.com/blog/20261019/",
     "https://aws.amazon.com/jp/blogs/news/amazon-threat-intelligence-observes-threat-actors-running-cybercrime-campaigns-with-artex-ai-agents/",
-    "https://dev.classmethod.jp/articles/cognito-self-signup-agentic-attack/"
+    "https://dev.classmethod.jp/articles/cognito-self-signup-agentic-attack/",
+    "https://aws.amazon.com/jp/blogs/news/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/"
    ],
    "note": "国内約20社を標的、8社が漏えい公表。CrowdStrike が韓国金融機関での使用を報道。2026-11-17 TechCrunch が FBI の注意喚起を報道（未検証）"
   },
@@ -858,7 +861,7 @@
   {
    "name": "PHP2Shell (PHP RCE 2件)",
    "kind": "security",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-22",
    "last_seen": "2026-10-22",
    "mentions": 1,
@@ -883,7 +886,7 @@
   {
    "name": "OpenAI models on Google Cloud",
    "kind": "platform",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-22",
    "last_seen": "2026-10-22",
    "mentions": 1,
@@ -895,7 +898,7 @@
   {
    "name": "Harunobu (デジタル庁)",
    "kind": "gov-tool",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-22",
    "last_seen": "2026-10-22",
    "mentions": 1,
@@ -938,7 +941,7 @@
   {
    "name": "Kiro の自己修正（kiro-trace）",
    "kind": "harness",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-23",
    "last_seen": "2026-10-23",
    "mentions": 1,
@@ -1432,10 +1435,11 @@
    "kind": "concept",
    "status": "candidate",
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-05",
-   "mentions": 1,
+   "last_seen": "2026-11-23",
+   "mentions": 2,
    "sources": [
-    "https://www.thoughtworks.com/insights/blog/generative-ai/harness-is-a-product"
+    "https://www.thoughtworks.com/insights/blog/generative-ai/harness-is-a-product",
+    "https://qiita.com/yamamoto_a_genee/items/76562c5c80032ad9e962"
    ],
    "note": "ハーネスを責任者・評価セット・バージョン管理を持つプロダクトとして扱う"
   },
@@ -1639,13 +1643,14 @@
    "kind": "security-incident",
    "status": "watching",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-16",
-   "mentions": 4,
+   "last_seen": "2026-11-23",
+   "mentions": 5,
    "sources": [
     "https://www.notion.com/ja/help/security-incident-involving-a-third-party-ai-vendor",
     "https://www.itmedia.co.jp/aiplus/article/2611/13/2000003172/",
     "https://cursor.com/blog/security-incident-update",
-    "https://zenn.dev/pollenjp/articles/2026-11-10-fireworks-ai-incident"
+    "https://zenn.dev/pollenjp/articles/2026-11-10-fireworks-ai-incident",
+    "https://kn.itmedia.co.jp/kn/article/2611/23/2000003393/"
    ],
    "note": "AI 委託先経由で Notion AI チャット記録漏えいの可能性。"
   },
@@ -2197,10 +2202,11 @@
    "kind": "process",
    "status": "candidate",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-17",
-   "mentions": 1,
+   "last_seen": "2026-11-23",
+   "mentions": 2,
    "sources": [
-    "https://zenn.dev/t_azk/articles/ai-tests-passed-24-of-24"
+    "https://zenn.dev/t_azk/articles/ai-tests-passed-24-of-24",
+    "https://zenn.dev/beyond/articles/92657b461ebcb4"
    ],
    "note": "文字列一致の検査・対象0件の静的検査・CI 未実行テストを変異検査で発見。PHP/Laravel の1事例"
   },
@@ -2446,8 +2452,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-22",
-   "mentions": 4,
+   "last_seen": "2026-11-23",
+   "mentions": 5,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2458,8 +2464,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-22",
-   "mentions": 4,
+   "last_seen": "2026-11-23",
+   "mentions": 5,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2518,8 +2524,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-22",
-   "mentions": 3,
+   "last_seen": "2026-11-23",
+   "mentions": 4,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2530,8 +2536,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-22",
-   "mentions": 3,
+   "last_seen": "2026-11-23",
+   "mentions": 4,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2638,8 +2644,8 @@
    "kind": "tool",
    "status": "candidate",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-22",
-   "mentions": 2,
+   "last_seen": "2026-11-23",
+   "mentions": 3,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2722,8 +2728,8 @@
    "kind": "tool",
    "status": "candidate",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-22",
-   "mentions": 1,
+   "last_seen": "2026-11-23",
+   "mentions": 2,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2734,12 +2740,84 @@
    "kind": "tool",
    "status": "candidate",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-22",
-   "mentions": 1,
+   "last_seen": "2026-11-23",
+   "mentions": 2,
    "sources": [
     "https://github.com/trending"
    ],
    "note": "CI/CD信頼性向けOSSエージェント"
+  },
+  {
+   "name": "Claude Code「Don't Ask Again」秘密混入（Apiiro / GitGuardian）",
+   "kind": "security",
+   "status": "candidate",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "mentions": 1,
+   "sources": [
+    "https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/"
+   ],
+   "note": "承認したコマンドが .claude/settings.local.json に恒久ルールとして保存され、認証情報ごとリポジトリに入る問題。公開 GitHub で31,088件。対照: 一般の秘密スキャナ"
+  },
+  {
+   "name": "推論プロバイダのデータ取扱い検証（OpenRouter / Dragos）",
+   "kind": "governance",
+   "status": "candidate",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "mentions": 1,
+   "sources": [
+    "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"
+   ],
+   "note": "canary 型の検査で推論プロバイダの ZDR 違反を検出、125エンドポイントを除外。対照: 自己申告の ZDR 表示"
+  },
+  {
+   "name": "Lean 形式証明による AI 成果の検証（リーマン予想）",
+   "kind": "concept",
+   "status": "candidate",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "mentions": 1,
+   "sources": [
+    "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
+   ],
+   "note": "人が読めない量の AI 生成証明を、仕様照合と複数検査器で受け入れる枠組み。"
+  },
+  {
+   "name": "awslabs/codekb",
+   "kind": "knowledge-base",
+   "status": "candidate",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "mentions": 1,
+   "sources": [
+    "https://github.com/awslabs/codekb"
+   ],
+   "note": "複数リポジトリのコードを Bedrock で業務語に要約し MCP で検索・影響分析。Kiro/Claude Code 連携。対照: LLM-maintained wiki"
+  },
+  {
+   "name": "Kiro for VS Code",
+   "kind": "dev-tool",
+   "status": "candidate",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "mentions": 1,
+   "sources": [
+    "https://aws.amazon.com/jp/blogs/news/kiro-for-vs-code/"
+   ],
+   "note": "Kiro のエージェントを VS Code ネイティブ拡張として GA（原文11/20）。.kiro 設定を共有。"
+  },
+  {
+   "name": "google-labs-code/stitch-skills",
+   "kind": "repo",
+   "status": "candidate",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "mentions": 1,
+   "sources": [
+    "https://github.com/trending"
+   ],
+   "note": "Stitch MCP サーバー向け Agent Skills 集。"
   }
  ]
 }

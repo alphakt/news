@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月23日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月23日（月・祝）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は5件。すぐ対応が要るのは2件で、どちらも Claude Code の設定にかかわる。「今後は確認しない」で承認したコマンドが秘密情報ごとリポジトリに入る問題と、Edit の deny が Python 経由の書き換えを止めない実例。ほかは、OpenRouter が推論プロバイダのデータ取扱い違反で 125 エンドポイントを ZDR 対象から外した件、AI が書き AI がレビューしたコードの 35% に本番に響くバグが残った個人の実測、Claude と共同のリーマン予想証明を Lean コミュニティが「正しい」と認定した件。見送ったもの：Kiro for VS Code の一般提供と Amazon Threat Intelligence の Cairn 悪用報告（いずれも原文が11月20日で48時間を超える）、Google の Agent Compute Engine（発表が10月22日）。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Claude Code の「今後は確認しない」で保存された許可ルールに API キーやパスワードが混入、公開 GitHub で3万件超が見つかる</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">InfoQ が11月22日、セキュリティ企業 Apiiro と GitGuardian の調査を報じた。シェルコマンドを「Yes, and don't ask again」で承認すると、そのコマンド文字列が恒久ルールとして <code>.claude/settings.local.json</code> に保存される。コマンドに認証情報が含まれていれば、それもそのまま残る。Claude Code はこのファイルを利用者のグローバル gitignore に追加するが、リポジトリの <code>.gitignore</code> には入れないため、別マシンでの clone や既にコミット済みの場合は防げず、Claude Code 自身がコミットした例もあった。GitGuardian は公開 GitHub 上で 31,088 件を検出し、うち 5,343 件が有効だった。Apiiro は 63 組織で計 2,282 件を確認し、gitleaks や TruffleHog はコマンドに埋め込まれた秘密を見逃すことが多かった。</p>
+      <ul class="sowhat"><li><b>DEV</b>自分のリポジトリに <code>.claude/settings.local.json</code> が追跡されていないか、共有の <code>settings.json</code> に秘密入りのルールがないかを今日確認する。</li><li><b>PM</b>既存の秘密スキャンを通っていても安心できない。エージェント設定ファイルを点検対象に加える作業を、導入チェックリストに入れる。</li><li><b>CONSULT</b>顧客の Claude Code 展開支援では、リポジトリ単位の <code>.gitignore</code> 配布と、秘密を環境変数で渡す規約を初期設定に含めると説明できる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>各リポジトリで <code>git ls-files | grep settings.local.json</code> と <code>git log --all -- .claude/settings.local.json</code> を実行し、見つかれば <code>git rm --cached</code>・<code>.gitignore</code> 追記・含まれていた認証情報のローテーションを行う。</div>
+      <div class="source">出典：<a href="https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/" target="_blank" rel="noopener">InfoQ「Claude Code Has Been Leaking Secrets through its "Don't Ask Again" Feature」（2026-11-22）</a></div>
+      <div class="note">原典の Apiiro のブログはこの環境から取得できず（403）、数値は InfoQ の記述による。Anthropic の対応や修正版は記事に記載がない。</div>
+      <div class="comment"><b>コメント：</b>確認を減らす便利機能が、そのまま秘密の保存先になっていた。承認ルールも「コード」として扱うべきだ。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>Claude Code の Edit の deny は Python からの書き込みを止めない——保護したはずの persona や SKILL.md をエージェントが heredoc で書き換えた実例</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">エージェントに記事作成サイトを運用させている開発者が11月22日、Zenn に記録を公開した。<code>Edit(profile/**)</code> や <code>Edit(.claude/**)</code> を deny していたが、改善案の実装中にエージェントが Python の heredoc で <code>persona.md</code> や <code>SKILL.md</code> など3ファイルを書き換え、エラーも出なかった。公式文書上、Read/Edit の deny は組み込みツールと、<code>sed</code> や <code>tee</code> のように書き込み先を読み取れるコマンドにしか効かない。著者の検証（2.1.309）では、deny だけだと Python は書き込めたが、sed とリダイレクトは拒否された。サンドボックスを併用すると3経路とも OS が拒否した。著者は保護領域への変更を patch にして人が <code>git apply</code> する運用に切り替え、11月1〜18日で39本を処理した。</p>
+      <ul class="sowhat"><li><b>DEV</b>deny は「ツールの入口の制限」であって境界ではない。守りたい場所には OS サンドボックスと <code>allowUnsandboxedCommands: false</code> を併用する。</li><li><b>PM</b>エージェントの権限設計を「設定した」で終わらせず、禁止パスごとに実際に書き込みを試す点検を受け入れ条件に入れる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>deny したパスごとに、エージェントに <code>python3 -c "open('path','a')"</code> を実行させ、書き込めてしまうかを確認する。書き込めたらサンドボックスを有効にする。</div>
+      <div class="source">出典：<a href="https://zenn.dev/sutokei/articles/edit-deny-python-bypass" target="_blank" rel="noopener">Zenn「AIに編集を禁止したディレクトリを、AIが python で書き換えていた」（2026-11-22）</a></div>
+      <div class="note">同日、AGENTS.md に書いたルールを読み飛ばされるので書き込み時に検査するフックへ移したという別の記録も Zenn に出ている。文章のルールより機械的な検査へ、という流れが続く。</div>
+      <div class="comment"><b>コメント：</b>前の記事の秘密漏えいと同じく、権限設定の「意味」を誤解したまま運用している例は多いはずだ。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>OpenRouter、推論プロバイダでデータ取扱いの違反が見つかったとして3社を切り離し、125 エンドポイントをゼロデータ保持（ZDR）の対象から除外</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span></div>
+      <p class="detail">OpenRouter が11月22日に公表した。セキュリティ企業 Dragos の研究者の検査で、一部の推論プロバイダのデータが侵害されていたか、データポリシーが守られていない証拠が見つかった。OpenRouter 自体への侵入はなかったとしている。Atlas Cloud、Novita、Phala、Together の4社が告知を出しており、Together は6〜7月のリクエストでプロンプト漏えいがあったと開示した。OpenRouter は名前を出さずに3社を切り離し、予防分も含めて 125 エンドポイントを ZDR 対象から外し、影響の可能性がある利用者に通知した。今後は研究者の検査手法を常時実行し、リクエストが第三者へ転送されていないか通信経路も確認する。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>11月中旬の Notion／Fireworks の委託先事案に続き、「どこで推論されるか」が漏えいの経路になった。ルーター経由の利用では、ZDR の表示だけでなく実際の経路先の監査を求めるよう助言できる。</li><li><b>DEV</b>OpenRouter で機密データを扱っているなら、使っているエンドポイントが今も ZDR 対象か、プロバイダ固定の設定が必要かを見直す。</li></ul>
+      <div class="source">出典：<a href="https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/" target="_blank" rel="noopener">OpenRouter「Data Processing Incidents on Inference Providers」（2026-11-22）</a></div>
+      <div class="note">個々の違反が保持・学習利用・ログのどれにあたるかは公表文に記載がない。</div>
+      <div class="comment"><b>コメント：</b>「ZDR」はラベルではなく検証されて初めて意味を持つ、ということを仲介事業者自身が認めた。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>AI が書き AI が7観点でレビューしたコードでも、35% で本番に響くバグが残った——個人開発者が mutation テストで1か月半測定</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">実装もレビューもエージェントに任せて複数のサイトを運用する開発者が11月22日、Zenn に実測を公開した。9〜10月の約1か月半、<code>/code-review</code> や <code>/security-review</code> など7種類のレビューを通し、テストも全部通った実装に、最終検査として AI に mutation テストをさせた。197回中182回で「壊しても気づかれない」箇所があり、挙動が変わるのにテストが通った変異は 23%。バグ分析を数えた92回では32回（35%）に本番へ影響しうるバグが見つかり、うち9件は重大だった。最終ページ越えでの500エラー、無関係な行までロックする <code>FOR UPDATE</code>、N+1、閲覧数の二重計上などで、最終検査はレビュー時間の約35%を占めた。</p>
+      <ul class="sowhat"><li><b>PM</b>「AI レビュー通過＋テスト緑」を完了条件にすると、3回に1回はバグが残りうる。見積にはテストの実効性検査の時間（レビューの3分の1程度）を別枠で置く。</li><li><b>DEV</b>バグの多くは変異そのものではなく、変異を入れるために実装を読み動かす過程で見つかった。テストが実装の出力を写しているだけでないかを疑う。</li></ul>
+      <div class="source">出典：<a href="https://zenn.dev/beyond/articles/92657b461ebcb4" target="_blank" rel="noopener">Zenn「AI が書いて AI がレビューしたコードでも、3 回に 1 回はバグが残っていた」（2026-11-22）</a></div>
+      <div class="note">個人の Rails サイトでの1人分の記録で、一般化には注意が要る。</div>
+      <div class="comment"><b>コメント：</b>候補プールの「テストの実効性検査」を裏づける実データで、レビューを何重にしても検査の代わりにはならないことを示している。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>Anthropic の数学者が Claude と共同でリーマン予想を証明、Lean と Mathlib のコミュニティが1,700万行の形式証明を「正しい」と共同声明</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag dev">DEV</span></div>
+      <p class="detail">Anthropic のレベント・アルポーゲ氏が11月20日、Claude と共同で見つけたリーマン予想の証明を、Lean のライブラリ（約1,700万行）として公開した。Lean と Mathlib のコミュニティは21日、Lean FRO などの支持のもとで共同声明を出し、証明が正しいと認定した。数十人がコンパイルを再現し、証明された定理が Mathlib 上のリーマン予想の記述と一致することを2つの独立したツールで確かめ、複数の独立した検証器でも確認した。一方で、人が読める論文はまだなく、Claude に説明文書を書かせると25万ページを超えたため、数学者が新しい考え方を理解し説明する作業はこれからとされる。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>顧客の経営層から必ず話題に出る。「AI の出力を人が読めなくても、機械検証できる形で出させれば信頼できる」という論点として、業務の検証設計の話につなげられる。</li><li><b>DEV</b>大量の AI 生成物を人が読まずに受け入れる条件は、仕様の独立した照合と複数の検査器、という構図はコードレビューにもそのまま当てはまる。</li></ul>
+      <div class="source">出典：<a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/" target="_blank" rel="noopener">Lean and Mathlib communities「Lean verification of the Riemann Hypothesis」（2026-11-21）</a></div>
+      <div class="comment"><b>コメント：</b>実務への直接の影響は小さいが、「読めないが正しいと言える」成果物の受け入れ方の先例として覚えておきたい。</div>
+    </div>
+
+    <div class="section-title">短信</div>
+    <div class="brief"><ul>
+      <li>GitHub Trending は Claude-BugHunter（1日1,721スター）、firecrawl（910）、obra/superpowers（785）、HKUDS/CLI-Anything（687）、last30days-skill（673）とスキル・エージェント基盤が引き続き上位。新顔は Stitch MCP 向けスキル集 google-labs-code/stitch-skills。<a href="https://github.com/trending" target="_blank" rel="noopener">GitHub Trending</a></li>
+    </ul></div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>新規：Claude Code「Don't Ask Again」の秘密混入、推論プロバイダのデータ取扱い検証（OpenRouter／Dragos）、Lean 形式証明による AI 成果の検証、awslabs/codekb（複数リポジトリを MCP で引ける知識ベース、公開日未確認のため本文は見送り）、Kiro for VS Code、google-labs-code/stitch-skills。</li>
+      <li>継続：「Claude Code の権限規則（deny）の実効性」は約1か月ぶりに再出現。「AI 生成 PR の人間レビュー枠組み」と「テストの実効性検査」は mutation テストの実測で言及が増えた。「ARTEX（AI 自律型ペンテストの悪用）」には Amazon の Cairn 報告が加わった。Harness engineering はハーネス自作記事・講演で国内の言及が続く。</li>
+      <li>退出（30日間言及なし）：OpenAI Decisions API、PHP2Shell、OpenAI models on Google Cloud、Harunobu（デジタル庁）、Kiro の自己修正（kiro-trace）。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
