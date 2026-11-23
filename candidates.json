@@ -56,14 +56,16 @@
    "kind": "knowledge",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-18",
-   "mentions": 4,
+   "last_seen": "2026-11-24",
+   "mentions": 5,
    "sources": [
     "https://cognition.com/agent-memory-repo",
     "https://github.com/AgentMemoryRepo/agentmemoryrepo",
     "https://www.anthropic.com/research/components-of-agent-memory",
     "https://www.lorekit.io/blog/open-agent-memory-format",
-    "https://tech.layerx.co.jp/entry/haro-alert-loop"
+    "https://tech.layerx.co.jp/entry/haro-alert-loop",
+    "https://www.thoughtworks.com/insights/blog/generative-ai/understanding-context-development-lifecycle",
+    "https://www.langchain.com/blog/wiki-memory"
    ],
    "note": "LLM が一次資料から wiki を継続的に編集・維持する知識蓄積の方式。対照: Obsidian+agent、各社 memory 機能"
   },
@@ -72,8 +74,8 @@
    "kind": "context-engineering",
    "status": "candidate",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-19",
-   "mentions": 13,
+   "last_seen": "2026-11-24",
+   "mentions": 14,
    "sources": [
     "https://zenn.dev/fukorohouse/articles/e2659fcd7c530f",
     "https://arxiv.org/abs/2610.08875",
@@ -86,7 +88,9 @@
     "https://martinfowler.com/bliki/GeneratedGlossary.html",
     "https://arxiv.org/abs/2611.15436",
     "https://zenn.dev/tsugu_sukima/articles/2b19ac59da1b2a",
-    "https://zenn.dev/handa_lab/articles/11-rules-placement-table"
+    "https://zenn.dev/handa_lab/articles/11-rules-placement-table",
+    "https://www.infoq.com/news/2026/11/netflix-sdlc-ai-coding-agents/",
+    "https://arxiv.org/abs/2611.27112"
    ],
    "note": ".md でエージェントの振る舞いを規定する手法。効果の実証研究・ベストプラクティスを追う / 2026-11-18: arXiv 2611.18582（指示ファイルのレビュー研究）は初回投稿 7/31 のため収録見送り"
   },
@@ -95,8 +99,8 @@
    "kind": "process",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-23",
-   "mentions": 21,
+   "last_seen": "2026-11-24",
+   "mentions": 22,
    "sources": [
     "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
     "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
@@ -117,7 +121,9 @@
     "https://arxiv.org/abs/2611.18939",
     "https://arxiv.org/abs/2611.25760",
     "https://arxiv.org/abs/2611.25918",
-    "https://zenn.dev/beyond/articles/92657b461ebcb4"
+    "https://zenn.dev/beyond/articles/92657b461ebcb4",
+    "https://claude.com/resources/articles/introducing-claude-ship",
+    "https://www.infoq.com/news/2026/11/netflix-sdlc-ai-coding-agents/"
    ],
    "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
   },
@@ -460,12 +466,13 @@
    "kind": "governance",
    "status": "candidate",
    "first_seen": "2026-10-12",
-   "last_seen": "2026-11-23",
-   "mentions": 3,
+   "last_seen": "2026-11-24",
+   "mentions": 4,
    "sources": [
     "https://zenn.dev/emilk1225/articles/73356c9b0e156d",
     "https://zenn.dev/starken/articles/claude-code-hook-gate-bash-bypass",
-    "https://zenn.dev/sutokei/articles/edit-deny-python-bypass"
+    "https://zenn.dev/sutokei/articles/edit-deny-python-bypass",
+    "https://arxiv.org/abs/2611.27112"
    ],
    "note": "相対パス ../ の deny が効かない実測（2.1.296）。絶対パス・Edit()・Bash 自動許可の扱い"
   },
@@ -2818,6 +2825,67 @@
     "https://github.com/trending"
    ],
    "note": "Stitch MCP サーバー向け Agent Skills 集。"
+  },
+  {
+   "name": "Claude Ship（Code Review / PR Steward / Claude Approvals）",
+   "kind": "process",
+   "status": "candidate",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "mentions": 1,
+   "sources": [
+    "https://claude.com/resources/articles/introducing-claude-ship",
+    "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
+   ],
+   "note": "リポジトリ内の承認方針ファイルで AI に PR 承認させる。Team/Enterprise、GitHub。ZDR 組織は対象外"
+  },
+  {
+   "name": "Enterprise Frontier Safeguards（Anthropic）",
+   "kind": "governance",
+   "status": "candidate",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "mentions": 1,
+   "sources": [
+    "https://platform.claude.com/docs/en/release-notes/overview"
+   ],
+   "note": "最上位モデルでも ZDR。Sealed Safety Data を顧客バケットに保管、Safety Case は顧客が審査。ベータ"
+  },
+  {
+   "name": "Shirudo（OpenAI×Cisco）",
+   "kind": "security",
+   "status": "candidate",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "mentions": 1,
+   "sources": [
+    "https://openai.com/index/introducing-shirudo"
+   ],
+   "note": "eBPF で稼働中 Linux に署名付き一時防御。BSD-2"
+  },
+  {
+   "name": "Codex Security の SDLC 組み込み",
+   "kind": "process",
+   "status": "candidate",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "mentions": 1,
+   "sources": [
+    "https://developers.openai.com/blog/building-security-review-into-your-sdlc-with-codex-security"
+   ],
+   "note": "threat model と SECURITY.md をコミット、パス別の閾値。公開日未確認"
+  },
+  {
+   "name": "コンテキストのライフサイクル（Thoughtworks）",
+   "kind": "context-engineering",
+   "status": "candidate",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "mentions": 1,
+   "sources": [
+    "https://www.thoughtworks.com/insights/blog/generative-ai/understanding-context-development-lifecycle"
+   ],
+   "note": "作る・見つける・実行時管理・評価改善。codified vs ambient context"
   }
  ]
 }

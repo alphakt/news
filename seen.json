@@ -1150,6 +1150,41 @@
    "date": "2026-11-23",
    "key": "lean-riemann-hypothesis-claude",
    "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
+  },
+  {
+   "date": "2026-11-24",
+   "key": "anthropic-claude-ship",
+   "url": "https://claude.com/resources/articles/introducing-claude-ship"
+  },
+  {
+   "date": "2026-11-24",
+   "key": "anthropic-enterprise-frontier-safeguards",
+   "url": "https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview"
+  },
+  {
+   "date": "2026-11-24",
+   "key": "netflix-qconsf-sdlc-ai-agents",
+   "url": "https://www.infoq.com/news/2026/11/netflix-sdlc-ai-coding-agents/"
+  },
+  {
+   "date": "2026-11-24",
+   "key": "arxiv-markdown-not-firewall",
+   "url": "https://arxiv.org/abs/2611.27112"
+  },
+  {
+   "date": "2026-11-24",
+   "key": "openai-cisco-shirudo",
+   "url": "https://openai.com/index/introducing-shirudo"
+  },
+  {
+   "date": "2026-11-24",
+   "key": "thoughtworks-context-development-lifecycle",
+   "url": "https://www.thoughtworks.com/insights/blog/generative-ai/understanding-context-development-lifecycle"
+  },
+  {
+   "date": "2026-11-24",
+   "key": "claude-opus-4-5-deprecation",
+   "url": "https://platform.claude.com/docs/en/release-notes/overview#2026-11-23-opus-4-5"
   }
  ]
 }
