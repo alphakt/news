@@ -1185,6 +1185,31 @@
    "date": "2026-11-24",
    "key": "claude-opus-4-5-deprecation",
    "url": "https://platform.claude.com/docs/en/release-notes/overview#2026-11-23-opus-4-5"
+  },
+  {
+   "date": "2026-11-25",
+   "key": "arxiv-context-files-map-territory",
+   "url": "https://arxiv.org/abs/2611.29916"
+  },
+  {
+   "date": "2026-11-25",
+   "key": "qiita-mcp-header-plaintext",
+   "url": "https://qiita.com/supportapp3/items/b73c21efacc605616bf9"
+  },
+  {
+   "date": "2026-11-25",
+   "key": "nec-kiro-spec-driven-development",
+   "url": "https://aws.amazon.com/jp/blogs/news/nec-kiro-spec-driven-development/"
+  },
+  {
+   "date": "2026-11-25",
+   "key": "ifood-remote-agents-platform",
+   "url": "https://openai.com/business/customer-stories/ifood"
+  },
+  {
+   "date": "2026-11-25",
+   "key": "arxiv-db-agent-mistakes-undo",
+   "url": "https://arxiv.org/abs/2611.30483"
   }
  ]
 }

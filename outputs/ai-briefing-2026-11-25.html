@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月25日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月25日（水）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は5件。すぐ動けるのは2件で、CLAUDE.md／AGENTS.md に書いた依存ルールの18%は書いた時点で既に破られていたという3,602ファイルの調査と、<code>claude mcp add --header</code> で登録した API キーが画面では隠れても設定ファイルに平文で残るという検証。ほかに、NEC が Kiro の仕様駆動開発で約10万人向けの社内システムを5週間で本番化した事例、iFood が1万5千リポジトリに1回約4セントでエージェント作業を流す基盤、データベースでエージェントが誤操作したとき被害を決めるのは「取り消せるかどうか」だという実験を載せる。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>CLAUDE.md／AGENTS.md の「依存ルール」の18%は書いた時点で既に破られていた——3,346 の OSS で 3,602 のコンテキストファイルを実コードと照合</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">arXiv に11月23日に投稿された論文。CLAUDE.md や AGENTS.md に書かれた構造の主張のうち、機械的に確かめられる2種類——フォルダやファイルを示す「パスの主張」41,090件と、許される import を定める「依存ルール」184件——を現在のコードと履歴で検証した。パスが見つからないのは約5%だが本当の誤りは推定2.2%で、README（3.5%）より正確だった。コードが動くと古くなった主張の61%は直され、多くは同じコミットで直る。一方、依存ルールは184件中33件（18%）が書いた時点で既に破られ、ほぼすべて破られたままだった。著者は「よい地図だが、規則集としては当てにならない」とまとめる。</p>
+      <ul class="sowhat"><li><b>DEV</b>エージェントは文脈ファイルを正しいものとして読む。「理想の設計」を規則として書くなら、現状との差を明記するか、import の検査をリンタや CI に置いて規則と実態を一致させる。</li><li><b>PM</b>文脈ファイルの保守は「パスの記述」より「規則の記述」に手を掛ける。レビュー項目に「規則がコードで守られているか」を加える。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>自分のリポジトリの CLAUDE.md／AGENTS.md から「〇〇は△△を import しない」型の規則を抜き出し、grep か依存解析ツール（例：import-linter、dependency-cruiser）で1本ずつ現状と照合する。破れている規則は直すか「目標」と書き換える。</div>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.29916" target="_blank" rel="noopener">arXiv:2611.29916「Does the Agent's Map Match the Territory? Architectural Claims in AI Agent Context Files and Their Fit with the Code」（2026-11-23 投稿）</a></div>
+      <div class="note">エージェントが関わったコミットは規則違反が約1.8倍（0.29%対0.16%）だったが、違反は計14件で統計的に有意ではなく、著者も「初期の兆候」としている。分析には LLM を使い、各段階を人が確認した。</div>
+      <div class="comment"><b>コメント：</b>前号の「ルールファイルは境界にならない」に続き、そもそも書かれたルール自体が実態とずれているという、足元を確かめる研究だ。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2><code>claude mcp add --header</code> の Authorization は画面では [REDACTED] でも設定ファイルには平文——<code>--scope project</code> ならコミット対象の .mcp.json に入る</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">Qiita に11月24日に投稿された検証記事（Claude Code 2.1.330、Codex CLI 0.171.0、ダミーキーで確認）。HTTP の MCP サーバーを <code>--header "Authorization: Bearer キー"</code> で登録すると、表示は伏せられるが値は平文で保存される。<code>--scope project</code> ではリポジトリにコミットする前提の <code>.mcp.json</code> に、既定の local と user スコープでは <code>~/.claude.json</code> に書かれる。STDIO サーバーの <code>-e API_KEY=...</code> や <code>codex mcp add --env</code>（<code>~/.codex/config.toml</code>）も同様。<code>~/.claude.json</code> は所有者しか読めないが、ホームのバックアップやエージェントによる読み取りで漏れうる。著者はキー名らしき項目に直書きの値がある行を探す grep を1行で示し、<code>${API_KEY}</code> のような環境変数参照への置き換えを勧めている。</p>
+      <ul class="sowhat"><li><b>DEV</b>画面で伏せ字になっていることは保存時の秘匿を意味しない。MCP の設定は環境変数参照で書き、<code>.mcp.json</code> をコミットする前に値を確認する。</li><li><b>PM</b>MCP 導入手順書の登録コマンド例に直書きのキーがあれば差し替える。一度でも push したキーは履歴に残るので、失効と再発行を手順に含める。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>チームの各リポジトリの <code>.mcp.json</code> と各自の <code>~/.claude.json</code>・<code>~/.codex/config.toml</code> を KEY／TOKEN／SECRET／Authorization で検索し、<code>$</code> で始まらない値があれば環境変数参照に直す。コミット済みなら即失効する。</div>
+      <div class="source">出典：<a href="https://qiita.com/supportapp3/items/b73c21efacc605616bf9" target="_blank" rel="noopener">Qiita「claude mcp add --header の Authorization は画面では [REDACTED] でも .mcp.json には平文」（2026-11-24）</a></div>
+      <div class="note">個人の検証記事。<code>ANTHROPIC_AUTH_TOKEN</code> など一部の変数はリモートの url／headers では展開されないため、サーバー用のキーには別の変数名を使うよう著者は注意している。grep は <code>X-Api-Auth</code> のような名前を拾わない。</div>
+      <div class="comment"><b>コメント：</b>11月23日号の「今後は確認しない」で許可ルールに秘密が混入した件と同じ型で、エージェントの設定ファイルが新しい秘密の置き場になっている。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>NEC、Kiro の仕様駆動開発で社内 IT 環境の可視化システムを着手から5週間で本番デプロイ——Steering に規則、Hooks で変更・判断理由を自動記録、現在は約10万人に公開</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">AWS ジャパンのブログに NEC と AWS が11月24日に共著で公開した。コーディング経験の少ないメンバーで、半日の体験セッションから始め、要件→設計→タスクの順に進める Kiro の仕様駆動開発を採用した。工夫は3つ。Steering に「選択肢が複数あるときは提示して人に判断させる」などの規則を書く。Hooks で変更履歴・設計判断・改善項目を自動で記録する。社内のセキュリティ知識を MCP サーバーで参照させる。CI/CD は環境ごとの差が出ないよう固定のパイプラインにし、インフラとアプリで分けた。4月上旬の着手から5週間で本番化し、6月17日に先行公開、現在は NEC グループ約10万人が対象。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>国内大手の「クライアントゼロ」事例として、AI 開発の進め方（文書で規則を与える→人がレビュー→判断を記録する）を顧客提案の型に使える。</li><li><b>PM</b>AI は「カスタムドメインを足しても既定の *.cloudfront.net の経路が開いたまま」という暗黙の前提を見落とし、人のレビューで見つかった。アーキテクト級のレビュアーを計画に必ず入れる。</li><li><b>DEV</b>Hooks で design decisions を自動記録する仕組みは Claude Code のフックでも再現でき、担当交代時の引き継ぎ資料になる。</li></ul>
+      <div class="source">出典：<a href="https://aws.amazon.com/jp/blogs/news/nec-kiro-spec-driven-development/" target="_blank" rel="noopener">AWS ブログ「開発の市民化：Kiro で全社利用のシステム開発に挑む」（2026-11-24）</a></div>
+      <div class="note">AWS ブログ上のベンダー共著記事で、工数削減などの定量比較は示されていない。NEC 自身も「スキルを持つメンバーがいたから品質を担保できた」と課題を挙げている。</div>
+      <div class="comment"><b>コメント：</b>速さより「何を人が判断したかを記録する仕組み」を前面に出した点が、日本企業の品質要求に合った書き方だ。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>iFood、1万5千のリポジトリにエージェント作業を API で流す社内基盤を構築——2万5千回超を実行し、1回あたり平均約0.04ドル</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">OpenAI が11月24日に公開したブラジルの iFood の事例。社内の Remote Agents Platform は、プロンプトと環境の条件を REST API で受け取り、隔離したサンドボックスでエージェントを走らせ、結果をマージリクエストとして返す。リポジトリのクローン、スキルの読み込み、ブランチ作成、MR の発行は決定的な処理で行い、モデル（GPT-5.6 Luna）は間の作業だけを担う。出力は Structured Outputs の決められた形式で、成功か失敗かを判定する。最初の大口利用者は全リポジトリの脆弱な依存関係を検出・修正するセキュリティ製品で、移行後に修正の正確さと解消件数がともに2倍超になったという。累計2万5千回超、270億トークン超を消費した。</p>
+      <ul class="sowhat"><li><b>PM</b>依存更新や規約チェックのような定型作業は「1回数セント」で見積もれる単位になった。人のレビュー工数の方が支配的になる前提で計画する。</li><li><b>DEV</b>決定的な前後処理でモデルの担当範囲を狭め、出力を構造化して合否判定する設計は、大量のバッチ型エージェントを作るときの参考になる。</li><li><b>CONSULT</b>多数のリポジトリを持つ顧客に「脆弱性修正の一括エージェント化」を提案する際の規模と単価の目安になる。</li></ul>
+      <div class="source">出典：<a href="https://openai.com/business/customer-stories/ifood" target="_blank" rel="noopener">OpenAI「How iFood scales coding agents across 15,000 repositories」（2026-11-24）</a></div>
+      <div class="note">ベンダーの顧客事例。マージリクエストを人がどうレビュー・承認しているかは書かれていない。</div>
+      <div class="comment"><b>コメント：</b>エージェントを「対話相手」ではなく「API で呼ぶ作業単位」として扱う運用が、費用の見える化と一緒に進んでいる。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>エージェントがデータベースで誤操作したとき被害を左右するのは「どれだけ壊れるか」より「どれだけ戻せるか」——4種の DB エンジンで 22 種の誤りを再現した事前登録型の実験</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">arXiv に11月23日に投稿された論文。第1層では、エージェントが犯しがちな22種の誤りを、4つのリレーショナル DB エンジン、5種の権限設定、2種の復旧設定でスクリプト的に再現し、エンジン固有の復旧訓練を874回行った。第2層では、4B〜12B の小型オープンモデル6種で動く最小限のエージェントに、危険を含む作業を9エンジンで9,468回させた。結論は、初期設定のままではエンジン間の差は被害の大きさより「何を取り消せるか」に表れるというもの。事前登録した7仮説のうち規則を満たしたのは3つで、うち2つは設計上ほぼ自明だったと著者は認めている。</p>
+      <ul class="sowhat"><li><b>PM</b>本番 DB にエージェントを触らせる計画では、権限を絞るだけでなく、ポイントインタイム復旧などの取り消し手段と復旧訓練を受け入れ条件に入れる。</li><li><b>DEV</b>DB 用ツールを設計するときは、操作ごとに「戻せるか」を分類して、戻せない操作だけ承認を挟む構成が検討に値する。</li></ul>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.30483" target="_blank" rel="noopener">arXiv:2611.30483「When an AI agent makes a mistake in a database, what decides the damage?」（2026-11-23 投稿）</a></div>
+      <div class="note">使ったのは小型モデルのみで、最上位モデルのエージェントでの挙動はわからない。事後分析は探索的で多重比較の補正をしていない。</div>
+      <div class="comment"><b>コメント：</b>候補プールの「操作の可逆性分類」を、DB という具体的な場で実測した研究だ。</div>
+    </div>
+
+    <div class="section-title">短信</div>
+    <div class="brief"><ul>
+      <li>GitHub Trending は Claude-BugHunter（1日1,833スター）、HKUDS/CLI-Anything（1,075）、obra/superpowers（1,006）とスキル・エージェント基盤が引き続き上位。新顔は、アプリストア審査落ちを防ぐ事前チェック用スキル mjmirza/app-store-compliance（936）。<a href="https://github.com/trending" target="_blank" rel="noopener">GitHub Trending</a></li>
+    </ul></div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>新規：コンテキストファイルの規則と実コードの照合（arXiv 2611.29916）、MCP 設定ファイルの平文キー、iFood Remote Agents Platform、Kiro の Steering／Hooks による判断記録（NEC）、mjmirza/app-store-compliance。</li>
+      <li>継続：「SOUL.md / AGENTS.md / CLAUDE.md」は3,602ファイルの実証研究で再出現。「AI 生成 PR の人間レビュー枠組み」は NEC 事例（暗黙の前提は人が補う）で言及。「Reversibility Classes（操作の可逆性分類）」は DB 実験で裏づけが加わった。OpenAI の Git 基盤 Pando と AWS×SAP の A2A 連携は一次情報の日付が48時間を超えていたため本文は見送り。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

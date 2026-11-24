@@ -74,8 +74,8 @@
    "kind": "context-engineering",
    "status": "candidate",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-24",
-   "mentions": 14,
+   "last_seen": "2026-11-25",
+   "mentions": 15,
    "sources": [
     "https://zenn.dev/fukorohouse/articles/e2659fcd7c530f",
     "https://arxiv.org/abs/2610.08875",
@@ -90,7 +90,8 @@
     "https://zenn.dev/tsugu_sukima/articles/2b19ac59da1b2a",
     "https://zenn.dev/handa_lab/articles/11-rules-placement-table",
     "https://www.infoq.com/news/2026/11/netflix-sdlc-ai-coding-agents/",
-    "https://arxiv.org/abs/2611.27112"
+    "https://arxiv.org/abs/2611.27112",
+    "https://arxiv.org/abs/2611.29916"
    ],
    "note": ".md でエージェントの振る舞いを規定する手法。効果の実証研究・ベストプラクティスを追う / 2026-11-18: arXiv 2611.18582（指示ファイルのレビュー研究）は初回投稿 7/31 のため収録見送り"
   },
@@ -99,8 +100,8 @@
    "kind": "process",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-24",
-   "mentions": 22,
+   "last_seen": "2026-11-25",
+   "mentions": 23,
    "sources": [
     "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
     "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
@@ -123,7 +124,8 @@
     "https://arxiv.org/abs/2611.25918",
     "https://zenn.dev/beyond/articles/92657b461ebcb4",
     "https://claude.com/resources/articles/introducing-claude-ship",
-    "https://www.infoq.com/news/2026/11/netflix-sdlc-ai-coding-agents/"
+    "https://www.infoq.com/news/2026/11/netflix-sdlc-ai-coding-agents/",
+    "https://aws.amazon.com/jp/blogs/news/nec-kiro-spec-driven-development/"
    ],
    "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
   },
@@ -935,7 +937,7 @@
   {
    "name": "Claude Duet",
    "kind": "agent-product",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-23",
    "last_seen": "2026-10-25",
    "mentions": 2,
@@ -960,7 +962,7 @@
   {
    "name": "Brotli／Node2Shell（CVE-2026-111497）",
    "kind": "security",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-25",
    "last_seen": "2026-10-25",
    "mentions": 1,
@@ -972,7 +974,7 @@
   {
    "name": "1Password for Agents",
    "kind": "agent-infra",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-25",
    "last_seen": "2026-10-25",
    "mentions": 1,
@@ -984,7 +986,7 @@
   {
    "name": "Kimi K3.1 Pro",
    "kind": "model",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-25",
    "last_seen": "2026-10-25",
    "mentions": 1,
@@ -996,7 +998,7 @@
   {
    "name": "Google Data Agent Kit",
    "kind": "agent-infra",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-25",
    "last_seen": "2026-10-25",
    "mentions": 1,
@@ -1008,7 +1010,7 @@
   {
    "name": "OpenAI 訓練環境のインターネット遮断",
    "kind": "safety",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-25",
    "last_seen": "2026-10-25",
    "mentions": 1,
@@ -2399,10 +2401,11 @@
    "kind": "governance",
    "status": "candidate",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19",
-   "mentions": 1,
+   "last_seen": "2026-11-25",
+   "mentions": 2,
    "sources": [
-    "https://arxiv.org/abs/2611.22075"
+    "https://arxiv.org/abs/2611.22075",
+    "https://arxiv.org/abs/2611.30483"
    ],
    "note": "5段階、MCP 20サーバー536ツール"
   },
@@ -2459,8 +2462,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-23",
-   "mentions": 5,
+   "last_seen": "2026-11-25",
+   "mentions": 6,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2471,8 +2474,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-23",
-   "mentions": 5,
+   "last_seen": "2026-11-25",
+   "mentions": 6,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2531,8 +2534,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23",
-   "mentions": 4,
+   "last_seen": "2026-11-25",
+   "mentions": 5,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2543,8 +2546,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-23",
-   "mentions": 4,
+   "last_seen": "2026-11-25",
+   "mentions": 5,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2651,8 +2654,8 @@
    "kind": "tool",
    "status": "candidate",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-23",
-   "mentions": 3,
+   "last_seen": "2026-11-25",
+   "mentions": 4,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2735,8 +2738,8 @@
    "kind": "tool",
    "status": "candidate",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23",
-   "mentions": 2,
+   "last_seen": "2026-11-25",
+   "mentions": 3,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2747,8 +2750,8 @@
    "kind": "tool",
    "status": "candidate",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-23",
-   "mentions": 2,
+   "last_seen": "2026-11-25",
+   "mentions": 3,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2819,8 +2822,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
-   "mentions": 1,
+   "last_seen": "2026-11-25",
+   "mentions": 2,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2886,6 +2889,90 @@
     "https://www.thoughtworks.com/insights/blog/generative-ai/understanding-context-development-lifecycle"
    ],
    "note": "作る・見つける・実行時管理・評価改善。codified vs ambient context"
+  },
+  {
+   "name": "コンテキストファイルの規則と実コードの照合（arXiv 2611.29916）",
+   "kind": "method",
+   "status": "candidate",
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "mentions": 1,
+   "sources": [
+    "https://arxiv.org/abs/2611.29916"
+   ],
+   "note": "依存ルールの18%が記述時点で破綻。2026-11-25 号で収録"
+  },
+  {
+   "name": "MCP 設定ファイルの平文キー（claude mcp add --header）",
+   "kind": "risk",
+   "status": "candidate",
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "mentions": 1,
+   "sources": [
+    "https://qiita.com/supportapp3/items/b73c21efacc605616bf9"
+   ],
+   "note": "2026-11-25 号で収録"
+  },
+  {
+   "name": "iFood Remote Agents Platform",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "mentions": 1,
+   "sources": [
+    "https://openai.com/business/customer-stories/ifood"
+   ],
+   "note": "1万5千リポジトリ、1回約0.04ドル。2026-11-25 号で収録"
+  },
+  {
+   "name": "Kiro Steering／Hooks による判断記録（NEC）",
+   "kind": "method",
+   "status": "candidate",
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "mentions": 1,
+   "sources": [
+    "https://aws.amazon.com/jp/blogs/news/nec-kiro-spec-driven-development/"
+   ],
+   "note": "2026-11-25 号で収録"
+  },
+  {
+   "name": "mjmirza/app-store-compliance",
+   "kind": "repo",
+   "status": "candidate",
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "mentions": 1,
+   "sources": [
+    "https://github.com/trending"
+   ],
+   "note": "GitHub Trending 初出"
+  },
+  {
+   "name": "Pando（OpenAI の Git 基盤）",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "mentions": 1,
+   "sources": [
+    "https://openai.com/index/scaling-git-at-openai/"
+   ],
+   "note": "一次情報 11/2 で期限外。InfoQ 11/24 で再言及"
+  },
+  {
+   "name": "AWS×SAP A2A 相互運用（AgentCore × Joule）",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "mentions": 1,
+   "sources": [
+    "https://aws.amazon.com/blogs/awsforsap/a2a-interoperability-between-aws-and-sap/"
+   ],
+   "note": "原文 11/20 で期限外。日本語版 11/24"
   }
  ]
 }
