@@ -1210,6 +1210,31 @@
    "date": "2026-11-25",
    "key": "arxiv-db-agent-mistakes-undo",
    "url": "https://arxiv.org/abs/2611.30483"
+  },
+  {
+   "date": "2026-11-26",
+   "key": "google-workspace-mcp-cli-ga-rest-deadline",
+   "url": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html"
+  },
+  {
+   "date": "2026-11-26",
+   "key": "anthropic-skills-over-mcp-beta",
+   "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more"
+  },
+  {
+   "date": "2026-11-26",
+   "key": "anthropic-siren-sandbox-eval",
+   "url": "https://safeguards.anthropic.com/2026/siren/"
+  },
+  {
+   "date": "2026-11-26",
+   "key": "arxiv-trajectory-informed-code-review",
+   "url": "https://arxiv.org/abs/2611.31316"
+  },
+  {
+   "date": "2026-11-26",
+   "key": "arxiv-below-the-stopwatch-agent-perf-claims",
+   "url": "https://arxiv.org/abs/2611.31460"
   }
  ]
 }
