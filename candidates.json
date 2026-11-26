@@ -100,8 +100,8 @@
    "kind": "process",
    "status": "watching",
    "first_seen": "2026-10-02",
-   "last_seen": "2026-11-26",
-   "mentions": 24,
+   "last_seen": "2026-11-27",
+   "mentions": 27,
    "sources": [
     "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
     "https://zenn.dev/kuu_dqx/books/tests-that-test-nothing",
@@ -126,7 +126,10 @@
     "https://claude.com/resources/articles/introducing-claude-ship",
     "https://www.infoq.com/news/2026/11/netflix-sdlc-ai-coding-agents/",
     "https://aws.amazon.com/jp/blogs/news/nec-kiro-spec-driven-development/",
-    "https://arxiv.org/abs/2611.31316"
+    "https://arxiv.org/abs/2611.31316",
+    "https://arxiv.org/abs/2611.33639",
+    "https://www.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/",
+    "https://arxiv.org/abs/2611.34875"
    ],
    "note": "AI が書き人が審査する体制のレビュー基準・門番・ツール。対照: AI レビューボット、Claude Code Review 等"
   },
@@ -414,7 +417,7 @@
   {
    "name": "Anthropic 想定外操作レポート",
    "kind": "agent-governance",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-11",
    "last_seen": "2026-10-27",
    "mentions": 3,
@@ -922,8 +925,8 @@
    "kind": "standard",
    "status": "watching",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-26",
-   "mentions": 9,
+   "last_seen": "2026-11-27",
+   "mentions": 10,
    "sources": [
     "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
     "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
@@ -932,7 +935,8 @@
     "https://zenn.dev/itoken_lab/articles/itoken-lab-skills-intro",
     "https://zenn.dev/itoken_lab/articles/delegating-work-with-without",
     "https://blog.recruit.co.jp/data/articles/ai-review-skills/",
-    "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more"
+    "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more",
+    "https://arxiv.org/abs/2611.33943"
    ],
    "note": "Skills 標準を Linux Foundation 傘下の AAIF へ。70超のプラットフォーム対応（Anthropic 記述）。2026-11-13 GitHub が実践ガイドで採用（主要ベンダー採用により昇格）"
   },
@@ -1024,7 +1028,7 @@
   {
    "name": "Qwen3.8-Flash-Next 未依頼通信（Cohere）",
    "kind": "model-safety",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-27",
    "mentions": 1,
@@ -1036,7 +1040,7 @@
   {
    "name": "GPT-6.1 Terra",
    "kind": "model",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-27",
    "mentions": 1,
@@ -1048,7 +1052,7 @@
   {
    "name": "Kiro メモリ",
    "kind": "agent-memory",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-27",
    "mentions": 1,
@@ -1060,7 +1064,7 @@
   {
    "name": "Kiro 利用状況とコスト（CUR 2.0）",
    "kind": "cost-control",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-27",
    "mentions": 1,
@@ -1072,7 +1076,7 @@
   {
    "name": "京都府庁 複数ツール併用・親子エージェント",
    "kind": "case",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-27",
    "mentions": 1,
@@ -1084,7 +1088,7 @@
   {
    "name": "Cloudflare Auto Router",
    "kind": "router",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-27",
    "mentions": 1,
@@ -1096,7 +1100,7 @@
   {
    "name": "NVIDIA SkillSpector",
    "kind": "skills-security",
-   "status": "candidate",
+   "status": "retired",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-27",
    "mentions": 1,
@@ -2486,12 +2490,14 @@
   {
    "name": "Gemini 4 Neon",
    "kind": "model",
-   "status": "candidate",
+   "status": "watching",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-20",
-   "mentions": 1,
+   "last_seen": "2026-11-27",
+   "mentions": 2,
    "sources": [
-    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+    "https://www.itmedia.co.jp/aiplus/article/2611/26/2000003494/",
+    "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/"
    ],
    "note": "Gemini 4 中位。$3/$15、キャッシュ入力95%引き。Hydrogen サブエージェントの司令役。対照: Carbon, GPT-6.2 Sol"
   },
@@ -2585,10 +2591,11 @@
    "kind": "method",
    "status": "candidate",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-21",
-   "mentions": 1,
+   "last_seen": "2026-11-27",
+   "mentions": 2,
    "sources": [
-    "https://arxiv.org/abs/2611.25918"
+    "https://arxiv.org/abs/2611.25918",
+    "https://www.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/"
    ],
    "note": "464ルールを65日追跡。参照55.8%→修正20.3%。段階別に測る必要"
   },
@@ -3048,6 +3055,103 @@
     "https://github.com/trending"
    ],
    "note": "エージェント向け検索・スクレイピング基盤。Trending 上位。"
+  },
+  {
+   "name": "AI レビューの effort 設定（arXiv 2611.33639）",
+   "kind": "review",
+   "status": "candidate",
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
+   "mentions": 1,
+   "sources": [
+    "https://arxiv.org/abs/2611.33639"
+   ],
+   "note": "Claude 5.5 系で effort を上げると誤パッチ受理率低下。どの設定でも誤りの45%以上を通す。Opus medium が費用対効果。"
+  },
+  {
+   "name": "レビューの6層置き換え（Aviator / QCon SF）",
+   "kind": "process",
+   "status": "candidate",
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
+   "mentions": 1,
+   "sources": [
+    "https://www.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/"
+   ],
+   "note": "Argue/Capture/Codify/Prove/Debate/Own。1.1万指摘→64不変条件。講演者は製品販売者、数値は自己申告。"
+  },
+  {
+   "name": "エージェントの過剰編集（arXiv 2611.34875）",
+   "kind": "research",
+   "status": "candidate",
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
+   "mentions": 1,
+   "sources": [
+    "https://arxiv.org/abs/2611.34875"
+   ],
+   "note": "7,660件。不要コード約11%、その89%が動作変更。自己監査は再現率36%。"
+  },
+  {
+   "name": "AX（Agent Experience / CAFE(S)）",
+   "kind": "context-engineering",
+   "status": "candidate",
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
+   "mentions": 1,
+   "sources": [
+    "https://arxiv.org/abs/2611.33480"
+   ],
+   "note": "作業記録を Clarity/Actionability/Fidelity/Efficiency で採点。文脈欠陥でトークン+91%。探索的。"
+  },
+  {
+   "name": "EY新日本 DiCAT",
+   "kind": "case-jp",
+   "status": "candidate",
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
+   "mentions": 1,
+   "sources": [
+    "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-26"
+   ],
+   "note": "生成AI＋AI-OCR で開示書類の数値チェック。半日〜1日→1時間以内。担当全上場企業で 11/20 運用開始。"
+  },
+  {
+   "name": "SkillsBench 監査（arXiv 2611.33943）",
+   "kind": "research",
+   "status": "candidate",
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
+   "mentions": 1,
+   "sources": [
+    "https://arxiv.org/abs/2611.33943"
+   ],
+   "note": "スキル効果の測定に採点依存・空スキル・試行回数不足。害の主張は統計的に言えない。"
+  },
+  {
+   "name": "さくらインターネット シンプルAI",
+   "kind": "service-jp",
+   "status": "candidate",
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
+   "mentions": 1,
+   "sources": [
+    "https://www.publickey1.jp/blog/26/aiai_1.html"
+   ],
+   "note": "月額固定のAI API、12/10 提供予定、ISMAP 申請中、長期安定モデル。一次情報未確認。"
+  },
+  {
+   "name": "Vercel Board",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
+   "mentions": 1,
+   "sources": [
+    "https://vercel.com/blog/introducing-vercel-board",
+    "https://www.infoq.com/news/2026/11/vercel-board-agents/"
+   ],
+   "note": "人とエージェントのタスク調整用ヘッドレス掲示板。リース型 claim、Slack/GitHub 同期。実験的。一次 11/18。"
   }
  ]
 }

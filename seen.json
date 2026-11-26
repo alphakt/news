@@ -1235,6 +1235,36 @@
    "date": "2026-11-26",
    "key": "arxiv-below-the-stopwatch-agent-perf-claims",
    "url": "https://arxiv.org/abs/2611.31460"
+  },
+  {
+   "date": "2026-11-27",
+   "key": "arxiv-ai-reviewer-effort-claude55",
+   "url": "https://arxiv.org/abs/2611.33639"
+  },
+  {
+   "date": "2026-11-27",
+   "key": "infoq-qconsf-kill-code-review",
+   "url": "https://www.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/"
+  },
+  {
+   "date": "2026-11-27",
+   "key": "arxiv-coding-agents-over-edit",
+   "url": "https://arxiv.org/abs/2611.34875"
+  },
+  {
+   "date": "2026-11-27",
+   "key": "arxiv-ax-agent-experience",
+   "url": "https://arxiv.org/abs/2611.33480"
+  },
+  {
+   "date": "2026-11-27",
+   "key": "ey-shinnihon-dicat-genai",
+   "url": "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-26"
+  },
+  {
+   "date": "2026-11-27",
+   "key": "arxiv-skillsbench-audit",
+   "url": "https://arxiv.org/abs/2611.33943"
   }
  ]
 }

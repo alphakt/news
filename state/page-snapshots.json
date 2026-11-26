@@ -31,7 +31,7 @@
    "https://code.claude.com/docs/en/output-styles",
    "https://code.claude.com/docs/en/hooks"
   ],
-  "checked": "2026-11-25T23:05:53.108889+00:00"
+  "checked": "2026-11-26T23:05:54.202440+00:00"
  },
  "https://www.anthropic.com/engineering": {
   "links": [
@@ -63,7 +63,7 @@
    "https://www.anthropic.com/research/team/interpretability",
    "https://www.anthropic.com/research/team/societal-impacts"
   ],
-  "checked": "2026-11-25T23:05:53.324626+00:00"
+  "checked": "2026-11-26T23:05:54.478716+00:00"
  },
  "https://docs.anthropic.com/en/release-notes/overview": {
   "links": [
@@ -207,7 +207,7 @@
    "https://docs.anthropic.com/docs/en/build-with-claude/token-counting",
    "https://docs.anthropic.com/docs/en/agents-and-tools/tool-use/parallel-tool-use"
   ],
-  "checked": "2026-11-25T23:05:54.051252+00:00"
+  "checked": "2026-11-26T23:05:54.960036+00:00"
  },
  "https://developers.openai.com/changelog": {
   "links": [
@@ -652,7 +652,7 @@
    "https://developers.openai.com/api/docs/models/dall-e-3",
    "https://developers.openai.com/api/docs/models/text-moderation-latest"
   ],
-  "checked": "2026-11-25T23:05:54.503668+00:00"
+  "checked": "2026-11-26T23:05:55.293733+00:00"
  },
  "https://cursor.com/changelog": {
   "links": [
@@ -673,18 +673,15 @@
    "https://cursor.com/docs/api/origin",
    "https://cursor.com/changelog/page/2",
    "https://cursor.com/agents",
-   "https://cursor.com/en-US/terms-of-service",
-   "https://cursor.com/en-US/acceptable-use-policy",
-   "https://cursor.com/en-US/terms/grok-bot",
    "https://cursor.com/en-US/privacy",
    "https://cursor.com/en-US/cookie-policy",
    "https://cursor.com/en-US/security"
   ],
-  "checked": "2026-11-25T23:05:54.728597+00:00"
+  "checked": "2026-11-26T23:05:55.588054+00:00"
  },
  "https://ai.google.dev/gemini-api/docs/changelog": {
   "links": [],
-  "checked": "2026-11-25T23:05:55.293855+00:00"
+  "checked": "2026-11-26T23:05:56.107702+00:00"
  },
  "https://www.ipa.go.jp/digital/ai/": {
   "links": [
@@ -899,7 +896,7 @@
    "https://www.ipa.go.jp/siteinfo.html",
    "https://www.ipa.go.jp/accessibility.html"
   ],
-  "checked": "2026-11-25T23:05:55.695698+00:00"
+  "checked": "2026-11-26T23:05:57.031854+00:00"
  },
  "https://www.ppc.go.jp/news/": {
   "links": [
@@ -989,7 +986,7 @@
    "https://www.ppc.go.jp/application/kisei_kaikaku/",
    "https://www.ppc.go.jp/aboutus/commission/access/ppc_relocation?ref=topnews"
   ],
-  "checked": "2026-11-25T23:05:56.955742+00:00"
+  "checked": "2026-11-26T23:05:58.024493+00:00"
  },
  "https://www.soumu.go.jp/menu_news/s-news/": {
   "links": [
@@ -1056,7 +1053,7 @@
    "https://www.soumu.go.jp/menu_news/s-news/01kougai01_20261101.html",
    "https://www.soumu.go.jp/menu_kyotsuu/policy/shuwa-link.html"
   ],
-  "checked": "2026-11-25T23:05:57.866503+00:00"
+  "checked": "2026-11-26T23:05:59.053116+00:00"
  },
  "https://www.anthropic.com/customers": {
   "links": [
@@ -1120,7 +1117,7 @@
    "https://www.anthropic.com/legal/consumer-terms",
    "https://www.anthropic.com/legal/aup"
   ],
-  "checked": "2026-11-25T23:05:58.964764+00:00"
+  "checked": "2026-11-26T23:05:59.676130+00:00"
  },
  "https://cloud.google.com/customers": {
   "links": [
@@ -1385,7 +1382,7 @@
    "https://cloud.google.com/product-terms",
    "https://cloud.google.com/sustainability"
   ],
-  "checked": "2026-11-25T23:05:59.495268+00:00"
+  "checked": "2026-11-26T23:06:00.053551+00:00"
  },
  "https://www.microsoft.com/en-us/customers/": {
   "links": [
@@ -1459,7 +1456,7 @@
    "https://www.microsoft.com/en-us/corporate-responsibility/sustainability?icid=DSM_Footer_Sustainability",
    "https://www.microsoft.com/customers/locale"
   ],
-  "checked": "2026-11-25T23:05:59.792168+00:00"
+  "checked": "2026-11-26T23:06:00.563512+00:00"
  },
  "https://www.nri.com/jp/news": {
   "links": [
@@ -1473,7 +1470,7 @@
    "https://www.nri.com/jp/privacy.html",
    "https://www.nri.com/jp/security_declare.html"
   ],
-  "checked": "2026-11-25T23:06:00.575255+00:00"
+  "checked": "2026-11-26T23:06:00.890741+00:00"
  },
  "https://www.deloitte.com/jp/ja/about/press-room.html": {
   "links": [
@@ -1559,7 +1556,7 @@
    "https://www.deloitte.com/jp/ja/legal/smap.html?icid=bn_smap",
    "https://www.deloitte.com/jp/ja/about/governance/network-brand-alliances/about-the-network.html"
   ],
-  "checked": "2026-11-25T23:06:00.844366+00:00"
+  "checked": "2026-11-26T23:06:01.407277+00:00"
  },
  "https://www.kpmg.com/jp/ja/home/media/press-releases.html": {
   "links": [
@@ -2103,7 +2100,7 @@
    "https://www.kpmg.com/jp/ja/about.html",
    "https://www.kpmg.com/jp/ja/media.html"
   ],
-  "checked": "2026-11-25T23:06:01.672584+00:00"
+  "checked": "2026-11-26T23:06:02.818088+00:00"
  },
  "https://www.ey.com/ja_jp/newsroom": {
   "links": [
@@ -2191,14 +2188,14 @@
    "https://www.ey.com/ja_jp/about-us/corporate-responsibility/ey-japan-ripples",
    "https://www.ey.com/ja_jp/shape-the-future-with-confidence",
    "https://www.ey.com/ja_jp/integrated-report/top-message",
+   "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-26-02",
+   "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-26",
    "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-20",
    "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-19",
    "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-18",
    "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-16",
    "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-12",
    "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-09",
-   "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-06",
-   "https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-04",
    "https://www.ey.com/ja_jp/industries/government-public-sector/public-projects/2026/ey-japan-pp-2026-10-15",
    "https://www.ey.com/ja_jp/industries/government-public-sector/public-projects/2026/ey-japan-pp-2026-10-08",
    "https://www.ey.com/ja_jp/newsroom/2026/09/ey-japan-news-release-2026-09-16",
@@ -2212,11 +2209,11 @@
    "https://www.ey.com/ja_jp/people/ey-japan",
    "https://www.ey.com/ja_jp/legal-and-privacy/hotline"
   ],
-  "checked": "2026-11-25T23:06:02.260182+00:00"
+  "checked": "2026-11-26T23:06:03.519753+00:00"
  },
  "https://dora.dev/": {
   "links": [],
-  "checked": "2026-11-25T23:06:02.417627+00:00"
+  "checked": "2026-11-26T23:06:03.703565+00:00"
  },
  "https://www.thoughtworks.com/radar": {
   "links": [
@@ -2297,11 +2294,11 @@
    "https://www.thoughtworks.com/about-us/fraud-advisory-notice",
    "https://www.thoughtworks.com/about-us/compliance"
   ],
-  "checked": "2026-11-25T23:06:02.730261+00:00"
+  "checked": "2026-11-26T23:06:03.985494+00:00"
  },
  "https://newsletter.pragmaticengineer.com/": {
   "links": [],
-  "checked": "2026-11-25T23:06:02.888564+00:00"
+  "checked": "2026-11-26T23:06:04.234896+00:00"
  },
  "https://linear.app/changelog": {
   "links": [
@@ -2331,7 +2328,7 @@
    "https://linear.app/docs",
    "https://linear.app/legal"
   ],
-  "checked": "2026-11-25T23:06:03.187768+00:00"
+  "checked": "2026-11-26T23:06:04.545861+00:00"
  },
  "https://www.atlassian.com/blog": {
   "links": [
@@ -2351,7 +2348,7 @@
    "https://www.atlassian.com/resources",
    "https://www.atlassian.com/legal/privacy-policy"
   ],
-  "checked": "2026-11-25T23:06:03.447237+00:00"
+  "checked": "2026-11-26T23:06:04.792459+00:00"
  },
  "https://digital-strategy.ec.europa.eu/en/news": {
   "links": [
@@ -2361,22 +2358,22 @@
    "https://digital-strategy.ec.europa.eu/sk/news",
    "https://digital-strategy.ec.europa.eu/sl/news",
    "https://digital-strategy.ec.europa.eu/en/consultations",
+   "https://digital-strategy.ec.europa.eu/en/news/commission-proposes-quantum-act-and-new-sovereign-tech-equity-fund-strengthen-europes-industrial",
    "https://digital-strategy.ec.europa.eu/en/news/european-digital-infrastructure-consortium-launches-today-strengthen-digital-sovereignty-education",
    "https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-temu-breach-digital-services-act-failure-tackle-sale-illegal",
-   "https://digital-strategy.ec.europa.eu/en/news/commission-hosts-apply-ai-summit-boost-europes-ai-innovation-and-uptake",
-   "https://digital-strategy.ec.europa.eu/en/news/commission-proposes-quantum-act-and-new-sovereign-tech-equity-fund-strengthen-europes-industrial",
    "https://digital-strategy.ec.europa.eu/en/news/ai-act-scientific-panel-holds-second-regular-meeting",
-   "https://digital-strategy.ec.europa.eu/en/news/results-2026-call-proposals-pan-european-reporting",
    "https://digital-strategy.ec.europa.eu/en/news/eu-and-kenya-hold-successful-digital-dialogue",
    "https://digital-strategy.ec.europa.eu/en/news/commission-funds-four-news-media-projects-eur166-million-foster-pan-european-reporting",
+   "https://digital-strategy.ec.europa.eu/en/news/results-2026-call-proposals-pan-european-reporting",
    "https://digital-strategy.ec.europa.eu/en/news/commission-welcomes-european-citizens-panel-recommendations-democratic-resilience",
    "https://digital-strategy.ec.europa.eu/en/news/games-awards-2026-three-media-supported-games-are-top-honours",
-   "https://digital-strategy.ec.europa.eu/en/news/member-states-join-forces-develop-sovereign-digital-infrastructure-education",
    "https://digital-strategy.ec.europa.eu/en/news/ai-act-advisory-forum-holds-its-second-meeting",
    "https://digital-strategy.ec.europa.eu/en/news/ai-board-holds-its-tenth-meeting",
+   "https://digital-strategy.ec.europa.eu/en/news/member-states-join-forces-develop-sovereign-digital-infrastructure-education",
+   "https://digital-strategy.ec.europa.eu/en/news/almost-eu24-billion-mobilised-and-614-projects-awarded-their-support-critical-technologies-europe",
    "https://digital-strategy.ec.europa.eu/en",
    "https://digital-strategy.ec.europa.eu/en/pages/accessibility"
   ],
-  "checked": "2026-11-25T23:06:03.905088+00:00"
+  "checked": "2026-11-26T23:06:05.243672+00:00"
  }
 }

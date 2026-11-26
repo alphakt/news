@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月27日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月27日（金）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は6件。すぐ動けるのは1件。AI レビュー担当に Claude 5.5 系を使うと、推論の effort（考える量）を上げるほど誤ったパッチを通す率が下がるが、どの設定でも誤りの45%以上は通ってしまうという研究が出た。QCon SF では「1行ずつのコードレビューはもう機能していない」として、レビューを6つの層に置き換える提案があった。ほかに、エージェントの不要な編集の実測、エージェントの「作業環境の質」を測る AX という指標、EY 新日本の生成 AI による開示書類チェック、スキルの効果を測るベンチマークの監査を載せる。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>AI レビュー担当の effort を上げると誤ったパッチを通す率は下がる——ただし Claude 5.5 系のどの設定でも、誤りの45%以上は「正しい」と判定された</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">arXiv に11月25日に投稿された論文。SWE-bench Verified の Django 課題でエージェントが書いた90件のパッチ（より厳しいテスト SWE-ABS で55件が誤り、35件が正しい）を、Claude 5.5 の Opus・Sonnet・Haiku にレビューさせ、effort の設定ごとに誤ったパッチを「正しい」とした率を測った。low から high に上げると、Opus は0.67→0.45、Sonnet は0.65→0.49、Haiku は0.78→0.51に下がった。Opus は medium でも high と比べて15ポイント以内の差に収まり、費用は20%少なかった（事前に決めた30%削減の目標には届かず）。Sonnet と Haiku は medium にすると費用が39%・51%減るが、精度が劣らないことは示せなかった。Haiku の high は Opus の medium の約8%の費用で済む。</p>
+      <ul class="sowhat"><li><b>DEV</b>AI レビューを CI に入れているなら、effort を low のまま使うのは避ける。費用を抑えるなら Opus の medium が目安になる。</li><li><b>PM</b>AI レビューを「合格の門番」にはできない。どの設定でも誤りの半分近くが通るので、人のレビューやテストを減らす根拠にしない。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>AI レビューを動かしている CI の設定で effort（推論量）を確認し、low なら medium 以上に上げる。あわせて、過去に人が差し戻した PR を10件ほど AI レビューに通し、何件を見逃すかを自社のコードで確かめる。</div>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.33639" target="_blank" rel="noopener">arXiv:2611.33639「How Much Effort Does an AI Code Reviewer Need? Evidence from Claude 5.5 Models on Plausible-but-Wrong Patches」（2026-11-25 投稿）</a></div>
+      <div class="note">対象は Django の90件のみ。誤りとされた55件のうち32件は、課題文が失敗したテストの内容まで求めていない可能性があると著者自身が述べている。</div>
+      <div class="comment"><b>コメント：</b>「AI に AI のコードを見させれば安心」という前提に、効く設定と効かない限界の両方を数字で示した研究だ。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>「1行ずつのコードレビューはもう機能していない」——QCon SF で Aviator の CEO が、レビューを議論・意図の記録・不変条件・証拠など6つの層に置き換える方法を提案</h2>
+      <div class="tags"><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">InfoQ が11月26日に報じた QCon San Francisco 2026 の講演。Aviator の Ankit Jain 氏は、4,000超のチームを調べた Faros の9月の調査で75%超の PR が人のレビューなしでマージされていること、PR の中央値が約640行に増えたことを挙げ、レビューは「AI が書き AI が見て人が流し読みする」形だけのものになったと述べた。代わりに、①PR を出す前にエージェント同士で議論させ意見の割れた点だけを出す、②作業中に意図と受け入れ条件を記録して PR に付ける、③繰り返し出るレビュー指摘を担当チーム付きの不変条件にする（同社は1万1千件の指摘を64の不変条件にまとめた）、④緑のチェックではなく画面や通信記録などの証拠を出させる、⑤人は差分でなく判断を議論する、⑥責任をルールの持ち主に移す、の6層を提案した。</p>
+      <ul class="sowhat"><li><b>PM</b>過去のレビュー指摘を集めて不変条件（自動チェックや CLAUDE.md のルール）にする作業は、AI 導入後の品質計画にそのまま入れられる。</li><li><b>DEV</b>エージェントが書いたテストはエージェント自身の思い込みを含む。PR には画面やリクエストの記録など、実際に動いた証拠を添えさせる。</li></ul>
+      <div class="source">出典：<a href="https://www.infoq.com/news/2026/11/qcon-sf-26-kill-code-review/" target="_blank" rel="noopener">InfoQ「QCon San Francisco 2026: How to Kill the Code Review」（2026-11-26）</a></div>
+      <div class="note">講演者は関連製品を販売しており、9人のチームで PR が4倍、差し戻しが約40%減という数字は本人の申告。セキュリティ・認証・課金のコードは今も1行ずつ見ているという。インデックスのないクエリによる18分の障害はすべての層をすり抜けた。</div>
+      <div class="comment"><b>コメント：</b>上の論文が示した「AI レビューは門番にならない」という限界に対する、現場側からの一つの答え方として読める。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>コーディングエージェントの不要な編集を7,660件で実測——不要なコードは開発者並みかそれ以下だが、残った不要コードの89%は動作を変えていた</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">arXiv に11月25日に投稿された論文。GitHub Copilot CLI で18の先端モデルが課題を解決した7,660件の作業記録（SWE-bench Verified 6,728件、DeepSWE 932件）を、開発者のパッチと同じ方法で採点した。SWE-bench Verified では、余分な編集の61%はテストの追加、13%はドキュメントの追加。一方 DeepSWE では余分な編集の58%がコードだった。コードの必要度は SWE-bench Verified でエージェント0.887、開発者0.864と、18モデル中11モデルが開発者より不要コードが少なかった。ただし約11%のコードはなお不要で、その89%は動作を変えていた。DeepSWE では不要コードの少なさと解決率が逆相関した。手元のテストで刈り込むと不要コードの多くを除けるが必要なコードも削り（再現率67%、適合率46%）、エージェント自身に見直させると正確だが取りこぼしが多い（再現率36%、適合率66%）。</p>
+      <ul class="sowhat"><li><b>DEV</b>エージェントの PR では「課題に関係ない変更」が動作を変えていないかを重点的に見る。自己レビューだけでは3分の2近くを見逃す。</li><li><b>PM</b>難しい課題ほど解決率の高いモデルが余計なコードも書く傾向がある。解決率だけでモデルを選ぶと、レビュー量が増える。</li></ul>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.34875" target="_blank" rel="noopener">arXiv:2611.34875「How Much Do Coding Agents Over-Edit, and Why?」（2026-11-25 投稿）</a></div>
+      <div class="note">ベンチマーク上の課題での結果で、企業の実コードでの割合は分からない。</div>
+      <div class="comment"><b>コメント：</b>「エージェントは余計なことをする」という印象を、量はそれほど多くないが中身が危ない、という形に分けて示した点が使える。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>開発者体験（DevEx）のエージェント版「AX」——作業記録を明確さ・実行可能性・忠実さ・効率の4軸で採点すると、最も低いのは「実行可能性」、文脈に欠陥があるとトークンが平均91%増えた</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">arXiv に11月24日に投稿され、26日に公開された論文。コーディングエージェントが成功するかどうかは与えられた文脈で決まるとして、エージェントの作業記録を CAFE(S) の枠組みのうち Clarity（明確さ）、Actionability（実行可能性）、Fidelity（忠実さ）、Efficiency（効率）の4軸で、採点基準付きの言語モデルが1〜5点で評価する「AX（Agent Experience）」を提案した。試行した882件のセッションでは実行可能性が最も低く、評価の59.6%が3点以下（忠実さは26.6%）で、長いセッションほど点が下がった。1つのデータ分析課題に意図的に文脈の欠陥を入れて12回ずつ走らせると、どの欠陥でも欠陥のない場合よりトークンが平均91%増えた。Stack Overflow の調査では、文脈の問題を報告した回答者は AI を「とても役立つ」と評価する率が12〜28%低かった。</p>
+      <ul class="sowhat"><li><b>DEV</b>CLAUDE.md や AGENTS.md の良し悪しを、エージェントの作業記録から「次に何をすればよいか分かる情報があったか」で点検できる。</li><li><b>PM</b>文脈の欠陥はトークン費用の増加として表れる。エージェントの費用が想定より高いチームは、まず文脈の質を疑う。</li></ul>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.33480" target="_blank" rel="noopener">arXiv:2611.33480「DevEx is for Humans, AX is for Agents: Measuring Context Health in Agentic Software Work」（2026-11-24 投稿）</a></div>
+      <div class="note">著者自身が探索的な結果と位置づけている。採点の妥当性確認は1人の研究者による15件の非盲検の確認のみで、欠陥の入れ方も完全には分離できていない。</div>
+      <div class="comment"><b>コメント：</b>コンテキスト工学の「効いているか」を、作業記録から継続的に測る道具の最初の形として注目したい。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>EY 新日本、生成 AI と AI-OCR で有価証券報告書の数値チェックを強化——数千件の一次チェックが半日〜1日から1時間以内に、担当する全上場企業で運用開始</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span></div>
+      <p class="detail">EY Japan が11月26日に発表した。EY 新日本有限責任監査法人の開示書類チェックツール「DiCAT」は、合計値などの計算、書類内の数値の整合性、前期書類との比較、修正前後の差分を確認する。生成 AI と AI-OCR を組み合わせ、文章中に書かれた数値も読み取ってチェックできるようにした。数千件に及ぶ数値の一次チェックにかかっていた時間は、従来の半日〜1日から1時間以内になる。11月20日から、EY 新日本が監査を担当するすべての上場企業（IFRS 適用企業を含む）で運用を始めた。対象は現在は有価証券報告書で、今後は決算短信や計算書類にも広げ、アドバイザリー業務での活用や一般企業への提供も検討する。使用しているモデル名は公表していない。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>監査法人側が開示書類の数値チェックに生成 AI を本番投入した。経理・開示部門のクライアントからは「自社側の作成工程にも同じことができるか」と聞かれる。表と本文の数値照合は提案しやすい題材になる。</li></ul>
+      <div class="source">出典：<a href="https://www.ey.com/ja_jp/newsroom/2026/11/ey-japan-news-release-2026-11-26" target="_blank" rel="noopener">EY Japan「EY新日本、生成AIで開示書類チェックツールを強化 チェック時間を1時間以内に短縮」（2026-11-26）</a></div>
+      <div class="comment"><b>コメント：</b>Big4 が監査の本業で生成 AI を全上場クライアントに適用した例で、開示業務の AI 化を提案する際の国内の参照事例になる。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>「スキルで合格率が16.6ポイント上がる」とする SkillsBench を監査——効果が大きい課題には採点の偏りや空のスキルが混じり、「スキルが害になる」も統計的には言えなかった</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag consult">CONSULT</span></div>
+      <p class="detail">arXiv に11月25日に投稿された論文。エージェントのスキル（指示や資料をまとめたディレクトリ）の効果を測る SkillsBench は、人が作ったスキルで合格率が平均約16.6ポイント上がる一方、一部の課題では下がると報告している。著者は公開された7,554回の試行を1,421の組に整理し、ソースコードまで遡って監査した。効果の大きい3課題は平均74.6ポイント上がっていた（全体では18.7ポイント）が、うち2件は採点の仕組みへの依存、1件は定義の不備だった。4課題はスキルのディレクトリが空のまま、1つの実行環境は多くの試行で48の組み込みスキルを追加していた。各条件3回以下の試行では58%の組でそもそも低下を検出できず、「スキルが害になる」との結論は出せない。スキルの使い分けで2〜3ポイント上がるという結果も、ラベルを入れ替えた対照で4〜7ポイント上がり、見かけの効果だった。</p>
+      <ul class="sowhat"><li><b>DEV</b>スキルを入れるかどうかは公開ベンチマークの数字でなく、自社の課題で複数回試して決める。</li><li><b>CONSULT</b>「スキルで性能が◯%上がる」という売り文句を顧客に伝えるときは、試行回数と採点方法を確認してからにする。</li></ul>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.33943" target="_blank" rel="noopener">arXiv:2611.33943「What Does Skill Lift Actually Measure? A Source-Code-Level Audit and Noise-Aware Reanalysis of SkillsBench」（2026-11-25 投稿）</a></div>
+      <div class="comment"><b>コメント：</b>スキルの効果自体を否定する研究ではなく、測り方がまだ粗いことを示した研究として読むのが正しい。</div>
+    </div>
+
+    <div class="section-title">短信</div>
+    <div class="brief"><ul>
+      <li>GitHub Trending は Claude-BugHunter（1日1,600スター）、firecrawl（1,042）、cathrynlavery/diagram-design（951）、obra/superpowers（853）が上位。エージェント用スキル集が引き続き目立つ。<a href="https://github.com/trending" target="_blank" rel="noopener">GitHub Trending</a></li>
+    </ul></div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>新規：AI レビューの effort 設定（arXiv 2611.33639）、レビューの6層置き換え（Aviator）、エージェントの過剰編集（arXiv 2611.34875）、AX（Agent Experience）、EY 新日本 DiCAT、SkillsBench 監査。</li>
+      <li>継続：「AI 生成 PR の人間レビュー枠組み」は本日3本で言及。Gemini 4 Neon は国内記事と Latent Space で言及が続く。見送り：さくらインターネット「シンプルAI」（月額固定、12月10日提供予定）は公式リリースを確認できず、OpenAI の GPT-6.2 使用量の計算修正は一次情報（X の投稿）を取得できず、Vercel Board は一次発表が11月18日で48時間を超えるため。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>
