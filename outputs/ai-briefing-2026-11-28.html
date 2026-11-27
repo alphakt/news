@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI最新動向簡報 2026年11月28日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    background: #f4f6f9; color: #1a1f2e; line-height: 1.8; padding: 0 0 60px; font-size: 17px;
+  }
+  .header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #4338ca 60%, #6d28d9 100%);
+    color: #fff; padding: 44px 24px 36px; text-align: center;
+    box-shadow: 0 4px 18px rgba(30,58,138,0.25);
+  }
+  .header h1 { font-size: 28px; letter-spacing: 1px; margin-bottom: 8px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 18px; }
+  .backlink { display: inline-block; margin: 24px 0 6px; font-size: 14px; color: #4338ca; text-decoration: none; font-weight: 700; }
+  .backlink:hover { text-decoration: underline; }
+  .intro {
+    background: #fff; border-radius: 12px; padding: 20px 26px; margin: 16px 0 26px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #4338ca; font-size: 15px; color: #374151;
+  }
+  .card {
+    background: #fff; border-radius: 14px; padding: 26px 28px; margin-bottom: 22px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06); border-left: 8px solid #9ca3af;
+  }
+  .card.high { border-left-color: #dc2626; }
+  .card.mid  { border-left-color: #d97706; }
+  .card.low  { border-left-color: #2563a3; }
+  .badge {
+    display: inline-block; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 999px;
+    margin-bottom: 12px; letter-spacing: 1px;
+  }
+  .badge.high { background: #fee2e2; color: #b91c1c; }
+  .badge.mid  { background: #fef3c7; color: #b45309; }
+  .badge.low  { background: #dbeafe; color: #1d4ed8; }
+  .card h2 { font-size: 20px; line-height: 1.5; margin-bottom: 14px; color: #111827; }
+  .card p.detail { font-size: 16px; color: #374151; margin-bottom: 14px; }
+  .source { font-size: 14px; margin-bottom: 12px; }
+  .source a { color: #4338ca; text-decoration: none; word-break: break-all; }
+  .source a:hover { text-decoration: underline; }
+  .source a + a { margin-left: 10px; }
+  .comment {
+    background: #f3f4f6; border-radius: 10px; padding: 12px 16px; font-size: 15px; color: #1f2937;
+  }
+  .comment b { color: #4338ca; }
+  .tags { margin: 10px 0 12px; }
+  .tag { display:inline-block; font-size:12px; font-weight:800; padding:3px 9px; border-radius:6px; margin-right:6px; letter-spacing:.5px; }
+  .tag.dev { background:#e0f2fe; color:#075985; }
+  .tag.consult { background:#fce7f3; color:#9d174d; }
+  .tag.pm { background:#ecfdf5; color:#065f46; }
+  .sowhat { list-style:none; margin: 0 0 14px; padding: 0; }
+  .sowhat li { font-size:15px; color:#1f2937; padding:6px 0 6px 12px; border-left:3px solid #e5e7eb; margin-bottom:4px; }
+  .sowhat li b { font-weight:800; margin-right:6px; }
+  .howto { background:#fff7ed; border:1px solid #fed7aa; border-radius:10px; padding:10px 14px; font-size:15px; color:#7c2d12; margin-bottom:12px; }
+  .howto b { color:#9a3412; }
+  .note { font-size:13px; color:#6b7280; margin-top:8px; }
+  .section-title { font-size:18px; font-weight:800; margin: 34px 0 12px; padding-left:12px; border-left:6px solid #4338ca; }
+  .pool, .brief { background:#fff; border-radius:12px; padding:18px 24px; box-shadow:0 2px 10px rgba(0,0,0,0.05); font-size:15px; }
+  .pool ul, .brief ul { margin: 6px 0 0 20px; }
+  .pool li, .brief li { margin-bottom:6px; }
+  .footer { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 40px; padding: 0 18px; }
+  code { background:#f3f4f6; padding:1px 5px; border-radius:4px; font-size:.9em; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI最新動向簡報</h1>
+    <p>2026年11月28日（土）｜alphakt 社内向け｜視点：<span style="font-weight:800">DEV</span> 開発者 / <span style="font-weight:800">CONSULT</span> コンサルタント / <span style="font-weight:800">PM</span> プロジェクト管理者</p>
+  </div>
+  <div class="wrap">
+    <a class="backlink" href="../index.html">← 簡報一覧へ戻る</a>
+    <div class="intro">本日は5件。すぐ動けるのは2件。価格.com が約960万行の全面刷新を AI で進めるプロジェクトの途中経過を公開し、新しいモデルへの切り替えで費用が増えて切り戻したことや、手順書が肥大化したことまで数字で示した。電通総研はコーディングエージェントの開発環境を4層に整理して公開した。ほかに、KPMG のエージェント統制ソリューション、モデル自身にコンテキストを管理させる研究、Thoughtworks の段階的な AI 導入の進め方を載せる。</div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>価格.com、約960万行の全面刷新を AI で進める「DODAI」の現在地を公開——現行コードから作る自律エージェント型は外部評価65/65、仕様書から作るワークフロー型は32/65にとどまった</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span><span class="tag dev">DEV</span></div>
+      <p class="detail">カカクコムの CTO らが11月26日のアーキテクチャConference 2026で発表し、27日に資料を公開した。C# 約800万行と Classic ASP 約160万行を Python と FastAPI で作り直す計画で、5段階×3層・110体のエージェントが現行コードから仕様を抜き出し、設計と実装まで行う。画面の約7割が一連の処理を終え、完了予定は2027年5月から9月に延びた。社内システム1つで比べると、Opus 5.5 の自律エージェント型は外部の評価役の65項目をすべて満たし、約4時間・約196ドルで済んだ。仕様書から作るワークフロー型（Opus 4.6）は32項目で、約66時間・約2,123ドルかかった。ただし Opus 5.5 を全体に使うと API 費用が1.4〜2倍になり、数日で元に戻した。プロンプトは約7.5万行から約12万行に増え、6月に入れた5つの対策のうち3つは外した。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>大規模なレガシー刷新を AI で進める国内の実例として、費用・期間・失敗まで数字で示せる。刷新を検討する顧客への提案資料に引用できる。</li><li><b>PM</b>モデルを替えると費用と時間が読めなくなる。見積もりには「モデル更新時の再検証と切り戻し」の工数を入れておく。</li><li><b>DEV</b>仕様書の漏れはそのまま成果物の漏れになる。現行コードを正解にして、評価基準を実装役に見せない外部の評価役を置く設計が効いた。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>刷新・移行案件で、小さな1システムを選び、評価基準を実装役のエージェントに渡さず別の評価役に採点させる形で、手順を細かく決める方式と自律に任せる方式を比べる。</div>
+      <div class="source">出典：<a href="https://speakerdeck.com/tkyowa/kakaku-com-ai-driven-system-renewal-202611" target="_blank" rel="noopener">Speaker Deck「価格.comのAI駆動による全面刷新の現在地と振り返り」（カカクコム、2026-11-27 公開）</a></div>
+      <div class="note">比較は19ページの社内管理システム1件で、2つの方式はモデルも作り方の起点も異なる。Python＋SQL Server の応答中央値は18.66ミリ秒で、.NET の4.44ミリ秒より遅いという性能面の課題も挙げている。</div>
+      <div class="comment"><b>コメント：</b>うまくいった話だけでなく、手順書を足し続けて外せなくなる「ハーネスの肥大化」を自ら振り返った点が、他社にとって最も参考になる。</div>
+    </div>
+
+    <div class="card high">
+      <span class="badge high">重要度：高</span>
+      <h2>電通総研、コーディングエージェント用の開発環境を「隔離・コンテキスト・ガードレール・検証」の4層で公開——認証情報は VM に置かずプロキシで注入、実装は Claude 系・反証は GPT 系</h2>
+      <div class="tags"><span class="tag dev">DEV</span><span class="tag pm">PM</span></div>
+      <p class="detail">電通総研のテックブログが11月27日に公開した。エージェントは Docker Sandboxes の microVM で動かし、認証情報は VM に置かず、ホスト側のプロキシが許可した宛先への通信にだけトークンを付ける。AGENTS.md は詳細な仕様でなく「地図」として短く保ち、定型作業はスキルに分ける。テストやビルドの長い出力はログファイルに逃がし、会話には成否と所要時間、失敗時の末尾だけを返す。守らせたい約束は文章でなくフックや依存関係の検査で機械的に止め、違反メッセージに正しい置き場所を書く。検証は、高速な lint・テスト、プロパティベーステスト、差分だけのミューテーションテスト（合否には使わない）、別系統のモデルによる反証の4層。導入は隔離から始める順序も示した。</p>
+      <ul class="sowhat"><li><b>DEV</b>テスト出力をログに逃がして要点だけ返すラッパーと、禁止操作をフックで止める設定は、今日から自分のリポジトリに入れられる。</li><li><b>PM</b>人が判断する範囲（本番操作、インフラや DB の変更）と機械で止める範囲を分けた例として、エージェント利用ルールの叩き台にできる。</li></ul>
+      <div class="howto"><b>どう試す／どう対応する：</b>まずテストとビルドのコマンドを「成否・時間・ログの場所・失敗時の末尾だけ」を返すスクリプトで包み、AGENTS.md／CLAUDE.md からはそのスクリプトを案内する。</div>
+      <div class="source">出典：<a href="https://tech.dentsusoken.com/entry/2026/11/27/133501" target="_blank" rel="noopener">電通総研 テックブログ「さくさく作れる毎日を支える、AI 時代の開発環境 — 隔離・コンテキスト・ガードレール・検証の整理」（2026-11-27）</a></div>
+      <div class="note">効果の数値は示しておらず、構成と運用方針の紹介にとどまる。</div>
+      <div class="comment"><b>コメント：</b>個別のツール紹介でなく、導入の順番まで含めた全体像として、社内の標準を作るときの見本になる。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>KPMG ジャパン、「AI エージェント統合管理ソリューション」を提供開始——リスク管理とコスト管理をまとめ、各クラウドの統制機能の死角を補う統制レイヤーを製品として提供</h2>
+      <div class="tags"><span class="tag consult">CONSULT</span><span class="tag pm">PM</span></div>
+      <p class="detail">あずさ監査法人と KPMG コンサルティングが11月27日に発表した。部門ごとにエージェントを作った結果、シャドー AI、責任者や権限のあいまいさ、費用の把握不足が起きているとして、エージェント共通のリスクから統制の要件を決め、標準の構成や共通基盤に組み込む支援を行う。あわせて、主要なクラウド事業者の統制機能では見えない部分を補う「追加の統制レイヤー」を製品として提供し、事業者の外にあるエージェントの管理や、エージェントの行為ごとの監視・異常検知を行う。背景として、シャドー AI による不適切なデータへのアクセスや、自律型 AI による誤ったデータ削除の事例を挙げた。価格や効果の数値は公表していない。</p>
+      <ul class="sowhat"><li><b>CONSULT</b>Big4 がエージェントの統制とコスト管理を一体で売り始めた。顧客からは比較対象として名前が出るので、自社の提案でも「全社のエージェント台帳と行為単位の監視」を示せるようにする。</li><li><b>PM</b>エージェントごとの責任者・権限・費用を一覧にする作業は、外部の製品を入れる前に自分たちで始められる。</li></ul>
+      <div class="source">出典：<a href="https://www.kpmg.com/jp/ja/media/press-releases/2026/11/ai-agent-management.html" target="_blank" rel="noopener">KPMG ジャパン「KPMGジャパン、『KPMG AIエージェント統合管理ソリューション』の提供を開始」（2026-11-27）</a></div>
+      <div class="comment"><b>コメント：</b>KPMG は先に AI FinOps も出しており、エージェントの「統制」と「費用」を監査法人の強みで束ねる方向がはっきりしてきた。</div>
+    </div>
+
+    <div class="card mid">
+      <span class="badge mid">重要度：中</span>
+      <h2>コンテキストの圧縮を基盤任せにせず、モデル自身に決めさせると精度が上がる——32K トークンの制限下で GPT 6.1 の正答率が21%から56%に</h2>
+      <div class="tags"><span class="tag dev">DEV</span></div>
+      <p class="detail">arXiv に11月25日に投稿され、27日に公開された論文。今のエージェント基盤は、コンテキストが一杯になると基盤側が履歴を要約して縮める。著者らは、いつ何を縮めるかをモデル自身が API を通じて決める方式を NVIDIA のオープンソースのエージェント基盤に組み込み、文書調査と機械学習の作業で、8K から512K トークンまでの制限で比べた。API をうまく使えるモデルは、特に制限が厳しいときに少ない入力で精度が上がった。GPT 6.1 は OfficeQA Pro v2 で32K の制限下の正答率が21%から56%になり、Kimi は入力トークンを最大41%減らしながら精度を上げた。モデルごとに縮める頻度や時期が違い、プロンプトで時期が変わる。推論エンジンが変更のない部分のキャッシュを再利用すると、計算を最大15%減らせた。</p>
+      <ul class="sowhat"><li><b>DEV</b>長い作業でコンテキストが足りなくなるエージェントは、自動要約に任せるより「何を残すかをモデルに決めさせる」道具を渡すほうが効く場合がある。プロンプトで圧縮の時期が変わる点も設計に入れる。</li></ul>
+      <div class="source">出典：<a href="https://arxiv.org/abs/2611.34147" target="_blank" rel="noopener">arXiv:2611.34147「Letting Models Manage Their Own Context: Where We Stand」（2026-11-25 投稿）</a></div>
+      <div class="note">効果はモデルによって差が大きく、API を使いこなせるモデルでのみ上がる。</div>
+      <div class="comment"><b>コメント：</b>コンテキスト工学の担い手が人や基盤からモデル自身に移る流れを、数字で示した最初のまとまった比較として追いたい。</div>
+    </div>
+
+    <div class="card low">
+      <span class="badge low">重要度：低</span>
+      <h2>Thoughtworks「AI 導入は一度に作り替えず、1スプリントずつの実験で」——レビューの詰まりに AI レビューを試したが雑音が増えただけで、ペアプログラミングに切り替えた例</h2>
+      <div class="tags"><span class="tag pm">PM</span></div>
+      <p class="detail">Thoughtworks のブログに11月27日、Moritz Wilke 氏が寄稿した（会社の公式見解ではないと注記）。AI はチームが元々持っている開発の習慣を増幅するため、ツールを足す前に、作業が本番に届くまでの流れを書き出し、最も詰まっている1か所とその上流の原因を選び、1スプリントだけ1つの対策を試して振り返る、を繰り返すよう勧める。例では、レビューの詰まりに対して PR を500行までに制限し、lint を CI で自動化し、AI に設計やインターフェースのテストの土台を作らせた。AI レビューのエージェントも試したが、雑音が増えるだけでレビューは速くならず、やめてペアプログラミングに移った。AI はテストやパイプラインを作る費用を下げるために使うべきだとしている。</p>
+      <ul class="sowhat"><li><b>PM</b>AI ツールの導入計画は「詰まっている1か所に1スプリントの実験」の単位で組むと、外れても戻しやすく、現場の抵抗も小さい。</li></ul>
+      <div class="source">出典：<a href="https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/refactoring_the_engine_an_incremental_path_to_AI_assisted_delivery" target="_blank" rel="noopener">Thoughtworks「Refactoring the Engine: An Incremental Path to AI-Assisted Delivery」（2026-11-27）</a></div>
+      <div class="comment"><b>コメント：</b>AI レビューを「やめた」例をはっきり書いている点が、ここ数日のレビュー論議の現実的な補足になる。</div>
+    </div>
+
+    <div class="section-title">短信</div>
+    <div class="brief"><ul>
+      <li>GitHub Trending は Claude-BugHunter（1日1,615スター）、obra/superpowers（916）、firecrawl（833）、diagram-design（731）が上位。調査を要約する last30days-skill も新たに入った。<a href="https://github.com/trending" target="_blank" rel="noopener">GitHub Trending</a></li>
+    </ul></div>
+
+    <div class="section-title">候補プールの動き</div>
+    <div class="pool"><ul>
+      <li>新規：価格.com DODAI（AI 駆動の全面刷新）、電通総研の4層開発環境、KPMG AI エージェント統合管理、モデル主導のコンテキスト管理（arXiv 2611.34147）、PyTorch GreenLight（AI による PR 自動承認）、AWS Enterprise-Managed Authorization（ID-JAG）。</li>
+      <li>見送り：PyTorch GreenLight は InfoQ が27日に報じたが、仕組みは9〜10月から公開されており48時間を超える。AWS の EMA（原文11月25日）と API・AI セキュリティ（同23日）は日本語版が27日に出たが、原文の日付で48時間を超える。デジタル庁の新着欄に並んだ源内関連の項目は、本文の日付が過去のもの（OSS 公開は4月）だった。</li>
+      <li>継続：obra/superpowers・HKUDS/CLI-Anything・firecrawl・stitch-skills は Trending に連日登場。Gemini 4 Neon は国内の比較記事で言及が続く。Claude Duet は日本でも招待が始まったとの報道（一次情報は未確認）で、退出から候補に戻した。</li>
+    </ul></div>
+
+    <div class="footer">本簡報は固定の源池と主題検索から直近48時間の一次情報を取得して生成しています。数値はいずれも各出典の発表・記述によるものです。</div>
+  </div>
+</body>
+</html>

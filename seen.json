@@ -1265,6 +1265,31 @@
    "date": "2026-11-27",
    "key": "arxiv-skillsbench-audit",
    "url": "https://arxiv.org/abs/2611.33943"
+  },
+  {
+   "date": "2026-11-28",
+   "key": "kakaku-dodai-ai-renewal-202611",
+   "url": "https://speakerdeck.com/tkyowa/kakaku-com-ai-driven-system-renewal-202611"
+  },
+  {
+   "date": "2026-11-28",
+   "key": "dentsusoken-ai-dev-env-4layers",
+   "url": "https://tech.dentsusoken.com/entry/2026/11/27/133501"
+  },
+  {
+   "date": "2026-11-28",
+   "key": "kpmg-ai-agent-management",
+   "url": "https://www.kpmg.com/jp/ja/media/press-releases/2026/11/ai-agent-management.html"
+  },
+  {
+   "date": "2026-11-28",
+   "key": "arxiv-model-managed-context",
+   "url": "https://arxiv.org/abs/2611.34147"
+  },
+  {
+   "date": "2026-11-28",
+   "key": "thoughtworks-incremental-ai-delivery",
+   "url": "https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/refactoring_the_engine_an_incremental_path_to_AI_assisted_delivery"
   }
  ]
 }

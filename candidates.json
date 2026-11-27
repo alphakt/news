@@ -943,15 +943,16 @@
   {
    "name": "Claude Duet",
    "kind": "agent-product",
-   "status": "retired",
+   "status": "candidate",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-10-25",
-   "mentions": 2,
+   "last_seen": "2026-11-28",
+   "mentions": 3,
    "sources": [
     "https://claude.com/product/claude-duet",
-    "https://1password.com/blog/1password-for-ai-agents"
+    "https://1password.com/blog/1password-for-ai-agents",
+    "https://www.itmedia.co.jp/aiplus/article/2611/26/2000003483/"
    ],
-   "note": "常時稼働の個人エージェント。米国 Pro/Max のウェイトリスト。対照: WorkBuddy 等"
+   "note": "常時稼働の個人エージェント。米国 Pro/Max のウェイトリスト。対照: WorkBuddy 等 / 11/26 日本含む米国外に招待拡大（ITmedia、一次未確認）で再浮上。"
   },
   {
    "name": "Kiro の自己修正（kiro-trace）",
@@ -2468,8 +2469,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-26",
-   "mentions": 7,
+   "last_seen": "2026-11-28",
+   "mentions": 8,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2492,12 +2493,13 @@
    "kind": "model",
    "status": "watching",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-27",
-   "mentions": 2,
+   "last_seen": "2026-11-28",
+   "mentions": 3,
    "sources": [
     "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
     "https://www.itmedia.co.jp/aiplus/article/2611/26/2000003494/",
-    "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/"
+    "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/",
+    "https://zenn.dev/myura_jp/articles/3d641dfbca3784"
    ],
    "note": "Gemini 4 中位。$3/$15、キャッシュ入力95%引き。Hydrogen サブエージェントの司令役。対照: Carbon, GPT-6.2 Sol"
   },
@@ -2542,8 +2544,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-26",
-   "mentions": 6,
+   "last_seen": "2026-11-28",
+   "mentions": 7,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2554,8 +2556,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-20",
-   "last_seen": "2026-11-26",
-   "mentions": 6,
+   "last_seen": "2026-11-28",
+   "mentions": 7,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2664,8 +2666,8 @@
    "kind": "tool",
    "status": "candidate",
    "first_seen": "2026-11-21",
-   "last_seen": "2026-11-26",
-   "mentions": 5,
+   "last_seen": "2026-11-28",
+   "mentions": 6,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2748,8 +2750,8 @@
    "kind": "tool",
    "status": "candidate",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-26",
-   "mentions": 4,
+   "last_seen": "2026-11-28",
+   "mentions": 5,
    "sources": [
     "https://github.com/trending"
    ],
@@ -2832,8 +2834,8 @@
    "kind": "repo",
    "status": "candidate",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "mentions": 3,
+   "last_seen": "2026-11-28",
+   "mentions": 4,
    "sources": [
     "https://github.com/trending"
    ],
@@ -3049,8 +3051,8 @@
    "kind": "agent-infra",
    "status": "candidate",
    "first_seen": "2026-11-26",
-   "last_seen": "2026-11-26",
-   "mentions": 1,
+   "last_seen": "2026-11-28",
+   "mentions": 2,
    "sources": [
     "https://github.com/trending"
    ],
@@ -3152,6 +3154,80 @@
     "https://www.infoq.com/news/2026/11/vercel-board-agents/"
    ],
    "note": "人とエージェントのタスク調整用ヘッドレス掲示板。リース型 claim、Slack/GitHub 同期。実験的。一次 11/18。"
+  },
+  {
+   "name": "価格.com DODAI（AI駆動の全面刷新）",
+   "kind": "case-jp",
+   "status": "candidate",
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "mentions": 1,
+   "sources": [
+    "https://speakerdeck.com/tkyowa/kakaku-com-ai-driven-system-renewal-202611"
+   ],
+   "note": "C#800万行+Classic ASP160万行→Python/FastAPI。110エージェント。自律型vsWF型の比較、Opus 5.5 全面展開で費用1.4-2倍→切り戻し、ハーネス肥大化。"
+  },
+  {
+   "name": "電通総研 AI開発環境4層（隔離・コンテキスト・ガードレール・検証）",
+   "kind": "practice",
+   "status": "candidate",
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "mentions": 1,
+   "sources": [
+    "https://tech.dentsusoken.com/entry/2026/11/27/133501"
+   ],
+   "note": "Docker Sandboxes microVM、プロキシで認証注入、AGENTS.mdは地図、hk/dependency-cruiser、差分ミューテーション、異種モデル反証。"
+  },
+  {
+   "name": "KPMG AIエージェント統合管理ソリューション",
+   "kind": "service-jp",
+   "status": "candidate",
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "mentions": 1,
+   "sources": [
+    "https://www.kpmg.com/jp/ja/media/press-releases/2026/11/ai-agent-management.html",
+    "https://prtimes.jp/main/html/rd/p/000000135.000141127.html"
+   ],
+   "note": "リスク＋コスト統合、プラットフォーマー統制の死角を補う追加統制レイヤー。11/27提供開始。対照: AI FinOps（KPMG）"
+  },
+  {
+   "name": "モデル主導のコンテキスト管理（context API）",
+   "kind": "concept",
+   "status": "candidate",
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "mentions": 1,
+   "sources": [
+    "https://arxiv.org/abs/2611.34147"
+   ],
+   "note": "モデルが圧縮の時期と対象を決める。GPT 6.1 OfficeQA Pro v2 32Kで21→56%。KVキャッシュ再利用でprefill最大15%減。"
+  },
+  {
+   "name": "PyTorch GreenLight（AIによるPR自動承認）",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "mentions": 1,
+   "sources": [
+    "https://www.infoq.com/news/2026/11/uber-agent-spend-steady/",
+    "https://github.com/pytorch/test-infra/tree/main/greenlight"
+   ],
+   "note": "Meta RADAR のOSS版。merge rules 記載の作者のみ実判定、他はシャドー。コードは9-10月から。InfoQ 11/27。"
+  },
+  {
+   "name": "AWS Enterprise-Managed Authorization（ID-JAG）",
+   "kind": "agent-infra",
+   "status": "candidate",
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "mentions": 1,
+   "sources": [
+    "https://aws.amazon.com/jp/blogs/news/secure-agentic-access-to-aws-with-enterprise-managed-authorization/"
+   ],
+   "note": "MCPの拡張。Okta等のIdPがID-JAGを発行しAWSサインインでOAuthトークンに交換、IAMロールで権限制御。原文11/25。"
   }
  ]
 }
